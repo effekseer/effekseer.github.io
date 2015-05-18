@@ -42,13 +42,73 @@ body {
 
 /* line 36, D:/dev/_Effekseer/Website/source/stylesheets/base.sass */
 #contents {
-  width: 1000px; }
+  width: 100%; }
 
 /* line 39, D:/dev/_Effekseer/Website/source/stylesheets/base.sass */
+#contents .eyecatch {
+  position: relative; }
+
+/* line 42, D:/dev/_Effekseer/Website/source/stylesheets/base.sass */
+#contents .eyecatch img {
+  width: 100%;
+  margin: 50px 0px 50px 0px;
+  display: inline-block;
+  box-shadow: 0px 0px 20px 10px black; }
+
+/* line 48, D:/dev/_Effekseer/Website/source/stylesheets/base.sass */
+#contents .eyecatch p {
+  position: absolute;
+  top: 50px;
+  left: 100px;
+  font-size: 36px;
+  font-family: "verdana", "serif", "Hiragino Kaku Gothic Pro", "Meiryo", "sans-serif";
+  text-shadow: -1px -1px #000, 1px -1px #000, -1px 1px #000, 1px 1px #000; }
+
+/* line 56, D:/dev/_Effekseer/Website/source/stylesheets/base.sass */
 #contents h1 {
   color: #ffffff; }
 
-/* line 42, D:/dev/_Effekseer/Website/source/stylesheets/base.sass */
-#contents p {
+/* line 59, D:/dev/_Effekseer/Website/source/stylesheets/base.sass */
+#contents h2 {
+  color: #ffffff; }
+
+/* line 62, D:/dev/_Effekseer/Website/source/stylesheets/base.sass */
+#contents h3 {
+  color: #ffffff; }
+
+/* line 65, D:/dev/_Effekseer/Website/source/stylesheets/base.sass */
+#contents .main {
+  width: 1000px;
+  margin: 0 auto; }
+
+/* line 69, D:/dev/_Effekseer/Website/source/stylesheets/base.sass */
+#contents {
   color: #ffffff;
   font-family: "verdana", "serif", "Hiragino Kaku Gothic Pro", "Meiryo", "sans-serif"; }
+
+/* line 73, D:/dev/_Effekseer/Website/source/stylesheets/base.sass */
+#contents a:link {
+  color: #cccccc; }
+
+/* line 76, D:/dev/_Effekseer/Website/source/stylesheets/base.sass */
+#contents a:visited {
+  color: #cccccc; }
+
+/* line 79, D:/dev/_Effekseer/Website/source/stylesheets/base.sass */
+#contents a:hover {
+  color: #ffffff; }
+
+/* line 82, D:/dev/_Effekseer/Website/source/stylesheets/base.sass */
+#contents .movie {
+  float: left;
+  margin: 10px; }
+
+/* line 86, D:/dev/_Effekseer/Website/source/stylesheets/base.sass */
+#contents .adopted {
+  width: 600px;
+  background-color: #1A1A1A;
+  margin: 20px auto; }
+
+/* line 91, D:/dev/_Effekseer/Website/source/stylesheets/base.sass */
+#contents .adopted_label {
+  width: 100px; }
