@@ -1,0 +1,177 @@
+\hypertarget{class_effekseer_emitter}{\section{Effekseer\-Emitter Class Reference}
+\label{class_effekseer_emitter}\index{Effekseer\-Emitter@{Effekseer\-Emitter}}
+}
+
+
+エフェクトの発生源  
+
+
+Inheritance diagram for Effekseer\-Emitter\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_effekseer_emitter}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_effekseer_emitter_a8ae6fd4f46274d56eee5de6b1de3ee9b}{Play} (string name)
+\begin{DoxyCompactList}\small\item\em エフェクトを再生 \end{DoxyCompactList}\item 
+void \hyperlink{class_effekseer_emitter_a55d07e8215485e43eaa94b7b075b2f04}{Play} ()
+\begin{DoxyCompactList}\small\item\em 設定されているエフェクトを再生 \end{DoxyCompactList}\item 
+void \hyperlink{class_effekseer_emitter_acab7d9ae949cd0aa844ae66b2f44ad5d}{Stop} ()
+\begin{DoxyCompactList}\small\item\em 再生中のエフェクトを停止 全てのエフェクトが瞬時に消える \end{DoxyCompactList}\item 
+void \hyperlink{class_effekseer_emitter_a6bb4daefa3632e823b684ba575043290}{Stop\-Root} ()
+\begin{DoxyCompactList}\small\item\em 再生中のエフェクトのルートノードだけを停止 ルートノードを削除したことで子ノード生成が停止され寿命で徐々に消える \end{DoxyCompactList}\item 
+void \hyperlink{class_effekseer_emitter_a39366319e460cc573d4bfc40803f6787}{Set\-Target\-Location} (Vector3 target\-Location)
+\begin{DoxyCompactList}\small\item\em 再生中のエフェクトのターゲット位置を設定 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{class_effekseer_emitter_a3c52af81c057a2f4ea0848cb492cf208}{effect\-Name}
+\begin{DoxyCompactList}\small\item\em エフェクト名 \end{DoxyCompactList}\item 
+bool \hyperlink{class_effekseer_emitter_a8ff5bc48852b4a21e3b33b0cd0e8b65a}{play\-On\-Start} = false
+\begin{DoxyCompactList}\small\item\em Start時に再生開始するかどうか \end{DoxyCompactList}\item 
+bool \hyperlink{class_effekseer_emitter_a9b6a18e54c4b4a68bb9b81fc88b123bd}{loop} = false
+\begin{DoxyCompactList}\small\item\em ループ再生するかどうか \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_effekseer_emitter_a5979b4e756a1f31e439752de6fb86c64}{paused}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em ポーズ設定 \end{DoxyCompactList}\item 
+bool \hyperlink{class_effekseer_emitter_a8beed88f3cb7357c4eb088847a6d1fbc}{shown}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em 表示設定 \end{DoxyCompactList}\item 
+bool \hyperlink{class_effekseer_emitter_aa4b49f6d532b7e75f2d207866ecee574}{exists}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em 再生中のエフェクトが存在しているか \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+エフェクトの発生源 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_effekseer_emitter_a8ae6fd4f46274d56eee5de6b1de3ee9b}{\index{Effekseer\-Emitter@{Effekseer\-Emitter}!Play@{Play}}
+\index{Play@{Play}!EffekseerEmitter@{Effekseer\-Emitter}}
+\subsubsection[{Play}]{\setlength{\rightskip}{0pt plus 5cm}void Effekseer\-Emitter.\-Play (
+\begin{DoxyParamCaption}
+\item[{string}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_effekseer_emitter_a8ae6fd4f46274d56eee5de6b1de3ee9b}
+
+
+エフェクトを再生 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & エフェクト名\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_effekseer_emitter_a55d07e8215485e43eaa94b7b075b2f04}{\index{Effekseer\-Emitter@{Effekseer\-Emitter}!Play@{Play}}
+\index{Play@{Play}!EffekseerEmitter@{Effekseer\-Emitter}}
+\subsubsection[{Play}]{\setlength{\rightskip}{0pt plus 5cm}void Effekseer\-Emitter.\-Play (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_effekseer_emitter_a55d07e8215485e43eaa94b7b075b2f04}
+
+
+設定されているエフェクトを再生 
+
+\hypertarget{class_effekseer_emitter_a39366319e460cc573d4bfc40803f6787}{\index{Effekseer\-Emitter@{Effekseer\-Emitter}!Set\-Target\-Location@{Set\-Target\-Location}}
+\index{Set\-Target\-Location@{Set\-Target\-Location}!EffekseerEmitter@{Effekseer\-Emitter}}
+\subsubsection[{Set\-Target\-Location}]{\setlength{\rightskip}{0pt plus 5cm}void Effekseer\-Emitter.\-Set\-Target\-Location (
+\begin{DoxyParamCaption}
+\item[{Vector3}]{target\-Location}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_effekseer_emitter_a39366319e460cc573d4bfc40803f6787}
+
+
+再生中のエフェクトのターゲット位置を設定 
+
+
+\begin{DoxyParams}{Parameters}
+{\em target\-Location} & ターゲット位置\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_effekseer_emitter_acab7d9ae949cd0aa844ae66b2f44ad5d}{\index{Effekseer\-Emitter@{Effekseer\-Emitter}!Stop@{Stop}}
+\index{Stop@{Stop}!EffekseerEmitter@{Effekseer\-Emitter}}
+\subsubsection[{Stop}]{\setlength{\rightskip}{0pt plus 5cm}void Effekseer\-Emitter.\-Stop (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_effekseer_emitter_acab7d9ae949cd0aa844ae66b2f44ad5d}
+
+
+再生中のエフェクトを停止 全てのエフェクトが瞬時に消える 
+
+\hypertarget{class_effekseer_emitter_a6bb4daefa3632e823b684ba575043290}{\index{Effekseer\-Emitter@{Effekseer\-Emitter}!Stop\-Root@{Stop\-Root}}
+\index{Stop\-Root@{Stop\-Root}!EffekseerEmitter@{Effekseer\-Emitter}}
+\subsubsection[{Stop\-Root}]{\setlength{\rightskip}{0pt plus 5cm}void Effekseer\-Emitter.\-Stop\-Root (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_effekseer_emitter_a6bb4daefa3632e823b684ba575043290}
+
+
+再生中のエフェクトのルートノードだけを停止 ルートノードを削除したことで子ノード生成が停止され寿命で徐々に消える 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_effekseer_emitter_a3c52af81c057a2f4ea0848cb492cf208}{\index{Effekseer\-Emitter@{Effekseer\-Emitter}!effect\-Name@{effect\-Name}}
+\index{effect\-Name@{effect\-Name}!EffekseerEmitter@{Effekseer\-Emitter}}
+\subsubsection[{effect\-Name}]{\setlength{\rightskip}{0pt plus 5cm}string Effekseer\-Emitter.\-effect\-Name}}\label{class_effekseer_emitter_a3c52af81c057a2f4ea0848cb492cf208}
+
+
+エフェクト名 
+
+\hypertarget{class_effekseer_emitter_a9b6a18e54c4b4a68bb9b81fc88b123bd}{\index{Effekseer\-Emitter@{Effekseer\-Emitter}!loop@{loop}}
+\index{loop@{loop}!EffekseerEmitter@{Effekseer\-Emitter}}
+\subsubsection[{loop}]{\setlength{\rightskip}{0pt plus 5cm}bool Effekseer\-Emitter.\-loop = false}}\label{class_effekseer_emitter_a9b6a18e54c4b4a68bb9b81fc88b123bd}
+
+
+ループ再生するかどうか 
+
+\hypertarget{class_effekseer_emitter_a8ff5bc48852b4a21e3b33b0cd0e8b65a}{\index{Effekseer\-Emitter@{Effekseer\-Emitter}!play\-On\-Start@{play\-On\-Start}}
+\index{play\-On\-Start@{play\-On\-Start}!EffekseerEmitter@{Effekseer\-Emitter}}
+\subsubsection[{play\-On\-Start}]{\setlength{\rightskip}{0pt plus 5cm}bool Effekseer\-Emitter.\-play\-On\-Start = false}}\label{class_effekseer_emitter_a8ff5bc48852b4a21e3b33b0cd0e8b65a}
+
+
+Start時に再生開始するかどうか 
+
+
+
+\subsection{Property Documentation}
+\hypertarget{class_effekseer_emitter_aa4b49f6d532b7e75f2d207866ecee574}{\index{Effekseer\-Emitter@{Effekseer\-Emitter}!exists@{exists}}
+\index{exists@{exists}!EffekseerEmitter@{Effekseer\-Emitter}}
+\subsubsection[{exists}]{\setlength{\rightskip}{0pt plus 5cm}bool Effekseer\-Emitter.\-exists\hspace{0.3cm}{\ttfamily [get]}}}\label{class_effekseer_emitter_aa4b49f6d532b7e75f2d207866ecee574}
+
+
+再生中のエフェクトが存在しているか 
+
+true\-: 存在している
+
+false\-: 再生終了で破棄。もしくは\-Stopで停止された\hypertarget{class_effekseer_emitter_a5979b4e756a1f31e439752de6fb86c64}{\index{Effekseer\-Emitter@{Effekseer\-Emitter}!paused@{paused}}
+\index{paused@{paused}!EffekseerEmitter@{Effekseer\-Emitter}}
+\subsubsection[{paused}]{\setlength{\rightskip}{0pt plus 5cm}bool Effekseer\-Emitter.\-paused\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{class_effekseer_emitter_a5979b4e756a1f31e439752de6fb86c64}
+
+
+ポーズ設定 
+
+true\-: 停止中。\-Updateで更新しない
+
+false\-: 再生中。\-Updateで更新する\hypertarget{class_effekseer_emitter_a8beed88f3cb7357c4eb088847a6d1fbc}{\index{Effekseer\-Emitter@{Effekseer\-Emitter}!shown@{shown}}
+\index{shown@{shown}!EffekseerEmitter@{Effekseer\-Emitter}}
+\subsubsection[{shown}]{\setlength{\rightskip}{0pt plus 5cm}bool Effekseer\-Emitter.\-shown\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{class_effekseer_emitter_a8beed88f3cb7357c4eb088847a6d1fbc}
+
+
+表示設定 
+
+true\-: 表示\-O\-N。\-Drawで描画する
+
+false\-: 表示\-O\-F\-F。\-Drawで描画しない
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+dev/\-Cpp/\-Unity\-Plugin/\-Unity\-Script/Effekseer\-Emitter.\-cs\end{DoxyCompactItemize}

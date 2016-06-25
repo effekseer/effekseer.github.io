@@ -1,0 +1,160 @@
+\hypertarget{class_effekseer_system}{\section{Effekseer\-System Class Reference}
+\label{class_effekseer_system}\index{Effekseer\-System@{Effekseer\-System}}
+}
+Inheritance diagram for Effekseer\-System\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_effekseer_system}
+\end{center}
+\end{figure}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{struct_effekseer_handle}{Effekseer\-Handle} \hyperlink{class_effekseer_system_a8d0a7561a512b64acce39c4456ff6f37}{Play\-Effect} (string name, Vector3 location)
+\begin{DoxyCompactList}\small\item\em エフェクトの再生 \end{DoxyCompactList}\item 
+static void \hyperlink{class_effekseer_system_acf3dde4a65c0e99aeacfea71b517b541}{Stop\-All\-Effects} ()
+\begin{DoxyCompactList}\small\item\em 全エフェクトの再生停止 \end{DoxyCompactList}\item 
+static void \hyperlink{class_effekseer_system_af4059b796725905982565d8b239bf9fa}{Load\-Effect} (string name)
+\begin{DoxyCompactList}\small\item\em エフェクトのロード(Resourcesから) \end{DoxyCompactList}\item 
+static void \hyperlink{class_effekseer_system_a4f7d874f76c4f354b70b852df590be72}{Load\-Effect} (string name, Asset\-Bundle asset\-Bundle)
+\begin{DoxyCompactList}\small\item\em エフェクトのロード(Asset\-Bundleから) \end{DoxyCompactList}\item 
+static void \hyperlink{class_effekseer_system_a8b328c83692b922217657a21f9d5fdeb}{Release\-Effect} (string name)
+\begin{DoxyCompactList}\small\item\em エフェクトの解放 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_effekseer_system_a469cf59d9deeaef6e27b15c5fc5ee524}{draw\-In\-Scene\-View} = true
+\begin{DoxyCompactList}\small\item\em シーンビューに描画するかどうか \end{DoxyCompactList}\item 
+int \hyperlink{class_effekseer_system_a0516609db2194d83016f439b93510f21}{effect\-Instances} = 800
+\begin{DoxyCompactList}\small\item\em エフェクトインスタンスの最大数 \end{DoxyCompactList}\item 
+int \hyperlink{class_effekseer_system_a2007e297eab6bc504cce40650679b1c4}{max\-Squares} = 1200
+\begin{DoxyCompactList}\small\item\em 描画できる四角形の最大数 \end{DoxyCompactList}\item 
+int \hyperlink{class_effekseer_system_ac83155c54d94fc6b61f6f53032923667}{sound\-Instances} = 16
+\begin{DoxyCompactList}\small\item\em サウンドインスタンスの最大数 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_effekseer_system_abaa89ed68be2a0ff10f1ab7b04ce219a}{static \hyperlink{class_effekseer_system}{Effekseer\-System} {\bfseries Instance}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}}\label{class_effekseer_system_abaa89ed68be2a0ff10f1ab7b04ce219a}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_effekseer_system_af4059b796725905982565d8b239bf9fa}{\index{Effekseer\-System@{Effekseer\-System}!Load\-Effect@{Load\-Effect}}
+\index{Load\-Effect@{Load\-Effect}!EffekseerSystem@{Effekseer\-System}}
+\subsubsection[{Load\-Effect}]{\setlength{\rightskip}{0pt plus 5cm}static void Effekseer\-System.\-Load\-Effect (
+\begin{DoxyParamCaption}
+\item[{string}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{class_effekseer_system_af4059b796725905982565d8b239bf9fa}
+
+
+エフェクトのロード(Resourcesから) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & エフェクト名(efkファイルの名前から\char`\"{}.\-efk\char`\"{}を取り除いたもの)\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_effekseer_system_a4f7d874f76c4f354b70b852df590be72}{\index{Effekseer\-System@{Effekseer\-System}!Load\-Effect@{Load\-Effect}}
+\index{Load\-Effect@{Load\-Effect}!EffekseerSystem@{Effekseer\-System}}
+\subsubsection[{Load\-Effect}]{\setlength{\rightskip}{0pt plus 5cm}static void Effekseer\-System.\-Load\-Effect (
+\begin{DoxyParamCaption}
+\item[{string}]{name, }
+\item[{Asset\-Bundle}]{asset\-Bundle}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{class_effekseer_system_a4f7d874f76c4f354b70b852df590be72}
+
+
+エフェクトのロード(Asset\-Bundleから) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & エフェクト名(efkファイルの名前から\char`\"{}.\-efk\char`\"{}を取り除いたもの)\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_effekseer_system_a8d0a7561a512b64acce39c4456ff6f37}{\index{Effekseer\-System@{Effekseer\-System}!Play\-Effect@{Play\-Effect}}
+\index{Play\-Effect@{Play\-Effect}!EffekseerSystem@{Effekseer\-System}}
+\subsubsection[{Play\-Effect}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Effekseer\-Handle} Effekseer\-System.\-Play\-Effect (
+\begin{DoxyParamCaption}
+\item[{string}]{name, }
+\item[{Vector3}]{location}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{class_effekseer_system_a8d0a7561a512b64acce39c4456ff6f37}
+
+
+エフェクトの再生 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & エフェクト名\\
+\hline
+{\em location} & 再生開始する位置\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+再生したエフェクトのハンドル
+\end{DoxyReturn}
+\hypertarget{class_effekseer_system_a8b328c83692b922217657a21f9d5fdeb}{\index{Effekseer\-System@{Effekseer\-System}!Release\-Effect@{Release\-Effect}}
+\index{Release\-Effect@{Release\-Effect}!EffekseerSystem@{Effekseer\-System}}
+\subsubsection[{Release\-Effect}]{\setlength{\rightskip}{0pt plus 5cm}static void Effekseer\-System.\-Release\-Effect (
+\begin{DoxyParamCaption}
+\item[{string}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{class_effekseer_system_a8b328c83692b922217657a21f9d5fdeb}
+
+
+エフェクトの解放 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & エフェクト名(efkファイルの名前から\char`\"{}.\-efk\char`\"{}を取り除いたもの)\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_effekseer_system_acf3dde4a65c0e99aeacfea71b517b541}{\index{Effekseer\-System@{Effekseer\-System}!Stop\-All\-Effects@{Stop\-All\-Effects}}
+\index{Stop\-All\-Effects@{Stop\-All\-Effects}!EffekseerSystem@{Effekseer\-System}}
+\subsubsection[{Stop\-All\-Effects}]{\setlength{\rightskip}{0pt plus 5cm}static void Effekseer\-System.\-Stop\-All\-Effects (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{class_effekseer_system_acf3dde4a65c0e99aeacfea71b517b541}
+
+
+全エフェクトの再生停止 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_effekseer_system_a469cf59d9deeaef6e27b15c5fc5ee524}{\index{Effekseer\-System@{Effekseer\-System}!draw\-In\-Scene\-View@{draw\-In\-Scene\-View}}
+\index{draw\-In\-Scene\-View@{draw\-In\-Scene\-View}!EffekseerSystem@{Effekseer\-System}}
+\subsubsection[{draw\-In\-Scene\-View}]{\setlength{\rightskip}{0pt plus 5cm}bool Effekseer\-System.\-draw\-In\-Scene\-View = true}}\label{class_effekseer_system_a469cf59d9deeaef6e27b15c5fc5ee524}
+
+
+シーンビューに描画するかどうか 
+
+\hypertarget{class_effekseer_system_a0516609db2194d83016f439b93510f21}{\index{Effekseer\-System@{Effekseer\-System}!effect\-Instances@{effect\-Instances}}
+\index{effect\-Instances@{effect\-Instances}!EffekseerSystem@{Effekseer\-System}}
+\subsubsection[{effect\-Instances}]{\setlength{\rightskip}{0pt plus 5cm}int Effekseer\-System.\-effect\-Instances = 800}}\label{class_effekseer_system_a0516609db2194d83016f439b93510f21}
+
+
+エフェクトインスタンスの最大数 
+
+\hypertarget{class_effekseer_system_a2007e297eab6bc504cce40650679b1c4}{\index{Effekseer\-System@{Effekseer\-System}!max\-Squares@{max\-Squares}}
+\index{max\-Squares@{max\-Squares}!EffekseerSystem@{Effekseer\-System}}
+\subsubsection[{max\-Squares}]{\setlength{\rightskip}{0pt plus 5cm}int Effekseer\-System.\-max\-Squares = 1200}}\label{class_effekseer_system_a2007e297eab6bc504cce40650679b1c4}
+
+
+描画できる四角形の最大数 
+
+\hypertarget{class_effekseer_system_ac83155c54d94fc6b61f6f53032923667}{\index{Effekseer\-System@{Effekseer\-System}!sound\-Instances@{sound\-Instances}}
+\index{sound\-Instances@{sound\-Instances}!EffekseerSystem@{Effekseer\-System}}
+\subsubsection[{sound\-Instances}]{\setlength{\rightskip}{0pt plus 5cm}int Effekseer\-System.\-sound\-Instances = 16}}\label{class_effekseer_system_ac83155c54d94fc6b61f6f53032923667}
+
+
+サウンドインスタンスの最大数 
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+dev/\-Cpp/\-Unity\-Plugin/\-Unity\-Script/Effekseer\-System.\-cs\end{DoxyCompactItemize}
