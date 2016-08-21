@@ -104,7 +104,10 @@ EffekseerRendererGL::Rendererに対する継承グラフ</div>
  <div class="center">
   <img src="class_effekseer_renderer_g_l_1_1_renderer.png" usemap="#EffekseerRendererGL::Renderer_map" alt=""/>
   <map id="EffekseerRendererGL::Renderer_map" name="EffekseerRendererGL::Renderer_map">
-<area href="class_effekseer_renderer_1_1_renderer.html" alt="EffekseerRenderer::Renderer" shape="rect" coords="0,0,194,24"/>
+<area href="class_effekseer_renderer_1_1_renderer.html" alt="EffekseerRenderer::Renderer" shape="rect" coords="204,56,398,80"/>
+<area href="class_effekseer_1_1_i_reference.html" title="参照カウンタのインターフェース " alt="Effekseer::IReference" shape="rect" coords="0,0,194,24"/>
+<area href="class_effekseer_1_1_i_reference.html" title="参照カウンタのインターフェース " alt="Effekseer::IReference" shape="rect" coords="204,0,398,24"/>
+<area href="class_effekseer_1_1_i_reference.html" title="参照カウンタのインターフェース " alt="Effekseer::IReference" shape="rect" coords="408,0,602,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -114,6 +117,9 @@ Public メソッド</h2></td></tr>
 virtual int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_renderer_g_l_1_1_renderer.html#af02ebee0abd84ac403aa6b5426fcf19b">GetSquareMaxCount</a> () const =0</td></tr>
 <tr class="memdesc:af02ebee0abd84ac403aa6b5426fcf19b"><td class="mdescLeft">&#160;</td><td class="mdescRight">最大描画スプライト数を取得する。 <br/></td></tr>
 <tr class="separator:af02ebee0abd84ac403aa6b5426fcf19b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac772c4c734b779b6d256f77c5ba56eb9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_renderer_g_l_1_1_renderer.html#ac772c4c734b779b6d256f77c5ba56eb9">SetSquareMaxCount</a> (int32_t count)=0</td></tr>
+<tr class="memdesc:ac772c4c734b779b6d256f77c5ba56eb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">最大描画スプライト数を設定する。  <a href="#ac772c4c734b779b6d256f77c5ba56eb9">[詳細]</a><br/></td></tr>
+<tr class="separator:ac772c4c734b779b6d256f77c5ba56eb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07d10a1bc699b60f66904c1b4bf86dcd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a07d10a1bc699b60f66904c1b4bf86dcd"></a>
 virtual GLuint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_renderer_g_l_1_1_renderer.html#a07d10a1bc699b60f66904c1b4bf86dcd">GetBackground</a> ()=0</td></tr>
 <tr class="memdesc:a07d10a1bc699b60f66904c1b4bf86dcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">背景を取得する。 <br/></td></tr>
@@ -514,13 +520,40 @@ Static Public メソッド</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ac772c4c734b779b6d256f77c5ba56eb9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void EffekseerRendererGL::Renderer::SetSquareMaxCount </td>
+          <td>(</td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>count</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>最大描画スプライト数を設定する。 </p>
+<dl class="section note"><dt>覚え書き</dt><dd>描画している時は使用できない。 </dd></dl>
+
+</div>
+</div>
 <hr/>このクラスの説明は次のファイルから生成されました:<ul>
 <li>Dev/Cpp/EffekseerRendererGL/<a class="el" href="_effekseer_renderer_g_l_8h_source.html">EffekseerRendererGL.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Effekseerに対してWed Jul 15 2015 20:17:29に生成されました。 &#160;<a href="http://www.doxygen.org/index.html">
+Effekseerに対してSun Aug 21 2016 22:51:35に生成されました。 &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>
