@@ -1,270 +1,155 @@
 <!DOCTYPE html>
 <html>
-  <head></head>
+<head>
   <meta charset="utf-8">
-  <!--Always force latest IE rendering engine or request Chrome Frame-->
-  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
-  <meta name="keywords" content="Effekseer,Particle,Effect,Editor,エフェクト">
-  <!--Use title if it's in the page YAML frontmatter--><link href="/stylesheets/base.css" rel="stylesheet" type="text/css" /><script src="/javascripts/all.js" type="text/javascript"></script>
-  <body class="Help_Tool Help_Tool_ja Help_Tool_ja_ToolTutorial Help_Tool_ja_ToolTutorial_02">
-    <div id="header">
-      <div class="logo">
-        <a href="index.html"><img src="/images/Logo.png" alt="Logo" align="middle"></a>
-      </div>
-      <div class="unselected">
-        <a href="index.html">
-          <h1>
-            Top
-          </h1>
-        </a>
-      </div>
-      <div class="unselected">
-        <a href="introduction.html">
-          <h1>
-            Introduction
-          </h1>
-        </a>
-      </div>
-      <div class="unselected">
-        <a href="download.html">
-          <h1>
-            Download
-          </h1>
-        </a>
-      </div>
-      <div class="unselected">
-        <a href="adoption.html">
-          <h1>
-            Use cases
-          </h1>
-        </a>
-      </div>
-      <div class="unselected">
-        <a href="documentation.html">
-          <h1>
-            Documentation
-          </h1>
-        </a>
-      </div>
-      <div class="unselected">
-        <a href="support.html">
-          <h1>
-            Support
-          </h1>
-        </a>
-      </div>
-      <div class="unselected">
-        <a href="contribute.html">
-          <h1>
-            Contributed Effects
-          </h1>
-        </a>
-      </div>
-      <div class="unselected">
-        <a href="development.html">
-          <h1>
-            Development
-          </h1>
-        </a>
-      </div>
-      <div class="language">
-        <table>
-          <tr>
-            <td>
-              <a href="/jp/index.html">日本語</a>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <a href="/en/index.html">English</a>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <a href="/zh-tw/index.html">繁体中文</a>
-            </td>
-          </tr>
-        </table>
-      </div>
-    </div>
-    <p>﻿% No02.パーティクルをばらまいてみよう！</p>
-    
-    <div class="main">
-    
-    # No02.パーティクルをばらまいてみよう！
-    
-    ## 概要
-    
-    本章では、パーティクルをばらまいてみます。
-    これだけでは味気ないですが、Effekseerの基本操作を覚えれます。
-    本章で覚えた知識をもとに、次の章で格好いいエフェクトを作成します。
-    そのため、しっかり理解しましょう。
-    
-    <div align="center">
-    <img src="../../img/Tutorial/02_completed.gif" />
-    <p>本章で作成するエフェクト</p>
-    </div>
-    
-    ## 位置の編集
-        
-    ### 初期配置の位置の編集
-    
-    現在は、中央にパーティクルが表示されています。このパーティクルを中央から移動させてみます。
-    
-    <div align="center">
-    <img src="../../img/Tutorial/01_square.png" />
-    <p>中央に表示</p>
-    </div>
-    
-    まず、画面の右側の「ノードツリー」の「Node」をクリックします。「ノードツリー」のウインドウは
-    エフェクト全体の構成を示しており、「Node」はパーティクルを示しています。これを編集することにより、
-    このパーティクルの形状を編集できます。
-    
-    <div align="center">
-    <img src="../../img/Tutorial/02_nodetree.png" />
-    <p>ノードツリーウインドウ</p>
-    </div>
-    
-    クリックすると、大量の編集可能なウインドウが表示されます。初めてだと驚くかもしれないですが、
-    本章で編集するウインドウは2つのみです。
-    
-    初期配置の位置を編集するには、「位置」のウインドウのパラメーターを編集します。
-    
-    <div align="center">
-    <img src="../../img/Tutorial/02_position_ja.png" />
-    <p>位置ウインドウ</p>
-    </div>
-    
-    位置のウインドウの位置のxの数値を0から2に変更してみましょう。
-    
-    <div align="center">
-    <img src="../../img/Tutorial/02_position_input_ja.png" />
-    <p>xの数値を変更</p>
-    </div>
-    
-    そうすると、パーティクルの位置が中央から外側に移動しました。
-    
-    <div align="center">
-    <img src="../../img/Tutorial/02_position_input_view.png" />
-    <p>外側に移動</p>
-    </div>
-    
-    ### パーティクルが移動するようにする
-    
-    パーティクルが静止している状態では面白くありません。パーティクルが移動するようにしましょう。
-    
-    Effekseerには位置を指定する方法が複数あります。
-    
-    初期設定では位置が固定されていますが、速度や加速度を指定できる設定方法があります。
-    
-    位置ウインドウのドロップダウンリストをクリックして、位置から位置・速度・加速度に変更します。
-    そうすると、位置ウインドウに速度や加速度を入力するテキストボックスが追加されます。
-    パーティクルの速度や加速度を設定できるようになるため、パーティクルを動かせるようになります。
-    
-    <div align="center">
-    <img src="../../img/Tutorial/02_pva_ja.png" />
-    <p>位置・速度・加速度</p>
-    </div>
-    
-    x方向の速度に0.1と入力しましょう。
-    
-    <div align="center">
-    <img src="../../img/Tutorial/02_pva_input_ja.png" />
-    <p>位置・速度・加速度</p>
-    </div>
-    
-    そうすると、高速に画面外に飛び出すようになりました。
-    
-    <div align="center">
-    <img src="../../img/Tutorial/02_pva.gif" />
-    <p>移動するエフェクト</p>
-    </div>
-    
-    他の数値も入力して、挙動がどう変化するか試してみましょう。
-    
-    ### パーティクルが複数表示されるようにする
-    
-    多くのエフェクトでは、パーティクルが1つしかないことはほとんどないです。
-    パーティクルを複数表示させてみましょう。
-    
-    パーティクルの数は、共通ウインドウの生成数に設定されています。
-    この数を増やすと、たくさんのパーティクルが生成されるようになります。
-    
-    <div align="center">
-    <img src="../../img/Tutorial/02_common_ja.png" />
-    <p>生成数</p>
-    </div>
-    
-    生成数の数値を100にしてみましょう。
-    
-    <div align="center">
-    <img src="../../img/Tutorial/02_common_count_ja.png" />
-    <p>生成数を増やす</p>
-    </div>
-    
-    沢山、パーティクルが生成されるようになりました。
-    ただ、全てのパーティクルの移動する方向が一緒なので、パーティクルが重なって表示されてしまいます。
-    
-    <div align="center">
-    <img src="../../img/Tutorial/02_count.gif" />
-    <p>生成数を増やす</p>
-    </div>
-    
-    ### パーティクルをランダムな方向に移動させる
-    
-    パーティクルの移動方向が同じだと、パーティクルが重なって表示されてしまいます。
-    そこで、パーティクルごとにランダムな方向に移動するようにします。
-    
-    位置ウインドウの速度のxyzの振幅に0.1と入力しましょう。さらに、先ほど中心に入力した0.1を0に戻します。
-    
-    これは、速度は-0.1～0.1の間でランダムに設定される、ということを示しています。
-    すなわち、パーティクルは(0,0,0)を中心に全周囲に移動します。
-    
-    <div align="center">
-    <img src="../../img/Tutorial/02_random_input_ja.png" />
-    <p>ランダム</p>
-    </div>
-    
-    パーティクルが全周囲に移動するようになりました。
-    
-    <div align="center">
-    <img src="../../img/Tutorial/02_random.gif" />
-    <p>ランダム</p>
-    </div>
-    
-    ### パーティクルが表示されている時間を短くする
-    
-    今はパーティクルが長時間表示されていますが、エフェクトによっては短いものもあります。
-    表示時間を短くしてみましょう。
-    
-    共通ウインドウに生存時間というパラメーターがあります。
-    このパラメーターを短くしてみます。今回は30と入力しました。
-    
-    <div align="center">
-    <img src="../../img/Tutorial/02_life_input_ja.png" />
-    <p>生存時間</p>
-    </div>
-    
-    小さくすると、パーティクルがすぐ消えるようになります。
-    
-    <div align="center">
-    <img src="../../img/Tutorial/02_completed.gif" />
-    <p>生存時間</p>
-    </div>
-    
-    最後に、本章で作成されたエフェクトをダウンロードできるようにしてみました。
-    
-    <div align="center">
-    <a href="../../Sample/02_Sample.zip">ダウンロード</a>
-    </div>
-    
-    ## まとめ
-    
-    今回はパーティクルを複数生成し、移動させてみました。
-    次章では、パーティクルから、よりエフェクトらしい見た目に編集します。
-    
-    
-    </div>
-    
-  </body>
+  <meta name="generator" content="pandoc">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>No02.パーティクルをばらまいてみよう！</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="stylesheet" href="../base.css">
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header>
+<h1 class="title">No02.パーティクルをばらまいてみよう！</h1>
+</header>
+<div class="main">
+<h2>概要</h2>
+<p>本章では、パーティクルをばらまいてみます。 これだけでは味気ないですが、Effekseerの基本操作を覚えれます。 本章で覚えた知識をもとに、次の章で格好いいエフェクトを作成します。 そのため、しっかり理解しましょう。</p>
+<div align="center">
+<img src="../../img/Tutorial/02_completed.gif">
+<p>
+本章で作成するエフェクト
+</p>
+</div>
+<h2>位置の編集</h2>
+<h3>初期配置の位置の編集</h3>
+<p>現在は、中央にパーティクルが表示されています。このパーティクルを中央から移動させてみます。</p>
+<div align="center">
+<img src="../../img/Tutorial/01_square.png">
+<p>
+中央に表示
+</p>
+</div>
+<p>まず、画面の右側の「ノードツリー」の「Node」をクリックします。「ノードツリー」のウインドウは エフェクト全体の構成を示しており、「Node」はパーティクルを示しています。これを編集することにより、 このパーティクルの形状を編集できます。</p>
+<div align="center">
+<img src="../../img/Tutorial/02_nodetree.png">
+<p>
+ノードツリーウインドウ
+</p>
+</div>
+<p>クリックすると、大量の編集可能なウインドウが表示されます。初めてだと驚くかもしれないですが、 本章で編集するウインドウは2つのみです。</p>
+<p>初期配置の位置を編集するには、「位置」のウインドウのパラメーターを編集します。</p>
+<div align="center">
+<img src="../../img/Tutorial/02_position_ja.png">
+<p>
+位置ウインドウ
+</p>
+</div>
+<p>位置のウインドウの位置のxの数値を0から2に変更してみましょう。</p>
+<div align="center">
+<img src="../../img/Tutorial/02_position_input_ja.png">
+<p>
+xの数値を変更
+</p>
+</div>
+<p>そうすると、パーティクルの位置が中央から外側に移動しました。</p>
+<div align="center">
+<img src="../../img/Tutorial/02_position_input_view.png">
+<p>
+外側に移動
+</p>
+</div>
+<h3>パーティクルが移動するようにする</h3>
+<p>パーティクルが静止している状態では面白くありません。パーティクルが移動するようにしましょう。</p>
+<p>Effekseerには位置を指定する方法が複数あります。</p>
+<p>初期設定では位置が固定されていますが、速度や加速度を指定できる設定方法があります。</p>
+<p>位置ウインドウのドロップダウンリストをクリックして、位置から位置・速度・加速度に変更します。 そうすると、位置ウインドウに速度や加速度を入力するテキストボックスが追加されます。 パーティクルの速度や加速度を設定できるようになるため、パーティクルを動かせるようになります。</p>
+<div align="center">
+<img src="../../img/Tutorial/02_pva_ja.png">
+<p>
+位置・速度・加速度
+</p>
+</div>
+<p>x方向の速度に0.1と入力しましょう。</p>
+<div align="center">
+<img src="../../img/Tutorial/02_pva_input_ja.png">
+<p>
+位置・速度・加速度
+</p>
+</div>
+<p>そうすると、高速に画面外に飛び出すようになりました。</p>
+<div align="center">
+<img src="../../img/Tutorial/02_pva.gif">
+<p>
+移動するエフェクト
+</p>
+</div>
+<p>他の数値も入力して、挙動がどう変化するか試してみましょう。</p>
+<h3>パーティクルが複数表示されるようにする</h3>
+<p>多くのエフェクトでは、パーティクルが1つしかないことはほとんどないです。 パーティクルを複数表示させてみましょう。</p>
+<p>パーティクルの数は、共通ウインドウの生成数に設定されています。 この数を増やすと、たくさんのパーティクルが生成されるようになります。</p>
+<div align="center">
+<img src="../../img/Tutorial/02_common_ja.png">
+<p>
+生成数
+</p>
+</div>
+<p>生成数の数値を100にしてみましょう。</p>
+<div align="center">
+<img src="../../img/Tutorial/02_common_count_ja.png">
+<p>
+生成数を増やす
+</p>
+</div>
+<p>沢山、パーティクルが生成されるようになりました。 ただ、全てのパーティクルの移動する方向が一緒なので、パーティクルが重なって表示されてしまいます。</p>
+<div align="center">
+<img src="../../img/Tutorial/02_count.gif">
+<p>
+生成数を増やす
+</p>
+</div>
+<h3>パーティクルをランダムな方向に移動させる</h3>
+<p>パーティクルの移動方向が同じだと、パーティクルが重なって表示されてしまいます。 そこで、パーティクルごとにランダムな方向に移動するようにします。</p>
+<p>位置ウインドウの速度のxyzの振幅に0.1と入力しましょう。さらに、先ほど中心に入力した0.1を0に戻します。</p>
+<p>これは、速度は-0.1～0.1の間でランダムに設定される、ということを示しています。 すなわち、パーティクルは(0,0,0)を中心に全周囲に移動します。</p>
+<div align="center">
+<img src="../../img/Tutorial/02_random_input_ja.png">
+<p>
+ランダム
+</p>
+</div>
+<p>パーティクルが全周囲に移動するようになりました。</p>
+<div align="center">
+<img src="../../img/Tutorial/02_random.gif">
+<p>
+ランダム
+</p>
+</div>
+<h3>パーティクルが表示されている時間を短くする</h3>
+<p>今はパーティクルが長時間表示されていますが、エフェクトによっては短いものもあります。 表示時間を短くしてみましょう。</p>
+<p>共通ウインドウに生存時間というパラメーターがあります。 このパラメーターを短くしてみます。今回は30と入力しました。</p>
+<div align="center">
+<img src="../../img/Tutorial/02_life_input_ja.png">
+<p>
+生存時間
+</p>
+</div>
+<p>小さくすると、パーティクルがすぐ消えるようになります。</p>
+<div align="center">
+<img src="../../img/Tutorial/02_completed.gif">
+<p>
+生存時間
+</p>
+</div>
+<p>最後に、本章で作成されたエフェクトをダウンロードできるようにしてみました。</p>
+<div align="center">
+<p><a href = "../../Sample/02_Sample.zip">ダウンロード</a></p>
+</div>
+<h2>まとめ</h2>
+<p>今回はパーティクルを複数生成し、移動させてみました。 次章では、パーティクルから、よりエフェクトらしい見た目に編集します。</p>
+</div>
+</body>
 </html>

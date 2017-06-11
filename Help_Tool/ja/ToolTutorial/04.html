@@ -1,258 +1,133 @@
 <!DOCTYPE html>
 <html>
-  <head></head>
+<head>
   <meta charset="utf-8">
-  <!--Always force latest IE rendering engine or request Chrome Frame-->
-  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
-  <meta name="keywords" content="Effekseer,Particle,Effect,Editor,エフェクト">
-  <!--Use title if it's in the page YAML frontmatter--><link href="/stylesheets/base.css" rel="stylesheet" type="text/css" /><script src="/javascripts/all.js" type="text/javascript"></script>
-  <body class="Help_Tool Help_Tool_ja Help_Tool_ja_ToolTutorial Help_Tool_ja_ToolTutorial_04">
-    <div id="header">
-      <div class="logo">
-        <a href="index.html"><img src="/images/Logo.png" alt="Logo" align="middle"></a>
-      </div>
-      <div class="unselected">
-        <a href="index.html">
-          <h1>
-            Top
-          </h1>
-        </a>
-      </div>
-      <div class="unselected">
-        <a href="introduction.html">
-          <h1>
-            Introduction
-          </h1>
-        </a>
-      </div>
-      <div class="unselected">
-        <a href="download.html">
-          <h1>
-            Download
-          </h1>
-        </a>
-      </div>
-      <div class="unselected">
-        <a href="adoption.html">
-          <h1>
-            Use cases
-          </h1>
-        </a>
-      </div>
-      <div class="unselected">
-        <a href="documentation.html">
-          <h1>
-            Documentation
-          </h1>
-        </a>
-      </div>
-      <div class="unselected">
-        <a href="support.html">
-          <h1>
-            Support
-          </h1>
-        </a>
-      </div>
-      <div class="unselected">
-        <a href="contribute.html">
-          <h1>
-            Contributed Effects
-          </h1>
-        </a>
-      </div>
-      <div class="unselected">
-        <a href="development.html">
-          <h1>
-            Development
-          </h1>
-        </a>
-      </div>
-      <div class="language">
-        <table>
-          <tr>
-            <td>
-              <a href="/jp/index.html">日本語</a>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <a href="/en/index.html">English</a>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <a href="/zh-tw/index.html">繁体中文</a>
-            </td>
-          </tr>
-        </table>
-      </div>
-    </div>
-    <p>﻿% No04. 回転、拡大してみよう！</p>
-    
-    <div class="main">
-    
-    # No04. 回転、拡大してみよう！
-    
-    ## 概要
-    本章では、パーティクルを回転したり、拡大したりします。
-    また、スプライトの形状を正方形から長方形に変えてみます。
-    それにより、複雑なエフェクトを作成できるようになります。
-    
-    <div align="center">
-    <img src="../../img/Tutorial/04_completed.gif" />
-    <p>本章で作成するエフェクト</p>
-    </div>
-    
-    ## 回転と拡大
-    
-    あらかじめ作成途中のエフェクトを下記のリンクからダウンロードできるようにしました。
-    
-    <div align="center">
-    <a href="../../Sample/04_01_Sample.zip">ダウンロード</a>
-    </div>
-    
-    ### 回転
-    
-    早速、パーティクルを回転させてみましょう。
-    回転は「回転」ウインドウから指定できます。
-    
-    <div align="center">
-    <img src="../../img/Tutorial/04_rotation_ja.png" />
-    <p>「回転」ウインドウ</p>
-    </div>
-    
-    位置と同じように、回転にも複数を指定方法があります。
-    初期設定では、角度が選択されています。
-    これを、位置・速度・加速度に変更します。
-    そして、速度のzに5を入力します。
-    
-    これは、Z方向(正面方向)を軸として1フレームに5度回転することを表しています。
-    
-    <div align="center">
-    <img src="../../img/Tutorial/04_ratation_pva_ja.png" />
-    <p>角速度</p>
-    </div>
-    
-    入力した後、再生すると...何も変わりません！
-    これは、スプライトによる描画の初期設定では、パーティクルが回転しても必ず長方形が正面に向くようになっているからです。
-    
-    「描画」ウインドウから配置方法をZ軸回転ビルボードに変更します。
-    Z軸回転ビルボードは長方形は正面を向きつつも、Z軸の回転は有効になる配置方法です。
-    
-    
-    <div align="center">
-    <img src="../../img/Tutorial/04_conf_ja.png" />
-    <p>配置方法</p>
-    </div>
-    
-    Z軸回転ビルボードにすると、長方形がZ方向(正面方向)を軸に回転していることがわかります。
-    
-    <div align="center">
-    <img src="../../img/Tutorial/04_rotate.gif" />
-    <p>回転</p>
-    </div>
-    
-    
-    ### 拡大
-    
-    位置、回転と同じように、パーティクルを拡大できます。
-    拡大は「拡大」ウインドウから指定できます。
-    
-    <div align="center">
-    <img src="../../img/Tutorial/04_scale_ja.png" />
-    <p>「拡大」ウインドウ</p>
-    </div>
-    
-    位置、回転と同じように、回転にも複数を指定方法があります。
-    初期設定では、拡大率が選択されています。
-    これを、単一拡大率・速度・加速度に変更します。
-    そして、拡大速度に0.01を入力します。
-    
-    拡大率もX,Y,Z方向個別に設定することはできますが、全方向に対して拡大率が同じことが多いです。
-    そのため、単一の拡大率を設定できるようにしています。
-    
-    <div align="center">
-    <img src="../../img/Tutorial/04_scale_pva_ja.png" />
-    <p>拡大速度</p>
-    </div>
-    
-    スプライトが回転しつつ、拡大していることがわかります。
-    
-    <div align="center">
-    <img src="../../img/Tutorial/04_scale.gif" />
-    <p>拡大</p>
-    </div>
-    
-    ## スプライトの形状
-    
-    スプライトは今まで正方形でしたが、これを長方形や台形等に変更できます。
-    
-    「描画」ウインドウから頂点座標を、標準から固定に変更します。
-    そうすると、長方形の頂点の座標を設定できるようになります。
-    
-    今回は、縦長にするために、以下のように入力しましょう。
-    
-    <div align="center">
-    <img src="../../img/Tutorial/04_v_ja.png" />
-    <p>頂点座標</p>
-    </div>
-    
-    パーティクルが縦長になっていることがわかります。
-    
-    <div align="center">
-    <img src="../../img/Tutorial/04_shape.gif" />
-    <p>頂点座標</p>
-    </div>
-    
-    ## 仕上げ
-    
-    このままでは見栄えが良くないので、下記の変更を行いました。
-    
-    ###「共通」ウインドウ
-    
-    生成数を10に変更
-    
-    ###「位置」ウインドウ
-    
-    -位置・速度・加速度に変更
-    -位置の振幅を2に変更
-    
-    ###「描画共通」ウインドウ
-    
-    色/歪み画像にparticle.pngを選択
-    
-    ブレンドを加算に変更
-    
-    ###「回転」ウインドウ
-    
-    角度の振幅を180に変更
-    
-    ###「拡大」ウインドウ
-    
-    拡大率を0に変更
-    
-    ### 結果
-    
-    これらのパラメーターの変更方法がわからない方は1～3章を復習してみてください。
-    
-    <div align="center">
-    <img src="../../img/Tutorial/04_completed.gif" />
-    <p>完成</p>
-    </div>
-    
-    最後に、本章で作成されたエフェクトをダウンロードできるようにしてみました。
-    
-    <div align="center">
-    <a href="../../Sample/04_02_Sample.zip">ダウンロード</a>
-    </div>
-    
-    ## まとめ
-    
-    本章では、スプライトの回転や拡大について説明します。
-    次章では、今までの知識を生かして実践的なエフェクトを作成します。
-    
-    </div>
-    
-    
-  </body>
+  <meta name="generator" content="pandoc">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>No04. 回転、拡大してみよう！</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="stylesheet" href="../base.css">
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header>
+<h1 class="title">No04. 回転、拡大してみよう！</h1>
+</header>
+<div class="main">
+<h1>No04. 回転、拡大してみよう！</h1>
+<h2>概要</h2>
+<p>本章では、パーティクルを回転したり、拡大したりします。 また、スプライトの形状を正方形から長方形に変えてみます。 それにより、複雑なエフェクトを作成できるようになります。</p>
+<div align="center">
+<img src="../../img/Tutorial/04_completed.gif">
+<p>
+本章で作成するエフェクト
+</p>
+</div>
+<h2>回転と拡大</h2>
+<p>あらかじめ作成途中のエフェクトを下記のリンクからダウンロードできるようにしました。</p>
+<div align="center">
+<p><a href = "../../Sample/04_01_Sample.zip">ダウンロード</a></p>
+</div>
+<h3>回転</h3>
+<p>早速、パーティクルを回転させてみましょう。 回転は「回転」ウインドウから指定できます。</p>
+<div align="center">
+<img src="../../img/Tutorial/04_rotation_ja.png">
+<p>
+「回転」ウインドウ
+</p>
+</div>
+<p>位置と同じように、回転にも複数を指定方法があります。 初期設定では、角度が選択されています。 これを、位置・速度・加速度に変更します。 そして、速度のzに5を入力します。</p>
+<p>これは、Z方向(正面方向)を軸として1フレームに5度回転することを表しています。</p>
+<div align="center">
+<img src="../../img/Tutorial/04_ratation_pva_ja.png">
+<p>
+角速度
+</p>
+</div>
+<p>入力した後、再生すると...何も変わりません！ これは、スプライトによる描画の初期設定では、パーティクルが回転しても必ず長方形が正面に向くようになっているからです。</p>
+<p>「描画」ウインドウから配置方法をZ軸回転ビルボードに変更します。 Z軸回転ビルボードは長方形は正面を向きつつも、Z軸の回転は有効になる配置方法です。</p>
+<div align="center">
+<img src="../../img/Tutorial/04_conf_ja.png">
+<p>
+配置方法
+</p>
+</div>
+<p>Z軸回転ビルボードにすると、長方形がZ方向(正面方向)を軸に回転していることがわかります。</p>
+<div align="center">
+<img src="../../img/Tutorial/04_rotate.gif">
+<p>
+回転
+</p>
+</div>
+<h3>拡大</h3>
+<p>位置、回転と同じように、パーティクルを拡大できます。 拡大は「拡大」ウインドウから指定できます。</p>
+<div align="center">
+<img src="../../img/Tutorial/04_scale_ja.png">
+<p>
+「拡大」ウインドウ
+</p>
+</div>
+<p>位置、回転と同じように、回転にも複数を指定方法があります。 初期設定では、拡大率が選択されています。 これを、単一拡大率・速度・加速度に変更します。 そして、拡大速度に0.01を入力します。</p>
+<p>拡大率もX,Y,Z方向個別に設定することはできますが、全方向に対して拡大率が同じことが多いです。 そのため、単一の拡大率を設定できるようにしています。</p>
+<div align="center">
+<img src="../../img/Tutorial/04_scale_pva_ja.png">
+<p>
+拡大速度
+</p>
+</div>
+<p>スプライトが回転しつつ、拡大していることがわかります。</p>
+<div align="center">
+<img src="../../img/Tutorial/04_scale.gif">
+<p>
+拡大
+</p>
+</div>
+<h2>スプライトの形状</h2>
+<p>スプライトは今まで正方形でしたが、これを長方形や台形等に変更できます。</p>
+<p>「描画」ウインドウから頂点座標を、標準から固定に変更します。 そうすると、長方形の頂点の座標を設定できるようになります。</p>
+<p>今回は、縦長にするために、以下のように入力しましょう。</p>
+<div align="center">
+<img src="../../img/Tutorial/04_v_ja.png">
+<p>
+頂点座標
+</p>
+</div>
+<p>パーティクルが縦長になっていることがわかります。</p>
+<div align="center">
+<img src="../../img/Tutorial/04_shape.gif">
+<p>
+頂点座標
+</p>
+</div>
+<h2>仕上げ</h2>
+<p>このままでは見栄えが良くないので、下記の変更を行いました。</p>
+<h3>「共通」ウインドウ</h3>
+<p>生成数を10に変更</p>
+<h3>「位置」ウインドウ</h3>
+<p>-位置・速度・加速度に変更 -位置の振幅を2に変更</p>
+<h3>「描画共通」ウインドウ</h3>
+<p>色/歪み画像にparticle.pngを選択</p>
+<p>ブレンドを加算に変更</p>
+<h3>「回転」ウインドウ</h3>
+<p>角度の振幅を180に変更</p>
+<h3>「拡大」ウインドウ</h3>
+<p>拡大率を0に変更</p>
+<h3>結果</h3>
+<p>これらのパラメーターの変更方法がわからない方は1～3章を復習してみてください。</p>
+<div align="center">
+<img src="../../img/Tutorial/04_completed.gif">
+<p>
+完成
+</p>
+</div>
+<p>最後に、本章で作成されたエフェクトをダウンロードできるようにしてみました。</p>
+<div align="center">
+<p><a href = "../../Sample/04_02_Sample.zip">ダウンロード</a></p>
+</div>
+<h2>まとめ</h2>
+<p>本章では、スプライトの回転や拡大について説明します。 次章では、今までの知識を生かして実践的なエフェクトを作成します。</p>
+</div>
+</body>
 </html>
