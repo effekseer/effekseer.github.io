@@ -1,64 +1,217 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
-
 <head>
-	<meta charset=utf-8>
-	<title>No05.実例「斬撃」</title>
-	<link href="../base.css" rel="stylesheet" type="text/css" />
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>No07. Let's move complicated with parent-child relationships!</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="stylesheet" href="../base.css">
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
 </head>
-
 <body>
-	<div class="main">
-		<h1>No05.実例「斬撃」</h1>
-		
-		<h2>はじめに</h2>
-		<p>
-この項目では実際に斬撃のエフェクトを作成してみます。剣で切るようなエフェクトということで、真ん中に剣線が入り、周囲に細かい衝撃が飛ぶようなエフェクトが発生します。
-		</p>
-		
-		<h2>剣線</h2>
-		<p>
-剣線を作成します。攻撃した瞬間は小さいですが、その直後に伸びるようにしてみます。まず、剣線の時間を20フレームと仮定し、「ビュワー操作」画面から「終了」を30フレーム、「ループ」にチェックを入れておきます。こうすることにより、「ビュワー」画面で連続で再生しつつ編集ができます。次に、「生成時間」を20フレームに変更します。こうすることで20フレームで消えるようになります。最後に、「拡大」画面で拡大するにします。今回はイージングを使用し、最終的に縦に長くなるように編集しました。実際に変更してみたエフェクトは「tutorial05_1.efkproj」として保存されています。
-		</p>
-
-		<img src="img/05_01.png">
-		
-		<p>
-色を適用します。「描画」画面から、「ブレンド」を加算に変更、そして今回はピンク色の斬撃にしたいので、「全体色」にはイージングを指定し、ピンク色から透明な白に変化するようにします。そして、最後に「Line01.png」という細い線が描いてあるテクスチャを設定します。これで縦方向の剣線ができました。実際に変更してみたエフェクトは「tutorial05_2.efkproj」として保存されています。
-		</p>
-
-		<img src="img/05_02.png">
-		
-		<p>
-このままでは、縦の剣線です。これはこれでありですが、折角なので斜め45度に切ってみましょう。ビルボードのままでは回転が適用されないので、まず「配置方法」を「Z軸回転」に変更します。これで、Z軸の回転が適用されるようになりました。そして、Z軸の回転角度を-45度に指定します。こうすることで、斜めの剣線ができます。実際に変更してみたエフェクトは「tutorial05_3.efkproj」として保存されています。
-		</p>
-
-		<img src="img/05_03.png">
-
-		<h2>衝撃</h2>
-		<p>
-次に、周囲の衝撃部分を作成します。まず、「ノードツリー」から「Root」を選択し、ノードの追加を行います。次に、先ほどのノードをコピーして、今作成したノードに貼り付けます。このままでは重なってしまうので、回転角度を振幅180度で回転するようにします。また、数も足りないので「生成数」も10に増やします。そして、拡大を弄り小さめにします。そうすることで小さめの衝撃っぽいのができます。実際に変更してみたエフェクトは「tutorial05_4.efkproj」として保存されています。
-		</p>
-
-		<img src="img/05_04.png">
-
-		<p>
-これでは、まだ物足りないので、円形のエフェクトを追加します。「Root」を選択し、ノードの追加を行います。「生存時間」を20に、拡大縮小を調整し、拡大するようにします。テクスチャには「Particle01.png」を使用します。色もピンク色に加算するようにしましょう。そうすると、大分それっぽくなります。実際に変更してみたエフェクトは「tutorial05_5.efkproj」として保存されています。
-		</p>
-
-		<img src="img/05_05.png">
-
-		<p>
-これでも、まだ物足りないので、さらに円形のエフェクトを追加します。「Root」を選択し、ノードの追加を行います。そして先ほど作成したノードをコピーして貼り付けます。テクスチャには「Particle03.png」を使用し、透明度等を調節します。そうすると最終的にこのようになりました。実際に変更してみたエフェクトは「tutorial05_6.efkproj」として保存されています。
-		</p>
-
-		<img src="img/05_06.png">
-
-		<h2>最後に</h2>
-		<p>
-今回、あっさり説明していますが、その途中で何度も試行錯誤してみます。綺麗なエフェクトを作成するには試行錯誤が大事です。
-		</p>
-	</div>
+<header>
+<h1 class="title">No07. Let's move complicated with parent-child relationships!</h1>
+</header>
+<div class="main">
+<h2>Overview</h2>
+<p>In this chapter, you will create complicated effects using the parent-child relationships of nodes. Somewhat, this chapter is difficult. Let's understand firmly.</p>
+<div align="center">
+<table>
+<tr>
+<td>
+<div align="center">
+<img src="../../img/Tutorial/07_effect1.gif">
+<p>
+Effect No.1 created in this chapter
+</p>
+</div>
+</td>
+<td>
+<div align="center">
+<img src="../../img/Tutorial/07_effect2.gif">
+<p>
+Effect No.2 created in this chapter
+</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<h2>Parent-child relationships</h2>
+<p>In Effekseer, nodes have parent-child relationships. With parent-child relationships, parent nodes have various influences on child nodes.</p>
+<p>For example, you suppose that Node A and Node B exists. Node A is the parent of Node B. At this time, the particles generated from Node B are generated, moved, rotated and enlarged around the particles of Node A. It is hard to understand by words, so it displays the image.</p>
+<p>The particles of node A are red, and the particles of node B are green. It turns out that the particle B is rotating about the particle A that is moving and rotating.</p>
+<div align="center">
+<img src="../../img/Tutorial/07_parent.gif">
+<p>
+Parent-child relationships
+</p>
+</div>
+<p>By using parent-child relationships, you can create complicated effects. For example, you can create an effect that emits child particles from parent particles. In the sample, the parent elongated particles move while generating a large amount of child snow particles from the tip of the parent particles.</p>
+<div align="center">
+<img src="../../img/Tutorial/07_sample.gif">
+<p>
+Sample
+</p>
+</div>
+<p>
+We made it possible to download the effect created in advance from the link below.
+</p>
+<div align="center">
+<p>
+<a href = "../../Sample/07_01_Sample.zip">Download</a>
+</p>
+</div>
+<h2>Tornado effect</h2>
+<p>Using the parent-child relationships, you create a tornado effect.</p>
+<p>Please open effect1.efkproj.</p>
+<p>This effect consists of parent particles that control rotation and child particles that draw images. You create in order of parent node and child node.</p>
+<h3>Parent node</h3>
+<p>The parent node only rotates. Parameters have also been set.</p>
+<div align="center">
+<img src="../../img/Tutorial/07_effect1_rotate1.gif">
+<p>
+Rotation
+</p>
+</div>
+<h3>Child node</h3>
+<p>You add a child node. You left click on the parent node to select it. Then right click and display the menu. From the menu, you choose Add Node.</p>
+<div align="center">
+<img src="../../img/Tutorial/07_addnode_en.png">
+<p>
+Add node
+</p>
+</div>
+<p>Please left click on the added node and select it. For a child node, specify the parameters so that the particles move upward.</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Window</th>
+<th style="text-align: left;">Value type</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Position</td>
+<td style="text-align: left;">Position Method</td>
+<td style="text-align: left;">PVA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Position</td>
+<td style="text-align: left;">Pos(Mean)</td>
+<td style="text-align: left;">x=2, y=0, z= 0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Position</td>
+<td style="text-align: left;">Spead(Mean)</td>
+<td style="text-align: left;">x=0, y=0.5, z= 0</td>
+</tr>
+</tbody>
+</table>
+<p>You can see that the child's particles are moving according to the rotation of the parent particles.</p>
+<div align="center">
+<img src="../../img/Tutorial/07_effect1_rotate2.gif">
+<p>
+Rotation
+</p>
+</div>
+<p>In addition, specify the following parameters for better appearance.</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Window</th>
+<th style="text-align: left;">Value type</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Basic Settings</td>
+<td style="text-align: left;">Name</td>
+<td style="text-align: left;">Child</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Basic Settings</td>
+<td style="text-align: left;">Spawn Count</td>
+<td style="text-align: left;">Infinity</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Position</td>
+<td style="text-align: left;">Pos(Mean)</td>
+<td style="text-align: left;">x=0, y=0, z= 0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Position</td>
+<td style="text-align: left;">Pos(Deviation)</td>
+<td style="text-align: left;">x=3, y=3, z= 3</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Basic Render Settings</td>
+<td style="text-align: left;">Texture</td>
+<td style="text-align: left;">Partcle1.png</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Basic Render Settings</td>
+<td style="text-align: left;">Blend</td>
+<td style="text-align: left;">Additive</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Render Settings</td>
+<td style="text-align: left;">ColorAll</td>
+<td style="text-align: left;">Random</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Render Settings</td>
+<td style="text-align: left;">ColorAll(Mean)</td>
+<td style="text-align: left;">255,191,192,255</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Render Settings</td>
+<td style="text-align: left;">ColorAll(Deviation)</td>
+<td style="text-align: left;">0,64,64,0</td>
+</tr>
+</tbody>
+</table>
+<p>The effect looks better.</p>
+<div align="center">
+<img src="../../img/Tutorial/07_effect1.gif">
+<p>
+Completed effect
+</p>
+</div>
+<h2>Meteor effect</h2>
+<p>Using the parent-child relationships, you create a meteor effect.</p>
+<p>Please open effect2.efkproj.</p>
+<p>In Effekseer, parent-child relationships can be cut off at the moment when child particles are generated. Child particles are generated around the parent particle when the child particles are generated. After that, even if the parent particles move or rotate, it will not affect child particles.</p>
+<p>You will create a meteor effect using this function.</p>
+<h3>Parent node</h3>
+<p>The parent node only moves. Parameters have also been set.</p>
+<h3>Child node</h3>
+<p>You spread the particles around. Parameters have already been set.</p>
+<p>However, &quot;Inherit Position&quot;, &quot;Inherit Rotation&quot;, and &quot;Inherit Scale&quot; are &quot;Always&quot;. With &quot;Always&quot;, even after child particles are generated, child particles continue to be affected by parent particles. In other words, the child particle moves according to the movement of the parent particle.</p>
+<div align="center">
+<img src="../../img/Tutorial/07_effect2_always.gif">
+<p>
+Always
+</p>
+</div>
+<p>From the &quot;Basic settings&quot; windows, change the parameter to &quot;Inherit Position&quot;, &quot;Inherit Rotation&quot;, and &quot;Inherit Scale&quot; to &quot;Only on create&quot;. Then you can see that even if the parent particles move, the child particles do not move according to the parent.</p>
+<div align="center">
+<img src="../../img/Tutorial/07_effect2.gif">
+<p>
+Only on create
+</p>
+</div>
+<p>Finally, I made it possible to download the effect created in this chapter.</p>
+<div align="center">
+<p><a href = "../../Sample/07_02_Sample.zip">Download</a></p>
+</div>
+<h2>Summary</h2>
+<p>In this chapter, you created complex effects using parent-child relationships. In the next chapter, you change the spawn method and arrange the particles circularly or linearly.</p>
+</div>
 </body>
-
 </html>

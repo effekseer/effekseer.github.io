@@ -131,7 +131,7 @@ table {
 	border-collapse: collapse;
 }
 table th {
-	padding: 6px;
+	padding: 4px 16px;
 	text-align: center;
 	vertical-align: top;
 	color: #333;
@@ -139,7 +139,7 @@ table th {
 	border: 1px solid #b9b9b9;
 }
 table td {
-	padding: 6px;
+	padding: 4px 16px;
 	background-color: #fff;
 	border: 1px solid #b9b9b9;
 }
