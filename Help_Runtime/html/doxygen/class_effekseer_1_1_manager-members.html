@@ -3,16 +3,15 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.8.5"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Effekseer: メンバ一覧</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/javascript">
-  $(document).ready(function() { searchBox.OnSelectItem(0); });
-</script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -21,7 +20,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td style="padding-left: 0.5em;">
+  <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Effekseer
    </div>
   </td>
@@ -30,47 +29,25 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- 作成： Doxygen 1.8.5 -->
+<!-- 構築: Doxygen 1.8.13 -->
 <script type="text/javascript">
 var searchBox = new SearchBox("searchBox", "search",false,'検索');
 </script>
-  <div id="navrow1" class="tabs">
-    <ul class="tablist">
-      <li><a href="index.html"><span>メインページ</span></a></li>
-      <li class="current"><a href="annotated.html"><span>クラス</span></a></li>
-      <li><a href="files.html"><span>ファイル</span></a></li>
-      <li>
-        <div id="MSearchBox" class="MSearchBoxInactive">
-        <span class="left">
-          <img id="MSearchSelect" src="search/mag_sel.png"
-               onmouseover="return searchBox.OnSearchSelectShow()"
-               onmouseout="return searchBox.OnSearchSelectHide()"
-               alt=""/>
-          <input type="text" id="MSearchField" value="検索" accesskey="S"
-               onfocus="searchBox.OnSearchFieldFocus(true)" 
-               onblur="searchBox.OnSearchFieldFocus(false)" 
-               onkeyup="searchBox.OnSearchFieldChange(event)"/>
-          </span><span class="right">
-            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
-          </span>
-        </div>
-      </li>
-    </ul>
-  </div>
-  <div id="navrow2" class="tabs2">
-    <ul class="tablist">
-      <li><a href="annotated.html"><span>構成</span></a></li>
-      <li><a href="classes.html"><span>構成索引</span></a></li>
-      <li><a href="hierarchy.html"><span>クラス階層</span></a></li>
-      <li><a href="functions.html"><span>構成メンバ</span></a></li>
-    </ul>
-  </div>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全て</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>クラス</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>関数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>変数</a></div>
+</div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -90,7 +67,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'検索');
 </div><!--header-->
 <div class="contents">
 
-<p>これは全メンバの一覧です。<a class="el" href="class_effekseer_1_1_manager.html">Effekseer::Manager</a>継承メンバも含んでいます。</p>
+<p>継承メンバを含む <a class="el" href="class_effekseer_1_1_manager.html">Effekseer::Manager</a> の全メンバ一覧です。</p>
 <table class="directory">
   <tr class="even"><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html#a8f391814f681fc7acc4e8ed785c80cbc">AddLocation</a>(Handle handle, const Vector3D &amp;location)=0</td><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html">Effekseer::Manager</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_effekseer_1_1_i_reference.html#a3e3b54e8e5081e24f5784e4f9b8f6257">AddRef</a>()=0</td><td class="entry"><a class="el" href="class_effekseer_1_1_i_reference.html">Effekseer::IReference</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
@@ -115,20 +92,22 @@ var searchBox = new SearchBox("searchBox", "search",false,'検索');
   <tr class="even"><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html#aa5d7a667c75a81bc30f65483535b6a7f">GetMatrix</a>(Handle handle)=0</td><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html">Effekseer::Manager</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html#a6afd86fbdfb8b3e6d12c9a80bfb3f80e">GetModelLoader</a>()=0</td><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html">Effekseer::Manager</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html#a6ed37b18b9e99ff77f9608da3f4db93a">GetModelRenderer</a>()=0</td><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html">Effekseer::Manager</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html#a1694b05f00253f9468d4692e4e5f462b">GetRandFunc</a>() const =0</td><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html">Effekseer::Manager</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html#a2ae8c1ff28fedf995f65a3a6c83d840a">GetRandMax</a>() const =0</td><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html">Effekseer::Manager</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_effekseer_1_1_i_reference.html#a95274c788c8c03d27a3e424facc728b6">GetRef</a>()=0</td><td class="entry"><a class="el" href="class_effekseer_1_1_i_reference.html">Effekseer::IReference</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html#acd60c8fb65e5189dd9fb5ed7d3e7cc71">GetRestInstancesCount</a>() const =0</td><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html">Effekseer::Manager</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html#a9173c3b04e430de83f5096fe28cff9e1">GetRibbonRenderer</a>()=0</td><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html">Effekseer::Manager</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html#a20dcb7324f1b4137cbcd872cfd90def2">GetRingRenderer</a>()=0</td><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html">Effekseer::Manager</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html#ac32fce48f01429c6274b6237b61ec47d">GetSetting</a>()=0</td><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html">Effekseer::Manager</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html#af30924b879f3463d504991bf9780dfac">GetPaused</a>(Handle handle)=0</td><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html">Effekseer::Manager</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html#a1694b05f00253f9468d4692e4e5f462b">GetRandFunc</a>() const =0</td><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html">Effekseer::Manager</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html#a2ae8c1ff28fedf995f65a3a6c83d840a">GetRandMax</a>() const =0</td><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html">Effekseer::Manager</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_effekseer_1_1_i_reference.html#a95274c788c8c03d27a3e424facc728b6">GetRef</a>()=0</td><td class="entry"><a class="el" href="class_effekseer_1_1_i_reference.html">Effekseer::IReference</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html#acd60c8fb65e5189dd9fb5ed7d3e7cc71">GetRestInstancesCount</a>() const =0</td><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html">Effekseer::Manager</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html#a9173c3b04e430de83f5096fe28cff9e1">GetRibbonRenderer</a>()=0</td><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html">Effekseer::Manager</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html#a20dcb7324f1b4137cbcd872cfd90def2">GetRingRenderer</a>()=0</td><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html">Effekseer::Manager</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html#ac32fce48f01429c6274b6237b61ec47d">GetSetting</a>()=0</td><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html">Effekseer::Manager</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html#a200e7b1812c128a4d88cca7d1be57c0e">GetShown</a>(Handle handle)=0</td><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html">Effekseer::Manager</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html#a9d6e1710083866bf1fc8953f340df002">GetSoundLoader</a>()=0</td><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html">Effekseer::Manager</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html#a2c176faba545ccc52b2255dc905f96b5">GetSoundPlayer</a>()=0</td><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html">Effekseer::Manager</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html#a64de7501affd3c08106b0442a4e2a76c">GetSpriteRenderer</a>()=0</td><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html">Effekseer::Manager</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html#ae143d53bb483cb38d6371eff52d1a833">GetTextureLoader</a>()=0</td><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html">Effekseer::Manager</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html#a0ad29aecf744eeba8896cb6fa77488cf">GetTrackRenderer</a>()=0</td><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html">Effekseer::Manager</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html#a0f5a05a0911243b56fe6aaa259d677df">GetUpdateTime</a>() const =0</td><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html">Effekseer::Manager</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>Manager</b>() (次で定義されています。 <a class="el" href="class_effekseer_1_1_manager.html">Effekseer::Manager</a>)</td><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html">Effekseer::Manager</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">protected</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>Manager</b>() (定義場所: <a class="el" href="class_effekseer_1_1_manager.html">Effekseer::Manager</a>)</td><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html">Effekseer::Manager</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">protected</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html#a5ea3211a3670843061238976dda54a4f">Play</a>(Effect *effect, float x, float y, float z)=0</td><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html">Effekseer::Manager</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_effekseer_1_1_i_reference.html#ad8d601188c0f088f4748aa2da8758bb5">Release</a>()=0</td><td class="entry"><a class="el" href="class_effekseer_1_1_i_reference.html">Effekseer::IReference</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html#a15bf6eee981b682ed35b7660e8caf435">RessignCulling</a>()=0</td><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html">Effekseer::Manager</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
@@ -144,37 +123,38 @@ var searchBox = new SearchBox("searchBox", "search",false,'検索');
   <tr><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html#a994104b9b353a09861d27ec87b09fa1c">SetModelLoader</a>(ModelLoader *modelLoader)=0</td><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html">Effekseer::Manager</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html#aa423ee424d0b713ac4939fc7faf39b9c">SetModelRenderer</a>(ModelRenderer *renderer)=0</td><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html">Effekseer::Manager</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html#a6414ea849302b7cef51b61a38c7ecd76">SetPaused</a>(Handle handle, bool paused)=0</td><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html">Effekseer::Manager</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html#acff5857772ae9674b6f96ffd4de28f69">SetRandFunc</a>(RandFunc func)=0</td><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html">Effekseer::Manager</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html#ad2e4e1458d5e1091f5cb8073ae8e60eb">SetRandMax</a>(int max_)=0</td><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html">Effekseer::Manager</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html#a62c24747994008dfcb84a0adcd53b3ad">SetRemovingCallback</a>(Handle handle, EffectInstanceRemovingCallback callback)=0</td><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html">Effekseer::Manager</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html#afe6fa26d93c9c80a0afb8f4fbe0afe20">SetRibbonRenderer</a>(RibbonRenderer *renderer)=0</td><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html">Effekseer::Manager</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html#afe6f77af79fd2bea3a36eed5b5dea383">SetRingRenderer</a>(RingRenderer *renderer)=0</td><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html">Effekseer::Manager</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html#aab0df458615143d664e8f84d176a5be6">SetRotation</a>(Handle handle, float x, float y, float z)=0</td><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html">Effekseer::Manager</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html#ab47844dad076bb833b0176e877736cfa">SetRotation</a>(Handle handle, const Vector3D &amp;axis, float angle)=0</td><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html">Effekseer::Manager</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html#a14e45b2fc8ff1d2df98ce94c70b8cde1">SetScale</a>(Handle handle, float x, float y, float z)=0</td><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html">Effekseer::Manager</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html#a4de59a95985d8042b5f82fca2c31b985">SetSetting</a>(Setting *setting)=0</td><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html">Effekseer::Manager</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html#ad204b93de6e5c7a05c63cad0115c20d5">SetShown</a>(Handle handle, bool shown)=0</td><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html">Effekseer::Manager</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html#afc9015a7a866accf73ab3b295bff8e06">SetSoundLoader</a>(SoundLoader *soundLoader)=0</td><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html">Effekseer::Manager</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html#af08602f559cd1f75bcaacfd8b1ec0840">SetSoundPlayer</a>(SoundPlayer *soundPlayer)=0</td><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html">Effekseer::Manager</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html#aa85b08562c442cfdce24781158a71431">SetSpeed</a>(Handle handle, float speed)=0</td><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html">Effekseer::Manager</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html#a1b4f22221e7068d6604c18aa4ca4b80e">SetSpriteRenderer</a>(SpriteRenderer *renderer)=0</td><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html">Effekseer::Manager</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html#a3c709343770c431420772ab3ca6639e1">SetTargetLocation</a>(Handle handle, float x, float y, float z)=0</td><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html">Effekseer::Manager</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html#a193e7d5d036ff717ba3755c1fda03758">SetTargetLocation</a>(Handle handle, const Vector3D &amp;location)=0</td><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html">Effekseer::Manager</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html#a35915c6406f06e7502abed5eeba6ee51">SetTextureLoader</a>(TextureLoader *textureLoader)=0</td><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html">Effekseer::Manager</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html#a7bff3a7ec23d6ae4a66b6f6ba4bd58fc">SetTrackRenderer</a>(TrackRenderer *renderer)=0</td><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html">Effekseer::Manager</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html#a65a6043aace92f52bcb8f7fc1052d3f0">StopAllEffects</a>()=0</td><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html">Effekseer::Manager</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html#a7a4a9ff929146f8ea21aa4705b352baa">StopEffect</a>(Handle handle)=0</td><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html">Effekseer::Manager</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html#adbde475d5977ca36c0a3a4c1e6878b33">StopRoot</a>(Handle handle)=0</td><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html">Effekseer::Manager</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html#ad7989b68ceb3125cf6ef0d4062462a3d">StopRoot</a>(Effect *effect)=0</td><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html">Effekseer::Manager</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html#ac086ec64cb5f99172e8bf655b77e1464">Update</a>(float deltaFrame=1.0f)=0</td><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html">Effekseer::Manager</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html#afe8a0df796e161f68a511540c76df839">UpdateHandle</a>(Handle handle, float deltaFrame=1.0f)=0</td><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html">Effekseer::Manager</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>~Manager</b>() (次で定義されています。 <a class="el" href="class_effekseer_1_1_manager.html">Effekseer::Manager</a>)</td><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html">Effekseer::Manager</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">protected</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html#a08c4c39a56fcc93b8acb284ff9bc933b">SetPausedToAllEffects</a>(bool paused)=0</td><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html">Effekseer::Manager</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html#acff5857772ae9674b6f96ffd4de28f69">SetRandFunc</a>(RandFunc func)=0</td><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html">Effekseer::Manager</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html#ad2e4e1458d5e1091f5cb8073ae8e60eb">SetRandMax</a>(int max_)=0</td><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html">Effekseer::Manager</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html#a62c24747994008dfcb84a0adcd53b3ad">SetRemovingCallback</a>(Handle handle, EffectInstanceRemovingCallback callback)=0</td><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html">Effekseer::Manager</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html#afe6fa26d93c9c80a0afb8f4fbe0afe20">SetRibbonRenderer</a>(RibbonRenderer *renderer)=0</td><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html">Effekseer::Manager</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html#afe6f77af79fd2bea3a36eed5b5dea383">SetRingRenderer</a>(RingRenderer *renderer)=0</td><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html">Effekseer::Manager</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html#aab0df458615143d664e8f84d176a5be6">SetRotation</a>(Handle handle, float x, float y, float z)=0</td><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html">Effekseer::Manager</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html#ab47844dad076bb833b0176e877736cfa">SetRotation</a>(Handle handle, const Vector3D &amp;axis, float angle)=0</td><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html">Effekseer::Manager</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html#a14e45b2fc8ff1d2df98ce94c70b8cde1">SetScale</a>(Handle handle, float x, float y, float z)=0</td><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html">Effekseer::Manager</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html#a4de59a95985d8042b5f82fca2c31b985">SetSetting</a>(Setting *setting)=0</td><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html">Effekseer::Manager</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html#ad204b93de6e5c7a05c63cad0115c20d5">SetShown</a>(Handle handle, bool shown)=0</td><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html">Effekseer::Manager</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html#afc9015a7a866accf73ab3b295bff8e06">SetSoundLoader</a>(SoundLoader *soundLoader)=0</td><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html">Effekseer::Manager</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html#af08602f559cd1f75bcaacfd8b1ec0840">SetSoundPlayer</a>(SoundPlayer *soundPlayer)=0</td><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html">Effekseer::Manager</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html#aa85b08562c442cfdce24781158a71431">SetSpeed</a>(Handle handle, float speed)=0</td><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html">Effekseer::Manager</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html#a1b4f22221e7068d6604c18aa4ca4b80e">SetSpriteRenderer</a>(SpriteRenderer *renderer)=0</td><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html">Effekseer::Manager</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html#a3c709343770c431420772ab3ca6639e1">SetTargetLocation</a>(Handle handle, float x, float y, float z)=0</td><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html">Effekseer::Manager</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html#a193e7d5d036ff717ba3755c1fda03758">SetTargetLocation</a>(Handle handle, const Vector3D &amp;location)=0</td><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html">Effekseer::Manager</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html#a35915c6406f06e7502abed5eeba6ee51">SetTextureLoader</a>(TextureLoader *textureLoader)=0</td><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html">Effekseer::Manager</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html#a7bff3a7ec23d6ae4a66b6f6ba4bd58fc">SetTrackRenderer</a>(TrackRenderer *renderer)=0</td><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html">Effekseer::Manager</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html#a65a6043aace92f52bcb8f7fc1052d3f0">StopAllEffects</a>()=0</td><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html">Effekseer::Manager</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html#a7a4a9ff929146f8ea21aa4705b352baa">StopEffect</a>(Handle handle)=0</td><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html">Effekseer::Manager</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html#adbde475d5977ca36c0a3a4c1e6878b33">StopRoot</a>(Handle handle)=0</td><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html">Effekseer::Manager</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html#ad7989b68ceb3125cf6ef0d4062462a3d">StopRoot</a>(Effect *effect)=0</td><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html">Effekseer::Manager</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html#ac086ec64cb5f99172e8bf655b77e1464">Update</a>(float deltaFrame=1.0f)=0</td><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html">Effekseer::Manager</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html#afe8a0df796e161f68a511540c76df839">UpdateHandle</a>(Handle handle, float deltaFrame=1.0f)=0</td><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html">Effekseer::Manager</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>~Manager</b>() (定義場所: <a class="el" href="class_effekseer_1_1_manager.html">Effekseer::Manager</a>)</td><td class="entry"><a class="el" href="class_effekseer_1_1_manager.html">Effekseer::Manager</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">protected</span></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Effekseerに対してSun Aug 21 2016 22:51:34に生成されました。 &#160;<a href="http://www.doxygen.org/index.html">
+2017年10月31日(火) 22時33分34秒作成 - Effekseer / 構成:  &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.5
+</a> 1.8.13
 </small></address>
 </body>
 </html>

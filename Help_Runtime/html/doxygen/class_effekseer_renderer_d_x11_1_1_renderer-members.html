@@ -3,16 +3,15 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.8.5"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Effekseer: メンバ一覧</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/javascript">
-  $(document).ready(function() { searchBox.OnSelectItem(0); });
-</script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -21,7 +20,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td style="padding-left: 0.5em;">
+  <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Effekseer
    </div>
   </td>
@@ -30,47 +29,25 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- 作成： Doxygen 1.8.5 -->
+<!-- 構築: Doxygen 1.8.13 -->
 <script type="text/javascript">
 var searchBox = new SearchBox("searchBox", "search",false,'検索');
 </script>
-  <div id="navrow1" class="tabs">
-    <ul class="tablist">
-      <li><a href="index.html"><span>メインページ</span></a></li>
-      <li class="current"><a href="annotated.html"><span>クラス</span></a></li>
-      <li><a href="files.html"><span>ファイル</span></a></li>
-      <li>
-        <div id="MSearchBox" class="MSearchBoxInactive">
-        <span class="left">
-          <img id="MSearchSelect" src="search/mag_sel.png"
-               onmouseover="return searchBox.OnSearchSelectShow()"
-               onmouseout="return searchBox.OnSearchSelectHide()"
-               alt=""/>
-          <input type="text" id="MSearchField" value="検索" accesskey="S"
-               onfocus="searchBox.OnSearchFieldFocus(true)" 
-               onblur="searchBox.OnSearchFieldFocus(false)" 
-               onkeyup="searchBox.OnSearchFieldChange(event)"/>
-          </span><span class="right">
-            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
-          </span>
-        </div>
-      </li>
-    </ul>
-  </div>
-  <div id="navrow2" class="tabs2">
-    <ul class="tablist">
-      <li><a href="annotated.html"><span>構成</span></a></li>
-      <li><a href="classes.html"><span>構成索引</span></a></li>
-      <li><a href="hierarchy.html"><span>クラス階層</span></a></li>
-      <li><a href="functions.html"><span>構成メンバ</span></a></li>
-    </ul>
-  </div>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全て</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>クラス</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>関数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>変数</a></div>
+</div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -90,12 +67,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'検索');
 </div><!--header-->
 <div class="contents">
 
-<p>これは全メンバの一覧です。<a class="el" href="class_effekseer_renderer_d_x11_1_1_renderer.html">EffekseerRendererDX11::Renderer</a>継承メンバも含んでいます。</p>
+<p>継承メンバを含む <a class="el" href="class_effekseer_renderer_d_x11_1_1_renderer.html">EffekseerRendererDX11::Renderer</a> の全メンバ一覧です。</p>
 <table class="directory">
   <tr class="even"><td class="entry"><a class="el" href="class_effekseer_renderer_1_1_renderer.html#a79aa204f1344347d8e111432d6d5bf5f">BeginRendering</a>()=0</td><td class="entry"><a class="el" href="class_effekseer_renderer_1_1_renderer.html">EffekseerRenderer::Renderer</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_effekseer_renderer_1_1_renderer.html#a79aa204f1344347d8e111432d6d5bf5f">BeginRendering</a>()=0</td><td class="entry"><a class="el" href="class_effekseer_renderer_1_1_renderer.html">EffekseerRenderer::Renderer</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_effekseer_renderer_1_1_renderer.html#a79aa204f1344347d8e111432d6d5bf5f">BeginRendering</a>()=0</td><td class="entry"><a class="el" href="class_effekseer_renderer_1_1_renderer.html">EffekseerRenderer::Renderer</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_effekseer_renderer_d_x11_1_1_renderer.html#aff91fef520c56b264ca738a278fa573e">Create</a>(ID3D11Device *device, ID3D11DeviceContext *context, int32_t squareMaxCount)</td><td class="entry"><a class="el" href="class_effekseer_renderer_d_x11_1_1_renderer.html">EffekseerRendererDX11::Renderer</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_effekseer_renderer_d_x11_1_1_renderer.html#a9168af9cc450b6966dc74f0c767d1800">Create</a>(ID3D11Device *device, ID3D11DeviceContext *context, int32_t squareMaxCount, D3D11_COMPARISON_FUNC depthFunc=D3D11_COMPARISON_LESS)</td><td class="entry"><a class="el" href="class_effekseer_renderer_d_x11_1_1_renderer.html">EffekseerRendererDX11::Renderer</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_effekseer_renderer_1_1_renderer.html#ab35779830c25992af7a9a9d53423f817">CreateModelLoader</a>(::Effekseer::FileInterface *fileInterface=NULL)=0</td><td class="entry"><a class="el" href="class_effekseer_renderer_1_1_renderer.html">EffekseerRenderer::Renderer</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_effekseer_renderer_1_1_renderer.html#ab35779830c25992af7a9a9d53423f817">CreateModelLoader</a>(::Effekseer::FileInterface *fileInterface=NULL)=0</td><td class="entry"><a class="el" href="class_effekseer_renderer_1_1_renderer.html">EffekseerRenderer::Renderer</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_effekseer_renderer_1_1_renderer.html#ab35779830c25992af7a9a9d53423f817">CreateModelLoader</a>(::Effekseer::FileInterface *fileInterface=NULL)=0</td><td class="entry"><a class="el" href="class_effekseer_renderer_1_1_renderer.html">EffekseerRenderer::Renderer</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
@@ -117,13 +94,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'検索');
   <tr class="even"><td class="entry"><a class="el" href="class_effekseer_renderer_1_1_renderer.html#a38cff31386fce6fe0122a4ac5804fd8f">CreateTrackRenderer</a>()=0</td><td class="entry"><a class="el" href="class_effekseer_renderer_1_1_renderer.html">EffekseerRenderer::Renderer</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_effekseer_renderer_1_1_renderer.html#a38cff31386fce6fe0122a4ac5804fd8f">CreateTrackRenderer</a>()=0</td><td class="entry"><a class="el" href="class_effekseer_renderer_1_1_renderer.html">EffekseerRenderer::Renderer</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_effekseer_renderer_1_1_renderer.html#a38cff31386fce6fe0122a4ac5804fd8f">CreateTrackRenderer</a>()=0</td><td class="entry"><a class="el" href="class_effekseer_renderer_1_1_renderer.html">EffekseerRenderer::Renderer</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_effekseer_renderer_1_1_renderer.html#a3d30a7ee3e6326f64eb3b5564093e41a">Destory</a>()=0</td><td class="entry"><a class="el" href="class_effekseer_renderer_1_1_renderer.html">EffekseerRenderer::Renderer</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_effekseer_renderer_1_1_renderer.html#a3d30a7ee3e6326f64eb3b5564093e41a">Destory</a>()=0</td><td class="entry"><a class="el" href="class_effekseer_renderer_1_1_renderer.html">EffekseerRenderer::Renderer</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_effekseer_renderer_1_1_renderer.html#a3d30a7ee3e6326f64eb3b5564093e41a">Destory</a>()=0</td><td class="entry"><a class="el" href="class_effekseer_renderer_1_1_renderer.html">EffekseerRenderer::Renderer</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_effekseer_renderer_1_1_renderer.html#a8da94391eb26a2bd04830e4d7fcd0bd0">Destroy</a>()=0</td><td class="entry"><a class="el" href="class_effekseer_renderer_1_1_renderer.html">EffekseerRenderer::Renderer</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_effekseer_renderer_1_1_renderer.html#a8da94391eb26a2bd04830e4d7fcd0bd0">Destroy</a>()=0</td><td class="entry"><a class="el" href="class_effekseer_renderer_1_1_renderer.html">EffekseerRenderer::Renderer</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_effekseer_renderer_1_1_renderer.html#a8da94391eb26a2bd04830e4d7fcd0bd0">Destroy</a>()=0</td><td class="entry"><a class="el" href="class_effekseer_renderer_1_1_renderer.html">EffekseerRenderer::Renderer</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_effekseer_renderer_1_1_renderer.html#aaa6df6f62aead71652bdeb596d0a7ef4">EndRendering</a>()=0</td><td class="entry"><a class="el" href="class_effekseer_renderer_1_1_renderer.html">EffekseerRenderer::Renderer</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_effekseer_renderer_1_1_renderer.html#aaa6df6f62aead71652bdeb596d0a7ef4">EndRendering</a>()=0</td><td class="entry"><a class="el" href="class_effekseer_renderer_1_1_renderer.html">EffekseerRenderer::Renderer</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_effekseer_renderer_1_1_renderer.html#aaa6df6f62aead71652bdeb596d0a7ef4">EndRendering</a>()=0</td><td class="entry"><a class="el" href="class_effekseer_renderer_1_1_renderer.html">EffekseerRenderer::Renderer</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_effekseer_renderer_d_x11_1_1_renderer.html#aadbe072ebd42d1efd5bb62f6787a7ec3">GetBackground</a>()=0</td><td class="entry"><a class="el" href="class_effekseer_renderer_d_x11_1_1_renderer.html">EffekseerRendererDX11::Renderer</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_effekseer_renderer_d_x11_1_1_renderer.html#a8f66736db14e58554f1b1059816876c6">GetBackground</a>()=0</td><td class="entry"><a class="el" href="class_effekseer_renderer_d_x11_1_1_renderer.html">EffekseerRendererDX11::Renderer</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_effekseer_renderer_1_1_renderer.html#a9c386cbe84039115d2f7d224d8a9c41c">GetCameraMatrix</a>() const =0</td><td class="entry"><a class="el" href="class_effekseer_renderer_1_1_renderer.html">EffekseerRenderer::Renderer</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_effekseer_renderer_1_1_renderer.html#a9c386cbe84039115d2f7d224d8a9c41c">GetCameraMatrix</a>() const =0</td><td class="entry"><a class="el" href="class_effekseer_renderer_1_1_renderer.html">EffekseerRenderer::Renderer</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_effekseer_renderer_1_1_renderer.html#a9c386cbe84039115d2f7d224d8a9c41c">GetCameraMatrix</a>() const =0</td><td class="entry"><a class="el" href="class_effekseer_renderer_1_1_renderer.html">EffekseerRenderer::Renderer</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
@@ -155,7 +132,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'検索');
   <tr class="even"><td class="entry"><a class="el" href="class_effekseer_renderer_1_1_renderer.html#a2a4e579c8c8b6e368e37a854cbf4c0ec">OnResetDevice</a>()=0</td><td class="entry"><a class="el" href="class_effekseer_renderer_1_1_renderer.html">EffekseerRenderer::Renderer</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_effekseer_renderer_1_1_renderer.html#a2a4e579c8c8b6e368e37a854cbf4c0ec">OnResetDevice</a>()=0</td><td class="entry"><a class="el" href="class_effekseer_renderer_1_1_renderer.html">EffekseerRenderer::Renderer</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_effekseer_renderer_1_1_renderer.html#a2a4e579c8c8b6e368e37a854cbf4c0ec">OnResetDevice</a>()=0</td><td class="entry"><a class="el" href="class_effekseer_renderer_1_1_renderer.html">EffekseerRenderer::Renderer</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>Renderer</b>() (次で定義されています。 <a class="el" href="class_effekseer_renderer_d_x11_1_1_renderer.html">EffekseerRendererDX11::Renderer</a>)</td><td class="entry"><a class="el" href="class_effekseer_renderer_d_x11_1_1_renderer.html">EffekseerRendererDX11::Renderer</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">protected</span></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>Renderer</b>() (定義場所: <a class="el" href="class_effekseer_renderer_d_x11_1_1_renderer.html">EffekseerRendererDX11::Renderer</a>)</td><td class="entry"><a class="el" href="class_effekseer_renderer_d_x11_1_1_renderer.html">EffekseerRendererDX11::Renderer</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">protected</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_effekseer_renderer_1_1_renderer.html#a229d0aca027c72e6736db487efbbddeb">ResetRenderState</a>()=0</td><td class="entry"><a class="el" href="class_effekseer_renderer_1_1_renderer.html">EffekseerRenderer::Renderer</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_effekseer_renderer_1_1_renderer.html#a229d0aca027c72e6736db487efbbddeb">ResetRenderState</a>()=0</td><td class="entry"><a class="el" href="class_effekseer_renderer_1_1_renderer.html">EffekseerRenderer::Renderer</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_effekseer_renderer_1_1_renderer.html#a229d0aca027c72e6736db487efbbddeb">ResetRenderState</a>()=0</td><td class="entry"><a class="el" href="class_effekseer_renderer_1_1_renderer.html">EffekseerRenderer::Renderer</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
@@ -181,13 +158,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'検索');
   <tr class="even"><td class="entry"><a class="el" href="class_effekseer_renderer_1_1_renderer.html#ac6de8a0c0d65c03d3242ccfc9946c91c">SetRestorationOfStatesFlag</a>(bool flag)=0</td><td class="entry"><a class="el" href="class_effekseer_renderer_1_1_renderer.html">EffekseerRenderer::Renderer</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_effekseer_renderer_1_1_renderer.html#ac6de8a0c0d65c03d3242ccfc9946c91c">SetRestorationOfStatesFlag</a>(bool flag)=0</td><td class="entry"><a class="el" href="class_effekseer_renderer_1_1_renderer.html">EffekseerRenderer::Renderer</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_effekseer_renderer_1_1_renderer.html#ac6de8a0c0d65c03d3242ccfc9946c91c">SetRestorationOfStatesFlag</a>(bool flag)=0</td><td class="entry"><a class="el" href="class_effekseer_renderer_1_1_renderer.html">EffekseerRenderer::Renderer</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>~Renderer</b>() (次で定義されています。 <a class="el" href="class_effekseer_renderer_d_x11_1_1_renderer.html">EffekseerRendererDX11::Renderer</a>)</td><td class="entry"><a class="el" href="class_effekseer_renderer_d_x11_1_1_renderer.html">EffekseerRendererDX11::Renderer</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>~Renderer</b>() (定義場所: <a class="el" href="class_effekseer_renderer_d_x11_1_1_renderer.html">EffekseerRendererDX11::Renderer</a>)</td><td class="entry"><a class="el" href="class_effekseer_renderer_d_x11_1_1_renderer.html">EffekseerRendererDX11::Renderer</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Effekseerに対してSun Aug 21 2016 22:51:35に生成されました。 &#160;<a href="http://www.doxygen.org/index.html">
+2017年10月31日(火) 22時33分36秒作成 - Effekseer / 構成:  &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.5
+</a> 1.8.13
 </small></address>
 </body>
 </html>

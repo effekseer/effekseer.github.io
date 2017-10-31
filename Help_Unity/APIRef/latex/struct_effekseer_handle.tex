@@ -1,177 +1,189 @@
-\hypertarget{struct_effekseer_handle}{\section{Effekseer\-Handle Struct Reference}
-\label{struct_effekseer_handle}\index{Effekseer\-Handle@{Effekseer\-Handle}}
-}
-
-
-再生したエフェクトのインスタンスハンドル  
-
-
+\hypertarget{struct_effekseer_handle}{}\section{Effekseer\+Handle Struct Reference}
+\label{struct_effekseer_handle}\index{Effekseer\+Handle@{Effekseer\+Handle}}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{struct_effekseer_handle_a396167b208bb830dd0fcd65d677d0ab9}{{\bfseries Effekseer\-Handle} (int handle)}\label{struct_effekseer_handle_a396167b208bb830dd0fcd65d677d0ab9}
-
+\mbox{\Hypertarget{struct_effekseer_handle_ace59b89b09c1b0aefa13775e857b33dc}\label{struct_effekseer_handle_ace59b89b09c1b0aefa13775e857b33dc}} 
+{\bfseries Effekseer\+Handle} (int handle=-\/1)
 \item 
 void \hyperlink{struct_effekseer_handle_add31723e9d75fad60015c48dfe1bf785}{Stop} ()
-\begin{DoxyCompactList}\small\item\em エフェクトを停止する 全てのエフェクトが瞬時に消える \end{DoxyCompactList}\item 
-void \hyperlink{struct_effekseer_handle_ae16184a6f1770d63edf941941b8ad063}{Stop\-Root} ()
-\begin{DoxyCompactList}\small\item\em 再生中のエフェクトのルートノードだけを停止 ルートノードを削除したことで子ノード生成が停止され寿命で徐々に消える \end{DoxyCompactList}\item 
-void \hyperlink{struct_effekseer_handle_a65d631a161e475acac133b6db28d0070}{Set\-Location} (Vector3 location)
-\begin{DoxyCompactList}\small\item\em エフェクトの位置を設定 \end{DoxyCompactList}\item 
-void \hyperlink{struct_effekseer_handle_a54be425dc9d059e66fe00799f34e25cf}{Set\-Rotation} (Quaternion rotation)
-\begin{DoxyCompactList}\small\item\em エフェクトの回転を設定 \end{DoxyCompactList}\item 
-void \hyperlink{struct_effekseer_handle_a858d40ff7676ec5c2ae062596f52795b}{Set\-Scale} (Vector3 scale)
-\begin{DoxyCompactList}\small\item\em エフェクトの拡縮を設定 \end{DoxyCompactList}\item 
-void \hyperlink{struct_effekseer_handle_aa13ed72d63bdcf16ab9683261b92c855}{Set\-Target\-Location} (Vector3 target\-Location)
-\begin{DoxyCompactList}\small\item\em エフェクトのターゲット位置を設定 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\item 
+void \hyperlink{struct_effekseer_handle_ae16184a6f1770d63edf941941b8ad063}{Stop\+Root} ()
+\item 
+void \hyperlink{struct_effekseer_handle_a65d631a161e475acac133b6db28d0070}{Set\+Location} (Vector3 location)
+\item 
+void \hyperlink{struct_effekseer_handle_a54be425dc9d059e66fe00799f34e25cf}{Set\+Rotation} (Quaternion rotation)
+\item 
+void \hyperlink{struct_effekseer_handle_a858d40ff7676ec5c2ae062596f52795b}{Set\+Scale} (Vector3 scale)
+\item 
+void \hyperlink{struct_effekseer_handle_aa13ed72d63bdcf16ab9683261b92c855}{Set\+Target\+Location} (Vector3 target\+Location)
+\end{DoxyCompactItemize}
 \subsection*{Properties}
 \begin{DoxyCompactItemize}
 \item 
 bool \hyperlink{struct_effekseer_handle_a3ba9bf72308429369214fd10ebb86ca6}{paused}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
-\begin{DoxyCompactList}\small\item\em ポーズ設定 \end{DoxyCompactList}\item 
+\item 
 bool \hyperlink{struct_effekseer_handle_a96d0ebfe4cab721aaea0992b1750ae43}{shown}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
-\begin{DoxyCompactList}\small\item\em 表示設定 \end{DoxyCompactList}\item 
-bool \hyperlink{struct_effekseer_handle_a2eabd884f8b23833cbf69f3f9d9c875b}{enable}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
-\begin{DoxyCompactList}\small\item\em インスタンスハンドルが有効かどうか\par
- \end{DoxyCompactList}\item 
+\item 
+bool \hyperlink{struct_effekseer_handle_a5b5edae1257e381de00a7bf9f546b37c}{enabled}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
 bool \hyperlink{struct_effekseer_handle_ac1d253853e6471ce1e3c951491803c27}{exists}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
-\begin{DoxyCompactList}\small\item\em エフェクトのインスタンスが存在しているかどうか \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-再生したエフェクトのインスタンスハンドル 
+$<$summary xml\+:lang=\char`\"{}ja\char`\"{}$>$ A instance handle of played effect 
 
-
+$<$summary xml\+:lang=\char`\"{}ja\char`\"{}$>$ 再生したエフェクトのインスタンスハンドル 
 
 \subsection{Member Function Documentation}
-\hypertarget{struct_effekseer_handle_a65d631a161e475acac133b6db28d0070}{\index{Effekseer\-Handle@{Effekseer\-Handle}!Set\-Location@{Set\-Location}}
-\index{Set\-Location@{Set\-Location}!EffekseerHandle@{Effekseer\-Handle}}
-\subsubsection[{Set\-Location}]{\setlength{\rightskip}{0pt plus 5cm}void Effekseer\-Handle.\-Set\-Location (
-\begin{DoxyParamCaption}
-\item[{Vector3}]{location}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}}\label{struct_effekseer_handle_a65d631a161e475acac133b6db28d0070}
+\mbox{\Hypertarget{struct_effekseer_handle_a65d631a161e475acac133b6db28d0070}\label{struct_effekseer_handle_a65d631a161e475acac133b6db28d0070}} 
+\index{Effekseer\+Handle@{Effekseer\+Handle}!Set\+Location@{Set\+Location}}
+\index{Set\+Location@{Set\+Location}!Effekseer\+Handle@{Effekseer\+Handle}}
+\subsubsection{\texorpdfstring{Set\+Location()}{SetLocation()}}
+{\footnotesize\ttfamily void Effekseer\+Handle.\+Set\+Location (\begin{DoxyParamCaption}\item[{Vector3}]{location }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+$<$summary xml\+:lang=\char`\"{}en\char`\"{}$>$ Sets the effect location 
 
-エフェクトの位置を設定 
+$<$summary xml\+:lang=\char`\"{}ja\char`\"{}$>$ エフェクトの位置を設定 
 
 
 \begin{DoxyParams}{Parameters}
 {\em location} & 位置\\
 \hline
 \end{DoxyParams}
-\hypertarget{struct_effekseer_handle_a54be425dc9d059e66fe00799f34e25cf}{\index{Effekseer\-Handle@{Effekseer\-Handle}!Set\-Rotation@{Set\-Rotation}}
-\index{Set\-Rotation@{Set\-Rotation}!EffekseerHandle@{Effekseer\-Handle}}
-\subsubsection[{Set\-Rotation}]{\setlength{\rightskip}{0pt plus 5cm}void Effekseer\-Handle.\-Set\-Rotation (
-\begin{DoxyParamCaption}
-\item[{Quaternion}]{rotation}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}}\label{struct_effekseer_handle_a54be425dc9d059e66fe00799f34e25cf}
+\mbox{\Hypertarget{struct_effekseer_handle_a54be425dc9d059e66fe00799f34e25cf}\label{struct_effekseer_handle_a54be425dc9d059e66fe00799f34e25cf}} 
+\index{Effekseer\+Handle@{Effekseer\+Handle}!Set\+Rotation@{Set\+Rotation}}
+\index{Set\+Rotation@{Set\+Rotation}!Effekseer\+Handle@{Effekseer\+Handle}}
+\subsubsection{\texorpdfstring{Set\+Rotation()}{SetRotation()}}
+{\footnotesize\ttfamily void Effekseer\+Handle.\+Set\+Rotation (\begin{DoxyParamCaption}\item[{Quaternion}]{rotation }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+$<$summary xml\+:lang=\char`\"{}en\char`\"{}$>$ Sets the effect rotation 
 
-エフェクトの回転を設定 
+$<$summary xml\+:lang=\char`\"{}ja\char`\"{}$>$ エフェクトの回転を設定 
 
 
 \begin{DoxyParams}{Parameters}
 {\em rotation} & 回転\\
 \hline
 \end{DoxyParams}
-\hypertarget{struct_effekseer_handle_a858d40ff7676ec5c2ae062596f52795b}{\index{Effekseer\-Handle@{Effekseer\-Handle}!Set\-Scale@{Set\-Scale}}
-\index{Set\-Scale@{Set\-Scale}!EffekseerHandle@{Effekseer\-Handle}}
-\subsubsection[{Set\-Scale}]{\setlength{\rightskip}{0pt plus 5cm}void Effekseer\-Handle.\-Set\-Scale (
-\begin{DoxyParamCaption}
-\item[{Vector3}]{scale}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}}\label{struct_effekseer_handle_a858d40ff7676ec5c2ae062596f52795b}
+\mbox{\Hypertarget{struct_effekseer_handle_a858d40ff7676ec5c2ae062596f52795b}\label{struct_effekseer_handle_a858d40ff7676ec5c2ae062596f52795b}} 
+\index{Effekseer\+Handle@{Effekseer\+Handle}!Set\+Scale@{Set\+Scale}}
+\index{Set\+Scale@{Set\+Scale}!Effekseer\+Handle@{Effekseer\+Handle}}
+\subsubsection{\texorpdfstring{Set\+Scale()}{SetScale()}}
+{\footnotesize\ttfamily void Effekseer\+Handle.\+Set\+Scale (\begin{DoxyParamCaption}\item[{Vector3}]{scale }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+$<$summary xml\+:lang=\char`\"{}en\char`\"{}$>$ Sets the effect scale 
 
-エフェクトの拡縮を設定 
+$<$summary xml\+:lang=\char`\"{}ja\char`\"{}$>$ エフェクトの拡縮を設定 
 
 
 \begin{DoxyParams}{Parameters}
 {\em scale} & 拡縮\\
 \hline
 \end{DoxyParams}
-\hypertarget{struct_effekseer_handle_aa13ed72d63bdcf16ab9683261b92c855}{\index{Effekseer\-Handle@{Effekseer\-Handle}!Set\-Target\-Location@{Set\-Target\-Location}}
-\index{Set\-Target\-Location@{Set\-Target\-Location}!EffekseerHandle@{Effekseer\-Handle}}
-\subsubsection[{Set\-Target\-Location}]{\setlength{\rightskip}{0pt plus 5cm}void Effekseer\-Handle.\-Set\-Target\-Location (
-\begin{DoxyParamCaption}
-\item[{Vector3}]{target\-Location}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}}\label{struct_effekseer_handle_aa13ed72d63bdcf16ab9683261b92c855}
+\mbox{\Hypertarget{struct_effekseer_handle_aa13ed72d63bdcf16ab9683261b92c855}\label{struct_effekseer_handle_aa13ed72d63bdcf16ab9683261b92c855}} 
+\index{Effekseer\+Handle@{Effekseer\+Handle}!Set\+Target\+Location@{Set\+Target\+Location}}
+\index{Set\+Target\+Location@{Set\+Target\+Location}!Effekseer\+Handle@{Effekseer\+Handle}}
+\subsubsection{\texorpdfstring{Set\+Target\+Location()}{SetTargetLocation()}}
+{\footnotesize\ttfamily void Effekseer\+Handle.\+Set\+Target\+Location (\begin{DoxyParamCaption}\item[{Vector3}]{target\+Location }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+$<$summary xml\+:lang=\char`\"{}en\char`\"{}$>$ Sets the effect target location 
 
-エフェクトのターゲット位置を設定 
+$<$summary xml\+:lang=\char`\"{}ja\char`\"{}$>$ エフェクトのターゲット位置を設定 
 
 
 \begin{DoxyParams}{Parameters}
-{\em target\-Location} & ターゲット位置\\
+{\em target\+Location} & ターゲット位置\\
 \hline
 \end{DoxyParams}
-\hypertarget{struct_effekseer_handle_add31723e9d75fad60015c48dfe1bf785}{\index{Effekseer\-Handle@{Effekseer\-Handle}!Stop@{Stop}}
-\index{Stop@{Stop}!EffekseerHandle@{Effekseer\-Handle}}
-\subsubsection[{Stop}]{\setlength{\rightskip}{0pt plus 5cm}void Effekseer\-Handle.\-Stop (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}}\label{struct_effekseer_handle_add31723e9d75fad60015c48dfe1bf785}
+\mbox{\Hypertarget{struct_effekseer_handle_add31723e9d75fad60015c48dfe1bf785}\label{struct_effekseer_handle_add31723e9d75fad60015c48dfe1bf785}} 
+\index{Effekseer\+Handle@{Effekseer\+Handle}!Stop@{Stop}}
+\index{Stop@{Stop}!Effekseer\+Handle@{Effekseer\+Handle}}
+\subsubsection{\texorpdfstring{Stop()}{Stop()}}
+{\footnotesize\ttfamily void Effekseer\+Handle.\+Stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+$<$summary xml\+:lang=\char`\"{}en\char`\"{}$>$ Stops the played effect. All nodes will be destroyed. 
 
-エフェクトを停止する 全てのエフェクトが瞬時に消える 
+$<$summary xml\+:lang=\char`\"{}ja\char`\"{}$>$ エフェクトを停止する 全てのエフェクトが瞬時に消える \mbox{\Hypertarget{struct_effekseer_handle_ae16184a6f1770d63edf941941b8ad063}\label{struct_effekseer_handle_ae16184a6f1770d63edf941941b8ad063}} 
+\index{Effekseer\+Handle@{Effekseer\+Handle}!Stop\+Root@{Stop\+Root}}
+\index{Stop\+Root@{Stop\+Root}!Effekseer\+Handle@{Effekseer\+Handle}}
+\subsubsection{\texorpdfstring{Stop\+Root()}{StopRoot()}}
+{\footnotesize\ttfamily void Effekseer\+Handle.\+Stop\+Root (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-\hypertarget{struct_effekseer_handle_ae16184a6f1770d63edf941941b8ad063}{\index{Effekseer\-Handle@{Effekseer\-Handle}!Stop\-Root@{Stop\-Root}}
-\index{Stop\-Root@{Stop\-Root}!EffekseerHandle@{Effekseer\-Handle}}
-\subsubsection[{Stop\-Root}]{\setlength{\rightskip}{0pt plus 5cm}void Effekseer\-Handle.\-Stop\-Root (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}}\label{struct_effekseer_handle_ae16184a6f1770d63edf941941b8ad063}
+$<$summary xml\+:lang=\char`\"{}en\char`\"{}$>$ Stops the root node of the played effect. The root node will be destroyed. Then children also will be destroyed by their lifetime. 
 
-
-再生中のエフェクトのルートノードだけを停止 ルートノードを削除したことで子ノード生成が停止され寿命で徐々に消える 
-
-
+$<$summary xml\+:lang=\char`\"{}ja\char`\"{}$>$ 再生中のエフェクトのルートノードだけを停止 ルートノードを削除したことで子ノード生成が停止され寿命で徐々に消える 
 
 \subsection{Property Documentation}
-\hypertarget{struct_effekseer_handle_a2eabd884f8b23833cbf69f3f9d9c875b}{\index{Effekseer\-Handle@{Effekseer\-Handle}!enable@{enable}}
-\index{enable@{enable}!EffekseerHandle@{Effekseer\-Handle}}
-\subsubsection[{enable}]{\setlength{\rightskip}{0pt plus 5cm}bool Effekseer\-Handle.\-enable\hspace{0.3cm}{\ttfamily [get]}}}\label{struct_effekseer_handle_a2eabd884f8b23833cbf69f3f9d9c875b}
+\mbox{\Hypertarget{struct_effekseer_handle_a5b5edae1257e381de00a7bf9f546b37c}\label{struct_effekseer_handle_a5b5edae1257e381de00a7bf9f546b37c}} 
+\index{Effekseer\+Handle@{Effekseer\+Handle}!enabled@{enabled}}
+\index{enabled@{enabled}!Effekseer\+Handle@{Effekseer\+Handle}}
+\subsubsection{\texorpdfstring{enabled}{enabled}}
+{\footnotesize\ttfamily bool Effekseer\+Handle.\+enabled\hspace{0.3cm}{\ttfamily [get]}}
 
-
-インスタンスハンドルが有効かどうか\par
+$<$summary xml\+:lang=\char`\"{}ja\char`\"{}$>$ Whether the effect instance is enabled~\newline
  
 
-true\-: 有効
+true\+: enabled
 
-false\-: 無効\hypertarget{struct_effekseer_handle_ac1d253853e6471ce1e3c951491803c27}{\index{Effekseer\-Handle@{Effekseer\-Handle}!exists@{exists}}
-\index{exists@{exists}!EffekseerHandle@{Effekseer\-Handle}}
-\subsubsection[{exists}]{\setlength{\rightskip}{0pt plus 5cm}bool Effekseer\-Handle.\-exists\hspace{0.3cm}{\ttfamily [get]}}}\label{struct_effekseer_handle_ac1d253853e6471ce1e3c951491803c27}
+false\+: disabled
 
+$<$summary xml\+:lang=\char`\"{}ja\char`\"{}$>$ インスタンスハンドルが有効かどうか~\newline
+ 
 
-エフェクトのインスタンスが存在しているかどうか 
+true\+: 有効
 
-true\-: 存在している
+false\+: 無効\mbox{\Hypertarget{struct_effekseer_handle_ac1d253853e6471ce1e3c951491803c27}\label{struct_effekseer_handle_ac1d253853e6471ce1e3c951491803c27}} 
+\index{Effekseer\+Handle@{Effekseer\+Handle}!exists@{exists}}
+\index{exists@{exists}!Effekseer\+Handle@{Effekseer\+Handle}}
+\subsubsection{\texorpdfstring{exists}{exists}}
+{\footnotesize\ttfamily bool Effekseer\+Handle.\+exists\hspace{0.3cm}{\ttfamily [get]}}
 
-false\-: 再生終了で破棄。もしくは\-Stopで停止された\hypertarget{struct_effekseer_handle_a3ba9bf72308429369214fd10ebb86ca6}{\index{Effekseer\-Handle@{Effekseer\-Handle}!paused@{paused}}
-\index{paused@{paused}!EffekseerHandle@{Effekseer\-Handle}}
-\subsubsection[{paused}]{\setlength{\rightskip}{0pt plus 5cm}bool Effekseer\-Handle.\-paused\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{struct_effekseer_handle_a3ba9bf72308429369214fd10ebb86ca6}
+$<$summary xml\+:lang=\char`\"{}en\char`\"{}$>$ Existing state 
 
+true\+: It\textquotesingle{}s existed.
 
-ポーズ設定 
+false\+: It isn\textquotesingle{}t existed or stopped.
 
-true\-: 停止中。\-Updateで更新しない
+$<$summary xml\+:lang=\char`\"{}ja\char`\"{}$>$ エフェクトのインスタンスが存在しているかどうか 
 
-false\-: 再生中。\-Updateで更新する\hypertarget{struct_effekseer_handle_a96d0ebfe4cab721aaea0992b1750ae43}{\index{Effekseer\-Handle@{Effekseer\-Handle}!shown@{shown}}
-\index{shown@{shown}!EffekseerHandle@{Effekseer\-Handle}}
-\subsubsection[{shown}]{\setlength{\rightskip}{0pt plus 5cm}bool Effekseer\-Handle.\-shown\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{struct_effekseer_handle_a96d0ebfe4cab721aaea0992b1750ae43}
+true\+: 存在している
 
+false\+: 再生終了で破棄。もしくは\+Stopで停止された\mbox{\Hypertarget{struct_effekseer_handle_a3ba9bf72308429369214fd10ebb86ca6}\label{struct_effekseer_handle_a3ba9bf72308429369214fd10ebb86ca6}} 
+\index{Effekseer\+Handle@{Effekseer\+Handle}!paused@{paused}}
+\index{paused@{paused}!Effekseer\+Handle@{Effekseer\+Handle}}
+\subsubsection{\texorpdfstring{paused}{paused}}
+{\footnotesize\ttfamily bool Effekseer\+Handle.\+paused\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
 
-表示設定 
+$<$summary xml\+:lang=\char`\"{}en\char`\"{}$>$ Pausing the effect 
 
-true\-: 表示\-O\-N。\-Drawで描画する
+true\+: It will update on Update()
 
-false\-: 表示\-O\-F\-F。\-Drawで描画しない
+false\+: It will not update on Update()
 
-The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+$<$summary xml\+:lang=\char`\"{}ja\char`\"{}$>$ ポーズ設定 
+
+true\+: 停止中。\+Updateで更新しない
+
+false\+: 再生中。\+Updateで更新する\mbox{\Hypertarget{struct_effekseer_handle_a96d0ebfe4cab721aaea0992b1750ae43}\label{struct_effekseer_handle_a96d0ebfe4cab721aaea0992b1750ae43}} 
+\index{Effekseer\+Handle@{Effekseer\+Handle}!shown@{shown}}
+\index{shown@{shown}!Effekseer\+Handle@{Effekseer\+Handle}}
+\subsubsection{\texorpdfstring{shown}{shown}}
+{\footnotesize\ttfamily bool Effekseer\+Handle.\+shown\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+$<$summary xml\+:lang=\char`\"{}en\char`\"{}$>$ Showing the effect 
+
+true\+: It will be rendering.
+
+false\+: It will not be rendering.
+
+$<$summary xml\+:lang=\char`\"{}ja\char`\"{}$>$ 表示設定 
+
+true\+: 表示\+O\+N。\+Drawで描画する
+
+false\+: 表示\+O\+F\+F。\+Drawで描画しない
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-dev/\-Cpp/\-Unity\-Plugin/\-Unity\-Script/Effekseer\-System.\-cs\end{DoxyCompactItemize}
+D\+:/dev/\+\_\+\+Effekseer/\+Effekseer\+For\+Unity/\+Dev/\+Plugin/\+Assets/\+Effekseer/\+Plugins/Effekseer\+System.\+cs\end{DoxyCompactItemize}

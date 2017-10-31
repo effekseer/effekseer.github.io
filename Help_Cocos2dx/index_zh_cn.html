@@ -1,0 +1,240 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset=utf-8>
+	<title>Effekseer For Cocos2d-x</title>
+	<link href="base.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<div class="main">
+		<h1>Effekseer For Cocos2d-x</h1>
+		
+		<h2>摘要</h2>
+
+		<p>
+      Effekseer是一个可以轻松地创建美丽的粒子效果的工具。本库将能够在Cocos2d-X内播放由Effekseer创建而成的粒子效果。
+      本文档会介绍如何在Cocos2d-x内使用本程式库。
+      程式库是由复数源代码组成，通过新增本源代码便可为Cocos2d-x进行安装。
+		</p>
+
+		<p>
+      对应环境如下
+		</p>
+
+		<table>
+			<tr>
+				<td>Windows</td>
+				<td>OK</td>
+			</tr>
+
+			<tr>
+				<td>Mac OS X</td>
+				<td>OK</td>
+			</tr>
+
+			<tr>
+				<td>Linux</td>
+				<td>Unknown</td>
+			</tr>
+
+			<tr>
+				<td>iOS</td>
+				<td>OK</td>
+			</tr>
+
+			<tr>
+				<td>Android</td>
+				<td>OK</td>
+			</tr>
+
+			<tr>
+				<td>WindowsPhone</td>
+				<td>Unknown</td>
+			</tr>
+
+		</table>
+
+		<div align="Center">
+			<img src="Top.png">
+		</div>
+
+		<h2>如何安装</h2>
+		<p>
+		<b>Players/Cocos2d-x_v3</b>文件夹内会包含以下文件。
+		</p>
+
+<ul>
+<li>Effekseer.cpp</li>
+<li>Effekseer.h</li>
+<li>EffekseerNative.cpp</li>
+<li>EffekseerNative.h</li>
+<li>EffekseerRendererNative.cpp</li>
+<li>EffekseerRendererNative.h</li>
+</ul>
+
+		<p>
+      将这些文件复制到的Cocos2d-x的文件夹内，再设定成编译对象。
+		</p>
+
+
+		<h2>如何使用</h2>
+
+<p>
+在<b>Samples/</b>文件夹内会有在Cocos2d-x内播放Effekseer粒子效果的样本。本文件只会作出简单的使用方法。详细请参阅样本。
+</p>
+
+<p>
+  样本是不包含在此程式库内，请将各样本复制到<b>Classes/Effekseer</b>文件夹内使用。
+  为方便得知文件存放的位置、会有一个名为<b>copyEffekseerFiles.txt</b>的文件作为标签而作识别。
+</p>
+
+<h3>有关可播放的文件</h3>
+
+<p>
+  您只可以播放由Effekseer保存而成的文件。由Effekseer保存的文件中包含图像的相对路径。因此，请留意各档案的存放位置。
+</p>
+
+<h3>基本播放</h3>
+
+<p>
+  由Effekseer保存而成的文件可在cocos2d-x内播放。欲了解更多资讯，请查看存储在<b>Samples/Simple/</b>内的源代码。
+</p>
+
+<br>
+
+<p>
+包括Effekseer.h。
+</p>
+
+<pre>
+#include "Effekseer/Effekseer.h"
+</pre>
+<br>
+
+<p>
+  在cocos2d::Layer的衍生类别内加入成员变量efk::EffectManager*。
+
+</p>
+
+<pre>
+class HelloWorld : public cocos2d::Layer {
+efk::EffectManager* manager = nullptr;
+...
+</pre>
+<br>
+
+<p>
+  创建对象efk::EffectManager*。
+</p>
+
+<pre>
+manager = efk::EffectManager::create(Director::getInstance()->getVisibleSize());
+</pre>
+<br>
+
+<p>
+读取粒子效果文件
+</p>
+
+<pre>
+auto effect = efk::Effect::create("Laser01.efk");
+</pre>
+<br>
+
+<p>
+  建立发射极，并通过将参数添加到阶层。
+</p>
+
+<pre>
+auto emitter = efk::EffectEmitter::create(manager);
+emitter->setEffect(effect);
+emitter->setPlayOnEnter(true);
+
+emitter->setPosition(Vec2(300, 300));
+emitter->setScale(20);
+this->addChild(emitter, 0);
+
+effect->release();
+</pre>
+
+<p>
+  更新画面。
+</p>
+
+<pre>
+manager->update();
+</pre>
+<br>
+
+<p>
+衍生visit，使可添加的绘制效果的处理。
+</p>
+
+<pre>
+void HelloWorld::visit(
+	cocos2d::Renderer *renderer, 
+	const cocos2d::Mat4& parentTransform, 
+	uint32_t parentFlags)
+{
+	manager->begin(renderer, _globalZOrder);
+	cocos2d::Layer::visit(renderer, parentTransform, parentFlags);
+	manager->end(renderer, _globalZOrder);
+}
+</pre>
+<br>
+
+<p>
+  删除执行对象。
+</p>
+
+<pre>
+HelloWorld::~HelloWorld()
+{
+	manager->release();
+}
+</pre>
+
+		<h2>授权</h2>
+
+<p>
+  如使用Effekseer，你需要添加下面的措辞。 （例如在帮助内）。
+</p>
+
+<pre>
+The MIT License (MIT)
+
+Copyright (c) 2011 Effekseer Project
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+the Software, and to permit persons to whom the Software is furnished to do so,
+subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+DirectX Tool Kit
+https://directxtk.codeplex.com/
+Microsoft Public License (Ms-PL)
+
+</pre>
+
+		<h2>更新</h2>
+		<p>1.xx (xx/xx/xx) 发布。</p>
+
+	</div>
+</body>
+
+</html>

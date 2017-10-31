@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset=utf-8>
+	<title>Effekseer For Cocos2d-x</title>
+	<link href="base.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<div class="main">
+		<h1>Effekseer For Cocos2d-x</h1>
+		
+		<h2>Overview</h2>
+
+		<p>
+        Effekseer is a tool that makes it easy to create beautiful particle effects. This library allows you to play particle effects created with Effekseer on Cocos2d-x.
+        This document describes cooperation between Effekseer and Cocos2d-x.
+        The library consists of multiple source code files, and you can install it by adding the source code file to the project of Cocos2d-x.
+		</p>
+
+		<p>
+		The corresponding environment is as follows.
+		</p>
+
+		<table>
+			<tr>
+				<td>Windows</td>
+				<td>OK</td>
+			</tr>
+
+			<tr>
+				<td>Mac OS X</td>
+				<td>OK</td>
+			</tr>
+
+			<tr>
+				<td>Linux</td>
+				<td>Unknown</td>
+			</tr>
+
+			<tr>
+				<td>iOS</td>
+				<td>OK</td>
+			</tr>
+
+			<tr>
+				<td>Android</td>
+				<td>OK</td>
+			</tr>
+
+			<tr>
+				<td>WindowsPhone</td>
+				<td>Unknown</td>
+			</tr>
+
+		</table>
+
+		<div align="Center">
+			<img src="Top.png">
+		</div>
+
+		<h2>Installation method</h2>
+		<p>
+		<b>Players/Cocos2d-x_v3</b>following files to the directory exists.
+		</p>
+
+<ul>
+<li>Effekseer.cpp</li>
+<li>Effekseer.h</li>
+<li>EffekseerNative.cpp</li>
+<li>EffekseerNative.h</li>
+<li>EffekseerRendererNative.cpp</li>
+<li>EffekseerRendererNative.h</li>
+</ul>
+
+		<p>
+		Please copy these files to the project of Cocos 2d - x and add it to compile them.
+		</p>
+
+
+		<h2>How to use</h2>
+
+<p>
+        In <b>Samples/</b> directory in Cocos2d-x is a sample to play the particle effects of Effekseer. Since this document only explains basic usage, please see the sample for detailed usage.
+</p>
+
+<p>
+    These samples, for this library is not included, please copy the library of files in each sample of <b>Classes/Effekseer</b> directory.
+    <b>copyEffekseerFiles.txt</b> file exists in the directory to copy to as the marker of the directory to which the library is copied.
+</p>
+
+<h3>About files that can be played</h3>
+
+<p>
+    Only files saved by Effekseer's standard output can be played. The saved file contains the relative path from Effekseer's project to the image. For that reason, you need to place the image while keeping the relative path from the file saved in standard output to the image.
+</p>
+
+<h3>Basic playback</h3>
+
+<p>
+Play effects files saved with Effekseer's standard output with Cocos2d-x. For more information, please look at the source code that is stored in the <b>Samples/Simple/</b>.
+</p>
+
+<br>
+
+<p>
+Include Effekseer.h.
+</p>
+
+<pre>
+#include "Effekseer/Effekseer.h"
+</pre>
+<br>
+
+<p>
+Add efk::EffectManager* to the member variable of the class that inherits cocos2d::Layer.
+</p>
+
+<pre>
+class HelloWorld : public cocos2d::Layer {
+efk::EffectManager* manager = nullptr;
+...
+</pre>
+<br>
+
+<p>
+Create an instance of efk::EffectManager*.
+</p>
+
+<pre>
+manager = efk::EffectManager::create(Director::getInstance()->getVisibleSize());
+</pre>
+<br>
+
+<p>
+Load the effect file.
+</p>
+
+<pre>
+auto effect = efk::Effect::create("Laser01.efk");
+</pre>
+<br>
+
+<p>
+Generate the emitter, set the parameters and add it to the layer.
+</p>
+
+<pre>
+auto emitter = efk::EffectEmitter::create(manager);
+emitter->setEffect(effect);
+emitter->setPlayOnEnter(true);
+
+emitter->setPosition(Vec2(300, 300));
+emitter->setScale(20);
+this->addChild(emitter, 0);
+
+effect->release();
+</pre>
+
+<p>
+Update the manager every frame.
+</p>
+
+<pre>
+manager->update();
+</pre>
+<br>
+
+<p>
+Inherit visit and add a process to actually draw the effect.
+</p>
+
+<pre>
+void HelloWorld::visit(
+	cocos2d::Renderer *renderer, 
+	const cocos2d::Mat4& parentTransform, 
+	uint32_t parentFlags)
+{
+	manager->begin(renderer, _globalZOrder);
+	cocos2d::Layer::visit(renderer, parentTransform, parentFlags);
+	manager->end(renderer, _globalZOrder);
+}
+</pre>
+<br>
+
+<p>
+Discard the manager at the end.
+</p>
+
+<pre>
+HelloWorld::~HelloWorld()
+{
+	manager->release();
+}
+</pre>
+
+		<h2>License</h2>
+
+<p>
+When using Effekseer, you need to add the following text to help etc.
+</p>
+
+<pre>
+The MIT License (MIT)
+
+Copyright (c) 2011 Effekseer Project
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+the Software, and to permit persons to whom the Software is furnished to do so,
+subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+DirectX Tool Kit
+https://directxtk.codeplex.com/
+Microsoft Public License (Ms-PL)
+</pre>
+
+		<h2>Change log</h2>
+		<p>1.xx (xx/xx/xx) released.</p>
+
+	</div>
+</body>
+
+</html>
