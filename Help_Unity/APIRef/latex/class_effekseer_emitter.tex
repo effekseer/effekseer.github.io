@@ -1,6 +1,7 @@
-\hypertarget{class_effekseer_emitter}{}\section{Effekseer\+Emitter Class Reference}
-\label{class_effekseer_emitter}\index{Effekseer\+Emitter@{Effekseer\+Emitter}}
-Inheritance diagram for Effekseer\+Emitter\+:\begin{figure}[H]
+\hypertarget{class_effekseer_emitter}{\section{Effekseer\-Emitter Class Reference}
+\label{class_effekseer_emitter}\index{Effekseer\-Emitter@{Effekseer\-Emitter}}
+}
+Inheritance diagram for Effekseer\-Emitter\-:\begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[height=2.000000cm]{class_effekseer_emitter}
@@ -15,16 +16,18 @@ void \hyperlink{class_effekseer_emitter_a55d07e8215485e43eaa94b7b075b2f04}{Play}
 \item 
 void \hyperlink{class_effekseer_emitter_acab7d9ae949cd0aa844ae66b2f44ad5d}{Stop} ()
 \item 
-void \hyperlink{class_effekseer_emitter_a6bb4daefa3632e823b684ba575043290}{Stop\+Root} ()
+void \hyperlink{class_effekseer_emitter_a6bb4daefa3632e823b684ba575043290}{Stop\-Root} ()
 \item 
-void \hyperlink{class_effekseer_emitter_a39366319e460cc573d4bfc40803f6787}{Set\+Target\+Location} (Vector3 target\+Location)
+void \hyperlink{class_effekseer_emitter_a607376ba07571692ddef670ef0e12562}{Set\-All\-Color} (Color color)
+\item 
+void \hyperlink{class_effekseer_emitter_a39366319e460cc573d4bfc40803f6787}{Set\-Target\-Location} (Vector3 target\-Location)
 \end{DoxyCompactItemize}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-string \hyperlink{class_effekseer_emitter_a3c52af81c057a2f4ea0848cb492cf208}{effect\+Name}
+string \hyperlink{class_effekseer_emitter_a3c52af81c057a2f4ea0848cb492cf208}{effect\-Name}
 \item 
-bool \hyperlink{class_effekseer_emitter_a8ff5bc48852b4a21e3b33b0cd0e8b65a}{play\+On\+Start} = false
+bool \hyperlink{class_effekseer_emitter_a8ff5bc48852b4a21e3b33b0cd0e8b65a}{play\-On\-Start} = false
 \item 
 bool \hyperlink{class_effekseer_emitter_a9b6a18e54c4b4a68bb9b81fc88b123bd}{loop} = false
 \end{DoxyCompactItemize}
@@ -35,146 +38,156 @@ bool \hyperlink{class_effekseer_emitter_a5979b4e756a1f31e439752de6fb86c64}{pause
 \item 
 bool \hyperlink{class_effekseer_emitter_a8beed88f3cb7357c4eb088847a6d1fbc}{shown}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
 \item 
+float \hyperlink{class_effekseer_emitter_ab7aec861ddf0ae032b485f7103d9779d}{speed}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
 bool \hyperlink{class_effekseer_emitter_aa4b49f6d532b7e75f2d207866ecee574}{exists}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-$<$summary xml\+:lang=\char`\"{}en\char`\"{}$>$ A emitter of the \hyperlink{namespace_effekseer}{Effekseer} effect 
+$<$summary xml\-:lang=\char`\"{}en\char`\"{}$>$ A emitter of the \hyperlink{namespace_effekseer}{Effekseer} effect 
 
-$<$summary xml\+:lang=\char`\"{}ja\char`\"{}$>$ エフェクトの発生源 
+$<$summary xml\-:lang=\char`\"{}ja\char`\"{}$>$ エフェクトの発生源 
 
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{class_effekseer_emitter_a8ae6fd4f46274d56eee5de6b1de3ee9b}\label{class_effekseer_emitter_a8ae6fd4f46274d56eee5de6b1de3ee9b}} 
-\index{Effekseer\+Emitter@{Effekseer\+Emitter}!Play@{Play}}
-\index{Play@{Play}!Effekseer\+Emitter@{Effekseer\+Emitter}}
-\subsubsection{\texorpdfstring{Play()}{Play()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily void Effekseer\+Emitter.\+Play (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-$<$summary xml\+:lang=\char`\"{}en\char`\"{}$>$ Plays the effect. 
+\hypertarget{class_effekseer_emitter_a8ae6fd4f46274d56eee5de6b1de3ee9b}{\index{Effekseer\-Emitter@{Effekseer\-Emitter}!Play@{Play}}
+\index{Play@{Play}!EffekseerEmitter@{Effekseer\-Emitter}}
+\subsubsection[{Play}]{\setlength{\rightskip}{0pt plus 5cm}void Effekseer\-Emitter.\-Play (
+\begin{DoxyParamCaption}
+\item[{string}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_effekseer_emitter_a8ae6fd4f46274d56eee5de6b1de3ee9b}
+$<$summary xml\-:lang=\char`\"{}en\char`\"{}$>$ Plays the effect. 
 \begin{DoxyParams}{Parameters}
 {\em name} & Effect name\\
 \hline
 \end{DoxyParams}
 
 
-$<$summary xml\+:lang=\char`\"{}ja\char`\"{}$>$ エフェクトを再生 
+$<$summary xml\-:lang=\char`\"{}ja\char`\"{}$>$ エフェクトを再生 
 \begin{DoxyParams}{Parameters}
 {\em name} & エフェクト名\\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{class_effekseer_emitter_a55d07e8215485e43eaa94b7b075b2f04}\label{class_effekseer_emitter_a55d07e8215485e43eaa94b7b075b2f04}} 
-\index{Effekseer\+Emitter@{Effekseer\+Emitter}!Play@{Play}}
-\index{Play@{Play}!Effekseer\+Emitter@{Effekseer\+Emitter}}
-\subsubsection{\texorpdfstring{Play()}{Play()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily void Effekseer\+Emitter.\+Play (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+\hypertarget{class_effekseer_emitter_a55d07e8215485e43eaa94b7b075b2f04}{\index{Effekseer\-Emitter@{Effekseer\-Emitter}!Play@{Play}}
+\index{Play@{Play}!EffekseerEmitter@{Effekseer\-Emitter}}
+\subsubsection[{Play}]{\setlength{\rightskip}{0pt plus 5cm}void Effekseer\-Emitter.\-Play (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_effekseer_emitter_a55d07e8215485e43eaa94b7b075b2f04}
+$<$summary xml\-:lang=\char`\"{}en\char`\"{}$>$ Plays the effect that has been set. 
 
-$<$summary xml\+:lang=\char`\"{}en\char`\"{}$>$ Plays the effect that has been set. 
+$<$summary xml\-:lang=\char`\"{}ja\char`\"{}$>$ 設定されているエフェクトを再生 \hypertarget{class_effekseer_emitter_a607376ba07571692ddef670ef0e12562}{\index{Effekseer\-Emitter@{Effekseer\-Emitter}!Set\-All\-Color@{Set\-All\-Color}}
+\index{Set\-All\-Color@{Set\-All\-Color}!EffekseerEmitter@{Effekseer\-Emitter}}
+\subsubsection[{Set\-All\-Color}]{\setlength{\rightskip}{0pt plus 5cm}void Effekseer\-Emitter.\-Set\-All\-Color (
+\begin{DoxyParamCaption}
+\item[{Color}]{color}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_effekseer_emitter_a607376ba07571692ddef670ef0e12562}
+$<$summary xml\-:lang=\char`\"{}en\char`\"{}$>$ Specify the color of overall effect. 
 
-$<$summary xml\+:lang=\char`\"{}ja\char`\"{}$>$ 設定されているエフェクトを再生 \mbox{\Hypertarget{class_effekseer_emitter_a39366319e460cc573d4bfc40803f6787}\label{class_effekseer_emitter_a39366319e460cc573d4bfc40803f6787}} 
-\index{Effekseer\+Emitter@{Effekseer\+Emitter}!Set\+Target\+Location@{Set\+Target\+Location}}
-\index{Set\+Target\+Location@{Set\+Target\+Location}!Effekseer\+Emitter@{Effekseer\+Emitter}}
-\subsubsection{\texorpdfstring{Set\+Target\+Location()}{SetTargetLocation()}}
-{\footnotesize\ttfamily void Effekseer\+Emitter.\+Set\+Target\+Location (\begin{DoxyParamCaption}\item[{Vector3}]{target\+Location }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+$<$summary xml\-:lang=\char`\"{}ja\char`\"{}$>$ エフェクト全体の色を指定する。 
 
-$<$summary xml\+:lang=\char`\"{}en\char`\"{}$>$ Sets the target location of the played effects. $<$param name=\char`\"{}target\+Location\char`\"{} xml\+:lang=\char`\"{}en\char`\"{}$>$Target location
 
-$<$summary xml\+:lang=\char`\"{}ja\char`\"{}$>$ 再生中のエフェクトのターゲット位置を設定 $<$param name=\char`\"{}target\+Location\char`\"{} xml\+:lang=\char`\"{}ja\char`\"{}$>$ターゲット位置\mbox{\Hypertarget{class_effekseer_emitter_acab7d9ae949cd0aa844ae66b2f44ad5d}\label{class_effekseer_emitter_acab7d9ae949cd0aa844ae66b2f44ad5d}} 
-\index{Effekseer\+Emitter@{Effekseer\+Emitter}!Stop@{Stop}}
-\index{Stop@{Stop}!Effekseer\+Emitter@{Effekseer\+Emitter}}
-\subsubsection{\texorpdfstring{Stop()}{Stop()}}
-{\footnotesize\ttfamily void Effekseer\+Emitter.\+Stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+\begin{DoxyParams}{Parameters}
+{\em color} & Color\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_effekseer_emitter_a39366319e460cc573d4bfc40803f6787}{\index{Effekseer\-Emitter@{Effekseer\-Emitter}!Set\-Target\-Location@{Set\-Target\-Location}}
+\index{Set\-Target\-Location@{Set\-Target\-Location}!EffekseerEmitter@{Effekseer\-Emitter}}
+\subsubsection[{Set\-Target\-Location}]{\setlength{\rightskip}{0pt plus 5cm}void Effekseer\-Emitter.\-Set\-Target\-Location (
+\begin{DoxyParamCaption}
+\item[{Vector3}]{target\-Location}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_effekseer_emitter_a39366319e460cc573d4bfc40803f6787}
+$<$summary xml\-:lang=\char`\"{}en\char`\"{}$>$ Sets the target location of the played effects. $<$param name=\char`\"{}target\-Location\char`\"{} xml\-:lang=\char`\"{}en\char`\"{}$>$Target location
 
-$<$summary xml\+:lang=\char`\"{}en\char`\"{}$>$ Stops the played effect. All nodes will be destroyed. 
+$<$summary xml\-:lang=\char`\"{}ja\char`\"{}$>$ 再生中のエフェクトのターゲット位置を設定 $<$param name=\char`\"{}target\-Location\char`\"{} xml\-:lang=\char`\"{}ja\char`\"{}$>$ターゲット位置\hypertarget{class_effekseer_emitter_acab7d9ae949cd0aa844ae66b2f44ad5d}{\index{Effekseer\-Emitter@{Effekseer\-Emitter}!Stop@{Stop}}
+\index{Stop@{Stop}!EffekseerEmitter@{Effekseer\-Emitter}}
+\subsubsection[{Stop}]{\setlength{\rightskip}{0pt plus 5cm}void Effekseer\-Emitter.\-Stop (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_effekseer_emitter_acab7d9ae949cd0aa844ae66b2f44ad5d}
+$<$summary xml\-:lang=\char`\"{}en\char`\"{}$>$ Stops the played effect. All nodes will be destroyed. 
 
-$<$summary xml\+:lang=\char`\"{}ja\char`\"{}$>$ 再生中のエフェクトを停止 全てのノードが即座に消える \mbox{\Hypertarget{class_effekseer_emitter_a6bb4daefa3632e823b684ba575043290}\label{class_effekseer_emitter_a6bb4daefa3632e823b684ba575043290}} 
-\index{Effekseer\+Emitter@{Effekseer\+Emitter}!Stop\+Root@{Stop\+Root}}
-\index{Stop\+Root@{Stop\+Root}!Effekseer\+Emitter@{Effekseer\+Emitter}}
-\subsubsection{\texorpdfstring{Stop\+Root()}{StopRoot()}}
-{\footnotesize\ttfamily void Effekseer\+Emitter.\+Stop\+Root (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+$<$summary xml\-:lang=\char`\"{}ja\char`\"{}$>$ 再生中のエフェクトを停止 全てのノードが即座に消える \hypertarget{class_effekseer_emitter_a6bb4daefa3632e823b684ba575043290}{\index{Effekseer\-Emitter@{Effekseer\-Emitter}!Stop\-Root@{Stop\-Root}}
+\index{Stop\-Root@{Stop\-Root}!EffekseerEmitter@{Effekseer\-Emitter}}
+\subsubsection[{Stop\-Root}]{\setlength{\rightskip}{0pt plus 5cm}void Effekseer\-Emitter.\-Stop\-Root (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_effekseer_emitter_a6bb4daefa3632e823b684ba575043290}
+$<$summary xml\-:lang=\char`\"{}en\char`\"{}$>$ Stops the root node of the played effect. The root node will be destroyed. Then children also will be destroyed by their lifetime. 
 
-$<$summary xml\+:lang=\char`\"{}en\char`\"{}$>$ Stops the root node of the played effect. The root node will be destroyed. Then children also will be destroyed by their lifetime. 
-
-$<$summary xml\+:lang=\char`\"{}ja\char`\"{}$>$ 再生中のエフェクトのルートノードだけを停止 ルートノードを削除したことで子ノード生成が停止され寿命で徐々に消える 
+$<$summary xml\-:lang=\char`\"{}ja\char`\"{}$>$ 再生中のエフェクトのルートノードだけを停止 ルートノードを削除したことで子ノード生成が停止され寿命で徐々に消える 
 
 \subsection{Member Data Documentation}
-\mbox{\Hypertarget{class_effekseer_emitter_a3c52af81c057a2f4ea0848cb492cf208}\label{class_effekseer_emitter_a3c52af81c057a2f4ea0848cb492cf208}} 
-\index{Effekseer\+Emitter@{Effekseer\+Emitter}!effect\+Name@{effect\+Name}}
-\index{effect\+Name@{effect\+Name}!Effekseer\+Emitter@{Effekseer\+Emitter}}
-\subsubsection{\texorpdfstring{effect\+Name}{effectName}}
-{\footnotesize\ttfamily string Effekseer\+Emitter.\+effect\+Name}
+\hypertarget{class_effekseer_emitter_a3c52af81c057a2f4ea0848cb492cf208}{\index{Effekseer\-Emitter@{Effekseer\-Emitter}!effect\-Name@{effect\-Name}}
+\index{effect\-Name@{effect\-Name}!EffekseerEmitter@{Effekseer\-Emitter}}
+\subsubsection[{effect\-Name}]{\setlength{\rightskip}{0pt plus 5cm}string Effekseer\-Emitter.\-effect\-Name}}\label{class_effekseer_emitter_a3c52af81c057a2f4ea0848cb492cf208}
+$<$summary xml\-:lang=\char`\"{}en\char`\"{}$>$ Effect name 
 
-$<$summary xml\+:lang=\char`\"{}en\char`\"{}$>$ Effect name 
+$<$summary xml\-:lang=\char`\"{}ja\char`\"{}$>$ エフェクト名 \hypertarget{class_effekseer_emitter_a9b6a18e54c4b4a68bb9b81fc88b123bd}{\index{Effekseer\-Emitter@{Effekseer\-Emitter}!loop@{loop}}
+\index{loop@{loop}!EffekseerEmitter@{Effekseer\-Emitter}}
+\subsubsection[{loop}]{\setlength{\rightskip}{0pt plus 5cm}bool Effekseer\-Emitter.\-loop = false}}\label{class_effekseer_emitter_a9b6a18e54c4b4a68bb9b81fc88b123bd}
+$<$summary xml\-:lang=\char`\"{}ja\char`\"{}$>$ Whether it does loop playback. 
 
-$<$summary xml\+:lang=\char`\"{}ja\char`\"{}$>$ エフェクト名 \mbox{\Hypertarget{class_effekseer_emitter_a9b6a18e54c4b4a68bb9b81fc88b123bd}\label{class_effekseer_emitter_a9b6a18e54c4b4a68bb9b81fc88b123bd}} 
-\index{Effekseer\+Emitter@{Effekseer\+Emitter}!loop@{loop}}
-\index{loop@{loop}!Effekseer\+Emitter@{Effekseer\+Emitter}}
-\subsubsection{\texorpdfstring{loop}{loop}}
-{\footnotesize\ttfamily bool Effekseer\+Emitter.\+loop = false}
+$<$summary xml\-:lang=\char`\"{}ja\char`\"{}$>$ ループ再生するかどうか \hypertarget{class_effekseer_emitter_a8ff5bc48852b4a21e3b33b0cd0e8b65a}{\index{Effekseer\-Emitter@{Effekseer\-Emitter}!play\-On\-Start@{play\-On\-Start}}
+\index{play\-On\-Start@{play\-On\-Start}!EffekseerEmitter@{Effekseer\-Emitter}}
+\subsubsection[{play\-On\-Start}]{\setlength{\rightskip}{0pt plus 5cm}bool Effekseer\-Emitter.\-play\-On\-Start = false}}\label{class_effekseer_emitter_a8ff5bc48852b4a21e3b33b0cd0e8b65a}
+$<$summary xml\-:lang=\char`\"{}en\char`\"{}$>$ Whether it does play the effect on Start() 
 
-$<$summary xml\+:lang=\char`\"{}ja\char`\"{}$>$ Whether it does loop playback. 
-
-$<$summary xml\+:lang=\char`\"{}ja\char`\"{}$>$ ループ再生するかどうか \mbox{\Hypertarget{class_effekseer_emitter_a8ff5bc48852b4a21e3b33b0cd0e8b65a}\label{class_effekseer_emitter_a8ff5bc48852b4a21e3b33b0cd0e8b65a}} 
-\index{Effekseer\+Emitter@{Effekseer\+Emitter}!play\+On\+Start@{play\+On\+Start}}
-\index{play\+On\+Start@{play\+On\+Start}!Effekseer\+Emitter@{Effekseer\+Emitter}}
-\subsubsection{\texorpdfstring{play\+On\+Start}{playOnStart}}
-{\footnotesize\ttfamily bool Effekseer\+Emitter.\+play\+On\+Start = false}
-
-$<$summary xml\+:lang=\char`\"{}en\char`\"{}$>$ Whether it does play the effect on Start() 
-
-$<$summary xml\+:lang=\char`\"{}ja\char`\"{}$>$ Start()時に再生開始するかどうか 
+$<$summary xml\-:lang=\char`\"{}ja\char`\"{}$>$ Start()時に再生開始するかどうか 
 
 \subsection{Property Documentation}
-\mbox{\Hypertarget{class_effekseer_emitter_aa4b49f6d532b7e75f2d207866ecee574}\label{class_effekseer_emitter_aa4b49f6d532b7e75f2d207866ecee574}} 
-\index{Effekseer\+Emitter@{Effekseer\+Emitter}!exists@{exists}}
-\index{exists@{exists}!Effekseer\+Emitter@{Effekseer\+Emitter}}
-\subsubsection{\texorpdfstring{exists}{exists}}
-{\footnotesize\ttfamily bool Effekseer\+Emitter.\+exists\hspace{0.3cm}{\ttfamily [get]}}
+\hypertarget{class_effekseer_emitter_aa4b49f6d532b7e75f2d207866ecee574}{\index{Effekseer\-Emitter@{Effekseer\-Emitter}!exists@{exists}}
+\index{exists@{exists}!EffekseerEmitter@{Effekseer\-Emitter}}
+\subsubsection[{exists}]{\setlength{\rightskip}{0pt plus 5cm}bool Effekseer\-Emitter.\-exists\hspace{0.3cm}{\ttfamily [get]}}}\label{class_effekseer_emitter_aa4b49f6d532b7e75f2d207866ecee574}
+$<$summary xml\-:lang=\char`\"{}en\char`\"{}$>$ Existing state 
 
-$<$summary xml\+:lang=\char`\"{}en\char`\"{}$>$ Existing state 
+true\-: It's existed.
 
-true\+: It\textquotesingle{}s existed.
+false\-: It isn't existed or stopped.
 
-false\+: It isn\textquotesingle{}t existed or stopped.
+$<$summary xml\-:lang=\char`\"{}ja\char`\"{}$>$ 再生中のエフェクトが存在しているか 
 
-$<$summary xml\+:lang=\char`\"{}ja\char`\"{}$>$ 再生中のエフェクトが存在しているか 
+true\-: 存在している
 
-true\+: 存在している
+false\-: 再生終了で破棄。もしくは\-Stopで停止された\hypertarget{class_effekseer_emitter_a5979b4e756a1f31e439752de6fb86c64}{\index{Effekseer\-Emitter@{Effekseer\-Emitter}!paused@{paused}}
+\index{paused@{paused}!EffekseerEmitter@{Effekseer\-Emitter}}
+\subsubsection[{paused}]{\setlength{\rightskip}{0pt plus 5cm}bool Effekseer\-Emitter.\-paused\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{class_effekseer_emitter_a5979b4e756a1f31e439752de6fb86c64}
+$<$summary xml\-:lang=\char`\"{}en\char`\"{}$>$ Pausing the effect 
 
-false\+: 再生終了で破棄。もしくは\+Stopで停止された\mbox{\Hypertarget{class_effekseer_emitter_a5979b4e756a1f31e439752de6fb86c64}\label{class_effekseer_emitter_a5979b4e756a1f31e439752de6fb86c64}} 
-\index{Effekseer\+Emitter@{Effekseer\+Emitter}!paused@{paused}}
-\index{paused@{paused}!Effekseer\+Emitter@{Effekseer\+Emitter}}
-\subsubsection{\texorpdfstring{paused}{paused}}
-{\footnotesize\ttfamily bool Effekseer\+Emitter.\+paused\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+true\-: It will update on Update()
 
-$<$summary xml\+:lang=\char`\"{}en\char`\"{}$>$ Pausing the effect 
+false\-: It will not update on Update()
 
-true\+: It will update on Update()
+$<$summary xml\-:lang=\char`\"{}ja\char`\"{}$>$ ポーズ設定 
 
-false\+: It will not update on Update()
+true\-: Updateで更新しない
 
-$<$summary xml\+:lang=\char`\"{}ja\char`\"{}$>$ ポーズ設定 
+false\-: Updateで更新する\hypertarget{class_effekseer_emitter_a8beed88f3cb7357c4eb088847a6d1fbc}{\index{Effekseer\-Emitter@{Effekseer\-Emitter}!shown@{shown}}
+\index{shown@{shown}!EffekseerEmitter@{Effekseer\-Emitter}}
+\subsubsection[{shown}]{\setlength{\rightskip}{0pt plus 5cm}bool Effekseer\-Emitter.\-shown\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{class_effekseer_emitter_a8beed88f3cb7357c4eb088847a6d1fbc}
+$<$summary xml\-:lang=\char`\"{}en\char`\"{}$>$ Showing the effect 
 
-true\+: Updateで更新しない
+true\-: It will be rendering.
 
-false\+: Updateで更新する\mbox{\Hypertarget{class_effekseer_emitter_a8beed88f3cb7357c4eb088847a6d1fbc}\label{class_effekseer_emitter_a8beed88f3cb7357c4eb088847a6d1fbc}} 
-\index{Effekseer\+Emitter@{Effekseer\+Emitter}!shown@{shown}}
-\index{shown@{shown}!Effekseer\+Emitter@{Effekseer\+Emitter}}
-\subsubsection{\texorpdfstring{shown}{shown}}
-{\footnotesize\ttfamily bool Effekseer\+Emitter.\+shown\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+false\-: It will not be rendering.
 
-$<$summary xml\+:lang=\char`\"{}en\char`\"{}$>$ Showing the effect 
+$<$summary xml\-:lang=\char`\"{}ja\char`\"{}$>$ 表示設定 
 
-true\+: It will be rendering.
+true\-: 描画する
 
-false\+: It will not be rendering.
+false\-: 描画しない\hypertarget{class_effekseer_emitter_ab7aec861ddf0ae032b485f7103d9779d}{\index{Effekseer\-Emitter@{Effekseer\-Emitter}!speed@{speed}}
+\index{speed@{speed}!EffekseerEmitter@{Effekseer\-Emitter}}
+\subsubsection[{speed}]{\setlength{\rightskip}{0pt plus 5cm}float Effekseer\-Emitter.\-speed\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{class_effekseer_emitter_ab7aec861ddf0ae032b485f7103d9779d}
+$<$summary xml\-:lang=\char`\"{}en\char`\"{}$>$ Playback speed 
 
-$<$summary xml\+:lang=\char`\"{}ja\char`\"{}$>$ 表示設定 
+$<$summary xml\-:lang=\char`\"{}ja\char`\"{}$>$ 再生速度 
 
-true\+: 描画する
-
-false\+: 描画しない
-
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
 \item 
-D\+:/dev/\+\_\+\+Effekseer/\+Effekseer\+For\+Unity/\+Dev/\+Plugin/\+Assets/\+Effekseer/\+Plugins/Effekseer\+Emitter.\+cs\end{DoxyCompactItemize}
+D\-:/dev/\-\_\-\-Effekseer/\-Effekseer\-For\-Unity/\-Dev/\-Plugin/\-Assets/\-Effekseer/\-Plugins/Effekseer\-Emitter.\-cs\end{DoxyCompactItemize}

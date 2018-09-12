@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['setallcolor',['SetAllColor',['../class_effekseer_emitter.html#a607376ba07571692ddef670ef0e12562',1,'EffekseerEmitter.SetAllColor()'],['../struct_effekseer_handle.html#a301f7e7c0dc9791a047a34bfb8e1702e',1,'EffekseerHandle.SetAllColor()']]],
   ['setlocation',['SetLocation',['../struct_effekseer_handle.html#a65d631a161e475acac133b6db28d0070',1,'EffekseerHandle']]],
   ['setpausedtoalleffects',['SetPausedToAllEffects',['../class_effekseer_system.html#af4e9eb30bd4a06ff5bc32b6ef0d020fe',1,'EffekseerSystem']]],
   ['setrotation',['SetRotation',['../struct_effekseer_handle.html#a54be425dc9d059e66fe00799f34e25cf',1,'EffekseerHandle']]],
