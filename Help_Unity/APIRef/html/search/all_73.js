@@ -10,9 +10,7 @@ var searchData=
   ['soundinstance',['SoundInstance',['../class_effekseer_1_1_sound_instance.html',1,'Effekseer']]],
   ['soundinstances',['soundInstances',['../class_effekseer_system.html#ac83155c54d94fc6b61f6f53032923667',1,'EffekseerSystem']]],
   ['speed',['speed',['../class_effekseer_emitter.html#ab7aec861ddf0ae032b485f7103d9779d',1,'EffekseerEmitter.speed()'],['../struct_effekseer_handle.html#a850710b2a953129286b171bb404fe674',1,'EffekseerHandle.speed()']]],
-  ['startnetwork',['StartNetwork',['../class_effekseer_system.html#ad317e23d8505642327cf15c06dcc2e09',1,'EffekseerSystem']]],
   ['stop',['Stop',['../class_effekseer_emitter.html#acab7d9ae949cd0aa844ae66b2f44ad5d',1,'EffekseerEmitter.Stop()'],['../struct_effekseer_handle.html#add31723e9d75fad60015c48dfe1bf785',1,'EffekseerHandle.Stop()']]],
   ['stopalleffects',['StopAllEffects',['../class_effekseer_system.html#acf3dde4a65c0e99aeacfea71b517b541',1,'EffekseerSystem']]],
-  ['stopnetwork',['StopNetwork',['../class_effekseer_system.html#ad8dd3bc972839f858dc68a078ff307dc',1,'EffekseerSystem']]],
   ['stoproot',['StopRoot',['../class_effekseer_emitter.html#a6bb4daefa3632e823b684ba575043290',1,'EffekseerEmitter.StopRoot()'],['../struct_effekseer_handle.html#ae16184a6f1770d63edf941941b8ad063',1,'EffekseerHandle.StopRoot()']]]
 ];
