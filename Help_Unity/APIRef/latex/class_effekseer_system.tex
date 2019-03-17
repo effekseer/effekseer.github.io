@@ -21,6 +21,10 @@ static void \hyperlink{class_effekseer_system_af4059b796725905982565d8b239bf9fa}
 static void \hyperlink{class_effekseer_system_a4f7d874f76c4f354b70b852df590be72}{Load\-Effect} (string name, Asset\-Bundle asset\-Bundle)
 \item 
 static void \hyperlink{class_effekseer_system_a8b328c83692b922217657a21f9d5fdeb}{Release\-Effect} (string name)
+\item 
+static bool \hyperlink{class_effekseer_system_ad317e23d8505642327cf15c06dcc2e09}{Start\-Network} ()
+\item 
+static void \hyperlink{class_effekseer_system_ad8dd3bc972839f858dc68a078ff307dc}{Stop\-Network} ()
 \end{DoxyCompactItemize}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
@@ -36,6 +40,10 @@ bool \hyperlink{class_effekseer_system_a106a9e679535bdacd968ab94c421321e}{is\-Ri
 int \hyperlink{class_effekseer_system_ac83155c54d94fc6b61f6f53032923667}{sound\-Instances} = 16
 \item 
 bool \hyperlink{class_effekseer_system_ad8a639d37912d6a3ada4ba5a065a7493}{enable\-Distortion} = true
+\item 
+uint \hyperlink{class_effekseer_system_a82dca137e7e455eb03fc07e19ec3c7c9}{Network\-Port} = 60000
+\item 
+bool \hyperlink{class_effekseer_system_a8fbc8f8d2b4986ad50d4e335349b0d00}{Do\-Start\-Network\-Automatically} = false
 \end{DoxyCompactItemize}
 \subsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
@@ -131,7 +139,16 @@ $<$param name=\char`\"{}name\char`\"{} xml\-:lang=\char`\"{}ja\char`\"{}$>$エ�
 )\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{class_effekseer_system_af4e9eb30bd4a06ff5bc32b6ef0d020fe}
 $<$summary xml\-:lang=\char`\"{}en\char`\"{}$>$ Pause or resume all effects 
 
-$<$summary xml\-:lang=\char`\"{}ja\char`\"{}$>$ 全エフェクトの一時停止、もしくは再開 \hypertarget{class_effekseer_system_acf3dde4a65c0e99aeacfea71b517b541}{\index{Effekseer\-System@{Effekseer\-System}!Stop\-All\-Effects@{Stop\-All\-Effects}}
+$<$summary xml\-:lang=\char`\"{}ja\char`\"{}$>$ 全エフェクトの一時停止、もしくは再開 \hypertarget{class_effekseer_system_ad317e23d8505642327cf15c06dcc2e09}{\index{Effekseer\-System@{Effekseer\-System}!Start\-Network@{Start\-Network}}
+\index{Start\-Network@{Start\-Network}!EffekseerSystem@{Effekseer\-System}}
+\subsubsection[{Start\-Network}]{\setlength{\rightskip}{0pt plus 5cm}static bool Effekseer\-System.\-Start\-Network (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{class_effekseer_system_ad317e23d8505642327cf15c06dcc2e09}
+$<$summary xml\-:lang=\char`\"{}en\char`\"{}$>$ start a server to edit effects from remote 
+
+$<$summary xml\-:lang=\char`\"{}ja\char`\"{}$>$ リモートでエフェクトを編集するためにサーバーを起動する。 \hypertarget{class_effekseer_system_acf3dde4a65c0e99aeacfea71b517b541}{\index{Effekseer\-System@{Effekseer\-System}!Stop\-All\-Effects@{Stop\-All\-Effects}}
 \index{Stop\-All\-Effects@{Stop\-All\-Effects}!EffekseerSystem@{Effekseer\-System}}
 \subsubsection[{Stop\-All\-Effects}]{\setlength{\rightskip}{0pt plus 5cm}static void Effekseer\-System.\-Stop\-All\-Effects (
 \begin{DoxyParamCaption}
@@ -140,10 +157,24 @@ $<$summary xml\-:lang=\char`\"{}ja\char`\"{}$>$ 全エフェクトの一時停�
 )\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{class_effekseer_system_acf3dde4a65c0e99aeacfea71b517b541}
 $<$summary xml\-:lang=\char`\"{}en\char`\"{}$>$ Stops all effects 
 
-$<$summary xml\-:lang=\char`\"{}ja\char`\"{}$>$ 全エフェクトの再生停止 
+$<$summary xml\-:lang=\char`\"{}ja\char`\"{}$>$ 全エフェクトの再生停止 \hypertarget{class_effekseer_system_ad8dd3bc972839f858dc68a078ff307dc}{\index{Effekseer\-System@{Effekseer\-System}!Stop\-Network@{Stop\-Network}}
+\index{Stop\-Network@{Stop\-Network}!EffekseerSystem@{Effekseer\-System}}
+\subsubsection[{Stop\-Network}]{\setlength{\rightskip}{0pt plus 5cm}static void Effekseer\-System.\-Stop\-Network (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{class_effekseer_system_ad8dd3bc972839f858dc68a078ff307dc}
+$<$summary xml\-:lang=\char`\"{}en\char`\"{}$>$ stop a server to edit effects from remote 
+
+$<$summary xml\-:lang=\char`\"{}ja\char`\"{}$>$ リモートでエフェクトを編集するためにサーバーを停止する。 
 
 \subsection{Member Data Documentation}
-\hypertarget{class_effekseer_system_a469cf59d9deeaef6e27b15c5fc5ee524}{\index{Effekseer\-System@{Effekseer\-System}!draw\-In\-Scene\-View@{draw\-In\-Scene\-View}}
+\hypertarget{class_effekseer_system_a8fbc8f8d2b4986ad50d4e335349b0d00}{\index{Effekseer\-System@{Effekseer\-System}!Do\-Start\-Network\-Automatically@{Do\-Start\-Network\-Automatically}}
+\index{Do\-Start\-Network\-Automatically@{Do\-Start\-Network\-Automatically}!EffekseerSystem@{Effekseer\-System}}
+\subsubsection[{Do\-Start\-Network\-Automatically}]{\setlength{\rightskip}{0pt plus 5cm}bool Effekseer\-System.\-Do\-Start\-Network\-Automatically = false}}\label{class_effekseer_system_a8fbc8f8d2b4986ad50d4e335349b0d00}
+$<$summary xml\-:lang=\char`\"{}en\char`\"{}$>$ Does run a server automatically to edit effects from remote? 
+
+$<$summary xml\-:lang=\char`\"{}ja\char`\"{}$>$ リモートでエフェクトを編集するためにサーバーを自動的に起動するか? \hypertarget{class_effekseer_system_a469cf59d9deeaef6e27b15c5fc5ee524}{\index{Effekseer\-System@{Effekseer\-System}!draw\-In\-Scene\-View@{draw\-In\-Scene\-View}}
 \index{draw\-In\-Scene\-View@{draw\-In\-Scene\-View}!EffekseerSystem@{Effekseer\-System}}
 \subsubsection[{draw\-In\-Scene\-View}]{\setlength{\rightskip}{0pt plus 5cm}bool Effekseer\-System.\-draw\-In\-Scene\-View = true}}\label{class_effekseer_system_a469cf59d9deeaef6e27b15c5fc5ee524}
 $<$summary xml\-:lang=\char`\"{}en\char`\"{}$>$ Whether it does draw in scene view for editor. 
@@ -168,7 +199,12 @@ $<$summary xml\-:lang=\char`\"{}ja\char`\"{}$>$ エフェクトの座標系 true
 \subsubsection[{max\-Squares}]{\setlength{\rightskip}{0pt plus 5cm}int Effekseer\-System.\-max\-Squares = 8192}}\label{class_effekseer_system_a2007e297eab6bc504cce40650679b1c4}
 $<$summary xml\-:lang=\char`\"{}en\char`\"{}$>$ Maximum number of quads that can be drawn. 
 
-$<$summary xml\-:lang=\char`\"{}ja\char`\"{}$>$ 描画できる四角形の最大数 \hypertarget{class_effekseer_system_ac83155c54d94fc6b61f6f53032923667}{\index{Effekseer\-System@{Effekseer\-System}!sound\-Instances@{sound\-Instances}}
+$<$summary xml\-:lang=\char`\"{}ja\char`\"{}$>$ 描画できる四角形の最大数 \hypertarget{class_effekseer_system_a82dca137e7e455eb03fc07e19ec3c7c9}{\index{Effekseer\-System@{Effekseer\-System}!Network\-Port@{Network\-Port}}
+\index{Network\-Port@{Network\-Port}!EffekseerSystem@{Effekseer\-System}}
+\subsubsection[{Network\-Port}]{\setlength{\rightskip}{0pt plus 5cm}uint Effekseer\-System.\-Network\-Port = 60000}}\label{class_effekseer_system_a82dca137e7e455eb03fc07e19ec3c7c9}
+$<$summary xml\-:lang=\char`\"{}en\char`\"{}$>$ A network port to edit effects from remote 
+
+$<$summary xml\-:lang=\char`\"{}ja\char`\"{}$>$ リモートでエフェクトを編集するためのネットワークのポート \hypertarget{class_effekseer_system_ac83155c54d94fc6b61f6f53032923667}{\index{Effekseer\-System@{Effekseer\-System}!sound\-Instances@{sound\-Instances}}
 \index{sound\-Instances@{sound\-Instances}!EffekseerSystem@{Effekseer\-System}}
 \subsubsection[{sound\-Instances}]{\setlength{\rightskip}{0pt plus 5cm}int Effekseer\-System.\-sound\-Instances = 16}}\label{class_effekseer_system_ac83155c54d94fc6b61f6f53032923667}
 $<$summary xml\-:lang=\char`\"{}en\char`\"{}$>$ Maximum number of sound instances. 

@@ -115,6 +115,10 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a4f7d874f76c4f354b70b852df590be72"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b328c83692b922217657a21f9d5fdeb"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_system.html#a8b328c83692b922217657a21f9d5fdeb">ReleaseEffect</a> (string name)</td></tr>
 <tr class="separator:a8b328c83692b922217657a21f9d5fdeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad317e23d8505642327cf15c06dcc2e09"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_system.html#ad317e23d8505642327cf15c06dcc2e09">StartNetwork</a> ()</td></tr>
+<tr class="separator:ad317e23d8505642327cf15c06dcc2e09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8dd3bc972839f858dc68a078ff307dc"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_system.html#ad8dd3bc972839f858dc68a078ff307dc">StopNetwork</a> ()</td></tr>
+<tr class="separator:ad8dd3bc972839f858dc68a078ff307dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -130,6 +134,10 @@ Public Attributes</h2></td></tr>
 <tr class="separator:ac83155c54d94fc6b61f6f53032923667"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8a639d37912d6a3ada4ba5a065a7493"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_system.html#ad8a639d37912d6a3ada4ba5a065a7493">enableDistortion</a> = true</td></tr>
 <tr class="separator:ad8a639d37912d6a3ada4ba5a065a7493"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82dca137e7e455eb03fc07e19ec3c7c9"><td class="memItemLeft" align="right" valign="top">uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_system.html#a82dca137e7e455eb03fc07e19ec3c7c9">NetworkPort</a> = 60000</td></tr>
+<tr class="separator:a82dca137e7e455eb03fc07e19ec3c7c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fbc8f8d2b4986ad50d4e335349b0d00"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_system.html#a8fbc8f8d2b4986ad50d4e335349b0d00">DoStartNetworkAutomatically</a> = false</td></tr>
+<tr class="separator:a8fbc8f8d2b4986ad50d4e335349b0d00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -308,6 +316,31 @@ static <a class="el" href="class_effekseer_system.html">EffekseerSystem</a>&#160
 
 </div>
 </div>
+<a class="anchor" id="ad317e23d8505642327cf15c06dcc2e09"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool EffekseerSystem.StartNetwork </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>&lt;summary xml:lang="en"&gt; start a server to edit effects from remote </p>
+<p>&lt;summary xml:lang="ja"&gt; リモートでエフェクトを編集するためにサーバーを起動する。 </p>
+
+</div>
+</div>
 <a class="anchor" id="acf3dde4a65c0e99aeacfea71b517b541"></a>
 <div class="memitem">
 <div class="memproto">
@@ -333,7 +366,46 @@ static <a class="el" href="class_effekseer_system.html">EffekseerSystem</a>&#160
 
 </div>
 </div>
+<a class="anchor" id="ad8dd3bc972839f858dc68a078ff307dc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void EffekseerSystem.StopNetwork </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>&lt;summary xml:lang="en"&gt; stop a server to edit effects from remote </p>
+<p>&lt;summary xml:lang="ja"&gt; リモートでエフェクトを編集するためにサーバーを停止する。 </p>
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a8fbc8f8d2b4986ad50d4e335349b0d00"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool EffekseerSystem.DoStartNetworkAutomatically = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>&lt;summary xml:lang="en"&gt; Does run a server automatically to edit effects from remote? </p>
+<p>&lt;summary xml:lang="ja"&gt; リモートでエフェクトを編集するためにサーバーを自動的に起動するか? </p>
+
+</div>
+</div>
 <a class="anchor" id="a469cf59d9deeaef6e27b15c5fc5ee524"></a>
 <div class="memitem">
 <div class="memproto">
@@ -404,6 +476,20 @@ static <a class="el" href="class_effekseer_system.html">EffekseerSystem</a>&#160
 
 </div>
 </div>
+<a class="anchor" id="a82dca137e7e455eb03fc07e19ec3c7c9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint EffekseerSystem.NetworkPort = 60000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>&lt;summary xml:lang="en"&gt; A network port to edit effects from remote </p>
+<p>&lt;summary xml:lang="ja"&gt; リモートでエフェクトを編集するためのネットワークのポート </p>
+
+</div>
+</div>
 <a class="anchor" id="ac83155c54d94fc6b61f6f53032923667"></a>
 <div class="memitem">
 <div class="memproto">
@@ -424,7 +510,7 @@ static <a class="el" href="class_effekseer_system.html">EffekseerSystem</a>&#160
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Sep 8 2018 17:49:05 for Effekseer Unity Plugin by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Mar 2 2019 15:53:08 for Effekseer Unity Plugin by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>
