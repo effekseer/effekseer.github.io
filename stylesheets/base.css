@@ -166,3 +166,16 @@ body {
 /* line 137, D:/dev/_Effekseer/Website/source/stylesheets/base.sass */
 #contents .download_prev {
   clear: both; }
+
+/* line 140, D:/dev/_Effekseer/Website/source/stylesheets/base.sass */
+#contents .left_books {
+  float: left;
+  width: 200px; }
+
+/* line 144, D:/dev/_Effekseer/Website/source/stylesheets/base.sass */
+#contents .left_books img {
+  width: 200px; }
+
+/* line 148, D:/dev/_Effekseer/Website/source/stylesheets/base.sass */
+#contents .right_books {
+  float: left; }
