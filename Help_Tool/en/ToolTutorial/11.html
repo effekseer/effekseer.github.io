@@ -1,230 +1,433 @@
+
+
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ja" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ja" > <!--<![endif]-->
 <head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>No11. Let’s use 3D model!!</title>
-  <style type="text/css">
-      code{white-space: pre-wrap;}
-      span.smallcaps{font-variant: small-caps;}
-      span.underline{text-decoration: underline;}
-      div.column{display: inline-block; vertical-align: top; width: 50%;}
-  </style>
-  <link rel="stylesheet" href="../base.css">
-  <!--[if lt IE 9]>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
-  <![endif]-->
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>No11. Let&#39;s use 3D model!! &mdash; Effekseer Help  ドキュメント</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../_static/js/three.min.js"></script>
+        <script type="text/javascript" src="../../_static/js/effekseer.min.js"></script>
+        <script type="text/javascript" src="../../_static/js/iframe.js"></script>
+        <script type="text/javascript" src="../../_static/js/OrbitControls.js"></script>
+        <script type="text/javascript" src="../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="検索" href="../../search.html" />
+    <link rel="next" title="No12. Let&#39;s specify complicated movement with F-Curve!" href="12.html" />
+    <link rel="prev" title="No10.Ribbon and Track" href="10.html" /> 
 </head>
-<body>
-<header>
-<h1 class="title">No11. Let’s use 3D model!!</h1>
-</header>
-<div class="main">
-<h2>Overview</h2>
-<p>In this chapter, we create an effect with a 3D model. In Effekseer, 3D models can be shown as particles, or it can be used as a spawning position in Spawning method. We create effects with these functions.</p>
-<div data-align="center">
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> Effekseer Help
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../ja/index.html">Effekseer Help 日本語</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Effekseer Help (English)</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../overview.html">Overview</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Tool Tutorial</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="01.html">No01.Sample and Use！</a></li>
+<li class="toctree-l3"><a class="reference internal" href="02.html">No02.Let's spread the particles!</a></li>
+<li class="toctree-l3"><a class="reference internal" href="03.html">No03. Let's display the image!</a></li>
+<li class="toctree-l3"><a class="reference internal" href="04.html">No04. Let's rotate and enlarge!</a></li>
+<li class="toctree-l3"><a class="reference internal" href="05.html">No05. Let's create a hit mark (Slashing)!</a></li>
+<li class="toctree-l3"><a class="reference internal" href="06.html">No06. Let's create circular particles!</a></li>
+<li class="toctree-l3"><a class="reference internal" href="07.html">No07. Let's move complicated with parent-child relationships!</a></li>
+<li class="toctree-l3"><a class="reference internal" href="08.html">No08. Let's arrange particles by spawn method!</a></li>
+<li class="toctree-l3"><a class="reference internal" href="09.html">No09.Let's create muzzle flash!</a></li>
+<li class="toctree-l3"><a class="reference internal" href="10.html">No10.Ribbon and Track</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">No11. Let's use 3D model!!</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#overview">Overview</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#d-model">3D model</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#show-3d-model-as-particles">Show 3D model as particles</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#use-3d-model-as-position-of-spawning-method">Use 3D model as position of Spawning method.</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#summary">Summary</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="12.html">No12. Let's specify complicated movement with F-Curve!</a></li>
+<li class="toctree-l3"><a class="reference internal" href="13.html">No13. Let's distort a background!</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolReference/index.html">Tool-Reference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolTips/01.html">TIPS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq.html">FAQ</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Effekseer Help</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../index.html">Effekseer Help (English)</a> &raquo;</li>
+        
+          <li><a href="index.html">Tool Tutorial</a> &raquo;</li>
+        
+      <li>No11. Let's use 3D model!!</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="no11-let-s-use-3d-model">
+<h1>No11. Let's use 3D model!!<a class="headerlink" href="#no11-let-s-use-3d-model" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<div class="main"><div class="section" id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>In this chapter, we create an effect with a 3D model.
+In Effekseer, 3D models can be shown as particles, or it can be used as a spawning position in Spawning method.
+We create effects with these functions.</p>
+<div align="center">
 <table>
-<tr>
-<td>
-<div data-align="center">
-<img src="../../img/Tutorial/11/effect1.gif">
-<p>
-The effect No.1 created in this chapter
-</p>
+<tr><td>
+<div align="center">
+<iframe src='../../Sample/viewer_en.html#11_02_Sample/effect1.efk'></iframe>
+<p>The effect No.1 created in this chapter</p>
 </div>
 </td>
 <td>
-<div data-align="center">
-<img src="../../img/Tutorial/11/effect2.gif">
-<p>
-The effect No.2 created in this chapter
-</p>
+<div align="center">
+<iframe src='../../Sample/viewer_en.html#11_02_Sample/effect2.efk'></iframe>
+<p>The effect No.2 created in this chapter</p>
 </div>
-</td>
-</tr>
+</td></tr>
 </table>
-</div>
-<h2>3D model</h2>
-<p>Effekseer can read the 3D model of fbx or mqo. fbx is a format that can be exported from various 3D software such as Blender, Maya, 3ds Max and so on. mqo is a format that can be exported from Metasequoia.</p>
+</div></div>
+<div class="section" id="d-model">
+<h2>3D model<a class="headerlink" href="#d-model" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>Effekseer can read the 3D model of fbx or mqo.
+fbx is a format that can be exported from various 3D software such as Blender, Maya, 3ds Max and so on.
+mqo is a format that can be exported from Metasequoia.</p>
 <p>Also supports fbx with animation.</p>
 <p>There are two uses.</p>
 <p>The first method is to display the 3D model as particles.</p>
-<div data-align="center">
+<div align="center">
 <img src="../../img/Tutorial/11/usecase_model.png">
-<p>
-Model
-</p>
-</div>
-<p>The second method is to display the 3D model as the spawning position of <code>Spawning method</code>.</p>
-<div data-align="center">
+<p>Model</p>
+</div><p>The second method is to display the 3D model as the spawning position of <code class="docutils literal notranslate"><span class="pre">Spawning</span> <span class="pre">method</span></code>.</p>
+<div align="center">
 <img src="../../img/Tutorial/11/usecase_spawn.png">
-<p>
-Spawning method
-</p>
-</div>
-<p>This chapter explains how to use them.</p>
-<p>
-We made it possible to download the effect created in advance from the link below.
-</p>
-<div data-align="center">
-<p>
-<a href = "../../Sample/11_01_Sample.zip">Download</a>
-</p>
-</div>
-<h2>Show 3D model as particles</h2>
+<p>Spawning method</p>
+</div><p>This chapter explains how to use them.</p>
+<p>We made it possible to download the effect created in advance from the link below.</p>
+<div align="center">
+<p><a href = "../../Sample/11_01_Sample.zip">Download</a></p>
+</div></div>
+<div class="section" id="show-3d-model-as-particles">
+<h2>Show 3D model as particles<a class="headerlink" href="#show-3d-model-as-particles" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>We show a model as particles.</p>
 <p>Please open effect1.efkproj.</p>
-<p>Just like <code>Sprite</code>, select <code>Model</code> as rendering method in <code>Rendering Settings</code> panel.</p>
-<p>Then we load <code>Model/Sphere.fbx</code> as a model.</p>
+<p>Just like <code class="docutils literal notranslate"><span class="pre">Sprite</span></code>, select <code class="docutils literal notranslate"><span class="pre">Model</span></code> as rendering method in <code class="docutils literal notranslate"><span class="pre">Rendering</span> <span class="pre">Settings</span></code> panel.</p>
+<p>Then we load <code class="docutils literal notranslate"><span class="pre">Model/Sphere.fbx</span></code> as a model.</p>
 <p>You can see that the loaded 3D model is shown.</p>
-<div data-align="center">
+<div align="center">
 <img src="../../img/Tutorial/11/model.png">
-<p>
-Model
-</p>
-</div>
-<p>If an opaque object is rendered, there is no problem with this. On the other hand, there are times when you want to put out effects along the shape of the model.</p>
-<p>In such a case, turn off <code>Lighting</code> from <code>Render Settings</code> panel.</p>
-<p>In addition let’s specify the image. We also specify Scroll for UV.</p>
+<p>Model</p>
+</div><p>If an opaque object is rendered, there is no problem with this.
+On the other hand, there are times when you want to put out effects along the shape of the model.</p>
+<p>In such a case, turn off <code class="docutils literal notranslate"><span class="pre">Lighting</span></code> from <code class="docutils literal notranslate"><span class="pre">Render</span> <span class="pre">Settings</span></code> panel.</p>
+<p>In addition let's specify the image.
+We also specify Scroll for UV.</p>
 <p>The parameters are as follows.</p>
-<table>
+<table border="1" class="docutils">
 <thead>
-<tr class="header">
-<th style="text-align: left;">Window</th>
-<th style="text-align: left;">Value type</th>
-<th style="text-align: left;">Value</th>
+<tr>
+<th align="left">Window</th>
+<th align="left">Value type</th>
+<th align="left">Value</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td style="text-align: left;">Render Settings</td>
-<td style="text-align: left;">Render method</td>
-<td style="text-align: left;">Model</td>
+<tr>
+<td align="left">Render Settings</td>
+<td align="left">Render method</td>
+<td align="left">Model</td>
 </tr>
-<tr class="even">
-<td style="text-align: left;">Render Settings</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">Model/Sphere.mqo</td>
+<tr>
+<td align="left">Render Settings</td>
+<td align="left"></td>
+<td align="left">Model/Sphere.mqo</td>
 </tr>
-<tr class="odd">
-<td style="text-align: left;">Render Settings</td>
-<td style="text-align: left;">Lighting</td>
-<td style="text-align: left;">Off</td>
+<tr>
+<td align="left">Render Settings</td>
+<td align="left">Lighting</td>
+<td align="left">Off</td>
 </tr>
-<tr class="even">
-<td style="text-align: left;">Render Settings</td>
-<td style="text-align: left;">Culling</td>
-<td style="text-align: left;">Double-sided</td>
+<tr>
+<td align="left">Render Settings</td>
+<td align="left">Culling</td>
+<td align="left">Double-sided</td>
 </tr>
-<tr class="odd">
-<td style="text-align: left;">Basic Render Settings</td>
-<td style="text-align: left;">Blend</td>
-<td style="text-align: left;">Additive</td>
+<tr>
+<td align="left">Basic Render Settings</td>
+<td align="left">Blend</td>
+<td align="left">Additive</td>
 </tr>
-<tr class="even">
-<td style="text-align: left;">Basic Render Settings</td>
-<td style="text-align: left;">Texture</td>
-<td style="text-align: left;">Texture/Aurora.png</td>
+<tr>
+<td align="left">Basic Render Settings</td>
+<td align="left">Texture</td>
+<td align="left">Texture/Aurora.png</td>
 </tr>
-<tr class="odd">
-<td style="text-align: left;">Basic Render Settings</td>
-<td style="text-align: left;">UV</td>
-<td style="text-align: left;">Scroll</td>
+<tr>
+<td align="left">Basic Render Settings</td>
+<td align="left">UV</td>
+<td align="left">Scroll</td>
 </tr>
-<tr class="even">
-<td style="text-align: left;">Basic Render Settings</td>
-<td style="text-align: left;">Size(Mean)</td>
-<td style="text-align: left;">1024,1024</td>
+<tr>
+<td align="left">Basic Render Settings</td>
+<td align="left">Size(Mean)</td>
+<td align="left">1024,1024</td>
 </tr>
-<tr class="odd">
-<td style="text-align: left;">Basic Render Settings</td>
-<td style="text-align: left;">Scroll Speed(Mean)</td>
-<td style="text-align: left;">0,-8</td>
+<tr>
+<td align="left">Basic Render Settings</td>
+<td align="left">Scroll Speed(Mean)</td>
+<td align="left">0,-8</td>
 </tr>
 </tbody>
-</table>
-<p>Then you can see that the effect flows along the shape of the model.</p>
-<div data-align="center">
-<p><img src="../../img/Tutorial/11/effect1.gif"></p>
-</div>
-<p>Rendering is sometimes wrong in the depth direction depending on a model. To solve this problem, turn <code>Z Set</code> on. Not limited to Effekseer, 3D rendering has a function to judge before and after. When <code>Z Set</code> is off, other objects are rendered as if the 3D model was not drawn. Therefore, the depth may be wrong.</p>
-<p>If <code>Z Set</code> is changed to On, you can see that it is correctly displayed including the depth.</p>
-<div data-align="center">
+</table><p>Then you can see that the effect flows along the shape of the model.</p>
+<div align="center">
+<img src="../../img/Tutorial/11/effect1.gif">
+</div><p>Rendering is sometimes wrong in the depth direction depending on a model.
+To solve this problem, turn <code class="docutils literal notranslate"><span class="pre">Z</span> <span class="pre">Set</span></code> on.
+Not limited to Effekseer, 3D rendering has a function to judge before and after.
+When <code class="docutils literal notranslate"><span class="pre">Z</span> <span class="pre">Set</span></code> is off, other objects are rendered as if the 3D model was not drawn.
+Therefore, the depth may be wrong.</p>
+<p>If <code class="docutils literal notranslate"><span class="pre">Z</span> <span class="pre">Set</span></code> is changed to On, you can see that it is correctly displayed including the depth.</p>
+<div align="center">
 <table>
-<tr>
-<td>
-<div data-align="center">
+<tr><td>
+<div align="center">
 <img src="../../img/Tutorial/11/zwrite_off.png">
-<p>
-Z Set:Off
-</p>
+<p>Z Set:Off</p>
 </div>
 </td>
 <td>
-<div data-align="center">
+<div align="center">
 <img src="../../img/Tutorial/11/zwrite_on.png">
-<p>
-Z Set:On
-</p>
+<p>Z Set:On</p>
 </div>
-</td>
-</tr>
+</td></tr>
 </table>
-</div>
-<h2>Use 3D model as position of Spawning method.</h2>
+</div></div>
+<div class="section" id="use-3d-model-as-position-of-spawning-method">
+<h2>Use 3D model as position of Spawning method.<a class="headerlink" href="#use-3d-model-as-position-of-spawning-method" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>Besides showing the model, it can be used as the position of spawning method.</p>
 <p>You can generate particles at the vertices or faces of the model.</p>
-<p>Let’s try it.</p>
+<p>Let's try it.</p>
 <p>Please open effect2.efkproj.</p>
-<p>Specify the model to spawning method. Then load Model/model2.fbx as a model. For clarity, make <code>Spawn Mode</code> Vertex.</p>
-<p>Specify xxx for particle’s image. We also increase <code>Spawn Count</code>.</p>
+<p>Specify the model to spawning method. Then load Model/model2.fbx as a model.
+For clarity, make <code class="docutils literal notranslate"><span class="pre">Spawn</span> <span class="pre">Mode</span></code> Vertex.</p>
+<p>Specify xxx for particle's image.
+We also increase <code class="docutils literal notranslate"><span class="pre">Spawn</span> <span class="pre">Count</span></code>.</p>
 <p>The parameters are as follows.</p>
-<table>
+<table border="1" class="docutils">
 <thead>
-<tr class="header">
-<th style="text-align: left;">Window</th>
-<th style="text-align: left;">Value type</th>
-<th style="text-align: left;">Value</th>
+<tr>
+<th align="left">Window</th>
+<th align="left">Value type</th>
+<th align="left">Value</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td style="text-align: left;">Common</td>
-<td style="text-align: left;">Spawn Count</td>
-<td style="text-align: left;">90</td>
+<tr>
+<td align="left">Common</td>
+<td align="left">Spawn Count</td>
+<td align="left">90</td>
 </tr>
-<tr class="even">
-<td style="text-align: left;">Spawning method</td>
-<td style="text-align: left;">Spawning method</td>
-<td style="text-align: left;">Model</td>
+<tr>
+<td align="left">Spawning method</td>
+<td align="left">Spawning method</td>
+<td align="left">Model</td>
 </tr>
-<tr class="odd">
-<td style="text-align: left;">Spawning method</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">Model/Sphere.mqo</td>
+<tr>
+<td align="left">Spawning method</td>
+<td align="left"></td>
+<td align="left">Model/Sphere.mqo</td>
 </tr>
-<tr class="even">
-<td style="text-align: left;">Spawning method</td>
-<td style="text-align: left;">Spwan Mode</td>
-<td style="text-align: left;">Vertex</td>
+<tr>
+<td align="left">Spawning method</td>
+<td align="left">Spwan Mode</td>
+<td align="left">Vertex</td>
 </tr>
 </tbody>
-</table>
-<p>You can see that particles are placed along the model.</p>
-<div data-align="center">
-<p><img src="../../img/Tutorial/11/effect2.gif"></p>
+</table><p>You can see that particles are placed along the model.</p>
+<div align="center">
+<img src="../../img/Tutorial/11/effect2.gif">
+</div><p>It can also be combined with ribbons and tracks.
+In that case, ribbons and tracks are generated along the vertices of the model.</p>
+<div align="center">
+<img src="../../img/Tutorial/11/effect3.gif">
+</div><p>Finally, I made it possible to download the effect created in this chapter.</p>
+<div align="center">
+<a href = "../../Sample/11_02_Sample.zip">Download</a>
+</div></div>
+<div class="section" id="summary">
+<h2>Summary<a class="headerlink" href="#summary" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>In this chapter, we created an effect with 3D Model.
+In the next chapter, we will use the F-Curve to specify complicated movements.</p>
+</div></div>
 </div>
-<p>It can also be combined with ribbons and tracks. In that case, ribbons and tracks are generated along the vertices of the model.</p>
-<div data-align="center">
-<p><img src="../../img/Tutorial/11/effect3.gif"></p>
-</div>
-<p>Finally, I made it possible to download the effect created in this chapter.</p>
-<div data-align="center">
-<p><a href = "../../Sample/11_02_Sample.zip">Download</a></p>
-</div>
-<h2>Summary</h2>
-<p>In this chapter, we created an effect with 3D Model. In the next chapter, we will use the F-Curve to specify complicated movements.</p>
-</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="12.html" class="btn btn-neutral float-right" title="No12. Let&#39;s specify complicated movement with F-Curve!" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="10.html" class="btn btn-neutral float-left" title="No10.Ribbon and Track" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Effekseer
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
 </body>
 </html>

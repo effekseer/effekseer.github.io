@@ -1,154 +1,287 @@
-﻿<!DOCTYPE html>
-<html>
 
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ja" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ja" > <!--<![endif]-->
 <head>
-	<meta charset=utf-8>
-	<title>深度</title>
-	<link href="../base.css" rel="stylesheet" type="text/css" />
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>深度 &mdash; Effekseer Help  ドキュメント</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../_static/js/three.min.js"></script>
+        <script type="text/javascript" src="../../_static/js/effekseer.min.js"></script>
+        <script type="text/javascript" src="../../_static/js/iframe.js"></script>
+        <script type="text/javascript" src="../../_static/js/OrbitControls.js"></script>
+        <script type="text/javascript" src="../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="検索" href="../../search.html" />
+    <link rel="next" title="TIPS" href="../ToolTips/01.html" />
+    <link rel="prev" title="オプション" href="options.html" /> 
 </head>
 
-<body>
-	<div class="main">
-		<h1>深度</h1>
-		
-		<h2>概要</h2>
-		奥行き方向の処理に関するパラメーターを設定します。
-		
-		<h2>パラメーター</h2>
-		
-		<h3>Zオフセット</h3>
-		<p>
-		描画する時に、パーティクルの位置を奥行き方向に移動させます。
-		描画にのみ影響を与えます。
-		1.4では、このパラメーターが設定されているパーティクルのみ移動させます。子は移動されません。
-		例えば、ヒットエフェクトを表示する場合に、キャラクターにエフェクトがめり込まないようにするために使用できます。
-		</p>
+<body class="wy-body-for-nav">
 
-		<p>
-			(1)はキャラクターにめり込んでいるエフェクト、(2)はZオフセットです。
-			Zオフセットでキャラクターがエフェクトにめり込まなくなったことがわかります。
-		</p>
-<img src="../../img/Reference/depth_Z-Offset.png" width="80%" height="80%">
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
 
-<table>
-	<tr>
-		<td>
-			<p>Zオフセット : 0</p>
-		</td>
-		<td>
-			<p>Zオフセット : 2</p>
-		</td>
-	</tr>
+          
+            <a href="../../index.html" class="icon icon-home"> Effekseer Help
+          
 
-	<tr>
-		<td>
-			<img src="../../img/Reference/depth_Z-Offset-None.png" width="200" height="200">
-		</td>
-		<td>
-			<img src="../../img/Reference/depth_Z-Offset-4.png" width="200" height="200">
-		</td>
-	</tr>
-</table>
-		
-		<h3>Zオフセットによる拡大無効化</h3>
-		<p>
-		Zオフセットを使用するとエフェクトが描画される位置が移動し、カメラとの距離が変化します。
-		距離が変化すると描画されるエフェクトの大きさが変化します。
-		その変化が起きないようにするか、設定します。
-		</p>
+          
+          </a>
 
-<table>
-	<tr>
-		<td>
-			<p>Off</p>
-		</td>
-		<td>
-			<p>On</p>
-		</td>
-	</tr>
+          
+            
+            
+          
 
-	<tr>
-		<td>
-			<img src="../../img/Reference/depth_Z-Offset-4.png" width="200" height="200">
-		</td>
-		<td>
-			<img src="../../img/Reference/depth_Z-Offset-None.png" width="200" height="200">
-		</td>
-	</tr>
-</table>
-	
-		<h3>Zオフセットの拡大</h3>
-		<p>
-		Zオフセットがパーティクルの拡大で大きくなるか、設定します。
-		</p>
-	
-<table>
-	<tr>
-		<td>
-			<p>Off</p>
-		</td>
-		<td>
-			<p>On</p>
-		</td>
-	</tr>
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
 
-	<tr>
-		<td>
-			<img src="../../img/Reference/depth_Z-Offset-2-Scale-2.png" width="200" height="200">
-		</td>
-		<td>
-			<img src="../../img/Reference/depth_Z-Offset-2-Scale-2-With.png" width="200" height="200">
-		</td>
-	</tr>
-</table>
-		<h3>深度ソート</h3>
-		<p>
-		同じノードに属するパーティクルが奥行き方向の距離によって並び替えられるか指定します。
-		指定したほうが見栄えがいいことが多いですが、処理も重くなります。
-		</p>
+          
+        </div>
 
-<table>
-	<tr>
-		<td>
-			<p>Off</p>
-		</td>
-		<td>
-			<p>On</p>
-		</td>
-	</tr>
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Effekseer Help 日本語</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../overview.html">概要</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolTutorial/index.html">ツール・チュートリアル</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">ツール・リファレンス</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="index.html#id2">概要</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="index.html#id6">各ウインドウ</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="common.html">共通</a></li>
+<li class="toctree-l4"><a class="reference internal" href="location.html">位置</a></li>
+<li class="toctree-l4"><a class="reference internal" href="locationAbs.html">引力</a></li>
+<li class="toctree-l4"><a class="reference internal" href="locationGene.html">生成方法</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rotation.html">回転</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scale.html">拡大</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererCommon.html">描画共通</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererSprite.html">描画-スプライト</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererRibbon.html">描画-リボン</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererRing.html">描画-リング</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererModel.html">描画-モデル</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererTrack.html">描画-軌跡</a></li>
+<li class="toctree-l4"><a class="reference internal" href="fcurve.html">Fカーブ</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sound.html">音</a></li>
+<li class="toctree-l4"><a class="reference internal" href="network.html">ネットワーク</a></li>
+<li class="toctree-l4"><a class="reference internal" href="culling.html">カリング</a></li>
+<li class="toctree-l4"><a class="reference internal" href="behavior.html">振る舞い</a></li>
+<li class="toctree-l4"><a class="reference internal" href="record.html">録画</a></li>
+<li class="toctree-l4"><a class="reference internal" href="fileviewer.html">ファイルビューア</a></li>
+<li class="toctree-l4"><a class="reference internal" href="global.html">全体</a></li>
+<li class="toctree-l4"><a class="reference internal" href="options.html">オプション</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">深度</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id7">コマンドライン</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolTips/01.html">TIPS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq.html">FAQ</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../en/index.html">Effekseer Help (English)</a></li>
+</ul>
 
-	<tr>
-		<td>
-			<img src="../../img/Reference/depth_Z-Sort-Off.png" width="200" height="200">
-		</td>
-		<td>
-			<img src="../../img/Reference/depth_Z-Sort-On.png" width="200" height="200">
-		</td>
-	</tr>
-</table>
-		
-		<h3>描画優先度</h3>
-		<p>
-		ノード間の描画順序を指定します。値が大きいほど、後に描画されます。
-		描画優先度は歪みにも影響します。
-		描画優先度が0より小さい場合、歪みは背景のみを歪ませます。パーティクル同士で歪みは発生しません。
-		描画優先度が0以上の場合、背景と描画優先度が0より小さいパーティクルを歪ませます。
-		</p>
+            
+          
+        </div>
+      </div>
+    </nav>
 
-		<p>
-			描画順序の例です。
-			(1)は(2)の親のノードで描画優先度は0です。
-			(2)の描画優先度は0です。
-			(3)の描画優先度は1です。
-			描画優先度により描画順序が決まり、描画優先度が同じノード間では子のノードが後に描画されることがわかります。
-		</p>
-<img src="../../img/Reference/depth_drawingPriority.png" width="200" height="200">
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
-		<h3>ソフトパーティクル</h3>
-		<p>
-		特定のゲームエンジン向けのパラメーターです。1.4現在、Effekseerには反映されません。
-		</p>
-	</div>
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Effekseer Help</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../index.html">Effekseer Help 日本語</a> &raquo;</li>
+        
+          <li><a href="index.html">ツール・リファレンス</a> &raquo;</li>
+        
+      <li>深度</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>深度<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<div class="section" id="id2">
+<h2>概要<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>奥行き方向の処理に関するパラメーターを設定します。</p>
+</div>
+<div class="section" id="id3">
+<h2>パラメーター<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<div class="section" id="z">
+<h3>Zオフセット<a class="headerlink" href="#z" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>描画する時に、パーティクルの位置を奥行き方向に移動させます。 描画にのみ影響を与えます。 1.4では、このパラメーターが設定されているパーティクルのみ移動させます。子は移動されません。 例えば、ヒットエフェクトを表示する場合に、キャラクターにエフェクトがめり込まないようにするために使用できます。</p>
+<p>(1)はキャラクターにめり込んでいるエフェクト、(2)はZオフセットです。 Zオフセットでキャラクターがエフェクトにめり込まなくなったことがわかります。</p>
+<img src="../../img/Reference/depth_Z-Offset.png"/><table><tbody><tr><td><p>Zオフセット : 0</p>
+</td><td><p>Zオフセット : 2</p>
+</td></tr><tr><td><img src="../../img/Reference/depth_Z-Offset-None.png"/></td><td><img src="../../img/Reference/depth_Z-Offset-4.png"/></td></tr></tbody></table></div>
+<div class="section" id="id4">
+<h3>Zオフセットによる拡大無効化<a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>Zオフセットを使用するとエフェクトが描画される位置が移動し、カメラとの距離が変化します。 距離が変化すると描画されるエフェクトの大きさが変化します。 その変化が起きないようにするか、設定します。</p>
+<table><tbody><tr><td><p>Off</p>
+</td><td><p>On</p>
+</td></tr><tr><td><img src="../../img/Reference/depth_Z-Offset-4.png"/></td><td><img src="../../img/Reference/depth_Z-Offset-None.png"/></td></tr></tbody></table></div>
+<div class="section" id="id5">
+<h3>Zオフセットの拡大<a class="headerlink" href="#id5" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>Zオフセットがパーティクルの拡大で大きくなるか、設定します。</p>
+<table><tbody><tr><td><p>Off</p>
+</td><td><p>On</p>
+</td></tr><tr><td><img src="../../img/Reference/depth_Z-Offset-2-Scale-2.png"/></td><td><img src="../../img/Reference/depth_Z-Offset-2-Scale-2-With.png"/></td></tr></tbody></table></div>
+<div class="section" id="id6">
+<h3>深度ソート<a class="headerlink" href="#id6" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>同じノードに属するパーティクルが奥行き方向の距離によって並び替えられるか指定します。 指定したほうが見栄えがいいことが多いですが、処理も重くなります。</p>
+<table><tbody><tr><td><p>Off</p>
+</td><td><p>On</p>
+</td></tr><tr><td><img src="../../img/Reference/depth_Z-Sort-Off.png"/></td><td><img src="../../img/Reference/depth_Z-Sort-On.png"/></td></tr></tbody></table></div>
+<div class="section" id="id7">
+<h3>描画優先度<a class="headerlink" href="#id7" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>ノード間の描画順序を指定します。値が大きいほど、後に描画されます。 描画優先度は歪みにも影響します。 描画優先度が0より小さい場合、歪みは背景のみを歪ませます。パーティクル同士で歪みは発生しません。 描画優先度が0以上の場合、背景と描画優先度が0より小さいパーティクルを歪ませます。</p>
+<p>描画順序の例です。 (1)は(2)の親のノードで描画優先度は0です。 (2)の描画優先度は0です。 (3)の描画優先度は1です。 描画優先度により描画順序が決まり、描画優先度が同じノード間では子のノードが後に描画されることがわかります。</p>
+<img src="../../img/Reference/depth_drawingPriority.png"/></div>
+<div class="section" id="id8">
+<h3>ソフトパーティクル<a class="headerlink" href="#id8" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>特定のゲームエンジン向けのパラメーターです。1.4現在、Effekseerには反映されません。</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../ToolTips/01.html" class="btn btn-neutral float-right" title="TIPS" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="options.html" class="btn btn-neutral float-left" title="オプション" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Effekseer
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
 </body>
-
 </html>

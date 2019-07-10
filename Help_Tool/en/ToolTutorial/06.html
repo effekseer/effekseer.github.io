@@ -1,178 +1,379 @@
+
+
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ja" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ja" > <!--<![endif]-->
 <head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>No06. Let’s create circular particles!</title>
-  <style type="text/css">
-      code{white-space: pre-wrap;}
-      span.smallcaps{font-variant: small-caps;}
-      span.underline{text-decoration: underline;}
-      div.column{display: inline-block; vertical-align: top; width: 50%;}
-  </style>
-  <link rel="stylesheet" href="../base.css">
-  <!--[if lt IE 9]>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
-  <![endif]-->
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>No06. Let&#39;s create circular particles! &mdash; Effekseer Help  ドキュメント</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../_static/js/three.min.js"></script>
+        <script type="text/javascript" src="../../_static/js/effekseer.min.js"></script>
+        <script type="text/javascript" src="../../_static/js/iframe.js"></script>
+        <script type="text/javascript" src="../../_static/js/OrbitControls.js"></script>
+        <script type="text/javascript" src="../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="検索" href="../../search.html" />
+    <link rel="next" title="No07. Let&#39;s move complicated with parent-child relationships!" href="07.html" />
+    <link rel="prev" title="No05. Let&#39;s create a hit mark (Slashing)!" href="05.html" /> 
 </head>
-<body>
-<header>
-<h1 class="title">No06. Let’s create circular particles!</h1>
-</header>
-<div class="main">
-<h2>Overview</h2>
-<p>In this chapter, you will create various effects using rings. You have specified the sprite as the drawing method, but this time you will specify the ring. The ring draws cylindrical particles. By changing the parameters, you can create not only circular but also various effects.</p>
-<div data-align="center">
-<img src="../../img/Tutorial/06_renderRing.png">
-<p>
-Ring
-</p>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> Effekseer Help
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
 </div>
-<p>In addition, by changing the area (UV) used for the loaded image, try changing the image to improve the appearance.</p>
-<div data-align="center">
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../ja/index.html">Effekseer Help 日本語</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Effekseer Help (English)</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../overview.html">Overview</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Tool Tutorial</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="01.html">No01.Sample and Use！</a></li>
+<li class="toctree-l3"><a class="reference internal" href="02.html">No02.Let's spread the particles!</a></li>
+<li class="toctree-l3"><a class="reference internal" href="03.html">No03. Let's display the image!</a></li>
+<li class="toctree-l3"><a class="reference internal" href="04.html">No04. Let's rotate and enlarge!</a></li>
+<li class="toctree-l3"><a class="reference internal" href="05.html">No05. Let's create a hit mark (Slashing)!</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">No06. Let's create circular particles!</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#overview">Overview</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#a-basic-ring">A basic ring</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#a-triangle">A triangle</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#uv-scroll">UV Scroll</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#summery">Summery</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="07.html">No07. Let's move complicated with parent-child relationships!</a></li>
+<li class="toctree-l3"><a class="reference internal" href="08.html">No08. Let's arrange particles by spawn method!</a></li>
+<li class="toctree-l3"><a class="reference internal" href="09.html">No09.Let's create muzzle flash!</a></li>
+<li class="toctree-l3"><a class="reference internal" href="10.html">No10.Ribbon and Track</a></li>
+<li class="toctree-l3"><a class="reference internal" href="11.html">No11. Let's use 3D model!!</a></li>
+<li class="toctree-l3"><a class="reference internal" href="12.html">No12. Let's specify complicated movement with F-Curve!</a></li>
+<li class="toctree-l3"><a class="reference internal" href="13.html">No13. Let's distort a background!</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolReference/index.html">Tool-Reference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolTips/01.html">TIPS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq.html">FAQ</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Effekseer Help</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../index.html">Effekseer Help (English)</a> &raquo;</li>
+        
+          <li><a href="index.html">Tool Tutorial</a> &raquo;</li>
+        
+      <li>No06. Let's create circular particles!</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="no06-let-s-create-circular-particles">
+<h1>No06. Let's create circular particles!<a class="headerlink" href="#no06-let-s-create-circular-particles" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<div class="main"><div class="section" id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>In this chapter, you will create various effects using rings.
+You have specified the sprite as the drawing method, but this time you will specify the ring.
+The ring draws cylindrical particles.
+By changing the parameters, you can create not only circular but also various effects.</p>
+<div align="center">
+<img src="../../img/Tutorial/06_renderRing.png">
+<p>Ring</p>
+</div><p>In addition, by changing the area (UV) used for the loaded image, try changing the image to improve the appearance.</p>
+<div align="center">
 <table>
 <tr>
 <td>
-<img src="../../img/Tutorial/06_ring_easing.gif">
-<p>
-Effect No.1 created in this chapter
-</p>
+<iframe src='../../Sample/viewer_en.html#06_02_Sample/effect1.efk'></iframe>
+<p>Effect No.1 created in this chapter</p>
 </td>
 <td>
-<img src="../../img/Tutorial/06_tri.png">
-<p>
-Effect No.2 created in this chapter
-</p>
+<iframe src='../../Sample/viewer_en.html#06_02_Sample/effect2.efk'></iframe>
+<p>Effect No.2 created in this chapter</p>
 </td>
 <td>
-<img src="../../img/Tutorial/06_scroll.gif">
-<p>
-Effect No.3 created in this chapter
-</p>
+<iframe src='../../Sample/viewer_en.html#06_02_Sample/effect3.efk'></iframe>
+<p>Effect No.3 created in this chapter</p>
 </td>
 </tr>
 </table>
-</div>
-<p>
-We made it possible to download the effect created in advance from the link below.
-</p>
-<div data-align="center">
-<p>
-<a href = "../../Sample/06_01_Sample.zip">Download</a>
-</p>
-</div>
-<h2>A basic ring</h2>
+</div><p>We made it possible to download the effect created in advance from the link below.</p>
+<div align="center">
+<p><a href = "../../Sample/06_01_Sample.zip">Download</a></p>
+</div></div>
+<div class="section" id="a-basic-ring">
+<h2>A basic ring<a class="headerlink" href="#a-basic-ring" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>The first effect you create is a ring whose shape changes with time.</p>
 <p>Please open effect1.efkproj.</p>
-<p>You specify the ring for particle drawing method. You change the sprite in the “Render Settings” window to Ring.</p>
-<div data-align="center">
+<p>You specify the ring for particle drawing method.
+You change the sprite in the &quot;Render Settings&quot; window to Ring.</p>
+<div align="center">
 <img src="../../img/Tutorial/06_ring_en.png">
-<p>
-Ring
-</p>
-</div>
-<p>After changing, when you play an effect, you can see that the rings are displayed.</p>
-<div data-align="center">
+<p>Ring</p>
+</div><p>After changing, when you play an effect, you can see that the rings are displayed.</p>
+<div align="center">
 <img src="../../img/Tutorial/06_ring.png">
-<p>
-Ring
-</p>
-</div>
-<p>You can change the shape of this ring by changing the parameters.</p>
-<p>The shape of the ring is specified by the outer ring (1) and the inner ring (2) of the “Render Settings” window. Here, you specify the direction (x) to the outside of the circle and the length (y) in the axial direction.</p>
+<p>Ring</p>
+</div><p>You can change the shape of this ring by changing the parameters.</p>
+<p>The shape of the ring is specified by the outer ring (1) and the inner ring (2) of the &quot;Render Settings&quot; window.
+Here, you specify the direction (x) to the outside of the circle and the length (y) in the axial direction.</p>
 <p><b> The xyz direction of the preview screen differs from the xy direction you specify. </b></p>
-<div data-align="center">
+<div align="center">
 <img src="../../img/Tutorial/06_ring_inout.png">
-<p>
-Inner,Outer
-</p>
-</div>
-<p>These values can also be changed by easing.</p>
-<p>Change the values of the outer and inner rings as follows. This indicates that only the <code>Outer-Position</code> moves from (1, 2) to (3, 0) while fixing the <code>Inner-Position</code> position at (1, 0).</p>
-<table>
+<p>Inner,Outer</p>
+</div><p>These values can also be changed by easing.</p>
+<p>Change the values of the outer and inner rings as follows.
+This indicates that only the <code class="docutils literal notranslate"><span class="pre">Outer-Position</span></code> moves from (1, 2) to (3, 0) while fixing the <code class="docutils literal notranslate"><span class="pre">Inner-Position</span></code> position at (1, 0).</p>
+<table border="1" class="docutils">
 <thead>
-<tr class="header">
-<th style="text-align: left;">Window</th>
-<th style="text-align: left;">Value type</th>
-<th style="text-align: left;">Value</th>
+<tr>
+<th align="left">Window</th>
+<th align="left">Value type</th>
+<th align="left">Value</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td style="text-align: left;">Basic Settings</td>
-<td style="text-align: left;">Time to live</td>
-<td style="text-align: left;">60</td>
+<tr>
+<td align="left">Basic Settings</td>
+<td align="left">Time to live</td>
+<td align="left">60</td>
 </tr>
-<tr class="even">
-<td style="text-align: left;">Rotation</td>
-<td style="text-align: left;">Angle</td>
-<td style="text-align: left;">x=0, y=0, z=-45</td>
+<tr>
+<td align="left">Rotation</td>
+<td align="left">Angle</td>
+<td align="left">x=0, y=0, z=-45</td>
 </tr>
-<tr class="odd">
-<td style="text-align: left;">Render Settings</td>
-<td style="text-align: left;">Outer</td>
-<td style="text-align: left;">Easing</td>
+<tr>
+<td align="left">Render Settings</td>
+<td align="left">Outer</td>
+<td align="left">Easing</td>
 </tr>
-<tr class="even">
-<td style="text-align: left;">Render Settings</td>
-<td style="text-align: left;">Outer-Start(Mean)</td>
-<td style="text-align: left;">x=1, y=2</td>
+<tr>
+<td align="left">Render Settings</td>
+<td align="left">Outer-Start(Mean)</td>
+<td align="left">x=1, y=2</td>
 </tr>
-<tr class="odd">
-<td style="text-align: left;">Render Settings</td>
-<td style="text-align: left;">Outer-End(Mean)</td>
-<td style="text-align: left;">x=3, y=0</td>
+<tr>
+<td align="left">Render Settings</td>
+<td align="left">Outer-End(Mean)</td>
+<td align="left">x=3, y=0</td>
 </tr>
 </tbody>
-</table>
-<p>You can see that the shape of the ring is changing. The ring is compatible with circular effect.</p>
-<div data-align="center">
+</table><p>You can see that the shape of the ring is changing.
+The ring is compatible with circular effect.</p>
+<div align="center">
 <img src="../../img/Tutorial/06_ring_easing.gif">
-<p>
-Inner ring, Outer ring
-</p>
-</div>
-<h2>A triangle</h2>
+<p>Inner ring, Outer ring</p>
+</div></div>
+<div class="section" id="a-triangle">
+<h2>A triangle<a class="headerlink" href="#a-triangle" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>The second effect you create is a triangle.</p>
 <p>Please open effect2.efkproj.</p>
-<p>You can express various shapes by changing the number of vertices composed 0f the ring. In the initial setting, the number of vertices is large, so the particles look like circles. Reducing the number of vertices allows you to express shapes such as triangles, rectangles, and hexagons.</p>
-<p>In this chapter, You try to create a triangle. Change the number of vertices to 3 from the “Render Settings” window. You can see that changing the value will result in a triangle.</p>
-<div data-align="center">
+<p>You can express various shapes by changing the number of vertices composed 0f the ring.
+In the initial setting, the number of vertices is large, so the particles look like circles.
+Reducing the number of vertices allows you to express shapes such as triangles, rectangles, and hexagons.</p>
+<p>In this chapter, You try to create a triangle. Change the number of vertices to 3 from the &quot;Render Settings&quot; window.
+You can see that changing the value will result in a triangle.</p>
+<div align="center">
 <img src="../../img/Tutorial/06_tri.png">
-<p>
-A triangle
-</p>
-</div>
-<h2>UV Scroll</h2>
+<p>A triangle</p>
+</div></div>
+<div class="section" id="uv-scroll">
+<h2>UV Scroll<a class="headerlink" href="#uv-scroll" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>The third effect you create is a ring with an image.</p>
 <p>Please open effect3.efkproj.</p>
-<p>You can also specify an image to the ring. By specifying the image, expression of the shock wave and the aura which blows up etc. becomes easier.</p>
-<p>Let’s specify the image immediately. Select “Scroll.png” from the “Basic Render Settings” window.</p>
+<p>You can also specify an image to the ring.
+By specifying the image, expression of the shock wave and the aura which blows up etc. becomes easier.</p>
+<p>Let's specify the image immediately. Select &quot;Scroll.png&quot; from the &quot;Basic Render Settings&quot; window.</p>
 <p>You can see that the color of the ring has changed from single color to image.</p>
-<div data-align="center">
+<div align="center">
 <img src="../../img/Tutorial/06_ring_img.png">
-<p>
-Image
-</p>
-</div>
-<p>However, this is not appetizing. If you change the image according to the passage of time, it looks better. In Effekseer, you can change the area (UV) of the image used for particles.</p>
+<p>Image</p>
+</div><p>However, this is not appetizing. If you change the image according to the passage of time, it looks better.
+In Effekseer, you can change the area (UV) of the image used for particles.</p>
 <p>Let the area of the image used for the particles move over time.</p>
-<p>Change UV from “Basic Render Settings” window. Change UV <code>Standard</code> to <code>Scroll</code>. Then, nothing is shown. This is because you have not set the area of the image to use.</p>
+<p>Change UV from &quot;Basic Render Settings&quot; window.
+Change UV <code class="docutils literal notranslate"><span class="pre">Standard</span></code> to <code class="docutils literal notranslate"><span class="pre">Scroll</span></code>.
+Then, nothing is shown.
+This is because you have not set the area of the image to use.</p>
 <p>Enter the image size (256, 256) in the size. Next, enter (0, -5) as the moving speed.</p>
 <p>You can see that the image is moving.</p>
-<div data-align="center">
+<div align="center">
 <img src="../../img/Tutorial/06_scroll.gif">
-<p>
-UV Scroll
-</p>
+<p>UV Scroll</p>
+</div><p>Finally, I made it possible to download the effect created in this chapter.</p>
+<div align="center">
+<a href = "../../Sample/06_02_Sample.zip">Download</a>
+</div></div>
+<div class="section" id="summery">
+<h2>Summery<a class="headerlink" href="#summery" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>In this chapter, you created an effect using a ring.
+In the next chapter, you will create complicated effects using parent-child relationships.</p>
+</div></div>
 </div>
-<p>Finally, I made it possible to download the effect created in this chapter.</p>
-<div data-align="center">
-<p><a href = "../../Sample/06_02_Sample.zip">Download</a></p>
-</div>
-<h2>Summery</h2>
-<p>In this chapter, you created an effect using a ring. In the next chapter, you will create complicated effects using parent-child relationships.</p>
-</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="07.html" class="btn btn-neutral float-right" title="No07. Let&#39;s move complicated with parent-child relationships!" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="05.html" class="btn btn-neutral float-left" title="No05. Let&#39;s create a hit mark (Slashing)!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Effekseer
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
 </body>
 </html>

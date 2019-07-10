@@ -1,174 +1,358 @@
+
+
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ja" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ja" > <!--<![endif]-->
 <head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>No02.Let’s spread the particles!</title>
-  <style type="text/css">
-      code{white-space: pre-wrap;}
-      span.smallcaps{font-variant: small-caps;}
-      span.underline{text-decoration: underline;}
-      div.column{display: inline-block; vertical-align: top; width: 50%;}
-  </style>
-  <link rel="stylesheet" href="../base.css">
-  <!--[if lt IE 9]>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
-  <![endif]-->
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>No02.Let&#39;s spread the particles! &mdash; Effekseer Help  ドキュメント</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../_static/js/three.min.js"></script>
+        <script type="text/javascript" src="../../_static/js/effekseer.min.js"></script>
+        <script type="text/javascript" src="../../_static/js/iframe.js"></script>
+        <script type="text/javascript" src="../../_static/js/OrbitControls.js"></script>
+        <script type="text/javascript" src="../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="検索" href="../../search.html" />
+    <link rel="next" title="No03. Let&#39;s display the image!" href="03.html" />
+    <link rel="prev" title="No01.Sample and Use！" href="01.html" /> 
 </head>
-<body>
-<header>
-<h1 class="title">No02.Let’s spread the particles!</h1>
-</header>
-<div class="main">
-<h2>Overview</h2>
-<p>In this chapter, You will disperse the particles.&lt;&gt; This chapter is not enough to make cool effects, but you can learn the basic operation of Effekseer. Based on the knowledge learned in this chapter, you will create a cool effect in the next chapter. Therefore, let’s understand firmly.</p>
-<div data-align="center">
-<img src="../../img/Tutorial/02_completed.gif">
-<p>
-Effects created in this chapter
-</p>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> Effekseer Help
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
 </div>
-<h2>Edit location</h2>
-<h3>Edit initial location</h3>
-<p>Currently, particles are shown in the center. Let’s move this particle from the center.</p>
-<div data-align="center">
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../ja/index.html">Effekseer Help 日本語</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Effekseer Help (English)</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../overview.html">Overview</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Tool Tutorial</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="01.html">No01.Sample and Use！</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">No02.Let's spread the particles!</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#overview">Overview</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#edit-location">Edit location</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#summary">Summary</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="03.html">No03. Let's display the image!</a></li>
+<li class="toctree-l3"><a class="reference internal" href="04.html">No04. Let's rotate and enlarge!</a></li>
+<li class="toctree-l3"><a class="reference internal" href="05.html">No05. Let's create a hit mark (Slashing)!</a></li>
+<li class="toctree-l3"><a class="reference internal" href="06.html">No06. Let's create circular particles!</a></li>
+<li class="toctree-l3"><a class="reference internal" href="07.html">No07. Let's move complicated with parent-child relationships!</a></li>
+<li class="toctree-l3"><a class="reference internal" href="08.html">No08. Let's arrange particles by spawn method!</a></li>
+<li class="toctree-l3"><a class="reference internal" href="09.html">No09.Let's create muzzle flash!</a></li>
+<li class="toctree-l3"><a class="reference internal" href="10.html">No10.Ribbon and Track</a></li>
+<li class="toctree-l3"><a class="reference internal" href="11.html">No11. Let's use 3D model!!</a></li>
+<li class="toctree-l3"><a class="reference internal" href="12.html">No12. Let's specify complicated movement with F-Curve!</a></li>
+<li class="toctree-l3"><a class="reference internal" href="13.html">No13. Let's distort a background!</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolReference/index.html">Tool-Reference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolTips/01.html">TIPS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq.html">FAQ</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Effekseer Help</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../index.html">Effekseer Help (English)</a> &raquo;</li>
+        
+          <li><a href="index.html">Tool Tutorial</a> &raquo;</li>
+        
+      <li>No02.Let's spread the particles!</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="no02-let-s-spread-the-particles">
+<h1>No02.Let's spread the particles!<a class="headerlink" href="#no02-let-s-spread-the-particles" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<div class="main"><div class="section" id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>In this chapter, You will disperse the particles.&lt;&gt;
+This chapter is not enough to make cool effects, but you can learn the basic operation of Effekseer.
+Based on the knowledge learned in this chapter, you will create a cool effect in the next chapter.
+Therefore, let's understand firmly.</p>
+<iframe src='../../Sample/viewer_en.html#02_Sample/effect.efk'></iframe></div>
+<div class="section" id="edit-location">
+<h2>Edit location<a class="headerlink" href="#edit-location" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<div class="section" id="edit-initial-location">
+<h3>Edit initial location<a class="headerlink" href="#edit-initial-location" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>Currently, particles are shown in the center. Let's move this particle from the center.</p>
+<div align="center">
 <img src="../../img/Tutorial/01_square.png">
-<p>
-Shown in the center
-</p>
-</div>
-<p>First, click “Node” in the “Node Tree” on the right side of the screen. The “Node Tree” window is It shows the structure of the entire effect, “Node” indicates particles. By editing this, you can edit the shape of this particle.</p>
-<div data-align="center">
+<p>Shown in the center</p>
+</div><p>First, click &quot;Node&quot; in the &quot;Node Tree&quot; on the right side of the screen. The &quot;Node Tree&quot; window is
+It shows the structure of the entire effect, &quot;Node&quot; indicates particles. By editing this, you can edit the shape of this particle.</p>
+<div align="center">
 <img src="../../img/Tutorial/02_nodetree.png">
-<p>
-Node Tree Window
-</p>
-</div>
-<p>When clicked, a large number of available parameters will be displayed. Although it may be surprised if it is the first time, only a part of parameters are used in this chapter.</p>
-<p>To edit the position of the initial location, edit the parameters of the “Position” window.</p>
-<p>Click an icon of “Position” window shown in a tab on the upper right to show “Position” window.</p>
-<div data-align="center">
+<p>Node Tree Window</p>
+</div><p>When clicked, a large number of available parameters will be displayed.
+Although it may be surprised if it is the first time, only a part of parameters are used in this chapter.</p>
+<p>To edit the position of the initial location, edit the parameters of the &quot;Position&quot; window.</p>
+<p>Click an icon of &quot;Position&quot; window shown in a tab on the upper right to show &quot;Position&quot; window.</p>
+<div align="center">
 <img src="../../img/Tutorial/02_position_icon.png">
-<p>
-An icon of position window
-</p>
-</div>
-<div data-align="center">
+<p>An icon of position window</p>
+</div><div align="center">
 <img src="../../img/Tutorial/02_position_en.png">
-<p>
-Position Window
-</p>
-</div>
-<p>Let’s change the value of x at the position in the position window from 0 to 2.</p>
-<div data-align="center">
+<p>Position Window</p>
+</div><p>Let's change the value of x at the position in the position window from 0 to 2.</p>
+<div align="center">
 <img src="../../img/Tutorial/02_position_input_en.png">
-<p>
-Change the value of x
-</p>
-</div>
-<p>Then, the particle moved from the center to the outside.</p>
-<div data-align="center">
+<p>Change the value of x</p>
+</div><p>Then, the particle moved from the center to the outside.</p>
+<div align="center">
 <img src="../../img/Tutorial/02_position_input_view.png">
-<p>
-Move to the outside
-</p>
-</div>
-<h3>Make the particle move</h3>
-<p>It is not fun when the particle is frozen. Let’s move the particle.</p>
+<p>Move to the outside</p>
+</div></div>
+<div class="section" id="make-the-particle-move">
+<h3>Make the particle move<a class="headerlink" href="#make-the-particle-move" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>It is not fun when the particle is frozen. Let's move the particle.</p>
 <p>Effekseer has several ways to specify the position.</p>
 <p>Although the position is fixed in the initial setting, there is a specification method that can specify speed and acceleration.</p>
-<p>Click on the drop-down list in the “Position” window and change from position to position, velocity, acceleration. Then, a text box for entering velocity and acceleration is added to the “Position” window. You will be able to set particle velocity and acceleration, so you can move the particles.</p>
-<div data-align="center">
+<p>Click on the drop-down list in the &quot;Position&quot; window and change from position to position, velocity, acceleration.
+Then, a text box for entering velocity and acceleration is added to the &quot;Position&quot; window.
+You will be able to set particle velocity and acceleration, so you can move the particles.</p>
+<div align="center">
 <img src="../../img/Tutorial/02_pva_en.png">
-<p>
-Position, Velocity, Accelaration
-</p>
-</div>
-<p>Let’s enter 0.1 in the x direction speed(Mean).</p>
-<div data-align="center">
+<p>Position, Velocity, Accelaration</p>
+</div><p>Let's enter 0.1 in the x direction speed(Mean).</p>
+<div align="center">
 <img src="../../img/Tutorial/02_pva_input_en.png">
-<p>
-Position, Velocity, acceleration
-</p>
-</div>
-<p>Then, the particle began to jump out of the screen.</p>
-<div data-align="center">
+<p>Position, Velocity, acceleration</p>
+</div><p>Then, the particle began to jump out of the screen.</p>
+<div align="center">
 <img src="../../img/Tutorial/02_pva.gif">
-<p>
-Moving effect
-</p>
+<p>Moving effect</p>
+</div><p>Let's try to see how behavior changes by entering other numbers.</p>
 </div>
-<p>Let’s try to see how behavior changes by entering other numbers.</p>
-<h3>Display multiple particles</h3>
-<p>There are little effects constructed of single particle. Let’s display multiple particles.</p>
-<p>The number of particles is set to the spawn count in the “Basic Settings” window. Increasing this number will generate a lot of particles.</p>
-<p>Click an icon of “Basic Settings” window to show “Basic Settings” window.</p>
-<div data-align="center">
+<div class="section" id="display-multiple-particles">
+<h3>Display multiple particles<a class="headerlink" href="#display-multiple-particles" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>There are little effects constructed of single particle.
+Let's display multiple particles.</p>
+<p>The number of particles is set to the spawn count in the &quot;Basic Settings&quot; window.
+Increasing this number will generate a lot of particles.</p>
+<p>Click an icon of &quot;Basic Settings&quot; window to show &quot;Basic Settings&quot; window.</p>
+<div align="center">
 <img src="../../img/Tutorial/02_common_icon.png">
-<p>
-An icon of Basic Settings
-</p>
-</div>
-<div data-align="center">
+<p>An icon of Basic Settings</p>
+</div><div align="center">
 <img src="../../img/Tutorial/02_common_en.png">
-<p>
-Spawn Count
-</p>
-</div>
-<p>Let’s make the spawn count 100.</p>
-<div data-align="center">
+<p>Spawn Count</p>
+</div><p>Let's make the spawn count 100.</p>
+<div align="center">
 <img src="../../img/Tutorial/02_common_count_en.png">
-<p>
-Add spawn count
-</p>
-</div>
-<p>Much particles are now generated. However, as all the particles move in the same direction, the particles will be displayed overlapping.</p>
-<div data-align="center">
+<p>Add spawn count</p>
+</div><p>Much particles are now generated.
+However, as all the particles move in the same direction, the particles will be displayed overlapping.</p>
+<div align="center">
 <img src="../../img/Tutorial/02_count.gif">
-<p>
-Add spawn count
-</p>
-</div>
-<h3>Move randomly for each particle</h3>
-<p>When the particle movement direction is the same, the particles will be displayed overlapping. So, let’s move randomly for each particle.</p>
-<p>Let’s enter 0.1 for the xyz deviation of the speed. In addition, we reset 0.1 which was input to mean earlier to 0.</p>
-<p>This means that the speed is randomly set between -0.1 and 0.1. That is, the particles move to the entire periphery around (0, 0, 0).</p>
-<div data-align="center">
+<p>Add spawn count</p>
+</div></div>
+<div class="section" id="move-randomly-for-each-particle">
+<h3>Move randomly for each particle<a class="headerlink" href="#move-randomly-for-each-particle" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>When the particle movement direction is the same, the particles will be displayed overlapping.
+So, let's move randomly for each particle.</p>
+<p>Let's enter 0.1 for the xyz deviation of the speed. In addition, we reset 0.1 which was input to mean earlier to 0.</p>
+<p>This means that the speed is randomly set between -0.1 and 0.1.
+That is, the particles move to the entire periphery around (0, 0, 0).</p>
+<div align="center">
 <img src="../../img/Tutorial/02_random_input_en.png">
-<p>
-Random
-</p>
-</div>
-<p>Particles now move around the entire circumference.</p>
-<div data-align="center">
+<p>Random</p>
+</div><p>Particles now move around the entire circumference.</p>
+<div align="center">
 <img src="../../img/Tutorial/02_random.gif">
-<p>
-Random
-</p>
-</div>
-<h3>Shorten the time when particles are displayed</h3>
-<p>Although particles are displayed for a long time now, some effects are displayed for a short time, depending on the effect. Let’s shorten the display time.</p>
-<p>There is a parameter called Time to live in the common window. Let’s shorten this parameter. I entered 30 this time.</p>
-<div data-align="center">
+<p>Random</p>
+</div></div>
+<div class="section" id="shorten-the-time-when-particles-are-displayed">
+<h3>Shorten the time when particles are displayed<a class="headerlink" href="#shorten-the-time-when-particles-are-displayed" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>Although particles are displayed for a long time now, some effects are displayed for a short time, depending on the effect.
+Let's shorten the display time.</p>
+<p>There is a parameter called Time to live in the common window.
+Let's shorten this parameter. I entered 30 this time.</p>
+<div align="center">
 <img src="../../img/Tutorial/02_life_input_en.png">
-<p>
-Time to live
-</p>
-</div>
-<p>If you make it smaller, particles will disappear soon.</p>
-<div data-align="center">
+<p>Time to live</p>
+</div><p>If you make it smaller, particles will disappear soon.</p>
+<div align="center">
 <img src="../../img/Tutorial/02_completed.gif">
-<p>
-Time to live
-</p>
+<p>Time to live</p>
+</div><p>Finally, I made it possible to download the effect created in this chapter.</p>
+<div align="center">
+<a href = "../../Sample/02_Sample.zip">Download</a>
+</div></div>
 </div>
-<p>Finally, I made it possible to download the effect created in this chapter.</p>
-<div data-align="center">
-<p><a href = "../../Sample/02_Sample.zip">Download</a></p>
+<div class="section" id="summary">
+<h2>Summary<a class="headerlink" href="#summary" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>This time I created multiple particles and made move.
+In the next chapter, you will edit from a particle to look more like an effect.</p>
+</div></div>
 </div>
-<h2>Summary</h2>
-<p>This time I created multiple particles and made move. In the next chapter, you will edit from a particle to look more like an effect.</p>
-</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="03.html" class="btn btn-neutral float-right" title="No03. Let&#39;s display the image!" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="01.html" class="btn btn-neutral float-left" title="No01.Sample and Use！" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Effekseer
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
 </body>
 </html>
