@@ -4,228 +4,332 @@
   <meta charset="utf-8">
   <!--Always force latest IE rendering engine or request Chrome Frame-->
   <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta name="keywords" content="Effekseer,Particle,Effect,Editor,エフェクト">
-  <!--Use title if it's in the page YAML frontmatter--><title>トップ</title><link href="/stylesheets/base.css" rel="stylesheet" type="text/css" /><script src="/javascripts/all.js" type="text/javascript"></script>
+  <title>トップ</title><link href="../stylesheets/normalize.css" rel="stylesheet" /><link href="../stylesheets/base.css" rel="stylesheet" /><script src="../javascripts/jquery/jquery.min.js"></script><script src="../javascripts/base.js"></script>
   <body class="jp jp_index">
     <div id="header">
       <div class="logo">
-        <a href="index.html"><img src="/images/Logo.png" alt="Logo" align="middle"></a>
+        <a href="index.html"><img src="../images/top_logo.png" alt="Logo" align="middle"></a>
       </div>
-      <div class="selected">
-        <a href="index.html">
-          <h1>
-            トップ
-          </h1>
-        </a>
+      <div class="nav-toggle">
+        <div class="menu-trigger" href="#">
+          <span></span><span></span><span></span>
+        </div>
       </div>
-      <div class="unselected">
-        <a href="introduction.html">
-          <h1>
-            紹介
-          </h1>
-        </a>
-      </div>
-      <div class="unselected">
-        <a href="download.html">
-          <h1>
-            ダウンロード
-          </h1>
-        </a>
-      </div>
-      <div class="unselected">
-        <a href="adoption.html">
-          <h1>
-            採用実績
-          </h1>
-        </a>
-      </div>
-      <div class="unselected">
-        <a href="documentation.html">
-          <h1>
-            ドキュメント
-          </h1>
-        </a>
-      </div>
-      <div class="unselected">
-        <a href="support.html">
-          <h1>
-            サポート
-          </h1>
-        </a>
-      </div>
-      <div class="unselected">
-        <a href="contribute.html">
-          <h1>
-            投稿エフェクト
-          </h1>
-        </a>
-      </div>
-      <div class="unselected">
-        <a href="development.html">
-          <h1>
-            開発
-          </h1>
-        </a>
-      </div>
-      <div class="language">
-        <table>
-          <tr>
-            <td>
-              <a href="/jp/index.html">日本語</a>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <a href="/en/index.html">English</a>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <a href="/zh-tw/index.html">繁体中文</a>
-            </td>
-          </tr>
-        </table>
-      </div>
-    </div>
-    <div id="contents">
-      <div class="eyecatch">
-        <p>
-          エフェクト制作ツール<br>「Effekseer」
-        </p>
-        <a href="download.html">ダウンロード</a><img src="/images/eyecatch.png">
-      </div>
-      <div class="main">
-        <p>
-          
-        </p>
-        <p>
-          Effekseerは簡単に綺麗なパーティクルエフェクトを制作できるツールです。
-        </p>
-        <p>
-          Effekseerはゲーム向けの爆発やヒットエフェクトなど様々なエフェクトを制作できるフリーでオープンソースなツールです。 制作したエフェクトは2Dのアニメーションとして出力したり、3Dのエフェクトとしてゲームに組み込んで再生できます。
-        </p>
-        <p>
-          ランタイムを組み込むことでDirectXやOpenGLを用いたC++のゲームでエフェクトを再生できます。 それだけでなく、Unity、UnrealEngine4、Cocos2d-xでも再生できます。 また、Windowsだけでなく、Mac OS XやLinux、iOS、Android、Emscriptenといった様々な環境に対応しています。
-        </p>
-        <table align="center">
-          <tr>
-            <td>
-              <img src="/images/effects.png">
-            </td>
-          </tr>
-        </table>
-        <table align="center">
-          <tr>
-            <td>
-              <div class="movie">
-                <p>
-                  ツールで容易にエフェクト編集！
-                </p>
-                <iframe width="320" height="240" src="https://www.youtube.com/embed/3G5BrmI4V48" frameborder="0">allowfullscreen</iframe>
-              </div>
-            </td>
-            <td>
-              <div class="movie">
-                <p>
-                  こんなエフェクト作れます
-                </p>
-                <iframe width="320" height="240" src="https://www.youtube.com/embed/JGMu5_opu5Y" frameborder="0">allowfullscreen</iframe>
-              </div>
-            </td>
-          </tr>
-        </table>
-        <h2>
-          News
-        </h2>
-        <p>
-          2019.07.09 Effekseer, EffekseerForUnity, DXLib, Runtimeをバージョンアップしました。
-        </p>
-        <p>
-          2019.06.30 EffekseerForUnityをバージョンアップしました。
-        </p>
-        <p>
-          2019.05.14 Effekseer 1.43cバージョンが公開されました。
-        </p>
-        <p>
-          2019.05.13 EffekseerForUnityをバージョンアップしました。
-        </p>
-        <a href="releasenote.html">リリースノート</a>
-        <h2>
-          Download
-        </h2>
-        <table align="center">
-          <tr>
-            <td valign="top">
-              <h3>
-                デザイナー向け
-              </h3>
-              <a href="download.html#tool">エフェクト作成ツール</a><br><img src="/images/tool.jpg">
-            </td>
-            <td valign="top">
-              <h3>
-                プログラマー向け
-              </h3>
+      <div class="menunav_allset">
+        <div class="menunav_mobile_allset"></div>
+        <div class="logo_menu">
+          <a href="index.html"><img src="../images/top_logo.png" alt="Logo" align="middle"></a>
+        </div>
+        <div class="selected">
+          <ul>
+            <li>
+              <a href="index.html">
+                <h1>
+                  トップ
+                </h1>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="unselected">
+          <li>
+            <a href="introduction.html">
+              <h1>
+                紹介
+              </h1>
+            </a>
+          </li>
+        </div>
+        <div class="unselected">
+          <li>
+            <a href="download.html">
+              <h1>
+                ダウンロード
+              </h1>
+            </a>
+          </li>
+        </div>
+        <div class="unselected">
+          <li>
+            <a href="adoption.html">
+              <h1>
+                採用実績
+              </h1>
+            </a>
+          </li>
+        </div>
+        <div class="unselected">
+          <li>
+            <a href="documentation.html">
+              <h1>
+                ドキュメント
+              </h1>
+            </a>
+          </li>
+        </div>
+        <div class="unselected">
+          <li>
+            <a href="support.html">
+              <h1>
+                サポート
+              </h1>
+            </a>
+          </li>
+        </div>
+        <div class="unselected">
+          <li>
+            <a href="contribute.html">
+              <h1>
+                サンプルエフェクト
+              </h1>
+            </a>
+          </li>
+        </div>
+        <div class="navmenu_set">
+          <ul class="languagenav">
+            <li>
+              <img src="../images/world10.png">
               <p>
-                エフェクト再生用ライブラリ、プラグイン
+                Select Language
               </p>
               <ul>
                 <li>
-                  <a href="download.html#runtime">DirectX, OpenGL</a>
+                  <a class="drawer-brand" href="/jp/index.html">日本語</a>
                 </li>
                 <li>
-                  <a href="download.html#unity">Unity</a>
+                  <a class="drawer-menu-item" href="/en/index.html">English</a>
                 </li>
                 <li>
-                  <a href="download.html#cocos2dx">Cocos2d-x</a>
-                </li>
-                <li>
-                  <a href="download.html#ue4">UnrealEngine4							</a>
-                </li>
-                <li>
-                  <a href="download.html#dxlib">DXライブラリ</a>
+                  <a class="drawer-menu-item" href="/zh-tw/index.html">繁体中文</a>
                 </li>
               </ul>
-            </td>
-          </tr>
-        </table>
-        <h2>
-          ドキュメント
-        </h2>
-        <p>
-          Effekseerの使い方等はこちら
-        </p>
-        <a href="documentation.html">ドキュメントへ</a>
-        <h2>
-          投稿エフェクト
-        </h2>
-        <p>
-          ユーザー様方が投稿したエフェクト&エフェクトの投稿はこちら
-        </p>
-        <a href="contribute.html">投稿エフェクトへ</a>
-        <h2>
-          書籍
-        </h2>
-        <h3>
-          初めてのEffekseer
-        </h3>
-        <div class="left_books">
-          <img src="/images/books/hajimete_no_effekseer.jpg">
-        </div>
-        <div class="right_books">
-          <ul>
-            <li>
-              <a href="https://www.kohgakusha.co.jp/books/detail/978-4-7775-2076-3">工学社</a>
-            </li>
-            <li>
-              <a href="https://www.yodobashi.com/product/100000009003135804/">ヨドバシ.com</a>
-            </li>
-            <li>
-              <a href="https://books.rakuten.co.jp/rb/15861637/">楽天ブックス</a>
-            </li>
-            <li>
-              <a href="https://www.amazon.co.jp/dp/4777520765/ref=asc_df_47775207652630814/?tag=jpgo-22&creative=9303&creativeASIN=4777520765&linkCode=df0&hvadid=342534585338&hvpos=1o1&hvnetw=g&hvrand=18196272307757529594&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1009322&hvtargid=pla-717123495073&th=1&psc=1">Amazon</a>
             </li>
           </ul>
+        </div>
+      </div>
+      <div class="subpcmenu_set">
+        <ul class="languagenav">
+          <li>
+            <img src="../images/world10.png">
+            <p>
+              Select Language
+            </p>
+            <ul>
+              <li>
+                <a class="drawer-brand" href="/jp/index.html">日本語</a>
+              </li>
+              <li>
+                <a class="drawer-menu-item" href="/en/index.html">English</a>
+              </li>
+              <li>
+                <a class="drawer-menu-item" href="/zh-tw/index.html">繁体中文</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="github_ribbon">
+        <span class="forkongithub"><a href="https://github.com/effekseer/Effekseer">Fork me on GitHub </a></span>
+      </div>
+    </div>
+    <div class="language">
+      <div id="contents">
+        <div class="inner">
+          <div class="eyecatch">
+            <p>
+              エフェクト制作ツール<br>「Effekseer」
+            </p>
+            <a href="download.html">ダウンロード</a>
+            <div class="imgsize_setting1">
+              <img src="../images/top_sectionimg1.jpg">
+            </div>
+          </div>
+          <div class="main">
+            <p>
+              
+            </p>
+            <div class="section1_bg">
+              <div class="section1_setting">
+                <div class="top_section">
+                  <img src="../images/section1_img1.jpg">
+                  <p>
+                    Effekseerは簡単に綺麗なパーティクルエフェクトを制作できるツールです。
+                  </p>
+                </div>
+                <div class="top_section">
+                  <div class="top_img1">
+                    <img src="../images/section1_img2.jpg">
+                  </div>
+                  <p>
+                    Effekseerはゲーム向けの爆発やヒットエフェクトなど様々なエフェクトを制作できるフリーでオープンソースなツールです。 制作したエフェクトは2Dのアニメーションとして出力したり、3Dのエフェクトとしてゲームに組み込んで再生できます。
+                  </p>
+                </div>
+                <div class="top_section">
+                  <div class="top_img1">
+                    <img src="../images/section1_img3.jpg">
+                  </div>
+                  <p>
+                    ランタイムを組み込むことでDirectXやOpenGLを用いたC++のゲームでエフェクトを再生できます。 それだけでなく、Unity、UnrealEngine4、Cocos2d-xでも再生できます。 また、Windowsだけでなく、Mac OS XやLinux、iOS、Android、Emscriptenといった様々な環境に対応しています。
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="section2_bg">
+              <div class="section2_setting">
+                <div class="movie_section1">
+                  <div class="movie">
+                    <iframe width="320" height="240" src="https://www.youtube.com/embed/3G5BrmI4V48" frameborder="0">allowfullscreen</iframe>
+                    <p>
+                      ツールで容易にエフェクト編集！
+                    </p>
+                  </div>
+                </div>
+                <div class="movie_section2">
+                  <div class="movie">
+                    <iframe width="320" height="240" src="https://www.youtube.com/embed/JGMu5_opu5Y" frameborder="0">allowfullscreen</iframe>
+                    <p>
+                      こんなエフェクト作れます
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="section3_bg">
+              <div class="section3_setting">
+                <div class="download_section1">
+                  <h2>
+                    Download
+                  </h2>
+                </div>
+                <div class="download_section2">
+                  <img src="../images/tool.jpg">
+                  <div class="download_inline">
+                    <h3>
+                      デザイナー向け
+                    </h3>
+                    <a href="download.html#tool">エフェクト作成ツール</a>
+                  </div>
+                </div>
+                <div class="download_section3">
+                  <div class="download_inline">
+                    <h3>
+                      プログラマー向け
+                    </h3>
+                    <p>
+                      エフェクト再生用ライブラリ、プラグイン
+                    </p>
+                  </div>
+                  <div class="download_section_links">
+                    <ul>
+                      <li>
+                        <a href="download.html#runtime">DirectX, OpenGL</a>
+                      </li>
+                      <li>
+                        <a href="download.html#unity">Unity</a>
+                      </li>
+                      <li>
+                        <a href="download.html#cocos2dx">Cocos2d-x</a>
+                      </li>
+                      <li>
+                        <a href="download.html#ue4">UnrealEngine4</a>
+                      </li>
+                      <li>
+                        <a href="download.html#dxlib">DXライブラリ</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="section4_bg">
+              <div class="section4_setting">
+                <div class="documentation_section">
+                  <h2>
+                    ドキュメント
+                  </h2>
+                  <p>
+                    Effekseerの使い方等はこちら
+                  </p>
+                  <a href="documentation.html">ドキュメントへ</a>
+                </div>
+                <div class="contribute_section">
+                  <h2>
+                    サンプルエフェクト
+                  </h2>
+                  <p>
+                    ユーザー様方が投稿したエフェクト&エフェクトの投稿はこちら
+                  </p>
+                  <a href="contribute.html">サンプルエフェクトへ</a>
+                </div>
+              </div>
+            </div>
+            <div class="section5_bg">
+              <div class="section5_setting">
+                <div class="books_top">
+                  <h2>
+                    書籍
+                  </h2>
+                  <h3>
+                    初めてのEffekseer
+                  </h3>
+                </div>
+                <div class="all_books"></div>
+                <div class="left_books">
+                  <img src="../images/books/hajimete_no_effekseer.jpg">
+                </div>
+                <div class="right_books">
+                  <ul>
+                    <li>
+                      <a href="https://www.kohgakusha.co.jp/books/detail/978-4-7775-2076-3">工学社</a>
+                    </li>
+                    <li>
+                      <a href="https://www.yodobashi.com/product/100000009003135804/">ヨドバシ.com</a>
+                    </li>
+                    <li>
+                      <a href="https://books.rakuten.co.jp/rb/15861637/">楽天ブックス</a>
+                    </li>
+                    <li>
+                      <a href="https://www.amazon.co.jp/dp/4777520765/ref=asc_df_47775207652630814/?tag=jpgo-22&creative=9303&creativeASIN=4777520765&linkCode=df0&hvadid=342534585338&hvpos=1o1&hvnetw=g&hvrand=18196272307757529594&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1009322&hvtargid=pla-717123495073&th=1&psc=1">Amazon</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="news_section_bg">
+            <div class="news_section">
+              <h2>
+                News
+              </h2>
+              <ul>
+                <li>
+                  <p>
+                    2019.07.09 Effekseer, EffekseerForUnity, DXLib, Runtimeをバージョンアップしました。
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    2019.06.30 EffekseerForUnityをバージョンアップしました。
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    2019.05.14 Effekseer 1.43cバージョンが公開されました。
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    2019.05.13 EffekseerForUnityをバージョンアップしました。
+                  </p>
+                </li>
+                <li>
+                  <a href="releasenote.html">リリースノート</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </div>
