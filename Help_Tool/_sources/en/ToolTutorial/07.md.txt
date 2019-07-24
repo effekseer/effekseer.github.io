@@ -7,26 +7,17 @@
 In this chapter, you will create complicated effects using the parent-child relationships of nodes.
 Somewhat, this chapter is difficult. Let's understand firmly.
 
-<div align="center">
-<table>
-<tr>
 
-<td>
-<div align="center">
+<div align="center" class='col-md-6'>
 <iframe src='../../Sample/viewer_en.html#07_02_Sample/effect1.efk'></iframe>
 <p>Effect No.1 created in this chapter</p>
 </div>
-</td>
-<td>
-<div align="center">
+
+<div align="center" class='col-md-6'>
 <iframe src='../../Sample/viewer_en.html#07_02_Sample/effect2.efk'></iframe>
 <p>Effect No.2 created in this chapter</p>
 </div>
-</td>
 
-</tr>
-</table>
-</div>
 
 ## Parent-child relationships
 

@@ -8,34 +8,22 @@
 生成方法では、パーティクルの最初の姿勢を指定できます。
 ノードの親子関係を使えば同じようなことを再現できますが、同じことを簡単に実現できます。
 
-<div align="center">
-<table>
-<tr>
-
-<td>
-<div align="center">
+<div align="center" class='col-md-4'>
 <iframe src='../../Sample/viewer_ja.html#08_02_Sample/effect1.efk'></iframe>
 <p>本章で作成するエフェクト1</p>
 </div>
-</td>
 
-<td>
-<div align="center">
+<div align="center" class='col-md-4'>
 <iframe src='../../Sample/viewer_ja.html#08_02_Sample/effect2.efk'></iframe>
 <p>本章で作成するエフェクト2</p>
 </div>
-</td>
 
-<td>
-<div align="center">
+
+<div align="center"class='col-md-4'>
 <iframe src='../../Sample/viewer_ja.html#08_02_Sample/effect3.efk'></iframe>
 <p>本章で作成するエフェクト3</p>
 </div>
-</td>
 
-</tr>
-</table>
-</div>
 
 ## 生成方法
 

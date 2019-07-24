@@ -8,26 +8,16 @@
 Effekseerでは、3Dモデルをパーティクルとして表示したり、生成方法の生成位置として使用できます。
 それらの機能を使用してエフェクトを作成します。
 
-<div align="center">
-<table>
-<tr>
-
-<td>
-<div align="center">
+<div align="center" class='col-md-6'>
 <iframe src='../../Sample/viewer_ja.html#11_02_Sample/effect1.efk'></iframe>
-<p>本章で作成するエフェクト1</p>
+<p>本章で作成するエフェクト1 </p>
 </div>
-</td>
-<td>
-<div align="center">
+
+<div align="center" class='col-md-6'>
 <iframe src='../../Sample/viewer_ja.html#11_02_Sample/effect2.efk'></iframe>
 <p>本章で作成するエフェクト2</p>
 </div>
-</td>
 
-</tr>
-</table>
-</div>
 
 ## 3Dモデル
 

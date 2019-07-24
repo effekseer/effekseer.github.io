@@ -8,34 +8,23 @@ In this chapter, you change the spawn method and arrange the particles at regula
 In the spawn method, you can specify the initial pose of the particle.
 The same thing can be reproduced by using the parent-child relationships of the node, but the same thing can be easily realized.
 
-<div align="center">
-<table>
-<tr>
 
-<td>
-<div align="center">
+<div align="center" class='col-md-4'>
 <iframe src='../../Sample/viewer_en.html#08_02_Sample/effect1.efk'></iframe>
 <p>Effect No.1 created in this chapter</p>
 </div>
-</td>
 
-<td>
-<div align="center">
+<div align="center" class='col-md-4'>
 <iframe src='../../Sample/viewer_en.html#08_02_Sample/effect2.efk'></iframe>
 <p>Effect No.2 created in this chapter</p>
 </div>
-</td>
 
-<td>
-<div align="center">
+
+<div align="center"class='col-md-4'>
 <iframe src='../../Sample/viewer_en.html#08_02_Sample/effect3.efk'></iframe>
 <p>Effect No.3 created in this chapter</p>
 </div>
-</td>
 
-</tr>
-</table>
-</div>
 
 ## Spawn method
 

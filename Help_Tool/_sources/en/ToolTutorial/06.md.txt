@@ -16,23 +16,20 @@ By changing the parameters, you can create not only circular but also various ef
 
 In addition, by changing the area (UV) used for the loaded image, try changing the image to improve the appearance.
 
-<div align="center">
-<table>
-<tr>
-<td>
+
+<div align="center" class='col-md-4'>
 <iframe src='../../Sample/viewer_en.html#06_02_Sample/effect1.efk'></iframe>
 <p>Effect No.1 created in this chapter</p>
-</td>
-<td>
+</div>
+
+<div align="center" class='col-md-4'>
 <iframe src='../../Sample/viewer_en.html#06_02_Sample/effect2.efk'></iframe>
 <p>Effect No.2 created in this chapter</p>
-</td>
-<td>
+</div>
+
+<div align="center" class='col-md-4'>
 <iframe src='../../Sample/viewer_en.html#06_02_Sample/effect3.efk'></iframe>
 <p>Effect No.3 created in this chapter</p>
-</td>
-</tr>
-</table>
 </div>
 
 <p>We made it possible to download the effect created in advance from the link below.</p>

@@ -7,20 +7,16 @@
 本章では、ノードの親子関係を用いて複雑なエフェクトを作成します。
 若干、本章は難しいです。しっかり理解しましょう。
 
-<div align="center">
-<table>
-<tr>
-
-<td>
+<div align="center" class='col-md-6'>
 <iframe src='../../Sample/viewer_ja.html#07_02_Sample/effect1.efk'></iframe>
-</td>
-<td>
-<iframe src='../../Sample/viewer_ja.html#07_02_Sample/effect2.efk'></iframe>
-</td>
-
-</tr>
-</table>
+<p>本章で作成するエフェクト1</p>
 </div>
+
+<div align="center" class='col-md-6'>
+<iframe src='../../Sample/viewer_ja.html#07_02_Sample/effect2.efk'></iframe>
+<p>本章で作成するエフェクト2</p>
+</div>
+
 
 ## 親子関係
 

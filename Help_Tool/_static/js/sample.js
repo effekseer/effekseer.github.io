@@ -52,5 +52,8 @@ $(function () {
     $(window).resize(function () {
         renderer.setSize($(window).width(), $(window).width() * (3/4));
     })
+    setTimeout(function () {
+        renderer.setSize($(window).width(), $(window).width() * (3/4));
+    }, 1000)
 
 })

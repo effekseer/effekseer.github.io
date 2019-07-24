@@ -16,26 +16,21 @@
 
 それに加えて、読み込んだ画像の使用する領域(UV)を変更することで、画像を変化させて見栄えを良くしてみます。
 
-<div align="center">
-<table>
-<tr>
-<td>
+<div align="center" class='col-md-4'>
 <iframe src='../../Sample/viewer_ja.html#06_02_Sample/effect1.efk'></iframe>
 <p>本章で作成するエフェクト1</p>
-</td>
-<td>
-<iframe src='../../Sample/viewer_ja.html#06_02_Sample/effect2.efk'></iframe>
-
-<p>本章で作成するエフェクト2</p>
-</td>
-<td>
-<iframe src='../../Sample/viewer_ja.html#06_02_Sample/effect3.efk'></iframe>
-
-<p>本章で作成するエフェクト3</p>
-</td>
-</tr>
-</table>
 </div>
+
+<div align="center" class='col-md-4'>
+<iframe src='../../Sample/viewer_ja.html#06_02_Sample/effect2.efk'></iframe>
+<p>本章で作成するエフェクト2</p>
+</div>
+
+<div align="center" class='col-md-4'>
+<iframe src='../../Sample/viewer_ja.html#06_02_Sample/effect3.efk'></iframe>
+<p>本章で作成するエフェクト3</p>
+</div>
+
 
 <p>あらかじめ作成途中のエフェクトを下記のリンクからダウンロードできるようにしました。</p>
 <div align="center">

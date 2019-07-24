@@ -8,26 +8,17 @@ In this chapter, we create an effect with a 3D model.
 In Effekseer, 3D models can be shown as particles, or it can be used as a spawning position in Spawning method.
 We create effects with these functions.
 
-<div align="center">
-<table>
-<tr>
 
-<td>
-<div align="center">
+<div align="center" class='col-md-6'>
 <iframe src='../../Sample/viewer_en.html#11_02_Sample/effect1.efk'></iframe>
 <p>The effect No.1 created in this chapter</p>
 </div>
-</td>
-<td>
-<div align="center">
+
+<div align="center" class='col-md-6'>
 <iframe src='../../Sample/viewer_en.html#11_02_Sample/effect2.efk'></iframe>
 <p>The effect No.2 created in this chapter</p>
 </div>
-</td>
 
-</tr>
-</table>
-</div>
 
 ## 3D model
 
