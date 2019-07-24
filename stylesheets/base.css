@@ -7,7 +7,7 @@
 /*間隔設定*/
 /*アドレスの文字カラー*/
 a:link {
-  color: #3c3f3f; }
+  color: #849494; }
 
 a:visited {
   color: #68bdc5; }
@@ -25,7 +25,7 @@ a:active {
 /*紹介　ダウンロード　採用　CSS　*/
 /*ドキュメント　サポート　サンプルエフェクト　CSS　*/
 body {
-  background-color: #e9eeee;
+  background-color: #e2e5e5;
   width: 100%;
   margin: 0px auto;
   overflow-x: hidden; }
@@ -120,7 +120,7 @@ ul li, ol li {
 /*トップ画像*/
 #contents .eyecatch .imgsize_setting1 img {
   width: 1900px;
-  height: 400px;
+  height: 300px;
   height: auto;
   display: block;
   text-align: center;
@@ -147,7 +147,7 @@ ul li, ol li {
 #contents .download_section1 img {
   width: 80%;
   max-width: 400px;
-  min-width: 300px;
+  min-width: 250px;
   height: auto; }
 
 /*サポートページのimg設定　*/
@@ -242,7 +242,7 @@ ul li, ol li {
 /*サンプルエフェクトボタン詳細*/
 #contents .contribute_effect_title {
   max-width: 1200px;
-  min-width: 300px;
+  min-width: 250px;
   height: auto;
   display: flex;
   flex-wrap: wrap;
@@ -289,6 +289,14 @@ ul li, ol li {
       color: #3c3f3f;
       text-decoration: none;
       border: 0; }
+  /*はじめのトップ画面*/
+  #contents .top_index {
+    width: 100%;
+    max-width: 600px;
+    min-width: 250px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto; }
   /*ヘッター部分のロゴ設定*/
   #header .logo {
     display: inline-block;
@@ -323,17 +331,16 @@ ul li, ol li {
     align-items: center;
     height: 60px;
     padding: 0 30px;
-    top: 20px;
-    right: 0;
-    z-index: 2; }
+    top: 5px;
+    right: 0; }
   /*ヘッター のレスポンシブメニューのための設定*/
   #header .nav-toggle {
-    background-color: #e9eeee;
+    background-color: #e9eeee00;
     position: absolute;
     flex-wrap: wrap;
     justify-content: flex-end;
     align-items: center;
-    height: 60px;
+    height: 30px;
     padding: 0 20px;
     top: 20px;
     left: 0;
@@ -341,7 +348,7 @@ ul li, ol li {
   #header .nav-toggle .menu-trigger {
     display: inline-block;
     position: relative;
-    width: 36px;
+    width: 30px;
     height: 28px;
     vertical-align: middle;
     cursor: pointer; }
@@ -351,7 +358,7 @@ ul li, ol li {
     position: absolute;
     left: 0;
     width: 100%;
-    height: 4px;
+    height: 3px;
     background-color: #68bdc5;
     transition: all .5s .2s; }
   #header .nav-toggle .menu-trigger.active span {
@@ -359,7 +366,7 @@ ul li, ol li {
   #header .nav-toggle .menu-trigger span:nth-of-type(1) {
     top: 0; }
   #header .nav-toggle .menu-trigger.active span:nth-of-type(1) {
-    transform: translateY(12px) rotate(-45deg); }
+    transform: translateY(13px) rotate(-45deg); }
   #header .nav-toggle .menu-trigger span:nth-of-type(2) {
     top: 12px; }
   #header .nav-toggle .menu-trigger.active span:nth-of-type(2) {
@@ -391,8 +398,8 @@ ul li, ol li {
     overflow: hidden; }
   /* Title設定　 */
   #contents .eyecatch p {
-    width: 100%;
-    min-width: 400px;
+    width: 80%;
+    min-width: 240px;
     position: absolute;
     top: 100px;
     left: 8%;
@@ -412,13 +419,13 @@ ul li, ol li {
     padding: 10px 20px 10px 20px;
     display: inline-block;
     vertical-align: top;
-    padding: 1em 1.5em;
+    padding: 1em 1.0em;
     background: rgba(244, 244, 245, 0.233);
     border: solid 2px #3c3f3f;
     color: #2A2A2A;
     font-weight: bold; }
   #contents .eyecatch a:hover {
-    background: #e9eeee;
+    background: #e2e5e5;
     color: #3c3f3f; }
   /* sec2の画像３枚の設定　 */
   #contents .section1_setting {
@@ -426,9 +433,9 @@ ul li, ol li {
     max-height: auto;
     display: flex;
     text-align: center;
-    background-color: #e9eeee;
+    background-color: #e2e5e5;
     max-width: 600px;
-    min-width: 300px;
+    min-width: 280px;
     margin-top: 20px;
     margin-right: auto;
     margin-left: auto;
@@ -438,12 +445,19 @@ ul li, ol li {
     align-items: center; }
   #contents .introduction_img1_1 h3 {
     margin: 10px; }
+  .start_image {
+    margin-top: 100px; }
+    .start_image img {
+      width: 100%;
+      max-width: 600px;
+      min-width: 250px;
+      height: auto; }
   #contents .top_section {
-    width: 80%;
-    max-width: 600px;
+    width: 60%;
+    max-width: 500px;
     min-width: 300px;
     height: auto;
-    background-color: #3c3f3f;
+    background-color: #3d3d3d;
     text-align: center;
     margin-top: 50px;
     margin-right: auto;
@@ -451,8 +465,8 @@ ul li, ol li {
     padding-top: 20px; }
     #contents .top_section img {
       width: 60%;
-      min-width: 300px;
       max-width: 500px;
+      min-width: 200px;
       height: auto; }
   #contents .top_section p {
     width: 80%;
@@ -469,10 +483,10 @@ ul li, ol li {
     display: block;
     text-align: center;
     max-width: 600px;
-    min-width: 300px;
+    min-width: 240px;
     height: auto;
     vertical-align: top;
-    background-color: #68bdc5;
+    background-color: #d1dddd;
     margin-right: auto;
     margin-left: auto;
     margin-top: 20px;
@@ -481,16 +495,10 @@ ul li, ol li {
   #contents .section2_setting p {
     font-size: 1em;
     text-align: center; }
-  #contents .movie_section1 {
-    max-width: 600px;
-    min-width: 300px;
-    height: 300px;
-    margin-right: auto;
-    margin-left: auto; }
-  #contents .movie_section2 {
-    max-width: 600px;
-    min-width: 300px;
-    height: 300px;
+  #contents .movie_section {
+    max-width: 320px;
+    min-width: 200px;
+    height: auto;
     margin-right: auto;
     margin-left: auto; }
   /* download_sectionsの設定　 */
@@ -500,19 +508,29 @@ ul li, ol li {
     display: block;
     text-align: center;
     max-width: 600px;
-    min-width: 300px;
-    background-color: #bbdada;
+    min-width: 250px;
+    background-color: #e2e5e5;
     margin-top: 50px;
     margin-right: auto;
     margin-left: auto;
-    padding-top: 20px;
     padding-bottom: 20px; }
+    #contents .section3_setting .download_section1 {
+      text-align: center; }
+  #contents .download_inline {
+    margin-bottom: 20px; }
+  #contents .download_section2 img {
+    width: 100%;
+    max-width: 360px;
+    min-width: 250px;
+    height: auto; }
   #contents .download_section_links {
     width: 100%;
-    min-width: 300px;
-    text-align: left;
-    padding-left: 30%;
-    padding-right: 30%; }
+    min-width: 250px;
+    text-align: center;
+    padding-left: auto;
+    padding-right: auto; }
+    #contents .download_section_links ul {
+      list-style: none; }
   /* other_sectionsの設定　 */
   #contents .section4_setting {
     width: 100%;
@@ -520,8 +538,8 @@ ul li, ol li {
     display: block;
     text-align: center;
     max-width: 600px;
-    min-width: 300px;
-    background-color: #848a8a;
+    min-width: 250px;
+    background-color: #d1dddd;
     margin-top: 50px;
     margin-right: auto;
     margin-left: auto; }
@@ -536,13 +554,6 @@ ul li, ol li {
     margin-left: auto; }
     #contents .contribute_section p {
       margin: 10px; }
-  /*投稿エフェクト中ページ*/
-  #contents .contribute_title .contribute_inner {
-    text-align: left; }
-  #contents .contribute_inner_text {
-    padding-bottom: 100px; }
-    #contents .contribute_inner_text ul {
-      list-style: none; }
   /* book_sectionsの設定　 */
   #contents .section5_setting {
     width: 100%;
@@ -550,8 +561,8 @@ ul li, ol li {
     display: block;
     text-align: center;
     max-width: 600px;
-    min-width: 300px;
-    background-color: #68bdc5;
+    min-width: 250px;
+    background-color: #e9eeee;
     margin-top: 50px;
     margin-right: auto;
     margin-left: auto;
@@ -568,15 +579,19 @@ ul li, ol li {
   #contents .section5_setting .right_books {
     width: 100%;
     height: auto;
-    text-align: left;
+    text-align: center;
     padding-top: 50px;
-    padding-left: 30%; }
+    margin-right: auto;
+    margin-left: auto; }
+    #contents .section5_setting .right_books ul {
+      padding: 0px;
+      list-style: none; }
   /* news_sectionsの設定　 */
   #contents .news_section {
     width: 100%;
     max-width: 600px;
-    min-width: 300px;
-    background-color: #bbdada;
+    min-width: 250px;
+    background-color: #d1dddd;
     height: auto;
     text-align: center;
     margin-right: auto;
@@ -586,38 +601,98 @@ ul li, ol li {
     padding-bottom: 50px; }
     #contents .news_section ul, #contents .news_section li {
       width: 80%;
-      min-width: 300px;
+      min-width: 250px;
       color: #3c3f3f;
       list-style: none;
       text-align: left;
       margin-right: auto;
       margin-left: auto; }
   /*リリースノート*/
+  #contents .releasenote_setting {
+    width: 100%;
+    max-height: auto;
+    display: block;
+    text-align: center;
+    background-color: #e2e5e5;
+    max-width: 600px;
+    min-width: 250px;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    -webkit-justify-content: center;
+    justify-content: center;
+    align-items: center; }
+  #contents .img_sectionset {
+    max-width: 600px;
+    min-width: 200px;
+    text-align: center;
+    display: flex;
+    display: -webkit-flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto; }
+  #contents .releasenote_iframe {
+    max-width: 600px;
+    min-width: 200px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto; }
+  #contents .releasenote_section {
+    text-align: center;
+    margin: 20px; }
+  #contents .allsecimg {
+    margin-left: auto;
+    margin-right: auto; }
+    #contents .allsecimg img {
+      width: 100%;
+      height: auto;
+      max-width: 600px;
+      min-width: 200px; }
+  #contents .introduction_img1_1 h3 {
+    margin: 10px; }
+  .start_image {
+    margin-top: 100px; }
+    .start_image img {
+      width: 80%;
+      max-width: 600px;
+      min-width: 250px;
+      height: auto; }
   /*紹介*/
   #contents .introduction_section1 {
     width: 100%;
     margin: 50px; }
   #contents .introduction_img1_1 img {
     width: 100%;
-    min-width: 320px;
+    min-width: 280px;
     height: auto; }
   #contents .introduction_img1_2 {
-    margin-top: 100px; }
+    margin-top: 50px; }
     #contents .introduction_img1_2 img {
       width: 100%;
-      min-width: 320px;
+      min-width: 280px;
       height: auto; }
     #contents .introduction_img1_2 h3 {
       text-align: center;
       margin-top: 50px;
       margin-bottom: 50px;
-      font-size: 1.5em; }
+      font-size: 1em; }
+  #contents .introduction_sec2img {
+    min-width: 250px;
+    margin-right: auto;
+    margin-left: auto; }
+    #contents .introduction_sec2img img {
+      width: 30%;
+      min-width: 150px;
+      height: auto;
+      max-width: 150px;
+      border-radius: 50%; }
   #contents .introduction_section2 {
     width: auto;
     margin-top: 30px; }
     #contents .introduction_section2 img {
       width: 100%;
-      min-width: 320px;
+      min-width: 280px;
       height: auto; }
   #contents .introduction_section3 {
     width: auto;
@@ -627,18 +702,19 @@ ul li, ol li {
       margin: 10px; }
     #contents .introduction_section3 .introduction_img3_1 img {
       width: 100%;
-      min-width: 320px;
+      min-width: 280px;
       height: auto; }
     #contents .introduction_section3 .introduction_img3_2 img {
       width: 30%;
       min-width: 150px;
       height: auto;
-      max-width: 150px; }
+      max-width: 150px;
+      border-radius: 50%; }
   /*ダウンロード*/
   #contents .download_contents_topset {
     width: 100%;
     max-width: 600px;
-    min-width: 300px;
+    min-width: 250px;
     margin-right: auto;
     margin-left: auto; }
   #contents .download_contents_set {
@@ -647,10 +723,10 @@ ul li, ol li {
     display: flex;
     text-align: center;
     max-width: 650px;
-    min-width: 300px;
+    min-width: 250px;
     margin-right: auto;
     margin-left: auto;
-    background-color: #e9eeee;
+    background-color: #e2e5e5;
     flex-wrap: wrap; }
   #contents .download_contents {
     width: 100%;
@@ -659,7 +735,7 @@ ul li, ol li {
     height: auto;
     text-align: center;
     display: block;
-    background-color: #848a8a;
+    background-color: #515252;
     margin-top: 20px;
     margin-right: auto;
     margin-left: auto;
@@ -667,8 +743,11 @@ ul li, ol li {
     #contents .download_contents img {
       width: 80%;
       height: auto; }
+    #contents .download_contents h3 {
+      color: #849494; }
     #contents .download_contents p {
-      margin: 20px; }
+      margin: 20px;
+      color: #d1dddd; }
   #contents .introduction_section4 {
     width: auto;
     padding-top: 10px;
@@ -689,11 +768,11 @@ ul li, ol li {
     display: block;
     text-align: center;
     max-width: 650px;
-    min-width: 300px;
+    min-width: 250px;
     text-align: center;
     margin-right: auto;
     margin-left: auto;
-    background-color: #bbdada;
+    background-color: #d1dddd;
     padding-bottom: 20px; }
     #contents .download_prev h2 {
       padding: 20px; }
@@ -704,16 +783,13 @@ ul li, ol li {
   #contents .adoption_allset {
     width: 100%;
     max-width: 650px;
-    min-width: 280px;
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    min-width: 250px;
     margin-right: auto;
     margin-left: auto; }
   #contents .adoption_allset1 {
     width: 100%;
     max-width: 600px;
-    min-width: 280px;
+    min-width: 250px;
     margin-right: auto;
     margin-left: auto; }
   #contents .adoption_allset h2 {
@@ -725,31 +801,32 @@ ul li, ol li {
   #contents .adoption_title {
     width: 100%;
     max-width: 600px;
-    min-width: 300px;
+    min-width: 250px;
     margin-right: auto;
     margin-left: auto; }
   #contents .adopted {
     width: 100%;
     max-width: 500px;
-    min-width: 280px;
+    min-width: 200px;
     height: auto;
     text-align: center;
     color: #68bdc5;
-    background-color: #3c3f3f;
+    background-color: #3d3d3d;
     margin: 20px auto;
     padding-bottom: 20px; }
   #contents .adopted1 {
     width: 100%;
     max-width: 500px;
-    min-width: 280px;
+    min-width: 200px;
     height: auto;
     text-align: center;
     color: #68bdc5;
-    background-color: #3c3f3f;
+    background-color: #3d3d3d;
     margin: 20px auto;
     padding-bottom: 20px; }
     #contents .adopted1 h3 {
-      padding: 20px; }
+      padding: 20px;
+      color: #68bdc5; }
   #contents .iframe {
     position: relative;
     margin-top: 3em;
@@ -807,7 +884,7 @@ ul li, ol li {
     display: block;
     text-align: left;
     max-width: 600px;
-    min-width: 300px;
+    min-width: 250px;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 20px; }
@@ -821,17 +898,34 @@ ul li, ol li {
       margin-top: 20px;
       margin-left: 50px;
       margin-right: 50px; }
+  #contents .help_sections_allsetting {
+    width: 100%;
+    max-height: auto;
+    display: flex;
+    text-align: center;
+    max-width: 650px;
+    min-width: 250px;
+    margin-right: auto;
+    margin-left: auto;
+    flex-wrap: wrap; }
   #contents .help_sections_set {
-    display: block;
-    text-align: center; }
+    width: 100%;
+    max-width: 650px;
+    min-width: 250px;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px; }
   #contents .help_links {
     padding-bottom: 20px; }
   #contents .help_sections {
     max-width: 255px;
     min-width: 100px;
     height: auto;
-    min-height: 300px;
-    background-color: #848a8a;
+    min-height: 250px;
+    background-color: #515252;
     margin: 20px; }
     #contents .help_sections img:hover {
       opacity: 0.5; }
@@ -843,6 +937,10 @@ ul li, ol li {
     color: #bbdada;
     padding-top: 15px;
     margin: 20px; }
+  #contents .help_sections_set .help_imgsec img {
+    width: 100%;
+    max-width: 180px;
+    height: auto; }
   #contents .help_sections_set img {
     max-width: 100%;
     max-width: 100px;
@@ -851,9 +949,9 @@ ul li, ol li {
     width: 100%;
     display: block;
     text-align: left;
-    background-color: #68bdc5;
+    background-color: #d1dddd;
     max-width: 650px;
-    min-width: 300px;
+    min-width: 250px;
     margin-top: 50px;
     margin-right: auto;
     margin-left: auto; }
@@ -865,6 +963,7 @@ ul li, ol li {
       padding-top: 15px;
       padding-bottom: 15px;
       margin-top: 20px;
+      margin-bottom: 0px;
       margin-left: 50px;
       margin-right: 20px; }
   #contents .section_setting_tutorial {
@@ -873,15 +972,15 @@ ul li, ol li {
     display: flex;
     text-align: center;
     max-width: 650px;
-    min-width: 300px;
+    min-width: 250px;
     margin-right: auto;
     margin-left: auto;
     flex-wrap: wrap;
-    background-color: #68bdc5; }
+    background-color: #d1dddd; }
   #contents .tutorial_sections {
     width: 100%;
     max-width: 650px;
-    min-width: 300px;
+    min-width: 250px;
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -897,7 +996,7 @@ ul li, ol li {
     min-height: 300px;
     margin-right: auto;
     margin-left: auto;
-    background-color: #848a8a;
+    background-color: #515252;
     margin-bottom: 20px; }
     #contents .locale_sections img {
       width: 80%;
@@ -913,7 +1012,7 @@ ul li, ol li {
   #contents .supprot_section {
     width: 80%;
     max-width: 600px;
-    min-width: 300px;
+    min-width: 250px;
     display: inline-block;
     vertical-align: top; }
   #contents .supprot_section p {
@@ -925,7 +1024,7 @@ ul li, ol li {
   #contents .support_grid {
     width: 80%;
     max-width: 600px;
-    min-width: 300px;
+    min-width: 250px;
     height: auto;
     text-align: center;
     display: block;
@@ -938,8 +1037,8 @@ ul li, ol li {
   #contents .support_bg {
     width: 100%;
     max-width: 600px;
-    min-width: 300px;
-    background-color: #bbdada;
+    min-width: 250px;
+    background-color: #d1dddd;
     margin-right: auto;
     margin-left: auto;
     background-size: 100%; }
@@ -949,8 +1048,8 @@ ul li, ol li {
     display: block;
     text-align: center;
     max-width: 600px;
-    min-width: 300px;
-    background-color: #e9eeee;
+    min-width: 250px;
+    background-color: #e2e5e5;
     margin-top: 50px;
     margin-right: auto;
     margin-left: auto;
@@ -959,20 +1058,20 @@ ul li, ol li {
   /*サンプルエフェクト*/
   #contents .contribute_title_bg {
     width: 100%;
-    background-color: #bbdada;
+    background-color: #d1dddd;
     padding-top: 50px;
     padding-bottom: 50px; }
   #contents .contribute_title_set {
     width: 100%;
     max-width: 600px;
-    min-width: 300px;
+    min-width: 250px;
     text-align: center;
     margin: 20px;
     margin-right: auto;
     margin-left: auto; }
   #contents .contribute_title_set .contribute_title {
     max-width: 600px;
-    min-width: 300px;
+    min-width: 250px;
     text-align: center;
     padding-bottom: 10px; }
     #contents .contribute_title_set .contribute_title p {
@@ -980,47 +1079,53 @@ ul li, ol li {
   #contents .sample_effect {
     width: 100%;
     max-width: 700px;
-    min-width: 160px;
+    min-width: 140px;
     height: auto;
     display: grid;
     grid-template-rows: auto;
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-    grid-column-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    grid-column-gap: 5px;
     text-align: center;
     margin-right: auto;
     margin-left: auto;
     padding-top: 20px;
     padding-bottom: 20px; }
     #contents .sample_effect img {
-      width: 150px;
+      width: 140px;
       height: auto; }
   #contents .sample_effect2 {
     width: 100%;
     max-width: 700px;
-    min-width: 160px;
+    min-width: 140px;
     display: grid;
     grid-template-rows: auto;
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-    grid-column-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    grid-column-gap: 5px;
     height: auto;
     text-align: center;
     margin-right: auto;
     margin-left: auto; }
     #contents .sample_effect2 img {
-      width: 150px;
+      width: 140px;
       height: auto; }
   #contents .sample_effect p {
-    width: 160px;
+    width: 150px;
     height: auto;
-    background-color: #848a8a;
-    margin: 5px;
+    background-color: #515252;
     padding-top: 3px; }
   #contents .sample_effect2 p {
-    width: 160px;
+    width: 150px;
     height: auto;
     background-color: #68bdc5;
-    margin: 5px;
     padding-top: 3px; }
+  /*投稿エフェクト中ページ*/
+  #contents .contribute_title .contribute_inner {
+    text-align: left;
+    margin-left: 20px; }
+  #contents .contribute_inner_text {
+    padding-bottom: 100px; }
+    #contents .contribute_inner_text ul {
+      list-style: none; }
   /*画像クリック時の次のページ*/
   #contents .sample_effect_next {
     width: 100%;
@@ -1042,7 +1147,7 @@ ul li, ol li {
   #contents .sample_effect_next p {
     width: 160px;
     height: auto;
-    background-color: #848a8a;
+    background-color: #515252;
     margin: 5px;
     padding-top: 3px; } }
 
@@ -1101,7 +1206,7 @@ ul li, ol li {
     padding-left: 15px;
     width: 50px; }
   #header .unselected:hover {
-    background-color: #848a8a; }
+    background-color: #515252; }
   #header .unselected ul:hover {
     padding-left: 15px; }
   #header h1 {
@@ -1118,6 +1223,21 @@ ul li, ol li {
     width: 100%;
     margin: 0 auto;
     overflow: hidden; }
+  /*はじめのトップ画面*/
+  #contents .top_index {
+    width: 100%;
+    max-width: 1200px;
+    min-width: 300px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto; }
+  .start_image {
+    margin-top: 100px; }
+    .start_image img {
+      width: 100%;
+      max-width: 600px;
+      min-width: 320px;
+      height: auto; }
   /* Title設定　 */
   #contents .eyecatch p {
     width: 100%;
@@ -1147,7 +1267,7 @@ ul li, ol li {
     color: #2A2A2A;
     font-weight: bold; }
   #contents .eyecatch a:hover {
-    background: #e9eeee;
+    background: #e2e5e5;
     color: #3c3f3f; }
   /* sec2の画像３枚の設定　 */
   #contents .section1_setting {
@@ -1166,7 +1286,7 @@ ul li, ol li {
     width: 80%;
     max-width: 400px;
     height: 500px;
-    background-color: #3c3f3f;
+    background-color: #3d3d3d;
     text-align: center;
     margin-right: auto;
     margin-left: auto;
@@ -1185,65 +1305,81 @@ ul li, ol li {
     margin-left: auto;
     margin-top: 4%;
     color: #9da3a3; }
-  /* MVの設定　 */
-  #contents .section2_bg {
-    background-color: #68bdc5;
-    background-size: 100%;
-    padding: 30px; }
+  /* MVの設定　*/
   #contents .section2_setting {
-    width: 100%;
-    max-height: 450px;
-    display: flex;
-    text-align: center;
-    max-width: 1200px;
-    display: -webkit-flex;
-    -webkit-justify-content: center;
-    justify-content: center;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 50px; }
-  #contents .section2_setting p {
-    font-size: 1.2em;
-    text-align: center; }
-  #contents .movie_section1 {
-    max-width: 600px;
-    min-width: 300px;
-    height: 300px;
-    margin-right: auto;
-    margin-left: auto;
-    margin: 50px; }
-  #contents .movie_section2 {
-    max-width: 600px;
-    min-width: 300px;
-    height: 300px;
-    margin-right: auto;
-    margin-left: auto;
-    margin: 50px; }
-  #contents .section3_bg {
-    display: flex;
-    background-color: #bbdada;
-    background-size: 100%;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    padding: 20px; }
-  #contents .section3_setting {
     width: 100%;
     max-height: auto;
     display: flex;
     text-align: center;
-    max-width: 1200px;
+    background-color: #d1dddd;
     display: -webkit-flex;
-    flex-direction: row;
     -webkit-justify-content: center;
     justify-content: center;
+    min-height: 250px;
+    align-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 100px; }
+    #contents .section2_setting .section2_setting p {
+      font-size: 1.2em;
+      text-align: center; }
+  #contents .movie_section {
+    display: grid;
+    width: 100%;
+    max-width: 1200px;
+    min-width: 900px;
+    height: auto;
     margin-right: auto;
     margin-left: auto;
     margin-top: 50px;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr; }
+    #contents .movie_section .movie1 {
+      max-width: 500px;
+      min-width: 300px;
+      height: 300px; }
+    #contents .movie_section .movie2 {
+      max-width: 500px;
+      min-width: 300px;
+      height: 300px;
+      order: 1; }
+    #contents .movie_section p {
+      width: 300px;
+      height: 80px;
+      font-size: 1.5em;
+      margin-top: 160px;
+      margin-right: auto;
+      margin-left: auto; }
+  #contents .section3_bg {
+    display: flex;
+    max-width: 1200px;
+    background-size: 100%;
+    margin-bottom: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 20px; }
+    #contents .section3_bg #contents .section3_setting {
+      width: 100%;
+      max-height: auto;
+      display: flex;
+      text-align: center;
+      max-width: 1200px;
+      display: -webkit-flex;
+      flex-direction: row;
+      -webkit-justify-content: center;
+      justify-content: center;
+      margin-right: auto;
+      margin-left: auto;
+      margin-top: 50px;
+      margin-bottom: 50px; }
+      #contents .section3_bg #contents .section3_setting img {
+        margin-top: 50px; }
+  #contents .download_inline {
     margin-bottom: 50px; }
   #contents .download_section1 {
-    height: auto;
-    margin-left: auto;
-    margin-right: auto; }
+    position: absolute;
+    height: 70px;
+    left: 45%; }
   #contents .download_section1 h2 {
     margin-top: 20px;
     margin-bottom: 40px;
@@ -1251,10 +1387,11 @@ ul li, ol li {
   #contents .download_section2 {
     width: 300px;
     height: auto;
+    margin-top: 100px;
     margin-left: auto;
     margin-right: auto; }
   #contents .download_section2 h3 {
-    margin-bottom: 90px; }
+    margin-bottom: 20px; }
   #contents .download_section3 h3 {
     margin-bottom: 20px; }
   #contents .download_section3 p {
@@ -1262,6 +1399,7 @@ ul li, ol li {
   #contents .download_section3 {
     width: 300px;
     height: auto;
+    margin-top: 100px;
     margin-left: auto;
     margin-right: auto; }
   #contents .download_section_links {
@@ -1269,13 +1407,14 @@ ul li, ol li {
     min-width: 300px;
     text-align: left;
     margin: 30px; }
+    #contents .download_section_links ul {
+      list-style: none; }
   /* other_sectionsの設定　 */
   #contents .section4_bg {
     display: flex;
-    background-color: #848a8a;
+    background-color: #d1dddd;
     background-size: 100%;
     margin-top: 50px;
-    margin-bottom: 50px;
     padding: 20px; }
   #contents .section4_setting {
     width: 100%;
@@ -1300,9 +1439,8 @@ ul li, ol li {
     padding-bottom: 50px; }
   #contents .section5_bg {
     display: flex;
-    background-color: #68bdc5;
+    background-color: #e9eeee;
     background-size: 100%;
-    margin-top: 50px;
     padding: 20px; }
   #contents .section5_setting {
     width: 100%;
@@ -1318,7 +1456,7 @@ ul li, ol li {
     margin-right: auto;
     padding-bottom: 50px; }
   #contents .books_top {
-    width: 300px;
+    width: 250px;
     height: auto;
     margin-left: auto;
     margin-left: auto; }
@@ -1348,10 +1486,8 @@ ul li, ol li {
     margin-right: auto; }
   /* news_sectionsの設定　 */
   #contents .news_section_bg {
-    background-color: #bbdada;
+    background-color: #d1dddd;
     background-size: 100%;
-    margin-top: 50px;
-    margin-bottom: 50px;
     padding: 20px; }
   #contents .news_section {
     width: 100%;
@@ -1367,28 +1503,87 @@ ul li, ol li {
       color: #3c3f3f;
       list-style: none;
       text-align: center; }
+  /*リリースノート*/
+  #contents .releasenote_setting {
+    width: 100%;
+    max-height: auto;
+    display: block;
+    text-align: center;
+    max-width: 1200px;
+    min-width: 250px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px; }
+  #contents .img_sectionset {
+    width: 100%;
+    max-height: auto;
+    display: flex;
+    text-align: center;
+    display: -webkit-flex;
+    max-width: 1200px;
+    min-width: 250px;
+    text-align: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 50px; }
+  #contents .releasenote_section {
+    text-align: center;
+    margin: 50px; }
+  #contents .allsecimg {
+    margin-left: auto;
+    margin-right: auto; }
+    #contents .allsecimg img {
+      width: 100%;
+      height: auto;
+      max-width: 800px;
+      min-width: 250px; }
+  #contents .releasenote_iframe {
+    max-width: 600px;
+    min-width: 250px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto; }
   /*紹介*/
   #contents .introduction_section1 {
     margin: 50px; }
-  #contents .introduction_img1_1 img {
-    width: 100%;
-    min-width: 320px;
-    height: auto; }
+  #contents .introduction_img1_1 {
+    margin-bottom: 50px; }
+    #contents .introduction_img1_1 img {
+      width: 100%;
+      min-width: 280px;
+      height: auto;
+      max-width: 50%; }
   #contents .introduction_img1_2 {
     margin-top: 50px; }
     #contents .introduction_img1_2 img {
       width: 100%;
-      min-width: 320px;
+      min-width: 280px;
       height: auto; }
     #contents .introduction_img1_2 h3 {
       text-align: center;
       margin-bottom: 50px;
       font-size: 1.5em; }
+  #contents .introduction_sec2img {
+    width: 50%;
+    min-width: 200px;
+    height: 150px;
+    padding-top: 130px; }
+    #contents .introduction_sec2img img {
+      width: 50%;
+      min-width: 150px;
+      height: auto;
+      max-width: 200px;
+      border-radius: 50%; }
   #contents .introduction_section2 {
+    margin: 50px;
     width: auto; }
     #contents .introduction_section2 img {
       width: 100%;
-      min-width: 320px;
+      min-width: 250px;
       height: auto; }
   #contents .introduction_section3 {
     width: auto;
@@ -1397,21 +1592,18 @@ ul li, ol li {
     z-index: 1; }
     #contents .introduction_section3 .introduction_img3_1 img {
       width: 100%;
-      min-width: 320px;
+      min-width: 280px;
       height: auto;
       z-index: 1; }
     #contents .introduction_section3 .introduction_img3_2 img {
       width: 30%;
       min-width: 150px;
       height: auto;
-      position: absolute;
       max-width: 100px;
-      left: 70%;
-      top: 1800px;
       z-index: 5;
       border-radius: 50%; }
     #contents .introduction_section3 p {
-      width: 300px;
+      width: 250px;
       margin-top: 90px;
       margin-right: 80px;
       margin-left: 80px;
@@ -1439,7 +1631,7 @@ ul li, ol li {
     display: flex;
     text-align: center;
     max-width: 1200px;
-    min-width: 300px;
+    min-width: 250px;
     margin-right: auto;
     margin-left: auto;
     background-color: #e9eeee;
@@ -1450,7 +1642,7 @@ ul li, ol li {
     height: auto;
     text-align: center;
     display: block;
-    background-color: #848a8a;
+    background-color: #515252;
     margin-top: 20px;
     margin-right: auto;
     margin-left: auto;
@@ -1458,8 +1650,11 @@ ul li, ol li {
     #contents .download_contents img {
       width: 80%;
       height: auto; }
+    #contents .download_contents h3 {
+      color: #849494; }
     #contents .download_contents p {
-      margin: 20px; }
+      margin: 20px;
+      color: #d1dddd; }
   /*ダウンロードの過去のバージョン*/
   #contents .download_prev {
     width: 100%;
@@ -1467,10 +1662,10 @@ ul li, ol li {
     display: 2600px;
     text-align: center;
     max-width: 1200px;
-    min-width: 300px;
+    min-width: 250px;
     margin-right: auto;
     margin-left: auto;
-    background-color: #bbdada;
+    background-color: #d1dddd;
     flex-wrap: wrap;
     padding-bottom: 20px; }
     #contents .download_prev h2 {
@@ -1504,10 +1699,10 @@ ul li, ol li {
     margin: 50px; }
   #contents .adopted {
     max-width: 500px;
-    min-width: 300px;
+    min-width: 250px;
     height: 650px;
     color: #68bdc5;
-    background-color: #3c3f3f;
+    background-color: #3d3d3d;
     margin: 20px 20px;
     padding-bottom: 20px;
     display: block; }
@@ -1522,7 +1717,7 @@ ul li, ol li {
     height: auto;
     text-align: center;
     color: #68bdc5;
-    background-color: #3c3f3f;
+    background-color: #3d3d3d;
     margin: 20px auto;
     padding-bottom: 20px; }
     #contents .adopted1 h3 {
@@ -1586,6 +1781,26 @@ ul li, ol li {
     grid-row-gap: 10px;
     grid-column-gap: 10px; }
   /*ドキュメント*/
+  #contents .help_sections_allsetting {
+    width: 100%;
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    margin-bottom: 50px; }
+  #contents .help_sections_set {
+    width: 100%;
+    max-width: 1200px;
+    min-width: 300px;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+    margin-bottom: 20px; }
   #contents .documentation_top_set {
     width: 100%;
     display: block;
@@ -1599,18 +1814,12 @@ ul li, ol li {
       margin-top: 50px; }
     #contents .documentation_top_set p {
       margin: 20px; }
-  #contents .help_sections_set {
-    display: block;
-    text-align: center;
-    margin: 50px; }
   #contents .help_sections {
-    max-width: 500px;
-    min-width: 300px;
-    height: 380px;
-    min-height: 300px;
-    background-color: #848a8a; }
+    background-color: #515252; }
     #contents .help_sections img:hover {
       opacity: 0.5; }
+  #contents .help_links {
+    margin: 20px; }
   #contents .help_sections_set h2 {
     color: #3c3f3f; }
   #contents .help_sections_set h3 {
@@ -1619,13 +1828,17 @@ ul li, ol li {
     color: #bbdada;
     padding-top: 15px;
     margin: 20px; }
+  #contents .help_sections_set .help_imgsec img {
+    width: 100%;
+    max-width: 280px;
+    height: auto; }
   #contents .help_sections_set img {
-    max-width: 100%;
+    width: 100%;
     max-width: 180px;
     height: auto; }
   #contents .documentation_tutorial_bg {
     width: 100%;
-    background-color: #68bdc5;
+    background-color: #d1dddd;
     padding-top: 50px;
     padding-bottom: 400px; }
   #contents .documentation_tutorial_set {
@@ -1669,7 +1882,7 @@ ul li, ol li {
     height: 300px;
     margin-right: auto;
     margin-left: auto;
-    background-color: #848a8a; }
+    background-color: #515252; }
     #contents .locale_sections img {
       width: 100%;
       max-width: 200px;
@@ -1692,7 +1905,7 @@ ul li, ol li {
     margin-left: auto;
     margin-bottom: 50px; }
   #contents .support_bg {
-    background-color: #bbdada;
+    background-color: #d1dddd;
     background-size: 100%;
     padding: 30px; }
   #contents .supprot_github_section {
@@ -1700,7 +1913,7 @@ ul li, ol li {
   /*サンプルエフェクト*/
   #contents .contribute_title_bg {
     width: 100%;
-    background-color: #bbdada;
+    background-color: #d1dddd;
     padding: 50px; }
   #contents .contribute_title_set {
     width: 80%;
@@ -1748,7 +1961,7 @@ ul li, ol li {
   #contents .sample_effect p {
     width: 270px;
     height: auto;
-    background-color: #848a8a;
+    background-color: #515252;
     margin: 20px;
     padding-top: 3px; }
   #contents .sample_effect2 p {
@@ -1776,7 +1989,7 @@ ul li, ol li {
   #contents .sample_effect_next p {
     width: 270px;
     height: auto;
-    background-color: #848a8a;
+    background-color: #515252;
     margin: 20px;
     padding-top: 3px; }
   #contents .mail_setting {
@@ -1785,7 +1998,7 @@ ul li, ol li {
     display: flex;
     text-align: center;
     max-width: 1200px;
-    background-color: #e9eeee;
+    background-color: #e2e5e5;
     display: -webkit-flex;
     flex-direction: row;
     -webkit-justify-content: center;
