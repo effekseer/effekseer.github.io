@@ -177,9 +177,10 @@
 <h1>使い方<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h1>
 <div class="section" id="id2">
 <h2>サンプルプロジェクト<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<p>下記の場所にEffekseerプラグインを使用したサンプルプロジェクトがあります。</p>
+<p>下記の場所にEffekseerプラグインを使用したサンプルシーンがあります。</p>
 <ul class="simple">
-<li><p>GameEngine/Unity/SampleProject.zip</p></li>
+<li><p>Example/EfkBasic</p></li>
+<li><p>Example/EfkTimeline</p></li>
 </ul>
 <p><img alt="../_images/unity_example1.png" src="../_images/unity_example1.png" /></p>
 </div>
@@ -246,17 +247,17 @@
 <h2>Light Weight Render Pipeline<a class="headerlink" href="#light-weight-render-pipeline" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>Effekseer は Light Weight Render Pipeline に対応しています。.
 LWRPはUnityでは標準に含まれていないため、 <em>ScriptsExternal/EffekseerRendererLWRP.cs</em> からコメントアウトを外してください。</p>
-<p><img alt="../_images/LWRP_Code.png" src="../_images/LWRP_Code.png" /></p>
+<p><img alt="../_images/LWRP_Code1.png" src="../_images/LWRP_Code1.png" /></p>
 <p>Effekseerのエフェクトを表示するために <em>Custom Forward Render</em> を使用します。</p>
 <p><em>Assets -&gt; Create -&gt; Rendering -&gt; Lightweight Render Pipeline -&gt; Forward Render</em> から <em>Forward Render Asset</em> を作成します。</p>
-<p><img alt="../_images/LWRP_ForwardRenderer1.png" src="../_images/LWRP_ForwardRenderer1.png" /></p>
-<p><img alt="../_images/LWRP_ForwardRenderer2.png" src="../_images/LWRP_ForwardRenderer2.png" /></p>
+<p><img alt="../_images/LWRP_ForwardRenderer11.png" src="../_images/LWRP_ForwardRenderer11.png" /></p>
+<p><img alt="../_images/LWRP_ForwardRenderer21.png" src="../_images/LWRP_ForwardRenderer21.png" /></p>
 <p>現在使用している <em>Pipeline Asset</em> の <em>Renderer Type</em> を <em>Custom</em> に変更します。 <em>Data</em> に先ほど作成した <em>Forward Render Asset</em> を設定します。</p>
-<p><img alt="../_images/LWRP_Custom1.png" src="../_images/LWRP_Custom1.png" /></p>
-<p><img alt="../_images/LWRP_Custom2.png" src="../_images/LWRP_Custom2.png" /></p>
+<p><img alt="../_images/LWRP_Custom11.png" src="../_images/LWRP_Custom11.png" /></p>
+<p><img alt="../_images/LWRP_Custom21.png" src="../_images/LWRP_Custom21.png" /></p>
 <p>先ほど作成した <em>Forward Render Asset</em> の <em>Render Features</em> に <em>EffekseerRenderer</em> を追加します。</p>
-<p><img alt="../_images/LWRP_RenderFeatures1.png" src="../_images/LWRP_RenderFeatures1.png" /></p>
-<p><img alt="../_images/LWRP_RenderFeatures2.png" src="../_images/LWRP_RenderFeatures2.png" /></p>
+<p><img alt="../_images/LWRP_RenderFeatures11.png" src="../_images/LWRP_RenderFeatures11.png" /></p>
+<p><img alt="../_images/LWRP_RenderFeatures21.png" src="../_images/LWRP_RenderFeatures21.png" /></p>
 <p>古いLWRPでは、* Effekseer/Effekseer RendererLWRP * コンポーネントをカメラがあるGameObjectに設定してください。</p>
 </div>
 <div class="section" id="high-definition-render-pipeline">
