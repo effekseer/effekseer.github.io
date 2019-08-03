@@ -245,10 +245,17 @@ If you want to move it you need to set it manually.</p>
 <h2>Light Weight Render Pipeline<a class="headerlink" href="#light-weight-render-pipeline" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>Effekseer supports LightWeightRenderPipeline.
 Please remove comment out from <em>ScriptsExternal/EffekseerRendererLWRP.cs</em> because LWRP is not contained in Unity with default settings at first.</p>
+<p><img alt="../_images/LWRP_Code1.png" src="../_images/LWRP_Code1.png" /></p>
 <p><em>Custom Forward Render</em> is used to show effects of Effekseer.</p>
 <p>Create <em>Forward Render Asset</em> from <em>Assets -&gt; Create -&gt; Rendering -&gt; Lightweight Render Pipeline -&gt; Forward Render</em>.</p>
-<p>Change <em>Renderer Type</em> into <em>Custom</em> from <em>Pipeline Asset</em>. Specify created <em>Forward Render Asset</em> to <em>Data</em>.</p>
-<p>Add EffekseerRenderer from <em>Render Features</em> in <em>Forward Render Asset</em>.</p>
+<p><img alt="../_images/LWRP_ForwardRenderer11.png" src="../_images/LWRP_ForwardRenderer11.png" /></p>
+<p><img alt="../_images/LWRP_ForwardRenderer21.png" src="../_images/LWRP_ForwardRenderer21.png" /></p>
+<p>Change <em>Renderer Type</em> into <em>Custom</em> in <em>Pipeline Asset</em> which is used to render. Specify created <em>Forward Render Asset</em> to <em>Data</em>.</p>
+<p><img alt="../_images/LWRP_Custom11.png" src="../_images/LWRP_Custom11.png" /></p>
+<p><img alt="../_images/LWRP_Custom21.png" src="../_images/LWRP_Custom21.png" /></p>
+<p>Add EffekseerRenderer to <em>Render Features</em> in created <em>Forward Render Asset</em>.</p>
+<p><img alt="../_images/LWRP_RenderFeatures11.png" src="../_images/LWRP_RenderFeatures11.png" /></p>
+<p><img alt="../_images/LWRP_RenderFeatures21.png" src="../_images/LWRP_RenderFeatures21.png" /></p>
 <p>Add * Effekseer/Effekseer RendererLWRP * component to GameObject with Camera in old LWRP.</p>
 </div>
 <div class="section" id="high-definition-render-pipeline">
