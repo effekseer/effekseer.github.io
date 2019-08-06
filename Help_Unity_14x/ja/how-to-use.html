@@ -86,7 +86,10 @@
 <li class="toctree-l2"><a class="reference internal" href="top.html">概要</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">使い方</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#id2">サンプルプロジェクト</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id3">リソースファイルについて</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id3">リソースファイルについて</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#scale">Scale</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="#id4">エミッタを使って再生する方法</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#id5">準備</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#id6">インスペクタのプロパティ</a></li>
@@ -190,6 +193,12 @@
 <p><img alt="../_images/unity_resource1.png" src="../_images/unity_resource1.png" /></p>
 <p>.efk,efkprojファイルは削除しても問題ありません。
 また、現在はカスタムパッケージ作成の時に.efk,efkprojファイルを含めてはいけません。</p>
+<div class="section" id="scale">
+<h3>Scale<a class="headerlink" href="#scale" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>読み込んだエフェクトの大きさが小さいことがあります。その場合は、EffectAsssetを選択し、<strong>Scale</strong> のパラメーターを変更します。
+EffectEmitterのScaleを変更することでエフェクトの大きさを変更することもできますが、この方法だとエフェクトの設定によっては拡大されないことがあります。</p>
+<p><img alt="../_images/EffectAsset_Scale1.png" src="../_images/EffectAsset_Scale1.png" /></p>
+</div>
 </div>
 <div class="section" id="id4">
 <h2>エミッタを使って再生する方法<a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h2>
