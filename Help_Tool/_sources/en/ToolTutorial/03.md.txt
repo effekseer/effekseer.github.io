@@ -114,6 +114,20 @@ You can specify that color in the "Render Settings" window. There are several me
 For this time you choose random as the color changes for each particle.
 Then you set the min of the value to 0. This means that values are randomly chosen between 0 and 255 colors.
 
+In addition to the text box, the color can be entered by left-clicking the color field with the mouse.
+
+```eval_rst
+.. image:: ../../img/Reference/Overview/input_color_basic.png
+   :align: center
+```
+
+Left-click and drag a color field to copy the value to another color field.
+
+```eval_rst
+.. image:: ../../img/Reference/Overview/input_color.png
+   :align: center
+```
+
 <div align="center">
 <img src="../../img/Tutorial/03_color_en.png">
 <p>Specifiy a color</p>

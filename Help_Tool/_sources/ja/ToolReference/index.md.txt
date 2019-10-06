@@ -17,6 +17,54 @@
    :align: center
 ```
 
+### 操作方法
+
+#### プレビュー画面
+
+<div align="center">
+<table border=1>
+<tr>
+<td>回転</td>
+<td>マウスの右ボタンを押しながら、マウスを移動</td>
+</tr>
+<tr>
+<td>平行移動</td>
+<td>マウスホイールを押しながら、マウスを移動</td>
+</tr>
+<tr>
+<td>拡大</td>
+<td>マウスホイールを回転</td>
+</tr>
+</table>
+</div>
+
+#### 値の入力方法
+
+値は入力欄をマウスで左クリックするとキーボードから入力できるようになります。
+
+左クリックで入力欄をドラッグすると、値を徐々に変更することができます。
+
+```eval_rst
+.. image:: ../../img/Reference/Overview/input_value.png
+   :align: center
+```
+
+#### 色の入力方法
+
+色はテキストボックスに加えて、色の欄をマウスで左クリックすると入力できるようになります。
+
+```eval_rst
+.. image:: ../../img/Reference/Overview/input_color_basic.png
+   :align: center
+```
+
+左クリックで色の欄をドラッグすると、他の色の欄に値をコピーできます。
+
+```eval_rst
+.. image:: ../../img/Reference/Overview/input_color.png
+   :align: center
+```
+
 ### ファイル形式
 
 このツールの独自のファイル形式は2つ存在します。 1つ目は「.efkproj」で、ツールで編集するためのエフェクトのファイルです。 2つ目は「.efk」で、ゲーム中で再生するエフェクトのファイルです。 「.efk」ファイルはツールの「メニューバー->ファイル->出力」から出力することができます。

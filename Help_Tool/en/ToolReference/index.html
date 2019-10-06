@@ -95,6 +95,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#overview">Overview</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#tool">Tool</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#effect">Effect</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#how-to-operate">How to operate</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#file-format">File Format</a></li>
 </ul>
 </li>
@@ -207,6 +208,40 @@
 <p>With this tool, you create an effect by editing nodes. Nodes have parent-child relationships, where children are influenced by their parents. By utilizing the parent-child relationships, it is possible to create complex effects.</p>
 <p>I will explain parent-child relationships using an example. In this example, node 2 is the child of node 1, and node 3 is the child of node 2. An effect 1 particle will be generated from node 1. After a few frames, several effect 2 particles will be generated relative to the position of the effect 1 particle generated from node 1. After a few more frames, several effect 3 particles will be generated relative to the positions of each of the node 2 particles. This is shown in the figure below. In this way, by describing the behavior of the effect through parent-child relationships on the nodes, a much greater variety of effects can be expressed. In this tool, one effect generated based on the parameters within a &quot;node&quot; is called a &quot;particle&quot;.</p>
 <img alt="../../_images/overview_en.png" class="align-center" src="../../_images/overview_en.png" />
+</div>
+<div class="section" id="how-to-operate">
+<h3>How to operate<a class="headerlink" href="#how-to-operate" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<div class="section" id="preview">
+<h4>Preview<a class="headerlink" href="#preview" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<div align="center">
+<table border="1">
+<tr>
+<td>Rotation</td>
+<td>Click the right mouse button and move the mouse while holding.</td>
+</tr>
+<tr>
+<td>Pan</td>
+<td>Click the middle mouse button and move the mouse while holding.</td>
+</tr>
+<tr>
+<td>Zoom</td>
+<td>Scroll the mouse wheel to zoom in and out.</td>
+</tr>
+</table>
+</div></div>
+<div class="section" id="how-to-input-a-value">
+<h4>How to input a value<a class="headerlink" href="#how-to-input-a-value" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<p>A value can be entered from the keyboard by left-clicking a text entry box with the mouse.</p>
+<p>Left-click and drag a text entry box to change the value gradually.</p>
+<img alt="../../_images/input_value.png" class="align-center" src="../../_images/input_value.png" />
+</div>
+<div class="section" id="how-to-input-a-color">
+<h4>How to input a color<a class="headerlink" href="#how-to-input-a-color" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<p>In addition to the text box, the color can be entered by left-clicking the color field with the mouse.</p>
+<img alt="../../_images/input_color_basic.png" class="align-center" src="../../_images/input_color_basic.png" />
+<p>Left-click and drag a color field to copy the value to another color field.</p>
+<img alt="../../_images/input_color.png" class="align-center" src="../../_images/input_color.png" />
+</div>
 </div>
 <div class="section" id="file-format">
 <h3>File Format<a class="headerlink" href="#file-format" title="このヘッドラインへのパーマリンク">¶</a></h3>

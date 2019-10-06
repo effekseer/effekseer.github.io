@@ -51,6 +51,15 @@
 
 位置のウインドウの位置のxの数値を0から2に変更してみましょう。
 
+値は入力欄をマウスで左クリックするとキーボードから入力できるようになります。
+
+左クリックで入力欄をドラッグすると、値を徐々に変更することができます。
+
+```eval_rst
+.. image:: ../../img/Reference/Overview/input_value.png
+   :align: center
+```
+
 <div align="center">
 <img src="../../img/Tutorial/02_position_input_ja.png">
 <p>xの数値を変更</p>

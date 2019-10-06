@@ -1,4 +1,4 @@
-# Overview
+﻿# Overview
 
 ## Operating Environment, Required Runtimes, etc.
 
@@ -62,6 +62,7 @@ effekseer(at)gmail.com
 *   Javel
 *   kage3
 *   Tiffanyx
+*   mikkame
 
 ### Translation
 
@@ -348,11 +349,17 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
 ### 1.5x（19/xx/xx）Next release
 
 *   Added many functions to CameraSettings
+*   Added a dialog to change a name of node with right clicking
 *   Changed a specification that behavior is enabled in recording
 *   Added post effect function
+*   Added a sprite with lighting and normal map
+*   Added a sampler type for a normal map
 *   Fixed a bug that a sprite sheet contains extra frames
-
 *   Fixed a bug that random numbers overflowed (random behavior may change)
+
+### 1.43e（19/09/xx）
+*   Fixed a bug that the application cannot read a model from maya
+*   Fixed a bug that the application cannot read a file with a name containing space
 
 ### 1.43d（19/07/08）
 *   Fixed a bug that the window size is doubled each time the application is launched on Macs with Retina Display.

@@ -114,6 +114,20 @@ Effekseerには、複数の描画方法があります。
 今回はパーティクルごとに色が変わるようにランダムを選択します。
 そして、値の最小値に0を設定します。これは色が0から255の間でランダムに値が選択されることを意味しています。
 
+色はテキストボックスに加えて、色の欄をマウスで左クリックすると入力できるようになります。
+
+```eval_rst
+.. image:: ../../img/Reference/Overview/input_color_basic.png
+   :align: center
+```
+
+左クリックで色の欄をドラッグすると、他の色の欄に値をコピーできます。
+
+```eval_rst
+.. image:: ../../img/Reference/Overview/input_color.png
+   :align: center
+```
+
 <div align="center">
 <img src="../../img/Tutorial/03_color_ja.png">
 <p>色を設定</p>

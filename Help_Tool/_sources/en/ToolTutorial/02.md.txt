@@ -50,6 +50,15 @@ Click an icon of "Position" window shown in a tab on the upper right to show "Po
 
 Let's change the value of x at the position in the position window from 0 to 2.
 
+A value can be entered from the keyboard by left-clicking a text entry box with the mouse.
+
+Left-click and drag a text entry box to change the value gradually.
+
+```eval_rst
+.. image:: ../../img/Reference/Overview/input_value.png
+   :align: center
+```
+
 <div align="center">
 <img src="../../img/Tutorial/02_position_input_en.png">
 <p>Change the value of x</p>

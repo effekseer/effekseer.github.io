@@ -17,6 +17,54 @@ I will explain parent-child relationships using an example. In this example, nod
    :align: center
 ```
 
+### How to operate
+
+#### Preview
+
+<div align="center">
+<table border="1">
+<tr>
+<td>Rotation</td>
+<td>Click the right mouse button and move the mouse while holding.</td>
+</tr>
+<tr>
+<td>Pan</td>
+<td>Click the middle mouse button and move the mouse while holding.</td>
+</tr>
+<tr>
+<td>Zoom</td>
+<td>Scroll the mouse wheel to zoom in and out.</td>
+</tr>
+</table>
+</div>
+
+#### How to input a value
+
+A value can be entered from the keyboard by left-clicking a text entry box with the mouse.
+
+Left-click and drag a text entry box to change the value gradually.
+
+```eval_rst
+.. image:: ../../img/Reference/Overview/input_value.png
+   :align: center
+```
+
+#### How to input a color
+
+In addition to the text box, the color can be entered by left-clicking the color field with the mouse.
+
+```eval_rst
+.. image:: ../../img/Reference/Overview/input_color_basic.png
+   :align: center
+```
+
+Left-click and drag a color field to copy the value to another color field.
+
+```eval_rst
+.. image:: ../../img/Reference/Overview/input_color.png
+   :align: center
+```
+
 ### File Format
 
 There are two unique file formats for this tool. The first one is ".efkproj", which is a source effect file edited with the Effekseer tool. The second is ".efk", a compiled effect file to be played at runtime in a game. The ".efk" file can be exported from "File -> output" within the Effekseer editor.
