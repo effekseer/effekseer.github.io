@@ -1,0 +1,630 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ja" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ja" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>No05. Let&#39;s create a hit mark (Slashing)! &mdash; Effekseer Help  ドキュメント</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../_static/js/three.min.js"></script>
+        <script type="text/javascript" src="../../_static/js/effekseer.min.js"></script>
+        <script type="text/javascript" src="../../_static/js/iframe.js"></script>
+        <script type="text/javascript" src="../../_static/js/OrbitControls.js"></script>
+        <script type="text/javascript" src="../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="検索" href="../../search.html" />
+    <link rel="next" title="No06. Let&#39;s create circular particles!" href="06.html" />
+    <link rel="prev" title="No04. Let&#39;s rotate and enlarge!" href="04.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> Effekseer Help
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../ja/index.html">Effekseer Help 日本語</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Effekseer Help (English)</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../overview.html">Overview</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Tool Tutorial</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="01.html">No01.Sample and Use！</a></li>
+<li class="toctree-l3"><a class="reference internal" href="02.html">No02.Let's spread the particles!</a></li>
+<li class="toctree-l3"><a class="reference internal" href="03.html">No03. Let's display the image!</a></li>
+<li class="toctree-l3"><a class="reference internal" href="04.html">No04. Let's rotate and enlarge!</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">No05. Let's create a hit mark (Slashing)!</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#overview">Overview</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#easing">Easing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#create-the-effect">Create the effect</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#summary">Summary</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="06.html">No06. Let's create circular particles!</a></li>
+<li class="toctree-l3"><a class="reference internal" href="07.html">No07. Let's move complicated with parent-child relationships!</a></li>
+<li class="toctree-l3"><a class="reference internal" href="08.html">No08. Let's arrange particles by spawn method!</a></li>
+<li class="toctree-l3"><a class="reference internal" href="09.html">No09.Let's create muzzle flash!</a></li>
+<li class="toctree-l3"><a class="reference internal" href="10.html">No10.Ribbon and Track</a></li>
+<li class="toctree-l3"><a class="reference internal" href="11.html">No11. Let's use 3D model!!</a></li>
+<li class="toctree-l3"><a class="reference internal" href="12.html">No12. Let's specify complicated movement with F-Curve!</a></li>
+<li class="toctree-l3"><a class="reference internal" href="13.html">No13. Let's distort a background!</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolReference/index.html">Tool-Reference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolTips/01.html">TIPS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq.html">FAQ</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Effekseer Help</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../index.html">Effekseer Help (English)</a> &raquo;</li>
+        
+          <li><a href="index.html">Tool Tutorial</a> &raquo;</li>
+        
+      <li>No05. Let's create a hit mark (Slashing)!</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="no05-let-s-create-a-hit-mark-slashing">
+<h1>No05. Let's create a hit mark (Slashing)!<a class="headerlink" href="#no05-let-s-create-a-hit-mark-slashing" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<div class="main"><div class="section" id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>In this chapter, you create an effect (hit mark) hit by a slash as used in an actual game.
+It is an effect where a sword line is expressed in the middle and small impacts flies around.
+In doing so, we explain copying and adding nodes and easing particles as new contents.</p>
+<iframe src='../../Sample/viewer_en.html#05_02_Sample/effect.efk'></iframe>
+## Preparation<p>We made it possible to download the effect created in advance from the link below.</p>
+<div align="center">
+<a href = "../../Sample/05_01_Sample.zip">Download</a>
+</div><p>Since the length of the effect created is about 0.5 seconds, <code class="docutils literal notranslate"><span class="pre">End</span></code> in the <code class="docutils literal notranslate"><span class="pre">Viewer</span> <span class="pre">Controls</span></code> window is specified to 30 frames.</p>
+</div>
+<div class="section" id="easing">
+<h2>Easing<a class="headerlink" href="#easing" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>Easing is often used for various parameters.</p>
+<p>Easing is a method of representing changes in values by specifying the values of the start and end points and automatically interpolating the values between them.</p>
+<p>As shown in the figure below, position, rotation and scale have been specified by speed (1) or acceleration up to now.
+However, with this specified method, the longer the survival time becomes, the larger the value becomes.</p>
+<p>On the other hand, in easing, specify the value (2) just after generation and the value (3) just before disappearing, and interpolate between values.
+Since you can specify the value just before disappearing, the shape of the particle becomes easy to understand.</p>
+<div align="center">
+<table>
+<tr>
+<td>
+<img src="../../img/Tutorial/05_pva_type.png">
+<p>PVA</p>
+</td>
+<td>
+<img src="../../img/Tutorial/05_easing_type.png">
+<p>Easing</p>
+</td>
+</tr>
+</table>
+</div><p>There are several interpolation methods. Low speed 3 to high speed 3 can be specified for the start and end points respectively.
+The lower the speed, the harder the value changes, the faster the value, the easier the value changes.</p>
+<div align="center">
+<img src="../../img/Tutorial/05_easing.gif">
+<p>Interpolation method</p>
+</div></div>
+<div class="section" id="create-the-effect">
+<h2>Create the effect<a class="headerlink" href="#create-the-effect" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>Effects are not often composed of single kind of particles but plural kinds of completely different looking particles.
+Effekseer can have multiple nodes. You can give completely different parameters for each node.
+Hit marks must also consist of more than one node. This time, you will create the nodes in order.</p>
+<p>The direction of this effect is as follows.</p>
+<ul class="simple">
+<li><p>The playback time is about 0.5 seconds (30 frames)</p></li>
+<li><p>Color is purple (255, 32, 255) to pink (255, 128, 255)</p></li>
+</ul>
+<div class="section" id="sword-line-node">
+<h3>Sword line node<a class="headerlink" href="#sword-line-node" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>You create a node where a particle slenderly cuts at an angle of 45 degrees, representing a sword line.</p>
+<p>The sword line is specified to elongate in the direction of 45 degrees during 0.33 seconds (20 frames).
+<code class="docutils literal notranslate"><span class="pre">Rotated</span> <span class="pre">Billboard</span></code> is specified to tilt the particles.</p>
+<p>Values are changed as follows.</p>
+<p><b>This chapter has many values to change. Even if the atmosphere is alike, it is not necessary to make them all the same.</b></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th align="left">Window</th>
+<th align="left">Value type</th>
+<th align="left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Basic Settings</td>
+<td align="left">Name</td>
+<td align="left">Line1</td>
+</tr>
+<tr>
+<td align="left">Basic Settings</td>
+<td align="left">Time to live</td>
+<td align="left">20</td>
+</tr>
+<tr>
+<td align="left">Rotation</td>
+<td align="left">Angle</td>
+<td align="left">x=0, y=0, z=-45</td>
+</tr>
+<tr>
+<td align="left">Scale</td>
+<td align="left">Scale Method</td>
+<td align="left">Easing</td>
+</tr>
+<tr>
+<td align="left">Scale</td>
+<td align="left">Start(Mean)</td>
+<td align="left">x=4, y=1, z=1</td>
+</tr>
+<tr>
+<td align="left">Scale</td>
+<td align="left">End(Mean)</td>
+<td align="left">x=1, y=25, z=1</td>
+</tr>
+<tr>
+<td align="left">Scale</td>
+<td align="left">Ease In</td>
+<td align="left">Fastest</td>
+</tr>
+<tr>
+<td align="left">Scale</td>
+<td align="left">Ease Out</td>
+<td align="left">Slowest</td>
+</tr>
+<tr>
+<td align="left">Basic Render Settings</td>
+<td align="left">Texture</td>
+<td align="left">Texture/Line01.png</td>
+</tr>
+<tr>
+<td align="left">Basic Render Settings</td>
+<td align="left">Blend</td>
+<td align="left">Additive</td>
+</tr>
+<tr>
+<td align="left">Render Settings</td>
+<td align="left">Configuration</td>
+<td align="left">Rotated Billboard</td>
+</tr>
+<tr>
+<td align="left">Render Settings</td>
+<td align="left">ColorAll</td>
+<td align="left">Easing</td>
+</tr>
+<tr>
+<td align="left">Render Settings</td>
+<td align="left">ColorAll-Start(Mean)</td>
+<td align="left">255,128,255,255</td>
+</tr>
+<tr>
+<td align="left">Render Settings</td>
+<td align="left">ColorAll-End(Mean)</td>
+<td align="left">255,255,255,0</td>
+</tr>
+<tr>
+<td align="left">Render Settings</td>
+<td align="left">ColorAll-Ease In</td>
+<td align="left">Slowest</td>
+</tr>
+<tr>
+<td align="left">Render Settings</td>
+<td align="left">ColorAll-Ease Out</td>
+<td align="left">Fastest</td>
+</tr>
+</tbody>
+</table><p>At this point the effect is now as follows.</p>
+<div align="center">
+<img src="../../img/Tutorial/05_01.gif">
+<p>Sword line node</p>
+</div></div>
+<div class="section" id="impact-node">
+<h3>Impact node<a class="headerlink" href="#impact-node" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>When the attack hits, not only the sword line but also the impact is generated.
+Impact node is created like a sword wire.</p>
+<p>Since the parameters of the sword line node and impact node are different, you need to add a node.
+First, you select Root. Then right click on Root to display the menu.
+From the menu, you choose Add Node.</p>
+<div align="center">
+<img src="../../img/Tutorial/05_addnode_en.png">
+<p>Adding node</p>
+</div><p>When the node is added, you click on the added node and edit that node.</p>
+<p>The value ares changed as follows.</p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th align="left">Window</th>
+<th align="left">Value type</th>
+<th align="left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Basic Settings</td>
+<td align="left">Name</td>
+<td align="left">Line2</td>
+</tr>
+<tr>
+<td align="left">Basic Settings</td>
+<td align="left">Spawn Count</td>
+<td align="left">10</td>
+</tr>
+<tr>
+<td align="left">Basic Settings</td>
+<td align="left">Time to live</td>
+<td align="left">20</td>
+</tr>
+<tr>
+<td align="left">Rotation</td>
+<td align="left">Rotation Method</td>
+<td align="left">PVA</td>
+</tr>
+<tr>
+<td align="left">Rotation</td>
+<td align="left">Angle(Deviation)</td>
+<td align="left">x=0, y=0, z=180</td>
+</tr>
+<tr>
+<td align="left">Scale</td>
+<td align="left">Scale Method</td>
+<td align="left">Easing</td>
+</tr>
+<tr>
+<td align="left">Scale</td>
+<td align="left">Start(Mean)</td>
+<td align="left">x=1, y=1, z=1</td>
+</tr>
+<tr>
+<td align="left">Scale</td>
+<td align="left">End(Mean)</td>
+<td align="left">x=1, y=10, z=1</td>
+</tr>
+<tr>
+<td align="left">Scale</td>
+<td align="left">Ease In</td>
+<td align="left">Fastest</td>
+</tr>
+<tr>
+<td align="left">Scale</td>
+<td align="left">Ease Out</td>
+<td align="left">Slowest</td>
+</tr>
+<tr>
+<td align="left">Basic Render Settings</td>
+<td align="left">Texture</td>
+<td align="left">Texture/Line01.png</td>
+</tr>
+<tr>
+<td align="left">Basic Render Settings</td>
+<td align="left">Blend</td>
+<td align="left">Additive</td>
+</tr>
+<tr>
+<td align="left">Render Settings</td>
+<td align="left">Configuration</td>
+<td align="left">Rotated Billboard</td>
+</tr>
+<tr>
+<td align="left">Render Settings</td>
+<td align="left">ColorAll</td>
+<td align="left">Easing</td>
+</tr>
+<tr>
+<td align="left">Render Settings</td>
+<td align="left">ColorAll-Start(Mean)</td>
+<td align="left">255,128,255,255</td>
+</tr>
+<tr>
+<td align="left">Render Settings</td>
+<td align="left">ColorAll-End(Mean)</td>
+<td align="left">255,255,255,0</td>
+</tr>
+<tr>
+<td align="left">Render Settings</td>
+<td align="left">ColorAll-Ease In</td>
+<td align="left">Slowest</td>
+</tr>
+<tr>
+<td align="left">Render Settings</td>
+<td align="left">ColorAll-Ease Out</td>
+<td align="left">Fastest</td>
+</tr>
+</tbody>
+</table><p>fect is now as follows.</p>
+<div align="center">
+<img src="../../img/Tutorial/05_02.gif">
+<p>Impact node</p>
+</div></div>
+<div class="section" id="light-emitting-node-no-1">
+<h3>Light emitting node No.1<a class="headerlink" href="#light-emitting-node-no-1" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>Glowing effects at the moment of hit is better looking.
+The light emmiting node is also specified same as the sword line node.</p>
+<p>Values are changed as fllows.</p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th align="left">Window</th>
+<th align="left">Value type</th>
+<th align="left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Basic Settings</td>
+<td align="left">Name</td>
+<td align="left">Flash1</td>
+</tr>
+<tr>
+<td align="left">Basic Settings</td>
+<td align="left">Time to live</td>
+<td align="left">20</td>
+</tr>
+<tr>
+<td align="left">Scale</td>
+<td align="left">Scale Method</td>
+<td align="left">PVA(Single)</td>
+</tr>
+<tr>
+<td align="left">Scale</td>
+<td align="left">Expansion Speed</td>
+<td align="left">0.6</td>
+</tr>
+<tr>
+<td align="left">Basic Render Settings</td>
+<td align="left">Texture</td>
+<td align="left">Texture/Particle01.png</td>
+</tr>
+<tr>
+<td align="left">Basic Render Settings</td>
+<td align="left">Blend</td>
+<td align="left">Additive</td>
+</tr>
+<tr>
+<td align="left">Render Settings</td>
+<td align="left">ColorAll</td>
+<td align="left">Easing</td>
+</tr>
+<tr>
+<td align="left">Render Settings</td>
+<td align="left">ColorAll-Start(Mean)</td>
+<td align="left">255,32,255,255</td>
+</tr>
+<tr>
+<td align="left">Render Settings</td>
+<td align="left">ColorAll-End(Mean)</td>
+<td align="left">255,128,255,0</td>
+</tr>
+<tr>
+<td align="left">Render Settings</td>
+<td align="left">ColorAll-Ease In</td>
+<td align="left">Slowest</td>
+</tr>
+<tr>
+<td align="left">Render Settings</td>
+<td align="left">ColorAll-Ease Out</td>
+<td align="left">Fastest</td>
+</tr>
+</tbody>
+</table><p>At this point the effect is now as follows.</p>
+<div align="center">
+<img src="../../img/Tutorial/05_03.gif">
+<p>Light emitting node No.1</p>
+</div></div>
+<div class="section" id="light-emitting-node-no-2">
+<h3>Light emitting node No.2<a class="headerlink" href="#light-emitting-node-no-2" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>New emiitting node is added because the light emission is still sober.
+This light emitting node is almost same as the light emitting node created earlier.
+Effekseer can copy nodes.</p>
+<p>After selecting the lighting node, right click to copy the node.</p>
+<div align="center">
+<img src="../../img/Tutorial/05_copynode_en.png">
+<p>Adding node</p>
+</div><p>After selecting Root, right-click to paste the node.</p>
+<div align="center">
+<img src="../../img/Tutorial/05_pastenode_en.png">
+<p>Adding node</p>
+</div><p>You can see that the light emmitng node has been duplicated.</p>
+<p>The changed values from the original light emmiting node are as follows.</p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th align="left">Window</th>
+<th align="left">Value type</th>
+<th align="left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Basic Settings</td>
+<td align="left">Name</td>
+<td align="left">Flash2</td>
+</tr>
+<tr>
+<td align="left">Basic Render Settings</td>
+<td align="left">Texture</td>
+<td align="left">Texture/Particle03.png</td>
+</tr>
+</tbody>
+</table><p>You could create an effect that a slash hit.</p>
+<div align="center">
+<img src="../../img/Tutorial/05_completed.gif">
+<p>Complete</p>
+</div><p>Finally, I made it possible to download the effect created in this chapter.</p>
+<div align="center">
+<a href = "../../Sample/05_02_Sample.zip">Download</a>
+</div></div>
+</div>
+<div class="section" id="summary">
+<h2>Summary<a class="headerlink" href="#summary" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>In this chapter, You created effects that are likely to actually be used in games.
+In the next chapter, you will create even more complicated effects.</p>
+</div></div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="06.html" class="btn btn-neutral float-right" title="No06. Let&#39;s create circular particles!" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="04.html" class="btn btn-neutral float-left" title="No04. Let&#39;s rotate and enlarge!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Effekseer
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

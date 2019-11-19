@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EffekseerProject>
+  <Root>
+    <Name>Root</Name>
+    <Children>
+      <Node>
+        <CommonValues>
+          <Life>
+            <Center>60</Center>
+            <Max>60</Max>
+            <Min>60</Min>
+          </Life>
+        </CommonValues>
+        <DrawingValues>
+          <Type>4</Type>
+          <Ring>
+            <Outer>2</Outer>
+            <Outer_Easing>
+              <Start>
+                <X>
+                  <Center>1</Center>
+                  <Max>1</Max>
+                  <Min>1</Min>
+                </X>
+                <Y>
+                  <Center>2</Center>
+                  <Max>2</Max>
+                  <Min>2</Min>
+                </Y>
+              </Start>
+              <End>
+                <X>
+                  <Center>3</Center>
+                  <Max>3</Max>
+                  <Min>3</Min>
+                </X>
+              </End>
+            </Outer_Easing>
+          </Ring>
+        </DrawingValues>
+        <Name>Node</Name>
+        <Children />
+      </Node>
+    </Children>
+  </Root>
+  <ToolVersion>1.22</ToolVersion>
+  <Version>3</Version>
+  <StartFrame>0</StartFrame>
+  <EndFrame>90</EndFrame>
+  <IsLoop>True</IsLoop>
+</EffekseerProject>

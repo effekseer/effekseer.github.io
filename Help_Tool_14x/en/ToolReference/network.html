@@ -1,0 +1,312 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ja" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ja" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Network &mdash; Effekseer Help  ドキュメント</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../_static/js/three.min.js"></script>
+        <script type="text/javascript" src="../../_static/js/effekseer.min.js"></script>
+        <script type="text/javascript" src="../../_static/js/iframe.js"></script>
+        <script type="text/javascript" src="../../_static/js/OrbitControls.js"></script>
+        <script type="text/javascript" src="../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="検索" href="../../search.html" />
+    <link rel="next" title="Culling" href="culling.html" />
+    <link rel="prev" title="Sound" href="sound.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> Effekseer Help
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../ja/index.html">Effekseer Help 日本語</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Effekseer Help (English)</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../overview.html">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolTutorial/index.html">Tool Tutorial</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Tool-Reference</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="index.html#overview">Overview</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="index.html#each-window">Each window</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="common.html">Basic settings</a></li>
+<li class="toctree-l4"><a class="reference internal" href="location.html">Position</a></li>
+<li class="toctree-l4"><a class="reference internal" href="locationAbs.html">Attraction Forces</a></li>
+<li class="toctree-l4"><a class="reference internal" href="locationGene.html">Spawning Method</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rotation.html">Rotation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scale.html">Scale</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererCommon.html">Basic Render Settings</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererSprite.html">Render - Sprite</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererRibbon.html">Render - Ribbon</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererRing.html">Render - Ring</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererModel.html">Render - Model</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererTrack.html">Render - Track</a></li>
+<li class="toctree-l4"><a class="reference internal" href="fcurve.html">F-Curve</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sound.html">Sound</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Network</a></li>
+<li class="toctree-l4"><a class="reference internal" href="culling.html">Culling</a></li>
+<li class="toctree-l4"><a class="reference internal" href="behavior.html">Behavior</a></li>
+<li class="toctree-l4"><a class="reference internal" href="record.html">Recorder</a></li>
+<li class="toctree-l4"><a class="reference internal" href="fileviewer.html">File Viewer (1.3 or later)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="global.html">Global Settings</a></li>
+<li class="toctree-l4"><a class="reference internal" href="options.html">Options</a></li>
+<li class="toctree-l4"><a class="reference internal" href="depth.html">Depth</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#command-line">Command Line</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolTips/01.html">TIPS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq.html">FAQ</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Effekseer Help</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../index.html">Effekseer Help (English)</a> &raquo;</li>
+        
+          <li><a href="index.html">Tool-Reference</a> &raquo;</li>
+        
+      <li>Network</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="network">
+<h1>Network<a class="headerlink" href="#network" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<div class="section" id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>Set parameters related to the network. You can edit the playing effect in an application (game etc.) via the network from the outside when application is running. If you would like to find out more, please read the help page about the runtime network.</p>
+</div>
+<div class="section" id="id1">
+<h2>Overview<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>Set parameters related to the network. You can edit the effect of an application (game etc.) incorporating the running runtime via the network from the outside. Unity, UnrealEngine 4 etc, can be used in an environment where plug-ins are provided from the official of Effekseer. In other environments please consult the person who embeds Effekseer's runtime.</p>
+<p><img alt="../../_images/network.png" src="../../_images/network.png" /></p>
+</div>
+<div class="section" id="how-to-use">
+<h2>How to use<a class="headerlink" href="#how-to-use" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<div class="section" id="the-side-on-which-the-effect-can-be-editted-application-game-etc">
+<h3>The side on which the effect can be editted (application, game etc.)<a class="headerlink" href="#the-side-on-which-the-effect-can-be-editted-application-game-etc" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>It depends on each plug-in or library. In order to edit the effect via the network, specify the port to be used for communication. Execute a function that explicitly activates the server for communication or make the function execute automatically. After that, play the effect you want to edit.</p>
+<p><img alt="../../_images/network_app.png" src="../../_images/network_app.png" /></p>
+</div>
+<div class="section" id="effekseer">
+<h3>Effekseer<a class="headerlink" href="#effekseer" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>Effekseer opens the file from which the effect you want to edit is based. Then, specify the connection destination from the network panel and connect. Edit the effect and press &quot;Send Data&quot; button. Then the effect in the application be editted.</p>
+<p><img alt="../../_images/network_tool_en.png" src="../../_images/network_tool_en.png" /></p>
+</div>
+<div class="section" id="limitation">
+<h3>Limitation<a class="headerlink" href="#limitation" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>The file name of the efk file to be load by the application must be the same as the file name to be edited. For example, if you are playing &quot;Laser.efk&quot; in your application, you will need to edit &quot;Laser.efkproj&quot; in the tool. Also, edits are not reflected on images, models, and sounds that do not exist in the application.</p>
+</div>
+<div class="section" id="tips">
+<h3>TIPS<a class="headerlink" href="#tips" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>Specify 127.0.0.1 as the address when editing the effect of an application running on the same computer.</p>
+</div>
+</div>
+<div class="section" id="parameters">
+<h2>Parameters<a class="headerlink" href="#parameters" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<div class="section" id="address">
+<h3>Address<a class="headerlink" href="#address" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>Enter the IP address or DNS of the computer/server running the application.</p>
+</div>
+<div class="section" id="port">
+<h3>Port<a class="headerlink" href="#port" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>Enter the port number of the computer/server running the application.</p>
+</div>
+<div class="section" id="auto-connect">
+<h3>Auto-connect<a class="headerlink" href="#auto-connect" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>If connection has not yet been established, connection to the remote application will be attempted at a fixed interval.</p>
+</div>
+<div class="section" id="transmit-data-on-load">
+<h3>Transmit data on load<a class="headerlink" href="#transmit-data-on-load" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>When loading an effect file, if connection has been established, send the effect data to the application.</p>
+</div>
+<div class="section" id="transmit-data-on-edit">
+<h3>Transmit data on edit<a class="headerlink" href="#transmit-data-on-edit" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>When making an edit to the effect, if connection has been established, send the effect data to the application.</p>
+</div>
+<div class="section" id="transmit-data-on-save">
+<h3>Transmit data on save<a class="headerlink" href="#transmit-data-on-save" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>When saving the effect, if connection has been established, send the effect data to the application.</p>
+</div>
+<div class="section" id="send">
+<h3>Send<a class="headerlink" href="#send" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>Forcefully send effect data to the application.</p>
+</div>
+<div class="section" id="connect">
+<h3>Connect<a class="headerlink" href="#connect" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>Connect to the specified remote application.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="culling.html" class="btn btn-neutral float-right" title="Culling" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="sound.html" class="btn btn-neutral float-left" title="Sound" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Effekseer
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
