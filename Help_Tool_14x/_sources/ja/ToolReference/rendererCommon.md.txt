@@ -5,6 +5,10 @@
 全ての描画方法に共通するパラメーターを設定する「描画共通」について説明します。
 
 ## パラメーター
+<div align="center">
+<img src="../../img/Tutorial/03_rendercommon_ja.png">
+<p>「描画共通」ウインドウ</p>
+</div>
 
 ### 色/歪み画像
 
@@ -13,6 +17,7 @@
 ### ブレンド
 
 パーティクルの表示に適用されるアルファブレンドの方法を指定します。半透明、加算、減算といった既に描画された画像に対する合成の方法を指定します。
+<iframe src='../../Effects/viewer_ja.html#References/Render/blend.efkefc'></iframe>
 
 ### フィルタ
 
@@ -33,6 +38,7 @@
 ### フェードアウト
 
 パーティクルが消滅するときに、フェードアウトしつつ消滅するようにします。
+<iframe src='../../Effects/viewer_ja.html#References/Render/fade_in_out.efkefc'></iframe>
 
 ### UV
 

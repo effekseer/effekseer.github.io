@@ -66,29 +66,12 @@ Specify an image for the background.
 
 This is a parameter that reproduces the appearance if you were to change the color space and play the effect in your external tool or game engine. There are gamma space and linear space options for the color space.
 
-<table>
 
-<tbody>
+#### Gamma space
+![](../../img/Reference/colorSpace_GammaSpace.png)
+#### Linear space
+![](../../img/Reference/colorSpace_LinearSpace.png)
 
-<tr>
-
-<td>Gamma space</td>
-
-<td>Linear space</td>
-
-</tr>
-
-<tr>
-
-<td>![](../../img/Reference/colorSpace_GammaSpace.png)</td>
-
-<td>![](../../img/Reference/colorSpace_LinearSpace.png)</td>
-
-</tr>
-
-</tbody>
-
-</table>
 
 In Unity and other recent game engines, you can change the color space. Set this parameter according to the color space you plan to use in your external game engine. Please check the description of each game engine etc. for the details of the color space itself. Effekseer's color space is gamma space by default.
 

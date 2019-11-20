@@ -10,6 +10,10 @@
 ![](../../img/Reference/renderSprite.png)
 
 ## パラメーター
+<div align="center">
+<img src="../../img/Reference/Render/panel_sprite_ja.png">
+<p>「描画」ウインドウ</p>
+</div>
 
 ### 描画順
 
@@ -18,6 +22,7 @@
 ### 配置方法
 
 スプライトをパーティクルに対してどのように配置するか指定します。 「ビルボード」の場合、スプライトは常に視点側を向きます。「Z軸回転ビルボード」の場合、Z軸の回転は固定しつつ視点側をむきます。 「Y軸固定」の場合、Y軸の回転は固定しつつ視点側をむきます。「固定」の場合、スプライトはパーティクルの回転に従います。
+<iframe src='../../Effects/viewer_ja.html#References/Render/sprite_configuration.efkefc'></iframe>
 
 ### 全体色
 

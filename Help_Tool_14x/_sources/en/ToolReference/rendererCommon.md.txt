@@ -5,6 +5,10 @@
 This section explains about the "Basic Render Settings" window, which provides common parameters that manipulate how the current node's particles are drawn.
 
 ## Parameter
+<div align="center">
+<img src="../../img/Tutorial/03_rendercommon_en.png">
+<p>"Basic Render Settings" window</p>
+</div>
 
 ### Texture (color/distortion)
 
@@ -13,6 +17,7 @@ Sets the color image or distortion image to be used for displaying the particle.
 ### Blend
 
 Specifies the method of alpha blending applied when displaying the particle. This controls how drawn images will be composited when they are on top of each other, such as translucency, addition, or subtraction.
+<iframe src='../../Effects/viewer_en.html#References/Render/blend.efkefc'></iframe>
 
 ### Filter
 
@@ -33,6 +38,7 @@ When a particle is first spawned, it fades in over a duration until fully visibl
 ### Fade-Out
 
 When a particle is about to be despawned, it fades out over a duration and disappears.
+<iframe src='../../Effects/viewer_en.html#References/Render/fade_in_out.efkefc'></iframe>
 
 ### UV
 

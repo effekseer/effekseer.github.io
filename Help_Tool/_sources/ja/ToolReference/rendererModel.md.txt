@@ -12,6 +12,10 @@
 ![](../../img/Reference/renderModel.png)
 
 ## パラメーター
+<div align="center">
+<img src="../../img/Reference/Render/panel_model_ja.png">
+<p>「描画」ウインドウ</p>
+</div>
 
 ### モデル
 
