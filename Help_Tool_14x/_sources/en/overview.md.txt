@@ -357,6 +357,10 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
 *   Fixed a bug that a sprite sheet contains extra frames
 *   Fixed a bug that random numbers overflowed (random behavior may change)
 
+### 1.43f（19/11/20）
+
+*   Fixed a bug that it cannot open a help.
+
 ### 1.43e（19/10/12）
 *   Fixed a bug that the application cannot read a model from maya
 *   Fixed a bug that the application cannot read a file with a name containing space

@@ -5,6 +5,10 @@
 Set parameters for specifying the position where the node's particles will be initially generated. In addition to the influence that parent particle positions have on their child particles' positions, the values set here affects position as well. In other words, particles are generated around an origin point located at the parent particle's position, then translated and rotated from that point by the parameters specified for the spawning method. ![](../../img/Reference/locationGene.png)
 
 ## Parameter
+<div align="center">
+<img src="../../img/Tutorial/08_spawn_en.png">
+<p>"Spawning Method" window</p>
+</div>
 
 ### Set angle on spawn
 

@@ -20,3 +20,7 @@ Grid system copy from bootstrap 4
     max-width: 50%;
   }
 }
+
+iframe.effect {
+    margin-bottom:50px;
+}

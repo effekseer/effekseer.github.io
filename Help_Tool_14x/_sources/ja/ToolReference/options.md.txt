@@ -67,31 +67,16 @@ YZ平面のグリッドを表示するか指定します。
 
 外部でカラースペースを変更してエフェクトを再生した時の表示を再現するパラメーターです。 カラースペースにはガンマスペースとリニアスペースがあります。
 
-<table>
 
-<tbody>
 
-<tr>
+#### ガンマスペース
+![](../../img/Reference/colorSpace_GammaSpace.png)
+#### リニアスペース
+![](../../img/Reference/colorSpace_LinearSpace.png)
 
-<td>ガンマスペース</td>
-
-<td>リニアスペース</td>
-
-</tr>
-
-<tr>
-
-<td>![](../../img/Reference/colorSpace_GammaSpace.png)</td>
-
-<td>![](../../img/Reference/colorSpace_LinearSpace.png)</td>
-
-</tr>
-
-</tbody>
-
-</table>
 
 Unity等、最近のゲームエンジンではカラースペースを変更できます。使用する先のカラースペースに合わせて設定します。 カラースペース自体の意味は各ゲームエンジン等の説明を確認してください。 Effekseerのカラースペースはデフォルトではガンマスペースです。
+
 
 ### マウスの回転方向(X)
 

@@ -11,6 +11,10 @@ The color / distortion image set in the Basic Render Settings window will be use
 ![](../../img/Reference/renderModel.png)
 
 ## Parameters
+<div align="center">
+<img src="../../img/Reference/Render/panel_model_en.png">
+<p>"Render Settings" window</p>
+</div>
 
 ### Model
 

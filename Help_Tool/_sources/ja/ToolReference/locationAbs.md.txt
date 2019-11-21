@@ -6,6 +6,10 @@
 親パーティクルの位置や角度に影響されない位置に関するパラメーターを設定します。 親パーティクルと子のパーティクルの位置の変更が適用された後に、これらのパラメーターがパーティクルを移動させます。
 
 ## パラメーター
+<div align="center">
+<img src="../../img/Reference/Atraction/panel_ja.png">
+<p>「引力」ウインドウ</p>
+</div>
 
 ### なし
 
@@ -14,6 +18,7 @@
 ### 重力
 
 ある方向に加速度をかけます。下とは限らず、上や右にも適用することができます。
+<iframe src='../../Effects/viewer_ja.html#References/Attraction_Forces/gravity.efkefc'></iframe>
 
 ### 引力
 

@@ -12,6 +12,12 @@
 ![](../../img/Reference/renderRibbon.png)
 
 ## パラメーター
+<div align="center">
+<img src="../../img/Reference/Render/panel_ribbon_ja.png">
+<p>「描画」ウインドウ</p>
+</div>
+
+<iframe src='../../Effects/viewer_ja.html#References/Render/ribbon_render.efkefc' class='effect'></iframe>
 
 ### 描画順
 

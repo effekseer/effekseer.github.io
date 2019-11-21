@@ -6,6 +6,11 @@ From here, you can set some global parameters for the particle node, such as its
 
 ## Parameter
 
+<div align="center">
+<img src="../../img/Tutorial/02_common_en.png">
+<p>"Basic settings" window</p>
+</div>
+
 ### Visibility
 
 Controls whether or not particles generated from this node are drawn on the screen. If you check this, particles will be visible. Note that even when outputting for games, particles will not be drawn unless this is checked.
