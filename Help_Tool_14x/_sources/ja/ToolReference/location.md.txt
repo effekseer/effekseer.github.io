@@ -18,19 +18,19 @@
 #### 位置
 
 固定された位置にパーティクルを配置します。
-<iframe src='../../Effects/viewer_ja.html#References/position/setposition.efkefc' class='effect'></iframe>
+<iframe src='../../Effects/viewer_ja.html#References/Position/setposition.efkefc' class='effect'></iframe>
 
 #### 位置・速度・加速度
 
 パーティクルの位置・速度・加速度を指定します。
-<iframe src='../../Effects/viewer_ja.html#References/position/movingposition.efkefc' class='effect'></iframe>
+<iframe src='../../Effects/viewer_ja.html#References/Position/movingposition.efkefc' class='effect'></iframe>
 
 #### イージング
 
 パーティクルの生成時の位置と終了時の位置を指定します。
-<iframe src='../../Effects/viewer_ja.html#References/position/easing.efkefc' class='effect'></iframe>
+<iframe src='../../Effects/viewer_ja.html#References/Position/easing.efkefc' class='effect'></iframe>
 
 #### Fカーブ
 
 Fカーブを使用します。
-<iframe src='../../Effects/viewer_ja.html#References/position/f_curve.efkefc' class='effect'></iframe>
+<iframe src='../../Effects/viewer_ja.html#References/Position/f_curve.efkefc' class='effect'></iframe>

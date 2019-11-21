@@ -18,22 +18,22 @@ Specifies the spawn position of the particle. This will influence the position o
 #### Set Position
 
 Place the particles at a fixed position.
-<iframe src='../../Effects/viewer_en.html#References/position/setposition.efkefc' class='effect'></iframe>
+<iframe src='../../Effects/viewer_en.html#References/Position/setposition.efkefc' class='effect'></iframe>
 
 
 
 #### Position, Velocity, Acceleration (PVA)
 
 Specify the position, velocity and acceleration of the particle.
-<iframe src='../../Effects/viewer_en.html#References/position/movingposition.efkefc' class='effect'></iframe>
+<iframe src='../../Effects/viewer_en.html#References/Position/movingposition.efkefc' class='effect'></iframe>
 
 #### Easing
 
 Specify the spawn and despawn positions, and the method of interpolating between these two positions over the lifetime of the particle.
-<iframe src='../../Effects/viewer_en.html#References/position/easing.efkefc' class='effect'></iframe>
+<iframe src='../../Effects/viewer_en.html#References/Position/easing.efkefc' class='effect'></iframe>
 
 #### F-Curve
 
 Use the F-Curve window to control the position by defining automation curves.
-<iframe src='../../Effects/viewer_en.html#References/position/f_curve.efkefc' class='effect'></iframe>
+<iframe src='../../Effects/viewer_en.html#References/Position/f_curve.efkefc' class='effect'></iframe>
 
