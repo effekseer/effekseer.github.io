@@ -1,0 +1,351 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ja" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ja" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>No08. 生成方法でパーティクルを並べよう！ &mdash; Effekseer Help  ドキュメント</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../_static/js/three.min.js"></script>
+        <script type="text/javascript" src="../../_static/js/effekseer.min.js"></script>
+        <script type="text/javascript" src="../../_static/js/iframe.js"></script>
+        <script type="text/javascript" src="../../_static/js/OrbitControls.js"></script>
+        <script type="text/javascript" src="../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="検索" href="../../search.html" />
+    <link rel="next" title="No09.マズルフラッシュを作成しよう！" href="09.html" />
+    <link rel="prev" title="No07. 親子関係で複雑な動きしよう！" href="07.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> Effekseer Help
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Effekseer Help 日本語</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../overview.html">概要</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">ツール・チュートリアル</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="01.html">No01.サンプルを見る＆使ってみよう！</a></li>
+<li class="toctree-l3"><a class="reference internal" href="02.html">No02.パーティクルをばらまいてみよう！</a></li>
+<li class="toctree-l3"><a class="reference internal" href="03.html">No03. 画像を表示してみよう！</a></li>
+<li class="toctree-l3"><a class="reference internal" href="04.html">No04. 回転、拡大してみよう！</a></li>
+<li class="toctree-l3"><a class="reference internal" href="05.html">No05. ヒットマーク(斬撃)を作成しよう！</a></li>
+<li class="toctree-l3"><a class="reference internal" href="06.html">No06. 円形のパーティクルを作成しよう！</a></li>
+<li class="toctree-l3"><a class="reference internal" href="07.html">No07. 親子関係で複雑な動きしよう！</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">No08. 生成方法でパーティクルを並べよう！</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id1">概要</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id2">生成方法</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id3">円形エフェクト</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id4">球形エフェクト</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id6">まとめ</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="09.html">No09.マズルフラッシュを作成しよう！</a></li>
+<li class="toctree-l3"><a class="reference internal" href="10.html">No10.リボンと軌跡</a></li>
+<li class="toctree-l3"><a class="reference internal" href="11.html">No11. 3Dモデルを使おう！</a></li>
+<li class="toctree-l3"><a class="reference internal" href="12.html">No12. Fカーブで複雑な動きを指定しよう！</a></li>
+<li class="toctree-l3"><a class="reference internal" href="13.html">No13. 背景を歪ませよう！</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolReference/index.html">ツール・リファレンス</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../MaterialToolReference/index.html">マテリアル・リファレンス</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolTips/01.html">TIPS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq.html">FAQ</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../en/index.html">Effekseer Help (English)</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Effekseer Help</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../index.html">Effekseer Help 日本語</a> &raquo;</li>
+        
+          <li><a href="index.html">ツール・チュートリアル</a> &raquo;</li>
+        
+      <li>No08. 生成方法でパーティクルを並べよう！</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="no08">
+<h1>No08. 生成方法でパーティクルを並べよう！<a class="headerlink" href="#no08" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<div class="main"><div class="section" id="id1">
+<h2>概要<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>本章では、生成方法を変更して、パーティクルを一定間隔で並べてみます。
+生成方法では、パーティクルの最初の姿勢を指定できます。
+ノードの親子関係を使えば同じようなことを再現できますが、同じことを簡単に実現できます。</p>
+<div align="center" class='col-md-4'>
+<iframe src='../../Sample/viewer_ja.html#08_02_Sample/effect1.efk'></iframe>
+<p>本章で作成するエフェクト1</p>
+</div><div align="center" class='col-md-4'>
+<iframe src='../../Sample/viewer_ja.html#08_02_Sample/effect2.efk'></iframe>
+<p>本章で作成するエフェクト2</p>
+</div><div align="center"class='col-md-4'>
+<iframe src='../../Sample/viewer_ja.html#08_02_Sample/effect3.efk'></iframe>
+<p>本章で作成するエフェクト3</p>
+</div></div>
+<div class="section" id="id2">
+<h2>生成方法<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>Effekseerでは、生成方法を指定できます。
+生成方法では、パーティクルが生成されたときの最初の姿勢を指定できます。
+例えば、パーティクルを円形に配置したり、球形に配置したりできます。</p>
+<div align="center">
+<img src="../../img/Tutorial/08_spawn_method.png">
+<p>生成方法</p>
+</div><p>位置だけでなく、角度も指定できます。
+例えば、パーティクルの上方向が球の外側を向く、といったことができます。</p>
+<div align="center">
+<table>
+<tr><td>
+<div align="center">
+<img src="../../img/Tutorial/08_affect_no_angle.png">
+<p>角度指定なし</p>
+</div>
+</td><td>
+<div align="center">
+<img src="../../img/Tutorial/08_affect_angle.png">
+<p>角度指定あり</p>
+</div>
+</td></tr>
+</table>
+</div><p>あらかじめ作成途中のエフェクトを下記のリンクからダウンロードできるようにしました。</p>
+<div align="center">
+<p><a href = "../../Sample/08_01_Sample.zip">ダウンロード</a></p>
+</div></div>
+<div class="section" id="id3">
+<h2>円形エフェクト<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>パーティクルを円形に配置します。
+パーティクルは時計回りに順番に表示されるようにします。</p>
+<p>このエフェクトは親子関係を利用して実現できますが、それはとても面倒です。
+複雑な配置を簡単に実現するために、生成方法があります。</p>
+<p>effect01.efkprojを開いてください。</p>
+<p>「生成方法」のウインドウは初期設定では表示されていません。
+メニューバーから「ウインドウ-&gt;生成方法」を選択します。
+選択すると「生成方法」ウインドウが表示されます。</p>
+<div align="center">
+<img src="../../img/Tutorial/08_spawn_ja.png">
+<p>生成方法</p>
+</div><p>「生成方法」ウインドウから、生成方法に円を指定します。
+円の半径には4を入力します。</p>
+<p>円形にパーティクルが表示されることがわかります。</p>
+<div align="center">
+<img src="../../img/Tutorial/08_effect1_random.gif">
+<p>ランダムに配置されたパーティクル</p>
+</div><p>パーティクルはランダムに配置されているため、順番に出現しません。
+順番に出現するように、生成位置種類を正順に変更します。
+それに加えて、分割数と生成数を12に変更します。
+これは、円を均等に12分割した位置にパーティクルを出現させることを示しています。</p>
+<p>円形にパーティクルが均等に表示されることがわかります。
+同時に、パーティクルが順番に出現するようになることもわかります。</p>
+<div align="center">
+<img src="../../img/Tutorial/08_effect1.gif">
+<p>作成されたエフェクト</p>
+</div></div>
+<div class="section" id="id4">
+<h2>球形エフェクト<a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>パーティクルを球形に配置してみます。</p>
+<p>effect02.efkprojを開いてください。</p>
+<p>円形と同じように、球形も設定できます。</p>
+<p>「生成方法」ウインドウから生成方法を球に変更します。
+球の半径には4を入力します。
+さらに、全方位にパーティクルを配置するためにX軸角度とY軸角度の振れ幅には360度を入力します。</p>
+<p>球形にパーティクルが配置されていることがわかります。</p>
+<div align="center">
+<img src="../../img/Tutorial/08_effect2.gif">
+<p>作成されたエフェクト</p>
+</div><div class="section" id="id5">
+<h3>角度の影響<a class="headerlink" href="#id5" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>球の外側方向に向けてパーティクルが飛ぶようにしてみます。</p>
+<p>effect03.efjprojを開いてください。</p>
+<p>球の上方向にパーティクルが飛んでいくのがわかります。</p>
+<div align="center">
+<img src="../../img/Tutorial/08_effect3_start.gif">
+<p>上方向にパーティクルが飛んでいくエフェクト</p>
+</div><p>ただ、実際、球形にパーティクルを配置する場合、球の内側方向や外側方向に飛んでほしいことが多いです。
+そのような場合、角度に影響にチェックします。
+これにチェックすると、生成されるときにパーティクルの上方向が球の外側方向に一致するように回転させます。</p>
+<p>今回の場合、上方向に向かっていたパーティクルが球の外側方向に向かうようになります。</p>
+<p>チェックすると、球の外側方向にパーティクルが飛んでいくのがわかります。</p>
+<div align="center">
+<img src="../../img/Tutorial/08_effect3.gif">
+<p>作成されたエフェクト</p>
+</div><p>最後に、本章で作成されたエフェクトをダウンロードできるようにしてみました。</p>
+<div align="center">
+<a href = "../../Sample/08_02_Sample.zip">ダウンロード</a>
+</div></div>
+</div>
+<div class="section" id="id6">
+<h2>まとめ<a class="headerlink" href="#id6" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>本章では、生成方法を変更して、パーティクルを円形や直線状に配置しました。
+次章では、ここまでで学んだ知識を元に実践的なエフェクトを作成します。</p>
+</div></div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="09.html" class="btn btn-neutral float-right" title="No09.マズルフラッシュを作成しよう！" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="07.html" class="btn btn-neutral float-left" title="No07. 親子関係で複雑な動きしよう！" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Effekseer
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EffekseerProject>
+  <Root>
+    <Name>Root</Name>
+    <Children>
+      <Node>
+        <CommonValues>
+          <Life>
+            <Center>60</Center>
+            <Max>60</Max>
+            <Min>60</Min>
+          </Life>
+        </CommonValues>
+        <Name>Node</Name>
+        <Children />
+      </Node>
+    </Children>
+  </Root>
+  <ToolVersion>1.22</ToolVersion>
+  <Version>3</Version>
+  <StartFrame>0</StartFrame>
+  <EndFrame>90</EndFrame>
+  <IsLoop>True</IsLoop>
+</EffekseerProject>

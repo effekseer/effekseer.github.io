@@ -1,0 +1,634 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ja" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ja" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>No05. ヒットマーク(斬撃)を作成しよう！ &mdash; Effekseer Help  ドキュメント</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../_static/js/three.min.js"></script>
+        <script type="text/javascript" src="../../_static/js/effekseer.min.js"></script>
+        <script type="text/javascript" src="../../_static/js/iframe.js"></script>
+        <script type="text/javascript" src="../../_static/js/OrbitControls.js"></script>
+        <script type="text/javascript" src="../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="検索" href="../../search.html" />
+    <link rel="next" title="No06. 円形のパーティクルを作成しよう！" href="06.html" />
+    <link rel="prev" title="No04. 回転、拡大してみよう！" href="04.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> Effekseer Help
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Effekseer Help 日本語</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../overview.html">概要</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">ツール・チュートリアル</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="01.html">No01.サンプルを見る＆使ってみよう！</a></li>
+<li class="toctree-l3"><a class="reference internal" href="02.html">No02.パーティクルをばらまいてみよう！</a></li>
+<li class="toctree-l3"><a class="reference internal" href="03.html">No03. 画像を表示してみよう！</a></li>
+<li class="toctree-l3"><a class="reference internal" href="04.html">No04. 回転、拡大してみよう！</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">No05. ヒットマーク(斬撃)を作成しよう！</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id1">概要</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id2">準備</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id3">イージング</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id4">作成</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id9">まとめ</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="06.html">No06. 円形のパーティクルを作成しよう！</a></li>
+<li class="toctree-l3"><a class="reference internal" href="07.html">No07. 親子関係で複雑な動きしよう！</a></li>
+<li class="toctree-l3"><a class="reference internal" href="08.html">No08. 生成方法でパーティクルを並べよう！</a></li>
+<li class="toctree-l3"><a class="reference internal" href="09.html">No09.マズルフラッシュを作成しよう！</a></li>
+<li class="toctree-l3"><a class="reference internal" href="10.html">No10.リボンと軌跡</a></li>
+<li class="toctree-l3"><a class="reference internal" href="11.html">No11. 3Dモデルを使おう！</a></li>
+<li class="toctree-l3"><a class="reference internal" href="12.html">No12. Fカーブで複雑な動きを指定しよう！</a></li>
+<li class="toctree-l3"><a class="reference internal" href="13.html">No13. 背景を歪ませよう！</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolReference/index.html">ツール・リファレンス</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../MaterialToolReference/index.html">マテリアル・リファレンス</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolTips/01.html">TIPS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq.html">FAQ</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../en/index.html">Effekseer Help (English)</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Effekseer Help</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../index.html">Effekseer Help 日本語</a> &raquo;</li>
+        
+          <li><a href="index.html">ツール・チュートリアル</a> &raquo;</li>
+        
+      <li>No05. ヒットマーク(斬撃)を作成しよう！</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="no05">
+<h1>No05. ヒットマーク(斬撃)を作成しよう！<a class="headerlink" href="#no05" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<div class="main"><div class="section" id="id1">
+<h2>概要<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>本章では、実際のゲームに使用されるような斬撃が命中したエフェクト(ヒットマーク)を作成します。
+真ん中に剣線が入り、周囲に細かい衝撃が飛ぶようなエフェクトです。
+その際、新しい内容として、ノードのコピー、追加とイージングについて説明します。</p>
+<iframe src='../../Sample/viewer_ja.html#05_02_Sample/effect.efk'></iframe></div>
+<div class="section" id="id2">
+<h2>準備<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>あらかじめ作成途中のエフェクトを下記のリンクからダウンロードできるようにしました。</p>
+<div align="center">
+<a href = "../../Sample/05_01_Sample.zip">ダウンロード</a>
+</div><p>今回作成するエフェクトの長さは約0.5秒なので、「ビュワー操作」ウインドウの「終了」を30フレームにしています。</p>
+</div>
+<div class="section" id="id3">
+<h2>イージング<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>今回は様々なパラメーターにイージングを使用することが多いです。</p>
+<p>イージングとは、始点と終点の値を指定して、間の値は自動的に補完される指定方法です。</p>
+<p>下記の図で示すように、今まで、位置、回転、拡大は速度(1)や加速度で指定していました。
+ただ、この指定方法だと生存時間が長くなるほど値が大きくなってしまいます。</p>
+<p>一方、イージングでは、生成された直後の値(2)と消える直前の値(3)を指定して、その間を補完します。
+消える直前の値を指定できるためにパーティクルの形状がわかりやすくなります。</p>
+<div align="center">
+<table>
+<tr>
+<td>
+<img src="../../img/Tutorial/05_pva_type.png">
+<p>位置・速度・加速度</p>
+</td>
+<td>
+<img src="../../img/Tutorial/05_easing_type.png">
+<p>イージング</p>
+</td>
+</tr>
+</table>
+</div><p>補完方法は複数存在します。始点と終点でそれぞれ、低速3～高速3を指定できます。
+低速なほど、値が変化しにくく、高速なほど、値が変化しやすくなります。</p>
+<div align="center">
+<img src="../../img/Tutorial/05_easing.gif">
+<p>補完方法</p>
+</div></div>
+<div class="section" id="id4">
+<h2>作成<a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>エフェクトは一種類のパーティクルだけでなく、複数種類の全く異なる見た目のパーティクルで構成されることが多いです。
+Effekseerでも、ノードを複数持つことができます。ノードごとに全く異なるパラメーターを与えることができます。
+ヒットマークも複数のノードで構成する必要があります。今回は順番にノードを作成していきます。</p>
+<p>このエフェクトの方向性として以下のようなことを定めました。</p>
+<ul class="simple">
+<li><p>再生時間は約0.5秒(30フレーム)</p></li>
+<li><p>色は紫色(255,32,255)～ピンク(255,128,255)</p></li>
+</ul>
+<div class="section" id="id5">
+<h3>剣線ノード<a class="headerlink" href="#id5" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>剣線を表す、45度の角度で細長く切るノードを作成します。</p>
+<p>剣線は0.33秒(20フレーム)の間に、45度方向に細長く伸びるように指定します。
+パーティクルに傾いてほしいので、Z軸回転ビルボードを指定しています。</p>
+<p>値は以下の通りに変更します。</p>
+<p><b>本章は変更する値の数が多いです。雰囲気さえ似てれば全部同じにする必要はありません。</b></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th align="left">ウインドウ</th>
+<th align="left">値の名称</th>
+<th align="left">値</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">共通</td>
+<td align="left">名称</td>
+<td align="left">Line1</td>
+</tr>
+<tr>
+<td align="left">共通</td>
+<td align="left">生存時間</td>
+<td align="left">20</td>
+</tr>
+<tr>
+<td align="left">回転</td>
+<td align="left">角度(度)</td>
+<td align="left">x=0, y=0, z=-45</td>
+</tr>
+<tr>
+<td align="left">拡大</td>
+<td align="left">拡大方法</td>
+<td align="left">イージング</td>
+</tr>
+<tr>
+<td align="left">拡大</td>
+<td align="left">始点(中心)</td>
+<td align="left">x=4, y=1, z=1</td>
+</tr>
+<tr>
+<td align="left">拡大</td>
+<td align="left">終点(中心)</td>
+<td align="left">x=1, y=25, z=1</td>
+</tr>
+<tr>
+<td align="left">拡大</td>
+<td align="left">始点速度</td>
+<td align="left">高速3</td>
+</tr>
+<tr>
+<td align="left">拡大</td>
+<td align="left">終点速度</td>
+<td align="left">低速3</td>
+</tr>
+<tr>
+<td align="left">描画共通</td>
+<td align="left">色/歪み画像</td>
+<td align="left">Texture/Line01.png</td>
+</tr>
+<tr>
+<td align="left">描画共通</td>
+<td align="left">ブレンド</td>
+<td align="left">加算</td>
+</tr>
+<tr>
+<td align="left">描画</td>
+<td align="left">配置方法</td>
+<td align="left">Z軸回転ビルボード</td>
+</tr>
+<tr>
+<td align="left">描画</td>
+<td align="left">全体色</td>
+<td align="left">イージング</td>
+</tr>
+<tr>
+<td align="left">描画</td>
+<td align="left">全体色-始点(中心)</td>
+<td align="left">255,128,255,255</td>
+</tr>
+<tr>
+<td align="left">描画</td>
+<td align="left">全体色-終点(中心)</td>
+<td align="left">255,255,255,0</td>
+</tr>
+<tr>
+<td align="left">描画</td>
+<td align="left">全体色-始点速度</td>
+<td align="left">低速3</td>
+</tr>
+<tr>
+<td align="left">描画</td>
+<td align="left">全体色-終点速度</td>
+<td align="left">高速3</td>
+</tr>
+</tbody>
+</table><p>この時点でエフェクトは以下のようになりました。</p>
+<div align="center">
+<img src="../../img/Tutorial/05_01.gif">
+<p>剣線ノード</p>
+</div></div>
+<div class="section" id="id6">
+<h3>衝撃ノード<a class="headerlink" href="#id6" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>攻撃がヒットした時に、剣線だけではなく衝撃も発生します。
+剣線と同じように作成します。</p>
+<p>剣線ノードと衝撃ノードはパラメーターが異なるため、ノードを追加する必要があります。
+まず、Rootを選択します。その後、Rootを右クリックするとメニューが表示されます。
+メニューから、ノードの追加を選択します。</p>
+<div align="center">
+<img src="../../img/Tutorial/05_addnode_ja.png">
+<p>ノードの追加</p>
+</div><p>ノードが追加されたら、追加されたノードをクリックして、そのノードを編集していきます。</p>
+<p>値を以下の通りに変更します。</p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th align="left">ウインドウ</th>
+<th align="left">値の名称</th>
+<th align="left">値</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">共通</td>
+<td align="left">名称</td>
+<td align="left">Line2</td>
+</tr>
+<tr>
+<td align="left">共通</td>
+<td align="left">生成数</td>
+<td align="left">10</td>
+</tr>
+<tr>
+<td align="left">共通</td>
+<td align="left">生存時間</td>
+<td align="left">20</td>
+</tr>
+<tr>
+<td align="left">回転</td>
+<td align="left">回転方法</td>
+<td align="left">角度・速度・加速度</td>
+</tr>
+<tr>
+<td align="left">回転</td>
+<td align="left">角度(度)-振幅</td>
+<td align="left">x=0, y=0, z=180</td>
+</tr>
+<tr>
+<td align="left">拡大</td>
+<td align="left">拡大方法</td>
+<td align="left">イージング</td>
+</tr>
+<tr>
+<td align="left">拡大</td>
+<td align="left">始点(中心)</td>
+<td align="left">x=1, y=1, z=1</td>
+</tr>
+<tr>
+<td align="left">拡大</td>
+<td align="left">終点(中心)</td>
+<td align="left">x=1, y=10, z=1</td>
+</tr>
+<tr>
+<td align="left">拡大</td>
+<td align="left">始点速度</td>
+<td align="left">高速3</td>
+</tr>
+<tr>
+<td align="left">拡大</td>
+<td align="left">終点速度</td>
+<td align="left">低速3</td>
+</tr>
+<tr>
+<td align="left">描画共通</td>
+<td align="left">色/歪み画像</td>
+<td align="left">Texture/Line01.png</td>
+</tr>
+<tr>
+<td align="left">描画共通</td>
+<td align="left">ブレンド</td>
+<td align="left">加算</td>
+</tr>
+<tr>
+<td align="left">描画</td>
+<td align="left">配置方法</td>
+<td align="left">Z軸回転ビルボード</td>
+</tr>
+<tr>
+<td align="left">描画</td>
+<td align="left">全体色</td>
+<td align="left">イージング</td>
+</tr>
+<tr>
+<td align="left">描画</td>
+<td align="left">全体色-始点(中心)</td>
+<td align="left">255,128,255,255</td>
+</tr>
+<tr>
+<td align="left">描画</td>
+<td align="left">全体色-終点(中心)</td>
+<td align="left">255,255,255,0</td>
+</tr>
+<tr>
+<td align="left">描画</td>
+<td align="left">全体色-始点速度</td>
+<td align="left">低速3</td>
+</tr>
+<tr>
+<td align="left">描画</td>
+<td align="left">全体色-終点速度</td>
+<td align="left">高速3</td>
+</tr>
+</tbody>
+</table><p>この時点でエフェクトは以下のようになりました。</p>
+<div align="center">
+<img src="../../img/Tutorial/05_02.gif">
+<p>衝撃ノード</p>
+</div></div>
+<div class="section" id="id7">
+<h3>発光ノードその1<a class="headerlink" href="#id7" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>命中した瞬間にエフェクトが発行した方が見栄えがいいです。
+これも剣線ノードと同じように設定します。</p>
+<p>値を以下の通りに変更します。</p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th align="left">ウインドウ</th>
+<th align="left">値の名称</th>
+<th align="left">値</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">共通</td>
+<td align="left">名称</td>
+<td align="left">Flash1</td>
+</tr>
+<tr>
+<td align="left">共通</td>
+<td align="left">生存時間</td>
+<td align="left">20</td>
+</tr>
+<tr>
+<td align="left">拡大</td>
+<td align="left">拡大方法</td>
+<td align="left">単一拡大率・速度・加速度</td>
+</tr>
+<tr>
+<td align="left">拡大</td>
+<td align="left">拡大速度</td>
+<td align="left">0.6</td>
+</tr>
+<tr>
+<td align="left">描画共通</td>
+<td align="left">色/歪み画像</td>
+<td align="left">Texture/Particle01.png</td>
+</tr>
+<tr>
+<td align="left">描画共通</td>
+<td align="left">ブレンド</td>
+<td align="left">加算</td>
+</tr>
+<tr>
+<td align="left">描画</td>
+<td align="left">全体色</td>
+<td align="left">イージング</td>
+</tr>
+<tr>
+<td align="left">描画</td>
+<td align="left">全体色-始点(中心)</td>
+<td align="left">255,32,255,255</td>
+</tr>
+<tr>
+<td align="left">描画</td>
+<td align="left">全体色-終点(中心)</td>
+<td align="left">255,128,255,0</td>
+</tr>
+<tr>
+<td align="left">描画</td>
+<td align="left">全体色-始点速度</td>
+<td align="left">低速3</td>
+</tr>
+<tr>
+<td align="left">描画</td>
+<td align="left">全体色-終点速度</td>
+<td align="left">高速3</td>
+</tr>
+</tbody>
+</table><p>この時点でエフェクトは以下のようになりました。</p>
+<div align="center">
+<img src="../../img/Tutorial/05_03.gif">
+<p>発光ノードその1</p>
+</div></div>
+<div class="section" id="id8">
+<h3>発光ノードその2<a class="headerlink" href="#id8" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>まだ、発光が地味なので、発光を追加します。
+この発光ですが、先ほど作成した発光ノードとほとんど変わりません。
+Effekseerではノードをコピーできます。</p>
+<p>発光ノードを選択した後、右クリックを押してノードをコピーします。</p>
+<div align="center">
+<img src="../../img/Tutorial/05_copynode_ja.png">
+<p>ノードの追加</p>
+</div><p>Rootを選択した後、右クリックを押してノードの貼り付けをします。</p>
+<div align="center">
+<img src="../../img/Tutorial/05_pastenode_ja.png">
+<p>ノードの追加</p>
+</div><p>発光ノードが複製されたことがわかります。</p>
+<p>元の発光ノードから変更された値は以下の通りになります。</p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th align="left">ウインドウ</th>
+<th align="left">値の名称</th>
+<th align="left">値</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">共通</td>
+<td align="left">名称</td>
+<td align="left">Flash2</td>
+</tr>
+<tr>
+<td align="left">描画共通</td>
+<td align="left">色/歪み画像</td>
+<td align="left">Texture/Particle03.png</td>
+</tr>
+</tbody>
+</table><p>斬撃が命中したエフェクトが作成できました。</p>
+<div align="center">
+<img src="../../img/Tutorial/05_completed.gif">
+<p>完成</p>
+</div><p>最後に、本章で作成されたエフェクトをダウンロードできるようにしてみました。</p>
+<div align="center">
+<a href = "../../Sample/05_02_Sample.zip">ダウンロード</a>
+</div></div>
+</div>
+<div class="section" id="id9">
+<h2>まとめ<a class="headerlink" href="#id9" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>本章では、実際にゲームで使用できそうなエフェクトを作成しました。
+次章では、さらに複雑なエフェクトを作成していきます。</p>
+</div></div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="06.html" class="btn btn-neutral float-right" title="No06. 円形のパーティクルを作成しよう！" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="04.html" class="btn btn-neutral float-left" title="No04. 回転、拡大してみよう！" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Effekseer
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

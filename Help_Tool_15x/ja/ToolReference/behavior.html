@@ -1,0 +1,309 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ja" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ja" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>振る舞い &mdash; Effekseer Help  ドキュメント</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../_static/js/three.min.js"></script>
+        <script type="text/javascript" src="../../_static/js/effekseer.min.js"></script>
+        <script type="text/javascript" src="../../_static/js/iframe.js"></script>
+        <script type="text/javascript" src="../../_static/js/OrbitControls.js"></script>
+        <script type="text/javascript" src="../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="検索" href="../../search.html" />
+    <link rel="next" title="録画" href="record.html" />
+    <link rel="prev" title="カリング" href="culling.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> Effekseer Help
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Effekseer Help 日本語</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../overview.html">概要</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolTutorial/index.html">ツール・チュートリアル</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">ツール・リファレンス</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="index.html#id2">概要</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="index.html#id10">各ウインドウ</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="common.html">共通</a></li>
+<li class="toctree-l4"><a class="reference internal" href="location.html">位置</a></li>
+<li class="toctree-l4"><a class="reference internal" href="locationAbs.html">力場(ローカル)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="locationGene.html">生成方法</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rotation.html">回転</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scale.html">拡大</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererCommon.html">描画共通</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererSprite.html">描画-スプライト</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererRibbon.html">描画-リボン</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererRing.html">描画-リング</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererModel.html">描画-モデル</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererTrack.html">描画-軌跡</a></li>
+<li class="toctree-l4"><a class="reference internal" href="fcurve.html">Fカーブ</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sound.html">音</a></li>
+<li class="toctree-l4"><a class="reference internal" href="network.html">ネットワーク</a></li>
+<li class="toctree-l4"><a class="reference internal" href="culling.html">カリング</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">振る舞い</a></li>
+<li class="toctree-l4"><a class="reference internal" href="record.html">録画</a></li>
+<li class="toctree-l4"><a class="reference internal" href="fileviewer.html">ファイルビューア</a></li>
+<li class="toctree-l4"><a class="reference internal" href="global.html">全体</a></li>
+<li class="toctree-l4"><a class="reference internal" href="environment.html">環境</a></li>
+<li class="toctree-l4"><a class="reference internal" href="options.html">オプション</a></li>
+<li class="toctree-l4"><a class="reference internal" href="depth.html">深度</a></li>
+<li class="toctree-l4"><a class="reference internal" href="dynamicParameter.html">動的パラメーター</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id11">コマンドライン</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../MaterialToolReference/index.html">マテリアル・リファレンス</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolTips/01.html">TIPS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq.html">FAQ</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../en/index.html">Effekseer Help (English)</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Effekseer Help</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../index.html">Effekseer Help 日本語</a> &raquo;</li>
+        
+          <li><a href="index.html">ツール・リファレンス</a> &raquo;</li>
+        
+      <li>振る舞い</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>振る舞い<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<div class="section" id="id2">
+<h2>概要<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>エディタ上でのエフェクトの表示方法を設定します。複数表示させるなど、ゲーム中に近い表現を再現できます。</p>
+<iframe src='../../Effects/viewer_ja.html#References/Behavior/Original.efk'></iframe></div>
+<div class="section" id="id3">
+<h2>パラメーター<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<div class="section" id="id4">
+<h3>初期位置<a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>1フレーム目のエフェクトのルートのパーティクルの位置を指定します。</p>
+<iframe src='../../Effects/viewer_ja.html#References/Behavior/InitialPosition.efk'></iframe></div>
+<div class="section" id="id5">
+<h3>移動速度<a class="headerlink" href="#id5" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>エフェクトのルートのパーティクルの移動速度を指定します。</p>
+<iframe src='../../Effects/viewer_ja.html#References/Behavior/speed.efkefc'></iframe></div>
+<div class="section" id="id6">
+<h3>初期角度<a class="headerlink" href="#id6" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>1フレーム目のエフェクトのルートのパーティクルの角度を指定します。</p>
+<iframe src='../../Effects/viewer_ja.html#References/Behavior/angle.efkefc'></iframe></div>
+<div class="section" id="id7">
+<h3>回転速度<a class="headerlink" href="#id7" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>エフェクトのルートのパーティクルの回転速度を指定します。</p>
+<iframe src='../../Effects/viewer_ja.html#References/Behavior/angular_speed.efkefc'></iframe></div>
+<div class="section" id="id8">
+<h3>初期拡大率<a class="headerlink" href="#id8" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>1フレーム目のエフェクトのルートのパーティクルの初期の拡大率を指定します。</p>
+<iframe src='../../Effects/viewer_ja.html#References/Behavior/behavior_scale.efkefc'></iframe></div>
+<div class="section" id="id9">
+<h3>拡大速度<a class="headerlink" href="#id9" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>エフェクトのルートのパーティクルの拡大速度を指定します。</p>
+</div>
+<div class="section" id="id10">
+<h3>破棄フレーム<a class="headerlink" href="#id10" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>エフェクトの表示中にルートのパーティクルの削除する時間(フレーム単位)を指定します。</p>
+</div>
+<div class="section" id="x">
+<h3>個数(X方向)<a class="headerlink" href="#x" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>エフェクトをX方向に並べて表示する時の個数を指定します。</p>
+</div>
+<div class="section" id="y">
+<h3>個数(Y方向)<a class="headerlink" href="#y" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>エフェクトをY方向に並べて表示する時の個数を指定します。</p>
+</div>
+<div class="section" id="z">
+<h3>個数(Z方向)<a class="headerlink" href="#z" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>エフェクトをZ方向に並べて表示する時の個数を指定します。</p>
+</div>
+<div class="section" id="id11">
+<h3>距離<a class="headerlink" href="#id11" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>エフェクトを複数表示する時のエフェクト間の距離を指定します。</p>
+<iframe src='../../Effects/viewer_ja.html#References/Behavior/count_set.efkefc'></iframe></div>
+<div class="section" id="id12">
+<h3>再生速度<a class="headerlink" href="#id12" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>エフェクトの再生速度を指定します。</p>
+</div>
+<div class="section" id="id13">
+<h3>ターゲット位置<a class="headerlink" href="#id13" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>エフェクトがターゲットに集合する時のターゲットの座標を指定します。</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="record.html" class="btn btn-neutral float-right" title="録画" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="culling.html" class="btn btn-neutral float-left" title="カリング" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Effekseer
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

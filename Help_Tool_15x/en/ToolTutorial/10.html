@@ -1,0 +1,520 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ja" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ja" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>No10.Ribbon and Track &mdash; Effekseer Help  ドキュメント</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../_static/js/three.min.js"></script>
+        <script type="text/javascript" src="../../_static/js/effekseer.min.js"></script>
+        <script type="text/javascript" src="../../_static/js/iframe.js"></script>
+        <script type="text/javascript" src="../../_static/js/OrbitControls.js"></script>
+        <script type="text/javascript" src="../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="検索" href="../../search.html" />
+    <link rel="next" title="No11. Let&#39;s use 3D model!!" href="11.html" />
+    <link rel="prev" title="No09.Let&#39;s create muzzle flash!" href="09.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> Effekseer Help
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../ja/index.html">Effekseer Help 日本語</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Effekseer Help (English)</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../overview.html">Overview</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Tool Tutorial</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="01.html">No01.Sample and Use！</a></li>
+<li class="toctree-l3"><a class="reference internal" href="02.html">No02.Let's spread the particles!</a></li>
+<li class="toctree-l3"><a class="reference internal" href="03.html">No03. Let's display the image!</a></li>
+<li class="toctree-l3"><a class="reference internal" href="04.html">No04. Let's rotate and enlarge!</a></li>
+<li class="toctree-l3"><a class="reference internal" href="05.html">No05. Let's create a hit mark (Slashing)!</a></li>
+<li class="toctree-l3"><a class="reference internal" href="06.html">No06. Let's create circular particles!</a></li>
+<li class="toctree-l3"><a class="reference internal" href="07.html">No07. Let's move complicated with parent-child relationships!</a></li>
+<li class="toctree-l3"><a class="reference internal" href="08.html">No08. Let's arrange particles by spawn method!</a></li>
+<li class="toctree-l3"><a class="reference internal" href="09.html">No09.Let's create muzzle flash!</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">No10.Ribbon and Track</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#overview">Overview</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#how-to-use">How to use</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#the-difference-between-the-track-and-the-ribbon">The difference between the track and the ribbon</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sword-effect">Sword effect</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#summary">Summary</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="11.html">No11. Let's use 3D model!!</a></li>
+<li class="toctree-l3"><a class="reference internal" href="12.html">No12. Let's specify complicated movement with F-Curve!</a></li>
+<li class="toctree-l3"><a class="reference internal" href="13.html">No13. Let's distort a background!</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolReference/index.html">Tool-Reference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../MaterialToolReference/index.html">Material-Reference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolTips/01.html">TIPS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq.html">FAQ</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Effekseer Help</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../index.html">Effekseer Help (English)</a> &raquo;</li>
+        
+          <li><a href="index.html">Tool Tutorial</a> &raquo;</li>
+        
+      <li>No10.Ribbon and Track</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="no10-ribbon-and-track">
+<h1>No10.Ribbon and Track<a class="headerlink" href="#no10-ribbon-and-track" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<div class="main"><div class="section" id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>This chapter explains the ribbon and the track.
+The ribbon and the track are long and narrow particles.
+You can express the afterglow of effects that can not be expressed with sprites.</p>
+<div align="center" class='col-md-6'>
+<img src="../../img/Tutorial/10/diff_track.png">
+<p>Track</p>
+</div><div align="center" class='col-md-6'>
+<img src="../../img/Tutorial/10/diff_ribbon.png">
+<p>Ribbon</p>
+</div><p>Ribbon and Track</p>
+</div><p>The main difference between the ribbon and the track is the orientation of the particles.
+The ribbon is affected by the angle of the particle, but the track always points toward the camera.</p>
+<div align="center" class='col-md-4'>
+<iframe src='../../Sample/viewer_en.html#10_02_Sample/effect1-1.efk'></iframe>
+<p>The effect No.1 created in this chapter</p>
+</div><div align="center" class='col-md-4'>
+<iframe src='../../Sample/viewer_en.html#10_02_Sample/effect1-2.efk'></iframe>
+<p>The effect No.2 created in this chapter</p>
+</div><div align="center" class='col-md-4'>
+<iframe src='../../Sample/viewer_en.html#10_02_Sample/effect2.efk'></iframe>
+<p>The effect No.3 created in this chapter</p>
+</div><p>We made it possible to download the effect created in advance from the link below.</p>
+<div align="center">
+<a href = "../../Sample/10_01_Sample.zip">Download</a>
+</div></div>
+<div class="section" id="how-to-use">
+<h2>How to use<a class="headerlink" href="#how-to-use" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>The ribbon and the track connect the particles generated from the same parent.
+By connecting it, I express long and narrow particles.</p>
+<div align="center">
+<img src="../../img/Tutorial/10/track.png">
+<p>Track</p>
+</div><p>In sprites, particles are independent.</p>
+<p>If there is a distance between the particles, you can use the ribbon and the track.
+In order to use effectively, it is necessary to combine with parent-child relationship or spawning method.</p>
+<div class="section" id="parent-child-relationship">
+<h3>Parent-child relationship<a class="headerlink" href="#parent-child-relationship" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>Set the parameters so that the parent particles move.</p>
+<p>Ensure that child particles are generated at regular intervals from parent particles.
+Ensure that the child particles remain in the generated position.</p>
+<p>Then, band-shaped particles are generated along the parent particles.</p>
+<p>Let's try it.</p>
+<p>Create an effect whose shape is a spiral.</p>
+<p>Please open effect1-1.efkproj.</p>
+<p>The parent node's parameters are already specified.
+The parent particle rises with rotating.</p>
+<div align="center">
+<img src="../../img/Tutorial/10/effect1_1_no_track.gif">
+<p>Parent particle</p>
+</div><p>Some of the parameters of the child node have already been specified.</p>
+<p>The important thing is that the Inherit Position, Rotation and Scale are <code class="docutils literal notranslate"><span class="pre">Only</span> <span class="pre">on</span> <span class="pre">create</span></code>.
+If you specify <code class="docutils literal notranslate"><span class="pre">Only</span> <span class="pre">on</span> <span class="pre">create</span></code>, it is affected only by the parent's parameters when particles are generated.</p>
+<p>In addition, multiple child particles need to be generated.
+In order to create a track by connecting child particles,
+the length of the track is determined according to the number of child particles.</p>
+<p>Specify the parameters of the Child node.</p>
+<p>Since the Particle node is decorative, you do not need to edit the Particle node.</p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th align="left">Window</th>
+<th align="left">Value type</th>
+<th align="left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Basic settings</td>
+<td align="left">Spawn Count</td>
+<td align="left">Infinity</td>
+</tr>
+<tr>
+<td align="left">Basic settings</td>
+<td align="left">Time to live</td>
+<td align="left">60</td>
+</tr>
+<tr>
+<td align="left">Basic settings</td>
+<td align="left">Inherit Position</td>
+<td align="left">Only on create</td>
+</tr>
+<tr>
+<td align="left">Basic settings</td>
+<td align="left">Inherit Rotation</td>
+<td align="left">Only on create</td>
+</tr>
+<tr>
+<td align="left">Basic settings</td>
+<td align="left">Inherit Scale</td>
+<td align="left">Only on create</td>
+</tr>
+<tr>
+<td align="left">Render Settings</td>
+<td align="left">Render method</td>
+<td align="left">Track</td>
+</tr>
+</tbody>
+</table><p>You can see that the child particles are placed along the track of the parent particle.</p>
+<div align="center">
+<img src="../../img/Tutorial/10/effect1_1.gif">
+<p>Effect</p>
+</div></div>
+<div class="section" id="spawning-method">
+<h3>Spawning method<a class="headerlink" href="#spawning-method" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>By using <code class="docutils literal notranslate"><span class="pre">Spawning</span> <span class="pre">method</span></code>, it is possible to generate beautiful track and ribbon particles without using parent-child relationship.
+In <code class="docutils literal notranslate"><span class="pre">Spawning</span> <span class="pre">method</span></code>, since particles can be regularly arranged in order, track and ribbon are generated in the order specified by <code class="docutils literal notranslate"><span class="pre">Spawning</span> <span class="pre">method</span></code>.</p>
+<p>Let's try it.</p>
+<p>I create an effect whose shape is a spiral as before.</p>
+<p>Please open effect1-2.efkproj.</p>
+<p>Almost parameters already have been specified.</p>
+<p>Specify parameters of <code class="docutils literal notranslate"><span class="pre">Spawning</span> <span class="pre">method</span></code>.</p>
+<p>The parameters of the node are as follows.</p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th align="left">Window</th>
+<th align="left">Value type</th>
+<th align="left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Basic settings</td>
+<td align="left">Spawn Count</td>
+<td align="left">Infinity</td>
+</tr>
+<tr>
+<td align="left">Basic settings</td>
+<td align="left">Time to live</td>
+<td align="left">60</td>
+</tr>
+<tr>
+<td align="left">Basic settings</td>
+<td align="left">Inherit Position</td>
+<td align="left">Only on create</td>
+</tr>
+<tr>
+<td align="left">Basic settings</td>
+<td align="left">Inherit Rotation</td>
+<td align="left">Only on create</td>
+</tr>
+<tr>
+<td align="left">Basic settings</td>
+<td align="left">Inherit Scale</td>
+<td align="left">Only on create</td>
+</tr>
+<tr>
+<td align="left">Render Settings</td>
+<td align="left">Render method</td>
+<td align="left">Track</td>
+</tr>
+<tr>
+<td align="left">Spawning method</td>
+<td align="left">Set angle on spawn</td>
+<td align="left">On</td>
+</tr>
+<tr>
+<td align="left">Spawning method</td>
+<td align="left">Spawning method</td>
+<td align="left">Circle</td>
+</tr>
+<tr>
+<td align="left">Spawning method</td>
+<td align="left">Axis Direction</td>
+<td align="left">Y-Axis</td>
+</tr>
+<tr>
+<td align="left">Spawning method</td>
+<td align="left">Verticies</td>
+<td align="left">32</td>
+</tr>
+<tr>
+<td align="left">Spawning method</td>
+<td align="left">Radius(Mean)</td>
+<td align="left">4</td>
+</tr>
+<tr>
+<td align="left">Spawning method</td>
+<td align="left">Spwan Mode</td>
+<td align="left">Clockwise</td>
+</tr>
+</tbody>
+</table><div align="center">
+<img src="../../img/Tutorial/10/effect1_2.gif">
+<p>Effect</p>
+</div><p>You can see that the track is generated along the arrangement order specified by <code class="docutils literal notranslate"><span class="pre">Spawning</span> <span class="pre">method</span></code>.</p>
+</div>
+</div>
+<div class="section" id="the-difference-between-the-track-and-the-ribbon">
+<h2>The difference between the track and the ribbon<a class="headerlink" href="#the-difference-between-the-track-and-the-ribbon" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>In order to confirm the difference between the ribbon and the track,
+change the ribbon and the track with the same parameters.</p>
+<div align="center"><table>
+<tr><td>
+<div align="center">
+<img src="../../img/Tutorial/10/diff_track.png">
+<p>Track</p>
+</div>
+</td><td>
+<div align="center">
+<img src="../../img/Tutorial/10/diff_ribbon.png">
+<p>Ribbon</p>
+</div>
+</td></tr>
+</table></div><p>Since the ribbon is affected by the rotation of the particle, you can see that the orientation is inclined.</p>
+<p>Basically the track is more convenient, but we use the ribbon to create an effect with rotation like a sword trajectory.</p>
+</div>
+<div class="section" id="sword-effect">
+<h2>Sword effect<a class="headerlink" href="#sword-effect" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>As an effect that can not be expressed by the track, there are effects like weapons trajectories.
+Here we create an effect that emerges at the position where the sword has passed with the ribbon.</p>
+<p>Please open effect2.efkproj.</p>
+<p>The parent node rotates.
+Since it is a moment to swing the sword, specify <code class="docutils literal notranslate"><span class="pre">time</span> <span class="pre">to</span> <span class="pre">live</span></code> to 30 and the rotation to be 180 degrees from the angle 0 with easing.</p>
+<p>The parameters of the parent node have already been specified.</p>
+<p>Specify the child node's parameters.</p>
+<p>Just as before, we make the Inherit Position, Rotation and Scale <code class="docutils literal notranslate"><span class="pre">Only</span> <span class="pre">on</span> <span class="pre">create</span></code>.
+Specify the ribbon to the rendering method.
+The position is (4, 0, 0) and spawn count is 30.</p>
+<p>Image and color already have been specified.</p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th align="left">Window</th>
+<th align="left">Value type</th>
+<th align="left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Basic settings</td>
+<td align="left">Spawn Count</td>
+<td align="left">30</td>
+</tr>
+<tr>
+<td align="left">Basic settings</td>
+<td align="left">Inherit Position</td>
+<td align="left">Only on create</td>
+</tr>
+<tr>
+<td align="left">Basic settings</td>
+<td align="left">Inherit Rotation</td>
+<td align="left">Only on create</td>
+</tr>
+<tr>
+<td align="left">Basic settings</td>
+<td align="left">Inherit Scale</td>
+<td align="left">Only on create</td>
+</tr>
+<tr>
+<td align="left">Position</td>
+<td align="left">Position</td>
+<td align="left">4, 0, 0</td>
+</tr>
+<tr>
+<td align="left">Scale</td>
+<td align="left">Scale Factor</td>
+<td align="left">6, 6, 6</td>
+</tr>
+<tr>
+<td align="left">Render Settings</td>
+<td align="left">Render method</td>
+<td align="left">Ribbon</td>
+</tr>
+</tbody>
+</table><p>You can see that a sword-like effect is displayed.</p>
+<div align="center">
+<img src="../../img/Tutorial/10/effect2.gif">
+<p>Effect</p>
+</div><p>Finally, I made it possible to download the effect created in this chapter.</p>
+<div align="center">
+<a href = "../../Sample/10_02_Sample.zip">Download</a>
+</div></div>
+<div class="section" id="summary">
+<h2>Summary<a class="headerlink" href="#summary" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>In this chapter, I explained about the track and the ribbon.</p>
+</div></div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="11.html" class="btn btn-neutral float-right" title="No11. Let&#39;s use 3D model!!" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="09.html" class="btn btn-neutral float-left" title="No09.Let&#39;s create muzzle flash!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Effekseer
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

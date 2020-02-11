@@ -1,0 +1,349 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ja" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ja" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Spawning Method &mdash; Effekseer Help  ドキュメント</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../_static/js/three.min.js"></script>
+        <script type="text/javascript" src="../../_static/js/effekseer.min.js"></script>
+        <script type="text/javascript" src="../../_static/js/iframe.js"></script>
+        <script type="text/javascript" src="../../_static/js/OrbitControls.js"></script>
+        <script type="text/javascript" src="../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="検索" href="../../search.html" />
+    <link rel="next" title="Rotation" href="rotation.html" />
+    <link rel="prev" title="Force Field (Local)" href="locationAbs.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> Effekseer Help
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../ja/index.html">Effekseer Help 日本語</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Effekseer Help (English)</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../overview.html">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolTutorial/index.html">Tool Tutorial</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Tool-Reference</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="index.html#overview">Overview</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="index.html#each-window">Each window</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="common.html">Basic settings</a></li>
+<li class="toctree-l4"><a class="reference internal" href="location.html">Position</a></li>
+<li class="toctree-l4"><a class="reference internal" href="locationAbs.html">Force Field (Local)</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Spawning Method</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rotation.html">Rotation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scale.html">Scale</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererCommon.html">Basic Render Settings</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererSprite.html">Render - Sprite</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererRibbon.html">Render - Ribbon</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererRing.html">Render - Ring</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererModel.html">Render - Model</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererTrack.html">Render - Track</a></li>
+<li class="toctree-l4"><a class="reference internal" href="fcurve.html">F-Curve</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sound.html">Sound</a></li>
+<li class="toctree-l4"><a class="reference internal" href="network.html">Network</a></li>
+<li class="toctree-l4"><a class="reference internal" href="culling.html">Culling</a></li>
+<li class="toctree-l4"><a class="reference internal" href="behavior.html">Behavior</a></li>
+<li class="toctree-l4"><a class="reference internal" href="record.html">Recorder</a></li>
+<li class="toctree-l4"><a class="reference internal" href="fileviewer.html">File Viewer (1.3 or later)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="global.html">Global Settings</a></li>
+<li class="toctree-l4"><a class="reference internal" href="environment.html">Environment</a></li>
+<li class="toctree-l4"><a class="reference internal" href="options.html">Options</a></li>
+<li class="toctree-l4"><a class="reference internal" href="depth.html">Depth</a></li>
+<li class="toctree-l4"><a class="reference internal" href="dynamicParameter.html">DynamicParameter</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#command-line">Command Line</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../MaterialToolReference/index.html">Material-Reference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolTips/01.html">TIPS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq.html">FAQ</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Effekseer Help</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../index.html">Effekseer Help (English)</a> &raquo;</li>
+        
+          <li><a href="index.html">Tool-Reference</a> &raquo;</li>
+        
+      <li>Spawning Method</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="spawning-method">
+<h1>Spawning Method<a class="headerlink" href="#spawning-method" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<div class="section" id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>Set parameters for specifying the position where the node's particles will be initially generated. In addition to the influence that parent particle positions have on their child particles' positions, the values set here affects position as well. In other words, particles are generated around an origin point located at the parent particle's position, then translated and rotated from that point by the parameters specified for the spawning method. <img alt="../../_images/locationGene.png" src="../../_images/locationGene.png" /></p>
+</div>
+<div class="section" id="parameter">
+<h2>Parameter<a class="headerlink" href="#parameter" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<div align="center">
+<img src="../../img/Tutorial/08_spawn_en.png">
+<p>"Spawning Method" window</p>
+</div><div class="section" id="set-angle-on-spawn">
+<h3>Set angle on spawn<a class="headerlink" href="#set-angle-on-spawn" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>Specify whether the parameter of the spawning method affects not only the position but also the angle. For example, if you specify &quot;sphere&quot;, the Y direction of the generated particles will be the normal direction of the sphere.</p>
+<table><tbody><tr><td>Checked</td><td>Unchecked</td></tr><tr><td><img src="../../img/Reference/affect_angle.png"/></td><td><img src="../../img/Reference/affect_no_angle.png"/></td></tr></tbody></table></div>
+<div class="section" id="method-of-spawning">
+<h3>Method of Spawning<a class="headerlink" href="#method-of-spawning" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>Specify how to set the generation position.</p>
+<div class="section" id="point">
+<h4>Point<a class="headerlink" href="#point" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<p>Treats the point at the specified position as the generation position.</p>
+</div>
+<div class="section" id="line">
+<h4>Line<a class="headerlink" href="#line" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<p>Particles are placed on the line. When you specify the init position (1) and the final position (2) of the line, the particle is placed at the position where the line is divided by the number of divisions. The particle rotates so that the X direction of the particle is in the direction of the line.</p>
+<p><img alt="../../_images/locationGene_line.png" src="../../_images/locationGene_line.png" /></p>
+<div class="section" id="position-noise">
+<h5>Position noise<a class="headerlink" href="#position-noise" title="このヘッドラインへのパーマリンク">¶</a></h5>
+<p>Noise in the distance range specified by this parameter is added to the position value where particles are generated, in the direction of the line. It is possible to suppress the sense of uniformity of the generated position.</p>
+</div>
+<div class="section" id="spwan-mode">
+<h5>Spwan Mode<a class="headerlink" href="#spwan-mode" title="このヘッドラインへのパーマリンク">¶</a></h5>
+<div class="section" id="random">
+<h6>Random<a class="headerlink" href="#random" title="このヘッドラインへのパーマリンク">¶</a></h6>
+<p>Particles are placed at randomly chosen points from each point on the line.</p>
+<p><img alt="../../_images/locationGeneModelRand.png" src="../../_images/locationGeneModelRand.png" /></p>
+</div>
+<div class="section" id="order">
+<h6>Order<a class="headerlink" href="#order" title="このヘッドラインへのパーマリンク">¶</a></h6>
+<p>Particles are placed at selected points in order from each point on the line.</p>
+</div>
+</div>
+</div>
+<div class="section" id="circle">
+<h4>Circle<a class="headerlink" href="#circle" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<p>Place the particles in a circle. At this time, you specify just the radius and rotation angle. If &quot;Set angle on spawn&quot; is checked, the Y direction of the particle will be normal to the surface of the circle.</p>
+<div class="section" id="axis-direction">
+<h5>Axis direction<a class="headerlink" href="#axis-direction" title="このヘッドラインへのパーマリンク">¶</a></h5>
+<p>Specify the direction of the axis of the circle. When checking &quot;Influence on generation angle&quot;, the upward direction of particles is as shown in the table below.</p>
+<table><tbody><tr><td><p>X-Axis</p>
+</td><td><p>Y-Axis</p>
+</td><td><p>Z-Axis</p>
+</td></tr><tr><td><p>Arc direction</p>
+</td><td><p>Axis direction</p>
+</td><td><p>Outer direction</p>
+</td></tr><tr><td><img src="../../img/Reference/locationGene_circle_xaxis.png"/></td><td><img src="../../img/Reference/locationGene_circle_yaxis.png"/></td><td><img src="../../img/Reference/locationGene_circle_zaxis.png"/></td></tr></tbody></table></div>
+<div class="section" id="angle-noise">
+<h5>Angle noise<a class="headerlink" href="#angle-noise" title="このヘッドラインへのパーマリンク">¶</a></h5>
+<p>Noise in the angle range specified by this parameter is added to the generated angle. It is possible to suppress the sense of uniformity of the generated position.</p>
+</div>
+</div>
+<div class="section" id="sphere">
+<h4>Sphere<a class="headerlink" href="#sphere" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<p>Place the particles in a spherical shape. At this time, you specify just the radius and rotation angle of the X and Y axes. If &quot;Set angle on spawn&quot; is checked, the Y direction of the particle will be normal to the surface of the sphere.</p>
+</div>
+<div class="section" id="model">
+<h4>Model<a class="headerlink" href="#model" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<p>Place particles along the shape of the model for Effekseer. If &quot;Set angle on spawn&quot; is checked, the Z direction of the particle will be normal to the surface of the model.</p>
+<p>Specify FBX (.fbx), metasequoia file (.mqo) used for display, or model file for Effekseer (.efkmodel). If .efkmodel is specified, .efkmodel is generated in the same directory as the specified file. When playing effects with other applications, this generated file is necessary.</p>
+<p>You can also load FBX (.fbx) with animation. The first animation in the FBX file is played. The animation is played along the time of the parent particle. Particles are generated from the model deformed by animation.</p>
+<div class="section" id="spawn-mode">
+<h5>Spawn Mode<a class="headerlink" href="#spawn-mode" title="このヘッドラインへのパーマリンク">¶</a></h5>
+<div class="section" id="id1">
+<h6>Random<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h6>
+<p>Place particles randomly along the surface of the model.</p>
+<p><img alt="../../_images/locationGeneModelRand.png" src="../../_images/locationGeneModelRand.png" /></p>
+</div>
+<div class="section" id="vertex">
+<h6>Vertex<a class="headerlink" href="#vertex" title="このヘッドラインへのパーマリンク">¶</a></h6>
+<p>Place particles on vertices in sequential order.</p>
+<p><img alt="../../_images/locationGeneModelVertex.png" src="../../_images/locationGeneModelVertex.png" /></p>
+</div>
+<div class="section" id="random-vertex">
+<h6>Random Vertex<a class="headerlink" href="#random-vertex" title="このヘッドラインへのパーマリンク">¶</a></h6>
+<p>Place particles randomly on any of the vertices in the model.</p>
+<p><img alt="../../_images/locationGeneModelVertexRand.png" src="../../_images/locationGeneModelVertexRand.png" /></p>
+</div>
+<div class="section" id="surface">
+<h6>Surface<a class="headerlink" href="#surface" title="このヘッドラインへのパーマリンク">¶</a></h6>
+<p>Place the particles on the center of each of the model's faces, in sequential order.</p>
+<p><img alt="../../_images/locationGeneModelFace.png" src="../../_images/locationGeneModelFace.png" /></p>
+</div>
+<div class="section" id="random-surface">
+<h6>Random Surface<a class="headerlink" href="#random-surface" title="このヘッドラインへのパーマリンク">¶</a></h6>
+<p>Place particles on the center of each of the model's faces, chosen in random order.</p>
+<p><img alt="../../_images/locationGeneModelFaceRand.png" src="../../_images/locationGeneModelFaceRand.png" /></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="rotation.html" class="btn btn-neutral float-right" title="Rotation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="locationAbs.html" class="btn btn-neutral float-left" title="Force Field (Local)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Effekseer
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+System.NullReferenceException: Object reference not set to an instance of an object
+  at (wrapper managed-to-native) Effekseer.swig.EffekseerNativePINVOKE.Native_StopEffect(System.Runtime.InteropServices.HandleRef)
+  at Effekseer.swig.Native.StopEffect () [0x00000] in <cd0349ff0149416cb734069880a49dc5>:0 
+  at Effekseer.GUI.Viewer.Reload (System.Boolean isResourceReloaded) [0x0000f] in <cd0349ff0149416cb734069880a49dc5>:0 
+  at Effekseer.GUI.Manager.Core_OnReload (System.Object sender, System.EventArgs e) [0x00000] in <cd0349ff0149416cb734069880a49dc5>:0 
+  at Effekseer.Core.Reload () [0x00007] in <3e1f22a442174f9e82ddabfa9ca7fa73>:0 
+  at Effekseer.GUI.GUIManagerCallback.Focused () [0x00000] in <cd0349ff0149416cb734069880a49dc5>:0 
+  at Effekseer.swig.GUIManagerCallback.SwigDirectorFocused () [0x00000] in <cd0349ff0149416cb734069880a49dc5>:0 
+  at (wrapper native-to-managed) Effekseer.swig.GUIManagerCallback.SwigDirectorFocused()
+  at (wrapper managed-to-native) Effekseer.swig.EffekseerNativePINVOKE.FileDialog_OpenDialog(string,string)
+  at Effekseer.swig.FileDialog.OpenDialog (System.String filterList, System.String defaultPath) [0x00000] in <cd0349ff0149416cb734069880a49dc5>:0 
+  at Effekseer.GUI.Commands.Open () [0x0000f] in <cd0349ff0149416cb734069880a49dc5>:0 
+  at Effekseer.GUI.Menu.MainMenu+<>c__DisplayClass12_0.<ReloadMenu>b__1 () [0x00000] in <cd0349ff0149416cb734069880a49dc5>:0 
+  at Effekseer.GUI.Menu.MenuItem.Update () [0x00033] in <cd0349ff0149416cb734069880a49dc5>:0 
+  at Effekseer.GUI.Menu.Menu.Update () [0x00042] in <cd0349ff0149416cb734069880a49dc5>:0 
+  at Effekseer.GUI.Menu.MainMenu.Update () [0x0003b] in <cd0349ff0149416cb734069880a49dc5>:0 
+  at Effekseer.GUI.Manager.Update () [0x001e6] in <cd0349ff0149416cb734069880a49dc5>:0 
+  at Effekseer.Program.Exec (System.Boolean gui, System.String input, System.String output, System.String export, System.Single magnification) [0x0017f] in <cd0349ff0149416cb734069880a49dc5>:0 
+  at Effekseer.Program.Main (System.String[] args) [0x00104] in <cd0349ff0149416cb734069880a49dc5>:0 

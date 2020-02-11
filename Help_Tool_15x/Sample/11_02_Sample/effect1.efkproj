@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EffekseerProject>
+  <Root>
+    <Name>Root</Name>
+    <Children>
+      <Node>
+        <RendererCommonValues>
+          <ColorTexture>Texture/Aurora.png</ColorTexture>
+          <AlphaBlend>2</AlphaBlend>
+          <UV>3</UV>
+          <UVScroll>
+            <Size>
+              <X>
+                <Center>1024</Center>
+                <Max>1024</Max>
+                <Min>1024</Min>
+              </X>
+              <Y>
+                <Center>1024</Center>
+                <Max>1024</Max>
+                <Min>1024</Min>
+              </Y>
+            </Size>
+            <Speed>
+              <Y>
+                <Center>-8</Center>
+                <Max>-8</Max>
+                <Min>-8</Min>
+              </Y>
+            </Speed>
+          </UVScroll>
+        </RendererCommonValues>
+        <DrawingValues>
+          <Type>5</Type>
+          <Model>
+            <Model>Model/Sphere.mqo</Model>
+            <Lighting>False</Lighting>
+            <Culling>2</Culling>
+          </Model>
+        </DrawingValues>
+        <Name>Node</Name>
+        <Children />
+      </Node>
+    </Children>
+  </Root>
+  <ToolVersion>1.43c</ToolVersion>
+  <Version>3</Version>
+  <StartFrame>0</StartFrame>
+  <EndFrame>120</EndFrame>
+  <IsLoop>True</IsLoop>
+</EffekseerProject>
