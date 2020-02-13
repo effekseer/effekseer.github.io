@@ -29,11 +29,11 @@ I will explain parent-child relationships using an example. In this example, nod
 </tr>
 <tr>
 <td>Pan</td>
-<td>Click the middle mouse button and move the mouse while holding.</td>
+<td>Click the middle mouse button or right button + Shift and move the mouse while holding.</td>
 </tr>
 <tr>
 <td>Zoom</td>
-<td>Scroll the mouse wheel to zoom in and out.</td>
+<td>Scroll the mouse wheel or right button + Control to zoom in and out.</td>
 </tr>
 </table>
 </div>

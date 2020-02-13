@@ -132,28 +132,16 @@ Up until now we have been looking at a fixed direction, so let's move the viewpo
 <div align="center">
 <table border="1">
 <tr>
-<td>
-Rotation
-</td>
-<td>
-Click the right mouse button and move the mouse while holding.
-</td>
+<td>Rotation</td>
+<td>Click the right mouse button and move the mouse while holding.</td>
 </tr>
 <tr>
-<td>
-Pan
-</td>
-<td>
-Click the middle mouse button and move the mouse while holding.
-</td>
+<td>Pan</td>
+<td>Click the middle mouse button or right button + Shift and move the mouse while holding.</td>
 </tr>
 <tr>
-<td>
-Zoom
-</td>
-<td>
-Scroll the mouse wheel to zoom in and out.
-</td>
+<td>Zoom</td>
+<td>Scroll the mouse wheel or right button + Control to zoom in and out.</td>
 </tr>
 </table>
 </div>
