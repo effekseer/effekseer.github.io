@@ -191,7 +191,9 @@ Materials can be created in the Material Editor.</p>
 Please download from the link below.</p>
 <p><a href="../../Effects/Tutorials/Mat_01_01.zip">Download</a></p>
 <p>When you open it, you can see that a simple sphere model has been drawn.</p>
-<iframe src='../../Effects/viewer_en.html#Tutorials/Mat_01/Sample00.efkefc'></iframe><p>In order to create a material, change <code class="docutils literal notranslate"><span class="pre">Material</span></code> to <code class="docutils literal notranslate"><span class="pre">File</span></code> in <code class="docutils literal notranslate"><span class="pre">Basic</span> <span class="pre">Render</span> <span class="pre">Settings</span></code>.</p>
+<div align="center">
+<img src="../../img/Tutorial/Mat_01/state1.png">
+</div><p>In order to create a material, change <code class="docutils literal notranslate"><span class="pre">Material</span></code> to <code class="docutils literal notranslate"><span class="pre">File</span></code> in <code class="docutils literal notranslate"><span class="pre">Basic</span> <span class="pre">Render</span> <span class="pre">Settings</span></code>.</p>
 <div align="center">
 <img src="../../img/Tutorial/Mat_01/material_create_en.png">
 </div><p>Press the Create button. Then you will be asked for the file name of the material and save the material.
@@ -214,7 +216,9 @@ It may seem difficult at first, but let's edit it little by little.</p>
 <div align="center">
 <img src="../../img/Tutorial/Mat_01/input_constant3.png">
 </div><p>Then, you can see that the color of the sphere changes according to the numerical value.</p>
-<iframe src='../../Effects/viewer_en.html#Tutorials/Mat_01/Sample01.efkefc'></iframe><p>When adding <code class="docutils literal notranslate"><span class="pre">Constant3</span></code> node, did you see that <code class="docutils literal notranslate"><span class="pre">Constant1-4</span></code> node existed?
+<div align="center">
+<img src="../../img/Tutorial/Mat_01/state2.png">
+</div><p>When adding <code class="docutils literal notranslate"><span class="pre">Constant3</span></code> node, did you see that <code class="docutils literal notranslate"><span class="pre">Constant1-4</span></code> node existed?
 There are several types of values ​​that are transfered between nodes.</p>
 <p>It is often a value type consisting of 1 to 4 numerical values, from Number 1 to Number 4.
 It can also be an image.</p>
@@ -230,13 +234,17 @@ This time, specify <code class="docutils literal notranslate"><span class="pre">
 <p>Connect RGB in the <code class="docutils literal notranslate"><span class="pre">Sample</span> <span class="pre">Image</span></code> node instead of the <code class="docutils literal notranslate"><span class="pre">Constant3</span></code> node.</p>
 <div align="center">
 <img src="../../img/Tutorial/Mat_01/add_GridImage_en.png">
-</div><iframe src='../../Effects/viewer_en.html#Tutorials/Mat_01/Sample00.efkefc'></iframe><p>The image is drawn, but the transparent parts are not transparent.</p>
+</div><div align="center">
+<img src="../../img/Tutorial/Mat_01/state1.png">
+</div><p>The image is drawn, but the transparent parts are not transparent.</p>
 <p>Therefore, connect <code class="docutils literal notranslate"><span class="pre">A</span></code> in the <code class="docutils literal notranslate"><span class="pre">Sample</span> <span class="pre">Image</span></code> to <code class="docutils literal notranslate"><span class="pre">Opacity</span></code> in the <code class="docutils literal notranslate"><span class="pre">Output</span></code> node.
 This connects the transparency of the image to the transparency of the material.</p>
 <div align="center">
 <img src="../../img/Tutorial/Mat_01/connect_alpha_en.png">
 </div><p>Then, the image was drawn.</p>
-<iframe src='../../Effects/viewer_en.html#Tutorials/Mat_01/Sample02.efkefc'></iframe></div>
+<div align="center">
+<img src="../../img/Tutorial/Mat_01/state3.png">
+</div></div>
 <div class="section" id="shift-an-area-of-drawing-image">
 <h2>Shift an area of drawing image<a class="headerlink" href="#shift-an-area-of-drawing-image" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>Until now, the behavior was the same as simply drawing an image on the model.
@@ -260,7 +268,9 @@ Both can be connected because the value type is Number 2.</p>
 </div><p>Then, change the value of the <code class="docutils literal notranslate"><span class="pre">Constant2</span></code> node. Then you can see that the display position is shifted.</p>
 <div align="center">
 <img src="../../img/Tutorial/Mat_01/change_constant2_en.png">
-</div><iframe src='../../Effects/viewer_en.html#Tutorials/Mat_01/Sample03.efkefc'></iframe></div>
+</div><div align="center">
+<img src="../../img/Tutorial/Mat_01/state4.png">
+</div></div>
 <div class="section" id="distort-the-image">
 <h2>Distort the image<a class="headerlink" href="#distort-the-image" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>We just shifted the display area of the image, but now let's distort the image.</p>
@@ -278,7 +288,9 @@ Here, we will use the first two values, so check R and G.</p>
 <div align="center">
 <img src="../../img/Tutorial/Mat_01/connect_mask_en.png">
 </div><p>Heavy distortion. But I don't want that distortion.</p>
-<iframe src='../../Effects/viewer_en.html#Tutorials/Mat_01/Sample04.efkefc'></iframe><p>Use a <code class="docutils literal notranslate"><span class="pre">Multiply</span></code> node to make it smaller.
+<div align="center">
+<img src="../../img/Tutorial/Mat_01/state5.png">
+</div><p>Use a <code class="docutils literal notranslate"><span class="pre">Multiply</span></code> node to make it smaller.
 Add a <code class="docutils literal notranslate"><span class="pre">Multiply</span></code> node.</p>
 <p>Then, connect the <code class="docutils literal notranslate"><span class="pre">MaskElements</span></code> node to the <code class="docutils literal notranslate"><span class="pre">Multiply</span></code> node.
 Decrease the value of the <code class="docutils literal notranslate"><span class="pre">Multiply</span></code> node.</p>
@@ -312,7 +324,7 @@ Change some parameters as well.</p>
 <div class="section" id="samples">
 <h2>Samples<a class="headerlink" href="#samples" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>This time, we have introduced examples of materials, but we can do various things.
-Effeksseer has many sample materials stored in ***, so you may want to look at them.</p>
+Effeksseer has many sample materials, so you may want to look at them.</p>
 </div>
 <div class="section" id="summary">
 <h2>Summary<a class="headerlink" href="#summary" title="このヘッドラインへのパーマリンク">¶</a></h2>

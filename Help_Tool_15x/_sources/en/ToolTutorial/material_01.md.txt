@@ -27,7 +27,9 @@ Please download from the link below.
 
 When you open it, you can see that a simple sphere model has been drawn.
 
-<iframe src='../../Effects/viewer_en.html#Tutorials/Mat_01/Sample00.efkefc'></iframe>
+<div align="center">
+<img src="../../img/Tutorial/Mat_01/state1.png">
+</div>
 
 In order to create a material, change ``` Material ``` to ``` File ``` in ``` Basic Render Settings ```.
 
@@ -71,7 +73,9 @@ Then, left-click on the ``` Constant3 ``` node and enter a value from the input 
 
 Then, you can see that the color of the sphere changes according to the numerical value.
 
-<iframe src='../../Effects/viewer_en.html#Tutorials/Mat_01/Sample01.efkefc'></iframe>
+<div align="center">
+<img src="../../img/Tutorial/Mat_01/state2.png">
+</div>
 
 When adding ``` Constant3 ``` node, did you see that ``` Constant1-4 ``` node existed?
 There are several types of values ​​that are transfered between nodes.
@@ -99,7 +103,9 @@ Connect RGB in the ```Sample Image``` node instead of the ``` Constant3 ``` node
 <img src="../../img/Tutorial/Mat_01/add_GridImage_en.png">
 </div>
 
-<iframe src='../../Effects/viewer_en.html#Tutorials/Mat_01/Sample00.efkefc'></iframe>
+<div align="center">
+<img src="../../img/Tutorial/Mat_01/state1.png">
+</div>
 
 The image is drawn, but the transparent parts are not transparent.
 
@@ -112,7 +118,9 @@ This connects the transparency of the image to the transparency of the material.
 
 Then, the image was drawn.
 
-<iframe src='../../Effects/viewer_en.html#Tutorials/Mat_01/Sample02.efkefc'></iframe>
+<div align="center">
+<img src="../../img/Tutorial/Mat_01/state3.png">
+</div>
 
 ## Shift an area of drawing image
 
@@ -154,7 +162,9 @@ Then, change the value of the ``` Constant2 ``` node. Then you can see that the 
 <img src="../../img/Tutorial/Mat_01/change_constant2_en.png">
 </div>
 
-<iframe src='../../Effects/viewer_en.html#Tutorials/Mat_01/Sample03.efkefc'></iframe>
+<div align="center">
+<img src="../../img/Tutorial/Mat_01/state4.png">
+</div>
 
 ## Distort the image
 
@@ -186,7 +196,9 @@ Then, connect the ```MaskElements``` node to the ```Add``` node.
 
 Heavy distortion. But I don't want that distortion.
 
-<iframe src='../../Effects/viewer_en.html#Tutorials/Mat_01/Sample04.efkefc'></iframe>
+<div align="center">
+<img src="../../img/Tutorial/Mat_01/state5.png">
+</div>
 
 Use a ```Multiply``` node to make it smaller.
 Add a ```Multiply``` node.
@@ -245,7 +257,7 @@ Finally, I made it possible to download the effect created in this chapter.
 ## Samples
 
 This time, we have introduced examples of materials, but we can do various things.
-Effeksseer has many sample materials stored in ***, so you may want to look at them.
+Effeksseer has many sample materials, so you may want to look at them.
 
 ## Summary
 
