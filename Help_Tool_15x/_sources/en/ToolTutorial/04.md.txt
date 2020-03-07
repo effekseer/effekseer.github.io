@@ -1,4 +1,4 @@
-﻿# No04. Let's rotate and enlarge!
+﻿# 04. Let's rotate and enlarge!
 
 <div class="main">
 

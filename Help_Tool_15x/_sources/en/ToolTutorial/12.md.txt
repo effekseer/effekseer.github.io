@@ -1,4 +1,4 @@
-﻿# No12. Let's specify complicated movement with F-Curve!
+﻿# 12. Let's specify complicated movement with F-Curve!
 
 <div class="main">
 

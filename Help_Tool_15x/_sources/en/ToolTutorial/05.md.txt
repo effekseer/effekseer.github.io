@@ -1,4 +1,4 @@
-﻿# No05. Let's create a hit mark (Slashing)!
+﻿# 05. Let's create a hit mark (Slashing)!
 
 <div class="main">
 

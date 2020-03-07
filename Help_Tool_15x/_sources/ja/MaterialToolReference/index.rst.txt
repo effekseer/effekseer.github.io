@@ -82,11 +82,11 @@ Effekseerでは、マテリアルエディタでEffekseerで使用するマテ�
 
 .. csv-table::
    
-   "Ctrl + Z", "UNDO"
-   "Ctrl + Y", "REDO"
-   "Ctrl + C", "コピー"
-   "Ctrl + V", "貼り付け"
-   "Ctrl + S", "上書き保存"
+   "Ctrl(Command) + Z", "UNDO"
+   "Ctrl(Command) + Y", "REDO"
+   "Ctrl(Command) + C", "コピー"
+   "Ctrl(Command) + V", "貼り付け"
+   "Ctrl(Command) + S", "上書き保存"
 
 ライティングについて
 ========================

@@ -1,4 +1,4 @@
-﻿# No13. Let's distort a background!
+﻿# 13. Let's distort a background!
 
 <div class="main">
 

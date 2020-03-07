@@ -1,4 +1,4 @@
-﻿# No08. Let's arrange particles by spawn method!
+﻿# 08. Let's arrange particles by spawn method!
 
 <div class="main">
 

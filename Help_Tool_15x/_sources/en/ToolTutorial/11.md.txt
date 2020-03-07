@@ -1,4 +1,4 @@
-﻿# No11. Let's use 3D model!!
+﻿# 11. Let's use 3D model!!
 
 <div class="main">
 

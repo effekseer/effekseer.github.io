@@ -1,4 +1,4 @@
-﻿# No06. Let's create circular particles!
+﻿# 06. Let's create circular particles!
 
 <div class="main">
 

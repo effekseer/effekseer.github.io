@@ -85,11 +85,11 @@ Shortcut
 
 .. csv-table::
    
-   "Ctrl + Z", "Undo"
-   "Ctrl + Y", "Redo"
-   "Ctrl + C", "Copy"
-   "Ctrl + V", "Paste"
-   "Ctrl + S", "Save"
+   "Ctrl(Command) + Z", "Undo"
+   "Ctrl(Command) + Y", "Redo"
+   "Ctrl(Command) + C", "Copy"
+   "Ctrl(Command) + V", "Paste"
+   "Ctrl(Command) + S", "Save"
 
 About lighting
 ========================

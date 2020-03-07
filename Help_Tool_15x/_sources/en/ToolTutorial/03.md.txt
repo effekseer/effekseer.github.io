@@ -1,4 +1,4 @@
-﻿# No03. Let's display the image!
+﻿# 03. Let's display the image!
 
 <div class="main">
 
