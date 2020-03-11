@@ -1,0 +1,179 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset=utf-8>
+	<title>Effekseer For DX library</title>
+	<link href="base.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<div class="main">
+		<h1>Effekseer For DX library</h1>
+		
+		<h2>Overview</h2>
+		<p>
+		I describe the linkage with the DX library.<br>
+		By adding Effekseer's wrapper lib to the DX library, you can easily use Effekseer with the DX library.<br>
+		It is currently dedicated to VisualStudio 2015, 2017.<br>
+		Although the operation is checked with version 3.18c or later version, we have not confirmed whether it work with other versions.
+		</p>
+		<br>
+		<p>
+		For samples, please check the Sample directory.
+		</p>
+
+		<h2>Change log</h2>
+
+<p>1.50(20/xx/xx) Updates DX library to 3.21d, Effekseer1.5</p>
+
+<p>1.43d(19/09/16) Updates DX library to 3.21、 Fixed a bug that it fails to compile on VisualStudio2019</p>
+
+<p>1.43d(19/07/09) Updates DX library to 3.20f BBS Version, Fixed a bug that failed to restore from DeviceLost in DirectX11</p>
+
+<p>1.43b(19/06/29) Updates DX library to 3.20f, Fixed a bug that failed to restore from DeviceLost</p>
+
+<p>1.43(19/03/02) Updates DX library to 3.20a, Update Effekseer</p>
+
+<p>1.41(19/01/03) Updates DX library to 3.19f, Support 64bit</p>
+
+<p>1.40(18/09/12) Updates DX library to 3.19d, Added many functions.</p>
+
+<p>1.32b(18/02/10) Updates DX library to 3.19, enhanced supporting for VisualStudio2017</p>
+
+<p>1.32(17/11/19) Added a texture cache function.</p>
+
+<p>1.31(17/11/14) Supported Visual Studio 2017</p>
+
+<p>1.30(17/11/01) Update Effekseer to 1.30, update DX library to 3.18e, support DirectX 11</p>
+
+		<h2>How to install</h2>
+		<p>
+The DX library which contains Effekseer is saved in「プロジェクトに追加すべきファイル_VC用/」.
+Please add files in 「プロジェクトに追加すべきファイル_VC用/」 to the project just like DX library.
+		</p>
+
+<p>
+If you already use the DX library, please copy the following files.
+</p>
+
+<ul>
+<li>「Effekseer_vs2015_x86.lib」</li>
+<li>「Effekseer_vs2015_x86_d.lib」</li>
+<li>「EffekseerRendererDX9_vs2015_x86_d.lib」</li>
+<li>「EffekseerRendererDX9_vs2015_x86.lib」</li>
+<li>「EffekseerRendererDX11_vs2015_x86_d.lib」</li>
+<li>「EffekseerRendererDX11_vs2015_x86.lib」</li>
+<li>「EffekseerForDXLib_vs2015_x86_d.lib」</li>
+<li>「EffekseerForDXLib_vs2015_x86.lib」</li>
+<li>「Effekseer_vs2015_x64.lib」</li>
+<li>「Effekseer_vs2015_x64_d.lib」</li>
+<li>「EffekseerRendererDX9_vs2015_x64_d.lib」</li>
+<li>「EffekseerRendererDX9_vs2015_x64.lib」</li>
+<li>「EffekseerRendererDX11_vs2015_x64_d.lib」</li>
+<li>「EffekseerRendererDX11_vs2015_x64.lib」</li>
+<li>「EffekseerForDXLib_vs2015_x64_d.lib」</li>
+<li>「EffekseerForDXLib_vs2015_x64.lib」</li>
+<li>「Effekseer_vs2017_x86.lib」</li>
+<li>「Effekseer_vs2017_x86_d.lib」</li>
+<li>「EffekseerRendererDX9_vs2017_x86_d.lib」</li>
+<li>「EffekseerRendererDX9_vs2017_x86.lib」</li>
+<li>「EffekseerRendererDX11_vs2017_x86_d.lib」</li>
+<li>「EffekseerRendererDX11_vs2017_x86.lib」</li>
+<li>「EffekseerForDXLib_vs2017_x86_d.lib」</li>
+<li>「EffekseerForDXLib_vs2017_x86.lib」</li>
+<li>「Effekseer_vs2017_x64.lib」</li>
+<li>「Effekseer_vs2017_x64_d.lib」</li>
+<li>「EffekseerRendererDX9_vs2017_x64_d.lib」</li>
+<li>「EffekseerRendererDX9_vs2017_x64.lib」</li>
+<li>「EffekseerRendererDX11_vs2017_x64_d.lib」</li>
+<li>「EffekseerRendererDX11_vs2017_x64.lib」</li>
+<li>「EffekseerForDXLib_vs2017_x64_d.lib」</li>
+<li>「EffekseerForDXLib_vs2017_x64.lib」</li>
+</ul>
+
+<ul>
+<li>「Effekseer.h」</li>
+<li>「EffekseerRendererDX9.h」</li>
+<li>「EffekseerRendererDX11.h」</li>
+<li>「EffekseerForDXLib.h」</li>
+</ul>
+
+<p>
+However, if you are using a version other than "Ver 3.18a"
+It may not work with the copy of the above lib files.
+In that case, please make the version match or copy all the files in 「プロジェクトに追加すべきファイル_VC用/」.
+</p>
+
+		<h2>How to use</h2>
+<p>
+Basically, please read sample and EffekseerForDXLib.h.
+</p>
+<p>
+The sample is in 2D and 3D, the shortest source code to display and display one effect is described.
+</p>
+
+<img src="img/ss.jpg"/>
+
+<h2>Network</h2>>
+
+<p>You can edit the playing effect in an application (game etc.) via the network from the outside when application is running.</p>
+
+<img src="img/network.png" width="800">
+
+
+<p>Execute this function with the port to be connected from Effekseer as the argument of this function. Then you can edit the effect from Effekseer. In order to edit the effect from another computer, it is necessary to open the port with the setting of the firewall.</p>
+
+<pre>
+int Effekseer_StartNetwork(int port);
+</pre>
+
+		<h2>Limitation</h2>
+<p>
+Mask functions such as a CreateMaskScreen are not supported.
+</p>
+
+		<h2>License</h2>
+
+<p>
+To use the DX library with Effekseer, you need to add the following text to help etc.
+</p>
+
+<pre>
+-DX Library
+DX Library Copyright (C) 2001-2015 Takumi Yamada.
+
+-Effekseer
+
+The MIT License (MIT)
+
+Copyright (c) 2011 Effekseer Project
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+the Software, and to permit persons to whom the Software is furnished to do so,
+subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+DirectX Tool Kit
+https://directxtk.codeplex.com/
+Microsoft Public License (Ms-PL)
+
+</pre>
+
+	</div>
+</body>
+
+</html>
