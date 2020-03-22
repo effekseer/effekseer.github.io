@@ -190,10 +190,10 @@
 </div>
 <div class="section" id="about-resource-files">
 <h2>About resource files<a class="headerlink" href="#about-resource-files" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<p>Place the output effect projcet(<em>.efkproj), effect (</em>.efk), texture, sound in Unity project.<br />When importing the *.efk, efkproj file, EffectAsset is generated in addition of *.efk, efkproj file.</p>
+<p>Place the output effect (*.efkproj, *.efk, *efkefc), texture, sound in Unity project.<br />When importing the *.efk, efkproj, *efkefc file, EffectAsset is generated in addition of *.efk, efkproj, *efkefc file.</p>
 <p><img alt="../_images/unity_resource.png" src="../_images/unity_resource.png" /></p>
-<p>It is no problem that you remove .efk, efkproj files.
-Please don't include .efk, efkproj in custom packages currently.</p>
+<p>It is no problem that you remove .efk, efkproj, efkefc files.
+Please don't include .efk, efkproj, efkefc in custom packages currently.</p>
 <div class="section" id="scale">
 <h3>Scale<a class="headerlink" href="#scale" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>The loaded effect scale may be small. In that case, select EffectAssset and change the parameter of ** Scale **.
@@ -258,7 +258,7 @@ If you want to move it you need to set it manually.</p>
 <p>URPs are added differently for each version.
 For older URPs, read the LWRP instructions.</p>
 <p>Please remove comment out from <em>ScriptsExternal/EffekseerURPRenderPassFeature.cs</em> in the case of LWRP because URP is not contained in Unity with default settings at first.</p>
-<p><img alt="../_images/LWRP_Code.png" src="../_images/LWRP_Code.png" /></p>
+<p><img alt="../_images/Code.png" src="../_images/Code.png" /></p>
 <p>Look at Graphics Settings to see which ScriptableRenderPipelineSettings you are currently using.</p>
 <p>If it already exists, select it.</p>
 <p>If it does not exist, create it and select it.</p>
@@ -275,7 +275,7 @@ For older URPs, read the LWRP instructions.</p>
 <h2>High Definition Render Pipeline<a class="headerlink" href="#high-definition-render-pipeline" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>Effekseer supports High Definition Render Pipeline.
 Please remove comment out from <em>ScriptsExternal/EffekseerRendererHDRP.cs</em> because URP(LWRP) is not contained in Unity with default settings at first.</p>
-<p><img alt="../_images/Code.png" src="../_images/Code.png" /></p>
+<p><img alt="../_images/Code2.png" src="../_images/Code2.png" /></p>
 <p>You add <em>CustomPassVolume</em> Component to a camera.</p>
 <p><img alt="../_images/CustomPassVolume.png" src="../_images/CustomPassVolume.png" /></p>
 <p>You add  <em>EffekseerRendererHDRP</em> to <em>CustomPasses</em>.</p>

@@ -190,10 +190,10 @@
 </div>
 <div class="section" id="id3">
 <h2>リソースファイルについて<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<p>Unityのプロジェクトにエフェクトプロジェクトファイル(<em>.efkproj)、出力済エフェクト(</em>.efk)やテクスチャ、サウンドを配置します。<br />*.efk,efkprojファイルをインポートすると、.efk,efkprojファイルのほかにEffectAssetが生成されます。</p>
+<p>Unityのプロジェクトにエフェクトファイル(*.efkproj, *.efk, *.efkefc)やテクスチャ、サウンドを配置します。<br />*.efk,efkproj,efkefcファイルをインポートすると、.efk,efkproj,efkefcファイルのほかにEffectAssetが生成されます。</p>
 <p><img alt="../_images/unity_resource1.png" src="../_images/unity_resource1.png" /></p>
-<p>.efk,efkprojファイルは削除しても問題ありません。
-また、現在はカスタムパッケージ作成の時に.efk,efkprojファイルを含めてはいけません。</p>
+<p>.efk,efkproj,efkefcファイルは削除しても問題ありません。
+また、現在はカスタムパッケージ作成の時に.efk,efkproj,efkefcファイルを含めてはいけません。</p>
 <div class="section" id="scale">
 <h3>Scale<a class="headerlink" href="#scale" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>読み込んだエフェクトの大きさが小さいことがあります。その場合は、EffectAsssetを選択し、<strong>Scale</strong> のパラメーターを変更します。
@@ -259,7 +259,7 @@ EffectEmitterのScaleを変更することでエフェクトの大きさを変�
 <p>URPはバージョンごとに追加方法が異なります。
 古いURPの場合、LWRPの説明を読んでください。</p>
 <p>URPはUnityでは標準に含まれていないため、<em>ScriptsExternal/EffekseerURPRenderPassFeature.cs</em> からコメントアウトを外してください。</p>
-<p><img alt="../_images/LWRP_Code1.png" src="../_images/LWRP_Code1.png" /></p>
+<p><img alt="../_images/Code1.png" src="../_images/Code1.png" /></p>
 <p>現在使用しているScriptableRenderPipelineSettingsを確認するためにGraphics Settingsを見ます。</p>
 <p>既に存在していたらそれを選択します。</p>
 <p>存在しない場合、作成して選択します。</p>
@@ -276,7 +276,7 @@ EffectEmitterのScaleを変更することでエフェクトの大きさを変�
 <h2>High Definition Render Pipeline<a class="headerlink" href="#high-definition-render-pipeline" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>Effekseer は High Definition Render Pipeline に対応しています。.
 HDRPはUnityでは標準に含まれていないため、<em>ScriptsExternal/EffekseerRendererHDRP.cs</em> からコメントアウトを外してください。</p>
-<p><img alt="../_images/Code1.png" src="../_images/Code1.png" /></p>
+<p><img alt="../_images/Code3.png" src="../_images/Code3.png" /></p>
 <p>カメラに <em>CustomPassVolume</em> コンポーネントを追加します。</p>
 <p><img alt="../_images/CustomPassVolume1.png" src="../_images/CustomPassVolume1.png" /></p>
 <p><em>CustomPasses</em> に <em>EffekseerRendererHDRP</em> を追加します。</p>

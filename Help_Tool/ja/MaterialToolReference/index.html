@@ -1,0 +1,398 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ja" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ja" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>マテリアル・リファレンス &mdash; Effekseer Help  ドキュメント</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/language_data.js"></script>
+        <script src="../../_static/js/three.min.js"></script>
+        <script src="../../_static/js/effekseer.min.js"></script>
+        <script src="../../_static/js/iframe.js"></script>
+        <script src="../../_static/js/OrbitControls.js"></script>
+        <script src="../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="検索" href="../../search.html" />
+    <link rel="next" title="マテリアルノード(計算)" href="material_NodeMath.html" />
+    <link rel="prev" title="動的パラメーター" href="../ToolReference/dynamicParameter.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> Effekseer Help
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Effekseer Help 日本語</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../overview.html">概要</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolTutorial/index.html">チュートリアル</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolReference/index.html">ツール・リファレンス</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">マテリアル・リファレンス</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id2">概要</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id3">詳細な操作方法</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id4">ノードの移動</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id5">ノードの検索</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id6">ノード、線の削除</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id7">パラメーターの説明</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id8">ショートカット</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#id9">ライティングについて</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id10">入出力の値の種類について</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id11">ノード</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="material_NodeMath.html">マテリアルノード(計算)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="material_NodeImage.html">マテリアルノード(画像)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="material_NodeModel.html">マテリアルノード(モデル)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="material_NodeConstant.html">マテリアルノード(定数)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="material_NodeAdvanced.html">マテリアルノード(応用)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id12">出力</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#comment">コメント (Comment)</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#id13">計算の挙動の詳細</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolTips/01.html">TIPS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq.html">FAQ</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../en/index.html">Effekseer Help (English)</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Effekseer Help</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../index.html">Effekseer Help 日本語</a> &raquo;</li>
+        
+      <li>マテリアル・リファレンス</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>マテリアル・リファレンス<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<div class="section" id="id2">
+<h2>概要<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>Effekseerでは、マテリアルエディタでEffekseerで使用するマテリアルを作成できます。
+マテリアルを使用してパーティクルの描画の仕方を指定できます。</p>
+<p>マテリアルエディタはEffekseerの描画共通パネルのマテリアルから起動します。</p>
+<p>マテリアルエディタではノードを使用して計算式を記述できます。
+その計算の結果がパーティクルとして表示されます。</p>
+<a class="reference internal image-reference" href="../../_images/material_sample_effect1.png"><img alt="../../_images/material_sample_effect1.png" class="align-center" src="../../_images/material_sample_effect1.png" style="width: 512.0px; height: 384.0px;" /></a>
+<a class="reference internal image-reference" href="../../_images/material_sample_node1.png"><img alt="../../_images/material_sample_node1.png" class="align-center" src="../../_images/material_sample_node1.png" style="width: 640.0px; height: 359.20000000000005px;" /></a>
+<p>マウスの左のドラッグでノードの入力と出力を接続できます。</p>
+<p>右クリックで表示されるメニューから新規のノードを作成できます。</p>
+<a class="reference internal image-reference" href="../../_images/menu_create_node_ja.png"><img alt="../../_images/menu_create_node_ja.png" class="align-center" src="../../_images/menu_create_node_ja.png" style="width: 480.0px; height: 256.0px;" /></a>
+<p>最も簡単な構成は、定数3と出力の2つのノードです。</p>
+<p>定数3では、値を3つ指定できます。
+出力では、最終的に出力される値を受け取ります。</p>
+<p>出力のEmissiveの入力ピンと、定数3の出力ピンを接続します。</p>
+<p>そうすると、パーティクルに定数3の値が表示されます。</p>
+<a class="reference internal image-reference" href="../../_images/basic_ja.png"><img alt="../../_images/basic_ja.png" class="align-center" src="../../_images/basic_ja.png" style="width: 640.0px; height: 359.20000000000005px;" /></a>
+</div>
+<div class="section" id="id3">
+<h2>詳細な操作方法<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<div class="section" id="id4">
+<h3>ノードの移動<a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>左クリックで選択した後、左のドラッグで移動できます。</p>
+</div>
+<div class="section" id="id5">
+<h3>ノードの検索<a class="headerlink" href="#id5" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>右クリックで表示したメニューにキーワードを入力すると、そのキーワードが含まれるノードのみが表示されます。
+キーワードはマウスオーバーで確認できます。</p>
+<a class="reference internal image-reference" href="../../_images/menu_create_node_search_ja.png"><img alt="../../_images/menu_create_node_search_ja.png" class="align-center" src="../../_images/menu_create_node_search_ja.png" style="width: 384.0px; height: 192.0px;" /></a>
+</div>
+<div class="section" id="id6">
+<h3>ノード、線の削除<a class="headerlink" href="#id6" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>左クリックで選択し、右クリックを押すと削除がメニューに表示されます。
+削除を選択するとノード、線を削除できます。</p>
+<a class="reference internal image-reference" href="../../_images/menu_delete_ja.png"><img alt="../../_images/menu_delete_ja.png" class="align-center" src="../../_images/menu_delete_ja.png" style="width: 368.0px; height: 192.0px;" /></a>
+</div>
+<div class="section" id="id7">
+<h3>パラメーターの説明<a class="headerlink" href="#id7" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>パラメーターには概要と説明を記述できます。
+この概要と説明はEffekseerに表示されます。
+わかりやすく説明を書くことを推奨します。</p>
+</div>
+<div class="section" id="id8">
+<h3>ショートカット<a class="headerlink" href="#id8" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Ctrl(Command) + Z</p></td>
+<td><p>UNDO</p></td>
+</tr>
+<tr class="row-even"><td><p>Ctrl(Command) + Y</p></td>
+<td><p>REDO</p></td>
+</tr>
+<tr class="row-odd"><td><p>Ctrl(Command) + C</p></td>
+<td><p>コピー</p></td>
+</tr>
+<tr class="row-even"><td><p>Ctrl(Command) + V</p></td>
+<td><p>貼り付け</p></td>
+</tr>
+<tr class="row-odd"><td><p>Ctrl(Command) + S</p></td>
+<td><p>上書き保存</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="id9">
+<h2>ライティングについて<a class="headerlink" href="#id9" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>マテリアルの出力ノードのプロパティでライティングをするか、しないかを選択できます。</p>
+<p><a class="reference internal" href="../../_images/lighting_lit1.png"><img alt="pic1" src="../../_images/lighting_lit1.png" style="width: 136.0px; height: 136.0px;" /></a> <a class="reference internal" href="../../_images/lighting_unlit1.png"><img alt="pic2" src="../../_images/lighting_unlit1.png" style="width: 136.0px; height: 136.0px;" /></a></p>
+</div>
+<div class="section" id="id10">
+<h2>入出力の値の種類について<a class="headerlink" href="#id10" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>数値と画像の2種類があります。
+マテリアルの数値は1～4つの数値で構成されています。
+多くの場合、数値は要素数が異なっても接続できます。
+画像は画像としか接続できません。</p>
+<p>本ドキュメントでは、要素数に応じて数値1～数値4と呼びます。</p>
+</div>
+<div class="section" id="id11">
+<h2>ノード<a class="headerlink" href="#id11" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>マテリアルエディタには様々なノードがあります。</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="material_NodeMath.html">マテリアルノード(計算)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="material_NodeImage.html">マテリアルノード(画像)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="material_NodeModel.html">マテリアルノード(モデル)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="material_NodeConstant.html">マテリアルノード(定数)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="material_NodeAdvanced.html">マテリアルノード(応用)</a></li>
+</ul>
+</div>
+<div class="section" id="id12">
+<h3>出力<a class="headerlink" href="#id12" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>最終的に出力される値を設定できます。</p>
+<p>出力では、ライティングの種類を設定できます。</p>
+<p>現在、ライティングにはLit、とUnlitがあります。
+Litを設定すると、光源の影響を受けるようになります。
+Unlitを設定すると、入力された値を表示します。</p>
+<p><a class="reference internal" href="../../_images/lighting_lit1.png"><img alt="pic1" src="../../_images/lighting_lit1.png" style="width: 136.0px; height: 136.0px;" /></a> <a class="reference internal" href="../../_images/lighting_unlit1.png"><img alt="pic2" src="../../_images/lighting_unlit1.png" style="width: 136.0px; height: 136.0px;" /></a></p>
+<div class="section" id="basecolor-3">
+<h4>BaseColor (数値3)<a class="headerlink" href="#basecolor-3" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<p>Litの場合のみ有効です。マテリアルの色を入力します。</p>
+</div>
+<div class="section" id="emissive-3">
+<h4>Emissive (数値3)<a class="headerlink" href="#emissive-3" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<p>マテリアルの発光する色を入力します。
+Unlitの場合、表示する色を入力します。</p>
+</div>
+<div class="section" id="opacity-1">
+<h4>Opacity (数値1)<a class="headerlink" href="#opacity-1" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<p>透明度を入力します。</p>
+</div>
+<div class="section" id="opacitymask-1">
+<h4>OpacityMask (数値1)<a class="headerlink" href="#opacitymask-1" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<p>マスクを入力します。0以下の場合、全く表示されなくなります。</p>
+</div>
+<div class="section" id="roughness-1">
+<h4>Roughness (数値1)<a class="headerlink" href="#roughness-1" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<p>Litの場合のみ有効です。面の粗さを入力します。</p>
+</div>
+<div class="section" id="normal-3">
+<h4>Normal (数値3)<a class="headerlink" href="#normal-3" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<p>Litの場合のみ有効です。法線の方向を入力します。</p>
+</div>
+<div class="section" id="ambientocclusion">
+<h4>AmbientOcclusion<a class="headerlink" href="#ambientocclusion" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<p>Litの場合のみ有効です。ライティングを暗くするための値を入力します。
+0にすると黒くなります。</p>
+</div>
+<div class="section" id="worldpositionoffset-3">
+<h4>WorldPositionOffset (数値3)<a class="headerlink" href="#worldpositionoffset-3" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<p>頂点の移動距離を入力します。
+頂点の位置が入力した値の分、移動します。</p>
+</div>
+<div class="section" id="refraction-1">
+<h4>Refraction (数値1)<a class="headerlink" href="#refraction-1" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<p>屈折率を入力します。屈折率が1の場合、屈折しません。
+屈折率が1ではない場合、背景を屈折して表示します。
+1以上の値を入力します。</p>
+</div>
+</div>
+<div class="section" id="comment">
+<h3>コメント (Comment)<a class="headerlink" href="#comment" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>わかりやすくするためのコメントです。動作には影響しません。</p>
+</div>
+</div>
+<div class="section" id="id13">
+<h2>計算の挙動の詳細<a class="headerlink" href="#id13" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>V1とV2に入力がある場合、V2にはV1と同じ種類の値か数値1を入力できます。
+V1とV2の種類が同じ場合、それぞれの要素同士で計算した結果を出力します。</p>
+<p>V1が数値1の場合、V2の各要素とV1を計算した結果を出力します。
+V2が数値1の場合、V1の各要素とV2を計算した結果を出力します。</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="material_NodeMath.html" class="btn btn-neutral float-right" title="マテリアルノード(計算)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../ToolReference/dynamicParameter.html" class="btn btn-neutral float-left" title="動的パラメーター" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Effekseer
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EffekseerProject>
+  <Root>
+    <Name>Root</Name>
+    <Children>
+      <Node>
+        <LocationValues>
+          <Type>2</Type>
+          <Easing>
+            <End>
+              <Y>
+                <Center>5</Center>
+                <Max>5</Max>
+                <Min>5</Min>
+              </Y>
+            </End>
+          </Easing>
+        </LocationValues>
+        <GenerationLocationValues>
+          <Circle>
+            <Type>1</Type>
+          </Circle>
+        </GenerationLocationValues>
+        <RendererCommonValues>
+          <ColorTexture>Texture/Particle01.png</ColorTexture>
+        </RendererCommonValues>
+        <Name>Child</Name>
+        <Children />
+      </Node>
+    </Children>
+  </Root>
+  <ToolVersion>1.32</ToolVersion>
+  <Version>3</Version>
+  <StartFrame>0</StartFrame>
+  <EndFrame>120</EndFrame>
+  <IsLoop>True</IsLoop>
+</EffekseerProject>

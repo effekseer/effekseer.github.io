@@ -21,11 +21,11 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/language_data.js"></script>
-        <script type="text/javascript" src="../_static/translations.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script src="../_static/translations.js"></script>
     
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
@@ -98,13 +98,14 @@
 <li class="toctree-l4"><a class="reference internal" href="#note">Note</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#play-by-script-direct-playback">Play by Script {#direct_playback}</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#play-by-script">Play by Script</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#id1">Introduction</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#id2">Note</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#light-weight-render-pipeline">Light Weight Render Pipeline</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#universal-render-pipeline">Universal Render Pipeline</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#high-definition-render-pipeline">High Definition Render Pipeline</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#light-weight-universal-render-pipeline">Light Weight(Universal) Render Pipeline</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#mobile-environment">Mobile environment</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#network">Network</a></li>
 </ul>
@@ -189,10 +190,10 @@
 </div>
 <div class="section" id="about-resource-files">
 <h2>About resource files<a class="headerlink" href="#about-resource-files" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<p>Place the output effect projcet(<em>.efkproj), effect (</em>.efk), texture, sound in Unity project.When importing the *.efk, efkproj file, EffectAsset is generated in addition of *.efk, efkproj file.</p>
+<p>Place the output effect (*.efkproj, *.efk, *efkefc), texture, sound in Unity project.<br />When importing the *.efk, efkproj, *efkefc file, EffectAsset is generated in addition of *.efk, efkproj, *efkefc file.</p>
 <p><img alt="../_images/unity_resource.png" src="../_images/unity_resource.png" /></p>
-<p>It is no problem that you remove .efk, efkproj files.
-Please don't include .efk, efkproj in custom packages currently.</p>
+<p>It is no problem that you remove .efk, efkproj, efkefc files.
+Please don't include .efk, efkproj, efkefc in custom packages currently.</p>
 <div class="section" id="scale">
 <h3>Scale<a class="headerlink" href="#scale" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>The loaded effect scale may be small. In that case, select EffectAssset and change the parameter of ** Scale **.
@@ -204,7 +205,7 @@ You can also change the effect scale by changing the Scale of EffectEmitter, but
 <h2>Play by Emitter<a class="headerlink" href="#play-by-emitter" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <div class="section" id="introduction">
 <h3>Introduction<a class="headerlink" href="#introduction" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<p>Add EffekseerEmitter to GameObject.In that case will play the effect linked to GameObject.</p>
+<p>Add EffekseerEmitter to GameObject.<br />In that case will play the effect linked to GameObject.</p>
 <p><img alt="../_images/unity_emitter.png" src="../_images/unity_emitter.png" /></p>
 </div>
 <div class="section" id="properties">
@@ -226,8 +227,8 @@ You can also change the effect scale by changing the Scale of EffectEmitter, but
 <p>It is suitable for effects that follow the installed effects and characters.</p>
 </div>
 </div>
-<div class="section" id="play-by-script-direct-playback">
-<h2>Play by Script {#direct_playback}<a class="headerlink" href="#play-by-script-direct-playback" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<div class="section" id="play-by-script">
+<h2>Play by Script<a class="headerlink" href="#play-by-script" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <div class="section" id="id1">
 <h3>Introduction<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>Using EffekseerSystem.PlayEffect(), you can play effects from scripts.</p>
@@ -251,13 +252,46 @@ If you want to move it you need to set it manually.</p>
 <p>Suitable for simple use, such as hit effects and explosion effects.</p>
 </div>
 </div>
-<div class="section" id="light-weight-render-pipeline">
-<h2>Light Weight Render Pipeline<a class="headerlink" href="#light-weight-render-pipeline" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<p>Effekseer supports LightWeightRenderPipeline.
-Please remove comment out from <em>ScriptsExternal/EffekseerRendererLWRP.cs</em> because LWRP is not contained in Unity with default settings at first.</p>
+<div class="section" id="universal-render-pipeline">
+<h2>Universal Render Pipeline<a class="headerlink" href="#universal-render-pipeline" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>Effekseer supports Universal RenderPipeline.</p>
+<p>URPs are added differently for each version.
+For older URPs, read the LWRP instructions.</p>
+<p>Please remove comment out from <em>ScriptsExternal/EffekseerURPRenderPassFeature.cs</em> in the case of LWRP because URP is not contained in Unity with default settings at first.</p>
+<p><img alt="../_images/Code.png" src="../_images/Code.png" /></p>
+<p>Look at Graphics Settings to see which ScriptableRenderPipelineSettings you are currently using.</p>
+<p>If it already exists, select it.</p>
+<p>If it does not exist, create it and select it.</p>
+<p><img alt="../_images/Create_Pipeline.png" src="../_images/Create_Pipeline.png" /></p>
+<p>Select the ForwardRenderer used in the Pipeline.</p>
+<p><img alt="../_images/Pipeline.png" src="../_images/Pipeline.png" /></p>
+<p>If ForwardRenderer is not used, create it, set it to Pipeline and select it.</p>
+<p><img alt="../_images/Create_ForwardRenderer.png" src="../_images/Create_ForwardRenderer.png" /></p>
+<p><img alt="../_images/ForwardRenderer.png" src="../_images/ForwardRenderer.png" /></p>
+<p>Add <em>EffekseerRenderPassFeature</em> to <em>Render Features</em> of <em>ForwardRenderer Asset</em> selected earlier.</p>
+<p><img alt="../_images/RenderPassFeature.png" src="../_images/RenderPassFeature.png" /></p>
+</div>
+<div class="section" id="high-definition-render-pipeline">
+<h2>High Definition Render Pipeline<a class="headerlink" href="#high-definition-render-pipeline" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>Effekseer supports High Definition Render Pipeline.
+Please remove comment out from <em>ScriptsExternal/EffekseerRendererHDRP.cs</em> because URP(LWRP) is not contained in Unity with default settings at first.</p>
+<p><img alt="../_images/Code2.png" src="../_images/Code2.png" /></p>
+<p>You add <em>CustomPassVolume</em> Component to a camera.</p>
+<p><img alt="../_images/CustomPassVolume.png" src="../_images/CustomPassVolume.png" /></p>
+<p>You add  <em>EffekseerRendererHDRP</em> to <em>CustomPasses</em>.</p>
+<p><img alt="../_images/CustomPassVolumeSelect.png" src="../_images/CustomPassVolumeSelect.png" /></p>
+<p><img alt="../_images/CustomPassVolumeAdd.png" src="../_images/CustomPassVolumeAdd.png" /></p>
+<p>You change <em>Injection Point</em> into <em>Before Post Process</em>.</p>
+<p><img alt="../_images/CustomPassVolumeInjectionPoint.png" src="../_images/CustomPassVolumeInjectionPoint.png" /></p>
+</div>
+<div class="section" id="light-weight-universal-render-pipeline">
+<h2>Light Weight(Universal) Render Pipeline<a class="headerlink" href="#light-weight-universal-render-pipeline" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>Effekseer supports Universal(LightWeight)RenderPipeline.
+Please remove comment out from <em>ScriptsExternal/EffekseerURPRenderPassFeature.cs</em> in the case of URP, <em>ScriptsExternal/EffekseerRendererLWRP.cs</em> in the case of LWRP because URP(LWRP) is not contained in Unity with default settings at first.</p>
 <p><img alt="../_images/LWRP_Code.png" src="../_images/LWRP_Code.png" /></p>
 <p><em>Custom Forward Render</em> is used to show effects of Effekseer.</p>
-<p>Create <em>Forward Render Asset</em> from <em>Assets -&gt; Create -&gt; Rendering -&gt; Lightweight Render Pipeline -&gt; Forward Render</em>.</p>
+<p><em>URP</em> Create <em>Forward Render Asset</em> from <em>Assets -&gt; Create -&gt; Rendering -&gt; Universal Render Pipeline -&gt; Forward Render</em>.</p>
+<p><em>LWRP</em> Create <em>Forward Render Asset</em> from <em>Assets -&gt; Create -&gt; Rendering -&gt; Lightweight Render Pipeline -&gt; Forward Render</em>.</p>
 <p><img alt="../_images/LWRP_ForwardRenderer1.png" src="../_images/LWRP_ForwardRenderer1.png" /></p>
 <p><img alt="../_images/LWRP_ForwardRenderer2.png" src="../_images/LWRP_ForwardRenderer2.png" /></p>
 <p>Change <em>Renderer Type</em> into <em>Custom</em> in <em>Pipeline Asset</em> which is used to render. Specify created <em>Forward Render Asset</em> to <em>Data</em>.</p>
@@ -266,11 +300,6 @@ Please remove comment out from <em>ScriptsExternal/EffekseerRendererLWRP.cs</em>
 <p>Add EffekseerRenderer to <em>Render Features</em> in created <em>Forward Render Asset</em>.</p>
 <p><img alt="../_images/LWRP_RenderFeatures1.png" src="../_images/LWRP_RenderFeatures1.png" /></p>
 <p><img alt="../_images/LWRP_RenderFeatures2.png" src="../_images/LWRP_RenderFeatures2.png" /></p>
-<p>Add * Effekseer/Effekseer RendererLWRP * component to GameObject with Camera in old LWRP.</p>
-</div>
-<div class="section" id="high-definition-render-pipeline">
-<h2>High Definition Render Pipeline<a class="headerlink" href="#high-definition-render-pipeline" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<p>I will support it.</p>
 </div>
 <div class="section" id="mobile-environment">
 <h2>Mobile environment<a class="headerlink" href="#mobile-environment" title="このヘッドラインへのパーマリンク">¶</a></h2>

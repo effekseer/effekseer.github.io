@@ -21,11 +21,11 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/language_data.js"></script>
-        <script type="text/javascript" src="../_static/translations.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script src="../_static/translations.js"></script>
     
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
@@ -102,8 +102,9 @@
 <li class="toctree-l4"><a class="reference internal" href="#id11">特徴</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#light-weight-render-pipeline">Light Weight Render Pipeline</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#universal-render-pipeline">Universal Render Pipeline</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#high-definition-render-pipeline">High Definition Render Pipeline</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#light-weight-universal-render-pipeline">Light Weight(Universal) Render Pipeline</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#id12">モバイル環境</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#id13">ネットワーク機能</a></li>
 </ul>
@@ -189,10 +190,10 @@
 </div>
 <div class="section" id="id3">
 <h2>リソースファイルについて<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<p>Unityのプロジェクトにエフェクトプロジェクトファイル(<em>.efkproj)、出力済エフェクト(</em>.efk)やテクスチャ、サウンドを配置します。*.efk,efkprojファイルをインポートすると、.efk,efkprojファイルのほかにEffectAssetが生成されます。</p>
+<p>Unityのプロジェクトにエフェクトファイル(*.efkproj, *.efk, *.efkefc)やテクスチャ、サウンドを配置します。<br />*.efk,efkproj,efkefcファイルをインポートすると、.efk,efkproj,efkefcファイルのほかにEffectAssetが生成されます。</p>
 <p><img alt="../_images/unity_resource1.png" src="../_images/unity_resource1.png" /></p>
-<p>.efk,efkprojファイルは削除しても問題ありません。
-また、現在はカスタムパッケージ作成の時に.efk,efkprojファイルを含めてはいけません。</p>
+<p>.efk,efkproj,efkefcファイルは削除しても問題ありません。
+また、現在はカスタムパッケージ作成の時に.efk,efkproj,efkefcファイルを含めてはいけません。</p>
 <div class="section" id="scale">
 <h3>Scale<a class="headerlink" href="#scale" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>読み込んだエフェクトの大きさが小さいことがあります。その場合は、EffectAsssetを選択し、<strong>Scale</strong> のパラメーターを変更します。
@@ -204,7 +205,7 @@ EffectEmitterのScaleを変更することでエフェクトの大きさを変�
 <h2>エミッタを使って再生する方法<a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <div class="section" id="id5">
 <h3>準備<a class="headerlink" href="#id5" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<p>エフェクトのエミッタコンポーネントをGameObjectにAddすることで、GameObjectに連動したエフェクトの再生を行うことができます。</p>
+<p>エフェクトのエミッタコンポーネントをGameObjectにAddすることで、<br />GameObjectに連動したエフェクトの再生を行うことができます。</p>
 <p>GameObjectに対してEffekseerEmitterを追加します。</p>
 <p><img alt="../_images/add_component.png" src="../_images/add_component.png" /></p>
 </div>
@@ -248,17 +249,50 @@ EffectEmitterのScaleを変更することでエフェクトの大きさを変�
 </div>
 <div class="section" id="id11">
 <h3>特徴<a class="headerlink" href="#id11" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<p>PlayEffect()で再生した場合は自動で位置回転は変わりません。もし動かしたいときは手動で設定してやる必要があります。</p>
+<p>PlayEffect()で再生した場合は自動で位置回転は変わりません。<br />もし動かしたいときは手動で設定してやる必要があります。</p>
 <p>ヒットエフェクトや爆発エフェクトなど、シンプルに使いたいときに適しています。</p>
 </div>
 </div>
-<div class="section" id="light-weight-render-pipeline">
-<h2>Light Weight Render Pipeline<a class="headerlink" href="#light-weight-render-pipeline" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<p>Effekseer は Light Weight Render Pipeline に対応しています。.
-LWRPはUnityでは標準に含まれていないため、 <em>ScriptsExternal/EffekseerRendererLWRP.cs</em> からコメントアウトを外してください。</p>
+<div class="section" id="universal-render-pipeline">
+<h2>Universal Render Pipeline<a class="headerlink" href="#universal-render-pipeline" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>Effekseer は Universal Render Pipeline に対応しています。</p>
+<p>URPはバージョンごとに追加方法が異なります。
+古いURPの場合、LWRPの説明を読んでください。</p>
+<p>URPはUnityでは標準に含まれていないため、<em>ScriptsExternal/EffekseerURPRenderPassFeature.cs</em> からコメントアウトを外してください。</p>
+<p><img alt="../_images/Code1.png" src="../_images/Code1.png" /></p>
+<p>現在使用しているScriptableRenderPipelineSettingsを確認するためにGraphics Settingsを見ます。</p>
+<p>既に存在していたらそれを選択します。</p>
+<p>存在しない場合、作成して選択します。</p>
+<p><img alt="../_images/Create_Pipeline1.png" src="../_images/Create_Pipeline1.png" /></p>
+<p>Pipelineで使用されているForwardRendererを選択します。</p>
+<p><img alt="../_images/Pipeline1.png" src="../_images/Pipeline1.png" /></p>
+<p>使用されていない場合、作成してPipelineに設定し、選択します。</p>
+<p><img alt="../_images/Create_ForwardRenderer1.png" src="../_images/Create_ForwardRenderer1.png" /></p>
+<p><img alt="../_images/ForwardRenderer1.png" src="../_images/ForwardRenderer1.png" /></p>
+<p>先ほど選択した <em>ForwardRenderer Asset</em> の <em>Render Features</em> に <em>EffekseerRenderPassFeature</em> を追加します。</p>
+<p><img alt="../_images/RenderPassFeature1.png" src="../_images/RenderPassFeature1.png" /></p>
+</div>
+<div class="section" id="high-definition-render-pipeline">
+<h2>High Definition Render Pipeline<a class="headerlink" href="#high-definition-render-pipeline" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>Effekseer は High Definition Render Pipeline に対応しています。.
+HDRPはUnityでは標準に含まれていないため、<em>ScriptsExternal/EffekseerRendererHDRP.cs</em> からコメントアウトを外してください。</p>
+<p><img alt="../_images/Code3.png" src="../_images/Code3.png" /></p>
+<p>カメラに <em>CustomPassVolume</em> コンポーネントを追加します。</p>
+<p><img alt="../_images/CustomPassVolume1.png" src="../_images/CustomPassVolume1.png" /></p>
+<p><em>CustomPasses</em> に <em>EffekseerRendererHDRP</em> を追加します。</p>
+<p><img alt="../_images/CustomPassVolumeSelect1.png" src="../_images/CustomPassVolumeSelect1.png" /></p>
+<p><img alt="../_images/CustomPassVolumeAdd1.png" src="../_images/CustomPassVolumeAdd1.png" /></p>
+<p><em>Injection Point</em> を <em>Before Post Process</em> に変更します。</p>
+<p><img alt="../_images/CustomPassVolumeInjectionPoint1.png" src="../_images/CustomPassVolumeInjectionPoint1.png" /></p>
+</div>
+<div class="section" id="light-weight-universal-render-pipeline">
+<h2>Light Weight(Universal) Render Pipeline<a class="headerlink" href="#light-weight-universal-render-pipeline" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>Effekseer は Universal(Light Weight) Render Pipeline に対応しています。.
+URP(LWRP)はUnityでは標準に含まれていないため、URPの場合、<em>ScriptsExternal/EffekseerURPRenderPassFeature.cs</em>  LWRPの場合、<em>ScriptsExternal/EffekseerRendererLWRP.cs</em> からコメントアウトを外してください。</p>
 <p><img alt="../_images/LWRP_Code1.png" src="../_images/LWRP_Code1.png" /></p>
 <p>Effekseerのエフェクトを表示するために <em>Custom Forward Render</em> を使用します。</p>
-<p><em>Assets -&gt; Create -&gt; Rendering -&gt; Lightweight Render Pipeline -&gt; Forward Render</em> から <em>Forward Render Asset</em> を作成します。</p>
+<p><em>URP</em>  <em>Assets -&gt; Create -&gt; Rendering -&gt; Universal Render Pipeline -&gt; Forward Render</em> から <em>Forward Render Asset</em> を作成します。</p>
+<p><em>LWRP</em>  <em>Assets -&gt; Create -&gt; Rendering -&gt; Lightweight Render Pipeline -&gt; Forward Render</em> から <em>Forward Render Asset</em> を作成します。</p>
 <p><img alt="../_images/LWRP_ForwardRenderer11.png" src="../_images/LWRP_ForwardRenderer11.png" /></p>
 <p><img alt="../_images/LWRP_ForwardRenderer21.png" src="../_images/LWRP_ForwardRenderer21.png" /></p>
 <p>現在使用している <em>Pipeline Asset</em> の <em>Renderer Type</em> を <em>Custom</em> に変更します。 <em>Data</em> に先ほど作成した <em>Forward Render Asset</em> を設定します。</p>
@@ -267,11 +301,6 @@ LWRPはUnityでは標準に含まれていないため、 <em>ScriptsExternal/Ef
 <p>先ほど作成した <em>Forward Render Asset</em> の <em>Render Features</em> に <em>EffekseerRenderer</em> を追加します。</p>
 <p><img alt="../_images/LWRP_RenderFeatures11.png" src="../_images/LWRP_RenderFeatures11.png" /></p>
 <p><img alt="../_images/LWRP_RenderFeatures21.png" src="../_images/LWRP_RenderFeatures21.png" /></p>
-<p>古いLWRPでは、* Effekseer/Effekseer RendererLWRP * コンポーネントをカメラがあるGameObjectに設定してください。</p>
-</div>
-<div class="section" id="high-definition-render-pipeline">
-<h2>High Definition Render Pipeline<a class="headerlink" href="#high-definition-render-pipeline" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<p>対応予定です。</p>
 </div>
 <div class="section" id="id12">
 <h2>モバイル環境<a class="headerlink" href="#id12" title="このヘッドラインへのパーマリンク">¶</a></h2>

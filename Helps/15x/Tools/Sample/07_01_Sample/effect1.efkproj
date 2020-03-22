@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EffekseerProject>
+  <Root>
+    <Name>Root</Name>
+    <Children>
+      <Node>
+        <CommonValues>
+          <Life>
+            <Center>1000</Center>
+            <Max>1000</Max>
+            <Min>1000</Min>
+          </Life>
+        </CommonValues>
+        <RotationValues>
+          <Type>1</Type>
+          <PVA>
+            <Velocity>
+              <Y>
+                <Center>15</Center>
+                <Max>15</Max>
+                <Min>15</Min>
+              </Y>
+            </Velocity>
+          </PVA>
+        </RotationValues>
+        <DrawingValues>
+          <Sprite>
+            <Billboard>2</Billboard>
+          </Sprite>
+        </DrawingValues>
+        <Name>Parent</Name>
+        <Children />
+      </Node>
+    </Children>
+  </Root>
+  <ToolVersion>1.22</ToolVersion>
+  <Version>3</Version>
+  <StartFrame>0</StartFrame>
+  <EndFrame>120</EndFrame>
+  <IsLoop>True</IsLoop>
+</EffekseerProject>

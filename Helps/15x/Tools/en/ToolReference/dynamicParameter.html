@@ -1,0 +1,412 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ja" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ja" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>DynamicParameter &mdash; Effekseer Help  ドキュメント</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/language_data.js"></script>
+        <script src="../../_static/js/three.min.js"></script>
+        <script src="../../_static/js/effekseer.min.js"></script>
+        <script src="../../_static/js/iframe.js"></script>
+        <script src="../../_static/js/OrbitControls.js"></script>
+        <script src="../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="検索" href="../../search.html" />
+    <link rel="next" title="Material-Reference" href="../MaterialToolReference/index.html" />
+    <link rel="prev" title="Depth" href="depth.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> Effekseer Help
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../ja/index.html">Effekseer Help 日本語</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Effekseer Help (English)</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../overview.html">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolTutorial/index.html">Tutorial</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Tool-Reference</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="index.html#overview">Overview</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="index.html#each-window">Each window</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="common.html">Basic settings</a></li>
+<li class="toctree-l4"><a class="reference internal" href="location.html">Position</a></li>
+<li class="toctree-l4"><a class="reference internal" href="locationAbs.html">Force Field (Local)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="locationGene.html">Spawning Method</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rotation.html">Rotation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scale.html">Scale</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererCommon.html">Basic Render Settings</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererSprite.html">Render - Sprite</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererRibbon.html">Render - Ribbon</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererRing.html">Render - Ring</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererModel.html">Render - Model</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererTrack.html">Render - Track</a></li>
+<li class="toctree-l4"><a class="reference internal" href="fcurve.html">F-Curve</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sound.html">Sound</a></li>
+<li class="toctree-l4"><a class="reference internal" href="network.html">Network</a></li>
+<li class="toctree-l4"><a class="reference internal" href="culling.html">Culling</a></li>
+<li class="toctree-l4"><a class="reference internal" href="behavior.html">Behavior</a></li>
+<li class="toctree-l4"><a class="reference internal" href="record.html">Recorder</a></li>
+<li class="toctree-l4"><a class="reference internal" href="fileviewer.html">File Viewer (1.3 or later)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="global.html">Global Settings</a></li>
+<li class="toctree-l4"><a class="reference internal" href="environment.html">Environment</a></li>
+<li class="toctree-l4"><a class="reference internal" href="options.html">Options</a></li>
+<li class="toctree-l4"><a class="reference internal" href="depth.html">Depth</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">DynamicParameter</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#command-line">Command Line</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../MaterialToolReference/index.html">Material-Reference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolTips/01.html">TIPS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq.html">FAQ</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Effekseer Help</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../index.html">Effekseer Help (English)</a> &raquo;</li>
+        
+          <li><a href="index.html">Tool-Reference</a> &raquo;</li>
+        
+      <li>DynamicParameter</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="dynamicparameter">
+<h1>DynamicParameter<a class="headerlink" href="#dynamicparameter" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<div class="section" id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>DynamicParameter specifies a parameter to rewrite refresh (during game) effect parameters during effect playback.
+It controls parameters with simple code. Parameters can be given externally.</p>
+</div>
+<div class="section" id="how-to-use">
+<h2>How to use<a class="headerlink" href="#how-to-use" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<div class="section" id="basic">
+<h3>Basic<a class="headerlink" href="#basic" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<div class="section" id="panel">
+<h4>Panel<a class="headerlink" href="#panel" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<p>Open the dynamic parameter panel.</p>
+<img alt="../../_images/menu_en.png" class="align-center" src="../../_images/menu_en.png" />
+</div>
+<div class="section" id="add-an-expression">
+<h4>Add an expression<a class="headerlink" href="#add-an-expression" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<p>You can add an expression with the add button.
+You can specify the name of the expression and the content of the expression.</p>
+<img alt="../../_images/add_en.png" class="align-center" src="../../_images/add_en.png" />
+</div>
+<div class="section" id="write-an-expression">
+<h4>Write an expression<a class="headerlink" href="#write-an-expression" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<p>For example, to rewrite the first parameter to 2.0, write as follows.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nd">@O</span><span class="o">.</span><span class="n">x</span> <span class="o">=</span> <span class="mf">2.0</span>
+</pre></div>
+</div>
+<p>After that you press Compile. If no problem exists, OK is displayed. If a problem exists, the cause of error is displayed.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nd">@O</span><span class="o">.</span><span class="n">x</span> <span class="o">=</span> <span class="mf">2.0</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="apply-the-expression">
+<h4>Apply the expression<a class="headerlink" href="#apply-the-expression" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<p>Right-click on the parameter to which it applies and select Dynamic.
+Then, a field for selecting the expression is displayed.</p>
+<img alt="../../_images/select_dynamic_en.png" class="align-center" src="../../_images/select_dynamic_en.png" />
+<p>Then, select the expression you entered earlier and the expression is applied.</p>
+<img alt="../../_images/apply_dynamic_en.png" class="align-center" src="../../_images/apply_dynamic_en.png" />
+<p>The parameter of the position is (0, 0, 0). But a particle is shown on 2 because the expression changes positions into 2</p>
+<img alt="../../_images/move2.png" class="align-center" src="../../_images/move2.png" />
+</div>
+</div>
+<div class="section" id="functions-of-an-expression">
+<h3>Functions of an expression<a class="headerlink" href="#functions-of-an-expression" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<div class="section" id="change-multiple-parameters">
+<h4>Change multiple parameters<a class="headerlink" href="#change-multiple-parameters" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<p>x, y, z, w, each parameter can be changed.
+Entering the following changes the values ​​to 2, 3, 4, and 5, respectively.
+If the destination is a color, x, y, z, w correspond to RGBA.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nd">@O</span><span class="o">.</span><span class="n">x</span> <span class="o">=</span> <span class="mf">2.0</span>
+<span class="nd">@O</span><span class="o">.</span><span class="n">y</span> <span class="o">=</span> <span class="mf">3.0</span>
+<span class="nd">@O</span><span class="o">.</span><span class="n">z</span> <span class="o">=</span> <span class="mf">4.0</span>
+<span class="nd">@O</span><span class="o">.</span><span class="n">w</span> <span class="o">=</span> <span class="mf">5.0</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="four-arithmetic-operations">
+<h4>Four arithmetic operations<a class="headerlink" href="#four-arithmetic-operations" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<p>Expressions can use arithmetic operations. You can change the priority of the operation with ().</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nd">@O</span><span class="o">.</span><span class="n">x</span> <span class="o">=</span> <span class="p">(</span><span class="mf">2.0</span> <span class="o">+</span> <span class="mf">3.0</span> <span class="o">*</span> <span class="mf">2.0</span> <span class="o">/</span> <span class="mf">3.0</span><span class="p">)</span> <span class="o">-</span> <span class="mf">2.0</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="parameter">
+<h4>Parameter<a class="headerlink" href="#parameter" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<p>Parameters input from the external can be specified from the numeric field on the panel and runtime.</p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th align="left">Parameter</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">@P.x @P.y @P.z @P.w</td>
+<td align="left">Parameters before dynamic parameter is applied</td>
+</tr>
+<tr>
+<td align="left">@In0 @In1 @In2 @In3</td>
+<td align="left">Parameters input from the external</td>
+</tr>
+<tr>
+<td align="left">@GTime</td>
+<td align="left">Current time(s)</td>
+</tr>
+<tr>
+<td align="left">@PTime</td>
+<td align="left">A time since parent particle is generated (s)</td>
+</tr>
+</tbody>
+</table></div>
+<div class="section" id="function">
+<h4>Function<a class="headerlink" href="#function" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<p>The following functions can be used.</p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th align="left">Parameter</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">sin(x)</td>
+<td align="left">Return the result of Sine. x is in radians.</td>
+</tr>
+<tr>
+<td align="left">cos(x)</td>
+<td align="left">Return the result of Cosine. x is in radians.</td>
+</tr>
+<tr>
+<td align="left">rand()</td>
+<td align="left">Return the random value</td>
+</tr>
+<tr>
+<td align="left">rand(x)</td>
+<td align="left">Return the random value corresponding with x. If x is same, returned value is same</td>
+</tr>
+</tbody>
+</table></div>
+<div class="section" id="target">
+<h4>Target<a class="headerlink" href="#target" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<p>Dynamic parameter can applies to following parameters.</p>
+<ul class="simple">
+<li><p>Spawn Count</p></li>
+<li><p>Spawn Rate</p></li>
+<li><p>Initial Delay</p></li>
+<li><p>Time to live</p></li>
+<li><p>Position - Fixed, PVA, Easing</p></li>
+<li><p>Rotation - Fixed, PVA, Easing</p></li>
+<li><p>Scaling - Fixed, PVA, Easing</p></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="section" id="examples">
+<h2>Examples<a class="headerlink" href="#examples" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<div class="section" id="lod">
+<h3>LOD<a class="headerlink" href="#lod" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>The number of generations can be changed externally.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nd">@O</span><span class="o">.</span><span class="n">x</span> <span class="o">=</span> <span class="nd">@In0</span> <span class="o">*</span> <span class="nd">@P</span><span class="o">.</span><span class="n">x</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="laser">
+<h3>Laser<a class="headerlink" href="#laser" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>The length of the laser can be changed externally.
+The size of Z is controlled externally.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nd">@O</span><span class="o">.</span><span class="n">z</span> <span class="o">=</span> <span class="nd">@In0</span> <span class="o">*</span> <span class="nd">@P</span><span class="o">.</span><span class="n">z</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="sine-wave">
+<h3>Sine Wave<a class="headerlink" href="#sine-wave" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>Move like a sine wave.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nd">@O</span><span class="o">.</span><span class="n">x</span> <span class="o">=</span> <span class="n">sin</span><span class="p">(</span><span class="nd">@GTime</span><span class="p">)</span>
+<span class="nd">@O</span><span class="o">.</span><span class="n">y</span> <span class="o">=</span> <span class="nd">@GTime</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../MaterialToolReference/index.html" class="btn btn-neutral float-right" title="Material-Reference" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="depth.html" class="btn btn-neutral float-left" title="Depth" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Effekseer
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
