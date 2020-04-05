@@ -6,6 +6,8 @@
 
 Windows7 SP1 or later
 
+DirectX 11 (ShaderModel 4.0 or later)
+
 If this application doesn't run, please install D3DCompiler_47.dll from a bellow link.
 
 [D3DCompiler_47.dll](https://support.microsoft.com/en-us/help/4020302/the-net-framework-4-7-installation-is-blocked-on-windows-7-windows-ser)
@@ -20,8 +22,8 @@ If this application doesn't run, please install mono from a bellow link.
 
 ### Runtime
 
-*   DirectX 9 (ShaderModel 2.0 or later)
-*   DirectX 11 (ShaderModel 2.0 or later)
+*   DirectX 9 (ShaderModel 3.0 or later)
+*   DirectX 11 (ShaderModel 3.0 or later)
 *   OpenGL 4.1 or later
 *   OpenGL ES 2.0 or later
 
@@ -345,6 +347,14 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
 </div>
 
 ## Change log
+
+### 1.51（20/04/02）
+
+Fix a bug that Effekseer doesn't run on ShaderModel4.0 (Windows)
+
+Optimize Turbulence
+
+Support 2D Mode (Experimental)
 
 ### 1.50（20/03/18）
 

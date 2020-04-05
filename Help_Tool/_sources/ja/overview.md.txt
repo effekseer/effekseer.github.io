@@ -6,6 +6,8 @@
 
 Windows7 SP1以降のPC
 
+DirectX11(ShaderModel4.0以上)
+
 もし起動しない場合は下記のリンクからD3DCompiler_47.dllをインストールしてください。
 
 [D3DCompiler_47.dll](https://support.microsoft.com/ja-jp/help/4020302/the-net-framework-4-7-installation-is-blocked-on-windows-7-windows-ser)
@@ -20,8 +22,8 @@ macOS Sierra以降のPC
 
 ### ランタイム
 
-*   DirectX9(ShaderModel2.0以上)
-*   DirectX11(ShaderModel2.0以上)
+*   DirectX9(ShaderModel3.0以上)
+*   DirectX11(ShaderModel3.0以上)
 *   OpenGL 4.1以上
 *   OpenGL ES2.0以上
 
@@ -341,6 +343,14 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
 </pre>
 
 ## 更新履歴
+
+### 1.51（20/04/02）
+
+シェーダーモデル4.0の環境で起動しない不具合を修正 (Windows)
+
+タービュランスを最適化
+
+2Dモードをサポート (実験的)
 
 ### 1.50（20/03/18）
 
