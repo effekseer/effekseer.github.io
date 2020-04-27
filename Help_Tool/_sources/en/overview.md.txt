@@ -348,6 +348,18 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
 
 ## Change log
 
+### 1.52（20/04/27）
+
+Fixed a bug where files could not be saved on some Mac environments.
+
+Fixed a bug that caused a rare crash.
+
+Fixed a bag where the FPS changed when not using the 60FPS display.
+
+Fixed a bug where the color space did not work properly.
+
+Improved UI for recording.
+
 ### 1.51（20/04/02）
 
 Fix a bug that Effekseer doesn't run on ShaderModel4.0 (Windows)

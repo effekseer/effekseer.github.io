@@ -42,6 +42,7 @@ VertexColor
 --------------------------------
 
 Outputs the vertex color of the particles.
+This includes all colors of sprite, ring, and so on.
 
 ObjectScale
 --------------------------------
