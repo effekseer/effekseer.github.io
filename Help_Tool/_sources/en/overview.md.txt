@@ -348,6 +348,10 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
 
 ## Change log
 
+### 1.52a（20/04/28）
+
+Fixed a bug that a behavior of rotated billboard is something wrong when an angle is about 90 degree
+
 ### 1.52（20/04/27）
 
 Fixed a bug where files could not be saved on some Mac environments.
