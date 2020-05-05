@@ -348,6 +348,12 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
 
 ## Change log
 
+### 1.52b（20/05/05）
+
+Fixed a bug where particles are not shown with Line of SpawnMethod
+Fixed a bug in which Japanese is selected in an environment where the language is neither Japanese nor English.
+Fixed a bug that it fails to start if the current directory at startup is not the same as Effekseer.
+
 ### 1.52a（20/04/28）
 
 Fixed a bug that a behavior of rotated billboard is something wrong when an angle is about 90 degree
