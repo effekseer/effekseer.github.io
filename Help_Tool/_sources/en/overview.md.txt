@@ -348,6 +348,13 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
 
 ## Change log
 
+### 1.6x（Next version）
+
+#### Options
+
+Added a setting to change the mouse mapping to manipulate the viewport (you can select Maya style, Blender style, etc.).
+
+
 ### 1.52b（20/05/05）
 
 Fixed a bug where particles are not shown with Line of SpawnMethod
