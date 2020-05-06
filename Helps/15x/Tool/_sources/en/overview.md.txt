@@ -354,6 +354,9 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
 
 Added a setting to change the mouse mapping to manipulate the viewport (you can select Maya style, Blender style, etc.).
 
+### 1.52c(Mac Only)（20/05/06）
+
+Fixed a crash on Mac when saving a file after importing new image .
 
 ### 1.52b（20/05/05）
 
