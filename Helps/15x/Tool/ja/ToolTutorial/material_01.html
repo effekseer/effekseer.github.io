@@ -187,7 +187,9 @@
 下記のリンクからダウンロードしてください。</p>
 <p><a href="../../Effects/Tutorials/Mat_01_01.zip">ダウンロード</a></p>
 <p>開くと、単純な球のモデルが描画されていることがわかります。</p>
-<iframe src='../../Effects/viewer_ja.html#Tutorials/Mat_01/Sample00.efkefc'></iframe><p>マテリアルを作成するために、描画共通パネルのマテリアルをファイルに変更します。</p>
+<div align="center">
+<img src="../../img/Tutorial/Mat_01/state1.png">
+</div><p>マテリアルを作成するために、描画共通パネルのマテリアルをファイルに変更します。</p>
 <div align="center">
 <img src="../../img/Tutorial/Mat_01/material_create_ja.png">
 </div><p>生成ボタンを押します。そして、マテリアルを新規作成するダイアログが表示されます。
@@ -210,7 +212,9 @@
 <div align="center">
 <img src="../../img/Tutorial/Mat_01/input_constant3.png">
 </div><p>そうすると、その数値に応じて球の色が変化することがわかります。</p>
-<iframe src='../../Effects/viewer_ja.html#Tutorials/Mat_01/Sample01.efkefc'></iframe><p>定数3ノードを追加するとき、定数1～4ノードまで存在したのが見えましたでしょうか？
+<div align="center">
+<img src="../../img/Tutorial/Mat_01/state2.png">
+</div><p>定数3ノードを追加するとき、定数1～4ノードまで存在したのが見えましたでしょうか？
 ノード間を伝わる値には複数の種類があります。</p>
 <p>数値1から数値4という、1～4つの数値で構成された値の種類であることが多いです。
 また、画像であることもあります。</p>
@@ -226,13 +230,17 @@
 <p>定数3ノードの代わりに<code class="docutils literal notranslate"><span class="pre">画像参照</span></code>ノードのRGBを接続します。</p>
 <div align="center">
 <img src="../../img/Tutorial/Mat_01/add_GridImage_ja.png">
-</div><iframe src='../../Effects/viewer_ja.html#Tutorials/Mat_01/Sample00.efkefc'></iframe><p>画像は表示されましたが、透明な部分が透明になっていません。</p>
+</div><div align="center">
+<img src="../../img/Tutorial/Mat_01/state1.png">
+</div><p>画像は表示されましたが、透明な部分が透明になっていません。</p>
 <p>そこで<code class="docutils literal notranslate"><span class="pre">画像参照</span></code>ノードのAから出力ノードのOpacityに接続します。
 これは、画像の透明度をマテリアルの透明度に接続しています。</p>
 <div align="center">
 <img src="../../img/Tutorial/Mat_01/connect_alpha_ja.png">
 </div><p>そうすると、画像が表示されました。</p>
-<iframe src='../../Effects/viewer_ja.html#Tutorials/Mat_01/Sample02.efkefc'></iframe></div>
+<div align="center">
+<img src="../../img/Tutorial/Mat_01/state3.png">
+</div></div>
 <div class="section" id="id4">
 <h2>画像の表示領域の変更<a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>今までは、単純にモデルに画像を表示した場合と挙動が同じでした。
@@ -256,7 +264,9 @@
 </div><p>そして、<code class="docutils literal notranslate"><span class="pre">定数2</span></code>ノードの値を変更します。そうすると、表示位置がずれることがわかります。</p>
 <div align="center">
 <img src="../../img/Tutorial/Mat_01/change_constant2_ja.png">
-</div><iframe src='../../Effects/viewer_ja.html#Tutorials/Mat_01/Sample03.efkefc'></iframe></div>
+</div><div align="center">
+<img src="../../img/Tutorial/Mat_01/state4.png">
+</div></div>
 <div class="section" id="id5">
 <h2>画像の歪み<a class="headerlink" href="#id5" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>先ほどは画像の表示領域をずらしただけですが、今度は画像を歪ませましょう。</p>
@@ -274,7 +284,9 @@
 <div align="center">
 <img src="../../img/Tutorial/Mat_01/connect_mask_ja.png">
 </div><p>凄い歪みました。しかし、こんなに歪んでほしくはありません。</p>
-<iframe src='../../Effects/viewer_ja.html#Tutorials/Mat_01/Sample04.efkefc'></iframe><p><code class="docutils literal notranslate"><span class="pre">掛け算</span></code>ノードを使用して小さくします。
+<div align="center">
+<img src="../../img/Tutorial/Mat_01/state5.png">
+</div><p><code class="docutils literal notranslate"><span class="pre">掛け算</span></code>ノードを使用して小さくします。
 <code class="docutils literal notranslate"><span class="pre">掛け算</span></code>ノードを追加します。</p>
 <p>そして、<code class="docutils literal notranslate"><span class="pre">掛け算</span></code>ノードに<code class="docutils literal notranslate"><span class="pre">要素抽出</span></code>ノードを接続します。
 <code class="docutils literal notranslate"><span class="pre">掛け算</span></code>ノードの値を小さくします。</p>

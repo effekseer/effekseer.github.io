@@ -23,7 +23,9 @@
 
 開くと、単純な球のモデルが描画されていることがわかります。
 
-<iframe src='../../Effects/viewer_ja.html#Tutorials/Mat_01/Sample00.efkefc'></iframe>
+<div align="center">
+<img src="../../img/Tutorial/Mat_01/state1.png">
+</div>
 
 マテリアルを作成するために、描画共通パネルのマテリアルをファイルに変更します。
 
@@ -67,7 +69,9 @@
 
 そうすると、その数値に応じて球の色が変化することがわかります。
 
-<iframe src='../../Effects/viewer_ja.html#Tutorials/Mat_01/Sample01.efkefc'></iframe>
+<div align="center">
+<img src="../../img/Tutorial/Mat_01/state2.png">
+</div>
 
 定数3ノードを追加するとき、定数1～4ノードまで存在したのが見えましたでしょうか？
 ノード間を伝わる値には複数の種類があります。
@@ -94,7 +98,9 @@
 <img src="../../img/Tutorial/Mat_01/add_GridImage_ja.png">
 </div>
 
-<iframe src='../../Effects/viewer_ja.html#Tutorials/Mat_01/Sample00.efkefc'></iframe>
+<div align="center">
+<img src="../../img/Tutorial/Mat_01/state1.png">
+</div>
 
 画像は表示されましたが、透明な部分が透明になっていません。
 
@@ -107,7 +113,9 @@
 
 そうすると、画像が表示されました。
 
-<iframe src='../../Effects/viewer_ja.html#Tutorials/Mat_01/Sample02.efkefc'></iframe>
+<div align="center">
+<img src="../../img/Tutorial/Mat_01/state3.png">
+</div>
 
 ## 画像の表示領域の変更
 
@@ -148,7 +156,9 @@
 <img src="../../img/Tutorial/Mat_01/change_constant2_ja.png">
 </div>
 
-<iframe src='../../Effects/viewer_ja.html#Tutorials/Mat_01/Sample03.efkefc'></iframe>
+<div align="center">
+<img src="../../img/Tutorial/Mat_01/state4.png">
+</div>
 
 ## 画像の歪み
 
@@ -180,7 +190,9 @@
 
 凄い歪みました。しかし、こんなに歪んでほしくはありません。
 
-<iframe src='../../Effects/viewer_ja.html#Tutorials/Mat_01/Sample04.efkefc'></iframe>
+<div align="center">
+<img src="../../img/Tutorial/Mat_01/state5.png">
+</div>
 
 ```掛け算```ノードを使用して小さくします。
 ```掛け算```ノードを追加します。
