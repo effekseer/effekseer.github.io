@@ -354,6 +354,14 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
 
 Added a setting to change the mouse mapping to manipulate the viewport (you can select Maya style, Blender style, etc.).
 
+### 1.52e（20/05/07）
+
+Make delete button enabled in F-Curve on Mac
+
+Fix a bug that removing points with double click was disabled in F-Curve.
+
+Improve behavior of drag in F-Curve.
+
 ### 1.52d（20/05/06）
 
 Fixed a bug where the magnification of recorded images is wrong.
