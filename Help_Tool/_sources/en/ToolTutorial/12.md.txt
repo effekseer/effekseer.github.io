@@ -83,7 +83,7 @@ If you choose ```Shrink anchor```, the value change suddenly.
 <img src="../../img/Tutorial/12/add_points_en.png" width="80%">
 </div>
 
-To delete a control point, double-click the control point.
+To delete a control point, double-click the control point or push delete.
 
 You can express complecated movements with comvining these functions.
 

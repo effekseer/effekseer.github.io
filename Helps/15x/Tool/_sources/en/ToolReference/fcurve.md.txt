@@ -58,7 +58,7 @@ You can add a key by left double clicking the mouse on a line.
 
 ### Delete key frame
 
-You can remove a key by left double clicking the mouse on the key.
+You can remove a key by left double clicking the mouse on the key or delete button.
 
 ### Select key frame
 
