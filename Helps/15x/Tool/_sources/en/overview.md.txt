@@ -354,6 +354,12 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
 
 Added a setting to change the mouse mapping to manipulate the viewport (you can select Maya style, Blender style, etc.).
 
+### 1.52f（20/05/13）
+
+Fixed a bug that parameters of turbulence is not saved
+
+Added an error message when it fails to save a file
+
 ### 1.52e（20/05/07）
 
 Make delete button enabled in F-Curve on Mac
