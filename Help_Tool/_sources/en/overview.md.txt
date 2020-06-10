@@ -354,6 +354,18 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
 
 Added a setting to change the mouse mapping to manipulate the viewport (you can select Maya style, Blender style, etc.).
 
+### 1.52g（20/06/09）
+
+Fixed a bug that pngs with interlacing could not be displayed correctly
+
+Fixed a bug that caused a crash when displaying a new effect after playing a lot of effect.
+
+Fixed a bug that caused a crash when saving camera settings.
+
+Fixed a bug where batch processing was not working.
+
+(Runtime) Fixed a bug that it crashs if you end up not finding a format when extending a file reading
+
 ### 1.52f（20/05/13）
 
 Fixed a bug that parameters of turbulence is not saved
