@@ -92,7 +92,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../ToolTutorial/index.html">チュートリアル</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="index.html">ツール・リファレンス</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="index.html#id2">概要</a></li>
-<li class="toctree-l3 current"><a class="reference internal" href="index.html#id10">各ウインドウ</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="index.html#id11">各ウインドウ</a><ul class="current">
 <li class="toctree-l4"><a class="reference internal" href="common.html">共通</a></li>
 <li class="toctree-l4"><a class="reference internal" href="location.html">位置</a></li>
 <li class="toctree-l4"><a class="reference internal" href="locationAbs.html">力場(ローカル)</a></li>
@@ -119,7 +119,7 @@
 <li class="toctree-l4"><a class="reference internal" href="dynamicParameter.html">動的パラメーター</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="index.html#id11">コマンドライン</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id12">コマンドライン</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../MaterialToolReference/index.html">マテリアル・リファレンス</a></li>
@@ -210,72 +210,84 @@
 <p>画面の左に表示されているツリーの項目を選択するとFカーブが表示されます。Shiftを押しながら選択することで、複数同時に選択することもできます。</p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/XrENrALqa-Q" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe></div>
 <div class="section" id="id4">
-<h3>グラフの移動・拡大縮小<a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<table><tbody><tr><td>グラフの移動</td><td>グラフ上で、マウスの右ボタンを押しつつ、マウスを移動</td></tr><tr><td>横方向・拡大縮小</td><td>グラフ上で、Ctrlを押しつつ、マウスホイールを回転</td></tr><tr><td>縦方向・拡大縮小</td><td>グラフ上で、Altを押しつつ、マウスホイールを回転</td></tr></tbody></table></div>
+<h3>タイムラインについて (1.5以降)<a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>Fカーブには2種類のタイムラインがあります。</p>
+<p>1つ目は、0～100で表されるタイムラインです。0はパーティクルが生成された時間を表し、100はパーティクルの破棄された時間を表します。
+パーティクルの寿命が変化しても、100まで再生されます。</p>
+<p>2つ目は、フレームの時間を直接指定するタイムラインです。時間の数値が直接、時間を表します。</p>
+<p>これらはタイムラインの種類のパラメーターで切り替えることができます。</p>
+</div>
 <div class="section" id="id5">
-<h3>キーの追加<a class="headerlink" href="#id5" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>グラフの移動・拡大縮小<a class="headerlink" href="#id5" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<table><tbody><tr><td>グラフの移動</td><td>グラフ上で、マウスの右ボタンを押しつつ、マウスを移動</td></tr><tr><td>横方向・拡大縮小</td><td>グラフ上で、Ctrlを押しつつ、マウスホイールを回転</td></tr><tr><td>縦方向・拡大縮小</td><td>グラフ上で、Altを押しつつ、マウスホイールを回転</td></tr></tbody></table></div>
+<div class="section" id="id6">
+<h3>キーの追加<a class="headerlink" href="#id6" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>マウスで線上をダブルクリックすることでキーを追加できます。</p>
 </div>
-<div class="section" id="id6">
-<h3>キーの削除<a class="headerlink" href="#id6" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<div class="section" id="id7">
+<h3>キーの削除<a class="headerlink" href="#id7" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>マウスでキーをダブルクリック、もしくはDeleteでキーを削除できます。</p>
 </div>
-<div class="section" id="id7">
-<h3>キーの選択<a class="headerlink" href="#id7" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<div class="section" id="id8">
+<h3>キーの選択<a class="headerlink" href="#id8" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>マウスを左クリックすることで選択できます。</p>
 </div>
-<div class="section" id="id8">
-<h3>キーの移動<a class="headerlink" href="#id8" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<div class="section" id="id9">
+<h3>キーの移動<a class="headerlink" href="#id9" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>キー選択した後、マウスの左ボタンを押したままマウスを移動することで移動できます。 同じように、カーブの制御用のキーも移動させることができます。</p>
 <p>Altを押しつつ移動すると、複数のキーを同時に移動できます。</p>
 </div>
-<div class="section" id="id9">
-<h3>アンカーの展開,縮小<a class="headerlink" href="#id9" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<div class="section" id="id10">
+<h3>アンカーの展開,縮小<a class="headerlink" href="#id10" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>キーを選択し、アンカーの展開や縮小を押すことでアンカーの位置を自動的に指定できます。 アンカーの展開を押すとアンカーが展開して線が滑らかになります。 アンカーの縮小を押すとアンカーとポイントの位置が一致して急に値が変化するようになります。</p>
 </div>
-<div class="section" id="id10">
-<h3>全表示<a class="headerlink" href="#id10" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<div class="section" id="id11">
+<h3>全表示<a class="headerlink" href="#id11" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>グラフのラベルをダブルクリックするとグラフ全体が表示されます。</p>
 <p><img alt="../../_images/fcurve_show_entire1.png" src="../../_images/fcurve_show_entire1.png" /></p>
 </div>
 </div>
-<div class="section" id="id11">
-<h2>パラメーター<a class="headerlink" href="#id11" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <div class="section" id="id12">
-<h3>フレーム<a class="headerlink" href="#id12" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h2>パラメーター<a class="headerlink" href="#id12" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<div class="section" id="id13">
+<h3>フレーム<a class="headerlink" href="#id13" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>キーごとに設定します。キーのフレームを指定します。</p>
 </div>
-<div class="section" id="id13">
-<h3>値<a class="headerlink" href="#id13" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<div class="section" id="id14">
+<h3>値<a class="headerlink" href="#id14" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>キーごとに設定します。キーの値を指定します。</p>
 </div>
-<div class="section" id="id14">
-<h3>補完<a class="headerlink" href="#id14" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<div class="section" id="id15">
+<h3>補完<a class="headerlink" href="#id15" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>キーごとに設定します。キーとキーの間の補完方法を指定します。</p>
 </div>
-<div class="section" id="id15">
-<h3>先頭<a class="headerlink" href="#id15" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<div class="section" id="id16">
+<h3>先頭<a class="headerlink" href="#id16" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>グラフごとに設定します。グラフの左端より前のグラフの値の設定方法を指定します。</p>
 </div>
-<div class="section" id="id16">
-<h3>末尾<a class="headerlink" href="#id16" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<div class="section" id="id17">
+<h3>末尾<a class="headerlink" href="#id17" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>グラフごとに設定します。グラフの右端より後のグラフの値の設定方法を指定します。</p>
 </div>
-<div class="section" id="id17">
-<h3>サンプリング<a class="headerlink" href="#id17" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<div class="section" id="id18">
+<h3>サンプリング<a class="headerlink" href="#id18" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>グラフごとに設定します。実際に再生するときに、何フレームごとの値を使用して表示するか指定します。小さいほどメモリは使いますが、グラフの形状に近い値を使用します。</p>
 </div>
 <div class="section" id="x-y">
 <h3>左x,y<a class="headerlink" href="#x-y" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>キーごとに設定します。キーのカーブ制御の左ハンドルの位置を指定します。</p>
 </div>
-<div class="section" id="id18">
-<h3>右x,y<a class="headerlink" href="#id18" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<div class="section" id="id19">
+<h3>右x,y<a class="headerlink" href="#id19" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>キーごとに設定します。キーのカーブ制御の右ハンドルの位置を指定します。</p>
 </div>
-<div class="section" id="id19">
-<h3>オフセット最大,最小<a class="headerlink" href="#id19" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<div class="section" id="id20">
+<h3>オフセット最大,最小<a class="headerlink" href="#id20" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>グラフごとに設定します。値を使用するときにオフセットの範囲で、ランダムに値を上下にグラフをずらします。</p>
+</div>
+<div class="section" id="id21">
+<h3>タイムラインの種類<a class="headerlink" href="#id21" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>タイムラインの種類を設定します。</p>
 </div>
 </div>
 </div>

@@ -65,6 +65,21 @@ Left-click and drag a color field to copy the value to another color field.
    :align: center
 ```
 
+#### Node Tree
+
+In the node tree, you can edit the nodes that compose the effect.
+You can right-click to add or delete a node.
+
+You can drag & drop nodes to reorder them.
+
+You can click on the eye icon to toggle the display of nodes.
+You can shift and click at the same time to toggle display, including child nodes.
+
+```eval_rst
+.. image:: ../../img/Reference/Overview/node_tree.png
+   :align: center
+```
+
 ### File Format
 
 An effect is saved in a file with "efkefc" format.

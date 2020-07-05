@@ -116,6 +116,12 @@ Double-clicking the label of F-Curve displays the corresponding F-Curve as a who
 <img src="../../img/Tutorial/12/show_entire.png" width="80%">
 </div>
 
+#### About the Timeline (since 1.5)
+
+In Effekseer 1.5, you can now select the mode of timeline.
+You can set a value for the lifetime of the effect, or directly set a value for time.
+See the reference for more information.
+
 You can create complicated effects by taking advantage of these knowledge.
 
 <div align="center">

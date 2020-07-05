@@ -350,9 +350,31 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
 
 ### 1.6x（Next version）
 
+#### force field.
+
+Add a lot of different force fields.
+
+#### UI.
+
+Change the behavior of the docking panel
+
+Changed to frameless window (Windows)
+
 #### Options
 
 Added a setting to change the mouse mapping to manipulate the viewport (you can select Maya style, Blender style, etc.).
+
+#### Optimization
+
+Implement multithreaded update.
+
+### 1.52h（20/07/xx）
+
+Unify drawing behavior due to opacity on all platforms
+
+Fixed a bug that caused a crash when executing UNDO without displaying the node tree.
+
+Fixed a bug that occurred when the value of a material's step node was negative.
 
 ### 1.52g（20/06/09）
 

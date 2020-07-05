@@ -18,6 +18,17 @@ When you select an item in the tree on the left side of the screen, the F-Curve 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/kTTrY7wjosg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
 
+### About Timeline (since 1.5)
+
+There are two timelines for the F-curve.
+
+The first is a timeline represented by a number between 0 and 100, where 0 represents the time when the particle was created, and 100 represents the time the particle was discarded.
+It will still play back to 100 even if the life of the particle changes.
+
+The second is a timeline that directly specifies the time of the frame. The time number directly represents the time.
+
+These can be toggled by the timeline mode parameter.
+
 ### Movement / Scaling of Graphs
 
 <table>
@@ -118,3 +129,6 @@ Set for each key. Specify the position of the right handle of the key's curve co
 
 Set for each graph. When using values, offset the range, randomly shift the value up or down the graph.
 
+### Timeline Mode
+
+You can toggle Timeline Mode.
