@@ -368,13 +368,19 @@ Added a setting to change the mouse mapping to manipulate the viewport (you can 
 
 Implement multithreaded update.
 
-### 1.52h（20/07/xx）
+### 1.52h（20/07/09）
 
 Unify drawing behavior due to opacity on all platforms
+
+Effekseer now can remove redundant nodes when effects are exported
 
 Fixed a bug that caused a crash when executing UNDO without displaying the node tree.
 
 Fixed a bug that occurred when the value of a material's step node was negative.
+
+Fixed a bug that recording with high frequency is wrong
+
+Fixed a bug that caused a crash when much particles are spawn
 
 ### 1.52g（20/06/09）
 
