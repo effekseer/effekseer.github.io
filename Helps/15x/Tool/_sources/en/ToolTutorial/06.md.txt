@@ -137,7 +137,7 @@ Change UV ```Standard``` to ```Scroll```.
 Then, nothing is shown.
 This is because you have not set the area of the image to use.
 
-Enter the image size (256, 256) in the size. Next, enter (0, -5) as the moving speed.
+Enter the image size (256, 256) in the size. Next, enter (0, 5) as the moving speed.
 
 You can see that the image is moving.
 
