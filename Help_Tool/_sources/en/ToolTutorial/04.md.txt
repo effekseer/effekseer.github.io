@@ -133,10 +133,19 @@ Since it is not good looking as it is, you change parameters as follows.
 
 Change ```Spawn Count``` to 10
 
+<div align="center">
+<img src="../../img/Tutorial/04/parameters_basic_en.png">
+</div>
+
 ### The "Position" window
 
--Change into PVA
--Change Pos deviation into 2
+Change into PVA
+
+Change Pos deviation into 2
+
+<div align="center">
+<img src="../../img/Tutorial/04/parameters_position_en.png">
+</div>
 
 ### The "Basic Render Settings" window
 
@@ -144,13 +153,25 @@ Select the ```Texture``` into particle.png
 
 Change the ```Blend``` into ```Additive```
 
+<div align="center">
+<img src="../../img/Tutorial/04/parameters_basic_render_en.png">
+</div>
+
 ### The "Rotation" window
 
-Change angle(Derivation) Z  into 180
+Change angle derivation Z  into 180
+
+<div align="center">
+<img src="../../img/Tutorial/04/parameters_rotation_en.png">
+</div>
 
 ### The "Scale" window
 
 Change ```Scaling Factor``` into 0
+
+<div align="center">
+<img src="../../img/Tutorial/04/parameters_scale_en.png">
+</div>
 
 ### Result
 

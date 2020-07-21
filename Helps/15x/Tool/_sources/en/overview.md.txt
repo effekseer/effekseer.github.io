@@ -360,6 +360,10 @@ Change the behavior of the docking panel
 
 Changed to frameless window (Windows)
 
+#### Recording
+
+Added a recording size scaling factor to the recording function.
+
 #### Options
 
 Added a setting to change the mouse mapping to manipulate the viewport (you can select Maya style, Blender style, etc.).

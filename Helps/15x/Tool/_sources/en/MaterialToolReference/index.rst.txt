@@ -140,12 +140,12 @@ There are Lit and Unlit lighting.
 If you specify Lit, it will be affected by the light source.
 If you specify Unlit, the entered value is displayed.
 
-|pic1| |pic2|
+|pic_lit| |pic_unlit|
 
-.. |pic1| image:: ../../img/Reference/Material/lighting_lit.png
+.. |pic_lit| image:: ../../img/Reference/Material/lighting_lit.png
    :scale: 100%
 
-.. |pic2| image:: ../../img/Reference/Material/lighting_unlit.png
+.. |pic_unlit| image:: ../../img/Reference/Material/lighting_unlit.png
    :scale: 100%
 
 BaseColor (Number3)

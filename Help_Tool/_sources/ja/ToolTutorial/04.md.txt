@@ -133,10 +133,19 @@ Z軸回転ビルボードにすると、長方形がZ方向(正面方向)を軸�
 
 生成数を10に変更
 
+<div align="center">
+<img src="../../img/Tutorial/04/parameters_basic_ja.png">
+</div>
+
 ### 「位置」ウインドウ
 
--位置・速度・加速度に変更
--位置の振幅を2に変更
+位置・速度・加速度に変更
+
+位置の振幅を2に変更
+
+<div align="center">
+<img src="../../img/Tutorial/04/parameters_position_ja.png">
+</div>
 
 ### 「描画共通」ウインドウ
 
@@ -144,13 +153,25 @@ Z軸回転ビルボードにすると、長方形がZ方向(正面方向)を軸�
 
 ブレンドを加算に変更
 
+<div align="center">
+<img src="../../img/Tutorial/04/parameters_basic_render_ja.png">
+</div>
+
 ### 「回転」ウインドウ
 
-角度(振幅)のZを180に変更
+角度(度)の振幅のZを180に変更
+
+<div align="center">
+<img src="../../img/Tutorial/04/parameters_rotation_ja.png">
+</div>
 
 ### 「拡大」ウインドウ
 
 拡大率を0に変更
+
+<div align="center">
+<img src="../../img/Tutorial/04/parameters_scale_ja.png">
+</div>
 
 ### 結果
 

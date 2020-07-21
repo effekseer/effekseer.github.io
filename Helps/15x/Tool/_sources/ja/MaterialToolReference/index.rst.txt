@@ -93,12 +93,12 @@ Effekseerでは、マテリアルエディタでEffekseerで使用するマテ�
 
 マテリアルの出力ノードのプロパティでライティングをするか、しないかを選択できます。
 
-|pic1| |pic2|
+|pic_lit| |pic_unlit|
 
-.. |pic1| image:: ../../img/Reference/Material/lighting_lit.png
+.. |pic_lit| image:: ../../img/Reference/Material/lighting_lit.png
    :scale: 100%
 
-.. |pic2| image:: ../../img/Reference/Material/lighting_unlit.png
+.. |pic_unlit| image:: ../../img/Reference/Material/lighting_unlit.png
    :scale: 100%
 
 入出力の値の種類について
