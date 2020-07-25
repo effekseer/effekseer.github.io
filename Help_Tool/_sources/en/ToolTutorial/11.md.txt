@@ -135,10 +135,10 @@ Let's try it.
 
 Please open effect2.efkproj.
 
-Specify the model to spawning method. Then load Model/model2.fbx as a model.
+Specify the model to spawning method. Then load Model/Sphere.mqo as a model.
 For clarity, make ```Spawn Mode``` Vertex.
 
-Specify xxx for particle's image.
+Specify Particle.png for particle's image.
 We also increase ```Spawn Count```.
 
 The parameters are as follows.

@@ -195,10 +195,14 @@ Here we create an effect that emerges at the position where the sword has passed
 
 Please open effect2.efkproj.
 
-The parent node rotates.
-Since it is a moment to swing the sword, specify ```time to live``` to 30 and the rotation to be 180 degrees from the angle 0 with easing.
+### The parent node
 
 The parameters of the parent node have already been specified.
+
+The parent node rotates.
+Since it is a moment to swing the sword, it has specified ```time to live``` to 30 and the rotation to be 180 degrees from the angle 0 with easing.
+
+### The child node
 
 Specify the child node's parameters.
 
