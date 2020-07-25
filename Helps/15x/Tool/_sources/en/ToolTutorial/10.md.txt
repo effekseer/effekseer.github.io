@@ -195,6 +195,15 @@ Here we create an effect that emerges at the position where the sword has passed
 
 Please open effect2.efkproj.
 
+It consists of a parent node, a child node and a hit node.
+
+The parent node rotates and the child nodes move along it to represent the sword.
+The following is a simple movie. Red is the parent node's particle and green is the child node's particles.
+
+<div align="center">
+<img src="../../img/Tutorial/10/parent_child.gif">
+</div>
+
 ### The parent node
 
 The parameters of the parent node have already been specified.
