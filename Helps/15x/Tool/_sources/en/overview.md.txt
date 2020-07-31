@@ -372,6 +372,24 @@ Added a setting to change the mouse mapping to manipulate the viewport (you can 
 
 Implement multithreaded update.
 
+### 1.52i (20/07/31)
+
+Fixed a bug where opening a file was disabled with certain operation (Mac)
+
+Fixed a bug where Effeksee cannot run in environments that did not support MSAA (Windows)
+
+Fixed a bug where ``` Is scaling invalid with Z-Offset ``` behaved strangely.
+
+Fixed a bug where dynamic parameters giving Vector as an argument behaved strangely.
+
+Fixed a bug where the F-curve of UV behaved strangely.
+
+Fixed a bug where the network reloading function was behaving strangely.
+
+Fixed a bug that caused loading problems when saving a file with a default value of 0 and the same value as the default in custom data.
+
+Fixed a bug where the memory locator alignment could go wrong in x86 environments.
+
 ### 1.52h（20/07/09）
 
 Unify drawing behavior due to opacity on all platforms
