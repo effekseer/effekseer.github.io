@@ -54,7 +54,7 @@ Please open effect1.efkproj.
 
 In ```Basic render settings``` panel, Texture/Distortion1.png is specified as color image of Distortion node.
 In ```Basic render settings``` panel, make distortion checked and make distortion enabled.
-I recommend that you change a background image in ```Option``` panel to see easily.
+I recommend that you change a background image in ```Environment``` panel to see easily.
 
 <div align="center">
 <img src="../../img/Tutorial/13/intesity_1.png">
