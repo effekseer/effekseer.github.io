@@ -372,6 +372,14 @@ Added a setting to change the mouse mapping to manipulate the viewport (you can 
 
 Implement multithreaded update.
 
+### 1.52j（20/08/02）
+
+Fixed a bug where Bloom was behaving strangely in certain environments.
+
+Fixed a bug where the memory locator alignment could go wrong in x86 environments.
+
+Fixed a bug where noise could occur in MSAA environments.
+
 ### 1.52i (20/07/31)
 
 Fixed a bug where opening a file was disabled with certain operation (Mac)
