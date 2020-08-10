@@ -86,12 +86,13 @@ More parameters may be emerging depends on the material file.
 In addition to constants, custom parameters can be specified by easing or F-curve.
 The displayed name of the custom parameter depends on the material file.
 
-<iframe src='../../Effects/viewer_ja.html#References/BasicRender/render_file.efkefc'></iframe>
+<iframe src='../../Effects/viewer_en.html#References/BasicRender/render_file.efkefc'></iframe>
 
 ### Blend
 
 Specifies the method of alpha blending applied when displaying the particle. This controls how drawn images will be composited when they are on top of each other, such as translucency, addition, or subtraction.
-<iframe src='../../Effects/viewer_en.html#References/Render/blend.efkefc'></iframe>
+
+![](../../img/Reference/BasicRender/AlphaBlend.png)
 
 ### Filter
 

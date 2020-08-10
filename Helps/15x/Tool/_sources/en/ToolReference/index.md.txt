@@ -80,6 +80,27 @@ You can shift and click at the same time to toggle display, including child node
    :align: center
 ```
 
+#### Panels (Windows)
+
+There are very few panels (windows) available for editing the parameters you create for your effects.
+If you select "Window" from the menu bar, you will see a list of windows that can be displayed.
+If you select it, the window will appear.
+
+You can move the displayed window by moving it while left-clicking the window's menu bar.
+
+You can also add a window to another panel by overlapping it with the square that appears while moving it.
+
+<div align="center">
+<img src="../../img/Reference/Overview/DockPanel_Panel.png">
+</div>
+
+You can also add to the tabs by dragging and dropping them between the tabs.
+(If you have a single panel of tab, drag & drop them onto the tab.)
+
+<div align="center">
+<img src="../../img/Reference/Overview/DockPanel_Tab.png">
+</div>
+
 ### File Format
 
 An effect is saved in a file with "efkefc" format.

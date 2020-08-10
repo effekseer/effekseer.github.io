@@ -209,7 +209,15 @@ The following is a simple movie. Red is the parent node's particle and green is 
 The parameters of the parent node have already been specified.
 
 The parent node rotates.
-Since it is a moment to swing the sword, it has specified ```time to live``` to 30 and the rotation to be 180 degrees from the angle 0 with easing.
+
+Since it is a moment to swing the sword, it has specified ```time to live``` to 30.
+
+The sword rotates to an angle of 0 degrees when it is generated and 180 degrees when it is finished.
+So, in the rotation window, the rotation to be 180 degrees from 0 degrees with easing.
+
+<div align="center">
+<img src="../../img/Tutorial/10/parent_en.png">
+</div>
 
 ### The child node
 

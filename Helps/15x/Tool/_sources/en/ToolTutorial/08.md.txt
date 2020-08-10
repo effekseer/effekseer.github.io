@@ -86,6 +86,21 @@ When you select it, the "Spawn method" window will be displayed.
 <p>Spawn method</p>
 </div>
 
+You can move the displayed window by moving it while left-clicking the window's menu bar.
+
+You can also add a window to another panel by overlapping it with the square that appears while moving it.
+
+<div align="center">
+<img src="../../img/Reference/Overview/DockPanel_Panel.png">
+</div>
+
+You can also add to the tabs by dragging and dropping them between the tabs.
+(If you have a single panel of tab, drag & drop them onto the tab.)
+
+<div align="center">
+<img src="../../img/Reference/Overview/DockPanel_Tab.png">
+</div>
+
 From the "Spawn method" window, specify the circle as the spawn method.
 Enter 4 for the radius of the circle.
 

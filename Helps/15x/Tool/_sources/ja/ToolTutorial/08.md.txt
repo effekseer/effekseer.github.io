@@ -85,6 +85,21 @@ effect01.efkprojを開いてください。
 <p>生成方法</p>
 </div>
 
+表示したウインドウは、ウインドウのメニューバーを左クリックしつつ、移動することで、ウインドウを移動できます。
+
+移動中に表示される四角に重ねることで、ウインドウを他のパネルに追加することもできます。
+
+<div align="center">
+<img src="../../img/Reference/Overview/DockPanel_Panel.png">
+</div>
+
+タブの間にドラッグ ＆ ドロップすることで、タブに加えることもできます。
+(タブのパネルが1つの場合、タブの上にドラッグ ＆ ドロップします。)
+
+<div align="center">
+<img src="../../img/Reference/Overview/DockPanel_Tab.png">
+</div>
+
 「生成方法」ウインドウから、生成方法に円を指定します。
 円の半径には4を入力します。
 

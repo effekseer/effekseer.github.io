@@ -13,3 +13,4 @@ This software is a particle effect editing tool. By incorporating runtime and pl
     MaterialToolReference/index
     ToolTips/01
     faq
+    releasenotes
