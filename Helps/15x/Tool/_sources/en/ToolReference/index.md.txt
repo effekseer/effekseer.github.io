@@ -90,16 +90,18 @@ You can move the displayed window by moving it while left-clicking the window's 
 
 You can also add a window to another panel by overlapping it with the square that appears while moving it.
 
-<div align="center">
-<img src="../../img/Reference/Overview/DockPanel_Panel.png">
-</div>
+```eval_rst
+.. image:: ../../img/Reference/Overview/DockPanel_Panel.png
+   :align: center
+```
 
 You can also add to the tabs by dragging and dropping them between the tabs.
 (If you have a single panel of tab, drag & drop them onto the tab.)
 
-<div align="center">
-<img src="../../img/Reference/Overview/DockPanel_Tab.png">
-</div>
+```eval_rst
+.. image:: ../../img/Reference/Overview/DockPanel_Tab.png
+   :align: center
+```
 
 ### File Format
 

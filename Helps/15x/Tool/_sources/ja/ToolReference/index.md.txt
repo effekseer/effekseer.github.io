@@ -90,16 +90,18 @@ Shiftと同時にクリックすることで、子ノードも含めて表示を
 
 移動中に表示される四角に重ねることで、ウインドウを他のパネルに追加することもできます。
 
-<div align="center">
-<img src="../../img/Reference/Overview/DockPanel_Panel.png">
-</div>
+```eval_rst
+.. image:: ../../img/Reference/Overview/DockPanel_Panel.png
+   :align: center
+```
 
 タブの間にドラッグ ＆ ドロップすることで、タブに加えることもできます。
 (タブのパネルが1つの場合、タブの上にドラッグ ＆ ドロップします。)
 
-<div align="center">
-<img src="../../img/Reference/Overview/DockPanel_Tab.png">
-</div>
+```eval_rst
+.. image:: ../../img/Reference/Overview/DockPanel_Tab.png
+   :align: center
+```
 
 ### ファイル形式
 
