@@ -1,0 +1,218 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Effekseer: Effekseer::EffectFactory クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Effekseer
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><b>Effekseer</b></li><li class="navelem"><a class="el" href="class_effekseer_1_1_effect_factory.html">EffectFactory</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="class_effekseer_1_1_effect_factory-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle">
+<div class="title">Effekseer::EffectFactory クラス</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>独自フォーマットをサポートするための、バイナリが読み込まれた時にEffectParameterのインスタンスを編集するクラス  
+ <a href="class_effekseer_1_1_effect_factory.html#details">[詳解]</a></p>
+
+<p><code>#include &lt;<a class="el" href="_effekseer_8h_source.html">Effekseer.h</a>&gt;</code></p>
+<div class="dynheader">
+Effekseer::EffectFactory の継承関係図</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_effekseer_1_1_effect_factory.png" usemap="#Effekseer::EffectFactory_map" alt=""/>
+  <map id="Effekseer::EffectFactory_map" name="Effekseer::EffectFactory_map">
+<area href="class_effekseer_1_1_reference_object.html" title="参照カウンタオブジェクト" alt="Effekseer::ReferenceObject" shape="rect" coords="0,56,168,80"/>
+<area href="class_effekseer_1_1_i_reference.html" title="参照カウンタのインターフェース" alt="Effekseer::IReference" shape="rect" coords="0,0,168,24"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a3f9508b2d5ef0d5a0a06e391793a1540"><td class="memItemLeft" align="right" valign="top"><a id="a3f9508b2d5ef0d5a0a06e391793a1540"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_effect_factory.html#a3f9508b2d5ef0d5a0a06e391793a1540">LoadBody</a> (<a class="el" href="class_effekseer_1_1_effect.html">Effect</a> *effect, const void *data, int32_t size, float magnification, const EFK_CHAR *materialPath)</td></tr>
+<tr class="memdesc:a3f9508b2d5ef0d5a0a06e391793a1540"><td class="mdescLeft">&#160;</td><td class="mdescRight">バイナリから本体(エフェクトのパラメーター)を読み込む。 <br /></td></tr>
+<tr class="separator:a3f9508b2d5ef0d5a0a06e391793a1540"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ab53df791db3960a59285a5bc7b6472"><td class="memItemLeft" align="right" valign="top"><a id="a9ab53df791db3960a59285a5bc7b6472"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_effect_factory.html#a9ab53df791db3960a59285a5bc7b6472">SetTexture</a> (<a class="el" href="class_effekseer_1_1_effect.html">Effect</a> *effect, int32_t index, TextureType type, <a class="el" href="struct_effekseer_1_1_texture_data.html">TextureData</a> *data)</td></tr>
+<tr class="memdesc:a9ab53df791db3960a59285a5bc7b6472"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定されたインデックスにテクスチャを設定する。 <br /></td></tr>
+<tr class="separator:a9ab53df791db3960a59285a5bc7b6472"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8459019e9308100d43cd19ff48fc2aef"><td class="memItemLeft" align="right" valign="top"><a id="a8459019e9308100d43cd19ff48fc2aef"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_effect_factory.html#a8459019e9308100d43cd19ff48fc2aef">SetSound</a> (<a class="el" href="class_effekseer_1_1_effect.html">Effect</a> *effect, int32_t index, void *data)</td></tr>
+<tr class="memdesc:a8459019e9308100d43cd19ff48fc2aef"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定されたインデックスに音を設定する。 <br /></td></tr>
+<tr class="separator:a8459019e9308100d43cd19ff48fc2aef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92ab6f33f0d4ef63b386985585c95d32"><td class="memItemLeft" align="right" valign="top"><a id="a92ab6f33f0d4ef63b386985585c95d32"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_effect_factory.html#a92ab6f33f0d4ef63b386985585c95d32">SetModel</a> (<a class="el" href="class_effekseer_1_1_effect.html">Effect</a> *effect, int32_t index, void *data)</td></tr>
+<tr class="memdesc:a92ab6f33f0d4ef63b386985585c95d32"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定されたインデックスにモデルを設定する。 <br /></td></tr>
+<tr class="separator:a92ab6f33f0d4ef63b386985585c95d32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a665b4309d5e7bcebf2c1cb4dcad8a919"><td class="memItemLeft" align="right" valign="top"><a id="a665b4309d5e7bcebf2c1cb4dcad8a919"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_effect_factory.html#a665b4309d5e7bcebf2c1cb4dcad8a919">SetMaterial</a> (<a class="el" href="class_effekseer_1_1_effect.html">Effect</a> *effect, int32_t index, <a class="el" href="class_effekseer_1_1_material_data.html">MaterialData</a> *data)</td></tr>
+<tr class="memdesc:a665b4309d5e7bcebf2c1cb4dcad8a919"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定されたインデックスにマテリアルを設定する。 <br /></td></tr>
+<tr class="separator:a665b4309d5e7bcebf2c1cb4dcad8a919"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e13d224714f3b9f974cb86180dd7d03"><td class="memItemLeft" align="right" valign="top"><a id="a6e13d224714f3b9f974cb86180dd7d03"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_effect_factory.html#a6e13d224714f3b9f974cb86180dd7d03">SetLoadingParameter</a> (<a class="el" href="class_effekseer_1_1_effect.html">Effect</a> *effect, <a class="el" href="class_effekseer_1_1_reference_object.html">ReferenceObject</a> *obj)</td></tr>
+<tr class="memdesc:a6e13d224714f3b9f974cb86180dd7d03"><td class="mdescLeft">&#160;</td><td class="mdescRight">ロード用データを設定する。 <br /></td></tr>
+<tr class="separator:a6e13d224714f3b9f974cb86180dd7d03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03c1e9d537b24aad97abd747e8f765ea"><td class="memItemLeft" align="right" valign="top"><a id="a03c1e9d537b24aad97abd747e8f765ea"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_effect_factory.html#a03c1e9d537b24aad97abd747e8f765ea">OnCheckIsBinarySupported</a> (const void *data, int32_t size)</td></tr>
+<tr class="memdesc:a03c1e9d537b24aad97abd747e8f765ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">バイナリがサポートされているか確認するためにこのメソッドが呼ばれる。 <br /></td></tr>
+<tr class="separator:a03c1e9d537b24aad97abd747e8f765ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5607b43dd58a8e91b3537c6dfefe2e9d"><td class="memItemLeft" align="right" valign="top"><a id="a5607b43dd58a8e91b3537c6dfefe2e9d"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_effect_factory.html#a5607b43dd58a8e91b3537c6dfefe2e9d">OnCheckIsReloadSupported</a> ()</td></tr>
+<tr class="memdesc:a5607b43dd58a8e91b3537c6dfefe2e9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">リロードがサポートされているか確認するためにこのメソッドが呼ばれる。 <br /></td></tr>
+<tr class="separator:a5607b43dd58a8e91b3537c6dfefe2e9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9190db035f0ba1b74d6b0ddf70506807"><td class="memItemLeft" align="right" valign="top"><a id="a9190db035f0ba1b74d6b0ddf70506807"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_effect_factory.html#a9190db035f0ba1b74d6b0ddf70506807">OnLoading</a> (<a class="el" href="class_effekseer_1_1_effect.html">Effect</a> *effect, const void *data, int32_t size, float magnification, const EFK_CHAR *materialPath)</td></tr>
+<tr class="memdesc:a9190db035f0ba1b74d6b0ddf70506807"><td class="mdescLeft">&#160;</td><td class="mdescRight">バイナリからエフェクトを読み込む時に、このメソッドが呼ばれる。 <br /></td></tr>
+<tr class="separator:a9190db035f0ba1b74d6b0ddf70506807"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd637b96d9da258012c7b4ac45db3ea7"><td class="memItemLeft" align="right" valign="top"><a id="afd637b96d9da258012c7b4ac45db3ea7"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_effect_factory.html#afd637b96d9da258012c7b4ac45db3ea7">OnLoadingResource</a> (<a class="el" href="class_effekseer_1_1_effect.html">Effect</a> *effect, const void *data, int32_t size, const EFK_CHAR *materialPath)</td></tr>
+<tr class="memdesc:afd637b96d9da258012c7b4ac45db3ea7"><td class="mdescLeft">&#160;</td><td class="mdescRight">リソースを読み込む時に、このメソッドが呼ばれる。 <br /></td></tr>
+<tr class="separator:afd637b96d9da258012c7b4ac45db3ea7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfe9a6ab15fa2a0b727269ee55a1bb34"><td class="memItemLeft" align="right" valign="top"><a id="abfe9a6ab15fa2a0b727269ee55a1bb34"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_effect_factory.html#abfe9a6ab15fa2a0b727269ee55a1bb34">OnUnloadingResource</a> (<a class="el" href="class_effekseer_1_1_effect.html">Effect</a> *effect)</td></tr>
+<tr class="memdesc:abfe9a6ab15fa2a0b727269ee55a1bb34"><td class="mdescLeft">&#160;</td><td class="mdescRight">リソースを廃棄される時に、このメソッドが呼ばれる。 <br /></td></tr>
+<tr class="separator:abfe9a6ab15fa2a0b727269ee55a1bb34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d6901e2acb501938f4dd2434ba215f5"><td class="memItemLeft" align="right" valign="top">virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_effect_factory.html#a5d6901e2acb501938f4dd2434ba215f5">GetName</a> () const</td></tr>
+<tr class="separator:a5d6901e2acb501938f4dd2434ba215f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b1ba36750ea00a51c74c60c201d14ef"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_effect_factory.html#a3b1ba36750ea00a51c74c60c201d14ef">GetIsResourcesLoadedAutomatically</a> () const</td></tr>
+<tr class="separator:a3b1ba36750ea00a51c74c60c201d14ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_effekseer_1_1_reference_object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_effekseer_1_1_reference_object')"><img src="closed.png" alt="-"/>&#160;基底クラス <a class="el" href="class_effekseer_1_1_reference_object.html">Effekseer::ReferenceObject</a> に属する継承公開メンバ関数</td></tr>
+<tr class="memitem:a1cc3feeee39b72aea152ed223dbd0fa7 inherit pub_methods_class_effekseer_1_1_reference_object"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_reference_object.html#a1cc3feeee39b72aea152ed223dbd0fa7">AddRef</a> ()</td></tr>
+<tr class="memdesc:a1cc3feeee39b72aea152ed223dbd0fa7 inherit pub_methods_class_effekseer_1_1_reference_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">参照カウンタを加算する。  <a href="class_effekseer_1_1_reference_object.html#a1cc3feeee39b72aea152ed223dbd0fa7">[詳解]</a><br /></td></tr>
+<tr class="separator:a1cc3feeee39b72aea152ed223dbd0fa7 inherit pub_methods_class_effekseer_1_1_reference_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b8c3d79c58ca527850733691053cf5a inherit pub_methods_class_effekseer_1_1_reference_object"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_reference_object.html#a4b8c3d79c58ca527850733691053cf5a">GetRef</a> ()</td></tr>
+<tr class="memdesc:a4b8c3d79c58ca527850733691053cf5a inherit pub_methods_class_effekseer_1_1_reference_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">参照カウンタを取得する。  <a href="class_effekseer_1_1_reference_object.html#a4b8c3d79c58ca527850733691053cf5a">[詳解]</a><br /></td></tr>
+<tr class="separator:a4b8c3d79c58ca527850733691053cf5a inherit pub_methods_class_effekseer_1_1_reference_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b0e9aa4d994b557d499b15359b580d8 inherit pub_methods_class_effekseer_1_1_reference_object"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_reference_object.html#a6b0e9aa4d994b557d499b15359b580d8">Release</a> ()</td></tr>
+<tr class="memdesc:a6b0e9aa4d994b557d499b15359b580d8 inherit pub_methods_class_effekseer_1_1_reference_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">参照カウンタを減算する。0になった時、インスタンスを削除する。  <a href="class_effekseer_1_1_reference_object.html#a6b0e9aa4d994b557d499b15359b580d8">[詳解]</a><br /></td></tr>
+<tr class="separator:a6b0e9aa4d994b557d499b15359b580d8 inherit pub_methods_class_effekseer_1_1_reference_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>独自フォーマットをサポートするための、バイナリが読み込まれた時にEffectParameterのインスタンスを編集するクラス </p>
+</div><h2 class="groupheader">関数詳解</h2>
+<a id="a3b1ba36750ea00a51c74c60c201d14ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b1ba36750ea00a51c74c60c201d14ef">&#9670;&nbsp;</a></span>GetIsResourcesLoadedAutomatically()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool Effekseer::EffectFactory::GetIsResourcesLoadedAutomatically </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>バイナリを読み込んだときに自動的にリソースを読み込むか取得する。 </p>
+
+</div>
+</div>
+<a id="a5d6901e2acb501938f4dd2434ba215f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d6901e2acb501938f4dd2434ba215f5">&#9670;&nbsp;</a></span>GetName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const char* Effekseer::EffectFactory::GetName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>ファクトリーの名称を取得する。 </p>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>Dev/Cpp/Effekseer/<a class="el" href="_effekseer_8h_source.html">Effekseer.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+2020年08月16日(日) 18時48分57秒作成 - Effekseer / 構成:  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

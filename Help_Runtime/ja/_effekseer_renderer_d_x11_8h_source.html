@@ -1,0 +1,477 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Effekseer: Dev/Cpp/EffekseerRendererDX11/EffekseerRendererDX11.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Effekseer
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_c7a15cb74fa72b419f10875903789323.html">Dev</a></li><li class="navelem"><a class="el" href="dir_f1d5d028eb8d8635f1ff1a8235012006.html">Cpp</a></li><li class="navelem"><a class="el" href="dir_bd7e65947ecdf50ac739281e1c4e8790.html">EffekseerRendererDX11</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">EffekseerRendererDX11.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#ifndef __EFFEKSEERRENDERER_DX11_BASE_PRE_H__</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#define __EFFEKSEERRENDERER_DX11_BASE_PRE_H__</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">//----------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">// Include</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">//----------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;Effekseer.h&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;windows.h&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;d3d11.h&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#if _WIN32</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#pragma comment(lib, &quot;gdiplus.lib&quot;)</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#pragma comment(lib, &quot;d3d11.lib&quot; )</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">//----------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">//----------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">namespace </span>EffekseerRendererDX11</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">//----------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">//----------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">class </span>Renderer;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">//----------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">//----------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">//----------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">//----------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#endif  // __EFFEKSEERRENDERER_DX11_PRE_BASE_H__</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#ifndef __EFFEKSEERRENDERER_RENDERER_H__</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#define __EFFEKSEERRENDERER_RENDERER_H__</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">//----------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">// Include</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">//----------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#include &lt;Effekseer.h&gt;</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">//-----------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">//-----------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">namespace </span>EffekseerRenderer</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;{</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment">//-----------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment">//-----------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keyword">class </span>DistortingCallback</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;{</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    DistortingCallback() {}</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keyword">virtual</span> ~DistortingCallback() {}</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> OnDistorting() { <span class="keywordflow">return</span> <span class="keyword">false</span>; }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;};</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keyword">enum class</span> UVStyle</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;{</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    Normal,</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    VerticalFlipped,</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;};</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keyword">enum class</span> ProxyTextureType</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;{</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    White,</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    Normal,</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;};</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="keyword">class </span>GraphicsDevice : <span class="keyword">public</span> <a class="code" href="class_effekseer_1_1_i_reference.html">::Effekseer::IReference</a></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;{</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    GraphicsDevice() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keyword">virtual</span> ~GraphicsDevice() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;};  </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="keyword">class </span>CommandList : <span class="keyword">public</span> <a class="code" href="class_effekseer_1_1_i_reference.html">::Effekseer::IReference</a></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;{</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    CommandList() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keyword">virtual</span> ~CommandList() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;};</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="keyword">class </span>SingleFrameMemoryPool : <span class="keyword">public</span> <a class="code" href="class_effekseer_1_1_i_reference.html">::Effekseer::IReference</a></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;{</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    SingleFrameMemoryPool() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keyword">virtual</span> ~SingleFrameMemoryPool() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
+<div class="line"><a name="l00118"></a><span class="lineno"><a class="line" href="class_effekseer_renderer_1_1_single_frame_memory_pool.html#aeb3aa2590fb2f694f16bcf575d7fbe26">  118</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_effekseer_renderer_1_1_single_frame_memory_pool.html#aeb3aa2590fb2f694f16bcf575d7fbe26">NewFrame</a>() {}</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;};</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="keyword">class </span>Renderer</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    : <span class="keyword">public</span> <a class="code" href="class_effekseer_1_1_i_reference.html">::Effekseer::IReference</a></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;{</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    Renderer();</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keyword">virtual</span> ~Renderer();</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="keyword">class </span>Impl;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    Impl* impl = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160; </div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160; </div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    Impl* <a class="code" href="class_effekseer_renderer_1_1_renderer.html#a034ae02dc737f39731c46f9aee4e88e6">GetImpl</a>();</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160; </div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_effekseer_renderer_1_1_renderer.html#a5cf709d5b02e229f94efeec1e08951c4">OnLostDevice</a>() = 0;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160; </div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_effekseer_renderer_1_1_renderer.html#a2a4e579c8c8b6e368e37a854cbf4c0ec">OnResetDevice</a>() = 0;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160; </div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_effekseer_renderer_1_1_renderer.html#a8da94391eb26a2bd04830e4d7fcd0bd0">Destroy</a>() = 0;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160; </div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_effekseer_renderer_1_1_renderer.html#ac6de8a0c0d65c03d3242ccfc9946c91c">SetRestorationOfStatesFlag</a>(<span class="keywordtype">bool</span> flag) = 0;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160; </div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_effekseer_renderer_1_1_renderer.html#a79aa204f1344347d8e111432d6d5bf5f">BeginRendering</a>() = 0;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160; </div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_effekseer_renderer_1_1_renderer.html#aaa6df6f62aead71652bdeb596d0a7ef4">EndRendering</a>() = 0;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160; </div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    virtual ::Effekseer::Vector3D <a class="code" href="class_effekseer_renderer_1_1_renderer.html#ac26660d4eb3354ab44fcf296eba2bd84">GetLightDirection</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160; </div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_effekseer_renderer_1_1_renderer.html#a9a37cc56ea9a76a2aaf66fb3c38310dd">SetLightDirection</a>(const ::Effekseer::Vector3D&amp; direction);</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160; </div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    <span class="keyword">virtual</span> const ::Effekseer::Color&amp; <a class="code" href="class_effekseer_renderer_1_1_renderer.html#a06f62ae5e57834d44f2b29d52879bfa2">GetLightColor</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160; </div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_effekseer_renderer_1_1_renderer.html#ab5ae5a023073ea51d32f11455147e77c">SetLightColor</a>(const ::Effekseer::Color&amp; color);</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160; </div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    <span class="keyword">virtual</span> const ::Effekseer::Color&amp; <a class="code" href="class_effekseer_renderer_1_1_renderer.html#a10a3db7cae35d41ec281826d79025294">GetLightAmbientColor</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160; </div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_effekseer_renderer_1_1_renderer.html#ae5de7d17805ffde6d6537d10db0cbfce">SetLightAmbientColor</a>(const ::Effekseer::Color&amp; color);</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160; </div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    <span class="keyword">virtual</span> int32_t <a class="code" href="class_effekseer_renderer_1_1_renderer.html#af30b6ab25e7c03a3f70656c954e8db09">GetSquareMaxCount</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160; </div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    virtual ::Effekseer::Matrix44 <a class="code" href="class_effekseer_renderer_1_1_renderer.html#ab2b8c4e48288f3ad20d6553fe11be1ef">GetProjectionMatrix</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160; </div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_effekseer_renderer_1_1_renderer.html#add722e87b0607aecc0038ecaf43438ee">SetProjectionMatrix</a>( const ::Effekseer::Matrix44&amp; mat );</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160; </div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    virtual ::Effekseer::Matrix44 <a class="code" href="class_effekseer_renderer_1_1_renderer.html#a548c9d6166ccd7df00b5679ef6a68583">GetCameraMatrix</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160; </div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_effekseer_renderer_1_1_renderer.html#a8ea27cde6c5d6c5d5b3b6dc676c40a5f">SetCameraMatrix</a>( const ::Effekseer::Matrix44&amp; mat );</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160; </div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    virtual ::Effekseer::Matrix44 <a class="code" href="class_effekseer_renderer_1_1_renderer.html#a2cfdedb66330dc2c760cc330f202b12d">GetCameraProjectionMatrix</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160; </div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    virtual ::Effekseer::Vector3D <a class="code" href="class_effekseer_renderer_1_1_renderer.html#a641fe5476d6c0a6ca2d347771ee8f154">GetCameraFrontDirection</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160; </div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    virtual ::Effekseer::Vector3D <a class="code" href="class_effekseer_renderer_1_1_renderer.html#ac935eb524bad5cec3630e1975b3da11a">GetCameraPosition</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160; </div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_effekseer_renderer_1_1_renderer.html#a8f7ccc73e1ec1dbfa034ff75b7d1c7a9">SetCameraParameter</a>(const ::Effekseer::Vector3D&amp; front, const ::Effekseer::Vector3D&amp; position);</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160; </div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    virtual ::Effekseer::SpriteRenderer* <a class="code" href="class_effekseer_renderer_1_1_renderer.html#abecf62202fe3d54f4edf6c43d701188b">CreateSpriteRenderer</a>() = 0;</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160; </div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    virtual ::Effekseer::RibbonRenderer* <a class="code" href="class_effekseer_renderer_1_1_renderer.html#ac65157c02f8936e054c2525e4722a4f7">CreateRibbonRenderer</a>() = 0;</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160; </div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    virtual ::Effekseer::RingRenderer* <a class="code" href="class_effekseer_renderer_1_1_renderer.html#a84dec1c70cab5984ce151753b5c9bcb9">CreateRingRenderer</a>() = 0;</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160; </div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    virtual ::Effekseer::ModelRenderer* <a class="code" href="class_effekseer_renderer_1_1_renderer.html#a7cbbeb73fa35b6cf356fcef7499301fb">CreateModelRenderer</a>() = 0;</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160; </div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    virtual ::Effekseer::TrackRenderer* <a class="code" href="class_effekseer_renderer_1_1_renderer.html#a38cff31386fce6fe0122a4ac5804fd8f">CreateTrackRenderer</a>() = 0;</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160; </div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;    virtual ::Effekseer::TextureLoader* <a class="code" href="class_effekseer_renderer_1_1_renderer.html#a13e29065eaca81d5191d9bad1421c408">CreateTextureLoader</a>( ::<a class="code" href="class_effekseer_1_1_file_interface.html">Effekseer::FileInterface</a>* fileInterface = NULL ) = 0;</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160; </div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    virtual ::Effekseer::ModelLoader* <a class="code" href="class_effekseer_renderer_1_1_renderer.html#ab35779830c25992af7a9a9d53423f817">CreateModelLoader</a>( ::<a class="code" href="class_effekseer_1_1_file_interface.html">Effekseer::FileInterface</a>* fileInterface = NULL ) = 0;</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160; </div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    virtual ::Effekseer::MaterialLoader* <a class="code" href="class_effekseer_renderer_1_1_renderer.html#aabd4cd7b57216148b6995a83ea1942fd">CreateMaterialLoader</a>(::<a class="code" href="class_effekseer_1_1_file_interface.html">Effekseer::FileInterface</a>* fileInterface = <span class="keyword">nullptr</span>) = 0;</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160; </div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_effekseer_renderer_1_1_renderer.html#a229d0aca027c72e6736db487efbbddeb">ResetRenderState</a>() = 0;</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160; </div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    <span class="keyword">virtual</span> DistortingCallback* <a class="code" href="class_effekseer_renderer_1_1_renderer.html#af4db92a0262062bfcc8f3f2334e5a168">GetDistortingCallback</a>() = 0;</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160; </div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_effekseer_renderer_1_1_renderer.html#a8806b5a83c5ea73e09662f4a0869f8f0">SetDistortingCallback</a>(DistortingCallback* callback) = 0;</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160; </div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;    <span class="keyword">virtual</span> int32_t <a class="code" href="class_effekseer_renderer_1_1_renderer.html#ae82ec3adcc94286216e4d7f0a30700d8">GetDrawCallCount</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160; </div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;    <span class="keyword">virtual</span> int32_t <a class="code" href="class_effekseer_renderer_1_1_renderer.html#af327aaf794973aab5ad0ba807633c1a7">GetDrawVertexCount</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160; </div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_effekseer_renderer_1_1_renderer.html#a3d288089bbdb722b74080d25c022c670">ResetDrawCallCount</a>();</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160; </div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_effekseer_renderer_1_1_renderer.html#a0b4a69b61e18da795f3dc4b06f15b526">ResetDrawVertexCount</a>();</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160; </div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;    <span class="keyword">virtual</span> Effekseer::RenderMode <a class="code" href="class_effekseer_renderer_1_1_renderer.html#ad0b6047ba508e464b4f9b4bfdef985ba">GetRenderMode</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160; </div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_effekseer_renderer_1_1_renderer.html#a4b024c2ce7b806c71c4746f9b11b4d78">SetRenderMode</a>(Effekseer::RenderMode renderMode);</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160; </div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;    <span class="keyword">virtual</span> UVStyle <a class="code" href="class_effekseer_renderer_1_1_renderer.html#a2b276d37cb72dbff309701463674d53a">GetTextureUVStyle</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160; </div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_effekseer_renderer_1_1_renderer.html#a0c07ec72d693145bc73fe972fc6f1a28">SetTextureUVStyle</a>(UVStyle style);</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160; </div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;    <span class="keyword">virtual</span> UVStyle <a class="code" href="class_effekseer_renderer_1_1_renderer.html#acba501067fa983257e95f0b31a7ce83e">GetBackgroundTextureUVStyle</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160; </div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_effekseer_renderer_1_1_renderer.html#a61e516423549d49254f1f66f1ef7f9aa">SetBackgroundTextureUVStyle</a>(UVStyle style);</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160; </div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">float</span> <a class="code" href="class_effekseer_renderer_1_1_renderer.html#ae3ac5bddc5c5442790e8f1587eb9f125">GetTime</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160; </div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_effekseer_renderer_1_1_renderer.html#aa2e49f62828f807d76e4b6d1dbd4b2fd">SetTime</a>(<span class="keywordtype">float</span> time);</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160; </div>
+<div class="line"><a name="l00398"></a><span class="lineno"><a class="line" href="class_effekseer_renderer_1_1_renderer.html#a4a24d4a62f472b799b648b595e3c3c30">  398</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_effekseer_renderer_1_1_renderer.html#a4a24d4a62f472b799b648b595e3c3c30">SetCommandList</a>(<a class="code" href="class_effekseer_renderer_1_1_command_list.html">CommandList</a>* commandList) {}</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160; </div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_effekseer_renderer_1_1_renderer.html#aafc04e85df972cb9fdd02eeefd9c83bb">SetBackgroundTexture</a>(::<a class="code" href="struct_effekseer_1_1_texture_data.html">Effekseer::TextureData</a>* textureData);</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160; </div>
+<div class="line"><a name="l00415"></a><span class="lineno"><a class="line" href="class_effekseer_renderer_1_1_renderer.html#affe050ff8853f2aa3dbd534a51d2c1f0">  415</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="struct_effekseer_1_1_texture_data.html">Effekseer::TextureData</a>* <a class="code" href="class_effekseer_renderer_1_1_renderer.html#affe050ff8853f2aa3dbd534a51d2c1f0">CreateProxyTexture</a>(ProxyTextureType type) { <span class="keywordflow">return</span> <span class="keyword">nullptr</span>; }</div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160; </div>
+<div class="line"><a name="l00422"></a><span class="lineno"><a class="line" href="class_effekseer_renderer_1_1_renderer.html#ab3ee0a7191493dfd7e79e198ef4ee1a2">  422</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_effekseer_renderer_1_1_renderer.html#ab3ee0a7191493dfd7e79e198ef4ee1a2">DeleteProxyTexture</a>(<a class="code" href="struct_effekseer_1_1_texture_data.html">Effekseer::TextureData</a>* data) { }</div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;};</div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160; </div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;<span class="comment">//----------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;<span class="comment">//----------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;}</div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;<span class="comment">//----------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;<span class="comment">//----------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;<span class="preprocessor">#endif  // __EFFEKSEERRENDERER_RENDERER_H__</span></div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160; </div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;<span class="preprocessor">#ifndef __EFFEKSEERRENDERER_DX11_RENDERER_H__</span></div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;<span class="preprocessor">#define __EFFEKSEERRENDERER_DX11_RENDERER_H__</span></div>
+<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160; </div>
+<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;<span class="comment">//----------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;<span class="comment">// Include</span></div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;<span class="comment">//----------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160; </div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;<span class="comment">//----------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;<span class="comment">//----------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;<span class="keyword">namespace </span>EffekseerRendererDX11</div>
+<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;{</div>
+<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;<span class="comment">//----------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;<span class="comment">//----------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160; </div>
+<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;<a class="code" href="class_effekseer_1_1_texture_loader.html">::Effekseer::TextureLoader</a>* CreateTextureLoader(ID3D11Device* device,</div>
+<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;                                                ID3D11DeviceContext* context,</div>
+<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;                                                ::<a class="code" href="class_effekseer_1_1_file_interface.html">Effekseer::FileInterface</a>* fileInterface = <span class="keyword">nullptr</span>,</div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;                                                ::Effekseer::ColorSpaceType colorSpaceType = ::Effekseer::ColorSpaceType::Gamma);</div>
+<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160; </div>
+<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;<a class="code" href="class_effekseer_1_1_model_loader.html">::Effekseer::ModelLoader</a>* CreateModelLoader(ID3D11Device* device, ::<a class="code" href="class_effekseer_1_1_file_interface.html">Effekseer::FileInterface</a>* fileInterface = NULL);</div>
+<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160; </div>
+<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160; </div>
+<div class="line"><a name="l00467"></a><span class="lineno"><a class="line" href="class_effekseer_renderer_d_x11_1_1_renderer.html">  467</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_effekseer_renderer_d_x11_1_1_renderer.html">Renderer</a></div>
+<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;    : <span class="keyword">public</span> <a class="code" href="class_effekseer_renderer_1_1_renderer.html">::EffekseerRenderer::Renderer</a></div>
+<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;{</div>
+<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;    <a class="code" href="class_effekseer_renderer_d_x11_1_1_renderer.html">Renderer</a>() {}</div>
+<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="class_effekseer_renderer_d_x11_1_1_renderer.html">Renderer</a>() {}</div>
+<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160; </div>
+<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;    <span class="keyword">static</span> <a class="code" href="class_effekseer_renderer_d_x11_1_1_renderer.html">Renderer</a>* <a class="code" href="class_effekseer_renderer_d_x11_1_1_renderer.html#a98baf6e5f7093a606214ea93912f2099">Create</a>(</div>
+<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;        ID3D11Device* device, </div>
+<div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;        ID3D11DeviceContext* context, </div>
+<div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;        int32_t squareMaxCount, </div>
+<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;        D3D11_COMPARISON_FUNC depthFunc = D3D11_COMPARISON_LESS_EQUAL,</div>
+<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;        <span class="keywordtype">bool</span> isMSAAEnabled = <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160; </div>
+<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;    <span class="keyword">virtual</span> ID3D11Device* GetDevice() = 0;</div>
+<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160; </div>
+<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;    <span class="keyword">virtual</span> ID3D11DeviceContext* GetContext() = 0;</div>
+<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160; </div>
+<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="struct_effekseer_1_1_texture_data.html">Effekseer::TextureData</a>* <a class="code" href="class_effekseer_renderer_d_x11_1_1_renderer.html#a8f66736db14e58554f1b1059816876c6">GetBackground</a>() = 0;</div>
+<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160; </div>
+<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_effekseer_renderer_d_x11_1_1_renderer.html#a407db411645fe00cec1622c7a79f5aac">SetBackground</a>(ID3D11ShaderResourceView* background) = 0;</div>
+<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;};</div>
+<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160; </div>
+<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;<span class="comment">//----------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;<span class="comment">//----------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00515"></a><span class="lineno"><a class="line" href="class_effekseer_renderer_d_x11_1_1_model.html">  515</a></span>&#160;<span class="comment"></span><span class="keyword">class </span><a class="code" href="class_effekseer_renderer_d_x11_1_1_model.html">Model</a> </div>
+<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;    : <span class="keyword">public</span> <a class="code" href="class_effekseer_1_1_model.html">Effekseer::Model</a></div>
+<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;{</div>
+<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;    ID3D11Device* device_ = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160; </div>
+<div class="line"><a name="l00522"></a><span class="lineno"><a class="line" href="struct_effekseer_renderer_d_x11_1_1_model_1_1_internal_model.html">  522</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="struct_effekseer_renderer_d_x11_1_1_model_1_1_internal_model.html">InternalModel</a></div>
+<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;    {</div>
+<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;        ID3D11Buffer*       VertexBuffer;</div>
+<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;        ID3D11Buffer*       IndexBuffer;</div>
+<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;        int32_t             VertexCount;</div>
+<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;        int32_t             IndexCount;</div>
+<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;        int32_t             FaceCount;</div>
+<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160; </div>
+<div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;        <a class="code" href="struct_effekseer_renderer_d_x11_1_1_model_1_1_internal_model.html">InternalModel</a>()</div>
+<div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;        {</div>
+<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;            VertexBuffer = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;            IndexBuffer = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;            VertexCount = 0;</div>
+<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;            IndexCount = 0;</div>
+<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;            FaceCount = 0;</div>
+<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;        }</div>
+<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160; </div>
+<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;        <span class="keyword">virtual</span> ~<a class="code" href="struct_effekseer_renderer_d_x11_1_1_model_1_1_internal_model.html">InternalModel</a>()</div>
+<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;        {</div>
+<div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;            ES_SAFE_RELEASE(VertexBuffer);</div>
+<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;            ES_SAFE_RELEASE(IndexBuffer);</div>
+<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;        }</div>
+<div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;    };</div>
+<div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160; </div>
+<div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;    <a class="code" href="struct_effekseer_renderer_d_x11_1_1_model_1_1_internal_model.html">InternalModel</a>*              InternalModels = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;    int32_t                     ModelCount;</div>
+<div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;    <span class="keywordtype">bool</span> IsLoadedOnGPU = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160; </div>
+<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;    <a class="code" href="class_effekseer_renderer_d_x11_1_1_model.html">Model</a>(uint8_t* data, int32_t size, ID3D11Device* device)</div>
+<div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;        : Effekseer::<a class="code" href="class_effekseer_renderer_d_x11_1_1_model.html">Model</a>  ( data, size )</div>
+<div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;        , device_(device)</div>
+<div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;        , InternalModels(nullptr)</div>
+<div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;        , ModelCount(0)</div>
+<div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;    {</div>
+<div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;        this-&gt;m_vertexSize = <span class="keyword">sizeof</span>(<a class="code" href="struct_effekseer_1_1_model_1_1_vertex_with_index.html">VertexWithIndex</a>);</div>
+<div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;        ES_SAFE_ADDREF(device_);</div>
+<div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;    }</div>
+<div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160; </div>
+<div class="line"><a name="l00560"></a><span class="lineno"><a class="line" href="class_effekseer_renderer_d_x11_1_1_model.html#a08a547400473569db98fd9a5ff2f5f7f">  560</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_effekseer_renderer_d_x11_1_1_model.html#a08a547400473569db98fd9a5ff2f5f7f">~Model</a>()</div>
+<div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;    {</div>
+<div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;        ES_SAFE_DELETE_ARRAY(InternalModels);</div>
+<div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;        ES_SAFE_RELEASE(device_);</div>
+<div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;    }</div>
+<div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160; </div>
+<div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;    <span class="keywordtype">bool</span> LoadToGPU();</div>
+<div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;};</div>
+<div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160; </div>
+<div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160; </div>
+<div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;<span class="comment">//----------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;<span class="comment">//----------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;}</div>
+<div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;<span class="comment">//----------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;<span class="comment">//----------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;<span class="preprocessor">#endif  // __EFFEKSEERRENDERER_DX11_RENDERER_H__</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclass_effekseer_1_1_file_interface_html"><div class="ttname"><a href="class_effekseer_1_1_file_interface.html">Effekseer::FileInterface</a></div><div class="ttdoc">IOのためのファクトリークラス</div><div class="ttdef"><b>Definition:</b> Effekseer.h:1546</div></div>
+<div class="ttc" id="aclass_effekseer_renderer_1_1_renderer_html_a8f7ccc73e1ec1dbfa034ff75b7d1c7a9"><div class="ttname"><a href="class_effekseer_renderer_1_1_renderer.html#a8f7ccc73e1ec1dbfa034ff75b7d1c7a9">EffekseerRenderer::Renderer::SetCameraParameter</a></div><div class="ttdeci">virtual void SetCameraParameter(const ::Effekseer::Vector3D &amp;front, const ::Effekseer::Vector3D &amp;position)</div><div class="ttdoc">Set a front direction and position of camera manually</div></div>
+<div class="ttc" id="aclass_effekseer_renderer_1_1_renderer_html_ad0b6047ba508e464b4f9b4bfdef985ba"><div class="ttname"><a href="class_effekseer_renderer_1_1_renderer.html#ad0b6047ba508e464b4f9b4bfdef985ba">EffekseerRenderer::Renderer::GetRenderMode</a></div><div class="ttdeci">virtual Effekseer::RenderMode GetRenderMode() const</div><div class="ttdoc">描画モードを取得する。</div></div>
+<div class="ttc" id="aclass_effekseer_renderer_1_1_renderer_html_a0b4a69b61e18da795f3dc4b06f15b526"><div class="ttname"><a href="class_effekseer_renderer_1_1_renderer.html#a0b4a69b61e18da795f3dc4b06f15b526">EffekseerRenderer::Renderer::ResetDrawVertexCount</a></div><div class="ttdeci">virtual void ResetDrawVertexCount()</div><div class="ttdoc">描画された頂点数をリセットする</div></div>
+<div class="ttc" id="aclass_effekseer_renderer_d_x11_1_1_renderer_html_a8f66736db14e58554f1b1059816876c6"><div class="ttname"><a href="class_effekseer_renderer_d_x11_1_1_renderer.html#a8f66736db14e58554f1b1059816876c6">EffekseerRendererDX11::Renderer::GetBackground</a></div><div class="ttdeci">virtual Effekseer::TextureData * GetBackground()=0</div><div class="ttdoc">背景を取得する</div></div>
+<div class="ttc" id="aclass_effekseer_renderer_1_1_renderer_html_ab3ee0a7191493dfd7e79e198ef4ee1a2"><div class="ttname"><a href="class_effekseer_renderer_1_1_renderer.html#ab3ee0a7191493dfd7e79e198ef4ee1a2">EffekseerRenderer::Renderer::DeleteProxyTexture</a></div><div class="ttdeci">virtual void DeleteProxyTexture(Effekseer::TextureData *data)</div><div class="ttdoc">代替のテクスチャを削除する</div><div class="ttdef"><b>Definition:</b> EffekseerRendererDX11.h:422</div></div>
+<div class="ttc" id="aclass_effekseer_renderer_1_1_renderer_html_af327aaf794973aab5ad0ba807633c1a7"><div class="ttname"><a href="class_effekseer_renderer_1_1_renderer.html#af327aaf794973aab5ad0ba807633c1a7">EffekseerRenderer::Renderer::GetDrawVertexCount</a></div><div class="ttdeci">virtual int32_t GetDrawVertexCount() const</div><div class="ttdoc">描画された頂点数をリセットする</div></div>
+<div class="ttc" id="aclass_effekseer_renderer_1_1_renderer_html_a8da94391eb26a2bd04830e4d7fcd0bd0"><div class="ttname"><a href="class_effekseer_renderer_1_1_renderer.html#a8da94391eb26a2bd04830e4d7fcd0bd0">EffekseerRenderer::Renderer::Destroy</a></div><div class="ttdeci">virtual void Destroy()=0</div><div class="ttdoc">このインスタンスを破棄する。</div></div>
+<div class="ttc" id="aclass_effekseer_renderer_1_1_renderer_html_aa2e49f62828f807d76e4b6d1dbd4b2fd"><div class="ttname"><a href="class_effekseer_renderer_1_1_renderer.html#aa2e49f62828f807d76e4b6d1dbd4b2fd">EffekseerRenderer::Renderer::SetTime</a></div><div class="ttdeci">virtual void SetTime(float time)</div><div class="ttdoc">現在の時間を設定する。(秒)</div></div>
+<div class="ttc" id="aclass_effekseer_renderer_1_1_renderer_html_a548c9d6166ccd7df00b5679ef6a68583"><div class="ttname"><a href="class_effekseer_renderer_1_1_renderer.html#a548c9d6166ccd7df00b5679ef6a68583">EffekseerRenderer::Renderer::GetCameraMatrix</a></div><div class="ttdeci">virtual ::Effekseer::Matrix44 GetCameraMatrix() const</div><div class="ttdoc">Get a camera matrix</div></div>
+<div class="ttc" id="aclass_effekseer_renderer_1_1_renderer_html_ae82ec3adcc94286216e4d7f0a30700d8"><div class="ttname"><a href="class_effekseer_renderer_1_1_renderer.html#ae82ec3adcc94286216e4d7f0a30700d8">EffekseerRenderer::Renderer::GetDrawCallCount</a></div><div class="ttdeci">virtual int32_t GetDrawCallCount() const</div><div class="ttdoc">ドローコールの回数を取得する</div></div>
+<div class="ttc" id="aclass_effekseer_renderer_1_1_renderer_html_acba501067fa983257e95f0b31a7ce83e"><div class="ttname"><a href="class_effekseer_renderer_1_1_renderer.html#acba501067fa983257e95f0b31a7ce83e">EffekseerRenderer::Renderer::GetBackgroundTextureUVStyle</a></div><div class="ttdeci">virtual UVStyle GetBackgroundTextureUVStyle() const</div><div class="ttdoc">パーティクルを描画するときの背景のUVの状態を取得する。</div></div>
+<div class="ttc" id="aclass_effekseer_1_1_i_reference_html"><div class="ttname"><a href="class_effekseer_1_1_i_reference.html">Effekseer::IReference</a></div><div class="ttdoc">参照カウンタのインターフェース</div><div class="ttdef"><b>Definition:</b> Effekseer.h:477</div></div>
+<div class="ttc" id="aclass_effekseer_renderer_1_1_renderer_html_a3d288089bbdb722b74080d25c022c670"><div class="ttname"><a href="class_effekseer_renderer_1_1_renderer.html#a3d288089bbdb722b74080d25c022c670">EffekseerRenderer::Renderer::ResetDrawCallCount</a></div><div class="ttdeci">virtual void ResetDrawCallCount()</div><div class="ttdoc">ドローコールの回数をリセットする</div></div>
+<div class="ttc" id="aclass_effekseer_renderer_1_1_renderer_html_a641fe5476d6c0a6ca2d347771ee8f154"><div class="ttname"><a href="class_effekseer_renderer_1_1_renderer.html#a641fe5476d6c0a6ca2d347771ee8f154">EffekseerRenderer::Renderer::GetCameraFrontDirection</a></div><div class="ttdeci">virtual ::Effekseer::Vector3D GetCameraFrontDirection() const</div><div class="ttdoc">Get a front direction of camera</div></div>
+<div class="ttc" id="aclass_effekseer_renderer_d_x11_1_1_renderer_html"><div class="ttname"><a href="class_effekseer_renderer_d_x11_1_1_renderer.html">EffekseerRendererDX11::Renderer</a></div><div class="ttdoc">描画クラス</div><div class="ttdef"><b>Definition:</b> EffekseerRendererDX11.h:467</div></div>
+<div class="ttc" id="aclass_effekseer_renderer_1_1_renderer_html_affe050ff8853f2aa3dbd534a51d2c1f0"><div class="ttname"><a href="class_effekseer_renderer_1_1_renderer.html#affe050ff8853f2aa3dbd534a51d2c1f0">EffekseerRenderer::Renderer::CreateProxyTexture</a></div><div class="ttdeci">virtual Effekseer::TextureData * CreateProxyTexture(ProxyTextureType type)</div><div class="ttdoc">代替のテクスチャを生成する</div><div class="ttdef"><b>Definition:</b> EffekseerRendererDX11.h:415</div></div>
+<div class="ttc" id="aclass_effekseer_renderer_1_1_renderer_html_a2cfdedb66330dc2c760cc330f202b12d"><div class="ttname"><a href="class_effekseer_renderer_1_1_renderer.html#a2cfdedb66330dc2c760cc330f202b12d">EffekseerRenderer::Renderer::GetCameraProjectionMatrix</a></div><div class="ttdeci">virtual ::Effekseer::Matrix44 GetCameraProjectionMatrix() const</div><div class="ttdoc">Get a camera projection matrix</div></div>
+<div class="ttc" id="astruct_effekseer_1_1_model_1_1_vertex_with_index_html"><div class="ttname"><a href="struct_effekseer_1_1_model_1_1_vertex_with_index.html">Effekseer::Model::VertexWithIndex</a></div><div class="ttdef"><b>Definition:</b> Effekseer.h:3352</div></div>
+<div class="ttc" id="aclass_effekseer_1_1_model_html"><div class="ttname"><a href="class_effekseer_1_1_model.html">Effekseer::Model</a></div><div class="ttdoc">モデルクラス</div><div class="ttdef"><b>Definition:</b> Effekseer.h:3337</div></div>
+<div class="ttc" id="aclass_effekseer_renderer_1_1_renderer_html_ab5ae5a023073ea51d32f11455147e77c"><div class="ttname"><a href="class_effekseer_renderer_1_1_renderer.html#ab5ae5a023073ea51d32f11455147e77c">EffekseerRenderer::Renderer::SetLightColor</a></div><div class="ttdeci">virtual void SetLightColor(const ::Effekseer::Color &amp;color)</div><div class="ttdoc">Specify the color of light</div></div>
+<div class="ttc" id="aclass_effekseer_renderer_1_1_renderer_html_a38cff31386fce6fe0122a4ac5804fd8f"><div class="ttname"><a href="class_effekseer_renderer_1_1_renderer.html#a38cff31386fce6fe0122a4ac5804fd8f">EffekseerRenderer::Renderer::CreateTrackRenderer</a></div><div class="ttdeci">virtual ::Effekseer::TrackRenderer * CreateTrackRenderer()=0</div><div class="ttdoc">軌跡レンダラーを生成する。</div></div>
+<div class="ttc" id="aclass_effekseer_renderer_1_1_renderer_html_ae5de7d17805ffde6d6537d10db0cbfce"><div class="ttname"><a href="class_effekseer_renderer_1_1_renderer.html#ae5de7d17805ffde6d6537d10db0cbfce">EffekseerRenderer::Renderer::SetLightAmbientColor</a></div><div class="ttdeci">virtual void SetLightAmbientColor(const ::Effekseer::Color &amp;color)</div><div class="ttdoc">Specify the color of ambient</div></div>
+<div class="ttc" id="aclass_effekseer_renderer_1_1_renderer_html_a034ae02dc737f39731c46f9aee4e88e6"><div class="ttname"><a href="class_effekseer_renderer_1_1_renderer.html#a034ae02dc737f39731c46f9aee4e88e6">EffekseerRenderer::Renderer::GetImpl</a></div><div class="ttdeci">Impl * GetImpl()</div><div class="ttdoc">only for Effekseer backend developer. Effekseer User doesn't need it.</div></div>
+<div class="ttc" id="aclass_effekseer_renderer_1_1_renderer_html_a0c07ec72d693145bc73fe972fc6f1a28"><div class="ttname"><a href="class_effekseer_renderer_1_1_renderer.html#a0c07ec72d693145bc73fe972fc6f1a28">EffekseerRenderer::Renderer::SetTextureUVStyle</a></div><div class="ttdeci">virtual void SetTextureUVStyle(UVStyle style)</div><div class="ttdoc">パーティクルを描画するときのUVの状態を設定する。</div></div>
+<div class="ttc" id="aclass_effekseer_renderer_1_1_renderer_html_a8ea27cde6c5d6c5d5b3b6dc676c40a5f"><div class="ttname"><a href="class_effekseer_renderer_1_1_renderer.html#a8ea27cde6c5d6c5d5b3b6dc676c40a5f">EffekseerRenderer::Renderer::SetCameraMatrix</a></div><div class="ttdeci">virtual void SetCameraMatrix(const ::Effekseer::Matrix44 &amp;mat)</div><div class="ttdoc">Set a camera matrix</div></div>
+<div class="ttc" id="aclass_effekseer_renderer_1_1_renderer_html_a229d0aca027c72e6736db487efbbddeb"><div class="ttname"><a href="class_effekseer_renderer_1_1_renderer.html#a229d0aca027c72e6736db487efbbddeb">EffekseerRenderer::Renderer::ResetRenderState</a></div><div class="ttdeci">virtual void ResetRenderState()=0</div><div class="ttdoc">レンダーステートを強制的にリセットする。</div></div>
+<div class="ttc" id="aclass_effekseer_1_1_texture_loader_html"><div class="ttname"><a href="class_effekseer_1_1_texture_loader.html">Effekseer::TextureLoader</a></div><div class="ttdoc">テクスチャ読み込み破棄関数指定クラス</div><div class="ttdef"><b>Definition:</b> Effekseer.h:3105</div></div>
+<div class="ttc" id="aclass_effekseer_renderer_1_1_renderer_html_a4b024c2ce7b806c71c4746f9b11b4d78"><div class="ttname"><a href="class_effekseer_renderer_1_1_renderer.html#a4b024c2ce7b806c71c4746f9b11b4d78">EffekseerRenderer::Renderer::SetRenderMode</a></div><div class="ttdeci">virtual void SetRenderMode(Effekseer::RenderMode renderMode)</div><div class="ttdoc">描画モードを設定する。</div></div>
+<div class="ttc" id="aclass_effekseer_renderer_1_1_renderer_html"><div class="ttname"><a href="class_effekseer_renderer_1_1_renderer.html">EffekseerRenderer::Renderer</a></div><div class="ttdef"><b>Definition:</b> EffekseerRendererDX9.h:121</div></div>
+<div class="ttc" id="aclass_effekseer_renderer_1_1_renderer_html_a13e29065eaca81d5191d9bad1421c408"><div class="ttname"><a href="class_effekseer_renderer_1_1_renderer.html#a13e29065eaca81d5191d9bad1421c408">EffekseerRenderer::Renderer::CreateTextureLoader</a></div><div class="ttdeci">virtual ::Effekseer::TextureLoader * CreateTextureLoader(::Effekseer::FileInterface *fileInterface=NULL)=0</div><div class="ttdoc">標準のテクスチャ読込クラスを生成する。</div></div>
+<div class="ttc" id="aclass_effekseer_renderer_1_1_renderer_html_a79aa204f1344347d8e111432d6d5bf5f"><div class="ttname"><a href="class_effekseer_renderer_1_1_renderer.html#a79aa204f1344347d8e111432d6d5bf5f">EffekseerRenderer::Renderer::BeginRendering</a></div><div class="ttdeci">virtual bool BeginRendering()=0</div><div class="ttdoc">描画を開始する時に実行する。</div></div>
+<div class="ttc" id="aclass_effekseer_renderer_1_1_renderer_html_add722e87b0607aecc0038ecaf43438ee"><div class="ttname"><a href="class_effekseer_renderer_1_1_renderer.html#add722e87b0607aecc0038ecaf43438ee">EffekseerRenderer::Renderer::SetProjectionMatrix</a></div><div class="ttdeci">virtual void SetProjectionMatrix(const ::Effekseer::Matrix44 &amp;mat)</div><div class="ttdoc">Set a projection matrix</div></div>
+<div class="ttc" id="aclass_effekseer_renderer_d_x11_1_1_renderer_html_a98baf6e5f7093a606214ea93912f2099"><div class="ttname"><a href="class_effekseer_renderer_d_x11_1_1_renderer.html#a98baf6e5f7093a606214ea93912f2099">EffekseerRendererDX11::Renderer::Create</a></div><div class="ttdeci">static Renderer * Create(ID3D11Device *device, ID3D11DeviceContext *context, int32_t squareMaxCount, D3D11_COMPARISON_FUNC depthFunc=D3D11_COMPARISON_LESS_EQUAL, bool isMSAAEnabled=false)</div><div class="ttdoc">インスタンスを生成する。</div></div>
+<div class="ttc" id="aclass_effekseer_renderer_1_1_renderer_html_a2b276d37cb72dbff309701463674d53a"><div class="ttname"><a href="class_effekseer_renderer_1_1_renderer.html#a2b276d37cb72dbff309701463674d53a">EffekseerRenderer::Renderer::GetTextureUVStyle</a></div><div class="ttdeci">virtual UVStyle GetTextureUVStyle() const</div><div class="ttdoc">パーティクルを描画するときのUVの状態を取得する。</div></div>
+<div class="ttc" id="aclass_effekseer_renderer_1_1_renderer_html_ab35779830c25992af7a9a9d53423f817"><div class="ttname"><a href="class_effekseer_renderer_1_1_renderer.html#ab35779830c25992af7a9a9d53423f817">EffekseerRenderer::Renderer::CreateModelLoader</a></div><div class="ttdeci">virtual ::Effekseer::ModelLoader * CreateModelLoader(::Effekseer::FileInterface *fileInterface=NULL)=0</div><div class="ttdoc">標準のモデル読込クラスを生成する。</div></div>
+<div class="ttc" id="aclass_effekseer_renderer_1_1_renderer_html_ab2b8c4e48288f3ad20d6553fe11be1ef"><div class="ttname"><a href="class_effekseer_renderer_1_1_renderer.html#ab2b8c4e48288f3ad20d6553fe11be1ef">EffekseerRenderer::Renderer::GetProjectionMatrix</a></div><div class="ttdeci">virtual ::Effekseer::Matrix44 GetProjectionMatrix() const</div><div class="ttdoc">Get a projection matrix</div></div>
+<div class="ttc" id="aclass_effekseer_1_1_model_loader_html"><div class="ttname"><a href="class_effekseer_1_1_model_loader.html">Effekseer::ModelLoader</a></div><div class="ttdoc">モデル読み込み破棄関数指定クラス</div><div class="ttdef"><b>Definition:</b> Effekseer.h:3184</div></div>
+<div class="ttc" id="aclass_effekseer_renderer_1_1_renderer_html_aaa6df6f62aead71652bdeb596d0a7ef4"><div class="ttname"><a href="class_effekseer_renderer_1_1_renderer.html#aaa6df6f62aead71652bdeb596d0a7ef4">EffekseerRenderer::Renderer::EndRendering</a></div><div class="ttdeci">virtual bool EndRendering()=0</div><div class="ttdoc">描画を終了する時に実行する。</div></div>
+<div class="ttc" id="aclass_effekseer_renderer_1_1_renderer_html_a9a37cc56ea9a76a2aaf66fb3c38310dd"><div class="ttname"><a href="class_effekseer_renderer_1_1_renderer.html#a9a37cc56ea9a76a2aaf66fb3c38310dd">EffekseerRenderer::Renderer::SetLightDirection</a></div><div class="ttdeci">virtual void SetLightDirection(const ::Effekseer::Vector3D &amp;direction)</div><div class="ttdoc">Specifiy the direction of light</div></div>
+<div class="ttc" id="aclass_effekseer_renderer_1_1_command_list_html"><div class="ttname"><a href="class_effekseer_renderer_1_1_command_list.html">EffekseerRenderer::CommandList</a></div><div class="ttdef"><b>Definition:</b> EffekseerRendererDX9.h:100</div></div>
+<div class="ttc" id="aclass_effekseer_renderer_d_x11_1_1_model_html"><div class="ttname"><a href="class_effekseer_renderer_d_x11_1_1_model.html">EffekseerRendererDX11::Model</a></div><div class="ttdoc">モデル</div><div class="ttdef"><b>Definition:</b> EffekseerRendererDX11.h:515</div></div>
+<div class="ttc" id="aclass_effekseer_renderer_1_1_renderer_html_ac6de8a0c0d65c03d3242ccfc9946c91c"><div class="ttname"><a href="class_effekseer_renderer_1_1_renderer.html#ac6de8a0c0d65c03d3242ccfc9946c91c">EffekseerRenderer::Renderer::SetRestorationOfStatesFlag</a></div><div class="ttdeci">virtual void SetRestorationOfStatesFlag(bool flag)=0</div><div class="ttdoc">ステートを復帰するかどうかのフラグを設定する。</div></div>
+<div class="ttc" id="aclass_effekseer_renderer_1_1_renderer_html_a5cf709d5b02e229f94efeec1e08951c4"><div class="ttname"><a href="class_effekseer_renderer_1_1_renderer.html#a5cf709d5b02e229f94efeec1e08951c4">EffekseerRenderer::Renderer::OnLostDevice</a></div><div class="ttdeci">virtual void OnLostDevice()=0</div><div class="ttdoc">デバイスロストが発生した時に実行する。</div></div>
+<div class="ttc" id="aclass_effekseer_renderer_1_1_renderer_html_a2a4e579c8c8b6e368e37a854cbf4c0ec"><div class="ttname"><a href="class_effekseer_renderer_1_1_renderer.html#a2a4e579c8c8b6e368e37a854cbf4c0ec">EffekseerRenderer::Renderer::OnResetDevice</a></div><div class="ttdeci">virtual void OnResetDevice()=0</div><div class="ttdoc">デバイスがリセットされた時に実行する。</div></div>
+<div class="ttc" id="aclass_effekseer_renderer_1_1_renderer_html_a06f62ae5e57834d44f2b29d52879bfa2"><div class="ttname"><a href="class_effekseer_renderer_1_1_renderer.html#a06f62ae5e57834d44f2b29d52879bfa2">EffekseerRenderer::Renderer::GetLightColor</a></div><div class="ttdeci">virtual const ::Effekseer::Color &amp; GetLightColor() const</div><div class="ttdoc">Get the color of light</div></div>
+<div class="ttc" id="aclass_effekseer_renderer_1_1_renderer_html_a7cbbeb73fa35b6cf356fcef7499301fb"><div class="ttname"><a href="class_effekseer_renderer_1_1_renderer.html#a7cbbeb73fa35b6cf356fcef7499301fb">EffekseerRenderer::Renderer::CreateModelRenderer</a></div><div class="ttdeci">virtual ::Effekseer::ModelRenderer * CreateModelRenderer()=0</div><div class="ttdoc">モデルレンダラーを生成する。</div></div>
+<div class="ttc" id="aclass_effekseer_renderer_1_1_single_frame_memory_pool_html_aeb3aa2590fb2f694f16bcf575d7fbe26"><div class="ttname"><a href="class_effekseer_renderer_1_1_single_frame_memory_pool.html#aeb3aa2590fb2f694f16bcf575d7fbe26">EffekseerRenderer::SingleFrameMemoryPool::NewFrame</a></div><div class="ttdeci">virtual void NewFrame()</div><div class="ttdoc">新規フレームが始ったことを通知する。</div><div class="ttdef"><b>Definition:</b> EffekseerRendererDX11.h:118</div></div>
+<div class="ttc" id="aclass_effekseer_renderer_1_1_renderer_html_ac26660d4eb3354ab44fcf296eba2bd84"><div class="ttname"><a href="class_effekseer_renderer_1_1_renderer.html#ac26660d4eb3354ab44fcf296eba2bd84">EffekseerRenderer::Renderer::GetLightDirection</a></div><div class="ttdeci">virtual ::Effekseer::Vector3D GetLightDirection() const</div><div class="ttdoc">Get the direction of light</div></div>
+<div class="ttc" id="aclass_effekseer_renderer_1_1_renderer_html_a61e516423549d49254f1f66f1ef7f9aa"><div class="ttname"><a href="class_effekseer_renderer_1_1_renderer.html#a61e516423549d49254f1f66f1ef7f9aa">EffekseerRenderer::Renderer::SetBackgroundTextureUVStyle</a></div><div class="ttdeci">virtual void SetBackgroundTextureUVStyle(UVStyle style)</div><div class="ttdoc">パーティクルを描画するときの背景のUVの状態を設定する。</div></div>
+<div class="ttc" id="aclass_effekseer_renderer_1_1_renderer_html_a8806b5a83c5ea73e09662f4a0869f8f0"><div class="ttname"><a href="class_effekseer_renderer_1_1_renderer.html#a8806b5a83c5ea73e09662f4a0869f8f0">EffekseerRenderer::Renderer::SetDistortingCallback</a></div><div class="ttdeci">virtual void SetDistortingCallback(DistortingCallback *callback)=0</div><div class="ttdoc">背景を歪ませるエフェクトが描画される前に呼ばれるコールバックを設定する。</div></div>
+<div class="ttc" id="aclass_effekseer_renderer_1_1_renderer_html_aafc04e85df972cb9fdd02eeefd9c83bb"><div class="ttname"><a href="class_effekseer_renderer_1_1_renderer.html#aafc04e85df972cb9fdd02eeefd9c83bb">EffekseerRenderer::Renderer::SetBackgroundTexture</a></div><div class="ttdeci">virtual void SetBackgroundTexture(::Effekseer::TextureData *textureData)</div><div class="ttdoc">背景のテクスチャを設定する。</div></div>
+<div class="ttc" id="aclass_effekseer_renderer_d_x11_1_1_renderer_html_a407db411645fe00cec1622c7a79f5aac"><div class="ttname"><a href="class_effekseer_renderer_d_x11_1_1_renderer.html#a407db411645fe00cec1622c7a79f5aac">EffekseerRendererDX11::Renderer::SetBackground</a></div><div class="ttdeci">virtual void SetBackground(ID3D11ShaderResourceView *background)=0</div><div class="ttdoc">背景を設定する</div></div>
+<div class="ttc" id="aclass_effekseer_renderer_1_1_renderer_html_ac935eb524bad5cec3630e1975b3da11a"><div class="ttname"><a href="class_effekseer_renderer_1_1_renderer.html#ac935eb524bad5cec3630e1975b3da11a">EffekseerRenderer::Renderer::GetCameraPosition</a></div><div class="ttdeci">virtual ::Effekseer::Vector3D GetCameraPosition() const</div><div class="ttdoc">Get a position of camera</div></div>
+<div class="ttc" id="aclass_effekseer_renderer_d_x11_1_1_model_html_a08a547400473569db98fd9a5ff2f5f7f"><div class="ttname"><a href="class_effekseer_renderer_d_x11_1_1_model.html#a08a547400473569db98fd9a5ff2f5f7f">EffekseerRendererDX11::Model::~Model</a></div><div class="ttdeci">virtual ~Model()</div><div class="ttdoc">デストラクタ</div><div class="ttdef"><b>Definition:</b> EffekseerRendererDX11.h:560</div></div>
+<div class="ttc" id="aclass_effekseer_renderer_1_1_renderer_html_aabd4cd7b57216148b6995a83ea1942fd"><div class="ttname"><a href="class_effekseer_renderer_1_1_renderer.html#aabd4cd7b57216148b6995a83ea1942fd">EffekseerRenderer::Renderer::CreateMaterialLoader</a></div><div class="ttdeci">virtual ::Effekseer::MaterialLoader * CreateMaterialLoader(::Effekseer::FileInterface *fileInterface=nullptr)=0</div><div class="ttdoc">標準のマテリアル読込クラスを生成する。</div></div>
+<div class="ttc" id="aclass_effekseer_renderer_1_1_renderer_html_a10a3db7cae35d41ec281826d79025294"><div class="ttname"><a href="class_effekseer_renderer_1_1_renderer.html#a10a3db7cae35d41ec281826d79025294">EffekseerRenderer::Renderer::GetLightAmbientColor</a></div><div class="ttdeci">virtual const ::Effekseer::Color &amp; GetLightAmbientColor() const</div><div class="ttdoc">Get the color of ambient</div></div>
+<div class="ttc" id="aclass_effekseer_renderer_1_1_renderer_html_a84dec1c70cab5984ce151753b5c9bcb9"><div class="ttname"><a href="class_effekseer_renderer_1_1_renderer.html#a84dec1c70cab5984ce151753b5c9bcb9">EffekseerRenderer::Renderer::CreateRingRenderer</a></div><div class="ttdeci">virtual ::Effekseer::RingRenderer * CreateRingRenderer()=0</div><div class="ttdoc">リングレンダラーを生成する。</div></div>
+<div class="ttc" id="aclass_effekseer_renderer_1_1_renderer_html_af4db92a0262062bfcc8f3f2334e5a168"><div class="ttname"><a href="class_effekseer_renderer_1_1_renderer.html#af4db92a0262062bfcc8f3f2334e5a168">EffekseerRenderer::Renderer::GetDistortingCallback</a></div><div class="ttdeci">virtual DistortingCallback * GetDistortingCallback()=0</div><div class="ttdoc">背景を歪ませるエフェクトが描画される前に呼ばれるコールバックを取得する。</div></div>
+<div class="ttc" id="aclass_effekseer_renderer_1_1_renderer_html_abecf62202fe3d54f4edf6c43d701188b"><div class="ttname"><a href="class_effekseer_renderer_1_1_renderer.html#abecf62202fe3d54f4edf6c43d701188b">EffekseerRenderer::Renderer::CreateSpriteRenderer</a></div><div class="ttdeci">virtual ::Effekseer::SpriteRenderer * CreateSpriteRenderer()=0</div><div class="ttdoc">スプライトレンダラーを生成する。</div></div>
+<div class="ttc" id="astruct_effekseer_1_1_texture_data_html"><div class="ttname"><a href="struct_effekseer_1_1_texture_data.html">Effekseer::TextureData</a></div><div class="ttdoc">テクスチャデータ</div><div class="ttdef"><b>Definition:</b> Effekseer.h:602</div></div>
+<div class="ttc" id="aclass_effekseer_renderer_1_1_renderer_html_af30b6ab25e7c03a3f70656c954e8db09"><div class="ttname"><a href="class_effekseer_renderer_1_1_renderer.html#af30b6ab25e7c03a3f70656c954e8db09">EffekseerRenderer::Renderer::GetSquareMaxCount</a></div><div class="ttdeci">virtual int32_t GetSquareMaxCount() const =0</div><div class="ttdoc">最大描画スプライト数を取得する。</div></div>
+<div class="ttc" id="astruct_effekseer_renderer_d_x11_1_1_model_1_1_internal_model_html"><div class="ttname"><a href="struct_effekseer_renderer_d_x11_1_1_model_1_1_internal_model.html">EffekseerRendererDX11::Model::InternalModel</a></div><div class="ttdef"><b>Definition:</b> EffekseerRendererDX11.h:522</div></div>
+<div class="ttc" id="aclass_effekseer_renderer_1_1_renderer_html_ae3ac5bddc5c5442790e8f1587eb9f125"><div class="ttname"><a href="class_effekseer_renderer_1_1_renderer.html#ae3ac5bddc5c5442790e8f1587eb9f125">EffekseerRenderer::Renderer::GetTime</a></div><div class="ttdeci">virtual float GetTime() const</div><div class="ttdoc">現在の時間を取得する。(秒)</div></div>
+<div class="ttc" id="aclass_effekseer_renderer_1_1_renderer_html_ac65157c02f8936e054c2525e4722a4f7"><div class="ttname"><a href="class_effekseer_renderer_1_1_renderer.html#ac65157c02f8936e054c2525e4722a4f7">EffekseerRenderer::Renderer::CreateRibbonRenderer</a></div><div class="ttdeci">virtual ::Effekseer::RibbonRenderer * CreateRibbonRenderer()=0</div><div class="ttdoc">リボンレンダラーを生成する。</div></div>
+<div class="ttc" id="aclass_effekseer_renderer_1_1_renderer_html_a4a24d4a62f472b799b648b595e3c3c30"><div class="ttname"><a href="class_effekseer_renderer_1_1_renderer.html#a4a24d4a62f472b799b648b595e3c3c30">EffekseerRenderer::Renderer::SetCommandList</a></div><div class="ttdeci">virtual void SetCommandList(CommandList *commandList)</div><div class="ttdoc">描画に使用するコマンドリストを設定する。この関数はDirectX9、DirectX11、OpenGL以外で使用できる。</div><div class="ttdef"><b>Definition:</b> EffekseerRendererDX11.h:398</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+2020年08月16日(日) 18時48分57秒作成 - Effekseer / 構成:  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>
