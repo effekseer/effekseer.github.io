@@ -103,6 +103,17 @@
 <li class="toctree-l4"><a class="reference internal" href="#optimization">Optimization</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="#k-20-08-16">1.52k（20/08/16）</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#common">Common</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#tools">Tools</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#unity">Unity</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#unrealengine-4">UnrealEngine 4</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#runtime">Runtime</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#dx-library">DX Library.</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cocos2d-x">Cocos2d-x</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#webgl">WebGL</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="#j-20-08-02">1.52j（20/08/02）</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#i-20-07-31">1.52i (20/07/31)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#h-20-07-09">1.52h（20/07/09）</a></li>
@@ -246,6 +257,68 @@
 <div class="section" id="optimization">
 <h3>Optimization<a class="headerlink" href="#optimization" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>Implement multithreaded update.</p>
+</div>
+</div>
+<div class="section" id="k-20-08-16">
+<h2>1.52k（20/08/16）<a class="headerlink" href="#k-20-08-16" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<div class="section" id="common">
+<h3>Common<a class="headerlink" href="#common" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<ul class="simple">
+<li><p>Fixed a bug where the effect is not displayed when render method is ribbons, the number of divisions is more than 2, the magnification is 0 for one particle.</p></li>
+<li><p>Moving the timing of sending the model to the GPU before rendering (to make it easier to process in the rendering thread)</p></li>
+</ul>
+</div>
+<div class="section" id="tools">
+<h3>Tools<a class="headerlink" href="#tools" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<ul class="simple">
+<li><p>Fixed omissions in the English version.</p></li>
+<li><p>Fixed a bug where the app crashed when you don't have file permissions.</p></li>
+<li><p>Fixed a bug that prevented creation of shader cache (x86 only)</p></li>
+</ul>
+</div>
+<div class="section" id="unity">
+<h3>Unity<a class="headerlink" href="#unity" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<ul class="simple">
+<li><p>Fixed a bug where effects would not play when switching emitters after playing an emitter in the Scene window.</p></li>
+<li><p>Fixed a bug that prevented material compilation if the material contains a reserved word</p></li>
+<li><p>Supports material wrapping and repeats</p></li>
+</ul>
+</div>
+<div class="section" id="unrealengine-4">
+<h3>UnrealEngine 4<a class="headerlink" href="#unrealengine-4" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<ul class="simple">
+<li><p>Fixed a bug where R and G of Texture Sample node were switched.</p></li>
+<li><p>Fixed a bug where a material compile error would occur under certain circumstances</p></li>
+<li><p>Fixed a bug where lighting parameters were not supported</p></li>
+<li><p>Fixed a bug that prevented re-importation.</p></li>
+<li><p>Fixed a bug where images of normals could not be loaded with materials.</p></li>
+<li><p>Supports material wrapping and repeats</p></li>
+</ul>
+</div>
+<div class="section" id="runtime">
+<h3>Runtime<a class="headerlink" href="#runtime" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<ul class="simple">
+<li><p>Fixed a bug that caused network reloads to behave strangely with multiple Manager classes</p></li>
+</ul>
+</div>
+<div class="section" id="dx-library">
+<h3>DX Library.<a class="headerlink" href="#dx-library" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<ul class="simple">
+<li><p>Fixed a bug that caused network reloads to behave strangely</p></li>
+</ul>
+</div>
+<div class="section" id="cocos2d-x">
+<h3>Cocos2d-x<a class="headerlink" href="#cocos2d-x" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<ul class="simple">
+<li><p>Changed to show a warning when non-squared images are loaded.</p></li>
+<li><p>Fixed a bug that did not support Android distortion.</p></li>
+</ul>
+</div>
+<div class="section" id="webgl">
+<h3>WebGL<a class="headerlink" href="#webgl" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<ul class="simple">
+<li><p>Change image.crossOrigin to use-credentials</p></li>
+</ul>
 </div>
 </div>
 <div class="section" id="j-20-08-02">

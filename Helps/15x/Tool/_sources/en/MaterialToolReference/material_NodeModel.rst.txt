@@ -26,11 +26,6 @@ Moves the UV coordinates of particles according to time and outputs them.
 You can enter UV coordinates, time, and movement speed.
 If the input is not connected, use the value of the property.
 
-- version 1.52k or later
-
-The UV from MovingUV is designed to loop between -16 and 16 + the UVs of the model.
-For example, the UV coordinate of 24 is 8.
-
 VertexNormal
 --------------------------------
 

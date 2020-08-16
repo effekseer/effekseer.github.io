@@ -24,6 +24,52 @@ Added a setting to change the mouse mapping to manipulate the viewport (you can 
 
 Implement multithreaded update.
 
+## 1.52k（20/08/16）
+
+### Common
+
+- Fixed a bug where the effect is not displayed when render method is ribbons, the number of divisions is more than 2, the magnification is 0 for one particle.
+- Moving the timing of sending the model to the GPU before rendering (to make it easier to process in the rendering thread)
+
+### Tools
+
+- Fixed omissions in the English version.
+- Fixed a bug where the app crashed when you don't have file permissions.
+- Fixed a bug that prevented creation of shader cache (x86 only)
+
+### Unity
+
+- Fixed a bug where effects would not play when switching emitters after playing an emitter in the Scene window.
+- Fixed a bug that prevented material compilation if the material contains a reserved word
+- Supports material wrapping and repeats
+
+### UnrealEngine 4
+
+- Fixed a bug where R and G of Texture Sample node were switched.
+- Fixed a bug where a material compile error would occur under certain circumstances
+- Fixed a bug where lighting parameters were not supported
+- Fixed a bug that prevented re-importation.
+- Fixed a bug where images of normals could not be loaded with materials.
+- Supports material wrapping and repeats
+
+### Runtime
+
+- Fixed a bug that caused network reloads to behave strangely with multiple Manager classes
+
+### DX Library.
+
+- Fixed a bug that caused network reloads to behave strangely
+
+### Cocos2d-x
+
+- Changed to show a warning when non-squared images are loaded.
+
+- Fixed a bug that did not support Android distortion.
+
+### WebGL
+
+- Change image.crossOrigin to use-credentials
+
 ## 1.52j（20/08/02）
 
 Fixed a bug where Bloom was behaving strangely in certain environments.
