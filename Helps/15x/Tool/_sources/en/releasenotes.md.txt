@@ -24,6 +24,12 @@ Added a setting to change the mouse mapping to manipulate the viewport (you can 
 
 Implement multithreaded update.
 
+## 1.52l（20/08/18）
+
+## Tools, Unity, Runtime, DXLib
+
+- Fixed a bug that caused a crash when playing an effect without setting a model file when a model was selected for rendering.
+
 ## 1.52k（20/08/16）
 
 ### Common
