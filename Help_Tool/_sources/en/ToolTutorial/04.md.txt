@@ -51,7 +51,7 @@ This means that you rotate 5 degrees per frame about the Z direction (front dire
 After inputting, you play the effect ... nothing changes!
 This is because in the initial setting of drawing by sprite, the sprite always faces the front even if the particle rotates.
 
-In the "Basic Render Settings" window, change the ```Configuration``` to ```Rotated Billboard```.
+In the "Render Settings" window, change the ```Configuration``` from ```Billboard``` to ```Rotated Billboard```.
 ```Rotated Billboard``` is a layout method in which the rectangular shape faces the front while the Z axis rotation is enable.
 
 <div align="center">
@@ -59,7 +59,7 @@ In the "Basic Render Settings" window, change the ```Configuration``` to ```Rota
 <p>Configuration</p>
 </div>
 
-When setting the  ```Configuration``` to ```Rotated Billboard```, you can see that the rectangle rotates about the Z direction (front direction).
+When setting the ```Rotated Billboard```, you can see that the rectangle rotates about the Z direction (front direction).
 
 <div align="center">
 <img src="../../img/Tutorial/04_rotate.gif">
