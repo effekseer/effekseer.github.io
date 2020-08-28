@@ -1,28 +1,21 @@
 ﻿# Release Notes
 
-## 1.6x（Next version）
+## 1.52m (20/08/28)
 
-### force field.
+### Common
 
-Add a lot of different force fields.
+- Fixed a bug that caused a crash when creating too many particles that exceeded the amount of memory allocated under certain conditions. 
 
-### UI.
+### UnrealEngine4
 
-Change the behavior of the docking panel
+- Fixed a bug that prevented the Clamp node from working properly.
+- Fixed a bug that caused a delay in drawing one frame.
+- Fixed a bug that could cause incorrect rotation.
 
-Changed to frameless window (Windows)
+### Runtime
 
-### Recording
-
-Added a recording size scaling factor to the recording function.
-
-### Options
-
-Added a setting to change the mouse mapping to manipulate the viewport (you can select Maya style, Blender style, etc.).
-
-### Optimization
-
-Implement multithreaded update.
+- Refreshed samples of culling
+- Fixed a bug where culling was not working properly.
 
 ## 1.52l（20/08/18）
 
@@ -443,3 +436,27 @@ Fixed a bug that random numbers overflowed. The random behavior may change.
 *   Fixed bug: Fixed erroneous operation of copy paste
 
 ## Previous changes are only japanese.
+
+## 1.6x（Next version）
+
+### force field.
+
+Add a lot of different force fields.
+
+### UI.
+
+Change the behavior of the docking panel
+
+Changed to frameless window (Windows)
+
+### Recording
+
+Added a recording size scaling factor to the recording function.
+
+### Options
+
+Added a setting to change the mouse mapping to manipulate the viewport (you can select Maya style, Blender style, etc.).
+
+### Optimization
+
+Implement multithreaded update.
