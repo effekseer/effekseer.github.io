@@ -1,5 +1,25 @@
 ﻿# Release Notes
 
+## 1.52n (20/10/23)
+
+### Cmmon
+
+- Fixed a bug where scaling was not applied to the cull size.
+- Fixed a bug where material normals was incorrect.
+
+### Tool
+
+- Fixed a bug where the original image of the recording behaved strangely
+- Changed to show a warning when connecting the normal and the normals in material.
+
+### Runtime
+
+- Fixed a bug that caused a crash when drawing a lot on DirectX12.
+
+### WebGL
+
+Fixed a bug where PremultiplyAlpha was not disabled.
+
 ## 1.52m (20/08/28)
 
 ### Common
@@ -436,27 +456,3 @@ Fixed a bug that random numbers overflowed. The random behavior may change.
 *   Fixed bug: Fixed erroneous operation of copy paste
 
 ## Previous changes are only japanese.
-
-## 1.6x（Next version）
-
-### force field.
-
-Add a lot of different force fields.
-
-### UI.
-
-Change the behavior of the docking panel
-
-Changed to frameless window (Windows)
-
-### Recording
-
-Added a recording size scaling factor to the recording function.
-
-### Options
-
-Added a setting to change the mouse mapping to manipulate the viewport (you can select Maya style, Blender style, etc.).
-
-### Optimization
-
-Implement multithreaded update.
