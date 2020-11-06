@@ -59,7 +59,7 @@ Search node
 If you enter a keyword in the menu with right-click, only the nodes that contain that keyword are displayed.
 Keyword is shown by mouse over.
 
-.. image:: ../../img/Reference/Material/menu_create_node_search_ja
+.. image:: ../../img/Reference/Material/menu_create_node_search_en.png
    :scale: 80%
    :align: center
 
