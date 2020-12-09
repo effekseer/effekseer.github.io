@@ -105,6 +105,7 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#universal-render-pipeline">Universal Render Pipeline</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#high-definition-render-pipeline">High Definition Render Pipeline</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#postprocessingstack-1-53-or-later">PostProcessingStack (1.53 or later)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#light-weight-universal-render-pipeline">Light Weight(Universal) Render Pipeline</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#mobile-environment">Mobile environment</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#network">Network</a></li>
@@ -283,6 +284,21 @@ Please remove comment out from <em>ScriptsExternal/EffekseerRendererHDRP.cs</em>
 <p><img alt="../_images/CustomPassVolumeAdd.png" src="../_images/CustomPassVolumeAdd.png" /></p>
 <p>You change <em>Injection Point</em> into <em>Before Post Process</em>.</p>
 <p><img alt="../_images/CustomPassVolumeInjectionPoint.png" src="../_images/CustomPassVolumeInjectionPoint.png" /></p>
+</div>
+<div class="section" id="postprocessingstack-1-53-or-later">
+<h2>PostProcessingStack (1.53 or later)<a class="headerlink" href="#postprocessingstack-1-53-or-later" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>Effekseer can be drawn as a PostProcessingStack post-process.</p>
+<p>Install PostProcessing and set the Post-Process Volume and Post-Process Layer.</p>
+<p><img alt="../_images/pps_install.png" src="../_images/pps_install.png" /></p>
+<p>From EffekseerSettings, turn RenderAsPostProcessingStack On.</p>
+<p><img alt="../_images/pps_settings.png" src="../_images/pps_settings.png" /></p>
+<p>Add the effect to the Post-Processing Volume. BeforeStack and AfterStack exists, basically choose BeforeStack.
+For more information, read the PostProcessingStack help.</p>
+<p><img alt="../_images/pps_ppv.png" src="../_images/pps_ppv.png" /></p>
+<p>Enable the effect.</p>
+<p><img alt="../_images/pps_make_enable.png" src="../_images/pps_make_enable.png" /></p>
+<p>You can change the drawing order from CustomEffectSorting because effects are drawn as a post-process.</p>
+<p><img alt="../_images/pps_sorting.png" src="../_images/pps_sorting.png" /></p>
 </div>
 <div class="section" id="light-weight-universal-render-pipeline">
 <h2>Light Weight(Universal) Render Pipeline<a class="headerlink" href="#light-weight-universal-render-pipeline" title="このヘッドラインへのパーマリンク">¶</a></h2>
