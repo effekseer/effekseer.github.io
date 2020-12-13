@@ -1,5 +1,34 @@
 ﻿# Release Notes
 
+## 1.53a (20/12/13)
+
+### Common
+
+- Removed glTF extension (because it was unmaintained and not implemented perfectly)
+- Fixed a bug where UV2 nodes were not working properly in OpenGL materials.
+- Fixed a bug where effects are not displayed with custom data 1 and 2 were set to all RGBA in OpenGL ES2.0 materials.
+- Fixed a bug where effects are not displayed  lighting in Metal materials.
+
+### Runtime
+
+- Added bat file to output x86 and x64.
+- Disabled OpenAL samples on Windows.
+
+### Unity.
+
+- Added the feature to draw effects in PostProcessingStack.
+- Fixed a bug where materials were disabled after upgrading Unity version.
+- Changed Mac binary to Hardened Runtime.
+
+### Cocos2d-x
+
+- Fixed a bug where images were not drawn correctly when mipmap was enabled in Metal environment.
+
+### UnrealEngine4
+
+- 4.26 support.
+- Changed to suppress the generation of extra materials.
+
 ## 1.52n (20/10/23)
 
 ### Cmmon
