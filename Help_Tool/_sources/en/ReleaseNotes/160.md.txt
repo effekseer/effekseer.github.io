@@ -1,0 +1,53 @@
+# 1.60
+
+## Common
+
+### Position
+
+Added a metho to move with a path
+
+### Scale
+
+Added FCurve(Single)
+
+### force field.
+
+Add a lot of different force fields.
+
+### Optimization
+
+Implement multithreaded update.
+
+### Procedual Model
+
+Added procedural models to the models and spawn method.
+
+### Easing
+
+Added many easing types.
+
+### Rendering
+
+Added many features to rendering
+
+Textures are now loaded as NoMipMaps when the file name includes _NoMip.
+
+## Tool
+
+### Packaging
+
+Added a feature to create a package.
+
+### UI.
+
+Change the behavior of the docking panel
+
+Changed to frameless window (Windows)
+
+### Recording
+
+Added a recording size scaling factor to the recording function.
+
+### Options
+
+Added a setting to change the mouse mapping to manipulate the viewport (you can select Maya style, Blender style, etc.).

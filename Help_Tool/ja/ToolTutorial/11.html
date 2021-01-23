@@ -1,30 +1,38 @@
 
 
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="ja" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="ja" > <!--<![endif]-->
+<html class="writer-html5" lang="ja" >
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
   
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
   <title>11. 3Dモデルを使おう！ &mdash; Effekseer Help  ドキュメント</title>
   
 
   
-  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+
   
   
 
   
-  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
         <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/language_data.js"></script>
         <script src="../../_static/js/three.min.js"></script>
         <script src="../../_static/js/effekseer.min.js"></script>
         <script src="../../_static/js/iframe.js"></script>
@@ -34,11 +42,6 @@
     <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
     
-
-  
-  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="検索" href="../../search.html" />
     <link rel="next" title="12. Fカーブで複雑な動きを指定しよう！" href="12.html" />
@@ -79,6 +82,7 @@
           
         </div>
 
+        
         <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           
             
@@ -122,6 +126,7 @@
             
           
         </div>
+        
       </div>
     </nav>
 
@@ -156,11 +161,13 @@
 
 
 
+
+
 <div role="navigation" aria-label="breadcrumbs navigation">
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="../../index.html">Docs</a> &raquo;</li>
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
         
           <li><a href="../index.html">Effekseer Help 日本語</a> &raquo;</li>
         
@@ -171,7 +178,7 @@
     
       <li class="wy-breadcrumbs-aside">
         
-            
+          
         
       </li>
     
@@ -224,13 +231,43 @@ mqoはMetasequoiaから出力できる形式です。</p>
 <p>スプライトと同じように、「描画」パネルから描画方法としてモデルを選択します。</p>
 <p>そして、Model/Sphere.mqoをモデルとして読み込みます。</p>
 <p>読み込んだ3Dモデルが表示されていることがわかります。</p>
-<div align="center">
+<p>不透明なオブジェクトならこれで問題ありませんが、光を当てたいときもあります。</p>
+<p>そのようなときは、描画共通パネルからマテリアルをライティングにします。</p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th align="left">ウインドウ</th>
+<th align="left">値の名称</th>
+<th align="left">値</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">描画</td>
+<td align="left">描画方法</td>
+<td align="left">モデル</td>
+</tr>
+<tr>
+<td align="left">描画</td>
+<td align="left"></td>
+<td align="left">Model/Sphere.mqo</td>
+</tr>
+<tr>
+<td align="left">描画</td>
+<td align="left">カリング</td>
+<td align="left">両面表示</td>
+</tr>
+<tr>
+<td align="left">描画共通</td>
+<td align="left">マテリアル</td>
+<td align="left">ライティング</td>
+</tr>
+</tbody>
+</table><div align="center">
 <img src="../../img/Tutorial/11/model.png">
 <p>モデル</p>
-</div><p>不透明なオブジェクトならこれで問題ありませんが、モデルの形に沿ってエフェクトを出したいときもあります。</p>
-<p>そのようなときは、描画パネルからライティングをオフにします。</p>
-<p>加えて画像を設定しましょう。
-さらに、UVスクロールも設定します。</p>
+</div><p>モデルの形に沿ってエフェクトを出したいときもあります。</p>
+<p>画像を設定し、さらに、UVスクロールも設定します。</p>
 <p>パラメーターは以下のようになります。</p>
 <table border="1" class="docutils">
 <thead>
@@ -253,13 +290,13 @@ mqoはMetasequoiaから出力できる形式です。</p>
 </tr>
 <tr>
 <td align="left">描画</td>
-<td align="left">ライティング</td>
-<td align="left">Off</td>
-</tr>
-<tr>
-<td align="left">描画</td>
 <td align="left">カリング</td>
 <td align="left">両面表示</td>
+</tr>
+<tr>
+<td align="left">描画共通</td>
+<td align="left">マテリアル</td>
+<td align="left">ライティング</td>
 </tr>
 <tr>
 <td align="left">描画共通</td>
@@ -376,29 +413,29 @@ Z書き込みがオフだと、3Dモデルが描画されなかったものと�
            
           </div>
           <footer>
-  
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="12.html" class="btn btn-neutral float-right" title="12. Fカーブで複雑な動きを指定しよう！" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="10.html" class="btn btn-neutral float-left" title="10.リボンと軌跡" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
+        <a href="12.html" class="btn btn-neutral float-right" title="12. Fカーブで複雑な動きを指定しよう！" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="10.html" class="btn btn-neutral float-left" title="10.リボンと軌跡" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
-  
 
   <hr/>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2019, Effekseer
+        &#169; Copyright 2019, Effekseer.
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
-
         </div>
       </div>
 
@@ -406,7 +443,6 @@ Z書き込みがオフだと、3Dモデルが描画されなかったものと�
 
   </div>
   
-
 
   <script type="text/javascript">
       jQuery(function () {

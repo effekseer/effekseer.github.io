@@ -63,18 +63,25 @@ Then we load ```Model/Sphere.fbx``` as a model.
 
 You can see that the loaded 3D model is shown.
 
+If an opaque object is rendered, there is no problem with this, but there are times when you want to light them up.
+
+In such a case, change the material into ```Lighting``` from ```Basic Render Settings``` panel.
+
+|Window|Value type|Value|
+|:----|:----|:----|
+|Render Settings|Render method|Model|
+|Render Settings||Model/Sphere.mqo|
+|Render Settings|Culling|Double-sided|
+|Basic Render Settings|Material|Lighting|
+
 <div align="center">
 <img src="../../img/Tutorial/11/model.png">
 <p>Model</p>
 </div>
 
-If an opaque object is rendered, there is no problem with this. 
-On the other hand, there are times when you want to put out effects along the shape of the model.
+There are times when you want to put out effects along the shape of the model.
 
-In such a case, turn off ```Lighting``` from ```Render Settings``` panel.
-
-In addition let's specify the image.
-We also specify Scroll for UV.
+Let's specify the image and we also specify Scroll for UV.
 
 The parameters are as follows.
 
@@ -82,8 +89,8 @@ The parameters are as follows.
 |:----|:----|:----|
 |Render Settings|Render method|Model|
 |Render Settings||Model/Sphere.mqo|
-|Render Settings|Lighting|Off|
 |Render Settings|Culling|Double-sided|
+|Basic Render Settings|Material|Lighting|
 |Basic Render Settings|Blend|Additive|
 |Basic Render Settings|Texture|Texture/Aurora.png|
 |Basic Render Settings|UV|Scroll|

@@ -1,30 +1,38 @@
 
 
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="ja" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="ja" > <!--<![endif]-->
+<html class="writer-html5" lang="ja" >
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
   
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
   <title>描画共通 &mdash; Effekseer Help  ドキュメント</title>
   
 
   
-  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+
   
   
 
   
-  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
         <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/language_data.js"></script>
         <script src="../../_static/js/three.min.js"></script>
         <script src="../../_static/js/effekseer.min.js"></script>
         <script src="../../_static/js/iframe.js"></script>
@@ -34,11 +42,6 @@
     <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
     
-
-  
-  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="検索" href="../../search.html" />
     <link rel="next" title="描画-スプライト" href="rendererSprite.html" />
@@ -79,6 +82,7 @@
           
         </div>
 
+        
         <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           
             
@@ -134,6 +138,7 @@
             
           
         </div>
+        
       </div>
     </nav>
 
@@ -168,11 +173,13 @@
 
 
 
+
+
 <div role="navigation" aria-label="breadcrumbs navigation">
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="../../index.html">Docs</a> &raquo;</li>
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
         
           <li><a href="../index.html">Effekseer Help 日本語</a> &raquo;</li>
         
@@ -183,7 +190,7 @@
     
       <li class="wy-breadcrumbs-aside">
         
-            
+          
         
       </li>
     
@@ -237,52 +244,60 @@
 <p>ユーザーが作成したマテリアルのファイルを表示に使用します。
 最も幅広い表現を実現できます。</p>
 <p>ボタンを押すとマテリアルのファイルを作成、編集できます。</p>
-<p>詳細はマテリアル(執筆中)を参照してください。</p>
+<p>詳細はマテリアルに関するリファレンスを参照してください。</p>
 <p>マテリアルのファイルにより、そのマテリアルに応じたパラメーターが増えることがあります。
 カスタムパラメーターには定数以外にもイージングやFカーブといった方法によりパラメーターを指定できます。
 カスタムパラメーターの表示される名称はマテリアルのファイルによって変わります。</p>
+<div class="section" id="id9">
+<h5>キャッシュ<a class="headerlink" href="#id9" title="このヘッドラインへのパーマリンク">¶</a></h5>
+<p>マテリアルの読み込みを早くするためや特定のプラットフォームでエフェクトを再生するために、マテリアルをコンパイルした形式で保存できます。
+そのファイルを生成するには、マテリアルを読み込んだ後、<code class="docutils literal notranslate"><span class="pre">キャッシュ生成</span></code> を押します。</p>
+<p>生成されたキャッシュをマテリアルファイルと同じディレクトリに配置すると読み込みが速くなります。
+一部のプラットフォームではキャッシュを使用しないとエフェクトを再生できません。
+Windowsでキャッシュを生成した後、キャッシュが存在する状態でMacでキャッシュを生成すると、WindowsでもMacでも使用できるキャッシュが生成されます。</p>
 <iframe src='../../Effects/viewer_ja.html#References/BasicRender/render_file.efkefc'></iframe></div>
 </div>
-<div class="section" id="id9">
-<h3>ブレンド<a class="headerlink" href="#id9" title="このヘッドラインへのパーマリンク">¶</a></h3>
+</div>
+<div class="section" id="id10">
+<h3>ブレンド<a class="headerlink" href="#id10" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>パーティクルの表示に適用されるアルファブレンドの方法を指定します。半透明、加算、減算といった既に描画された画像に対する合成の方法を指定します。</p>
 <p><img alt="../../_images/AlphaBlend1.png" src="../../_images/AlphaBlend1.png" /></p>
 </div>
-<div class="section" id="id10">
-<h3>フィルタ<a class="headerlink" href="#id10" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<div class="section" id="id11">
+<h3>フィルタ<a class="headerlink" href="#id11" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>パーティクルの表示に適用されるフィルタの方法を指定します。</p>
 </div>
-<div class="section" id="id11">
-<h3>深度書き込み<a class="headerlink" href="#id11" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<div class="section" id="id12">
+<h3>深度書き込み<a class="headerlink" href="#id12" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>パーティクルを表示するときに深度(奥行き)情報を書き込むか指定します。深度情報を書き込んだ後に、深度テストが有効になっているパーティクルを描画すると、そのパーティクルが奥にある場合、描画されなくなります。</p>
 </div>
-<div class="section" id="id12">
-<h3>深度テスト<a class="headerlink" href="#id12" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<div class="section" id="id13">
+<h3>深度テスト<a class="headerlink" href="#id13" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>深度テストが有効である場合、書き込まれている深度情報より奥にパーティクルが描画されなくなります。</p>
 </div>
-<div class="section" id="id13">
-<h3>フェードイン<a class="headerlink" href="#id13" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<div class="section" id="id14">
+<h3>フェードイン<a class="headerlink" href="#id14" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>パーティクルが表示されるときに、フェードインしつつ表示されるようにします。</p>
 </div>
-<div class="section" id="id14">
-<h3>フェードアウト<a class="headerlink" href="#id14" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<div class="section" id="id15">
+<h3>フェードアウト<a class="headerlink" href="#id15" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>パーティクルが消滅するときに、フェードアウトしつつ消滅するようにします。</p>
 <iframe src='../../Effects/viewer_ja.html#References/Render/fade_in_out.efkefc'></iframe></div>
 <div class="section" id="uv">
 <h3>UV<a class="headerlink" href="#uv" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>画像で、実際にパーティクルの表示に使用する範囲を指定します。
 使用される範囲は時間で変化させられるため、画像をアニメーションさせられます。 領域の指定に使用される数値の単位はピクセルです。</p>
-<div class="section" id="id15">
-<h4>アニメーション<a class="headerlink" href="#id15" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<div class="section" id="id16">
+<h4>アニメーション<a class="headerlink" href="#id16" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <p>アニメーションが連続して配置されている画像を元に、アニメーションを再生します。</p>
 <p><img alt="../../_images/renderCommon_uv_animation1.png" src="../../_images/renderCommon_uv_animation1.png" /></p>
-<div class="section" id="id16">
-<h5>開始時間<a class="headerlink" href="#id16" title="このヘッドラインへのパーマリンク">¶</a></h5>
+<div class="section" id="id17">
+<h5>開始時間<a class="headerlink" href="#id17" title="このヘッドラインへのパーマリンク">¶</a></h5>
 <p>再生を開始するアニメーションの時間を指定します。 例えば、4枚の画像で構成されるアニメーションで2枚目から再生できます。</p>
 </div>
 </div>
-<div class="section" id="id17">
-<h4>スクロール<a class="headerlink" href="#id17" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<div class="section" id="id18">
+<h4>スクロール<a class="headerlink" href="#id18" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <p>一定の速度でUVの範囲を移動させます。</p>
 <p><img alt="../../_images/renderCommon_uv_scroll1.png" src="../../_images/renderCommon_uv_scroll1.png" /></p>
 </div>
@@ -291,16 +306,16 @@
 <p>Fカーブを使用します。</p>
 </div>
 </div>
-<div class="section" id="id18">
-<h3>参照画像(UV)<a class="headerlink" href="#id18" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<div class="section" id="id19">
+<h3>参照画像(UV)<a class="headerlink" href="#id19" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>1つのパーティクルに異なる大きさの複数の画像が使用されることがあります。
 その場合、比率の基準となる解像度を画像を用いて指定することが出来ます。
 画像を指定せずに、128x128を基準にUVを指定することもできます。</p>
 <p>マテリアルを使用する場合、参照画像の番号はマテリアルの画像の優先度と一致します。</p>
 <p><img alt="../../_images/uv_referenced1.png" src="../../_images/uv_referenced1.png" /></p>
 </div>
-<div class="section" id="id19">
-<h3>色への影響<a class="headerlink" href="#id19" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<div class="section" id="id20">
+<h3>色への影響<a class="headerlink" href="#id20" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>親のパーティクルの色が子のパーティクルの色に影響を与えるか、を指定します。 影響を与える場合、親のパーティクルの色と子のパーティクルの色を掛け合わせた色が最終的な子のパーティクルの色になります。 「生成時のみ」を選択した場合、子のパーティクルが生成された時の親のパーティクルの色が常に適用されます。</p>
 <table><tbody><tr><td><p>なし</p>
 </td><td><p>生成時のみ</p>
@@ -314,29 +329,29 @@
            
           </div>
           <footer>
-  
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="rendererSprite.html" class="btn btn-neutral float-right" title="描画-スプライト" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="scale.html" class="btn btn-neutral float-left" title="拡大" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
+        <a href="rendererSprite.html" class="btn btn-neutral float-right" title="描画-スプライト" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="scale.html" class="btn btn-neutral float-left" title="拡大" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
-  
 
   <hr/>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2019, Effekseer
+        &#169; Copyright 2019, Effekseer.
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
-
         </div>
       </div>
 
@@ -344,7 +359,6 @@
 
   </div>
   
-
 
   <script type="text/javascript">
       jQuery(function () {
