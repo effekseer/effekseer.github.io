@@ -144,11 +144,11 @@ Specify the time of animation to start playing. For example, you can play from t
 
 Move the UV range at a constant speed.
 
+![](../../img/Reference/renderCommon_uv_scroll.png)
+
 #### F-Curve
 
 Use the F-Curve window to control the UV by defining automation curves.
-
-![](../../img/Reference/renderCommon_uv_scroll.png)
 
 ### Referenced(UV)
 
