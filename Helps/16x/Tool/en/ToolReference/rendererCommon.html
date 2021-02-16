@@ -1,0 +1,388 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="ja" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Basic Render Settings &mdash; Effekseer Help  ドキュメント</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/js/three.min.js"></script>
+        <script src="../../_static/js/effekseer.min.js"></script>
+        <script src="../../_static/js/iframe.js"></script>
+        <script src="../../_static/js/OrbitControls.js"></script>
+        <script src="../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="検索" href="../../search.html" />
+    <link rel="next" title="&lt;no title&gt;" href="rendererCommonAd.html" />
+    <link rel="prev" title="Depth" href="depth.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> Effekseer Help
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../ja/index.html">Effekseer Help 日本語</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Effekseer Help (English)</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../overview.html">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolTutorial/index.html">Tutorial</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Tool-Reference</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="index.html#overview">Overview</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="index.html#effect-parameters">Effect parameters</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="common.html">Basic settings</a></li>
+<li class="toctree-l4"><a class="reference internal" href="location.html">Position</a></li>
+<li class="toctree-l4"><a class="reference internal" href="locationAbs.html">Force Field (Local)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="locationGene.html">Spawning Method</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rotation.html">Rotation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scale.html">Scale</a></li>
+<li class="toctree-l4"><a class="reference internal" href="depth.html">Depth</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Basic Render Settings</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererSprite.html">Render - Sprite</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererRibbon.html">Render - Ribbon</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererRing.html">Render - Ring</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererModel.html">Render - Model</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererTrack.html">Render - Track</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sound.html">Sound</a></li>
+<li class="toctree-l4"><a class="reference internal" href="fcurve.html">F-Curve</a></li>
+<li class="toctree-l4"><a class="reference internal" href="global.html">Global Settings</a></li>
+<li class="toctree-l4"><a class="reference internal" href="culling.html">Culling</a></li>
+<li class="toctree-l4"><a class="reference internal" href="dynamicParameter.html">DynamicParameter</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#effect-features">Effect features</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#tool-functions">Tool functions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#command-line">Command Line</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../MaterialToolReference/index.html">Material-Reference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolTips/01.html">TIPS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq.html">FAQ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../releasenotes.html">Release Notes</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Effekseer Help</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../index.html">Effekseer Help (English)</a> &raquo;</li>
+        
+          <li><a href="index.html">Tool-Reference</a> &raquo;</li>
+        
+      <li>Basic Render Settings</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="basic-render-settings">
+<h1>Basic Render Settings<a class="headerlink" href="#basic-render-settings" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<div class="section" id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>This section explains about the &quot;Basic Render Settings&quot; window, which provides common parameters that manipulate how the current node's particles are drawn.</p>
+</div>
+<div class="section" id="parameter">
+<h2>Parameter<a class="headerlink" href="#parameter" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<div align="center">
+<img src="../../img/Tutorial/03_rendercommon_en.png">
+<p>"Basic Render Settings" window</p>
+</div><div class="section" id="material">
+<h3>Material<a class="headerlink" href="#material" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>Specifies the material used to draw the particles.
+You can make settings such as being lighten or distorting the background.</p>
+<div class="section" id="default">
+<h4>Default<a class="headerlink" href="#default" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<p>The image in the color image is displayed.</p>
+<iframe src='../../Effects/viewer_en.html#References/BasicRender/render_unlit.efkefc'></iframe></div>
+<div class="section" id="lighting">
+<h4>Lighting<a class="headerlink" href="#lighting" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<p>Particles are lightened.
+In addition to color images, you can specify normal images.
+If you specify a normal image,  the orientation of the surface is changed.</p>
+<iframe src='../../Effects/viewer_en.html#References/BasicRender/render_lit.efkefc'></iframe></div>
+<div class="section" id="distortion-back">
+<h4>Distortion(Back)<a class="headerlink" href="#distortion-back" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<p>If the distortion setting is enabled, the particles will distort anything behind it. The way the distortion is applied depends on the pixel data of the distorted image, and the distortion intensity.</p>
+<p>In the color of the distortion image, red and green channels are used as distortion information. Both of them do not distort at all when the value is 127. When red is 127 or more, it is distorted to the right, and when it is less than 127 it distorts to the left. When green is 127 or more, distortion is in the upward direction and distortion is in the downward direction when the green is less than 127. However, this up / down / left / right direction depends on the drawing method. For example, in the case of a sprite, the top, bottom, left, and right directions are those perpindicular to the sides of the image's rectangle.</p>
+<p>The color of each drawing weakens the strength of distortion. Values range between 0 and 255. Red affects left and right, and green affects up and down.</p>
+<p>Distortion strength adjusts the strength of all colors. When it reaches 0, no more distortion will be applied.</p>
+<table><tbody><tr><td><p>With distortion</p>
+</td><td><p>No distortion</p>
+</td></tr><tr><td><img src="../../img/Reference/renderCommon_distortion_on.gif"/></td><td><img src="../../img/Reference/renderCommon_distortion_off.gif"/></td></tr></tbody></table><p>In the case of the default settings, the distortion distorts only the background without own effect itself. To distort other nodes of own effect with distortion, specify the drawing priority from the depth panel. Nodes with drawing priority less than 0 are distorted with the background due to the distortion of the node of own effect.</p>
+</div>
+<div class="section" id="file">
+<h4>File<a class="headerlink" href="#file" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<p>You can use a user-created material file for drawing particles.
+The widest range of expressions can be achieved.</p>
+<p>Press the button to create and edit material files.</p>
+<p>See the reference about Material for details.</p>
+<p>More parameters may be emerging depends on the material file.
+In addition to constants, custom parameters can be specified by easing or F-curve.
+The displayed name of the custom parameter depends on the material file.</p>
+<div class="section" id="cache">
+<h5>Cache<a class="headerlink" href="#cache" title="このヘッドラインへのパーマリンク">¶</a></h5>
+<p>To speed up material loading or to play the effect on certain platforms, you can save the material as a compiled format.
+To generate that file, press <code class="docutils literal notranslate"><span class="pre">Generate</span> <span class="pre">Cache</span></code> after loading the material.</p>
+<p>If the generated cache is placed in the same directory as the material file, loading will be faster.
+On some platforms, effects cannot be played without using cache.
+A cache that can be used on both Windows and Mac is generated by generating the cache on Mac after generating the cache on Windows.</p>
+<iframe src='../../Effects/viewer_en.html#References/BasicRender/render_file.efkefc'></iframe></div>
+</div>
+</div>
+<div class="section" id="emmisive-scaling">
+<h3>Emmisive Scaling<a class="headerlink" href="#emmisive-scaling" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>It multiplies the particle's color by the specified value. The higher the value, the brighter the color. When the value is 1, the image will be used as is.
+Only available when the material is Standard or Lighting.</p>
+<img alt="../../_images/EmmisiveScaling.png" class="align-center" src="../../_images/EmmisiveScaling.png" />
+</div>
+<div class="section" id="blend">
+<h3>Blend<a class="headerlink" href="#blend" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>Specifies the method of alpha blending applied when displaying the particle. This controls how drawn images will be composited when they are on top of each other, such as translucency, addition, or subtraction.</p>
+<p><img alt="../../_images/AlphaBlend.png" src="../../_images/AlphaBlend.png" /></p>
+</div>
+<div class="section" id="filter">
+<h3>Filter<a class="headerlink" href="#filter" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>Specify the filtering method to be applied when displaying the particle.</p>
+</div>
+<div class="section" id="depth-set">
+<h3>Depth Set<a class="headerlink" href="#depth-set" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>Specify whether to write depth information when displaying particles. After writing the depth information, if you draw the particles for which the depth test is enabled, if the particles are deep inside, they will not be drawn.</p>
+</div>
+<div class="section" id="depth-test">
+<h3>Depth Test<a class="headerlink" href="#depth-test" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>If the depth test is valid, particles will not be drawn deeper than the written depth information.</p>
+</div>
+<div class="section" id="fade-in">
+<h3>Fade-In<a class="headerlink" href="#fade-in" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>When a particle is first spawned, it fades in over a duration until fully visible.</p>
+</div>
+<div class="section" id="fade-out">
+<h3>Fade-Out<a class="headerlink" href="#fade-out" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>When a particle is about to be despawned, it fades out over a duration and disappears.</p>
+<iframe src='../../Effects/viewer_en.html#References/Render/fade_in_out.efkefc'></iframe></div>
+<div class="section" id="uv">
+<h3>UV<a class="headerlink" href="#uv" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>In an image, this specifies the region of the image actually used when displaying the particle.
+The region can be changed over time, allowing you to scroll or animate the image.
+The units used in these parameters for specifying the area are pixels.</p>
+<div class="section" id="animation">
+<h4>Animation<a class="headerlink" href="#animation" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<p>Play animation based on images with animations arranged in succession.</p>
+<p><img alt="../../_images/renderCommon_uv_animation.png" src="../../_images/renderCommon_uv_animation.png" /></p>
+<div class="section" id="start-time">
+<h5>Start time<a class="headerlink" href="#start-time" title="このヘッドラインへのパーマリンク">¶</a></h5>
+<p>Specify the time of animation to start playing. For example, you can play from the second piece with animation composed of 4 images.</p>
+</div>
+<div class="section" id="flip-frame-blendtype">
+<h5>Flip Frame BlendType<a class="headerlink" href="#flip-frame-blendtype" title="このヘッドラインへのパーマリンク">¶</a></h5>
+<ul class="simple">
+<li><p>None</p></li>
+</ul>
+<p>It switches the position to be displayed at regular intervals.</p>
+<div class="video_center"><video autoplay loop="true" muted="true" src="../../movies/Reference/BasicRenderSettings/Flip_None.mp4"/></div><ul class="simple">
+<li><p>Lerp</p></li>
+</ul>
+<p>It uses linear completion for animation transitions.
+This will ensure that the image does not change suddenly.</p>
+<div class="video_center"><video autoplay loop="true" muted="true" src="../../movies/Reference/BasicRenderSettings/Flip_Lerp.mp4"/></div></div>
+</div>
+<div class="section" id="scroll">
+<h4>Scroll<a class="headerlink" href="#scroll" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<p>Move the UV range at a constant speed.</p>
+<p><img alt="../../_images/renderCommon_uv_scroll.png" src="../../_images/renderCommon_uv_scroll.png" /></p>
+</div>
+<div class="section" id="f-curve">
+<h4>F-Curve<a class="headerlink" href="#f-curve" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<p>Use the F-Curve window to control the UV by defining automation curves.</p>
+</div>
+</div>
+<div class="section" id="referenced-uv">
+<h3>Referenced(UV)<a class="headerlink" href="#referenced-uv" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>Multiple images with different sizes may be used for one particle.
+In that case, you can specify a resolution used as the basis of the ratio with an image.
+You can also specify the UV based on 128x128 without specifying the image.</p>
+<p>When using a material, the number of <code class="docutils literal notranslate"><span class="pre">Referenced</span></code> matches the material a priority of image.</p>
+<p><img alt="../../_images/uv_referenced.png" src="../../_images/uv_referenced.png" /></p>
+</div>
+<div class="section" id="inherit-color">
+<h3>Inherit color<a class="headerlink" href="#inherit-color" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>Specify whether the color of the parent particle affects the color of the child's particles. In case of inheritance of color, the color of the parent's particle multiplied by the color of the child's particle becomes the color of the final child's particle. When &quot;Only on create&quot; is selected, the color of the parent particle when the child particles are generated is always applied.</p>
+<table><tbody><tr><td><p>Never</p>
+</td><td><p>Only on create</p>
+</td><td><p>Always</p>
+</td></tr><tr><td><img src="../../img/Reference/renderCommon_inherit_color_none.gif"/></td><td><img src="../../img/Reference/renderCommon_inherit_color_when.gif"/></td><td><img src="../../img/Reference/renderCommon_inherit_color_always.gif"/></td></tr></tbody></table></div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="rendererCommonAd.html" class="btn btn-neutral float-right" title="&lt;no title&gt;" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="depth.html" class="btn btn-neutral float-left" title="Depth" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2019, Effekseer.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

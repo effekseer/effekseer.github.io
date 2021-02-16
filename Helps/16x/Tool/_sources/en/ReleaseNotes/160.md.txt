@@ -1,0 +1,103 @@
+# 1.60
+
+## Common
+
+### Basic
+
+- Added a behavior for child particles to follow the position of the parent particle in position inheritance.
+
+### Position
+
+- Added a method to move with a path
+
+- Added a View Offset to always show a particle on a center in a screen
+
+### Scale
+
+- Added FCurve(Single)
+
+### force field.
+
+- Added a lot of different force fields.
+
+### Procedual Model
+
+- プロシージャルモデルを追加しました。
+
+Effekseer内でパラメーターの調整のみで簡単なモデルを作成できます。
+作成したモデルはそのまま表示したり、生成位置に使用したりできます。
+
+### Easing
+
+- Added many easing types.
+
+### Rendering
+
+- Added many features to rendering
+
+最大6枚の画像により歪み、画像同士のブレンド、画像の切り抜き等様々な表現をマテリアルの設定なしで実現できるようになりました。
+ソフトパーティクルにより、背景との境界を自然に見せれるようになりました。
+
+- Textures are now loaded as NoMipMaps when the file name includes _NoMip.
+
+- フェードありのアニメーションを追加しました。
+
+アニメーションの切り替わりで、フレーム間をクロスフェードするようにします。
+これにより、スムーズに画像が切り替わるようになります。
+
+### マテリアル
+
+- フェードノードの追加
+
+ソフトパーティクルをマテリアルで実装するのに必要なノードを追加しました。
+
+エフェクトの拡大率を取得するノードを追加しました。
+
+### 動的パラメーター
+
+step関数を追加しました。
+
+### Optimization
+
+- マルチスレッドによる更新を実装しました。更新速度を高速化しました。
+
+- ジオメトリインスタンスを実装しました。同じモデルを複数表示した場合の速度が向上しました。
+
+## Tool
+
+### Packaging
+
+- Added a feature to create a package.
+
+エフェクトに関連するファイルを纏めて1つのパッケージにエクスポートしたり、パッケージからインポートしたりできます。
+
+### UI
+
+- Changed the behavior of the docking panel
+
+- Changed to frameless window (Windows)
+
+### Recording
+
+- Added a recording size scaling factor to the recording function.
+
+### Options
+
+- Added a setting to change the mouse mapping to manipulate the viewport (you can select Maya style, Blender style, etc.).
+
+### Environment
+
+- Add an option to show a ground
+
+```eval_rst
+.. image:: ../../img/Reference/Environment/ground.png
+   :align: center
+```
+
+## ランタイム
+
+- C++のソースコードを大幅にリファクタリングしました。
+
+安全性が向上しました。
+ただし、多数破壊的変更が発生しています。詳しくはランタイムのreadmeを読んでください。
+

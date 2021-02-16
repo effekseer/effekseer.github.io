@@ -1,0 +1,285 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="ja" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Render - Model &mdash; Effekseer Help  ドキュメント</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/js/three.min.js"></script>
+        <script src="../../_static/js/effekseer.min.js"></script>
+        <script src="../../_static/js/iframe.js"></script>
+        <script src="../../_static/js/OrbitControls.js"></script>
+        <script src="../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="検索" href="../../search.html" />
+    <link rel="next" title="Render - Track" href="rendererTrack.html" />
+    <link rel="prev" title="Render - Ring" href="rendererRing.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> Effekseer Help
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../ja/index.html">Effekseer Help 日本語</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Effekseer Help (English)</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../overview.html">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolTutorial/index.html">Tutorial</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Tool-Reference</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="index.html#overview">Overview</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="index.html#effect-parameters">Effect parameters</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="common.html">Basic settings</a></li>
+<li class="toctree-l4"><a class="reference internal" href="location.html">Position</a></li>
+<li class="toctree-l4"><a class="reference internal" href="locationAbs.html">Force Field (Local)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="locationGene.html">Spawning Method</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rotation.html">Rotation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scale.html">Scale</a></li>
+<li class="toctree-l4"><a class="reference internal" href="depth.html">Depth</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererCommon.html">Basic Render Settings</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererSprite.html">Render - Sprite</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererRibbon.html">Render - Ribbon</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererRing.html">Render - Ring</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Render - Model</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererTrack.html">Render - Track</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sound.html">Sound</a></li>
+<li class="toctree-l4"><a class="reference internal" href="fcurve.html">F-Curve</a></li>
+<li class="toctree-l4"><a class="reference internal" href="global.html">Global Settings</a></li>
+<li class="toctree-l4"><a class="reference internal" href="culling.html">Culling</a></li>
+<li class="toctree-l4"><a class="reference internal" href="dynamicParameter.html">DynamicParameter</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#effect-features">Effect features</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#tool-functions">Tool functions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#command-line">Command Line</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../MaterialToolReference/index.html">Material-Reference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolTips/01.html">TIPS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq.html">FAQ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../releasenotes.html">Release Notes</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Effekseer Help</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../index.html">Effekseer Help (English)</a> &raquo;</li>
+        
+          <li><a href="index.html">Tool-Reference</a> &raquo;</li>
+        
+      <li>Render - Model</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="render-model">
+<h1>Render - Model<a class="headerlink" href="#render-model" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<div class="section" id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>Here we explain the parameters that affect the drawing when &quot;Model&quot; is selected in the Render window.</p>
+<p>When &quot;Model&quot; is selected, an external 3D model can be imported and displayed.</p>
+<p>The color / distortion image set in the Basic Render Settings window will be used to texture the model. Depending on the model, it may be displayed incorrectly unless depth writing and depth test are enabled.</p>
+<p><img alt="../../_images/renderModel.png" src="../../_images/renderModel.png" /></p>
+</div>
+<div class="section" id="parameters">
+<h2>Parameters<a class="headerlink" href="#parameters" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<div align="center">
+<img src="../../img/Reference/Render/panel_model_en.png">
+<p>"Render Settings" window</p>
+</div><div class="section" id="model">
+<h3>Model<a class="headerlink" href="#model" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>There are two types of models: file and procedural models.</p>
+<p>If models are loaded from file, Specify FBX (.fbx), metasequoia file (.mqo) used for display, or model file for Effekseer (.efkmodel). If .efkmodel is specified, .efkmodel is generated in the same directory as the specified file. When playing effects with other applications, this generated file is necessary.</p>
+<p>You can also load FBX (.fbx) with animation. The first animation in the FBX file is played.</p>
+<p>プロシージャルモデルを使用する場合、プロシージャルモデルのパネルでモデルを作成し、それを指定します。</p>
+</div>
+<div class="section" id="configuration">
+<h3>Configuration<a class="headerlink" href="#configuration" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>Specify how to draw the particle's model. In the case of &quot;Billboard&quot;, the sprite always rotates to face the camera. In the case of &quot;Rotated Billboard&quot;, the model rotates to face the camera while keeping the Z axis fixed. In the case of &quot;Fixed Y-axis&quot;, the sprite rotates to face the camera while keeping the Y axis fixed. For &quot;Fixed&quot;, the model will match the rotation setting of the particle.</p>
+<iframe src='../../Effects/viewer_en.html#References/Render/model_configuration.efkefc'></iframe></div>
+<div class="section" id="culling">
+<h3>Culling<a class="headerlink" href="#culling" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>Specify which side(s) of the model's faces should be displayed.</p>
+</div>
+<div class="section" id="overall-color">
+<h3>Overall Color<a class="headerlink" href="#overall-color" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>Specify the color tone of the whole model.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="rendererTrack.html" class="btn btn-neutral float-right" title="Render - Track" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="rendererRing.html" class="btn btn-neutral float-left" title="Render - Ring" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2019, Effekseer.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

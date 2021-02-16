@@ -1,0 +1,419 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="ja" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>動的パラメーター &mdash; Effekseer Help  ドキュメント</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/js/three.min.js"></script>
+        <script src="../../_static/js/effekseer.min.js"></script>
+        <script src="../../_static/js/iframe.js"></script>
+        <script src="../../_static/js/OrbitControls.js"></script>
+        <script src="../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="検索" href="../../search.html" />
+    <link rel="next" title="プロシージャルモデル" href="proceduralModel.html" />
+    <link rel="prev" title="カリング" href="culling.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> Effekseer Help
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Effekseer Help 日本語</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../overview.html">概要</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolTutorial/index.html">チュートリアル</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">ツール・リファレンス</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="index.html#id2">概要</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="index.html#id13">エフェクトパラメータ</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="common.html">共通</a></li>
+<li class="toctree-l4"><a class="reference internal" href="location.html">位置</a></li>
+<li class="toctree-l4"><a class="reference internal" href="locationAbs.html">力場(ローカル)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="locationGene.html">生成方法</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rotation.html">回転</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scale.html">拡大</a></li>
+<li class="toctree-l4"><a class="reference internal" href="depth.html">深度</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererCommon.html">描画共通</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererCommonAd.html">描画共通(高度)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererSprite.html">描画-スプライト</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererRibbon.html">描画-リボン</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererRing.html">描画-リング</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererModel.html">描画-モデル</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererTrack.html">描画-軌跡</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sound.html">音</a></li>
+<li class="toctree-l4"><a class="reference internal" href="fcurve.html">Fカーブ</a></li>
+<li class="toctree-l4"><a class="reference internal" href="global.html">全体</a></li>
+<li class="toctree-l4"><a class="reference internal" href="culling.html">カリング</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">動的パラメーター</a></li>
+<li class="toctree-l4"><a class="reference internal" href="proceduralModel.html">プロシージャルモデル</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id14">エフェクト機能</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id15">ツール機能</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id16">コマンドライン</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../MaterialToolReference/index.html">マテリアル・リファレンス</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolTips/01.html">TIPS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq.html">FAQ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../releasenotes.html">更新履歴</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../en/index.html">Effekseer Help (English)</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Effekseer Help</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../index.html">Effekseer Help 日本語</a> &raquo;</li>
+        
+          <li><a href="index.html">ツール・リファレンス</a> &raquo;</li>
+        
+      <li>動的パラメーター</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>動的パラメーター<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<div class="section" id="id2">
+<h2>概要<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>動的パラメーターはランタイム（ゲーム中）のエフェクトのパラメーターをエフェクト再生中に書き換えるパラメーターを設定します。
+簡単なプログラムでパラメーターを制御します。外部からパラメーターを与えることもできます。</p>
+</div>
+<div class="section" id="id3">
+<h2>使い方<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<div class="section" id="id4">
+<h3>基本<a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<div class="section" id="id5">
+<h4>パネル<a class="headerlink" href="#id5" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<p>動的パラメーターのパネルを開きます。</p>
+<img alt="../../_images/menu_ja.png" class="align-center" src="../../_images/menu_ja.png" />
+</div>
+<div class="section" id="id6">
+<h4>式の追加<a class="headerlink" href="#id6" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<p>追加ボタンで式を追加できます。
+そこでは、式の名前と式の内容を設定できます。</p>
+<img alt="../../_images/add_ja.png" class="align-center" src="../../_images/add_ja.png" />
+</div>
+<div class="section" id="id7">
+<h4>式の記述<a class="headerlink" href="#id7" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<p>例えば、1つ目のパラメーターを2.0に書き換える場合、下記のように記述します。</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nd">@O</span><span class="o">.</span><span class="n">x</span> <span class="o">=</span> <span class="mf">2.0</span>
+</pre></div>
+</div>
+<p>その後、コンパイルを押します。問題がなければ、OKと表示されます。問題があれば原因が表示されます。</p>
+<img alt="../../_images/compile_ja.png" class="align-center" src="../../_images/compile_ja.png" />
+</div>
+<div class="section" id="id8">
+<h4>式の適用<a class="headerlink" href="#id8" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<p>適用先のパラメーターを右クリックし、動的を選択します。
+そうすると、式を選択する欄が表示されます。</p>
+<img alt="../../_images/select_dynamic_ja.png" class="align-center" src="../../_images/select_dynamic_ja.png" />
+<p>そこで、先ほど入力した式を選択すると式が適用されます。</p>
+<img alt="../../_images/apply_dynamic_ja.png" class="align-center" src="../../_images/apply_dynamic_ja.png" />
+<p>位置のパラメーターは0, 0, 0 ですが式でxを2にしているため、2の位置に表示されます。</p>
+<img alt="../../_images/move21.png" class="align-center" src="../../_images/move21.png" />
+</div>
+</div>
+<div class="section" id="id9">
+<h3>式の機能<a class="headerlink" href="#id9" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<div class="section" id="id10">
+<h4>複数のパラメーターの変更<a class="headerlink" href="#id10" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<p>x, y, z, w, それぞれのパラメーターを変更できます。
+下記のように入力すると、それぞれ、2, 3, 4, 5に値が変更されます。
+適用先が色の場合、x, y, z, wはRGBAに対応します。</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nd">@O</span><span class="o">.</span><span class="n">x</span> <span class="o">=</span> <span class="mf">2.0</span>
+<span class="nd">@O</span><span class="o">.</span><span class="n">y</span> <span class="o">=</span> <span class="mf">3.0</span>
+<span class="nd">@O</span><span class="o">.</span><span class="n">z</span> <span class="o">=</span> <span class="mf">4.0</span>
+<span class="nd">@O</span><span class="o">.</span><span class="n">w</span> <span class="o">=</span> <span class="mf">5.0</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id11">
+<h4>四則演算<a class="headerlink" href="#id11" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<p>式には四則演算を使用できます。()で演算の優先順を変更することもできます。</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nd">@O</span><span class="o">.</span><span class="n">x</span> <span class="o">=</span> <span class="p">(</span><span class="mf">2.0</span> <span class="o">+</span> <span class="mf">3.0</span> <span class="o">*</span> <span class="mf">2.0</span> <span class="o">/</span> <span class="mf">3.0</span><span class="p">)</span> <span class="o">-</span> <span class="mf">2.0</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id12">
+<h4>パラメーター<a class="headerlink" href="#id12" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<p>外部から入力されたパラメーターはパネルの数値の欄やランタイムから指定できます。</p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th align="left">パラメーター</th>
+<th align="left">説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">@P.x @P.y @P.z @P.w</td>
+<td align="left">動的パラメーターを適用する前のパラメーター</td>
+</tr>
+<tr>
+<td align="left">@In0 @In1 @In2 @In3</td>
+<td align="left">外部から入力されたパラメーター</td>
+</tr>
+<tr>
+<td align="left">@GTime</td>
+<td align="left">現在の時間(秒)</td>
+</tr>
+<tr>
+<td align="left">@PTime</td>
+<td align="left">親パーティクルが生成されてからの時間(秒)</td>
+</tr>
+</tbody>
+</table></div>
+<div class="section" id="id13">
+<h4>関数<a class="headerlink" href="#id13" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<p>下記の関数が使用できます。</p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th align="left">関数</th>
+<th align="left">説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">sin(x)</td>
+<td align="left">Sineの結果を返します。xはラジアンです。</td>
+</tr>
+<tr>
+<td align="left">cos(x)</td>
+<td align="left">Cosの結果を返します。xはラジアンです。</td>
+</tr>
+<tr>
+<td align="left">rand()</td>
+<td align="left">ランダムな値を返します。</td>
+</tr>
+<tr>
+<td align="left">rand(x)</td>
+<td align="left">xに応じたランダムな値を返します。xが同じ値であるなら、返す値は同じです。</td>
+</tr>
+<tr>
+<td align="left">step(edge,x)</td>
+<td align="left">xがedgeより大きい場合は1を返し、そうでない場合は0を返します。</td>
+</tr>
+</tbody>
+</table></div>
+<div class="section" id="id14">
+<h4>適用可能先<a class="headerlink" href="#id14" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<p>下記のパラメーターに対して適用できます。</p>
+<ul class="simple">
+<li><p>生成数</p></li>
+<li><p>生成時間</p></li>
+<li><p>生成開始時間</p></li>
+<li><p>生存時間</p></li>
+<li><p>位置 - 固定、PVA、イージング</p></li>
+<li><p>角度 - 固定、PVA、イージング</p></li>
+<li><p>拡大 - 固定、PVA、イージング</p></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="section" id="id15">
+<h2>使用例<a class="headerlink" href="#id15" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<div class="section" id="lod">
+<h3>LOD<a class="headerlink" href="#lod" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>生成数を外部から変更できるようになります。</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nd">@O</span><span class="o">.</span><span class="n">x</span> <span class="o">=</span> <span class="nd">@In0</span> <span class="o">*</span> <span class="nd">@P</span><span class="o">.</span><span class="n">x</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id16">
+<h3>レーザー<a class="headerlink" href="#id16" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>レーザーの長さを外部から変更できるようになります。
+Zの大きさを外部から制御しています。</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nd">@O</span><span class="o">.</span><span class="n">z</span> <span class="o">=</span> <span class="nd">@In0</span> <span class="o">*</span> <span class="nd">@P</span><span class="o">.</span><span class="n">z</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="sine">
+<h3>Sine波<a class="headerlink" href="#sine" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>Sine波のように動かします。</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nd">@O</span><span class="o">.</span><span class="n">x</span> <span class="o">=</span> <span class="n">sin</span><span class="p">(</span><span class="nd">@GTime</span><span class="p">)</span>
+<span class="nd">@O</span><span class="o">.</span><span class="n">y</span> <span class="o">=</span> <span class="nd">@GTime</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="proceduralModel.html" class="btn btn-neutral float-right" title="プロシージャルモデル" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="culling.html" class="btn btn-neutral float-left" title="カリング" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2019, Effekseer.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

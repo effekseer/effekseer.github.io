@@ -1,0 +1,378 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="ja" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>力場(ローカル) &mdash; Effekseer Help  ドキュメント</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/js/three.min.js"></script>
+        <script src="../../_static/js/effekseer.min.js"></script>
+        <script src="../../_static/js/iframe.js"></script>
+        <script src="../../_static/js/OrbitControls.js"></script>
+        <script src="../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="検索" href="../../search.html" />
+    <link rel="next" title="生成方法" href="locationGene.html" />
+    <link rel="prev" title="位置" href="location.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> Effekseer Help
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Effekseer Help 日本語</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../overview.html">概要</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolTutorial/index.html">チュートリアル</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">ツール・リファレンス</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="index.html#id2">概要</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="index.html#id13">エフェクトパラメータ</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="common.html">共通</a></li>
+<li class="toctree-l4"><a class="reference internal" href="location.html">位置</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">力場(ローカル)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="locationGene.html">生成方法</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rotation.html">回転</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scale.html">拡大</a></li>
+<li class="toctree-l4"><a class="reference internal" href="depth.html">深度</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererCommon.html">描画共通</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererCommonAd.html">描画共通(高度)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererSprite.html">描画-スプライト</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererRibbon.html">描画-リボン</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererRing.html">描画-リング</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererModel.html">描画-モデル</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererTrack.html">描画-軌跡</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sound.html">音</a></li>
+<li class="toctree-l4"><a class="reference internal" href="fcurve.html">Fカーブ</a></li>
+<li class="toctree-l4"><a class="reference internal" href="global.html">全体</a></li>
+<li class="toctree-l4"><a class="reference internal" href="culling.html">カリング</a></li>
+<li class="toctree-l4"><a class="reference internal" href="dynamicParameter.html">動的パラメーター</a></li>
+<li class="toctree-l4"><a class="reference internal" href="proceduralModel.html">プロシージャルモデル</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id14">エフェクト機能</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id15">ツール機能</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id16">コマンドライン</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../MaterialToolReference/index.html">マテリアル・リファレンス</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolTips/01.html">TIPS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq.html">FAQ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../releasenotes.html">更新履歴</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../en/index.html">Effekseer Help (English)</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Effekseer Help</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../index.html">Effekseer Help 日本語</a> &raquo;</li>
+        
+          <li><a href="index.html">ツール・リファレンス</a> &raquo;</li>
+        
+      <li>力場(ローカル)</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>力場(ローカル)<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<div class="section" id="id2">
+<h2>概要<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>パーティクルの外部から力を与えるような効果を設定します。</p>
+</div>
+<div class="section" id="id3">
+<h2>パラメーター<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<div align="center">
+<img src="../../img/Reference/Atraction/panel_ja.png">
+<p>「力場(ローカル)」ウインドウ</p>
+</div></div>
+<div class="section" id="id4">
+<h2>力場<a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>最大4種類の力場を設定できます。</p>
+</div>
+<div class="section" id="id5">
+<h2>種類<a class="headerlink" href="#id5" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<div class="section" id="id6">
+<h3>なし<a class="headerlink" href="#id6" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>設定しません。</p>
+</div>
+<div class="section" id="id7">
+<h3>力<a class="headerlink" href="#id7" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>指定された位置から外側に向かって力を与えます。
+指定された位置から離れると力が減衰するようにもできます。</p>
+<div class="video_center"><video autoplay loop="true" muted="true" src="../../movies/Reference/LocalForceField/Force.mp4"/></div></div>
+<div class="section" id="id8">
+<h3>風<a class="headerlink" href="#id8" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>指定された方向に向かって力を与えます。
+方向は回転により変更できます。</p>
+<div class="video_center"><video autoplay loop="true" muted="true" src="../../movies/Reference/LocalForceField/Wind.mp4"/></div></div>
+<div class="section" id="id9">
+<h3>竜巻<a class="headerlink" href="#id9" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>指定された方向を軸に回転させる力を与えます。
+軸の方向は回転により変更できます。</p>
+<p>移動速度は回転速度が外側でも同じになるように指定するか、位置に限らず移動速度が一定になるようにするか、を指定できます。</p>
+<div class="video_center"><video autoplay loop="true" muted="true" src="../../movies/Reference/LocalForceField/Vortex.mp4"/></div></div>
+<div class="section" id="id10">
+<h3>乱流<a class="headerlink" href="#id10" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>乱流のような力を加えます。</p>
+<div class="video_center"><video autoplay loop="true" muted="true" src="../../movies/Reference/LocalForceField/Turbulence.mp4"/></div><div class="section" id="id11">
+<h4>種類<a class="headerlink" href="#id11" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<p>単純か複雑かを指定できます。
+複雑なほうが見栄えはいいですが、処理が重くなります。</p>
+</div>
+<div class="section" id="id12">
+<h4>ランダムシード<a class="headerlink" href="#id12" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<p>数値に応じて乱流の流れ方が変わります。</p>
+</div>
+<div class="section" id="id13">
+<h4>領域の大きさ<a class="headerlink" href="#id13" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<p>値を大きくすると乱流の幅が大きくなります。</p>
+</div>
+<div class="section" id="id14">
+<h4>強さ<a class="headerlink" href="#id14" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<p>乱流がパーティクルに与える力の強さです。</p>
+</div>
+<div class="section" id="id15">
+<h4>複雑さ<a class="headerlink" href="#id15" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<p>値を大きくすると乱流が複雑になります。ただし、処理が重くなります。</p>
+</div>
+</div>
+<div class="section" id="id16">
+<h3>抵抗<a class="headerlink" href="#id16" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>移動を抑制させるような力を与えます。</p>
+<div class="video_center"><video autoplay loop="true" muted="true" src="../../movies/Reference/LocalForceField/Drag.mp4"/></div></div>
+<div class="section" id="id17">
+<h3>重力<a class="headerlink" href="#id17" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>ある方向に加速度をかけます。下とは限らず、上や右にも適用することができます。
+この方向は親パーティクルの姿勢の影響を受けません。</p>
+<iframe src='../../Effects/viewer_ja.html#References/Attraction_Forces/gravity.efkefc'></iframe></div>
+<div class="section" id="id18">
+<h3>引力<a class="headerlink" href="#id18" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>パーティクルが「振る舞い」の「ターゲット位置」に指定した位置に向かうように移動します。</p>
+<p><img alt="../../_images/locationAbs_attraction1.gif" src="../../_images/locationAbs_attraction1.gif" /></p>
+<div class="section" id="id19">
+<h4>引力<a class="headerlink" href="#id19" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<p>1フレームにターゲット位置に向けて加速する力です。</p>
+</div>
+<div class="section" id="id20">
+<h4>制御<a class="headerlink" href="#id20" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<p>1フレームにおいて移動方向をターゲット方向に補正する割合です。0.00～1.00の値をとります。</p>
+</div>
+<div class="section" id="id21">
+<h4>最小範囲<a class="headerlink" href="#id21" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<p>引力の減衰開始距離です。</p>
+</div>
+<div class="section" id="id22">
+<h4>最大範囲<a class="headerlink" href="#id22" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<p>引力の減衰終了距離です。 パーティクルの位置が0～最少範囲にある場合、引力100%になり、 最大範囲より遠くにある場合、引力0%になり、 最小範囲から最大範囲の間にある場合、線形に減衰します。</p>
+</div>
+</div>
+</div>
+<div class="section" id="id23">
+<h2>位置<a class="headerlink" href="#id23" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>力場の中心の位置を指定します。
+一部の力場の設定に影響があります。</p>
+</div>
+<div class="section" id="id24">
+<h2>回転<a class="headerlink" href="#id24" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>力場の角度を指定します。
+一部の力場の設定に影響があります。</p>
+</div>
+<div class="section" id="id25">
+<h2>減衰<a class="headerlink" href="#id25" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>この範囲の外では、力場の影響が減衰します。
+範囲の指定方法には複数種類あります。</p>
+<div class="section" id="id26">
+<h3>球<a class="headerlink" href="#id26" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>中心から近づいたり、離れたりすると力場の影響を減資させるようにします。
+減衰力が大きいと、外側に行くにしたがって、より力場が減衰するようになります。</p>
+<div class="video_center"><video autoplay loop="true" muted="true" src="../../movies/Reference/LocalForceField/FallOff_Sphere.mp4"/></div></div>
+<div class="section" id="id27">
+<h3>円柱<a class="headerlink" href="#id27" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>円柱の中心の軸から外側に近づいたり離れたりすると、力場の影響を減衰させるようにします。
+減衰力が大きいと、外側に行くにしたがって、より力場が減衰するようになります。</p>
+<div class="video_center"><video autoplay loop="true" muted="true" src="../../movies/Reference/LocalForceField/FallOff_Column.mp4"/></div></div>
+<div class="section" id="id28">
+<h3>コーン<a class="headerlink" href="#id28" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>球の一部を円錐状に切り取った形状です。
+コーンの外側に近づいたり、離れたりすると、力場が減衰するようになります。
+減衰力が大きいと、最大角度に近づくにしたがって、より力場が減衰するようになります。</p>
+<div class="video_center"><video autoplay loop="true" muted="true" src="../../movies/Reference/LocalForceField/FallOff_Cone.mp4"/></div></div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="locationGene.html" class="btn btn-neutral float-right" title="生成方法" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="location.html" class="btn btn-neutral float-left" title="位置" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2019, Effekseer.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

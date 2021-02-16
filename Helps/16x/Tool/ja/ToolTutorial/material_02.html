@@ -1,0 +1,325 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="ja" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>02. マテリアルでトゥーン風の炎を表現する。 &mdash; Effekseer Help  ドキュメント</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/js/three.min.js"></script>
+        <script src="../../_static/js/effekseer.min.js"></script>
+        <script src="../../_static/js/iframe.js"></script>
+        <script src="../../_static/js/OrbitControls.js"></script>
+        <script src="../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="検索" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> Effekseer Help
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Effekseer Help 日本語</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../en/index.html">Effekseer Help (English)</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Effekseer Help</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>02. マテリアルでトゥーン風の炎を表現する。</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>02. マテリアルでトゥーン風の炎を表現する。<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<div class="section" id="id2">
+<h2>概要<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>本章ではマテリアルを使用してトゥーン風の炎を表現します。マテリアルなしでは難しかった複雑な表現を実現できます。</p>
+<div align="center">
+<iframe src='../../Effects/viewer_ja.html#Tutorials/Mat_02/Fire.efkefc'></iframe>
+<p>本章で作成するエフェクト</p>
+</div></div>
+<div class="section" id="id3">
+<h2>作成<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>ただ、本章では様々な画像や3Dモデルを使用します。
+ここに関しては慣れているソフトで似たような素材データを作成しましょう。</p>
+<p>それらのデータを作成するのは手間がかかるため、既に作成した素材データをこちらに用意しました。
+作成方法も少し解説しますが、素材の作成ができなかったり、作成するのが面倒な方はこれらを使用してください。</p>
+<p><a href="../../Effects/Tutorials/Mat_02_01.zip">ダウンロード</a></p>
+<p>既にモデルとマテリアルは設定してあります。
+マテリアルの新規作成や基本的な使い方は前章を参照してください。</p>
+<p>まずは最初に雲模様のグレー画像を流れるように表示します。</p>
+<p><code class="docutils literal notranslate"><span class="pre">画像参照ノード</span></code> を追加して、画像には <code class="docutils literal notranslate"><span class="pre">Textures/Noise1.png</span></code> を選択します。
+このままだと、ただ画像が表示されるだけです。</p>
+<img alt="../../_images/Grad_Ja.png" class="align-center" src="../../_images/Grad_Ja.png" />
+<p>動かすために <code class="docutils literal notranslate"><span class="pre">移動UVノード</span></code> を追加します。
+そして、<code class="docutils literal notranslate"><span class="pre">画像参照ノード</span></code>に接続します。
+<code class="docutils literal notranslate"><span class="pre">移動UVノード</span></code> の速度には <code class="docutils literal notranslate"><span class="pre">(0.0,</span> <span class="pre">0.4)</span></code> を入力します。</p>
+<p>上下方向に画像が流れるようになりました。</p>
+<img alt="../../_images/Noise_Moving_Ja.png" class="align-center" src="../../_images/Noise_Moving_Ja.png" />
+<p>ただ、このままでは雲模様が粗すぎるので細かくします。
+<code class="docutils literal notranslate"><span class="pre">画像参照ノード</span></code> のUVに掛け算を接続します。
+掛け算の値には<code class="docutils literal notranslate"><span class="pre">移動UVノード</span></code>の出力と <code class="docutils literal notranslate"><span class="pre">(4.0,</span> <span class="pre">1.0)</span></code> を指定します。</p>
+<p>そうすると、画像のUV座標の1が4になります。
+ということは、今まで1枚表示されていた範囲に4枚表示されます。
+今回は横方向にたくさん表示されるようになります。</p>
+<img alt="../../_images/Noise_Enlarge_Ja.png" class="align-center" src="../../_images/Noise_Enlarge_Ja.png" />
+<p>このままでは全く炎に見えません。
+動きを複雑にするために歪みを加えます。</p>
+<p>画像参照ノードを追加して、歪み画像 <code class="docutils literal notranslate"><span class="pre">Textures/Normal1.png</span></code>を選択します。</p>
+<p>要素抽出ノードを追加し、RGを抽出します。
+そして引き算ノードを追加し、0.5を引きます。
+歪み画像の赤色と緑色は0.5を0として、上下左右に歪ませるようになっています。
+そのため、中央の0.5を引きます。</p>
+<p>さらに、歪みの強さを調節するために0.5を掛けます。</p>
+<p>そして、歪みの値をUVに足します。</p>
+<p>そうすると、画像が歪むようになりました。
+なんとなく炎に見えるかもしれません。</p>
+<img alt="../../_images/Noise_Distort_Ja.png" class="align-center" src="../../_images/Noise_Distort_Ja.png" />
+<p>炎は上のほうが暗く、下のほうが明るくなります。
+それを再現するために、グラデーション画像を足したりかけたりします。</p>
+<p>画像参照ノードで画像 <code class="docutils literal notranslate"><span class="pre">Textures/Gradation1.png</span></code> を追加します。</p>
+<img alt="../../_images/Grad_Ja.png" class="align-center" src="../../_images/Grad_Ja.png" />
+<p>そして、先ほどの歪み画像と足し算ノードで足します。</p>
+<p>下のほうが光る画像になりました。</p>
+<img alt="../../_images/Grad_Add_Ja.png" class="align-center" src="../../_images/Grad_Add_Ja.png" />
+<p>次に上のほうを暗くするために、先ほどの画像を掛け算ノードで掛けます。</p>
+<p>そうすると上のほうが暗くなりました。
+なんとなく炎のようになってきました。</p>
+<img alt="../../_images/Grad_Mul_Ja.png" class="align-center" src="../../_images/Grad_Mul_Ja.png" />
+<p>最後に、着色します。</p>
+<p>着色には色のついたグラデーションの画像を使用します。
+画像参照ノードで画像 <code class="docutils literal notranslate"><span class="pre">Textures/Gradation2.png</span></code> を追加します。</p>
+<img alt="../../_images/Grad_Color_Ja.png" class="align-center" src="../../_images/Grad_Color_Ja.png" />
+<p>そして、要素抽出ノードで先ほどの流れる画像からRGを抽出します。
+それをUVに入力します。</p>
+<p>グラデーションの画像に沿って色が変わるようになりました。
+入力された流れる画像の色に従って、グラデーション画像の参照する位置が変わっています。
+そのため、グラデーションに従って色が変わるようになります。</p>
+<img alt="../../_images/Grad_Color_Distort_Ja.png" class="align-center" src="../../_images/Grad_Color_Distort_Ja.png" />
+<p>同様に、透明度も変更します。
+画像参照ノードで画像 <code class="docutils literal notranslate"><span class="pre">Textures/Gradation3.png</span></code> を追加します。
+同様に流れる画像を接続します。白い部分が不透明、黒い部分が透明になります。</p>
+<img alt="../../_images/Grad_OpacityMask_Distort_Ja.png" class="align-center" src="../../_images/Grad_OpacityMask_Distort_Ja.png" />
+<p>画像参照ノードの出力をEmmisiveに接続します。</p>
+<p>画像参照ノードの出力をOpacityMaskに接続します。</p>
+<p>炎の模様が表示されました。</p>
+<img alt="../../_images/Output_Ja.png" class="align-center" src="../../_images/Output_Ja.png" />
+<p>ですが、細かい部分の色がおかしくなっています。</p>
+<img alt="../../_images/PreResult.png" class="align-center" src="../../_images/PreResult.png" />
+<p>その原因は画像参照ノードで画像を参照するときに、リピートが選択されていることです。</p>
+<p>画像にはクランプとリピートというものがあります。
+これは、端をどう扱うか、というパラメーターです。</p>
+<p>UV座標が1.0を超えた時、端を端の色として扱うか、端を繰り返すかを指定できます。
+端の方を参照するとき、リピートに設定していると反対側を参照します。
+そのため、色がおかしくなります。</p>
+<p>グラデーションの画像参照ノードのリピートをクランプに変更します。</p>
+<img alt="../../_images/Sampler_Ja.png" class="align-center" src="../../_images/Sampler_Ja.png" />
+<p>これで完成です。</p>
+<div align="center">
+<iframe src='../../Effects/viewer_ja.html#Tutorials/Mat_02/Fire.efkefc'></iframe>
+</div><p>最後に、本章で作成されたエフェクトをダウンロードできるようにしてみました。</p>
+<p><a href="../../Effects/Tutorials/Mat_02_02.zip">ダウンロード</a></p>
+<div class="section" id="id4">
+<h3>雲画像の作成方法<a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>今回はPhotoShopを使用しています。
+解像度1024の画像を新規作成し、PhotoShopで雲1を選択します。
+コントラストを高め、白と黒が強く出るようにします。</p>
+<p>そして、解像度を512に小さくして保存します。</p>
+</div>
+<div class="section" id="id5">
+<h3>歪み画像の作成方法<a class="headerlink" href="#id5" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>今回はPhotoShopを使用しています。
+解像度1024の画像を新規作成し、PhotoShopで雲1を選択します。</p>
+<p>次に3072x3072の画像を作成します。
+先ほどの雲模様を9個コピーします。
+これは、ループ画像を簡単に作れるようにするためです。
+そして、法線を作成します。</p>
+<p>最後に、中央の1024x1024の画像を切り取り、512に縮小して保存します。</p>
+</div>
+<div class="section" id="id6">
+<h3>グラデーション画像の作成方法<a class="headerlink" href="#id6" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>PhotoShopのグラデーションで作成しています。
+トゥーンなので、色が急に変化するようにしています。</p>
+</div>
+</div>
+<div class="section" id="id7">
+<h2>まとめ<a class="headerlink" href="#id7" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>本章では炎を作成しました。
+わかりやすくするために画像を複数分けていますが、実際は軽くするために画像を結合することもあります。</p>
+<p>ただ、このままでは固定された連続の炎が流れるのみです。
+次章では、これを様々なものに応用できるようにします。</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2019, Effekseer.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

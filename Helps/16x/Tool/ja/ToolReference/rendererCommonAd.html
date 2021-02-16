@@ -1,0 +1,329 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="ja" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>描画共通(高度) &mdash; Effekseer Help  ドキュメント</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/js/three.min.js"></script>
+        <script src="../../_static/js/effekseer.min.js"></script>
+        <script src="../../_static/js/iframe.js"></script>
+        <script src="../../_static/js/OrbitControls.js"></script>
+        <script src="../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="検索" href="../../search.html" />
+    <link rel="next" title="描画-スプライト" href="rendererSprite.html" />
+    <link rel="prev" title="描画共通" href="rendererCommon.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> Effekseer Help
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Effekseer Help 日本語</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../overview.html">概要</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolTutorial/index.html">チュートリアル</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">ツール・リファレンス</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="index.html#id2">概要</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="index.html#id13">エフェクトパラメータ</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="common.html">共通</a></li>
+<li class="toctree-l4"><a class="reference internal" href="location.html">位置</a></li>
+<li class="toctree-l4"><a class="reference internal" href="locationAbs.html">力場(ローカル)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="locationGene.html">生成方法</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rotation.html">回転</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scale.html">拡大</a></li>
+<li class="toctree-l4"><a class="reference internal" href="depth.html">深度</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererCommon.html">描画共通</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">描画共通(高度)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererSprite.html">描画-スプライト</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererRibbon.html">描画-リボン</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererRing.html">描画-リング</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererModel.html">描画-モデル</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererTrack.html">描画-軌跡</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sound.html">音</a></li>
+<li class="toctree-l4"><a class="reference internal" href="fcurve.html">Fカーブ</a></li>
+<li class="toctree-l4"><a class="reference internal" href="global.html">全体</a></li>
+<li class="toctree-l4"><a class="reference internal" href="culling.html">カリング</a></li>
+<li class="toctree-l4"><a class="reference internal" href="dynamicParameter.html">動的パラメーター</a></li>
+<li class="toctree-l4"><a class="reference internal" href="proceduralModel.html">プロシージャルモデル</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id14">エフェクト機能</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id15">ツール機能</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id16">コマンドライン</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../MaterialToolReference/index.html">マテリアル・リファレンス</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolTips/01.html">TIPS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq.html">FAQ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../releasenotes.html">更新履歴</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../en/index.html">Effekseer Help (English)</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Effekseer Help</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../index.html">Effekseer Help 日本語</a> &raquo;</li>
+        
+          <li><a href="index.html">ツール・リファレンス</a> &raquo;</li>
+        
+      <li>描画共通(高度)</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>描画共通(高度)<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<div class="section" id="id2">
+<h2>概要<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>描画共通で指定できるパラメーターよりも、より複雑なパラメーターを指定することができます。</p>
+</div>
+<div class="section" id="id3">
+<h2>パラメーター<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<div class="section" id="id4">
+<h3>アルファ画像<a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>設定された画像の赤色の範囲のみのカラー画像を表示します。
+例えば、アルファテクスチャに星型の画像を設定すると、その星型の領域のカラー画像が表示されます。
+この画像は個別にUVを設定できます。
+そのため、別々のUVを設定することで、スクロールやアニメーションさせることで複雑な見た目を表現できます。</p>
+<img alt="../../_images/alpha.png" class="align-center" src="../../_images/alpha.png" />
+</div>
+<div class="section" id="uv">
+<h3>UV歪み画像<a class="headerlink" href="#uv" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>設定された画像により、カラー画像を歪ませます。
+歪み画像は色が(127,127,255)の場合、歪まず、その色から離れるにしたがって歪みが大きくなります。
+この画像は個別にUVを設定できます。
+そのため、別々のUVを設定することで、スクロールやアニメーションさせることで複雑な見た目を表現できます。</p>
+<img alt="../../_images/dist.png" class="align-center" src="../../_images/dist.png" />
+</div>
+<div class="section" id="id5">
+<h3>アルファカットオフ<a class="headerlink" href="#id5" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>アルファ値が指定された値より低い部分が描画されなくなります。
+それにより、トゥーン調のエフェクトを表現しやすくなります。</p>
+<p><a class="reference internal" href="../../_images/alphacutoff_none.png"><img alt="pic_alphacutoff_none" src="../../_images/alphacutoff_none.png" style="width: 240.0px; height: 240.0px;" /></a> <a class="reference internal" href="../../_images/alphacutoff.png"><img alt="pic_alphacutoff" src="../../_images/alphacutoff.png" style="width: 240.0px; height: 240.0px;" /></a></p>
+<p>アルファ値が低い領域をエッジと判定し、そのエッジのみの色を変更します。
+トゥーン調のエフェクトを表現しやすくなります。</p>
+<img alt="../../_images/alphacutoff_edge.png" class="align-center" src="../../_images/alphacutoff_edge.png" />
+</div>
+<div class="section" id="id6">
+<h3>フォールオフ<a class="headerlink" href="#id6" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>モデルの視点方向から傾いている部分の色を指定します。
+これにより、モデルの正面方向は透明で端だけ不透明、といった表現をできます。</p>
+<p><a class="reference internal" href="../../_images/falloff_none.png"><img alt="pic_falloff_none" src="../../_images/falloff_none.png" style="width: 240.0px; height: 240.0px;" /></a> <a class="reference internal" href="../../_images/falloff_add.png"><img alt="pic_falloff" src="../../_images/falloff_add.png" style="width: 240.0px; height: 240.0px;" /></a></p>
+<p>減算や乗算もできます。</p>
+<img alt="../../_images/falloff_sub.png" class="align-center" src="../../_images/falloff_sub.png" />
+<img alt="../../_images/falloff_mul.png" class="align-center" src="../../_images/falloff_mul.png" />
+</div>
+<div class="section" id="id7">
+<h3>ソフトパーティクル<a class="headerlink" href="#id7" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>背景に近い部分の透明度を下げます。
+それにより、背景とパーティクルの境目の不自然さを抑えることができます。
+この機能は、Effekseerを使用する先の環境がソフトパーティクルに対応している必要があります。</p>
+<p><a class="reference internal" href="../../_images/softparticle_far_none.png"><img alt="pic_softparticle_far_none" src="../../_images/softparticle_far_none.png" style="width: 240.0px; height: 240.0px;" /></a> <a class="reference internal" href="../../_images/softparticle_far.png"><img alt="pic_softparticle_far" src="../../_images/softparticle_far.png" style="width: 240.0px; height: 240.0px;" /></a></p>
+<p>カメラに近い部分を透明にすることもできます。</p>
+<p><a class="reference internal" href="../../_images/softparticle_far_none.png"><img alt="pic_softparticle_near_none" src="../../_images/softparticle_far_none.png" style="width: 240.0px; height: 240.0px;" /></a> <a class="reference internal" href="../../_images/softparticle_near.png"><img alt="pic_softparticle_near" src="../../_images/softparticle_near.png" style="width: 240.0px; height: 240.0px;" /></a></p>
+</div>
+<div class="section" id="id8">
+<h3>ブレンド画像<a class="headerlink" href="#id8" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>設定された画像をカラー画像に加算したり、減算したりします。
+2つのパーティクルをブレンドによって重ねるのと違って、画像同士で加算、減算した結果をパーティクルの画像として使用します。</p>
+<img alt="../../_images/blend.png" class="align-center" src="../../_images/blend.png" />
+<p>加算、乗算、減算もできます。</p>
+<img alt="../../_images/blend_add.png" class="align-center" src="../../_images/blend_add.png" />
+<img alt="../../_images/blend_sub.png" class="align-center" src="../../_images/blend_sub.png" />
+<img alt="../../_images/blend_mul.png" class="align-center" src="../../_images/blend_mul.png" />
+</div>
+<div class="section" id="id9">
+<h3>ブレンドアルファ画像<a class="headerlink" href="#id9" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>ブレンド画像の一部を使用するためのアルファ画像です。
+カラー画像に対するブレンド画像と挙動は同じです。
+違いは対象とする画像のみです。</p>
+<img alt="../../_images/blend_alpha.png" class="align-center" src="../../_images/blend_alpha.png" />
+</div>
+<div class="section" id="id10">
+<h3>ブレンドUV歪み画像<a class="headerlink" href="#id10" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>ブレンド画像を歪ませるための画像です。
+カラー画像に対する歪み画像と挙動は同じです。
+違いは対象とする画像のみです。</p>
+<img alt="../../_images/blend_dist.png" class="align-center" src="../../_images/blend_dist.png" />
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="rendererSprite.html" class="btn btn-neutral float-right" title="描画-スプライト" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="rendererCommon.html" class="btn btn-neutral float-left" title="描画共通" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2019, Effekseer.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

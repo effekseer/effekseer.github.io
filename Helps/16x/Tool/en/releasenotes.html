@@ -1,0 +1,827 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="ja" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Release Notes &mdash; Effekseer Help  ドキュメント</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/js/three.min.js"></script>
+        <script src="../_static/js/effekseer.min.js"></script>
+        <script src="../_static/js/iframe.js"></script>
+        <script src="../_static/js/OrbitControls.js"></script>
+        <script src="../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="検索" href="../search.html" />
+    <link rel="prev" title="FAQ" href="faq.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Effekseer Help
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../ja/index.html">Effekseer Help 日本語</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Effekseer Help (English)</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="overview.html">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ToolTutorial/index.html">Tutorial</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ToolReference/index.html">Tool-Reference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MaterialToolReference/index.html">Material-Reference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ToolTips/01.html">TIPS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="faq.html">FAQ</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Release Notes</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#a-20-12-13">1.53a (20/12/13)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#common">Common</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#runtime">Runtime</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#unity">Unity.</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cocos2d-x">Cocos2d-x</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#unrealengine4">UnrealEngine4</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#n-20-10-23">1.52n (20/10/23)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#cmmon">Cmmon</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#tool">Tool</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id1">Runtime</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#webgl">WebGL</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#m-20-08-28">1.52m (20/08/28)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id2">Common</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id3">UnrealEngine4</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id4">Runtime</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#l-20-08-18">1.52l（20/08/18）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tools-unity-runtime-dxlib">Tools, Unity, Runtime, DXLib</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#k-20-08-16">1.52k（20/08/16）</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id5">Common</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#tools">Tools</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id6">Unity</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#unrealengine-4">UnrealEngine 4</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id7">Runtime</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#dx-library">DX Library.</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id8">Cocos2d-x</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id9">WebGL</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#j-20-08-02">1.52j（20/08/02）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#i-20-07-31">1.52i (20/07/31)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#h-20-07-09">1.52h（20/07/09）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#g-20-06-09">1.52g（20/06/09）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#f-20-05-13">1.52f（20/05/13）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#e-20-05-07">1.52e（20/05/07）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#d-20-05-06">1.52d（20/05/06）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#c-mac-only-20-05-06">1.52c(Mac Only)（20/05/06）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#b-20-05-05">1.52b（20/05/05）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#a-20-04-28">1.52a（20/04/28）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id10">1.52（20/04/27）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id11">1.51（20/04/02）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id12">1.50（20/03/18）</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#material">Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#dynamic-parameter">Dynamic Parameter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#new-format">New format</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#recording">Recording</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ui">UI</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#environment">Environment</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sprite-ring-model">Sprite, ring, model</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#track">Track</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ring">Ring</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ribbon-track">Ribbon, Track</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#f-curve">F-curve</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#depth">Depth</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#attractionforce">AttractionForce</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#optimisation">Optimisation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#point-of-view">Point of view</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#misc">Misc</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#f-19-11-20">1.43f（19/11/20）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#e-19-10-12">1.43e（19/10/12）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#d-19-07-08">1.43d（19/07/08）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#c-19-05-13">1.43c（19/05/13）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#b-19-03-12">1.43b（19/03/12）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id13">1.43（19/03/02）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#f-19-01-19">1.42f（19/01/19）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#e-19-01-08">1.42e（19/01/08）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#d-19-01-06">1.42d（19/01/06）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#c-18-10-14">1.42c（18/10/14）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#b-18-09-25">1.42b（18/09/25）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#a-18-09-16">1.42a（18/09/16）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id14">1.42（18/09/16）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id15">1.41（18/09/13）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id16">1.40（18/09/12）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id17">1.31（17/11/21）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id18">1.31（17/11/04）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id19">1.30（17/11/01）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id20">1.22（16/08/21）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#previous-changes-are-only-japanese">Previous changes are only japanese.</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Effekseer Help</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="index.html">Effekseer Help (English)</a> &raquo;</li>
+        
+      <li>Release Notes</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="release-notes">
+<h1>Release Notes<a class="headerlink" href="#release-notes" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<div class="section" id="a-20-12-13">
+<h2>1.53a (20/12/13)<a class="headerlink" href="#a-20-12-13" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<div class="section" id="common">
+<h3>Common<a class="headerlink" href="#common" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<ul class="simple">
+<li><p>Removed glTF extension (because it was unmaintained and not implemented perfectly)</p></li>
+<li><p>Fixed a bug where UV2 nodes were not working properly in OpenGL materials.</p></li>
+<li><p>Fixed a bug where effects are not displayed with custom data 1 and 2 were set to all RGBA in OpenGL ES2.0 materials.</p></li>
+<li><p>Fixed a bug where effects are not displayed  lighting in Metal materials.</p></li>
+</ul>
+</div>
+<div class="section" id="runtime">
+<h3>Runtime<a class="headerlink" href="#runtime" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<ul class="simple">
+<li><p>Added bat file to output x86 and x64.</p></li>
+<li><p>Disabled OpenAL samples on Windows.</p></li>
+</ul>
+</div>
+<div class="section" id="unity">
+<h3>Unity.<a class="headerlink" href="#unity" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<ul class="simple">
+<li><p>Added the feature to draw effects in PostProcessingStack.</p></li>
+<li><p>Fixed a bug where materials were disabled after upgrading Unity version.</p></li>
+<li><p>Changed Mac binary to Hardened Runtime.</p></li>
+</ul>
+</div>
+<div class="section" id="cocos2d-x">
+<h3>Cocos2d-x<a class="headerlink" href="#cocos2d-x" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<ul class="simple">
+<li><p>Fixed a bug where images were not drawn correctly when mipmap was enabled in Metal environment.</p></li>
+</ul>
+</div>
+<div class="section" id="unrealengine4">
+<h3>UnrealEngine4<a class="headerlink" href="#unrealengine4" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<ul class="simple">
+<li><p>4.26 support.</p></li>
+<li><p>Changed to suppress the generation of extra materials.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="n-20-10-23">
+<h2>1.52n (20/10/23)<a class="headerlink" href="#n-20-10-23" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<div class="section" id="cmmon">
+<h3>Cmmon<a class="headerlink" href="#cmmon" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<ul class="simple">
+<li><p>Fixed a bug where scaling was not applied to the cull size.</p></li>
+<li><p>Fixed a bug where material normals was incorrect.</p></li>
+</ul>
+</div>
+<div class="section" id="tool">
+<h3>Tool<a class="headerlink" href="#tool" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<ul class="simple">
+<li><p>Fixed a bug where the original image of the recording behaved strangely</p></li>
+<li><p>Changed to show a warning when connecting the normal and the normals in material.</p></li>
+</ul>
+</div>
+<div class="section" id="id1">
+<h3>Runtime<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<ul class="simple">
+<li><p>Fixed a bug that caused a crash when drawing a lot on DirectX12.</p></li>
+</ul>
+</div>
+<div class="section" id="webgl">
+<h3>WebGL<a class="headerlink" href="#webgl" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>Fixed a bug where PremultiplyAlpha was not disabled.</p>
+</div>
+</div>
+<div class="section" id="m-20-08-28">
+<h2>1.52m (20/08/28)<a class="headerlink" href="#m-20-08-28" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<div class="section" id="id2">
+<h3>Common<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<ul class="simple">
+<li><p>Fixed a bug that caused a crash when creating too many particles that exceeded the amount of memory allocated under certain conditions.</p></li>
+</ul>
+</div>
+<div class="section" id="id3">
+<h3>UnrealEngine4<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<ul class="simple">
+<li><p>Fixed a bug that prevented the Clamp node from working properly.</p></li>
+<li><p>Fixed a bug that caused a delay in drawing one frame.</p></li>
+<li><p>Fixed a bug that could cause incorrect rotation.</p></li>
+</ul>
+</div>
+<div class="section" id="id4">
+<h3>Runtime<a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<ul class="simple">
+<li><p>Refreshed samples of culling</p></li>
+<li><p>Fixed a bug where culling was not working properly.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="l-20-08-18">
+<h2>1.52l（20/08/18）<a class="headerlink" href="#l-20-08-18" title="このヘッドラインへのパーマリンク">¶</a></h2>
+</div>
+<div class="section" id="tools-unity-runtime-dxlib">
+<h2>Tools, Unity, Runtime, DXLib<a class="headerlink" href="#tools-unity-runtime-dxlib" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<ul class="simple">
+<li><p>Fixed a bug that caused a crash when playing an effect without setting a model file when a model was selected for rendering.</p></li>
+</ul>
+</div>
+<div class="section" id="k-20-08-16">
+<h2>1.52k（20/08/16）<a class="headerlink" href="#k-20-08-16" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<div class="section" id="id5">
+<h3>Common<a class="headerlink" href="#id5" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<ul class="simple">
+<li><p>Fixed a bug where the effect is not displayed when render method is ribbons, the number of divisions is more than 2, the magnification is 0 for one particle.</p></li>
+<li><p>Moving the timing of sending the model to the GPU before rendering (to make it easier to process in the rendering thread)</p></li>
+</ul>
+</div>
+<div class="section" id="tools">
+<h3>Tools<a class="headerlink" href="#tools" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<ul class="simple">
+<li><p>Fixed omissions in the English version.</p></li>
+<li><p>Fixed a bug where the app crashed when you don't have file permissions.</p></li>
+<li><p>Fixed a bug that prevented creation of shader cache (x86 only)</p></li>
+</ul>
+</div>
+<div class="section" id="id6">
+<h3>Unity<a class="headerlink" href="#id6" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<ul class="simple">
+<li><p>Fixed a bug where effects would not play when switching emitters after playing an emitter in the Scene window.</p></li>
+<li><p>Fixed a bug that prevented material compilation if the material contains a reserved word</p></li>
+<li><p>Supports material wrapping and repeats</p></li>
+</ul>
+</div>
+<div class="section" id="unrealengine-4">
+<h3>UnrealEngine 4<a class="headerlink" href="#unrealengine-4" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<ul class="simple">
+<li><p>Fixed a bug where R and G of Texture Sample node were switched.</p></li>
+<li><p>Fixed a bug where a material compile error would occur under certain circumstances</p></li>
+<li><p>Fixed a bug where lighting parameters were not supported</p></li>
+<li><p>Fixed a bug that prevented re-importation.</p></li>
+<li><p>Fixed a bug where images of normals could not be loaded with materials.</p></li>
+<li><p>Supports material wrapping and repeats</p></li>
+</ul>
+</div>
+<div class="section" id="id7">
+<h3>Runtime<a class="headerlink" href="#id7" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<ul class="simple">
+<li><p>Fixed a bug that caused network reloads to behave strangely with multiple Manager classes</p></li>
+</ul>
+</div>
+<div class="section" id="dx-library">
+<h3>DX Library.<a class="headerlink" href="#dx-library" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<ul class="simple">
+<li><p>Fixed a bug that caused network reloads to behave strangely</p></li>
+</ul>
+</div>
+<div class="section" id="id8">
+<h3>Cocos2d-x<a class="headerlink" href="#id8" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<ul class="simple">
+<li><p>Changed to show a warning when non-squared images are loaded.</p></li>
+<li><p>Fixed a bug that did not support Android distortion.</p></li>
+</ul>
+</div>
+<div class="section" id="id9">
+<h3>WebGL<a class="headerlink" href="#id9" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<ul class="simple">
+<li><p>Change image.crossOrigin to use-credentials</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="j-20-08-02">
+<h2>1.52j（20/08/02）<a class="headerlink" href="#j-20-08-02" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>Fixed a bug where Bloom was behaving strangely in certain environments.</p>
+<p>Fixed a bug where the memory locator alignment could go wrong in x86 environments.</p>
+<p>Fixed a bug where noise could occur in MSAA environments.</p>
+</div>
+<div class="section" id="i-20-07-31">
+<h2>1.52i (20/07/31)<a class="headerlink" href="#i-20-07-31" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>Fixed a bug where opening a file was disabled with certain operation (Mac)</p>
+<p>Fixed a bug where Effeksee cannot run in environments that did not support MSAA (Windows)</p>
+<p>Fixed a bug where <code class="docutils literal notranslate"><span class="pre">Is</span> <span class="pre">scaling</span> <span class="pre">invalid</span> <span class="pre">with</span> <span class="pre">Z-Offset</span></code> behaved strangely.</p>
+<p>Fixed a bug where dynamic parameters giving Vector as an argument behaved strangely.</p>
+<p>Fixed a bug where the F-curve of UV behaved strangely.</p>
+<p>Fixed a bug where the network reloading function was behaving strangely.</p>
+<p>Fixed a bug that caused loading problems when saving a file with a default value of 0 and the same value as the default in custom data.</p>
+<p>Fixed a bug where the memory locator alignment could go wrong in x86 environments.</p>
+</div>
+<div class="section" id="h-20-07-09">
+<h2>1.52h（20/07/09）<a class="headerlink" href="#h-20-07-09" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>Unify drawing behavior due to opacity on all platforms</p>
+<p>Effekseer now can remove redundant nodes when effects are exported</p>
+<p>Fixed a bug that caused a crash when executing UNDO without displaying the node tree.</p>
+<p>Fixed a bug that occurred when the value of a material's step node was negative.</p>
+<p>Fixed a bug that recording with high frequency is wrong</p>
+<p>Fixed a bug that caused a crash when much particles are spawn</p>
+</div>
+<div class="section" id="g-20-06-09">
+<h2>1.52g（20/06/09）<a class="headerlink" href="#g-20-06-09" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>Fixed a bug that pngs with interlacing could not be displayed correctly</p>
+<p>Fixed a bug that caused a crash when displaying a new effect after playing a lot of effect.</p>
+<p>Fixed a bug that caused a crash when saving camera settings.</p>
+<p>Fixed a bug where batch processing was not working.</p>
+<p>(Runtime) Fixed a bug that it crashs if you end up not finding a format when extending a file reading</p>
+</div>
+<div class="section" id="f-20-05-13">
+<h2>1.52f（20/05/13）<a class="headerlink" href="#f-20-05-13" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>Fixed a bug that parameters of turbulence is not saved</p>
+<p>Added an error message when it fails to save a file</p>
+</div>
+<div class="section" id="e-20-05-07">
+<h2>1.52e（20/05/07）<a class="headerlink" href="#e-20-05-07" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>Make delete button enabled in F-Curve on Mac</p>
+<p>Fix a bug that removing points with double click was disabled in F-Curve.</p>
+<p>Improve behavior of drag in F-Curve.</p>
+</div>
+<div class="section" id="d-20-05-06">
+<h2>1.52d（20/05/06）<a class="headerlink" href="#d-20-05-06" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>Fixed a bug where the magnification of recorded images is wrong.</p>
+</div>
+<div class="section" id="c-mac-only-20-05-06">
+<h2>1.52c(Mac Only)（20/05/06）<a class="headerlink" href="#c-mac-only-20-05-06" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>Fixed a crash on Mac when saving a file after importing new image .</p>
+</div>
+<div class="section" id="b-20-05-05">
+<h2>1.52b（20/05/05）<a class="headerlink" href="#b-20-05-05" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>Fixed a bug where particles are not shown with Line of SpawnMethod
+Fixed a bug in which Japanese is selected in an environment where the language is neither Japanese nor English.
+Fixed a bug that it fails to start if the current directory at startup is not the same as Effekseer.</p>
+</div>
+<div class="section" id="a-20-04-28">
+<h2>1.52a（20/04/28）<a class="headerlink" href="#a-20-04-28" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>Fixed a bug that a behavior of rotated billboard is something wrong when an angle is about 90 degree</p>
+</div>
+<div class="section" id="id10">
+<h2>1.52（20/04/27）<a class="headerlink" href="#id10" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>Fixed a bug where files could not be saved on some Mac environments.</p>
+<p>Fixed a bug that caused a rare crash.</p>
+<p>Fixed a bag where the FPS changed when not using the 60FPS display.</p>
+<p>Fixed a bug where the color space did not work properly.</p>
+<p>Improved UI for recording.</p>
+</div>
+<div class="section" id="id11">
+<h2>1.51（20/04/02）<a class="headerlink" href="#id11" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>Fix a bug that Effekseer doesn't run on ShaderModel4.0 (Windows)</p>
+<p>Optimize Turbulence</p>
+<p>Support 2D Mode (Experimental)</p>
+</div>
+<div class="section" id="id12">
+<h2>1.50（20/03/18）<a class="headerlink" href="#id12" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<div class="section" id="material">
+<h3>Material<a class="headerlink" href="#material" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>Material functionality has been added.
+You can now create and use your own materials with nodes.</p>
+<p>Distortion Parameters were removed from Basic Render Settings.
+Lighting Parameters were removed from model Render Settings.
+Instead of these, parameters are reorganized.</p>
+<p>Standard, distortion, and lighting materials have been added in Basic Render Settings.</p>
+<p>You can now specify a sampler for distorting texture independently of color.</p>
+<p>Lighting is now supported for non-models.</p>
+<p>You can now select an image to use for UV calculation. UV can also be specified without an image.</p>
+<p>(Breaking change)
+Due to a bug, the distortion did not behave as the reference correctly.
+The specifications is the same as the previous version if the colors of the vertices are swapped between red and green except for sprites.
+The specifications is the same as the previous version if it makes the color of red twice for sprites.</p>
+<p>(Breaking change)
+Applied read magnification to distortion.
+The magnification and distortion become stronger.
+Therefore, the distortion on the screen remains unchanged when the effect occupies the same area.</p>
+<p>(Breaking change)
+Due to non-model lighting, billboard behavior has been partially changed.
+Models with fixed settings and rings that extend in the depth direction are particularly affected.
+The specifications is the same as the previous version if you reverse the front and back.</p>
+<p>(Breaking change)
+Changed the specification so that pixels are drawn even if the position is the same in DirectX11.
+There is basically no effect, but there may be a change if drawing in the same position.</p>
+<p>(Breaking change)
+Fixed a bug that sprites are not ordered even if the drawing order was reversed.</p>
+</div>
+<div class="section" id="dynamic-parameter">
+<h3>Dynamic Parameter<a class="headerlink" href="#dynamic-parameter" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>A function has been added to rewrite effect parameters during playback.</p>
+</div>
+<div class="section" id="new-format">
+<h3>New format<a class="headerlink" href="#new-format" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>efkproj and efk have been combined into efkefc. It is no longer necessary to output another file. Instead, you must specify the load magnification at runtime when a file is loaded.</p>
+</div>
+<div class="section" id="recording">
+<h3>Recording<a class="headerlink" href="#recording" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>The color when the background is changed can be reproduced as much as possible by separating the recorded result into normal and additive.</p>
+<p>You can now specify whether to save recording settings in the application or project. Effects can now have recording settings.</p>
+<p>Behavior is now reflected in recordings. Recording of loop effects has become easier.</p>
+<p>Fixed the problem that extra frames were recorded when recording as a spreadsheet.</p>
+</div>
+<div class="section" id="ui">
+<h3>UI<a class="headerlink" href="#ui" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>The behavior of the node tree has been improved in many points.</p>
+<p>The behavior of the F-curve has been improved in many points.</p>
+<p>Copy and paste can be performed for each panel.</p>
+<p>The part whose value has been changed from the default is now emphasized.</p>
+<p>Added support for changing DPI scale.</p>
+<p>Fixed a bug that playback started when a space was entered during character string input.</p>
+<p>Added options to change font and font size.</p>
+</div>
+<div class="section" id="environment">
+<h3>Environment<a class="headerlink" href="#environment" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>Bloom and tone mapping can now be specified in the editor.
+This is for checking the behavior of the effect because it is applied only to the appearance of the editor.
+Background and lighting have been moved to the environment because of the frequency of changes.</p>
+</div>
+<div class="section" id="sprite-ring-model">
+<h3>Sprite, ring, model<a class="headerlink" href="#sprite-ring-model" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>(Breaking change) The direction of rotation of <code class="docutils literal notranslate"><span class="pre">Rotated</span> <span class="pre">billboard</span></code> has been reversed.</p>
+</div>
+<div class="section" id="track">
+<h3>Track<a class="headerlink" href="#track" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>(Breaking change) The track has been flipped.</p>
+</div>
+<div class="section" id="ring">
+<h3>Ring<a class="headerlink" href="#ring" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>It changed <code class="docutils literal notranslate"><span class="pre">viewing</span> <span class="pre">angle</span></code> setting to a ring shape setting.
+If you specify a crescent type, a ring is drawn as a partially cut circle.
+You can now specify the start and end angles and the fade angle of the circle.</p>
+<p>(Breaking change)
+The appearance may change depending on <code class="docutils literal notranslate"><span class="pre">viewing</span> <span class="pre">angle</span></code>.</p>
+</div>
+<div class="section" id="ribbon-track">
+<h3>Ribbon, Track<a class="headerlink" href="#ribbon-track" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>UV repeat pattern can now be specified.
+UV can be repeated according to the length. You can also specify not to repeat only the edges.
+Suitable for expressions with repeating patterns such as chains.</p>
+</div>
+<div class="section" id="f-curve">
+<h3>F-curve<a class="headerlink" href="#f-curve" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>The value change can now be specified with the particle extinction time as 100. In addition, the default has been changed to 100%.</p>
+</div>
+<div class="section" id="depth">
+<h3>Depth<a class="headerlink" href="#depth" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>Added a parameter to set the scale so that it does not change even if the distance changes. You can also suppress the change.</p>
+<p>Added depth offset to ribbon and track.</p>
+<p>Z-sort is now applied to ring and model.</p>
+<p>(Breaking change)
+Fixed incorrect calculation of ignore of scaling by offset.</p>
+</div>
+<div class="section" id="attractionforce">
+<h3>AttractionForce<a class="headerlink" href="#attractionforce" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>It is renamed into ForceField.
+Turbulence was implemented.</p>
+</div>
+<div class="section" id="optimisation">
+<h3>Optimisation<a class="headerlink" href="#optimisation" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>Update process is 30-50% faster.</p>
+</div>
+<div class="section" id="point-of-view">
+<h3>Point of view<a class="headerlink" href="#point-of-view" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>You can now save and load the current viewpoint.</p>
+<p>You can now specify near-far clips.</p>
+</div>
+<div class="section" id="misc">
+<h3>Misc<a class="headerlink" href="#misc" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>Added support for reading FBX without bone or FBX without animation and with bone.</p>
+<p>Added a playbackspeed in Behavior</p>
+<p>(Breaking change)
+Fixed a bug that random numbers overflowed. The random behavior may change.</p>
+</div>
+</div>
+<div class="section" id="f-19-11-20">
+<h2>1.43f（19/11/20）<a class="headerlink" href="#f-19-11-20" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<ul class="simple">
+<li><p>Fixed a bug that it cannot open a help.</p></li>
+</ul>
+</div>
+<div class="section" id="e-19-10-12">
+<h2>1.43e（19/10/12）<a class="headerlink" href="#e-19-10-12" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<ul class="simple">
+<li><p>Fixed a bug that the application cannot read a model from maya</p></li>
+<li><p>Fixed a bug that the application cannot read a file with a name containing space</p></li>
+<li><p>Fixed a bug that crashes with unloaded models on mac</p></li>
+</ul>
+</div>
+<div class="section" id="d-19-07-08">
+<h2>1.43d（19/07/08）<a class="headerlink" href="#d-19-07-08" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<ul class="simple">
+<li><p>Fixed a bug that the window size is doubled each time the application is launched on Macs with Retina Display.</p></li>
+<li><p>Fixed a bug that settings are loaded from current directory</p></li>
+<li><p>Fixed a bug that the application cannot read a file with a name containing <code class="docutils literal notranslate"><span class="pre">+</span></code></p></li>
+<li><p>Fixed a bug that the application is crashed when invalid images are loaded</p></li>
+<li><p>Fixed a bug that the application is crashed when File Viewer is opened and it select new</p></li>
+<li><p>Fixed a bug that the application is crashed when it failed to load a file from recent files</p></li>
+<li><p>Changed a name of error log. The name contains time stamp</p></li>
+</ul>
+</div>
+<div class="section" id="c-19-05-13">
+<h2>1.43c（19/05/13）<a class="headerlink" href="#c-19-05-13" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<ul class="simple">
+<li><p>Fixed a bug that fails to read model file when user name is Japanese (Win)</p></li>
+<li><p>Fixed a bug that files cannot be loaded on Europe environment</p></li>
+</ul>
+</div>
+<div class="section" id="b-19-03-12">
+<h2>1.43b（19/03/12）<a class="headerlink" href="#b-19-03-12" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<ul class="simple">
+<li><p>Fixed a bug that the icon image disappears when changing the screen size after opening the file(Mac)</p></li>
+</ul>
+</div>
+<div class="section" id="id13">
+<h2>1.43（19/03/02）<a class="headerlink" href="#id13" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<ul class="simple">
+<li><p>Fixed bug that the behavior of the ribbon and track generated with the 0th frame is wrong</p></li>
+<li><p>Fixed bug that SSE buffer overrun crashes</p></li>
+<li><p>Fixed bug that crashes on Android when specifying easing of color</p></li>
+<li><p>Fixed many bugs about network functions</p></li>
+</ul>
+</div>
+<div class="section" id="f-19-01-19">
+<h2>1.42f（19/01/19）<a class="headerlink" href="#f-19-01-19" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<ul class="simple">
+<li><p>Fixed a bug where recording image's aspect is wrong</p></li>
+</ul>
+</div>
+<div class="section" id="e-19-01-08">
+<h2>1.42e（19/01/08）<a class="headerlink" href="#e-19-01-08" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<ul class="simple">
+<li><p>Fixed a bug where Effekseer is built with Debug Mode</p></li>
+</ul>
+</div>
+<div class="section" id="d-19-01-06">
+<h2>1.42d（19/01/06）<a class="headerlink" href="#d-19-01-06" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<ul class="simple">
+<li><p>Fixed a bug about HSV Color*   Support macOS 10.14 Mojave</p></li>
+</ul>
+</div>
+<div class="section" id="c-18-10-14">
+<h2>1.42c（18/10/14）<a class="headerlink" href="#c-18-10-14" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<ul class="simple">
+<li><p>Make F-Curve key fit integer.</p></li>
+<li><p>Fixed a bug causes garbled when application path includes japanese letter.</p></li>
+<li><p>Fixed a bug shows multiple window when clicking a close button.</p></li>
+<li><p>Fixed a bug causes crach when record into opened movie file.</p></li>
+<li><p>Fixed a bug about recording on Mac</p></li>
+</ul>
+</div>
+<div class="section" id="b-18-09-25">
+<h2>1.42b（18/09/25）<a class="headerlink" href="#b-18-09-25" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<ul class="simple">
+<li><p>Fixed bug: Fixed many bugs about command line</p></li>
+</ul>
+</div>
+<div class="section" id="a-18-09-16">
+<h2>1.42a（18/09/16）<a class="headerlink" href="#a-18-09-16" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<ul class="simple">
+<li><p>Fixed bug: Changing a pitch of sound crashes</p></li>
+</ul>
+</div>
+<div class="section" id="id14">
+<h2>1.42（18/09/16）<a class="headerlink" href="#id14" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<ul class="simple">
+<li><p>Fixed bug: Uncollapsed tree view node cannot be selected.</p></li>
+<li><p>Fixed bug: Fixed many bugs about Behavior, Behavior, Global</p></li>
+</ul>
+</div>
+<div class="section" id="id15">
+<h2>1.41（18/09/13）<a class="headerlink" href="#id15" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<ul class="simple">
+<li><p>Fixed bug: UI is collapsed on some mac pc (Mac)</p></li>
+<li><p>Fixed bug: Dock panel behavior is wired</p></li>
+<li><p>Fixed bug: Pasting on node crashes the application</p></li>
+</ul>
+</div>
+<div class="section" id="id16">
+<h2>1.40（18/09/12）<a class="headerlink" href="#id16" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<ul class="simple">
+<li><p>Tool: The renewal of UI</p></li>
+<li><p>Tool: Improve FBX loader. It can load a fbx file with an animation</p></li>
+<li><p>Tool: Add parameters about depth</p></li>
+<li><p>Tool: Add a parameter about random</p></li>
+<li><p>Tool: Add a parameter to make tracks and ribbons smooth</p></li>
+<li><p>Tool: Add self distortion</p></li>
+<li><p>Runtime: Improve a performance on smartphones</p></li>
+<li><p>Runtime: Improve a performance on all environments</p></li>
+<li><p>Fixed bug: Generation of particles is delayed at 1 frame</p></li>
+</ul>
+</div>
+<div class="section" id="id17">
+<h2>1.31（17/11/21）<a class="headerlink" href="#id17" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<ul class="simple">
+<li><p>Fixed bug: Fixed FBX converter</p></li>
+</ul>
+</div>
+<div class="section" id="id18">
+<h2>1.31（17/11/04）<a class="headerlink" href="#id18" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<ul class="simple">
+<li><p>Fixed bug: Fixed translation mistake in the recorder</p></li>
+</ul>
+</div>
+<div class="section" id="id19">
+<h2>1.30（17/11/01）<a class="headerlink" href="#id19" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<ul class="simple">
+<li><p>Tool: Add icons</p></li>
+<li><p>Tool: Add file viewer</p></li>
+<li><p>Tool: Integrate FBX and mqo loader</p></li>
+<li><p>Tool: Improve F-Curve Editor</p></li>
+<li><p>Tool: Add UV F-Curve</p></li>
+<li><p>Runtime: changed so that enlargement ratio is applied to trajectory</p></li>
+<li><p>Fixed bug: Fixed shifting ribbon and track's UV</p></li>
+<li><p>Fixed bug: Fixed bug that ribbon distortion is not applied</p></li>
+<li><p>Fixed bug: Fixed misspelled function name (Destory -&gt; Destroy)</p></li>
+<li><p>Fixed bug: Fixed bug that the behavior is not initialized when files are loaded</p></li>
+<li><p>Fixed bug: Fixed bug about rotation(Axis)</p></li>
+<li><p>Fixed bug: Fixed bug about rotation(Distortion)</p></li>
+<li><p>Fixed bug: Fixed bug about copy node</p></li>
+<li><p>Specification change: Changed to generate child particles at 0 frame since particles are generated</p></li>
+<li><p>Specification change: Change the return value of distortion callback to bool</p></li>
+<li><p>Specification change: Abolition of maximum number of nodes</p></li>
+<li><p>Specification change: Distortion method. Effekseer's effects are not distorted with a distortion. (after1.4 we plan to add self distortion)</p></li>
+</ul>
+</div>
+<div class="section" id="id20">
+<h2>1.22（16/08/21）<a class="headerlink" href="#id20" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<ul class="simple">
+<li><p>Tool: Ribbon and track corresponds to UV scroll</p></li>
+<li><p>Fixed bug: Fixed erroneous operation of copy paste</p></li>
+</ul>
+</div>
+<div class="section" id="previous-changes-are-only-japanese">
+<h2>Previous changes are only japanese.<a class="headerlink" href="#previous-changes-are-only-japanese" title="このヘッドラインへのパーマリンク">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="faq.html" class="btn btn-neutral float-left" title="FAQ" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2019, Effekseer.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
