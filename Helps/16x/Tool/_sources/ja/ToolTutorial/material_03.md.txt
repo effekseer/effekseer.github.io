@@ -69,14 +69,14 @@ Effekseerにも、グラデーションのパラメーターが表示されま�
 そして、移動UVノードのSpeedにつなげます。
 
 ```eval_rst
-.. image:: ../../img/Tutorial/Mat_03/Grad_Parameter_Ja.png
+.. image:: ../../img/Tutorial/Mat_03/Speed_Parameter_Ja.png
    :align: center
 ```
 
 EffekseerにSpeedが表示されるので数値を変更します。
 
 ```eval_rst
-.. image:: ../../img/Tutorial/Mat_03/Grad_Speed_Editor_Ja.png
+.. image:: ../../img/Tutorial/Mat_03/Speed_Editor_Ja.png
    :align: center
 ```
 
@@ -117,7 +117,7 @@ EffekseerにSpeedが表示されるので数値を変更します。
    :align: center
 ```
 
-FカーブでRの値を、消えているときは1、表示中は0になるように設定します。
+FカーブでRの値を、消えているときは-1、表示中は0になるように設定します。
 
 ```eval_rst
 .. image:: ../../img/Tutorial/Mat_03/FCurve.png
