@@ -91,8 +91,11 @@
 <li class="toctree-l4"><a class="reference internal" href="#target-support-status">Target support status</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#known-issues">Known issues</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#todo">Todo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#known-issues">Known issues</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#advanced-rendering-panel-function-does-not-work">Advanced rendering panel function does not work</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#d-scene-rendering-does-not-work">2D scene rendering does not work</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="how-to-use.html">How to use</a></li>
@@ -169,6 +172,7 @@
             
   <div class="section" id="introduction">
 <h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h1>
+<p><img alt="../_images/Godot_effekseer.png" src="../_images/Godot_effekseer.png" /></p>
 <div class="section" id="welcome-to-effekseerforgodot">
 <h2>Welcome to EffekseerForGodot<a class="headerlink" href="#welcome-to-effekseerforgodot" title="Permalink to this headline">¶</a></h2>
 <p>This is the EffekseerForGodot documentation.
@@ -238,15 +242,23 @@ It supports common environments, but other platforms require the user to build i
 </div>
 <div class="section" id="known-issues">
 <h2>Known issues<a class="headerlink" href="#known-issues" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="advanced-rendering-panel-function-does-not-work">
+<h3>Advanced rendering panel function does not work<a class="headerlink" href="#advanced-rendering-panel-function-does-not-work" title="Permalink to this headline">¶</a></h3>
+<p>The following features do not work.</p>
 <ul class="simple">
-<li><p>In Advanced Render of Effekseer 1.60 or later, Features other than soft particles do not work.</p></li>
+<li><p>Alpha texture</p></li>
+<li><p>UV distortion texture</p></li>
+<li><p>Alpha cutoff</p></li>
+<li><p>Falloff</p></li>
+<li><p>Blend texture</p></li>
 </ul>
+<p>*Soft particles work.<br />*Godot3 cannot be supported due to technical limitation.<br />*Godot4 will be supported in the future version.</p>
 </div>
-<div class="section" id="todo">
-<h2>Todo<a class="headerlink" href="#todo" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p>Advanced Rendering</p></li>
-</ul>
+<div class="section" id="d-scene-rendering-does-not-work">
+<h3>2D scene rendering does not work<a class="headerlink" href="#d-scene-rendering-does-not-work" title="Permalink to this headline">¶</a></h3>
+<p>Cannot render in 2D scene.<br />It is possible to render and overlay in the viewport.</p>
+<p>*It will be supported in a future version.</p>
+</div>
 </div>
 </div>
 

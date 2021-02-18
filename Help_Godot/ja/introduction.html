@@ -92,8 +92,11 @@
 <li class="toctree-l4"><a class="reference internal" href="#id4">ターゲット対応状況</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#id5">既知の問題</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#todo">Todo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id5">既知の問題</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id6">高度描画パネルの機能が動作しない</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#d">2Dシーンにレンダリングできない</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="how-to-use.html">プラグインの使い方</a></li>
@@ -169,6 +172,7 @@
             
   <div class="section" id="id1">
 <h1>概要<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p><img alt="../_images/Godot_effekseer1.png" src="../_images/Godot_effekseer1.png" /></p>
 <div class="section" id="id2">
 <h2>はじめに<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <p>これはEffekseerForGodotのドキュメントです。
@@ -238,15 +242,23 @@ Godot Engine向けのEffekseerプラグインについて説明します。
 </div>
 <div class="section" id="id5">
 <h2>既知の問題<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id6">
+<h3>高度描画パネルの機能が動作しない<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<p>以下の機能は動作しません。</p>
 <ul class="simple">
-<li><p>Effekseer 1.60の高度描画パネルにある、ソフトパーティクル”を除いた”機能は現状動作しません。</p></li>
+<li><p>アルファ画像</p></li>
+<li><p>UV歪み画像</p></li>
+<li><p>アルファカットオフ</p></li>
+<li><p>フォールオフ</p></li>
+<li><p>ブレンド画像</p></li>
 </ul>
+<p>※ソフトパーティクルは動作します。<br />※Godot3は技術的制限により対応できません。<br />※Godot4は将来的に対応予定。</p>
 </div>
-<div class="section" id="todo">
-<h2>Todo<a class="headerlink" href="#todo" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p>高度描画機能</p></li>
-</ul>
+<div class="section" id="d">
+<h3>2Dシーンにレンダリングできない<a class="headerlink" href="#d" title="Permalink to this headline">¶</a></h3>
+<p>2Dシーン中にレンダリングできません。<br />ビューポートに描画して重ねることは可能です。</p>
+<p>※将来のバージョンアップで対応予定。</p>
+</div>
 </div>
 </div>
 
