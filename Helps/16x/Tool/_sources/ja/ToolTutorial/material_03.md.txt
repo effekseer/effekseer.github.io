@@ -76,7 +76,7 @@ Effekseerにも、グラデーションのパラメーターが表示されま�
 EffekseerにSpeedが表示されるので数値を変更します。
 
 ```eval_rst
-.. image:: ../../img/Tutorial/Mat_03/Speed_Editor_Ja.png
+.. image:: ../../img/Tutorial/Mat_03/Speed_Parameter_Editor_Ja.png
    :align: center
 ```
 
@@ -118,6 +118,9 @@ EffekseerにSpeedが表示されるので数値を変更します。
 ```
 
 FカーブでRの値を、消えているときは-1、表示中は0になるように設定します。
+
+-1を入力すると、グラデーション画像の上のほうを参照するようになります。
+すなわち、画像が消えることになります。
 
 ```eval_rst
 .. image:: ../../img/Tutorial/Mat_03/FCurve.png
