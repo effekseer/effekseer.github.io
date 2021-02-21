@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>&lt;no title&gt; &mdash; Effekseer Help  ドキュメント</title>
+  <title>Basic Render Settings (Advanced) &mdash; Effekseer Help  ドキュメント</title>
   
 
   
@@ -90,9 +90,47 @@
               
             
             
-              <ul>
+              <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../../ja/index.html">Effekseer Help 日本語</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../index.html">Effekseer Help (English)</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Effekseer Help (English)</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../overview.html">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolTutorial/index.html">Tutorial</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Tool-Reference</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="index.html#overview">Overview</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="index.html#effect-parameters">Effect parameters</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="common.html">Basic settings</a></li>
+<li class="toctree-l4"><a class="reference internal" href="location.html">Position</a></li>
+<li class="toctree-l4"><a class="reference internal" href="locationAbs.html">Force Field (Local)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="locationGene.html">Spawning Method</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rotation.html">Rotation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scale.html">Scale</a></li>
+<li class="toctree-l4"><a class="reference internal" href="depth.html">Depth</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererCommon.html">Basic Render Settings</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Basic Render Settings (Advanced)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererSprite.html">Render - Sprite</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererRibbon.html">Render - Ribbon</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererRing.html">Render - Ring</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererModel.html">Render - Model</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererTrack.html">Render - Track</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sound.html">Sound</a></li>
+<li class="toctree-l4"><a class="reference internal" href="fcurve.html">F-Curve</a></li>
+<li class="toctree-l4"><a class="reference internal" href="global.html">Global Settings</a></li>
+<li class="toctree-l4"><a class="reference internal" href="culling.html">Culling</a></li>
+<li class="toctree-l4"><a class="reference internal" href="dynamicParameter.html">DynamicParameter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="proceduralModel.html">Procedural Model</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#effect-features">Effect features</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#tool-functions">Tool functions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#command-line">Command Line</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../MaterialToolReference/index.html">Material-Reference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolTips/01.html">TIPS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq.html">FAQ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../releasenotes.html">Release Notes</a></li>
+</ul>
+</li>
 </ul>
 
             
@@ -145,7 +183,7 @@
         
           <li><a href="index.html">Tool-Reference</a> &raquo;</li>
         
-      <li>&lt;no title&gt;</li>
+      <li>Basic Render Settings (Advanced)</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -162,7 +200,84 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  
+  <div class="section" id="basic-render-settings-advanced">
+<h1>Basic Render Settings (Advanced)<a class="headerlink" href="#basic-render-settings-advanced" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<div class="section" id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>It is possible to specify more complex parameters than those that can be specified in the Basic Render Settings.</p>
+</div>
+<div class="section" id="parameters">
+<h2>Parameters<a class="headerlink" href="#parameters" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<div class="section" id="alpha-texture">
+<h3>Alpha Texture<a class="headerlink" href="#alpha-texture" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>Displays a color image of only the red area of the set image.
+For example, if you set a star-shaped image as the alpha texture, you will see a color image of the star-shaped area.
+This image can be set to individual UVs.
+Therefore, by setting up separate UVs, you can create a complex look by scrolling and animating them.</p>
+<img alt="../../_images/alpha3.png" class="align-center" src="../../_images/alpha3.png" />
+</div>
+<div class="section" id="uv-distortion-texture">
+<h3>UV Distortion Texture<a class="headerlink" href="#uv-distortion-texture" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>Distorts the color image according to the set image.
+A distorted image will not be distorted if the color is (127,127,255), and the distortion will increase as you move away from that color.
+This image can be set to individual UVs.
+Therefore, by setting up separate UVs, you can create a complex look by scrolling and animating them.</p>
+<img alt="../../_images/dist3.png" class="align-center" src="../../_images/dist3.png" />
+</div>
+<div class="section" id="alpha-cutoff">
+<h3>Alpha Cutoff<a class="headerlink" href="#alpha-cutoff" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>Areas with alpha values lower than the specified value will not be drawn.
+This makes it easier to express toon-like effects.</p>
+<p><a class="reference internal" href="../../_images/alphacutoff_none1.png"><img alt="pic_alphacutoff_none" src="../../_images/alphacutoff_none1.png" style="width: 240.0px; height: 240.0px;" /></a> <a class="reference internal" href="../../_images/alphacutoff1.png"><img alt="pic_alphacutoff" src="../../_images/alphacutoff1.png" style="width: 240.0px; height: 240.0px;" /></a></p>
+<p>Judges an area with a low alpha value as an edge, and changes the color of only that edge.
+It makes it easier to express toon-like effects.</p>
+<img alt="../../_images/alphacutoff_edge1.png" class="align-center" src="../../_images/alphacutoff_edge1.png" />
+</div>
+<div class="section" id="falloff">
+<h3>Falloff<a class="headerlink" href="#falloff" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>Specifies the color of the part of the model that is tilted from the viewpoint direction.
+This allows the front of the model to be transparent and the edges to be opaque.</p>
+<p><a class="reference internal" href="../../_images/falloff_none1.png"><img alt="pic_falloff_none" src="../../_images/falloff_none1.png" style="width: 240.0px; height: 240.0px;" /></a> <a class="reference internal" href="../../_images/falloff_add1.png"><img alt="pic_falloff" src="../../_images/falloff_add1.png" style="width: 240.0px; height: 240.0px;" /></a></p>
+<p>You can also subtract and multiply.</p>
+<img alt="../../_images/falloff_sub1.png" class="align-center" src="../../_images/falloff_sub1.png" />
+<img alt="../../_images/falloff_mul1.png" class="align-center" src="../../_images/falloff_mul1.png" />
+</div>
+<div class="section" id="soft-particles">
+<h3>Soft Particles<a class="headerlink" href="#soft-particles" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>Reduces the transparency of areas close to the background.
+This will reduce the unnatural border between the background and the particles.
+This feature requires that the environment where Effekseer will be used supports soft particles.</p>
+<p><a class="reference internal" href="../../_images/softparticle_far_none1.png"><img alt="pic_softparticle_far_none" src="../../_images/softparticle_far_none1.png" style="width: 240.0px; height: 240.0px;" /></a> <a class="reference internal" href="../../_images/softparticle_far3.png"><img alt="pic_softparticle_far" src="../../_images/softparticle_far3.png" style="width: 240.0px; height: 240.0px;" /></a></p>
+<p>You can also make the area near the camera transparent.</p>
+<p><a class="reference internal" href="../../_images/softparticle_far_none1.png"><img alt="pic_softparticle_near_none" src="../../_images/softparticle_far_none1.png" style="width: 240.0px; height: 240.0px;" /></a> <a class="reference internal" href="../../_images/softparticle_near1.png"><img alt="pic_softparticle_near" src="../../_images/softparticle_near1.png" style="width: 240.0px; height: 240.0px;" /></a></p>
+</div>
+<div class="section" id="blend-texture">
+<h3>Blend Texture<a class="headerlink" href="#blend-texture" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>Adds or subtracts a set image to or from a color image.
+Unlike blending two particles together, the result of adding and subtracting images from each other is used as the particle image.</p>
+<img alt="../../_images/blend1.png" class="align-center" src="../../_images/blend1.png" />
+<p>You can also add, multiply, and subtract.</p>
+<img alt="../../_images/blend_add1.png" class="align-center" src="../../_images/blend_add1.png" />
+<img alt="../../_images/blend_sub1.png" class="align-center" src="../../_images/blend_sub1.png" />
+<img alt="../../_images/blend_mul1.png" class="align-center" src="../../_images/blend_mul1.png" />
+</div>
+<div class="section" id="blend-alpha-texture">
+<h3>Blend Alpha Texture<a class="headerlink" href="#blend-alpha-texture" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>Alpha image for use as part of a blended image.
+The behavior is the same as for blended images for color images.
+The only difference is the image to be targeted.</p>
+<img alt="../../_images/blend_alpha1.png" class="align-center" src="../../_images/blend_alpha1.png" />
+</div>
+<div class="section" id="blend-uv-distortion-texture">
+<h3>Blend UV distortion Texture<a class="headerlink" href="#blend-uv-distortion-texture" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>This image is used to distort the blended image.
+The behavior is the same as the distortion image for color images.
+The only difference is the image to be targeted.</p>
+<img alt="../../_images/blend_dist1.png" class="align-center" src="../../_images/blend_dist1.png" />
+</div>
+</div>
+</div>
+
 
            </div>
            

@@ -198,7 +198,7 @@
 <p><a href="../../Effects/Tutorials/Mat_02_01.zip">ダウンロード</a></p>
 <p>既にモデルとマテリアルは設定してあります。
 マテリアルの新規作成や基本的な使い方は前章を参照してください。</p>
-<p>まずは最初に雲模様のグレー画像を流れるように表示します。</p>
+<p>まずは最初にスクロールする雲模様のグレー画像を表示します。</p>
 <p><code class="docutils literal notranslate"><span class="pre">画像参照ノード</span></code> を追加して、画像には <code class="docutils literal notranslate"><span class="pre">Textures/Noise1.png</span></code> を選択します。
 このままだと、ただ画像が表示されるだけです。</p>
 <img alt="../../_images/Grad_Ja.png" class="align-center" src="../../_images/Grad_Ja.png" />
@@ -208,7 +208,7 @@
 <p>上下方向に画像が流れるようになりました。</p>
 <img alt="../../_images/Noise_Moving_Ja.png" class="align-center" src="../../_images/Noise_Moving_Ja.png" />
 <p>ただ、このままでは雲模様が粗すぎるので細かくします。
-<code class="docutils literal notranslate"><span class="pre">画像参照ノード</span></code> のUVに掛け算を接続します。
+<code class="docutils literal notranslate"><span class="pre">画像参照ノード</span></code> のUVに <code class="docutils literal notranslate"><span class="pre">掛け算ノード</span></code> を接続します。
 掛け算の値には<code class="docutils literal notranslate"><span class="pre">移動UVノード</span></code>の出力と <code class="docutils literal notranslate"><span class="pre">(4.0,</span> <span class="pre">1.0)</span></code> を指定します。</p>
 <p>そうすると、画像のUV座標の1が4になります。
 ということは、今まで1枚表示されていた範囲に4枚表示されます。
@@ -216,9 +216,9 @@
 <img alt="../../_images/Noise_Enlarge_Ja.png" class="align-center" src="../../_images/Noise_Enlarge_Ja.png" />
 <p>このままでは全く炎に見えません。
 動きを複雑にするために歪みを加えます。</p>
-<p>画像参照ノードを追加して、歪み画像 <code class="docutils literal notranslate"><span class="pre">Textures/Normal1.png</span></code>を選択します。</p>
-<p>要素抽出ノードを追加し、RGを抽出します。
-そして引き算ノードを追加し、0.5を引きます。
+<p><code class="docutils literal notranslate"><span class="pre">画像参照ノード</span></code> を追加して、歪み画像 <code class="docutils literal notranslate"><span class="pre">Textures/Normal1.png</span></code>を選択します。</p>
+<p><code class="docutils literal notranslate"><span class="pre">要素抽出ノード</span></code> を追加し、RGを抽出します。
+そして <code class="docutils literal notranslate"><span class="pre">引き算ノード</span></code> を追加し、0.5を引きます。
 歪み画像の赤色と緑色は0.5を0として、上下左右に歪ませるようになっています。
 そのため、中央の0.5を引きます。</p>
 <p>さらに、歪みの強さを調節するために0.5を掛けます。</p>
@@ -227,19 +227,19 @@
 なんとなく炎に見えるかもしれません。</p>
 <img alt="../../_images/Noise_Distort_Ja.png" class="align-center" src="../../_images/Noise_Distort_Ja.png" />
 <p>炎は上のほうが暗く、下のほうが明るくなります。
-それを再現するために、グラデーション画像を足したりかけたりします。</p>
-<p>画像参照ノードで画像 <code class="docutils literal notranslate"><span class="pre">Textures/Gradation1.png</span></code> を追加します。</p>
+それを実現するために、グラデーション画像を足したり掛けたりします。</p>
+<p><code class="docutils literal notranslate"><span class="pre">画像参照ノード</span></code> を追加し <code class="docutils literal notranslate"><span class="pre">Textures/Gradation1.png</span></code> を設定します。</p>
 <img alt="../../_images/Grad_Ja.png" class="align-center" src="../../_images/Grad_Ja.png" />
-<p>そして、先ほどの歪み画像と足し算ノードで足します。</p>
+<p>そして、歪んだ画像と追加された画像を <code class="docutils literal notranslate"><span class="pre">足し算ノード</span></code> で足します。</p>
 <p>下のほうが光る画像になりました。</p>
 <img alt="../../_images/Grad_Add_Ja.png" class="align-center" src="../../_images/Grad_Add_Ja.png" />
-<p>次に上のほうを暗くするために、先ほどの画像を掛け算ノードで掛けます。</p>
+<p>次に上のほうを暗くするために、先ほどの画像と追加された画像を <code class="docutils literal notranslate"><span class="pre">掛け算ノード</span></code> で掛けます。</p>
 <p>そうすると上のほうが暗くなりました。
 なんとなく炎のようになってきました。</p>
 <img alt="../../_images/Grad_Mul_Ja.png" class="align-center" src="../../_images/Grad_Mul_Ja.png" />
 <p>最後に、着色します。</p>
 <p>着色には色のついたグラデーションの画像を使用します。
-画像参照ノードで画像 <code class="docutils literal notranslate"><span class="pre">Textures/Gradation2.png</span></code> を追加します。</p>
+<code class="docutils literal notranslate"><span class="pre">画像参照ノード</span></code> を追加し <code class="docutils literal notranslate"><span class="pre">Textures/Gradation2.png</span></code> を設定します。</p>
 <img alt="../../_images/Grad_Color_Ja.png" class="align-center" src="../../_images/Grad_Color_Ja.png" />
 <p>そして、要素抽出ノードで先ほどの流れる画像からRGを抽出します。
 それをUVに入力します。</p>
@@ -271,7 +271,8 @@
 <p>左がクランプで右がリピートです。</p>
 <img alt="../../_images/Clamp_Repeat.png" class="align-center" src="../../_images/Clamp_Repeat.png" />
 <p>色の値が1.0(255)を超えたり、0を下回ったりして、反対側を参照した結果、色がおかしくなります。</p>
-<p>グラデーションの画像参照ノードのリピートをクランプに変更します。</p>
+<p>計算の誤差で1.0を超えることもありますし、今回に関しては画像を加算しているため、1.0を超えます。</p>
+<p>そのため、グラデーションの画像参照ノードのリピートをクランプに変更します。</p>
 <img alt="../../_images/Sampler_Ja.png" class="align-center" src="../../_images/Sampler_Ja.png" />
 <p>これで完成です。</p>
 <div align="center">
@@ -284,6 +285,7 @@
 解像度1024の画像を新規作成し、PhotoShopで雲1を選択します。
 コントラストを高め、白と黒が強く出るようにします。</p>
 <p>そして、解像度を512に小さくして保存します。</p>
+<img alt="../../_images/Image_Cloud1.png" class="align-center" src="../../_images/Image_Cloud1.png" />
 </div>
 <div class="section" id="id5">
 <h3>歪み画像の作成方法<a class="headerlink" href="#id5" title="このヘッドラインへのパーマリンク">¶</a></h3>
@@ -294,6 +296,7 @@
 これは、ループ画像を簡単に作れるようにするためです。
 そして、法線を作成します。</p>
 <p>最後に、中央の1024x1024の画像を切り取り、512に縮小して保存します。</p>
+<img alt="../../_images/Image_Normal1.png" class="align-center" src="../../_images/Image_Normal1.png" />
 </div>
 <div class="section" id="id6">
 <h3>グラデーション画像の作成方法<a class="headerlink" href="#id6" title="このヘッドラインへのパーマリンク">¶</a></h3>

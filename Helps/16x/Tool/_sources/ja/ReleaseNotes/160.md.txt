@@ -6,9 +6,13 @@
 
 - 位置の継承に子パーティクルが親パーティクルの位置を追従する動きを追加しました。
 
+<div class="video_center"><video autoplay loop="true" muted="true" src="../../movies/Reference/BasicSettings/FollowParent.mp4"/></div>
+
 ### 位置
 
 - パスによる移動が追加しました。
+
+<div class="video_center"><video autoplay loop="true" muted="true" src="../../movies/Reference/Location/NURBS-Curve.mp4"/></div>
 
 - 常にスクリーンの中央にパーティクルを表示するためのカメラオフセットを追加しました。
 
@@ -20,6 +24,12 @@
 
 - 沢山の種類の力場を追加しました。
 
+<div class="video_center"><video autoplay loop="true" muted="true" src="../../movies/Reference/LocalForceField/Force.mp4"/></div>
+
+<div class="video_center"><video autoplay loop="true" muted="true" src="../../movies/Reference/LocalForceField/Wind.mp4"/></div>
+
+<div class="video_center"><video autoplay loop="true" muted="true" src="../../movies/Reference/LocalForceField/Vortex.mp4"/></div>
+
 ### プロシージャルモデル
 
 - プロシージャルモデルを追加しました。
@@ -27,9 +37,19 @@
 Effekseer内でパラメーターの調整のみで簡単なモデルを作成できます。
 作成したモデルはそのまま表示したり、生成位置に使用したりできます。
 
+```eval_rst
+.. image:: ../../img/Reference/ProceduralModel/Ribbon.png
+   :align: center
+```
+
 ### イージング
 
 - イージングの種類を大幅に増やしました。
+
+```eval_rst
+.. image:: ../../img/Reference/Easing/EaseInBounce.png
+   :align: center
+```
 
 ### 描画
 
@@ -38,16 +58,32 @@ Effekseer内でパラメーターの調整のみで簡単なモデルを作成�
 最大6枚の画像により歪み、画像同士のブレンド、画像の切り抜き等様々な表現をマテリアルの設定なしで実現できるようになりました。
 ソフトパーティクルにより、背景との境界を自然に見せれるようになりました。
 
+
+```eval_rst
+.. image:: ../../img/Reference/BasicRenderAd/alpha.png
+   :align: center
+```
+
+```eval_rst
+.. image:: ../../img/Reference/BasicRenderAd/dist.png
+   :align: center
+```
+
+```eval_rst
+.. image:: ../../img/Reference/BasicRenderAd/softparticle_far.png
+   :align: center
+```
+
 - フェードありのアニメーションを追加しました。
 
-アニメーションの切り替わりで、フレーム間をクロスフェードするようにします。
-これにより、スムーズに画像が切り替わるようになります。
+アニメーションの切り替わりを線形補完するようにします。
+それにより、急に画像が変化しないようにします。
+
+<div class="video_center"><video autoplay loop="true" muted="true" src="../../movies/Reference/BasicRenderSettings/Flip_Lerp.mp4"/></div>
 
 - ファイル名に_NoMipを含めるとNoMipMapとしてテクスチャが読み込まれるようになりました。
 
 ### マテリアル
-
-- フェードノードの追加
 
 ソフトパーティクルをマテリアルで実装するのに必要なノードを追加しました。
 

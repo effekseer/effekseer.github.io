@@ -202,7 +202,7 @@
 <p>Effekseerのマテリアルにはパラメーターというノードがあります。
 この、パラメーターというノードを使用するとEffekseerからマテリアルのパラメーターを変更できるようになります。</p>
 <p>まずは外部からエフェクトの色を編集できるようにするために、グラデーションの画像をパラメーターに置き換えます。</p>
-<p>テクスチャオブジェクトのパラメーターノードを追加します。</p>
+<p><code class="docutils literal notranslate"> <span class="pre">パラメーター画像ノード</span></code> を追加します。</p>
 <p>そして、画像参照ノードにつなげます。</p>
 <p>パラメーターノードに名前を入力します。この名前はEffekseerに表示され、Effekseerで設定された画像との紐づけに使用されます。
 そのため、あまり、変更しないようにしましょう。
@@ -217,10 +217,10 @@
 <img alt="../../_images/Fire.png" class="align-center" src="../../_images/Fire.png" />
 <p>今回はテクスチャを差し替えるようにしましたが、数値もパラメーターにできます。</p>
 <p>画像が流れる速度をパラメーターにしてみましょう。</p>
-<p>パラメーター2ノードを追加します。
+<p><code class="docutils literal notranslate"><span class="pre">パラメーター2ノード</span></code> を追加します。
 名前をSpeedにします。
 デフォルトのパラメーターを(0.1,0.1)にします。</p>
-<p>そして、移動UVノードのSpeedにつなげます。</p>
+<p>そして、<code class="docutils literal notranslate"><span class="pre">移動UVノード</span></code> のSpeedにつなげます。</p>
 <img alt="../../_images/Speed_Parameter_Ja.png" class="align-center" src="../../_images/Speed_Parameter_Ja.png" />
 <p>EffekseerにSpeedが表示されるので数値を変更します。</p>
 <img alt="../../_images/Speed_Parameter_Editor_Ja.png" class="align-center" src="../../_images/Speed_Parameter_Editor_Ja.png" />
@@ -238,7 +238,7 @@
 <p>今回はグラデーションマップを移動させることで炎を消します。</p>
 <p>外部からのパラメーターでグラデーションの参照する位置をずらし、フェードアウトを実現します。</p>
 <p>グラデーション画像を透明になる方向に移動させて透明します。</p>
-<p>まずは、カスタムデータ1を追加します。
+<p>まずは、<code class="docutils literal notranslate"><span class="pre">カスタムデータ1ノード</span></code> を追加します。
 そして、UVなのでRGに接続します。</p>
 <img alt="../../_images/CustomData_Ja.png" class="align-center" src="../../_images/CustomData_Ja.png" />
 <p>そして、Effekseerの描画共通パネルからカスタムデータを設定します。

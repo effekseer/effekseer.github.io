@@ -1,5 +1,9 @@
 ﻿# Release Notes
 
+## 1.6
+
+[Release note](ReleaseNotes/160)
+
 ## 1.53a (20/12/13)
 
 ### Common
@@ -14,7 +18,7 @@
 - Added bat file to output x86 and x64.
 - Disabled OpenAL samples on Windows.
 
-### Unity.
+### Unity
 
 - Added the feature to draw effects in PostProcessingStack.
 - Fixed a bug where materials were disabled after upgrading Unity version.

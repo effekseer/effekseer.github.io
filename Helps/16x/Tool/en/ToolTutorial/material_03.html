@@ -1,0 +1,313 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="ja" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>03. Toon-like flames with sequential materials. &mdash; Effekseer Help  ドキュメント</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/js/three.min.js"></script>
+        <script src="../../_static/js/effekseer.min.js"></script>
+        <script src="../../_static/js/iframe.js"></script>
+        <script src="../../_static/js/OrbitControls.js"></script>
+        <script src="../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="検索" href="../../search.html" />
+    <link rel="next" title="Tool-Reference" href="../ToolReference/index.html" />
+    <link rel="prev" title="02. Represent toon-like flames with materials." href="material_02.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> Effekseer Help
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../ja/index.html">Effekseer Help 日本語</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Effekseer Help (English)</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../overview.html">Overview</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Tutorial</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="index.html#basic">Basic</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="index.html#material">Material</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="material_01.html">01. The Introduction of Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="material_02.html">02. Represent toon-like flames with materials.</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">03. Toon-like flames with sequential materials.</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolReference/index.html">Tool-Reference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../MaterialToolReference/index.html">Material-Reference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolTips/01.html">TIPS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq.html">FAQ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../releasenotes.html">Release Notes</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Effekseer Help</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../index.html">Effekseer Help (English)</a> &raquo;</li>
+        
+          <li><a href="index.html">Tutorial</a> &raquo;</li>
+        
+      <li>03. Toon-like flames with sequential materials.</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="toon-like-flames-with-sequential-materials">
+<h1>03. Toon-like flames with sequential materials.<a class="headerlink" href="#toon-like-flames-with-sequential-materials" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<div class="section" id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>In the previous chapter, we created a toon-like flame.
+However, the parameters are all included in the material and cannot be used interchangeably.
+Also, it plays continuously and does not disappear in the middle.
+In this chapter, the flames from the previous chapter will be made available for general use.</p>
+<div align="center">
+<iframe src='../../Effects/viewer_en.html#Tutorials/Mat_03/Fire.efkefc'></iframe>
+<p>Effects to be created in this chapter</p>
+</div></div>
+<div class="section" id="create">
+<h2>Create<a class="headerlink" href="#create" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>In this chapter, we will make changes based on the effects we created in the previous chapter.
+For the sake of clarity, we have changed the lifetime of the particles.</p>
+<p><a href="../../Effects/Tutorials/Mat_03_01.zip">Download</a></p>
+<div class="section" id="parameters">
+<h3>Parameters<a class="headerlink" href="#parameters" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>Effekseer's materials have a node called Parameters.
+This node, called Parameters, allows you to change the parameters of the material from the Effekseer.</p>
+<p>First, to be able to edit the color of the effect from outside, we will replace the gradient image with a parameter.</p>
+<p>Add a <code class="docutils literal notranslate"><span class="pre">Parameter</span> <span class="pre">Image</span> <span class="pre">Node</span></code>.</p>
+<p>Then, connect it to the <code class="docutils literal notranslate"><span class="pre">Sample</span> <span class="pre">Image</span> <span class="pre">Node</span></code>.</p>
+<p>Enter a name for the parameter node.This name will appear in Effekseer and will be used to associate the image with the one configured in Effekseer.
+Therefore, try not to change it too much.
+This time, since we are replacing a gradient, we will name it Gradation.</p>
+<p>Set the image to <code class="docutils literal notranslate"><span class="pre">Textures/Gradation3.png</span></code> as the default value.</p>
+<img alt="../../_images/Grad_Parameter_En.png" class="align-center" src="../../_images/Grad_Parameter_En.png" />
+<p>Effekseer now also shows the gradient parameters.
+Since the default image will still be displayed, we will set a new image.</p>
+<p>This time, set <code class="docutils literal notranslate"><span class="pre">Textures/Gradation4.png</span></code> here.</p>
+<img alt="../../_images/Grad_Parameter_Editor_En.png" class="align-center" src="../../_images/Grad_Parameter_Editor_En.png" />
+<p>The image of the effect has been replaced.</p>
+<img alt="../../_images/Fire1.png" class="align-center" src="../../_images/Fire1.png" />
+<p>In this case, I tried to replace the texture, but you can also use numerical values as parameters.</p>
+<p>Let's set the speed at which the image flows as a parameter.</p>
+<p>Add a <code class="docutils literal notranslate"><span class="pre">Parameter</span> <span class="pre">2</span> <span class="pre">Node</span></code>.
+Set the name to Speed.
+Set the default parameter to (0.1,0.1).</p>
+<p>Then connect it to the <code class="docutils literal notranslate"><span class="pre">Moving</span> <span class="pre">UV</span> <span class="pre">Node</span></code> 's Speed.</p>
+<img alt="../../_images/Speed_Parameter_En.png" class="align-center" src="../../_images/Speed_Parameter_En.png" />
+<p>The Effekseer will display the speed and you can change the value.</p>
+<img alt="../../_images/Speed_Parameter_Editor_En.png" class="align-center" src="../../_images/Speed_Parameter_Editor_En.png" />
+<p>Changing the value will change the speed.
+In this case, the default value is fine, so we will leave the value at (0.1,0.1).</p>
+<p>These can be set externally without having to embed the parameters in the material.</p>
+</div>
+<div class="section" id="custom-data">
+<h3>Custom Data<a class="headerlink" href="#custom-data" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>As it is, you have just externalized the parameters, but the flame is still flowing continuously.
+Custom data can be used to set the beginning and end.</p>
+<p>In this case, we will specify a node called Custom Data.
+This node is similar to a parameter, but allows you to set a different value for each particle in the effect, and also allows you to set the
+You can also set the F-curve and other parameters.</p>
+<p>This time, we will extinguish the flames by moving the gradient map.</p>
+<p>Shifts the referenced position of the gradient by an external parameter to achieve a fade-out.</p>
+<p>Makes the gradient image transparent by moving it in the direction it will become transparent.</p>
+<p>First, we will add <code class="docutils literal notranslate"><span class="pre">CustomData</span> <span class="pre">1</span> <span class="pre">Node</span></code>.
+And since it is UV, connect it to RG.</p>
+<img alt="../../_images/CustomData_En.png" class="align-center" src="../../_images/CustomData_En.png" />
+<p>Then, set custom data from Effekseer's Basic Render Settings panel.
+In this case, we will use the F-curve since we will be moving the UVs to achieve the fade in and out.</p>
+<img alt="../../_images/CustomData_Editor_En.png" class="align-center" src="../../_images/CustomData_Editor_En.png" />
+<p>Set the R value in the F-Curve to be -1 when it is off and 0 when it is on display.</p>
+<p>-1 to refer to the upper part of the gradient image.
+This means that the image will disappear.</p>
+<img alt="../../_images/FCurve1.png" class="align-center" src="../../_images/FCurve1.png" />
+<p>Then the effect will now fade in and out.</p>
+<div align="center">
+<iframe src='../../Effects/viewer_en.html#Tutorials/Mat_03/Fire.efkefc'></iframe>
+</div><p>Finally, we have made the effects created in this chapter available for download.</p>
+<p><a href="../../Effects/Tutorials/Mat_03_02.zip">Download</a></p>
+</div>
+</div>
+<div class="section" id="summary">
+<h2>Summary<a class="headerlink" href="#summary" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>This time I created a variation of the flame.
+Creating a material for each effect is a lot of work, so it is important to create a generic material that can be used in many different ways.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="../ToolReference/index.html" class="btn btn-neutral float-right" title="Tool-Reference" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="material_02.html" class="btn btn-neutral float-left" title="02. Represent toon-like flames with materials." accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2019, Effekseer.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

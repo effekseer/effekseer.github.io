@@ -165,11 +165,13 @@
 <ul class="simple">
 <li><p>Added a behavior for child particles to follow the position of the parent particle in position inheritance.</p></li>
 </ul>
-</div>
+<div class="video_center"><video autoplay loop="true" muted="true" src="../../movies/Reference/BasicSettings/FollowParent.mp4"/></div></div>
 <div class="section" id="position">
 <h3>Position<a class="headerlink" href="#position" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <ul class="simple">
 <li><p>Added a method to move with a path</p></li>
+</ul>
+<div class="video_center"><video autoplay loop="true" muted="true" src="../../movies/Reference/Location/NURBS-Curve.mp4"/></div><ul class="simple">
 <li><p>Added a View Offset to always show a particle on a center in a screen</p></li>
 </ul>
 </div>
@@ -184,20 +186,22 @@
 <ul class="simple">
 <li><p>Added a lot of different force fields.</p></li>
 </ul>
-</div>
+<div class="video_center"><video autoplay loop="true" muted="true" src="../../movies/Reference/LocalForceField/Force.mp4"/></div><div class="video_center"><video autoplay loop="true" muted="true" src="../../movies/Reference/LocalForceField/Wind.mp4"/></div><div class="video_center"><video autoplay loop="true" muted="true" src="../../movies/Reference/LocalForceField/Vortex.mp4"/></div></div>
 <div class="section" id="procedual-model">
 <h3>Procedual Model<a class="headerlink" href="#procedual-model" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <ul class="simple">
-<li><p>プロシージャルモデルを追加しました。</p></li>
+<li><p>Added Procedual Model.</p></li>
 </ul>
 <p>Effekseer内でパラメーターの調整のみで簡単なモデルを作成できます。
 作成したモデルはそのまま表示したり、生成位置に使用したりできます。</p>
+<img alt="../../_images/Ribbon1.png" class="align-center" src="../../_images/Ribbon1.png" />
 </div>
 <div class="section" id="easing">
 <h3>Easing<a class="headerlink" href="#easing" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <ul class="simple">
 <li><p>Added many easing types.</p></li>
 </ul>
+<img alt="../../_images/EaseInBounce2.png" class="align-center" src="../../_images/EaseInBounce2.png" />
 </div>
 <div class="section" id="rendering">
 <h3>Rendering<a class="headerlink" href="#rendering" title="このヘッドラインへのパーマリンク">¶</a></h3>
@@ -206,24 +210,26 @@
 </ul>
 <p>最大6枚の画像により歪み、画像同士のブレンド、画像の切り抜き等様々な表現をマテリアルの設定なしで実現できるようになりました。
 ソフトパーティクルにより、背景との境界を自然に見せれるようになりました。</p>
+<img alt="../../_images/alpha1.png" class="align-center" src="../../_images/alpha1.png" />
+<img alt="../../_images/dist1.png" class="align-center" src="../../_images/dist1.png" />
+<img alt="../../_images/softparticle_far1.png" class="align-center" src="../../_images/softparticle_far1.png" />
 <ul class="simple">
+<li><p>Added animation transitions with Fade</p></li>
+</ul>
+<p>It uses linear completion for animation transitions.
+This will ensure that the image does not change suddenly.</p>
+<div class="video_center"><video autoplay loop="true" muted="true" src="../../movies/Reference/BasicRenderSettings/Flip_Lerp.mp4"/></div><ul class="simple">
 <li><p>Textures are now loaded as NoMipMaps when the file name includes _NoMip.</p></li>
-<li><p>フェードありのアニメーションを追加しました。</p></li>
 </ul>
-<p>アニメーションの切り替わりで、フレーム間をクロスフェードするようにします。
-これにより、スムーズに画像が切り替わるようになります。</p>
 </div>
-<div class="section" id="id2">
-<h3>マテリアル<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<ul class="simple">
-<li><p>フェードノードの追加</p></li>
-</ul>
+<div class="section" id="material">
+<h3>Material<a class="headerlink" href="#material" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>ソフトパーティクルをマテリアルで実装するのに必要なノードを追加しました。</p>
 <p>エフェクトの拡大率を取得するノードを追加しました。</p>
 </div>
-<div class="section" id="id3">
-<h3>動的パラメーター<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<p>step関数を追加しました。</p>
+<div class="section" id="dynamic-parameter">
+<h3>Dynamic parameter<a class="headerlink" href="#dynamic-parameter" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>Added a step function</p>
 </div>
 <div class="section" id="optimization">
 <h3>Optimization<a class="headerlink" href="#optimization" title="このヘッドラインへのパーマリンク">¶</a></h3>
@@ -269,8 +275,8 @@
 <img alt="../../_images/ground.png" class="align-center" src="../../_images/ground.png" />
 </div>
 </div>
-<div class="section" id="id4">
-<h2>ランタイム<a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<div class="section" id="runtime">
+<h2>Runtime<a class="headerlink" href="#runtime" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <ul class="simple">
 <li><p>C++のソースコードを大幅にリファクタリングしました。</p></li>
 </ul>

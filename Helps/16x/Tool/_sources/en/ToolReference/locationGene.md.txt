@@ -158,6 +158,9 @@ You can also load FBX (.fbx) with animation. The first animation in the FBX file
 
 プロシージャルモデルを使用する場合、プロシージャルモデルのパネルでモデルを作成し、それを指定します。
 
+If you want to use a procedural model, create a model in the Procedural Model panel and specify it.
+
+
 ##### Spawn Mode
 
 ###### Random
