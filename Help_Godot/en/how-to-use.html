@@ -1,13 +1,13 @@
 
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="ja" >
+<html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8">
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>How to use &mdash; EffekseerForGodot Help  ドキュメント</title>
+  <title>How to use &mdash; EffekseerForGodot Help  documentation</title>
   
 
   
@@ -30,13 +30,12 @@
         <script src="../_static/underscore.js"></script>
         <script src="../_static/doctools.js"></script>
         <script src="../_static/language_data.js"></script>
-        <script src="../_static/translations.js"></script>
     
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
     
-    <link rel="index" title="索引" href="../genindex.html" />
-    <link rel="search" title="検索" href="../search.html" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Target specific informations" href="target-specific.html" />
     <link rel="prev" title="Introduction" href="introduction.html" /> 
 </head>
@@ -84,7 +83,6 @@
             
             
               <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../ja/index.html">EffekseerForGodot Help (日本語)</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">EffekseerForGodot Help (English)</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="introduction.html">Introduction</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">How to use</a><ul>
@@ -94,11 +92,11 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#how-to-use-in-3d-scenes">How to use in 3D scenes</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#emitter-s-inspector">Emitter's inspector</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#emitter-s-inspector">Emitter’s inspector</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#how-to-use-in-2d-scenes">How to use in 2D scenes</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#emitter2d-s-inspector">Emitter2D's inspector</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#emitter2d-s-inspector">Emitter2D’s inspector</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#project-settings">Project settings</a></li>
@@ -109,6 +107,7 @@
 <li class="toctree-l2"><a class="reference internal" href="history.html">Release notes</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../ja/index.html">EffekseerForGodot Help (日本語)</a></li>
 </ul>
 
             
@@ -175,9 +174,9 @@
            <div itemprop="articleBody">
             
   <div class="section" id="how-to-use">
-<h1>How to use<a class="headerlink" href="#how-to-use" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<h1>How to use<a class="headerlink" href="#how-to-use" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="install-effekseer-plugin">
-<h2>Install effekseer plugin<a class="headerlink" href="#install-effekseer-plugin" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>Install effekseer plugin<a class="headerlink" href="#install-effekseer-plugin" title="Permalink to this headline">¶</a></h2>
 <p>Copy the addons directory in EffekseerForGodot package into your Godot project.</p>
 <p><img alt="../_images/Godot_addons.png" src="../_images/Godot_addons.png" /></p>
 <p>Enable <strong>Status</strong> for <strong>Effekseer for Godot</strong> on the <strong>Plugins</strong> tab of <strong>Project Settings</strong>.</p>
@@ -185,11 +184,11 @@
 <p>This completes the plugin installation.</p>
 </div>
 <div class="section" id="resources">
-<h2>Resources<a class="headerlink" href="#resources" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>Resources<a class="headerlink" href="#resources" title="Permalink to this headline">¶</a></h2>
 <p>Copy your effect files (*.efkefc), textures, sounds, materials, etc. into the <code class="docutils literal notranslate"><span class="pre">res://</span></code> of your Godot project.</p>
 <p><img alt="../_images/Godot_resources.png" src="../_images/Godot_resources.png" /></p>
 <div class="section" id="import-effects">
-<h3>Import effects<a class="headerlink" href="#import-effects" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>Import effects<a class="headerlink" href="#import-effects" title="Permalink to this headline">¶</a></h3>
 <p>The *.efkefc file is imported as a Godot resource.</p>
 <p><img alt="../_images/Godot_import_efkefc_success.png" src="../_images/Godot_import_efkefc_success.png" /></p>
 <p>If successful, subresources such as textures, models and materials will be linked as shown above.</p>
@@ -197,14 +196,14 @@
 <p>If the subresource is not linked, try re-importing.</p>
 <p><img alt="../_images/Godot_import_efkefc.png" src="../_images/Godot_import_efkefc.png" /></p>
 <div class="section" id="scale-setting">
-<h4>scale setting<a class="headerlink" href="#scale-setting" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<h4>scale setting<a class="headerlink" href="#scale-setting" title="Permalink to this headline">¶</a></h4>
 <p>Sometimes the size of the loaded effect is small and you want to adjust the size. In that case, select the efkefc file, change the <code class="docutils literal notranslate"><span class="pre">scale</span></code> parameter on the Import tab and press the<code class="docutils literal notranslate"> <span class="pre">Reimport</span></code> button.</p>
 <p>You can change the size of the effect by changing the Scale of <code class="docutils literal notranslate"><span class="pre">EffekseerEmitter</span></code>, but this method may not be magnified depending on the effect settings.</p>
 </div>
 </div>
 </div>
 <div class="section" id="how-to-use-in-3d-scenes">
-<h2>How to use in 3D scenes<a class="headerlink" href="#how-to-use-in-3d-scenes" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>How to use in 3D scenes<a class="headerlink" href="#how-to-use-in-3d-scenes" title="Permalink to this headline">¶</a></h2>
 <p>Use an emitter (<code class="docutils literal notranslate"><span class="pre">EffekseerEmitter</span></code>) to emit the imported effect in a 3D scene. Emitters are the source of effects and are used by placing them in a 3D scene.</p>
 <p>To play the imported effect file, add <code class="docutils literal notranslate"><span class="pre">Node</span></code> with<code class="docutils literal notranslate"> <span class="pre">EffekseerEmitter</span></code> attached to the node tree.</p>
 <p>First, add a <code class="docutils literal notranslate"><span class="pre">Node</span></code> with the<code class="docutils literal notranslate"> <span class="pre">EffekseerEmitter</span></code> attached to the node tree. (Since it is 3D, it is <code class="docutils literal notranslate"><span class="pre">EffekseerEmitter</span></code> under <code class="docutils literal notranslate"><span class="pre">Spatial</span></code>)</p>
@@ -216,13 +215,13 @@
 <p>Since <code class="docutils literal notranslate"><span class="pre">Autoplay</span></code> is checked, the effect will be displayed when you run the scene.</p>
 <p><img alt="../_images/Godot_emitter_play.png" src="../_images/Godot_emitter_play.png" /></p>
 <div class="section" id="emitter-s-inspector">
-<h3>Emitter's inspector<a class="headerlink" href="#emitter-s-inspector" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>Emitter’s inspector<a class="headerlink" href="#emitter-s-inspector" title="Permalink to this headline">¶</a></h3>
 <p><img alt="../_images/Godot_emitter_inspector.png" src="../_images/Godot_emitter_inspector.png" /></p>
 <table border="1" class="docutils">
 <thead>
 <tr>
-<th>項目</th>
-<th>説明</th>
+<th>Property</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -250,7 +249,7 @@
 </table></div>
 </div>
 <div class="section" id="how-to-use-in-2d-scenes">
-<h2>How to use in 2D scenes<a class="headerlink" href="#how-to-use-in-2d-scenes" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>How to use in 2D scenes<a class="headerlink" href="#how-to-use-in-2d-scenes" title="Permalink to this headline">¶</a></h2>
 <p>Use an emitter (<code class="docutils literal notranslate"><span class="pre">EffekseerEmitter2D</span></code>) to emit the imported effect in a 2D scene. Emitters are the source of effects and are used by placing them in a 2D scene.</p>
 <p>To play the imported effect file, add <code class="docutils literal notranslate"><span class="pre">Node</span></code> with<code class="docutils literal notranslate"> <span class="pre">EffekseerEmitter2D</span></code> attached to the node tree.</p>
 <p>First, add a <code class="docutils literal notranslate"><span class="pre">Node</span></code> with the<code class="docutils literal notranslate"> <span class="pre">EffekseerEmitter2D</span></code> attached to the node tree. (Since it is 3D, it is <code class="docutils literal notranslate"><span class="pre">EffekseerEmitter2D</span></code> under <code class="docutils literal notranslate"><span class="pre">Node2D</span></code>)</p>
@@ -269,12 +268,12 @@ For <code class="docutils literal notranslate"><span class="pre">orientation</sp
 <p>The effect was displayed in the correct orientation.</p>
 <p><img alt="../_images/Godot_emitter2d_play21.png" src="../_images/Godot_emitter2d_play21.png" /></p>
 <div class="section" id="emitter2d-s-inspector">
-<h3>Emitter2D's inspector<a class="headerlink" href="#emitter2d-s-inspector" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>Emitter2D’s inspector<a class="headerlink" href="#emitter2d-s-inspector" title="Permalink to this headline">¶</a></h3>
 <table border="1" class="docutils">
 <thead>
 <tr>
-<th>項目</th>
-<th>説明</th>
+<th>Property</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -306,14 +305,14 @@ For <code class="docutils literal notranslate"><span class="pre">orientation</sp
 </table></div>
 </div>
 <div class="section" id="project-settings">
-<h2>Project settings<a class="headerlink" href="#project-settings" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<p>You can configure Effekseer's overall settings from Godot's project settings.</p>
+<h2>Project settings<a class="headerlink" href="#project-settings" title="Permalink to this headline">¶</a></h2>
+<p>You can configure Effekseer’s overall settings from Godot’s project settings.</p>
 <p><img alt="../_images/Godot_project_settings.png" src="../_images/Godot_project_settings.png" /></p>
 <table border="1" class="docutils">
 <thead>
 <tr>
-<th>項目</th>
-<th>説明</th>
+<th>Property</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -358,7 +357,7 @@ For <code class="docutils literal notranslate"><span class="pre">orientation</sp
   <div role="contentinfo">
     <p>
         
-        &copy; 著作権 2019, Effekseer
+        &copy; Copyright 2019, Effekseer
 
     </p>
   </div>

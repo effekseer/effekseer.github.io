@@ -1,13 +1,13 @@
 
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="ja" >
+<html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8">
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Introduction &mdash; EffekseerForGodot Help  ドキュメント</title>
+  <title>Introduction &mdash; EffekseerForGodot Help  documentation</title>
   
 
   
@@ -30,13 +30,12 @@
         <script src="../_static/underscore.js"></script>
         <script src="../_static/doctools.js"></script>
         <script src="../_static/language_data.js"></script>
-        <script src="../_static/translations.js"></script>
     
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
     
-    <link rel="index" title="索引" href="../genindex.html" />
-    <link rel="search" title="検索" href="../search.html" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="How to use" href="how-to-use.html" />
     <link rel="prev" title="EffekseerForGodot Help (English)" href="index.html" /> 
 </head>
@@ -84,7 +83,6 @@
             
             
               <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../ja/index.html">EffekseerForGodot Help (日本語)</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">EffekseerForGodot Help (English)</a><ul class="current">
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Introduction</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#welcome-to-effekseerforgodot">Welcome to EffekseerForGodot</a></li>
@@ -93,8 +91,10 @@
 <li class="toctree-l4"><a class="reference internal" href="#target-support-status">Target support status</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#known-issues">Known issues</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#todo">Todo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#known-issues">Known issues</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#advanced-rendering-panel-function-does-not-work">Advanced rendering panel function does not work</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="how-to-use.html">How to use</a></li>
@@ -103,6 +103,7 @@
 <li class="toctree-l2"><a class="reference internal" href="history.html">Release notes</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../ja/index.html">EffekseerForGodot Help (日本語)</a></li>
 </ul>
 
             
@@ -169,24 +170,25 @@
            <div itemprop="articleBody">
             
   <div class="section" id="introduction">
-<h1>Introduction<a class="headerlink" href="#introduction" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h1>
+<p><img alt="../_images/Godot_effekseer.png" src="../_images/Godot_effekseer.png" /></p>
 <div class="section" id="welcome-to-effekseerforgodot">
-<h2>Welcome to EffekseerForGodot<a class="headerlink" href="#welcome-to-effekseerforgodot" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>Welcome to EffekseerForGodot<a class="headerlink" href="#welcome-to-effekseerforgodot" title="Permalink to this headline">¶</a></h2>
 <p>This is the EffekseerForGodot documentation.
 Learn about the Effekseer plugin for Godot Engine.
 By deploying this plugin into your Godot project, you can play effects created with Effekseer on your Godot Engine.</p>
 </div>
 <div class="section" id="environment-and-targets">
-<h2>Environment and targets<a class="headerlink" href="#environment-and-targets" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>Environment and targets<a class="headerlink" href="#environment-and-targets" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="godot-engine-versions">
-<h3>Godot Engine versions<a class="headerlink" href="#godot-engine-versions" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>Godot Engine versions<a class="headerlink" href="#godot-engine-versions" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>Godot Engine 3.2.3 or later</p></li>
 <li><p>Godot Engine 4.x is not supported yet</p></li>
 </ul>
 </div>
 <div class="section" id="target-support-status">
-<h3>Target support status<a class="headerlink" href="#target-support-status" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>Target support status<a class="headerlink" href="#target-support-status" title="Permalink to this headline">¶</a></h3>
 <p>The Effekseer plugin is implemented in GDNative (C ++).
 It supports common environments, but other platforms require the user to build it.</p>
 <p>The support status for each target of EffekseerForGodot is as follows.</p>
@@ -238,16 +240,19 @@ It supports common environments, but other platforms require the user to build i
 </table></div>
 </div>
 <div class="section" id="known-issues">
-<h2>Known issues<a class="headerlink" href="#known-issues" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>Known issues<a class="headerlink" href="#known-issues" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="advanced-rendering-panel-function-does-not-work">
+<h3>Advanced rendering panel function does not work<a class="headerlink" href="#advanced-rendering-panel-function-does-not-work" title="Permalink to this headline">¶</a></h3>
+<p>The following features do not work.</p>
 <ul class="simple">
-<li><p>In Advanced Render of Effekseer 1.60 or later, Features other than soft particles do not work.</p></li>
+<li><p>Alpha texture</p></li>
+<li><p>UV distortion texture</p></li>
+<li><p>Alpha cutoff</p></li>
+<li><p>Falloff</p></li>
+<li><p>Blend texture</p></li>
 </ul>
+<p>*Soft particles work.<br />*Godot3 cannot be supported due to technical limitation.<br />*Godot4 will be supported in the future version.</p>
 </div>
-<div class="section" id="todo">
-<h2>Todo<a class="headerlink" href="#todo" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<ul class="simple">
-<li><p>Advanced Rendering</p></li>
-</ul>
 </div>
 </div>
 
@@ -272,7 +277,7 @@ It supports common environments, but other platforms require the user to build i
   <div role="contentinfo">
     <p>
         
-        &copy; 著作権 2019, Effekseer
+        &copy; Copyright 2019, Effekseer
 
     </p>
   </div>

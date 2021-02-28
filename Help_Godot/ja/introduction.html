@@ -1,13 +1,13 @@
 
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="ja" >
+<html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8">
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>概要 &mdash; EffekseerForGodot Help  ドキュメント</title>
+  <title>概要 &mdash; EffekseerForGodot Help  documentation</title>
   
 
   
@@ -30,13 +30,12 @@
         <script src="../_static/underscore.js"></script>
         <script src="../_static/doctools.js"></script>
         <script src="../_static/language_data.js"></script>
-        <script src="../_static/translations.js"></script>
     
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
     
-    <link rel="index" title="索引" href="../genindex.html" />
-    <link rel="search" title="検索" href="../search.html" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="プラグインの使い方" href="how-to-use.html" />
     <link rel="prev" title="EffekseerForGodot Help (日本語)" href="index.html" /> 
 </head>
@@ -84,6 +83,7 @@
             
             
               <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../en/index.html">EffekseerForGodot Help (English)</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">EffekseerForGodot Help (日本語)</a><ul class="current">
 <li class="toctree-l2 current"><a class="current reference internal" href="#">概要</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#id2">はじめに</a></li>
@@ -92,8 +92,10 @@
 <li class="toctree-l4"><a class="reference internal" href="#id4">ターゲット対応状況</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#id5">既知の問題</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#todo">Todo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id5">既知の問題</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id6">高度描画パネルの機能が動作しない</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="how-to-use.html">プラグインの使い方</a></li>
@@ -102,7 +104,6 @@
 <li class="toctree-l2"><a class="reference internal" href="history.html">更新履歴</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../en/index.html">EffekseerForGodot Help (English)</a></li>
 </ul>
 
             
@@ -169,24 +170,25 @@
            <div itemprop="articleBody">
             
   <div class="section" id="id1">
-<h1>概要<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<h1>概要<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p><img alt="../_images/Godot_effekseer1.png" src="../_images/Godot_effekseer1.png" /></p>
 <div class="section" id="id2">
-<h2>はじめに<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>はじめに<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <p>これはEffekseerForGodotのドキュメントです。
 Godot Engine向けのEffekseerプラグインについて説明します。
 このプラグインをGodotプロジェクトに導入することで、Effekseerで作成したエフェクトをGodot Engine上で再生することができます。</p>
 </div>
 <div class="section" id="id3">
-<h2>動作環境<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>動作環境<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="godot-engine">
-<h3>Godot Engineバージョン<a class="headerlink" href="#godot-engine" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>Godot Engineバージョン<a class="headerlink" href="#godot-engine" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>Godot Engine 3.2.3 以降</p></li>
 <li><p>Godot Engine 4.xは現状サポートしていません。</p></li>
 </ul>
 </div>
 <div class="section" id="id4">
-<h3>ターゲット対応状況<a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>ターゲット対応状況<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
 <p>EffekseerのプラグインはGDNative(C++)で実装されています。
 一般的な環境はサポートしていますが、それ以外のプラットフォームではユーザーがビルドする必要があります。</p>
 <p>EffekseerForGodotのターゲットごとのサポート状況は以下の通りです。</p>
@@ -238,16 +240,19 @@ Godot Engine向けのEffekseerプラグインについて説明します。
 </table></div>
 </div>
 <div class="section" id="id5">
-<h2>既知の問題<a class="headerlink" href="#id5" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>既知の問題<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id6">
+<h3>高度描画パネルの機能が動作しない<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<p>以下の機能は動作しません。</p>
 <ul class="simple">
-<li><p>Effekseer 1.60の高度描画パネルにある、ソフトパーティクル&quot;を除いた&quot;機能は現状動作しません。</p></li>
+<li><p>アルファ画像</p></li>
+<li><p>UV歪み画像</p></li>
+<li><p>アルファカットオフ</p></li>
+<li><p>フォールオフ</p></li>
+<li><p>ブレンド画像</p></li>
 </ul>
+<p>※ソフトパーティクルは動作します。<br />※Godot3は技術的制限により対応できません。<br />※Godot4は将来的に対応予定。</p>
 </div>
-<div class="section" id="todo">
-<h2>Todo<a class="headerlink" href="#todo" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<ul class="simple">
-<li><p>高度描画機能</p></li>
-</ul>
 </div>
 </div>
 
@@ -272,7 +277,7 @@ Godot Engine向けのEffekseerプラグインについて説明します。
   <div role="contentinfo">
     <p>
         
-        &copy; 著作権 2019, Effekseer
+        &copy; Copyright 2019, Effekseer
 
     </p>
   </div>
