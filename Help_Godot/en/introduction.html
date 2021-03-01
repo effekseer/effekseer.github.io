@@ -93,6 +93,8 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#known-issues">Known issues</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#advanced-rendering-panel-function-does-not-work">Advanced rendering panel function does not work</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#d-depth-parameters-in-the-render-common-panel-do-not-work">[2D] Depth parameters in the render common panel do not work</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#d-some-nodes-in-the-material-do-not-work">[2D] Some nodes in the material do not work</a></li>
 </ul>
 </li>
 </ul>
@@ -252,6 +254,26 @@ It supports common environments, but other platforms require the user to build i
 <li><p>Blend texture</p></li>
 </ul>
 <p>*Soft particles work.<br />*Godot3 cannot be supported due to technical limitation.<br />*Godot4 will be supported in the future version.</p>
+</div>
+<div class="section" id="d-depth-parameters-in-the-render-common-panel-do-not-work">
+<h3>[2D] Depth parameters in the render common panel do not work<a class="headerlink" href="#d-depth-parameters-in-the-render-common-panel-do-not-work" title="Permalink to this headline">¶</a></h3>
+<p>The following features do not work in 2D.</p>
+<ul class="simple">
+<li><p>Depth Set</p></li>
+<li><p>Depth Test</p></li>
+<li><p>Soft particle</p></li>
+</ul>
+<p>May not display correctly depending on the model used because depth tests do not work.</p>
+</div>
+<div class="section" id="d-some-nodes-in-the-material-do-not-work">
+<h3>[2D] Some nodes in the material do not work<a class="headerlink" href="#d-some-nodes-in-the-material-do-not-work" title="Permalink to this headline">¶</a></h3>
+<p>The following features do not work in 2D.</p>
+<ul class="simple">
+<li><p>VertexNormal</p></li>
+<li><p>PixelNormal</p></li>
+<li><p>VertexTangent</p></li>
+<li><p>PixelTangent</p></li>
+</ul>
 </div>
 </div>
 </div>

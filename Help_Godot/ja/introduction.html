@@ -93,7 +93,9 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#id5">既知の問題</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id6">高度描画パネルの機能が動作しない</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#d-3d">[2D/3D] 高度描画パネルの機能が動作しない</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#d">[2D] 描画共通パネルの深度系のパラメータが機能しない</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id6">[2D] マテリアルの一部ノードが機能しない</a></li>
 </ul>
 </li>
 </ul>
@@ -241,9 +243,9 @@ Godot Engine向けのEffekseerプラグインについて説明します。
 </div>
 <div class="section" id="id5">
 <h2>既知の問題<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="id6">
-<h3>高度描画パネルの機能が動作しない<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
-<p>以下の機能は動作しません。</p>
+<div class="section" id="d-3d">
+<h3>[2D/3D] 高度描画パネルの機能が動作しない<a class="headerlink" href="#d-3d" title="Permalink to this headline">¶</a></h3>
+<p>次の機能は動作しません。</p>
 <ul class="simple">
 <li><p>アルファ画像</p></li>
 <li><p>UV歪み画像</p></li>
@@ -252,6 +254,26 @@ Godot Engine向けのEffekseerプラグインについて説明します。
 <li><p>ブレンド画像</p></li>
 </ul>
 <p>※ソフトパーティクルは動作します。<br />※Godot3は技術的制限により対応できません。<br />※Godot4は将来的に対応予定。</p>
+</div>
+<div class="section" id="d">
+<h3>[2D] 描画共通パネルの深度系のパラメータが機能しない<a class="headerlink" href="#d" title="Permalink to this headline">¶</a></h3>
+<p>次の機能は動作しません。</p>
+<ul class="simple">
+<li><p>深度書込</p></li>
+<li><p>深度テスト</p></li>
+<li><p>ソフトパーティクル</p></li>
+</ul>
+<p>深度テストが機能しないため、使用するモデルによっては正しく表示できないことがあります。</p>
+</div>
+<div class="section" id="id6">
+<h3>[2D] マテリアルの一部ノードが機能しない<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<p>次の機能は動作しません。</p>
+<ul class="simple">
+<li><p>頂点法線</p></li>
+<li><p>画素法線</p></li>
+<li><p>頂点接線</p></li>
+<li><p>画素接線</p></li>
+</ul>
 </div>
 </div>
 </div>
