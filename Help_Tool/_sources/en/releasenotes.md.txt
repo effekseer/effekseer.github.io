@@ -1,5 +1,15 @@
 ﻿# Release Notes
 
+## 1.53b (21/03/08)
+
+## Unity
+
+Fixed a bug that prevented images from loading when a same image asset was specified in multiple paths in effect assets.
+
+### WebGL
+
+Significantly improved a performance.
+
 ## 1.53a (20/12/13)
 
 ### Common
