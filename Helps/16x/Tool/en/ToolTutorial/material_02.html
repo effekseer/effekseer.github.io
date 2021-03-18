@@ -250,7 +250,7 @@ Enter it into the UV.</p>
 This will cause the color to change according to the gradient.</p>
 <p>Black color is 0, so it points to the top of the image, and white color is 1, so it points to the bottom of the image.
 We use it to turn a gray image into a color image.</p>
-<img alt="../../_images/LookUp1.png" class="align-center" src="../../_images/LookUp1.png" />
+<img alt="../../_images/LookUp.png" class="align-center" src="../../_images/LookUp.png" />
 <p>There is the question of whether we can enter two RG's when we only change the position of the reference up and down.
 For that matter, since the color is the same in the left and right directions this time, it doesn't matter what value you enter.</p>
 <p>Depending on the gradient image, you may want to fix the R value and change only the G value.</p>
@@ -263,14 +263,14 @@ Add an <code class="docutils literal notranslate"><span class="pre">Sample</span
 <p>The flame pattern is now displayed.</p>
 <img alt="../../_images/Output_En.png" class="align-center" src="../../_images/Output_En.png" />
 <p>However, the colors of the small parts are not correct.</p>
-<img alt="../../_images/PreResult1.png" class="align-center" src="../../_images/PreResult1.png" />
+<img alt="../../_images/PreResult.png" class="align-center" src="../../_images/PreResult.png" />
 <p>The reason for this is that repeat is selected when referring to the image in the <code class="docutils literal notranslate"><span class="pre">Sample</span> <span class="pre">Image</span> <span class="pre">Node</span></code>.</p>
 <p>There are two types of images: clamp and repeat.
 This is a parameter for how to handle the ends.</p>
 <p>When the UV coordinate exceeds 1.0, you can specify whether the edge will be treated as an edge color or whether the edge will be repeated.
 When referring to the end, if it is set to repeat, it will refer to the opposite side.</p>
 <p>The left is the clamp and the right is the repeat.</p>
-<img alt="../../_images/Clamp_Repeat1.png" class="align-center" src="../../_images/Clamp_Repeat1.png" />
+<img alt="../../_images/Clamp_Repeat.png" class="align-center" src="../../_images/Clamp_Repeat.png" />
 <p>If the color value exceeds 1.0 (255) or falls below 0, the result of referring to the other side will be wrong colors.</p>
 <p>It can exceed 1.0 due to errors in the calculation, and in this case, because the images are added.</p>
 <p>Therefore, we will change the repeat of the gradient's <code class="docutils literal notranslate"><span class="pre">Sample</span> <span class="pre">Image</span> <span class="pre">Node</span></code> to clamp.</p>

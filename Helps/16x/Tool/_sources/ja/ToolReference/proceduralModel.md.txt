@@ -35,6 +35,15 @@
    :align: center
 ```
 
+#### 回転角度
+
+メッシュをねじります。
+
+```eval_rst
+.. image:: ../../img/Reference/ProceduralModel/Mesh_Rotated.png
+   :align: center
+```
+
 #### リボン
 
 メッシュの周囲に巻きついたような形状を生成します。
@@ -207,6 +216,15 @@
    :align: center
 ```
 
+#### 中央領域位置
+
+頂点カラーで指定した中央が、メッシュ上で示す位置を指定します。
+
+```eval_rst
+.. image:: ../../img/Reference/ProceduralModel/VertexColors_CenterPosition.png
+   :align: center
+```
+
 #### 中央領域割合
 
 頂点カラーで指定した中央の色が、どの程度、中央の領域を占めるか指定します。
@@ -216,3 +234,16 @@
 .. image:: ../../img/Reference/ProceduralModel/VertexColors_CenterArea.png
    :align: center
 ```
+
+#### 頂点カラーノイズ
+
+頂点の色にカラフルなノイズを加えます。
+
+```eval_rst
+.. image:: ../../img/Reference/ProceduralModel/VertexColors_Noise.png
+   :align: center
+```
+
+#### UV
+
+メッシュに使用するUVの領域を指定します。

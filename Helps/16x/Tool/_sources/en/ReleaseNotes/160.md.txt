@@ -34,8 +34,8 @@
 
 - Added Procedual Model.
 
-Effekseer内でパラメーターの調整のみで簡単なモデルを作成できます。
-作成したモデルはそのまま表示したり、生成位置に使用したりできます。
+In Effekseer, you can create simple models by simply adjusting parameters.
+You can display your model as it is or use it for generating positions.
 
 ```eval_rst
 .. image:: ../../img/Reference/ProceduralModel/Ribbon.png
@@ -55,8 +55,8 @@ Effekseer内でパラメーターの調整のみで簡単なモデルを作成�
 
 - Added many features to rendering
 
-最大6枚の画像により歪み、画像同士のブレンド、画像の切り抜き等様々な表現をマテリアルの設定なしで実現できるようになりました。
-ソフトパーティクルにより、背景との境界を自然に見せれるようになりました。
+Up to six images can now be used to create a variety of expressions such as distortion, blending of images, and image cropping without the need for material settings.
+Soft particles can now be used to create a natural boundary between the background and the image.
 
 ```eval_rst
 .. image:: ../../img/Reference/BasicRenderAd/alpha.png
@@ -84,9 +84,9 @@ This will ensure that the image does not change suddenly.
 
 ### Material
 
-ソフトパーティクルをマテリアルで実装するのに必要なノードを追加しました。
+Added a node to implement soft particles in materials.
 
-エフェクトの拡大率を取得するノードを追加しました。
+Added a node to get the magnification of the effect.
 
 ### Dynamic parameter
 
@@ -94,9 +94,9 @@ Added a step function
 
 ### Optimization
 
-- マルチスレッドによる更新を実装しました。更新速度を高速化しました。
+- Implemented multi-threaded updates. Faster update speed.
 
-- ジオメトリインスタンスを実装しました。同じモデルを複数表示した場合の速度が向上しました。
+- Geometry instances implemented. Improved speed when displaying multiple copies of the same model.
 
 ## Tool
 
@@ -104,7 +104,7 @@ Added a step function
 
 - Added a feature to create a package.
 
-エフェクトに関連するファイルを纏めて1つのパッケージにエクスポートしたり、パッケージからインポートしたりできます。
+You can export all the files related to an effect to a single package, or import them from a package.
 
 ### UI
 
@@ -131,8 +131,7 @@ Added a step function
 
 ## Runtime
 
-- C++のソースコードを大幅にリファクタリングしました。
+- Major refactoring of the C++ source code.
 
-安全性が向上しました。
-ただし、多数破壊的変更が発生しています。詳しくはランタイムのreadmeを読んでください。
-
+Safety has been improved.
+However, a number of destructive changes have been made. Please read the readme of the runtime for details.

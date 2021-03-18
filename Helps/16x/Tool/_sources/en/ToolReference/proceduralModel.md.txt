@@ -35,6 +35,15 @@ The number of divisions of the mesh.The larger this value is, the smoother it be
    :align: center
 ```
 
+#### Rotated angle
+
+Twist the mesh.
+
+```eval_rst
+.. image:: ../../img/Reference/ProceduralModel/Mesh_Rotated.png
+   :align: center
+```
+
 #### Ribbon
 
 Generates a shape that looks like it wraps around the mesh.
@@ -207,6 +216,15 @@ Specify a color for each position and interpolate the colors between them.
    :align: center
 ```
 
+#### Position of center area
+
+Specifies the position that the center specified by the vertex color indicates on the mesh.
+
+```eval_rst
+.. image:: ../../img/Reference/ProceduralModel/VertexColors_CenterPosition.png
+   :align: center
+```
+
 #### Rate of center area
 
 Specifies how much the center color specified by the vertex color will occupy the center area.
@@ -216,3 +234,16 @@ The larger this value is, the more area the central vertex color occupies.
 .. image:: ../../img/Reference/ProceduralModel/VertexColors_CenterArea.png
    :align: center
 ```
+
+#### Vertex Color Noise
+
+Adds colorful noise to the vertex color.
+
+```eval_rst
+.. image:: ../../img/Reference/ProceduralModel/VertexColors_Noise.png
+   :align: center
+```
+
+#### UV
+
+Specifies the UV region to use for the mesh.
