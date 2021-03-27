@@ -1,5 +1,15 @@
 ﻿# Release Notes
 
+## 1.53d (21/03/27)
+
+### Editor
+
+Fixed a bug where RenderingMode is not changed without rerunning
+
+Fixed bugs about Comment node in the Material Editor
+
+Added a text to show the number of parameters in the Material Editor
+
 ## 1.53c (21/03/17)
 
 ### Common
