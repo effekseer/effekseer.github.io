@@ -29,3 +29,5 @@
     :maxdepth: 1
 
     material_01
+    material_02
+    material_03
