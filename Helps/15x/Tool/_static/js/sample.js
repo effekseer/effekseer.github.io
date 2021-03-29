@@ -17,6 +17,7 @@ $(function () {
 
         context.init(renderer.context);
         effect = context.loadEffect(location.hash.substr(1));
+        var clock = new THREE.Clock();
         var directionalLight = new THREE.DirectionalLight(0xffffff);
         directionalLight.position.set(0, 0.7, 0.7);
         scene.add(directionalLight);
@@ -25,7 +26,7 @@ $(function () {
         (function renderLoop() {
             requestAnimationFrame(renderLoop);
 
-            context.update();
+            context.update(clock.getDelta() * 60.0);
 
             controls.update();
 
