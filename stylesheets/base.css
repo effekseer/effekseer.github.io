@@ -1946,6 +1946,14 @@ ul li, ol li {
       height: auto;
       margin-top: 5px;
       margin-bottom: 5px; }
+    #contents .locale_sections video {
+      width: 100%;
+      max-width: 200px;
+      min-width: 150px;
+      text-align: center;
+      height: auto;
+      margin-top: 5px;
+      margin-bottom: 5px; }
     #contents .locale_sections p {
       margin: 10px; }
   /*サポート*/
