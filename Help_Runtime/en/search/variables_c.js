@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['y_671',['Y',['../struct_effekseer_1_1_vector2_d.html#a648a6d6b86aaaeadc2302ae99d2d2768',1,'Effekseer::Vector2D::Y()'],['../struct_effekseer_1_1_vector3_d.html#a93a6252ad3d33b83eac5f088ed51c114',1,'Effekseer::Vector3D::Y()']]]
+  ['semanticindex_770',['SemanticIndex',['../struct_effekseer_1_1_backend_1_1_vertex_layout_element.html#a2571bd21212d55280af05537bfc2a944',1,'Effekseer::Backend::VertexLayoutElement']]],
+  ['semanticname_771',['SemanticName',['../struct_effekseer_1_1_backend_1_1_vertex_layout_element.html#a46a26c1f6fa393cd98bf4a91fc6bf37a',1,'Effekseer::Backend::VertexLayoutElement']]],
+  ['syncupdate_772',['SyncUpdate',['../struct_effekseer_1_1_manager_1_1_update_parameter.html#adbaac50d57ccdbedb0289b1b7754728e',1,'Effekseer::Manager::UpdateParameter']]]
 ];

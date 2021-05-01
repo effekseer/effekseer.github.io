@@ -112,6 +112,7 @@ The following functions can be used.
 |cos(x)|Return the result of Cosine. x is in radians.|
 |rand()|Return the random value|
 |rand(x)|Return the random value corresponding with x. If x is same, returned value is same|
+|step(edge,x)|Return 1.0 if x is larger than edge. Otherwise return 0. |
 
 #### Target
 

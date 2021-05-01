@@ -171,7 +171,3 @@ On
 
 <iframe src='../../Effects/viewer_ja.html#References/Depth/suppression_of_scaling_by_depth.efkefc'></iframe>
 
-### ソフトパーティクル
-
-特定のゲームエンジン向けのパラメーターです。1.5現在、Effekseerには反映されません。
-

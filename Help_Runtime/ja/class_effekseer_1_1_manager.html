@@ -94,12 +94,20 @@ Effekseer::Manager の継承関係図</div>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_effekseer_1_1_manager_1_1_draw_parameter.html">DrawParameter</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_effekseer_1_1_manager.html#afd4e1e2382e91d34fc37df97a0fed5f1" title="描画処理を行う。">Manager::Draw</a> and Manager::DrawHandleに使用するパラメーター  <a href="struct_effekseer_1_1_manager_1_1_draw_parameter.html#details">[詳解]</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_effekseer_1_1_manager_1_1_update_parameter.html">UpdateParameter</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">マネージャーが更新されるときのパラメーター  <a href="struct_effekseer_1_1_manager_1_1_update_parameter.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 公開メンバ関数</h2></td></tr>
-<tr class="memitem:a59eeea8d94285186a5d04dfad0b682ff"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_manager.html#a59eeea8d94285186a5d04dfad0b682ff">Destroy</a> ()=0</td></tr>
-<tr class="memdesc:a59eeea8d94285186a5d04dfad0b682ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">マネージャーを破棄する。  <a href="class_effekseer_1_1_manager.html#a59eeea8d94285186a5d04dfad0b682ff">[詳解]</a><br /></td></tr>
-<tr class="separator:a59eeea8d94285186a5d04dfad0b682ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b4d360c90e5e02c646d86cb704744d6"><td class="memItemLeft" align="right" valign="top"><a id="a8b4d360c90e5e02c646d86cb704744d6"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_manager.html#a8b4d360c90e5e02c646d86cb704744d6">LaunchWorkerThreads</a> (uint32_t threadCount)=0</td></tr>
+<tr class="memdesc:a8b4d360c90e5e02c646d86cb704744d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定した数のワーカースレッドを起動する <br /></td></tr>
+<tr class="separator:a8b4d360c90e5e02c646d86cb704744d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9a2c14b5d20e351c7faa76698e3ed33"><td class="memItemLeft" align="right" valign="top"><a id="af9a2c14b5d20e351c7faa76698e3ed33"></a>
+virtual ThreadNativeHandleType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_manager.html#af9a2c14b5d20e351c7faa76698e3ed33">GetWorkerThreadHandle</a> (uint32_t threadID)=0</td></tr>
+<tr class="memdesc:af9a2c14b5d20e351c7faa76698e3ed33"><td class="mdescLeft">&#160;</td><td class="mdescRight">スレッドハンドルを取得する。(HANDLE(win32) や pthread_t(posix) など) <br /></td></tr>
+<tr class="separator:af9a2c14b5d20e351c7faa76698e3ed33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aacbf3bb08982ff3b7fd3c5685b88c286"><td class="memItemLeft" align="right" valign="top"><a id="aacbf3bb08982ff3b7fd3c5685b88c286"></a>
 virtual MallocFunc&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_manager.html#aacbf3bb08982ff3b7fd3c5685b88c286">GetMallocFunc</a> () const =0</td></tr>
 <tr class="memdesc:aacbf3bb08982ff3b7fd3c5685b88c286"><td class="mdescLeft">&#160;</td><td class="mdescRight">メモリ確保関数を取得する。 <br /></td></tr>
@@ -134,99 +142,105 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="memitem:a804730036eada2d3e1883ed366c265cc"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_manager.html#a804730036eada2d3e1883ed366c265cc">SetCoordinateSystem</a> (CoordinateSystem coordinateSystem)=0</td></tr>
 <tr class="memdesc:a804730036eada2d3e1883ed366c265cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">座標系を設定する。  <a href="class_effekseer_1_1_manager.html#a804730036eada2d3e1883ed366c265cc">[詳解]</a><br /></td></tr>
 <tr class="separator:a804730036eada2d3e1883ed366c265cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64de7501affd3c08106b0442a4e2a76c"><td class="memItemLeft" align="right" valign="top"><a id="a64de7501affd3c08106b0442a4e2a76c"></a>
-virtual SpriteRenderer *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_manager.html#a64de7501affd3c08106b0442a4e2a76c">GetSpriteRenderer</a> ()=0</td></tr>
-<tr class="memdesc:a64de7501affd3c08106b0442a4e2a76c"><td class="mdescLeft">&#160;</td><td class="mdescRight">スプライト描画機能を取得する。 <br /></td></tr>
-<tr class="separator:a64de7501affd3c08106b0442a4e2a76c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b4f22221e7068d6604c18aa4ca4b80e"><td class="memItemLeft" align="right" valign="top"><a id="a1b4f22221e7068d6604c18aa4ca4b80e"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_manager.html#a1b4f22221e7068d6604c18aa4ca4b80e">SetSpriteRenderer</a> (SpriteRenderer *renderer)=0</td></tr>
-<tr class="memdesc:a1b4f22221e7068d6604c18aa4ca4b80e"><td class="mdescLeft">&#160;</td><td class="mdescRight">スプライト描画機能を設定する。 <br /></td></tr>
-<tr class="separator:a1b4f22221e7068d6604c18aa4ca4b80e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9173c3b04e430de83f5096fe28cff9e1"><td class="memItemLeft" align="right" valign="top"><a id="a9173c3b04e430de83f5096fe28cff9e1"></a>
-virtual RibbonRenderer *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_manager.html#a9173c3b04e430de83f5096fe28cff9e1">GetRibbonRenderer</a> ()=0</td></tr>
-<tr class="memdesc:a9173c3b04e430de83f5096fe28cff9e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">ストライプ描画機能を取得する。 <br /></td></tr>
-<tr class="separator:a9173c3b04e430de83f5096fe28cff9e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe6fa26d93c9c80a0afb8f4fbe0afe20"><td class="memItemLeft" align="right" valign="top"><a id="afe6fa26d93c9c80a0afb8f4fbe0afe20"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_manager.html#afe6fa26d93c9c80a0afb8f4fbe0afe20">SetRibbonRenderer</a> (RibbonRenderer *renderer)=0</td></tr>
-<tr class="memdesc:afe6fa26d93c9c80a0afb8f4fbe0afe20"><td class="mdescLeft">&#160;</td><td class="mdescRight">ストライプ描画機能を設定する。 <br /></td></tr>
-<tr class="separator:afe6fa26d93c9c80a0afb8f4fbe0afe20"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a20dcb7324f1b4137cbcd872cfd90def2"><td class="memItemLeft" align="right" valign="top"><a id="a20dcb7324f1b4137cbcd872cfd90def2"></a>
-virtual RingRenderer *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_manager.html#a20dcb7324f1b4137cbcd872cfd90def2">GetRingRenderer</a> ()=0</td></tr>
-<tr class="memdesc:a20dcb7324f1b4137cbcd872cfd90def2"><td class="mdescLeft">&#160;</td><td class="mdescRight">リング描画機能を取得する。 <br /></td></tr>
-<tr class="separator:a20dcb7324f1b4137cbcd872cfd90def2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe6f77af79fd2bea3a36eed5b5dea383"><td class="memItemLeft" align="right" valign="top"><a id="afe6f77af79fd2bea3a36eed5b5dea383"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_manager.html#afe6f77af79fd2bea3a36eed5b5dea383">SetRingRenderer</a> (RingRenderer *renderer)=0</td></tr>
-<tr class="memdesc:afe6f77af79fd2bea3a36eed5b5dea383"><td class="mdescLeft">&#160;</td><td class="mdescRight">リング描画機能を設定する。 <br /></td></tr>
-<tr class="separator:afe6f77af79fd2bea3a36eed5b5dea383"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ed37b18b9e99ff77f9608da3f4db93a"><td class="memItemLeft" align="right" valign="top"><a id="a6ed37b18b9e99ff77f9608da3f4db93a"></a>
-virtual ModelRenderer *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_manager.html#a6ed37b18b9e99ff77f9608da3f4db93a">GetModelRenderer</a> ()=0</td></tr>
-<tr class="memdesc:a6ed37b18b9e99ff77f9608da3f4db93a"><td class="mdescLeft">&#160;</td><td class="mdescRight">モデル描画機能を取得する。 <br /></td></tr>
-<tr class="separator:a6ed37b18b9e99ff77f9608da3f4db93a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa423ee424d0b713ac4939fc7faf39b9c"><td class="memItemLeft" align="right" valign="top"><a id="aa423ee424d0b713ac4939fc7faf39b9c"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_manager.html#aa423ee424d0b713ac4939fc7faf39b9c">SetModelRenderer</a> (ModelRenderer *renderer)=0</td></tr>
-<tr class="memdesc:aa423ee424d0b713ac4939fc7faf39b9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">モデル描画機能を設定する。 <br /></td></tr>
-<tr class="separator:aa423ee424d0b713ac4939fc7faf39b9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ad29aecf744eeba8896cb6fa77488cf"><td class="memItemLeft" align="right" valign="top"><a id="a0ad29aecf744eeba8896cb6fa77488cf"></a>
-virtual TrackRenderer *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_manager.html#a0ad29aecf744eeba8896cb6fa77488cf">GetTrackRenderer</a> ()=0</td></tr>
-<tr class="memdesc:a0ad29aecf744eeba8896cb6fa77488cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">軌跡描画機能を取得する。 <br /></td></tr>
-<tr class="separator:a0ad29aecf744eeba8896cb6fa77488cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7bff3a7ec23d6ae4a66b6f6ba4bd58fc"><td class="memItemLeft" align="right" valign="top"><a id="a7bff3a7ec23d6ae4a66b6f6ba4bd58fc"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_manager.html#a7bff3a7ec23d6ae4a66b6f6ba4bd58fc">SetTrackRenderer</a> (TrackRenderer *renderer)=0</td></tr>
-<tr class="memdesc:a7bff3a7ec23d6ae4a66b6f6ba4bd58fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">軌跡描画機能を設定する。 <br /></td></tr>
-<tr class="separator:a7bff3a7ec23d6ae4a66b6f6ba4bd58fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac32fce48f01429c6274b6237b61ec47d"><td class="memItemLeft" align="right" valign="top"><a id="ac32fce48f01429c6274b6237b61ec47d"></a>
-virtual <a class="el" href="class_effekseer_1_1_setting.html">Setting</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_manager.html#ac32fce48f01429c6274b6237b61ec47d">GetSetting</a> ()=0</td></tr>
-<tr class="memdesc:ac32fce48f01429c6274b6237b61ec47d"><td class="mdescLeft">&#160;</td><td class="mdescRight">設定クラスを取得する。 <br /></td></tr>
-<tr class="separator:ac32fce48f01429c6274b6237b61ec47d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4de59a95985d8042b5f82fca2c31b985"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_manager.html#a4de59a95985d8042b5f82fca2c31b985">SetSetting</a> (<a class="el" href="class_effekseer_1_1_setting.html">Setting</a> *setting)=0</td></tr>
-<tr class="memdesc:a4de59a95985d8042b5f82fca2c31b985"><td class="mdescLeft">&#160;</td><td class="mdescRight">設定クラスを設定する。  <a href="class_effekseer_1_1_manager.html#a4de59a95985d8042b5f82fca2c31b985">[詳解]</a><br /></td></tr>
-<tr class="separator:a4de59a95985d8042b5f82fca2c31b985"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af757373ffa3cdbb1700b29c0903425d7"><td class="memItemLeft" align="right" valign="top"><a id="af757373ffa3cdbb1700b29c0903425d7"></a>
-virtual <a class="el" href="class_effekseer_1_1_effect_loader.html">EffectLoader</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_manager.html#af757373ffa3cdbb1700b29c0903425d7">GetEffectLoader</a> ()=0</td></tr>
-<tr class="memdesc:af757373ffa3cdbb1700b29c0903425d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">エフェクト読込クラスを取得する。 <br /></td></tr>
-<tr class="separator:af757373ffa3cdbb1700b29c0903425d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e183d9310c8562279707786e5503f8f"><td class="memItemLeft" align="right" valign="top"><a id="a1e183d9310c8562279707786e5503f8f"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_manager.html#a1e183d9310c8562279707786e5503f8f">SetEffectLoader</a> (<a class="el" href="class_effekseer_1_1_effect_loader.html">EffectLoader</a> *effectLoader)=0</td></tr>
-<tr class="memdesc:a1e183d9310c8562279707786e5503f8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">エフェクト読込クラスを設定する。 <br /></td></tr>
-<tr class="separator:a1e183d9310c8562279707786e5503f8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae143d53bb483cb38d6371eff52d1a833"><td class="memItemLeft" align="right" valign="top"><a id="ae143d53bb483cb38d6371eff52d1a833"></a>
-virtual <a class="el" href="class_effekseer_1_1_texture_loader.html">TextureLoader</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_manager.html#ae143d53bb483cb38d6371eff52d1a833">GetTextureLoader</a> ()=0</td></tr>
-<tr class="memdesc:ae143d53bb483cb38d6371eff52d1a833"><td class="mdescLeft">&#160;</td><td class="mdescRight">テクスチャ読込クラスを取得する。 <br /></td></tr>
-<tr class="separator:ae143d53bb483cb38d6371eff52d1a833"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35915c6406f06e7502abed5eeba6ee51"><td class="memItemLeft" align="right" valign="top"><a id="a35915c6406f06e7502abed5eeba6ee51"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_manager.html#a35915c6406f06e7502abed5eeba6ee51">SetTextureLoader</a> (<a class="el" href="class_effekseer_1_1_texture_loader.html">TextureLoader</a> *textureLoader)=0</td></tr>
-<tr class="memdesc:a35915c6406f06e7502abed5eeba6ee51"><td class="mdescLeft">&#160;</td><td class="mdescRight">テクスチャ読込クラスを設定する。 <br /></td></tr>
-<tr class="separator:a35915c6406f06e7502abed5eeba6ee51"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c176faba545ccc52b2255dc905f96b5"><td class="memItemLeft" align="right" valign="top"><a id="a2c176faba545ccc52b2255dc905f96b5"></a>
-virtual <a class="el" href="class_effekseer_1_1_sound_player.html">SoundPlayer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_manager.html#a2c176faba545ccc52b2255dc905f96b5">GetSoundPlayer</a> ()=0</td></tr>
-<tr class="memdesc:a2c176faba545ccc52b2255dc905f96b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">サウンド再生機能を取得する。 <br /></td></tr>
-<tr class="separator:a2c176faba545ccc52b2255dc905f96b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af08602f559cd1f75bcaacfd8b1ec0840"><td class="memItemLeft" align="right" valign="top"><a id="af08602f559cd1f75bcaacfd8b1ec0840"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_manager.html#af08602f559cd1f75bcaacfd8b1ec0840">SetSoundPlayer</a> (<a class="el" href="class_effekseer_1_1_sound_player.html">SoundPlayer</a> *soundPlayer)=0</td></tr>
-<tr class="memdesc:af08602f559cd1f75bcaacfd8b1ec0840"><td class="mdescLeft">&#160;</td><td class="mdescRight">サウンド再生機能を設定する。 <br /></td></tr>
-<tr class="separator:af08602f559cd1f75bcaacfd8b1ec0840"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d6e1710083866bf1fc8953f340df002"><td class="memItemLeft" align="right" valign="top"><a id="a9d6e1710083866bf1fc8953f340df002"></a>
-virtual <a class="el" href="class_effekseer_1_1_sound_loader.html">SoundLoader</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_manager.html#a9d6e1710083866bf1fc8953f340df002">GetSoundLoader</a> ()=0</td></tr>
-<tr class="memdesc:a9d6e1710083866bf1fc8953f340df002"><td class="mdescLeft">&#160;</td><td class="mdescRight">サウンド読込クラスを取得する <br /></td></tr>
-<tr class="separator:a9d6e1710083866bf1fc8953f340df002"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc9015a7a866accf73ab3b295bff8e06"><td class="memItemLeft" align="right" valign="top"><a id="afc9015a7a866accf73ab3b295bff8e06"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_manager.html#afc9015a7a866accf73ab3b295bff8e06">SetSoundLoader</a> (<a class="el" href="class_effekseer_1_1_sound_loader.html">SoundLoader</a> *soundLoader)=0</td></tr>
-<tr class="memdesc:afc9015a7a866accf73ab3b295bff8e06"><td class="mdescLeft">&#160;</td><td class="mdescRight">サウンド読込クラスを設定する。 <br /></td></tr>
-<tr class="separator:afc9015a7a866accf73ab3b295bff8e06"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6afd86fbdfb8b3e6d12c9a80bfb3f80e"><td class="memItemLeft" align="right" valign="top"><a id="a6afd86fbdfb8b3e6d12c9a80bfb3f80e"></a>
-virtual <a class="el" href="class_effekseer_1_1_model_loader.html">ModelLoader</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_manager.html#a6afd86fbdfb8b3e6d12c9a80bfb3f80e">GetModelLoader</a> ()=0</td></tr>
-<tr class="memdesc:a6afd86fbdfb8b3e6d12c9a80bfb3f80e"><td class="mdescLeft">&#160;</td><td class="mdescRight">モデル読込クラスを取得する。 <br /></td></tr>
-<tr class="separator:a6afd86fbdfb8b3e6d12c9a80bfb3f80e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a994104b9b353a09861d27ec87b09fa1c"><td class="memItemLeft" align="right" valign="top"><a id="a994104b9b353a09861d27ec87b09fa1c"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_manager.html#a994104b9b353a09861d27ec87b09fa1c">SetModelLoader</a> (<a class="el" href="class_effekseer_1_1_model_loader.html">ModelLoader</a> *modelLoader)=0</td></tr>
-<tr class="memdesc:a994104b9b353a09861d27ec87b09fa1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">モデル読込クラスを設定する。 <br /></td></tr>
-<tr class="separator:a994104b9b353a09861d27ec87b09fa1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54b431c7ce3a9f9e4ce3c630c22ffbd7"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_effekseer_1_1_material_loader.html">MaterialLoader</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_manager.html#a54b431c7ce3a9f9e4ce3c630c22ffbd7">GetMaterialLoader</a> ()=0</td></tr>
-<tr class="memdesc:a54b431c7ce3a9f9e4ce3c630c22ffbd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">マテリアルローダーを取得する。  <a href="class_effekseer_1_1_manager.html#a54b431c7ce3a9f9e4ce3c630c22ffbd7">[詳解]</a><br /></td></tr>
-<tr class="separator:a54b431c7ce3a9f9e4ce3c630c22ffbd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1bdea3d540028bb38b33d8ec2e7837f4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_manager.html#a1bdea3d540028bb38b33d8ec2e7837f4">SetMaterialLoader</a> (<a class="el" href="class_effekseer_1_1_material_loader.html">MaterialLoader</a> *loader)=0</td></tr>
-<tr class="memdesc:a1bdea3d540028bb38b33d8ec2e7837f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">マテリアルローダーを設定する。  <a href="class_effekseer_1_1_manager.html#a1bdea3d540028bb38b33d8ec2e7837f4">[詳解]</a><br /></td></tr>
-<tr class="separator:a1bdea3d540028bb38b33d8ec2e7837f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f4c05db4cdaa60dddc7501c97635595"><td class="memItemLeft" align="right" valign="top"><a id="a1f4c05db4cdaa60dddc7501c97635595"></a>
+virtual <a class="el" href="class_effekseer_1_1_ref_ptr.html">SpriteRendererRef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_manager.html#a1f4c05db4cdaa60dddc7501c97635595">GetSpriteRenderer</a> ()=0</td></tr>
+<tr class="memdesc:a1f4c05db4cdaa60dddc7501c97635595"><td class="mdescLeft">&#160;</td><td class="mdescRight">スプライト描画機能を取得する。 <br /></td></tr>
+<tr class="separator:a1f4c05db4cdaa60dddc7501c97635595"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6fc3a8c47c5fb0a0c2f2a9d6488ba50"><td class="memItemLeft" align="right" valign="top"><a id="aa6fc3a8c47c5fb0a0c2f2a9d6488ba50"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_manager.html#aa6fc3a8c47c5fb0a0c2f2a9d6488ba50">SetSpriteRenderer</a> (<a class="el" href="class_effekseer_1_1_ref_ptr.html">SpriteRendererRef</a> renderer)=0</td></tr>
+<tr class="memdesc:aa6fc3a8c47c5fb0a0c2f2a9d6488ba50"><td class="mdescLeft">&#160;</td><td class="mdescRight">スプライト描画機能を設定する。 <br /></td></tr>
+<tr class="separator:aa6fc3a8c47c5fb0a0c2f2a9d6488ba50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa2745c11c8971e1df1147490a35189d"><td class="memItemLeft" align="right" valign="top"><a id="aaa2745c11c8971e1df1147490a35189d"></a>
+virtual <a class="el" href="class_effekseer_1_1_ref_ptr.html">RibbonRendererRef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_manager.html#aaa2745c11c8971e1df1147490a35189d">GetRibbonRenderer</a> ()=0</td></tr>
+<tr class="memdesc:aaa2745c11c8971e1df1147490a35189d"><td class="mdescLeft">&#160;</td><td class="mdescRight">ストライプ描画機能を取得する。 <br /></td></tr>
+<tr class="separator:aaa2745c11c8971e1df1147490a35189d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3d9e44c88f42a6d2ac537a1f54e1c4c"><td class="memItemLeft" align="right" valign="top"><a id="ae3d9e44c88f42a6d2ac537a1f54e1c4c"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_manager.html#ae3d9e44c88f42a6d2ac537a1f54e1c4c">SetRibbonRenderer</a> (<a class="el" href="class_effekseer_1_1_ref_ptr.html">RibbonRendererRef</a> renderer)=0</td></tr>
+<tr class="memdesc:ae3d9e44c88f42a6d2ac537a1f54e1c4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">ストライプ描画機能を設定する。 <br /></td></tr>
+<tr class="separator:ae3d9e44c88f42a6d2ac537a1f54e1c4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae01ede3b25a1f409d15d5df112387f08"><td class="memItemLeft" align="right" valign="top"><a id="ae01ede3b25a1f409d15d5df112387f08"></a>
+virtual <a class="el" href="class_effekseer_1_1_ref_ptr.html">RingRendererRef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_manager.html#ae01ede3b25a1f409d15d5df112387f08">GetRingRenderer</a> ()=0</td></tr>
+<tr class="memdesc:ae01ede3b25a1f409d15d5df112387f08"><td class="mdescLeft">&#160;</td><td class="mdescRight">リング描画機能を取得する。 <br /></td></tr>
+<tr class="separator:ae01ede3b25a1f409d15d5df112387f08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae771e97cb2e3cd34b97688be776ccd92"><td class="memItemLeft" align="right" valign="top"><a id="ae771e97cb2e3cd34b97688be776ccd92"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_manager.html#ae771e97cb2e3cd34b97688be776ccd92">SetRingRenderer</a> (<a class="el" href="class_effekseer_1_1_ref_ptr.html">RingRendererRef</a> renderer)=0</td></tr>
+<tr class="memdesc:ae771e97cb2e3cd34b97688be776ccd92"><td class="mdescLeft">&#160;</td><td class="mdescRight">リング描画機能を設定する。 <br /></td></tr>
+<tr class="separator:ae771e97cb2e3cd34b97688be776ccd92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af49fa97b8b2f60db527187d14bbc830c"><td class="memItemLeft" align="right" valign="top"><a id="af49fa97b8b2f60db527187d14bbc830c"></a>
+virtual <a class="el" href="class_effekseer_1_1_ref_ptr.html">ModelRendererRef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_manager.html#af49fa97b8b2f60db527187d14bbc830c">GetModelRenderer</a> ()=0</td></tr>
+<tr class="memdesc:af49fa97b8b2f60db527187d14bbc830c"><td class="mdescLeft">&#160;</td><td class="mdescRight">モデル描画機能を取得する。 <br /></td></tr>
+<tr class="separator:af49fa97b8b2f60db527187d14bbc830c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac93fd0df26cb10697c49cb8729b8e010"><td class="memItemLeft" align="right" valign="top"><a id="ac93fd0df26cb10697c49cb8729b8e010"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_manager.html#ac93fd0df26cb10697c49cb8729b8e010">SetModelRenderer</a> (<a class="el" href="class_effekseer_1_1_ref_ptr.html">ModelRendererRef</a> renderer)=0</td></tr>
+<tr class="memdesc:ac93fd0df26cb10697c49cb8729b8e010"><td class="mdescLeft">&#160;</td><td class="mdescRight">モデル描画機能を設定する。 <br /></td></tr>
+<tr class="separator:ac93fd0df26cb10697c49cb8729b8e010"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44f0cbdfc23b3ac3714e8c43119096ca"><td class="memItemLeft" align="right" valign="top"><a id="a44f0cbdfc23b3ac3714e8c43119096ca"></a>
+virtual <a class="el" href="class_effekseer_1_1_ref_ptr.html">TrackRendererRef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_manager.html#a44f0cbdfc23b3ac3714e8c43119096ca">GetTrackRenderer</a> ()=0</td></tr>
+<tr class="memdesc:a44f0cbdfc23b3ac3714e8c43119096ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">軌跡描画機能を取得する。 <br /></td></tr>
+<tr class="separator:a44f0cbdfc23b3ac3714e8c43119096ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2870bdd94722cdb0be181993bc3802cb"><td class="memItemLeft" align="right" valign="top"><a id="a2870bdd94722cdb0be181993bc3802cb"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_manager.html#a2870bdd94722cdb0be181993bc3802cb">SetTrackRenderer</a> (<a class="el" href="class_effekseer_1_1_ref_ptr.html">TrackRendererRef</a> renderer)=0</td></tr>
+<tr class="memdesc:a2870bdd94722cdb0be181993bc3802cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">軌跡描画機能を設定する。 <br /></td></tr>
+<tr class="separator:a2870bdd94722cdb0be181993bc3802cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3959d02c077491b6df97a0822d7b754"><td class="memItemLeft" align="right" valign="top"><a id="ab3959d02c077491b6df97a0822d7b754"></a>
+virtual const <a class="el" href="class_effekseer_1_1_ref_ptr.html">SettingRef</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_manager.html#ab3959d02c077491b6df97a0822d7b754">GetSetting</a> () const =0</td></tr>
+<tr class="memdesc:ab3959d02c077491b6df97a0822d7b754"><td class="mdescLeft">&#160;</td><td class="mdescRight">設定クラスを取得する。 <br /></td></tr>
+<tr class="separator:ab3959d02c077491b6df97a0822d7b754"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4654de994657d10b277125fcae03e360"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_manager.html#a4654de994657d10b277125fcae03e360">SetSetting</a> (const <a class="el" href="class_effekseer_1_1_ref_ptr.html">SettingRef</a> &amp;setting)=0</td></tr>
+<tr class="memdesc:a4654de994657d10b277125fcae03e360"><td class="mdescLeft">&#160;</td><td class="mdescRight">設定クラスを設定する。  <a href="class_effekseer_1_1_manager.html#a4654de994657d10b277125fcae03e360">[詳解]</a><br /></td></tr>
+<tr class="separator:a4654de994657d10b277125fcae03e360"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab45e61148140ab195d9c82a9da5dbbb4"><td class="memItemLeft" align="right" valign="top"><a id="ab45e61148140ab195d9c82a9da5dbbb4"></a>
+virtual <a class="el" href="class_effekseer_1_1_ref_ptr.html">EffectLoaderRef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_manager.html#ab45e61148140ab195d9c82a9da5dbbb4">GetEffectLoader</a> ()=0</td></tr>
+<tr class="memdesc:ab45e61148140ab195d9c82a9da5dbbb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">エフェクト読込クラスを取得する。 <br /></td></tr>
+<tr class="separator:ab45e61148140ab195d9c82a9da5dbbb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b240f006398eec85aed9ba128d2b82f"><td class="memItemLeft" align="right" valign="top"><a id="a6b240f006398eec85aed9ba128d2b82f"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_manager.html#a6b240f006398eec85aed9ba128d2b82f">SetEffectLoader</a> (<a class="el" href="class_effekseer_1_1_ref_ptr.html">EffectLoaderRef</a> effectLoader)=0</td></tr>
+<tr class="memdesc:a6b240f006398eec85aed9ba128d2b82f"><td class="mdescLeft">&#160;</td><td class="mdescRight">エフェクト読込クラスを設定する。 <br /></td></tr>
+<tr class="separator:a6b240f006398eec85aed9ba128d2b82f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ac66e060383151362388deaaa1dfbc3"><td class="memItemLeft" align="right" valign="top"><a id="a2ac66e060383151362388deaaa1dfbc3"></a>
+virtual <a class="el" href="class_effekseer_1_1_ref_ptr.html">TextureLoaderRef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_manager.html#a2ac66e060383151362388deaaa1dfbc3">GetTextureLoader</a> ()=0</td></tr>
+<tr class="memdesc:a2ac66e060383151362388deaaa1dfbc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">テクスチャ読込クラスを取得する。 <br /></td></tr>
+<tr class="separator:a2ac66e060383151362388deaaa1dfbc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec0b20e1fcc2fd3b018a5587ea622254"><td class="memItemLeft" align="right" valign="top"><a id="aec0b20e1fcc2fd3b018a5587ea622254"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_manager.html#aec0b20e1fcc2fd3b018a5587ea622254">SetTextureLoader</a> (<a class="el" href="class_effekseer_1_1_ref_ptr.html">TextureLoaderRef</a> textureLoader)=0</td></tr>
+<tr class="memdesc:aec0b20e1fcc2fd3b018a5587ea622254"><td class="mdescLeft">&#160;</td><td class="mdescRight">テクスチャ読込クラスを設定する。 <br /></td></tr>
+<tr class="separator:aec0b20e1fcc2fd3b018a5587ea622254"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f15e4840370444964e9361c3df38a82"><td class="memItemLeft" align="right" valign="top"><a id="a7f15e4840370444964e9361c3df38a82"></a>
+virtual <a class="el" href="class_effekseer_1_1_ref_ptr.html">SoundPlayerRef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_manager.html#a7f15e4840370444964e9361c3df38a82">GetSoundPlayer</a> ()=0</td></tr>
+<tr class="memdesc:a7f15e4840370444964e9361c3df38a82"><td class="mdescLeft">&#160;</td><td class="mdescRight">サウンド再生機能を取得する。 <br /></td></tr>
+<tr class="separator:a7f15e4840370444964e9361c3df38a82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af15b43d468b6e5c324a2a42c326ce2f8"><td class="memItemLeft" align="right" valign="top"><a id="af15b43d468b6e5c324a2a42c326ce2f8"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_manager.html#af15b43d468b6e5c324a2a42c326ce2f8">SetSoundPlayer</a> (<a class="el" href="class_effekseer_1_1_ref_ptr.html">SoundPlayerRef</a> soundPlayer)=0</td></tr>
+<tr class="memdesc:af15b43d468b6e5c324a2a42c326ce2f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">サウンド再生機能を設定する。 <br /></td></tr>
+<tr class="separator:af15b43d468b6e5c324a2a42c326ce2f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a891b549480f72efb01bfa26451b2e2ea"><td class="memItemLeft" align="right" valign="top"><a id="a891b549480f72efb01bfa26451b2e2ea"></a>
+virtual <a class="el" href="class_effekseer_1_1_ref_ptr.html">SoundLoaderRef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_manager.html#a891b549480f72efb01bfa26451b2e2ea">GetSoundLoader</a> ()=0</td></tr>
+<tr class="memdesc:a891b549480f72efb01bfa26451b2e2ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">サウンド読込クラスを取得する <br /></td></tr>
+<tr class="separator:a891b549480f72efb01bfa26451b2e2ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65d1c81b46adb8288a2c424e6b0f7205"><td class="memItemLeft" align="right" valign="top"><a id="a65d1c81b46adb8288a2c424e6b0f7205"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_manager.html#a65d1c81b46adb8288a2c424e6b0f7205">SetSoundLoader</a> (<a class="el" href="class_effekseer_1_1_ref_ptr.html">SoundLoaderRef</a> soundLoader)=0</td></tr>
+<tr class="memdesc:a65d1c81b46adb8288a2c424e6b0f7205"><td class="mdescLeft">&#160;</td><td class="mdescRight">サウンド読込クラスを設定する。 <br /></td></tr>
+<tr class="separator:a65d1c81b46adb8288a2c424e6b0f7205"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf3a78f0cd5f02e3719e18f24b7e4025"><td class="memItemLeft" align="right" valign="top"><a id="aaf3a78f0cd5f02e3719e18f24b7e4025"></a>
+virtual <a class="el" href="class_effekseer_1_1_ref_ptr.html">ModelLoaderRef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_manager.html#aaf3a78f0cd5f02e3719e18f24b7e4025">GetModelLoader</a> ()=0</td></tr>
+<tr class="memdesc:aaf3a78f0cd5f02e3719e18f24b7e4025"><td class="mdescLeft">&#160;</td><td class="mdescRight">モデル読込クラスを取得する。 <br /></td></tr>
+<tr class="separator:aaf3a78f0cd5f02e3719e18f24b7e4025"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49530f105c1493b894c417f9939dee14"><td class="memItemLeft" align="right" valign="top"><a id="a49530f105c1493b894c417f9939dee14"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_manager.html#a49530f105c1493b894c417f9939dee14">SetModelLoader</a> (<a class="el" href="class_effekseer_1_1_ref_ptr.html">ModelLoaderRef</a> modelLoader)=0</td></tr>
+<tr class="memdesc:a49530f105c1493b894c417f9939dee14"><td class="mdescLeft">&#160;</td><td class="mdescRight">モデル読込クラスを設定する。 <br /></td></tr>
+<tr class="separator:a49530f105c1493b894c417f9939dee14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5fa5f7208f15c008f94d8caa05b8f38"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_effekseer_1_1_ref_ptr.html">MaterialLoaderRef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_manager.html#ad5fa5f7208f15c008f94d8caa05b8f38">GetMaterialLoader</a> ()=0</td></tr>
+<tr class="memdesc:ad5fa5f7208f15c008f94d8caa05b8f38"><td class="mdescLeft">&#160;</td><td class="mdescRight">マテリアルローダーを取得する。  <a href="class_effekseer_1_1_manager.html#ad5fa5f7208f15c008f94d8caa05b8f38">[詳解]</a><br /></td></tr>
+<tr class="separator:ad5fa5f7208f15c008f94d8caa05b8f38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f1ea7c95c53dbae2bcc9c3aaf915e0a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_manager.html#a1f1ea7c95c53dbae2bcc9c3aaf915e0a">SetMaterialLoader</a> (<a class="el" href="class_effekseer_1_1_ref_ptr.html">MaterialLoaderRef</a> loader)=0</td></tr>
+<tr class="memdesc:a1f1ea7c95c53dbae2bcc9c3aaf915e0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">マテリアルローダーを設定する。  <a href="class_effekseer_1_1_manager.html#a1f1ea7c95c53dbae2bcc9c3aaf915e0a">[詳解]</a><br /></td></tr>
+<tr class="separator:a1f1ea7c95c53dbae2bcc9c3aaf915e0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe779f0af9f356f001bfdf239bfc53e3"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_effekseer_1_1_ref_ptr.html">CurveLoaderRef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_manager.html#afe779f0af9f356f001bfdf239bfc53e3">GetCurveLoader</a> ()=0</td></tr>
+<tr class="memdesc:afe779f0af9f356f001bfdf239bfc53e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">カーブローダーを取得する。  <a href="class_effekseer_1_1_manager.html#afe779f0af9f356f001bfdf239bfc53e3">[詳解]</a><br /></td></tr>
+<tr class="separator:afe779f0af9f356f001bfdf239bfc53e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26fa0d031fda4b9d04c95c152622ae90"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_manager.html#a26fa0d031fda4b9d04c95c152622ae90">SetCurveLoader</a> (<a class="el" href="class_effekseer_1_1_ref_ptr.html">CurveLoaderRef</a> loader)=0</td></tr>
+<tr class="memdesc:a26fa0d031fda4b9d04c95c152622ae90"><td class="mdescLeft">&#160;</td><td class="mdescRight">カーブローダーを設定する。  <a href="class_effekseer_1_1_manager.html#a26fa0d031fda4b9d04c95c152622ae90">[詳解]</a><br /></td></tr>
+<tr class="separator:a26fa0d031fda4b9d04c95c152622ae90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a4a9ff929146f8ea21aa4705b352baa"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_manager.html#a7a4a9ff929146f8ea21aa4705b352baa">StopEffect</a> (Handle handle)=0</td></tr>
 <tr class="memdesc:a7a4a9ff929146f8ea21aa4705b352baa"><td class="mdescLeft">&#160;</td><td class="mdescRight">エフェクトを停止する。  <a href="class_effekseer_1_1_manager.html#a7a4a9ff929146f8ea21aa4705b352baa">[詳解]</a><br /></td></tr>
 <tr class="separator:a7a4a9ff929146f8ea21aa4705b352baa"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -237,9 +251,9 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="memitem:adbde475d5977ca36c0a3a4c1e6878b33"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_manager.html#adbde475d5977ca36c0a3a4c1e6878b33">StopRoot</a> (Handle handle)=0</td></tr>
 <tr class="memdesc:adbde475d5977ca36c0a3a4c1e6878b33"><td class="mdescLeft">&#160;</td><td class="mdescRight">エフェクトのルートだけを停止する。  <a href="class_effekseer_1_1_manager.html#adbde475d5977ca36c0a3a4c1e6878b33">[詳解]</a><br /></td></tr>
 <tr class="separator:adbde475d5977ca36c0a3a4c1e6878b33"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7989b68ceb3125cf6ef0d4062462a3d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_manager.html#ad7989b68ceb3125cf6ef0d4062462a3d">StopRoot</a> (<a class="el" href="class_effekseer_1_1_effect.html">Effect</a> *effect)=0</td></tr>
-<tr class="memdesc:ad7989b68ceb3125cf6ef0d4062462a3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">エフェクトのルートだけを停止する。  <a href="class_effekseer_1_1_manager.html#ad7989b68ceb3125cf6ef0d4062462a3d">[詳解]</a><br /></td></tr>
-<tr class="separator:ad7989b68ceb3125cf6ef0d4062462a3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2272c8da334ec479f0e4ecbcce8c97e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_manager.html#ac2272c8da334ec479f0e4ecbcce8c97e">StopRoot</a> (const <a class="el" href="class_effekseer_1_1_ref_ptr.html">EffectRef</a> &amp;effect)=0</td></tr>
+<tr class="memdesc:ac2272c8da334ec479f0e4ecbcce8c97e"><td class="mdescLeft">&#160;</td><td class="mdescRight">エフェクトのルートだけを停止する。  <a href="class_effekseer_1_1_manager.html#ac2272c8da334ec479f0e4ecbcce8c97e">[詳解]</a><br /></td></tr>
+<tr class="separator:ac2272c8da334ec479f0e4ecbcce8c97e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad95297e9170c9f9874eb6bf951aa5dc0"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_manager.html#ad95297e9170c9f9874eb6bf951aa5dc0">Exists</a> (Handle handle)=0</td></tr>
 <tr class="memdesc:ad95297e9170c9f9874eb6bf951aa5dc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">エフェクトのインスタンスが存在しているか取得する。  <a href="class_effekseer_1_1_manager.html#ad95297e9170c9f9874eb6bf951aa5dc0">[詳解]</a><br /></td></tr>
 <tr class="separator:ad95297e9170c9f9874eb6bf951aa5dc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -326,15 +340,35 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_manager.html#a400ceae76d9d9d9c2b7772ddd968c2bb">SetLayer</a> (Handle handle, int32_t layer)=0</td></tr>
 <tr class="memdesc:a400ceae76d9d9d9c2b7772ddd968c2bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">レイヤーのインデックスを設定する <br /></td></tr>
 <tr class="separator:a400ceae76d9d9d9c2b7772ddd968c2bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9742ccd087add6d65979e3bc2556fd7"><td class="memItemLeft" align="right" valign="top"><a id="aa9742ccd087add6d65979e3bc2556fd7"></a>
+virtual int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_manager.html#aa9742ccd087add6d65979e3bc2556fd7">GetGroupMask</a> (Handle handle) const =0</td></tr>
+<tr class="memdesc:aa9742ccd087add6d65979e3bc2556fd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">グループを指定するためのビットマスクを取得する。 <br /></td></tr>
+<tr class="separator:aa9742ccd087add6d65979e3bc2556fd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10755a8737f3e80b54cfd65b95382bf6"><td class="memItemLeft" align="right" valign="top"><a id="a10755a8737f3e80b54cfd65b95382bf6"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_manager.html#a10755a8737f3e80b54cfd65b95382bf6">SetGroupMask</a> (Handle handle, int64_t groupmask)=0</td></tr>
+<tr class="memdesc:a10755a8737f3e80b54cfd65b95382bf6"><td class="mdescLeft">&#160;</td><td class="mdescRight">グループを指定するためのビットマスクを設定する。 <br /></td></tr>
+<tr class="separator:a10755a8737f3e80b54cfd65b95382bf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab42ee8a12f6c349af8bb658614d97489"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_manager.html#ab42ee8a12f6c349af8bb658614d97489">GetSpeed</a> (Handle handle) const =0</td></tr>
 <tr class="memdesc:ab42ee8a12f6c349af8bb658614d97489"><td class="mdescLeft">&#160;</td><td class="mdescRight">エフェクトのパーティクルの再生スピードを取得する。  <a href="class_effekseer_1_1_manager.html#ab42ee8a12f6c349af8bb658614d97489">[詳解]</a><br /></td></tr>
 <tr class="separator:ab42ee8a12f6c349af8bb658614d97489"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa85b08562c442cfdce24781158a71431"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_manager.html#aa85b08562c442cfdce24781158a71431">SetSpeed</a> (Handle handle, float speed)=0</td></tr>
 <tr class="memdesc:aa85b08562c442cfdce24781158a71431"><td class="mdescLeft">&#160;</td><td class="mdescRight">エフェクトのインスタンスを再生スピードを設定する。  <a href="class_effekseer_1_1_manager.html#aa85b08562c442cfdce24781158a71431">[詳解]</a><br /></td></tr>
 <tr class="separator:aa85b08562c442cfdce24781158a71431"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e628e0d41834a030ea470348d42c70e"><td class="memItemLeft" align="right" valign="top"><a id="a5e628e0d41834a030ea470348d42c70e"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_manager.html#a5e628e0d41834a030ea470348d42c70e">SetTimeScaleByGroup</a> (int64_t groupmask, float timeScale)=0</td></tr>
+<tr class="memdesc:a5e628e0d41834a030ea470348d42c70e"><td class="mdescLeft">&#160;</td><td class="mdescRight">グループごとにマネージャーに対する時間の拡大率を設定する。 <br /></td></tr>
+<tr class="separator:a5e628e0d41834a030ea470348d42c70e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58bf4308e0ed7f3d722c5df01858f488"><td class="memItemLeft" align="right" valign="top"><a id="a58bf4308e0ed7f3d722c5df01858f488"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_manager.html#a58bf4308e0ed7f3d722c5df01858f488">SetTimeScaleByHandle</a> (Handle handle, float timeScale)=0</td></tr>
+<tr class="memdesc:a58bf4308e0ed7f3d722c5df01858f488"><td class="mdescLeft">&#160;</td><td class="mdescRight">ハンドルごとにマネージャーに対する時間の拡大率を設定する。 <br /></td></tr>
+<tr class="separator:a58bf4308e0ed7f3d722c5df01858f488"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3829cb7c98f3c41d79394eead1eaaa04"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_manager.html#a3829cb7c98f3c41d79394eead1eaaa04">SetAutoDrawing</a> (Handle handle, bool autoDraw)=0</td></tr>
 <tr class="memdesc:a3829cb7c98f3c41d79394eead1eaaa04"><td class="mdescLeft">&#160;</td><td class="mdescRight">エフェクトがDrawで描画されるか設定する。 autoDrawがfalseの場合、DrawHandleで描画する必要がある。  <a href="class_effekseer_1_1_manager.html#a3829cb7c98f3c41d79394eead1eaaa04">[詳解]</a><br /></td></tr>
 <tr class="separator:a3829cb7c98f3c41d79394eead1eaaa04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf0a4b65c923c94ce8706dcab2b30bca"><td class="memItemLeft" align="right" valign="top"><a id="adf0a4b65c923c94ce8706dcab2b30bca"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_manager.html#adf0a4b65c923c94ce8706dcab2b30bca">SetUserData</a> (Handle handle, void *userData)=0</td></tr>
+<tr class="memdesc:adf0a4b65c923c94ce8706dcab2b30bca"><td class="mdescLeft">&#160;</td><td class="mdescRight">ハンドルごとにカスタムレンダラーやカスタムサウンド向けにユーザーポインタを設定する。 <br /></td></tr>
+<tr class="separator:adf0a4b65c923c94ce8706dcab2b30bca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab810f714df5d12c566664183f365cbf4"><td class="memItemLeft" align="right" valign="top"><a id="ab810f714df5d12c566664183f365cbf4"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_manager.html#ab810f714df5d12c566664183f365cbf4">Flip</a> ()=0</td></tr>
 <tr class="memdesc:ab810f714df5d12c566664183f365cbf4"><td class="mdescLeft">&#160;</td><td class="mdescRight">今までのPlay等の処理をUpdate実行時に適用するようにする。 <br /></td></tr>
@@ -342,6 +376,9 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="memitem:ac086ec64cb5f99172e8bf655b77e1464"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_manager.html#ac086ec64cb5f99172e8bf655b77e1464">Update</a> (float deltaFrame=1.0f)=0</td></tr>
 <tr class="memdesc:ac086ec64cb5f99172e8bf655b77e1464"><td class="mdescLeft">&#160;</td><td class="mdescRight">全てのエフェクトの更新処理を行う。  <a href="class_effekseer_1_1_manager.html#ac086ec64cb5f99172e8bf655b77e1464">[詳解]</a><br /></td></tr>
 <tr class="separator:ac086ec64cb5f99172e8bf655b77e1464"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fcfec3d033c232a35bcff2bf9161130"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_manager.html#a3fcfec3d033c232a35bcff2bf9161130">Update</a> (const <a class="el" href="struct_effekseer_1_1_manager_1_1_update_parameter.html">UpdateParameter</a> &amp;parameter)=0</td></tr>
+<tr class="memdesc:a3fcfec3d033c232a35bcff2bf9161130"><td class="mdescLeft">&#160;</td><td class="mdescRight">全てのエフェクトの更新処理を行う。  <a href="class_effekseer_1_1_manager.html#a3fcfec3d033c232a35bcff2bf9161130">[詳解]</a><br /></td></tr>
+<tr class="separator:a3fcfec3d033c232a35bcff2bf9161130"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b9585b3bee11d4d0d7b29b742178f96"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_manager.html#a8b9585b3bee11d4d0d7b29b742178f96">BeginUpdate</a> ()=0</td></tr>
 <tr class="memdesc:a8b9585b3bee11d4d0d7b29b742178f96"><td class="mdescLeft">&#160;</td><td class="mdescRight">更新処理を開始する。  <a href="class_effekseer_1_1_manager.html#a8b9585b3bee11d4d0d7b29b742178f96">[詳解]</a><br /></td></tr>
 <tr class="separator:a8b9585b3bee11d4d0d7b29b742178f96"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -349,13 +386,15 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="memdesc:a49311566caa5abcbff1b836473b046ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">更新処理を終了する。  <a href="class_effekseer_1_1_manager.html#a49311566caa5abcbff1b836473b046ab">[詳解]</a><br /></td></tr>
 <tr class="separator:a49311566caa5abcbff1b836473b046ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe8a0df796e161f68a511540c76df839"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_manager.html#afe8a0df796e161f68a511540c76df839">UpdateHandle</a> (Handle handle, float deltaFrame=1.0f)=0</td></tr>
-<tr class="memdesc:afe8a0df796e161f68a511540c76df839"><td class="mdescLeft">&#160;</td><td class="mdescRight"><br  />
- ハンドル単位の更新を行う。  <a href="class_effekseer_1_1_manager.html#afe8a0df796e161f68a511540c76df839">[詳解]</a><br /></td></tr>
+<tr class="memdesc:afe8a0df796e161f68a511540c76df839"><td class="mdescLeft">&#160;</td><td class="mdescRight">ハンドル単位の更新を行う。  <a href="class_effekseer_1_1_manager.html#afe8a0df796e161f68a511540c76df839">[詳解]</a><br /></td></tr>
 <tr class="separator:afe8a0df796e161f68a511540c76df839"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cec8a6b2995e6c693782307d1a64abb"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_manager.html#a1cec8a6b2995e6c693782307d1a64abb">UpdateHandleToMoveToFrame</a> (Handle handle, float frame)=0</td></tr>
+<tr class="memdesc:a1cec8a6b2995e6c693782307d1a64abb"><td class="mdescLeft">&#160;</td><td class="mdescRight"><br  />
+ 指定した時間に移動するために更新する ハンドル  <a href="class_effekseer_1_1_manager.html#a1cec8a6b2995e6c693782307d1a64abb">[詳解]</a><br /></td></tr>
+<tr class="separator:a1cec8a6b2995e6c693782307d1a64abb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd4e1e2382e91d34fc37df97a0fed5f1"><td class="memItemLeft" align="right" valign="top"><a id="afd4e1e2382e91d34fc37df97a0fed5f1"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_manager.html#afd4e1e2382e91d34fc37df97a0fed5f1">Draw</a> (const <a class="el" href="struct_effekseer_1_1_manager_1_1_draw_parameter.html">Manager::DrawParameter</a> &amp;drawParameter=<a class="el" href="struct_effekseer_1_1_manager_1_1_draw_parameter.html">Manager::DrawParameter</a>())=0</td></tr>
-<tr class="memdesc:afd4e1e2382e91d34fc37df97a0fed5f1"><td class="mdescLeft">&#160;</td><td class="mdescRight"><br  />
- 描画処理を行う。 <br /></td></tr>
+<tr class="memdesc:afd4e1e2382e91d34fc37df97a0fed5f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">描画処理を行う。 <br /></td></tr>
 <tr class="separator:afd4e1e2382e91d34fc37df97a0fed5f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a15f1f35122079b5e63e18758cea3f421"><td class="memItemLeft" align="right" valign="top"><a id="a15f1f35122079b5e63e18758cea3f421"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_manager.html#a15f1f35122079b5e63e18758cea3f421">DrawBack</a> (const <a class="el" href="struct_effekseer_1_1_manager_1_1_draw_parameter.html">Manager::DrawParameter</a> &amp;drawParameter=<a class="el" href="struct_effekseer_1_1_manager_1_1_draw_parameter.html">Manager::DrawParameter</a>())=0</td></tr>
@@ -377,12 +416,12 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_manager.html#a341cb37b961bc01c8e9bac3264fe4c01">DrawHandleFront</a> (Handle handle, const <a class="el" href="struct_effekseer_1_1_manager_1_1_draw_parameter.html">Manager::DrawParameter</a> &amp;drawParameter=<a class="el" href="struct_effekseer_1_1_manager_1_1_draw_parameter.html">Manager::DrawParameter</a>())=0</td></tr>
 <tr class="memdesc:a341cb37b961bc01c8e9bac3264fe4c01"><td class="mdescLeft">&#160;</td><td class="mdescRight">前面のハンドル単位の描画処理を行う。 <br /></td></tr>
 <tr class="separator:a341cb37b961bc01c8e9bac3264fe4c01"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ea3211a3670843061238976dda54a4f"><td class="memItemLeft" align="right" valign="top">virtual Handle&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_manager.html#a5ea3211a3670843061238976dda54a4f">Play</a> (<a class="el" href="class_effekseer_1_1_effect.html">Effect</a> *effect, float x, float y, float z)=0</td></tr>
-<tr class="memdesc:a5ea3211a3670843061238976dda54a4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">再生する。  <a href="class_effekseer_1_1_manager.html#a5ea3211a3670843061238976dda54a4f">[詳解]</a><br /></td></tr>
-<tr class="separator:a5ea3211a3670843061238976dda54a4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a544159b1c29d6f6dfec18273782ea73d"><td class="memItemLeft" align="right" valign="top">virtual Handle&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_manager.html#a544159b1c29d6f6dfec18273782ea73d">Play</a> (<a class="el" href="class_effekseer_1_1_effect.html">Effect</a> *effect, const <a class="el" href="struct_effekseer_1_1_vector3_d.html">Vector3D</a> &amp;position, int32_t startFrame=0)=0</td></tr>
-<tr class="memdesc:a544159b1c29d6f6dfec18273782ea73d"><td class="mdescLeft">&#160;</td><td class="mdescRight">エフェクトを再生する。  <a href="class_effekseer_1_1_manager.html#a544159b1c29d6f6dfec18273782ea73d">[詳解]</a><br /></td></tr>
-<tr class="separator:a544159b1c29d6f6dfec18273782ea73d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8873db9e2e3b341c43b84c6f31485c6d"><td class="memItemLeft" align="right" valign="top">virtual Handle&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_manager.html#a8873db9e2e3b341c43b84c6f31485c6d">Play</a> (const <a class="el" href="class_effekseer_1_1_ref_ptr.html">EffectRef</a> &amp;effect, float x, float y, float z)=0</td></tr>
+<tr class="memdesc:a8873db9e2e3b341c43b84c6f31485c6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">再生する。  <a href="class_effekseer_1_1_manager.html#a8873db9e2e3b341c43b84c6f31485c6d">[詳解]</a><br /></td></tr>
+<tr class="separator:a8873db9e2e3b341c43b84c6f31485c6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46a7685b1f57addbc89408c0c4cd9ed3"><td class="memItemLeft" align="right" valign="top">virtual Handle&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_manager.html#a46a7685b1f57addbc89408c0c4cd9ed3">Play</a> (const <a class="el" href="class_effekseer_1_1_ref_ptr.html">EffectRef</a> &amp;effect, const <a class="el" href="struct_effekseer_1_1_vector3_d.html">Vector3D</a> &amp;position, int32_t startFrame=0)=0</td></tr>
+<tr class="memdesc:a46a7685b1f57addbc89408c0c4cd9ed3"><td class="mdescLeft">&#160;</td><td class="mdescRight">エフェクトを再生する。  <a href="class_effekseer_1_1_manager.html#a46a7685b1f57addbc89408c0c4cd9ed3">[詳解]</a><br /></td></tr>
+<tr class="separator:a46a7685b1f57addbc89408c0c4cd9ed3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a38c36553bb0c045ff25f6fbca143cf45"><td class="memItemLeft" align="right" valign="top"><a id="a38c36553bb0c045ff25f6fbca143cf45"></a>
 virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_manager.html#a38c36553bb0c045ff25f6fbca143cf45">GetCameraCullingMaskToShowAllEffects</a> ()=0</td></tr>
 <tr class="memdesc:a38c36553bb0c045ff25f6fbca143cf45"><td class="mdescLeft">&#160;</td><td class="mdescRight">全てのエフェクトを表示するためのカメラのカリングマスクを取得する。 <br /></td></tr>
@@ -409,6 +448,15 @@ virtual int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el"
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_manager.html#a15bf6eee981b682ed35b7660e8caf435">RessignCulling</a> ()=0</td></tr>
 <tr class="memdesc:a15bf6eee981b682ed35b7660e8caf435"><td class="mdescLeft">&#160;</td><td class="mdescRight">現在存在するエフェクトのハンドルからカリングの空間を配置しなおす。 <br /></td></tr>
 <tr class="separator:a15bf6eee981b682ed35b7660e8caf435"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b4f84aaba2e572a78f1184d2f56db0a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_manager.html#a2b4f84aaba2e572a78f1184d2f56db0a">LockRendering</a> ()=0</td></tr>
+<tr class="memdesc:a2b4f84aaba2e572a78f1184d2f56db0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">レンダリングのイベントをロックする。  <a href="class_effekseer_1_1_manager.html#a2b4f84aaba2e572a78f1184d2f56db0a">[詳解]</a><br /></td></tr>
+<tr class="separator:a2b4f84aaba2e572a78f1184d2f56db0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00d667c6813c19c4099466160e26fdc5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_manager.html#a00d667c6813c19c4099466160e26fdc5">UnlockRendering</a> ()=0</td></tr>
+<tr class="memdesc:a00d667c6813c19c4099466160e26fdc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">レンダリングのイベントをアンロックする。  <a href="class_effekseer_1_1_manager.html#a00d667c6813c19c4099466160e26fdc5">[詳解]</a><br /></td></tr>
+<tr class="separator:a00d667c6813c19c4099466160e26fdc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a495079582b9d20a6af9b9496995bd8d7"><td class="memItemLeft" align="right" valign="top"><a id="a495079582b9d20a6af9b9496995bd8d7"></a>
+virtual ManagerImplemented *&#160;</td><td class="memItemRight" valign="bottom"><b>GetImplemented</b> ()=0</td></tr>
+<tr class="separator:a495079582b9d20a6af9b9496995bd8d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_effekseer_1_1_i_reference"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_effekseer_1_1_i_reference')"><img src="closed.png" alt="-"/>&#160;基底クラス <a class="el" href="class_effekseer_1_1_i_reference.html">Effekseer::IReference</a> に属する継承公開メンバ関数</td></tr>
 <tr class="memitem:a3e3b54e8e5081e24f5784e4f9b8f6257 inherit pub_methods_class_effekseer_1_1_i_reference"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_i_reference.html#a3e3b54e8e5081e24f5784e4f9b8f6257">AddRef</a> ()=0</td></tr>
 <tr class="memdesc:a3e3b54e8e5081e24f5784e4f9b8f6257 inherit pub_methods_class_effekseer_1_1_i_reference"><td class="mdescLeft">&#160;</td><td class="mdescRight">参照カウンタを加算する。  <a href="class_effekseer_1_1_i_reference.html#a3e3b54e8e5081e24f5784e4f9b8f6257">[詳解]</a><br /></td></tr>
@@ -422,9 +470,9 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 静的公開メンバ関数</h2></td></tr>
-<tr class="memitem:a1de74a159f3646d325f49e940e72181c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_effekseer_1_1_manager.html">Manager</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_manager.html#a1de74a159f3646d325f49e940e72181c">Create</a> (int instance_max, bool autoFlip=true)</td></tr>
-<tr class="memdesc:a1de74a159f3646d325f49e940e72181c"><td class="mdescLeft">&#160;</td><td class="mdescRight">マネージャーを生成する。  <a href="class_effekseer_1_1_manager.html#a1de74a159f3646d325f49e940e72181c">[詳解]</a><br /></td></tr>
-<tr class="separator:a1de74a159f3646d325f49e940e72181c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a028dacc640ad9d9aca2d19b1ddbc455f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_effekseer_1_1_ref_ptr.html">ManagerRef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_manager.html#a028dacc640ad9d9aca2d19b1ddbc455f">Create</a> (int instance_max, bool autoFlip=true)</td></tr>
+<tr class="memdesc:a028dacc640ad9d9aca2d19b1ddbc455f"><td class="mdescLeft">&#160;</td><td class="mdescRight">マネージャーを生成する。  <a href="class_effekseer_1_1_manager.html#a028dacc640ad9d9aca2d19b1ddbc455f">[詳解]</a><br /></td></tr>
+<tr class="separator:a028dacc640ad9d9aca2d19b1ddbc455f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
 <div class="textblock"><p>エフェクト管理クラス </p>
@@ -546,8 +594,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 
 </div>
 </div>
-<a id="a1de74a159f3646d325f49e940e72181c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1de74a159f3646d325f49e940e72181c">&#9670;&nbsp;</a></span>Create()</h2>
+<a id="a028dacc640ad9d9aca2d19b1ddbc455f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a028dacc640ad9d9aca2d19b1ddbc455f">&#9670;&nbsp;</a></span>Create()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -556,7 +604,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="class_effekseer_1_1_manager.html">Manager</a>* Effekseer::Manager::Create </td>
+          <td class="memname">static <a class="el" href="class_effekseer_1_1_ref_ptr.html">ManagerRef</a> Effekseer::Manager::Create </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>instance_max</em>, </td>
@@ -648,34 +696,6 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="a59eeea8d94285186a5d04dfad0b682ff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a59eeea8d94285186a5d04dfad0b682ff">&#9670;&nbsp;</a></span>Destroy()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void Effekseer::Manager::Destroy </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>マネージャーを破棄する。 </p>
-<dl class="section note"><dt>覚え書き</dt><dd>このマネージャーから生成されたエフェクトは全て強制的に破棄される。 </dd></dl>
 
 </div>
 </div>
@@ -805,6 +825,34 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 
 </div>
 </div>
+<a id="afe779f0af9f356f001bfdf239bfc53e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe779f0af9f356f001bfdf239bfc53e3">&#9670;&nbsp;</a></span>GetCurveLoader()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_effekseer_1_1_ref_ptr.html">CurveLoaderRef</a> Effekseer::Manager::GetCurveLoader </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>カーブローダーを取得する。 </p>
+<dl class="section return"><dt>戻り値</dt><dd>ローダー </dd></dl>
+
+</div>
+</div>
 <a id="a4e4831b6514c683cd9cabf5cfe1103ab"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4e4831b6514c683cd9cabf5cfe1103ab">&#9670;&nbsp;</a></span>GetInstanceCount()</h2>
 
@@ -905,8 +953,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 
 </div>
 </div>
-<a id="a54b431c7ce3a9f9e4ce3c630c22ffbd7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a54b431c7ce3a9f9e4ce3c630c22ffbd7">&#9670;&nbsp;</a></span>GetMaterialLoader()</h2>
+<a id="ad5fa5f7208f15c008f94d8caa05b8f38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5fa5f7208f15c008f94d8caa05b8f38">&#9670;&nbsp;</a></span>GetMaterialLoader()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -915,7 +963,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="class_effekseer_1_1_material_loader.html">MaterialLoader</a>* Effekseer::Manager::GetMaterialLoader </td>
+          <td class="memname">virtual <a class="el" href="class_effekseer_1_1_ref_ptr.html">MaterialLoaderRef</a> Effekseer::Manager::GetMaterialLoader </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -1101,8 +1149,36 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 
 </div>
 </div>
-<a id="a544159b1c29d6f6dfec18273782ea73d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a544159b1c29d6f6dfec18273782ea73d">&#9670;&nbsp;</a></span>Play() <span class="overload">[1/2]</span></h2>
+<a id="a2b4f84aaba2e572a78f1184d2f56db0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b4f84aaba2e572a78f1184d2f56db0a">&#9670;&nbsp;</a></span>LockRendering()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Effekseer::Manager::LockRendering </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>レンダリングのイベントをロックする。 </p>
+<dl class="section note"><dt>覚え書き</dt><dd>内部コードを読むことを勧めます。 </dd></dl>
+
+</div>
+</div>
+<a id="a46a7685b1f57addbc89408c0c4cd9ed3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46a7685b1f57addbc89408c0c4cd9ed3">&#9670;&nbsp;</a></span>Play() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1113,7 +1189,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
         <tr>
           <td class="memname">virtual Handle Effekseer::Manager::Play </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_effekseer_1_1_effect.html">Effect</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="class_effekseer_1_1_ref_ptr.html">EffectRef</a> &amp;&#160;</td>
           <td class="paramname"><em>effect</em>, </td>
         </tr>
         <tr>
@@ -1153,8 +1229,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 
 </div>
 </div>
-<a id="a5ea3211a3670843061238976dda54a4f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5ea3211a3670843061238976dda54a4f">&#9670;&nbsp;</a></span>Play() <span class="overload">[2/2]</span></h2>
+<a id="a8873db9e2e3b341c43b84c6f31485c6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8873db9e2e3b341c43b84c6f31485c6d">&#9670;&nbsp;</a></span>Play() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1165,7 +1241,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
         <tr>
           <td class="memname">virtual Handle Effekseer::Manager::Play </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_effekseer_1_1_effect.html">Effect</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="class_effekseer_1_1_ref_ptr.html">EffectRef</a> &amp;&#160;</td>
           <td class="paramname"><em>effect</em>, </td>
         </tr>
         <tr>
@@ -1338,6 +1414,40 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 
 </div>
 </div>
+<a id="a26fa0d031fda4b9d04c95c152622ae90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26fa0d031fda4b9d04c95c152622ae90">&#9670;&nbsp;</a></span>SetCurveLoader()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Effekseer::Manager::SetCurveLoader </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_effekseer_1_1_ref_ptr.html">CurveLoaderRef</a>&#160;</td>
+          <td class="paramname"><em>loader</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>カーブローダーを設定する。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">loader</td><td>ローダー </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a81402561ce17b0d4c681811affbd7340"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a81402561ce17b0d4c681811affbd7340">&#9670;&nbsp;</a></span>SetFreeFunc()</h2>
 
@@ -1494,8 +1604,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 
 </div>
 </div>
-<a id="a1bdea3d540028bb38b33d8ec2e7837f4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1bdea3d540028bb38b33d8ec2e7837f4">&#9670;&nbsp;</a></span>SetMaterialLoader()</h2>
+<a id="a1f1ea7c95c53dbae2bcc9c3aaf915e0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f1ea7c95c53dbae2bcc9c3aaf915e0a">&#9670;&nbsp;</a></span>SetMaterialLoader()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1506,7 +1616,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
         <tr>
           <td class="memname">virtual void Effekseer::Manager::SetMaterialLoader </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_effekseer_1_1_material_loader.html">MaterialLoader</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="class_effekseer_1_1_ref_ptr.html">MaterialLoaderRef</a>&#160;</td>
           <td class="paramname"><em>loader</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1808,8 +1918,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 
 </div>
 </div>
-<a id="a4de59a95985d8042b5f82fca2c31b985"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4de59a95985d8042b5f82fca2c31b985">&#9670;&nbsp;</a></span>SetSetting()</h2>
+<a id="a4654de994657d10b277125fcae03e360"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4654de994657d10b277125fcae03e360">&#9670;&nbsp;</a></span>SetSetting()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1820,7 +1930,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
         <tr>
           <td class="memname">virtual void Effekseer::Manager::SetSetting </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_effekseer_1_1_setting.html">Setting</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="class_effekseer_1_1_ref_ptr.html">SettingRef</a> &amp;&#160;</td>
           <td class="paramname"><em>setting</em></td><td>)</td>
           <td></td>
         </tr>
@@ -2068,8 +2178,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 
 </div>
 </div>
-<a id="ad7989b68ceb3125cf6ef0d4062462a3d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad7989b68ceb3125cf6ef0d4062462a3d">&#9670;&nbsp;</a></span>StopRoot() <span class="overload">[1/2]</span></h2>
+<a id="ac2272c8da334ec479f0e4ecbcce8c97e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2272c8da334ec479f0e4ecbcce8c97e">&#9670;&nbsp;</a></span>StopRoot() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2080,7 +2190,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
         <tr>
           <td class="memname">virtual void Effekseer::Manager::StopRoot </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_effekseer_1_1_effect.html">Effect</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="class_effekseer_1_1_ref_ptr.html">EffectRef</a> &amp;&#160;</td>
           <td class="paramname"><em>effect</em></td><td>)</td>
           <td></td>
         </tr>
@@ -2136,8 +2246,70 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 
 </div>
 </div>
+<a id="a00d667c6813c19c4099466160e26fdc5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00d667c6813c19c4099466160e26fdc5">&#9670;&nbsp;</a></span>UnlockRendering()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Effekseer::Manager::UnlockRendering </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>レンダリングのイベントをアンロックする。 </p>
+<dl class="section note"><dt>覚え書き</dt><dd>内部コードを読むことを勧めます。 </dd></dl>
+
+</div>
+</div>
+<a id="a3fcfec3d033c232a35bcff2bf9161130"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fcfec3d033c232a35bcff2bf9161130">&#9670;&nbsp;</a></span>Update() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Effekseer::Manager::Update </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_effekseer_1_1_manager_1_1_update_parameter.html">UpdateParameter</a> &amp;&#160;</td>
+          <td class="paramname"><em>parameter</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>全てのエフェクトの更新処理を行う。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameter</td><td>エフェクトを更新するためのパラメーター </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ac086ec64cb5f99172e8bf655b77e1464"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac086ec64cb5f99172e8bf655b77e1464">&#9670;&nbsp;</a></span>Update()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac086ec64cb5f99172e8bf655b77e1464">&#9670;&nbsp;</a></span>Update() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2204,8 +2376,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </table>
 </div><div class="memdoc">
 
-<p><br  />
- ハンドル単位の更新を行う。 </p>
+<p>ハンドル単位の更新を行う。 </p>
 <dl class="params"><dt>引数</dt><dd>
   <table class="params">
     <tr><td class="paramname">handle</td><td>ハンドル </td></tr>
@@ -2214,8 +2385,53 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
   </dd>
 </dl>
 <dl class="section note"><dt>覚え書き</dt><dd></dd></dl>
+<p>更新する前にBeginUpdate、更新し終わった後にEndUpdateを実行する必要がある。 </p>
+
+</div>
+</div>
+<a id="a1cec8a6b2995e6c693782307d1a64abb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1cec8a6b2995e6c693782307d1a64abb">&#9670;&nbsp;</a></span>UpdateHandleToMoveToFrame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Effekseer::Manager::UpdateHandleToMoveToFrame </td>
+          <td>(</td>
+          <td class="paramtype">Handle&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>frame</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
 <p><br  />
- 更新する前にBeginUpdate、更新し終わった後にEndUpdateを実行する必要がある。 </p>
+ 指定した時間に移動するために更新する ハンドル </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">frame</td><td>フレーム時間(60fps基準) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>覚え書き</dt><dd>この関数は遅い。 </dd></dl>
 
 </div>
 </div>
@@ -2225,7 +2441,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-2020年08月16日(日) 18時48分58秒作成 - Effekseer / 構成:  &#160;<a href="http://www.doxygen.org/index.html">
+2021年04月30日(金) 22時44分57秒作成 - Effekseer / 構成:  &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

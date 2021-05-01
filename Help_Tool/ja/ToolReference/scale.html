@@ -44,7 +44,7 @@
     
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="検索" href="../../search.html" />
-    <link rel="next" title="描画共通" href="rendererCommon.html" />
+    <link rel="next" title="深度" href="depth.html" />
     <link rel="prev" title="回転" href="rotation.html" /> 
 </head>
 
@@ -96,34 +96,32 @@
 <li class="toctree-l2"><a class="reference internal" href="../ToolTutorial/index.html">チュートリアル</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="index.html">ツール・リファレンス</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="index.html#id2">概要</a></li>
-<li class="toctree-l3 current"><a class="reference internal" href="index.html#id12">各ウインドウ</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="index.html#id13">エフェクトパラメータ</a><ul class="current">
 <li class="toctree-l4"><a class="reference internal" href="common.html">共通</a></li>
 <li class="toctree-l4"><a class="reference internal" href="location.html">位置</a></li>
 <li class="toctree-l4"><a class="reference internal" href="locationAbs.html">力場(ローカル)</a></li>
 <li class="toctree-l4"><a class="reference internal" href="locationGene.html">生成方法</a></li>
 <li class="toctree-l4"><a class="reference internal" href="rotation.html">回転</a></li>
 <li class="toctree-l4 current"><a class="current reference internal" href="#">拡大</a></li>
+<li class="toctree-l4"><a class="reference internal" href="depth.html">深度</a></li>
 <li class="toctree-l4"><a class="reference internal" href="rendererCommon.html">描画共通</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererCommonAd.html">描画共通(高度)</a></li>
 <li class="toctree-l4"><a class="reference internal" href="rendererSprite.html">描画-スプライト</a></li>
 <li class="toctree-l4"><a class="reference internal" href="rendererRibbon.html">描画-リボン</a></li>
 <li class="toctree-l4"><a class="reference internal" href="rendererRing.html">描画-リング</a></li>
 <li class="toctree-l4"><a class="reference internal" href="rendererModel.html">描画-モデル</a></li>
 <li class="toctree-l4"><a class="reference internal" href="rendererTrack.html">描画-軌跡</a></li>
-<li class="toctree-l4"><a class="reference internal" href="fcurve.html">Fカーブ</a></li>
 <li class="toctree-l4"><a class="reference internal" href="sound.html">音</a></li>
-<li class="toctree-l4"><a class="reference internal" href="network.html">ネットワーク</a></li>
-<li class="toctree-l4"><a class="reference internal" href="culling.html">カリング</a></li>
-<li class="toctree-l4"><a class="reference internal" href="behavior.html">振る舞い</a></li>
-<li class="toctree-l4"><a class="reference internal" href="record.html">録画</a></li>
-<li class="toctree-l4"><a class="reference internal" href="fileviewer.html">ファイルビューア</a></li>
+<li class="toctree-l4"><a class="reference internal" href="fcurve.html">Fカーブ</a></li>
 <li class="toctree-l4"><a class="reference internal" href="global.html">全体</a></li>
-<li class="toctree-l4"><a class="reference internal" href="environment.html">環境</a></li>
-<li class="toctree-l4"><a class="reference internal" href="options.html">オプション</a></li>
-<li class="toctree-l4"><a class="reference internal" href="depth.html">深度</a></li>
+<li class="toctree-l4"><a class="reference internal" href="culling.html">カリング</a></li>
 <li class="toctree-l4"><a class="reference internal" href="dynamicParameter.html">動的パラメーター</a></li>
+<li class="toctree-l4"><a class="reference internal" href="proceduralModel.html">プロシージャルモデル</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="index.html#id13">コマンドライン</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id14">エフェクト機能</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id15">ツール機能</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id16">コマンドライン</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../MaterialToolReference/index.html">マテリアル・リファレンス</a></li>
@@ -206,32 +204,39 @@
 <h1>拡大<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h1>
 <div class="section" id="id2">
 <h2>概要<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<p>ノードの拡大に関するパラメーターを設定します。</p>
-</div>
-<div class="section" id="id3">
-<h2>パラメーター<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>パーティクルの拡大率に関するパラメーターを設定します。</p>
+<p>これらのパラメーターは <code class="docutils literal notranslate"><span class="pre">拡大</span></code> ウインドウで設定できます。</p>
 <div align="center">
 <img src="../../img/Tutorial/04_scale_ja.png">
 <p>「拡大」ウインドウ</p>
-</div><div class="section" id="id4">
-<h3>拡大<a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<p>パーティクルの拡大率を指定します。ここで指定するのは、親のパーティクルに対する相対拡大率です。「共通」による設定で、 親からの影響を受けなくした場合には、絶対的な拡大率を指定します。</p>
-<div class="section" id="id5">
-<h4>拡大<a class="headerlink" href="#id5" title="このヘッドラインへのパーマリンク">¶</a></h4>
+</div><p>ここで指定するのは、親のパーティクルに対する相対拡大率です。「共通」による設定で、 親からの影響を受けなくした場合には、絶対的な拡大率を指定します。</p>
+<div class="section" id="id3">
+<h3>拡大<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>パーティクルの拡大率を指定します。</p>
 <iframe src='../../Effects/viewer_ja.html#References/Scale/scale.efkefc' class='effect'></iframe></div>
-<div class="section" id="id6">
-<h4>拡大率・速度・加速度<a class="headerlink" href="#id6" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<div class="section" id="id4">
+<h3>拡大率・速度・加速度<a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>パーティクルの拡大率・速度・加速度を指定します。</p>
 <iframe src='../../Effects/viewer_ja.html#References/Scale/scale_pva.efkefc' class='effect'></iframe></div>
-<div class="section" id="id7">
-<h4>イージング<a class="headerlink" href="#id7" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<div class="section" id="id5">
+<h3>イージング<a class="headerlink" href="#id5" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>パーティクルの生成時の拡大率と終了時の拡大率を指定します。</p>
 <iframe src='../../Effects/viewer_ja.html#References/Scale/scale_easing.efkefc' class='effect'></iframe></div>
 <div class="section" id="f">
-<h4>拡大率(Fカーブ)<a class="headerlink" href="#f" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<h3>拡大率(Fカーブ)<a class="headerlink" href="#f" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>Fカーブを使用します。</p>
 <iframe src='../../Effects/viewer_ja.html#References/Scale/scale_f_curve.efkefc' class='effect'></iframe></div>
+<div class="section" id="id6">
+<h3>単体 拡大率・速度・加速度<a class="headerlink" href="#id6" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>XYZが全て同じ値の 拡大率・速度・加速度 です。</p>
+</div>
+<div class="section" id="id7">
+<h3>単体 イージング<a class="headerlink" href="#id7" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>XYZが全て同じ値の イージング です。</p>
+</div>
+<div class="section" id="id8">
+<h3>単体 拡大率(Fカーブ)<a class="headerlink" href="#id8" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>XYZが全て同じ値の Fカーブ です。</p>
 </div>
 </div>
 </div>
@@ -242,7 +247,7 @@
           </div>
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="rendererCommon.html" class="btn btn-neutral float-right" title="描画共通" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="depth.html" class="btn btn-neutral float-right" title="深度" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
         <a href="rotation.html" class="btn btn-neutral float-left" title="回転" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 

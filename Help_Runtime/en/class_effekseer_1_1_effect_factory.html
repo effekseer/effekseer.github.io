@@ -83,33 +83,41 @@ Inheritance diagram for Effekseer::EffectFactory:</div>
  <div class="center">
   <img src="class_effekseer_1_1_effect_factory.png" usemap="#Effekseer::EffectFactory_map" alt=""/>
   <map id="Effekseer::EffectFactory_map" name="Effekseer::EffectFactory_map">
-<area href="class_effekseer_1_1_reference_object.html" title="参照カウンタオブジェクト" alt="Effekseer::ReferenceObject" shape="rect" coords="0,56,168,80"/>
-<area href="class_effekseer_1_1_i_reference.html" title="参照カウンタのインターフェース" alt="Effekseer::IReference" shape="rect" coords="0,0,168,24"/>
+<area href="class_effekseer_1_1_reference_object.html" title="A reference counter." alt="Effekseer::ReferenceObject" shape="rect" coords="0,56,168,80"/>
+<area href="class_effekseer_1_1_i_reference.html" title="An interface of reference counter." alt="Effekseer::IReference" shape="rect" coords="0,0,168,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a3f9508b2d5ef0d5a0a06e391793a1540"><td class="memItemLeft" align="right" valign="top"><a id="a3f9508b2d5ef0d5a0a06e391793a1540"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_effect_factory.html#a3f9508b2d5ef0d5a0a06e391793a1540">LoadBody</a> (<a class="el" href="class_effekseer_1_1_effect.html">Effect</a> *effect, const void *data, int32_t size, float magnification, const EFK_CHAR *materialPath)</td></tr>
-<tr class="memdesc:a3f9508b2d5ef0d5a0a06e391793a1540"><td class="mdescLeft">&#160;</td><td class="mdescRight">load body data(parameters of effect) from a binary <br /></td></tr>
-<tr class="separator:a3f9508b2d5ef0d5a0a06e391793a1540"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ab53df791db3960a59285a5bc7b6472"><td class="memItemLeft" align="right" valign="top"><a id="a9ab53df791db3960a59285a5bc7b6472"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_effect_factory.html#a9ab53df791db3960a59285a5bc7b6472">SetTexture</a> (<a class="el" href="class_effekseer_1_1_effect.html">Effect</a> *effect, int32_t index, TextureType type, <a class="el" href="struct_effekseer_1_1_texture_data.html">TextureData</a> *data)</td></tr>
-<tr class="memdesc:a9ab53df791db3960a59285a5bc7b6472"><td class="mdescLeft">&#160;</td><td class="mdescRight">set texture data into specified index <br /></td></tr>
-<tr class="separator:a9ab53df791db3960a59285a5bc7b6472"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8459019e9308100d43cd19ff48fc2aef"><td class="memItemLeft" align="right" valign="top"><a id="a8459019e9308100d43cd19ff48fc2aef"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_effect_factory.html#a8459019e9308100d43cd19ff48fc2aef">SetSound</a> (<a class="el" href="class_effekseer_1_1_effect.html">Effect</a> *effect, int32_t index, void *data)</td></tr>
-<tr class="memdesc:a8459019e9308100d43cd19ff48fc2aef"><td class="mdescLeft">&#160;</td><td class="mdescRight">set sound data into specified index <br /></td></tr>
-<tr class="separator:a8459019e9308100d43cd19ff48fc2aef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92ab6f33f0d4ef63b386985585c95d32"><td class="memItemLeft" align="right" valign="top"><a id="a92ab6f33f0d4ef63b386985585c95d32"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_effect_factory.html#a92ab6f33f0d4ef63b386985585c95d32">SetModel</a> (<a class="el" href="class_effekseer_1_1_effect.html">Effect</a> *effect, int32_t index, void *data)</td></tr>
-<tr class="memdesc:a92ab6f33f0d4ef63b386985585c95d32"><td class="mdescLeft">&#160;</td><td class="mdescRight">set model data into specified index <br /></td></tr>
-<tr class="separator:a92ab6f33f0d4ef63b386985585c95d32"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a665b4309d5e7bcebf2c1cb4dcad8a919"><td class="memItemLeft" align="right" valign="top"><a id="a665b4309d5e7bcebf2c1cb4dcad8a919"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_effect_factory.html#a665b4309d5e7bcebf2c1cb4dcad8a919">SetMaterial</a> (<a class="el" href="class_effekseer_1_1_effect.html">Effect</a> *effect, int32_t index, <a class="el" href="class_effekseer_1_1_material_data.html">MaterialData</a> *data)</td></tr>
-<tr class="memdesc:a665b4309d5e7bcebf2c1cb4dcad8a919"><td class="mdescLeft">&#160;</td><td class="mdescRight">set material data into specified index <br /></td></tr>
-<tr class="separator:a665b4309d5e7bcebf2c1cb4dcad8a919"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd7f0f9ca8fed163edb1583d24d9ef7d"><td class="memItemLeft" align="right" valign="top"><a id="abd7f0f9ca8fed163edb1583d24d9ef7d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_effect_factory.html#abd7f0f9ca8fed163edb1583d24d9ef7d">LoadBody</a> (<a class="el" href="class_effekseer_1_1_effect.html">Effect</a> *effect, const void *data, int32_t size, float magnification, const char16_t *materialPath)</td></tr>
+<tr class="memdesc:abd7f0f9ca8fed163edb1583d24d9ef7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">load body data(parameters of effect) from a binary <br /></td></tr>
+<tr class="separator:abd7f0f9ca8fed163edb1583d24d9ef7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afea987177dbb7c0a4b8fe64b8628c667"><td class="memItemLeft" align="right" valign="top"><a id="afea987177dbb7c0a4b8fe64b8628c667"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_effect_factory.html#afea987177dbb7c0a4b8fe64b8628c667">SetTexture</a> (<a class="el" href="class_effekseer_1_1_effect.html">Effect</a> *effect, int32_t index, TextureType type, <a class="el" href="class_effekseer_1_1_ref_ptr.html">TextureRef</a> data)</td></tr>
+<tr class="memdesc:afea987177dbb7c0a4b8fe64b8628c667"><td class="mdescLeft">&#160;</td><td class="mdescRight">set texture data into specified index <br /></td></tr>
+<tr class="separator:afea987177dbb7c0a4b8fe64b8628c667"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3b17afd15f1075930328989d0cbb408"><td class="memItemLeft" align="right" valign="top"><a id="ab3b17afd15f1075930328989d0cbb408"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_effect_factory.html#ab3b17afd15f1075930328989d0cbb408">SetSound</a> (<a class="el" href="class_effekseer_1_1_effect.html">Effect</a> *effect, int32_t index, <a class="el" href="class_effekseer_1_1_ref_ptr.html">SoundDataRef</a> data)</td></tr>
+<tr class="memdesc:ab3b17afd15f1075930328989d0cbb408"><td class="mdescLeft">&#160;</td><td class="mdescRight">set sound data into specified index <br /></td></tr>
+<tr class="separator:ab3b17afd15f1075930328989d0cbb408"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3b4cf9addec6a2299d4ae785600598c"><td class="memItemLeft" align="right" valign="top"><a id="ac3b4cf9addec6a2299d4ae785600598c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_effect_factory.html#ac3b4cf9addec6a2299d4ae785600598c">SetModel</a> (<a class="el" href="class_effekseer_1_1_effect.html">Effect</a> *effect, int32_t index, <a class="el" href="class_effekseer_1_1_ref_ptr.html">ModelRef</a> data)</td></tr>
+<tr class="memdesc:ac3b4cf9addec6a2299d4ae785600598c"><td class="mdescLeft">&#160;</td><td class="mdescRight">set model data into specified index <br /></td></tr>
+<tr class="separator:ac3b4cf9addec6a2299d4ae785600598c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac87976d29aac83c4c67b1b772a71d1f7"><td class="memItemLeft" align="right" valign="top"><a id="ac87976d29aac83c4c67b1b772a71d1f7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_effect_factory.html#ac87976d29aac83c4c67b1b772a71d1f7">SetMaterial</a> (<a class="el" href="class_effekseer_1_1_effect.html">Effect</a> *effect, int32_t index, <a class="el" href="class_effekseer_1_1_ref_ptr.html">MaterialRef</a> data)</td></tr>
+<tr class="memdesc:ac87976d29aac83c4c67b1b772a71d1f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">set material data into specified index <br /></td></tr>
+<tr class="separator:ac87976d29aac83c4c67b1b772a71d1f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75faee6fcba130b322dab6224878f6ab"><td class="memItemLeft" align="right" valign="top"><a id="a75faee6fcba130b322dab6224878f6ab"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_effect_factory.html#a75faee6fcba130b322dab6224878f6ab">SetCurve</a> (<a class="el" href="class_effekseer_1_1_effect.html">Effect</a> *effect, int32_t index, <a class="el" href="class_effekseer_1_1_ref_ptr.html">CurveRef</a> data)</td></tr>
+<tr class="memdesc:a75faee6fcba130b322dab6224878f6ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">set curve data into specified index <br /></td></tr>
+<tr class="separator:a75faee6fcba130b322dab6224878f6ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef87502b8f9a788e8893853e0ed0d79b"><td class="memItemLeft" align="right" valign="top"><a id="aef87502b8f9a788e8893853e0ed0d79b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_effect_factory.html#aef87502b8f9a788e8893853e0ed0d79b">SetProceduralModel</a> (<a class="el" href="class_effekseer_1_1_effect.html">Effect</a> *effect, int32_t index, <a class="el" href="class_effekseer_1_1_ref_ptr.html">ModelRef</a> data)</td></tr>
+<tr class="memdesc:aef87502b8f9a788e8893853e0ed0d79b"><td class="mdescLeft">&#160;</td><td class="mdescRight">set model data into specified index <br /></td></tr>
+<tr class="separator:aef87502b8f9a788e8893853e0ed0d79b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e13d224714f3b9f974cb86180dd7d03"><td class="memItemLeft" align="right" valign="top"><a id="a6e13d224714f3b9f974cb86180dd7d03"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_effect_factory.html#a6e13d224714f3b9f974cb86180dd7d03">SetLoadingParameter</a> (<a class="el" href="class_effekseer_1_1_effect.html">Effect</a> *effect, <a class="el" href="class_effekseer_1_1_reference_object.html">ReferenceObject</a> *obj)</td></tr>
 <tr class="memdesc:a6e13d224714f3b9f974cb86180dd7d03"><td class="mdescLeft">&#160;</td><td class="mdescRight">set loading data <br /></td></tr>
@@ -122,14 +130,14 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_effect_factory.html#a5607b43dd58a8e91b3537c6dfefe2e9d">OnCheckIsReloadSupported</a> ()</td></tr>
 <tr class="memdesc:a5607b43dd58a8e91b3537c6dfefe2e9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">this method is called to check whether reloading are supported. <br /></td></tr>
 <tr class="separator:a5607b43dd58a8e91b3537c6dfefe2e9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9190db035f0ba1b74d6b0ddf70506807"><td class="memItemLeft" align="right" valign="top"><a id="a9190db035f0ba1b74d6b0ddf70506807"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_effect_factory.html#a9190db035f0ba1b74d6b0ddf70506807">OnLoading</a> (<a class="el" href="class_effekseer_1_1_effect.html">Effect</a> *effect, const void *data, int32_t size, float magnification, const EFK_CHAR *materialPath)</td></tr>
-<tr class="memdesc:a9190db035f0ba1b74d6b0ddf70506807"><td class="mdescLeft">&#160;</td><td class="mdescRight">this method is called when load a effect from binary <br /></td></tr>
-<tr class="separator:a9190db035f0ba1b74d6b0ddf70506807"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd637b96d9da258012c7b4ac45db3ea7"><td class="memItemLeft" align="right" valign="top"><a id="afd637b96d9da258012c7b4ac45db3ea7"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_effect_factory.html#afd637b96d9da258012c7b4ac45db3ea7">OnLoadingResource</a> (<a class="el" href="class_effekseer_1_1_effect.html">Effect</a> *effect, const void *data, int32_t size, const EFK_CHAR *materialPath)</td></tr>
-<tr class="memdesc:afd637b96d9da258012c7b4ac45db3ea7"><td class="mdescLeft">&#160;</td><td class="mdescRight">this method is called when load resources <br /></td></tr>
-<tr class="separator:afd637b96d9da258012c7b4ac45db3ea7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8656e11e1f92b4b3c54f9f65b6dca19"><td class="memItemLeft" align="right" valign="top"><a id="ad8656e11e1f92b4b3c54f9f65b6dca19"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_effect_factory.html#ad8656e11e1f92b4b3c54f9f65b6dca19">OnLoading</a> (<a class="el" href="class_effekseer_1_1_effect.html">Effect</a> *effect, const void *data, int32_t size, float magnification, const char16_t *materialPath)</td></tr>
+<tr class="memdesc:ad8656e11e1f92b4b3c54f9f65b6dca19"><td class="mdescLeft">&#160;</td><td class="mdescRight">this method is called when load a effect from binary <br /></td></tr>
+<tr class="separator:ad8656e11e1f92b4b3c54f9f65b6dca19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acafe1f7376dd268d6e870f08dbcdb0ec"><td class="memItemLeft" align="right" valign="top"><a id="acafe1f7376dd268d6e870f08dbcdb0ec"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_effect_factory.html#acafe1f7376dd268d6e870f08dbcdb0ec">OnLoadingResource</a> (<a class="el" href="class_effekseer_1_1_effect.html">Effect</a> *effect, const void *data, int32_t size, const char16_t *materialPath)</td></tr>
+<tr class="memdesc:acafe1f7376dd268d6e870f08dbcdb0ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">this method is called when load resources <br /></td></tr>
+<tr class="separator:acafe1f7376dd268d6e870f08dbcdb0ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abfe9a6ab15fa2a0b727269ee55a1bb34"><td class="memItemLeft" align="right" valign="top"><a id="abfe9a6ab15fa2a0b727269ee55a1bb34"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_effect_factory.html#abfe9a6ab15fa2a0b727269ee55a1bb34">OnUnloadingResource</a> (<a class="el" href="class_effekseer_1_1_effect.html">Effect</a> *effect)</td></tr>
 <tr class="memdesc:abfe9a6ab15fa2a0b727269ee55a1bb34"><td class="mdescLeft">&#160;</td><td class="mdescRight">this method is called when unload resources <br /></td></tr>
@@ -210,7 +218,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 16 2020 18:49:00 for Effekseer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Apr 30 2021 22:44:58 for Effekseer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

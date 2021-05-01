@@ -18,11 +18,13 @@ The color / distortion image set in the Basic Render Settings window will be use
 
 ### Model
 
-Specify a model file for Effekseer (.efkmodel).
+There are two types of models: file and procedural models.
 
-Specify FBX (.fbx), metasequoia file (.mqo) used for display, or model file for Effekseer (.efkmodel). If .efkmodel is specified, .efkmodel is generated in the same directory as the specified file. When playing effects with other applications, this generated file is necessary.
+If models are loaded from file, Specify FBX (.fbx), metasequoia file (.mqo) used for display, or model file for Effekseer (.efkmodel). If .efkmodel is specified, .efkmodel is generated in the same directory as the specified file. When playing effects with other applications, this generated file is necessary.
 
 You can also load FBX (.fbx) with animation. The first animation in the FBX file is played.
+
+If you want to use a procedural model, create a model in the Procedural Model panel and specify it.
 
 ### Configuration
 

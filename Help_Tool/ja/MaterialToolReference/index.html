@@ -45,7 +45,7 @@
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="検索" href="../../search.html" />
     <link rel="next" title="マテリアルノード(計算)" href="material_NodeMath.html" />
-    <link rel="prev" title="動的パラメーター" href="../ToolReference/dynamicParameter.html" /> 
+    <link rel="prev" title="ファイル - エクスポート" href="../ToolReference/fileExport.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -114,10 +114,11 @@
 <li class="toctree-l4"><a class="reference internal" href="material_NodeConstant.html">マテリアルノード(定数)</a></li>
 <li class="toctree-l4"><a class="reference internal" href="material_NodeAdvanced.html">マテリアルノード(応用)</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#id12">出力</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id13">フェード(深度)</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#comment">コメント (Comment)</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#id13">計算の挙動の詳細</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id14">計算の挙動の詳細</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../ToolTips/01.html">TIPS</a></li>
@@ -340,13 +341,18 @@ Unlitの場合、表示する色を入力します。</p>
 1以上の値を入力します。</p>
 </div>
 </div>
+<div class="section" id="id13">
+<h3>フェード(深度)<a class="headerlink" href="#id13" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>背景のオブジェクトに近づくにしたがって小さな値を出力します。
+FadeDistanceより距離が離れていれば1、距離が0で0を出力します。</p>
+</div>
 <div class="section" id="comment">
 <h3>コメント (Comment)<a class="headerlink" href="#comment" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>わかりやすくするためのコメントです。動作には影響しません。</p>
 </div>
 </div>
-<div class="section" id="id13">
-<h2>計算の挙動の詳細<a class="headerlink" href="#id13" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<div class="section" id="id14">
+<h2>計算の挙動の詳細<a class="headerlink" href="#id14" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>V1とV2に入力がある場合、V2にはV1と同じ種類の値か数値1を入力できます。
 V1とV2の種類が同じ場合、それぞれの要素同士で計算した結果を出力します。</p>
 <p>V1が数値1の場合、V2の各要素とV1を計算した結果を出力します。
@@ -361,7 +367,7 @@ V2が数値1の場合、V1の各要素とV2を計算した結果を出力しま�
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
         <a href="material_NodeMath.html" class="btn btn-neutral float-right" title="マテリアルノード(計算)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-        <a href="../ToolReference/dynamicParameter.html" class="btn btn-neutral float-left" title="動的パラメーター" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../ToolReference/fileExport.html" class="btn btn-neutral float-left" title="ファイル - エクスポート" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 
   <hr/>

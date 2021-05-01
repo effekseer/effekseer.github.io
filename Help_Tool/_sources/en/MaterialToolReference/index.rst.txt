@@ -198,6 +198,12 @@ Input the refractive index. If the refractive index is 1, it is not be refracted
 If the refractive index is not 1, it show the refracted background.
 Input larger value than 1.
 
+DepthFade
+------------------------
+
+Output a smaller value as it gets closer to the background object.
+Output 1 if the distance is farther than FadeDistance, 0 if the distance is 0.
+
 Comment (Comment)
 ------------------------
 

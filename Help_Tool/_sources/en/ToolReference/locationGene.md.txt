@@ -150,9 +150,16 @@ Place the particles in a spherical shape. At this time, you specify just the rad
 
 Place particles along the shape of the model for Effekseer. If "Set angle on spawn" is checked, the Z direction of the particle will be normal to the surface of the model.
 
-Specify FBX (.fbx), metasequoia file (.mqo) used for display, or model file for Effekseer (.efkmodel). If .efkmodel is specified, .efkmodel is generated in the same directory as the specified file. When playing effects with other applications, this generated file is necessary.
+There are two types of models: file and procedural models.
+
+If models are loaded from file, Specify FBX (.fbx), metasequoia file (.mqo) used for display, or model file for Effekseer (.efkmodel). If .efkmodel is specified, .efkmodel is generated in the same directory as the specified file. When playing effects with other applications, this generated file is necessary.
 
 You can also load FBX (.fbx) with animation. The first animation in the FBX file is played. The animation is played along the time of the parent particle. Particles are generated from the model deformed by animation.
+
+プロシージャルモデルを使用する場合、プロシージャルモデルのパネルでモデルを作成し、それを指定します。
+
+If you want to use a procedural model, create a model in the Procedural Model panel and specify it.
+
 
 ##### Spawn Mode
 

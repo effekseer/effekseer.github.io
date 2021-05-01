@@ -97,33 +97,31 @@
 <li class="toctree-l2"><a class="reference internal" href="../ToolTutorial/index.html">Tutorial</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="index.html">Tool-Reference</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="index.html#overview">Overview</a></li>
-<li class="toctree-l3 current"><a class="reference internal" href="index.html#each-window">Each window</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="index.html#effect-parameters">Effect parameters</a><ul class="current">
 <li class="toctree-l4"><a class="reference internal" href="common.html">Basic settings</a></li>
 <li class="toctree-l4"><a class="reference internal" href="location.html">Position</a></li>
 <li class="toctree-l4"><a class="reference internal" href="locationAbs.html">Force Field (Local)</a></li>
 <li class="toctree-l4"><a class="reference internal" href="locationGene.html">Spawning Method</a></li>
 <li class="toctree-l4"><a class="reference internal" href="rotation.html">Rotation</a></li>
 <li class="toctree-l4"><a class="reference internal" href="scale.html">Scale</a></li>
+<li class="toctree-l4"><a class="reference internal" href="depth.html">Depth</a></li>
 <li class="toctree-l4"><a class="reference internal" href="rendererCommon.html">Basic Render Settings</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererCommonAd.html">Basic Render Settings (Advanced)</a></li>
 <li class="toctree-l4"><a class="reference internal" href="rendererSprite.html">Render - Sprite</a></li>
 <li class="toctree-l4"><a class="reference internal" href="rendererRibbon.html">Render - Ribbon</a></li>
 <li class="toctree-l4"><a class="reference internal" href="rendererRing.html">Render - Ring</a></li>
 <li class="toctree-l4 current"><a class="current reference internal" href="#">Render - Model</a></li>
 <li class="toctree-l4"><a class="reference internal" href="rendererTrack.html">Render - Track</a></li>
-<li class="toctree-l4"><a class="reference internal" href="fcurve.html">F-Curve</a></li>
 <li class="toctree-l4"><a class="reference internal" href="sound.html">Sound</a></li>
-<li class="toctree-l4"><a class="reference internal" href="network.html">Network</a></li>
-<li class="toctree-l4"><a class="reference internal" href="culling.html">Culling</a></li>
-<li class="toctree-l4"><a class="reference internal" href="behavior.html">Behavior</a></li>
-<li class="toctree-l4"><a class="reference internal" href="record.html">Recorder</a></li>
-<li class="toctree-l4"><a class="reference internal" href="fileviewer.html">File Viewer (1.3 or later)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="fcurve.html">F-Curve</a></li>
 <li class="toctree-l4"><a class="reference internal" href="global.html">Global Settings</a></li>
-<li class="toctree-l4"><a class="reference internal" href="environment.html">Environment</a></li>
-<li class="toctree-l4"><a class="reference internal" href="options.html">Options</a></li>
-<li class="toctree-l4"><a class="reference internal" href="depth.html">Depth</a></li>
+<li class="toctree-l4"><a class="reference internal" href="culling.html">Culling</a></li>
 <li class="toctree-l4"><a class="reference internal" href="dynamicParameter.html">DynamicParameter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="proceduralModel.html">Procedural Model</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#effect-features">Effect features</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#tool-functions">Tool functions</a></li>
 <li class="toctree-l3"><a class="reference internal" href="index.html#command-line">Command Line</a></li>
 </ul>
 </li>
@@ -218,9 +216,10 @@
 <p>"Render Settings" window</p>
 </div><div class="section" id="model">
 <h3>Model<a class="headerlink" href="#model" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<p>Specify a model file for Effekseer (.efkmodel).</p>
-<p>Specify FBX (.fbx), metasequoia file (.mqo) used for display, or model file for Effekseer (.efkmodel). If .efkmodel is specified, .efkmodel is generated in the same directory as the specified file. When playing effects with other applications, this generated file is necessary.</p>
+<p>There are two types of models: file and procedural models.</p>
+<p>If models are loaded from file, Specify FBX (.fbx), metasequoia file (.mqo) used for display, or model file for Effekseer (.efkmodel). If .efkmodel is specified, .efkmodel is generated in the same directory as the specified file. When playing effects with other applications, this generated file is necessary.</p>
 <p>You can also load FBX (.fbx) with animation. The first animation in the FBX file is played.</p>
+<p>If you want to use a procedural model, create a model in the Procedural Model panel and specify it.</p>
 </div>
 <div class="section" id="configuration">
 <h3>Configuration<a class="headerlink" href="#configuration" title="このヘッドラインへのパーマリンク">¶</a></h3>

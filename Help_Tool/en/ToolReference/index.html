@@ -103,31 +103,43 @@
 <li class="toctree-l4"><a class="reference internal" href="#file-format">File Format</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#each-window">Each window</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#effect-parameters">Effect parameters</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="common.html">Basic settings</a></li>
 <li class="toctree-l4"><a class="reference internal" href="location.html">Position</a></li>
 <li class="toctree-l4"><a class="reference internal" href="locationAbs.html">Force Field (Local)</a></li>
 <li class="toctree-l4"><a class="reference internal" href="locationGene.html">Spawning Method</a></li>
 <li class="toctree-l4"><a class="reference internal" href="rotation.html">Rotation</a></li>
 <li class="toctree-l4"><a class="reference internal" href="scale.html">Scale</a></li>
+<li class="toctree-l4"><a class="reference internal" href="depth.html">Depth</a></li>
 <li class="toctree-l4"><a class="reference internal" href="rendererCommon.html">Basic Render Settings</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererCommonAd.html">Basic Render Settings (Advanced)</a></li>
 <li class="toctree-l4"><a class="reference internal" href="rendererSprite.html">Render - Sprite</a></li>
 <li class="toctree-l4"><a class="reference internal" href="rendererRibbon.html">Render - Ribbon</a></li>
 <li class="toctree-l4"><a class="reference internal" href="rendererRing.html">Render - Ring</a></li>
 <li class="toctree-l4"><a class="reference internal" href="rendererModel.html">Render - Model</a></li>
 <li class="toctree-l4"><a class="reference internal" href="rendererTrack.html">Render - Track</a></li>
-<li class="toctree-l4"><a class="reference internal" href="fcurve.html">F-Curve</a></li>
 <li class="toctree-l4"><a class="reference internal" href="sound.html">Sound</a></li>
-<li class="toctree-l4"><a class="reference internal" href="network.html">Network</a></li>
-<li class="toctree-l4"><a class="reference internal" href="culling.html">Culling</a></li>
-<li class="toctree-l4"><a class="reference internal" href="behavior.html">Behavior</a></li>
-<li class="toctree-l4"><a class="reference internal" href="record.html">Recorder</a></li>
-<li class="toctree-l4"><a class="reference internal" href="fileviewer.html">File Viewer (1.3 or later)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="fcurve.html">F-Curve</a></li>
 <li class="toctree-l4"><a class="reference internal" href="global.html">Global Settings</a></li>
-<li class="toctree-l4"><a class="reference internal" href="environment.html">Environment</a></li>
-<li class="toctree-l4"><a class="reference internal" href="options.html">Options</a></li>
-<li class="toctree-l4"><a class="reference internal" href="depth.html">Depth</a></li>
+<li class="toctree-l4"><a class="reference internal" href="culling.html">Culling</a></li>
 <li class="toctree-l4"><a class="reference internal" href="dynamicParameter.html">DynamicParameter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="proceduralModel.html">Procedural Model</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#effect-features">Effect features</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="image.html">About images</a></li>
+<li class="toctree-l4"><a class="reference internal" href="easing.html">Easing</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#tool-functions">Tool functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="behavior.html">Behavior</a></li>
+<li class="toctree-l4"><a class="reference internal" href="fileviewer.html">File Viewer (1.3 or later)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="environment.html">Environment</a></li>
+<li class="toctree-l4"><a class="reference internal" href="network.html">Network</a></li>
+<li class="toctree-l4"><a class="reference internal" href="record.html">Recorder</a></li>
+<li class="toctree-l4"><a class="reference internal" href="options.html">Options</a></li>
+<li class="toctree-l4"><a class="reference internal" href="fileImport.html">File - Import</a></li>
+<li class="toctree-l4"><a class="reference internal" href="fileExport.html">File - Export</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#command-line">Command Line</a></li>
@@ -277,13 +289,60 @@ If you select it, the window will appear.</p>
 </div>
 <div class="section" id="file-format">
 <h3>File Format<a class="headerlink" href="#file-format" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<div class="section" id="effect-file-efkefc">
+<h4>Effect file (efkefc)<a class="headerlink" href="#effect-file-efkefc" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <p>An effect is saved in a file with &quot;efkefc&quot; format.
-This file can be editted and played with a runtime in a game.
-Until 1.4 there were efkproj and efk, but now efkproj and efk are read-only.</p>
+This file can be editted and played with a runtime in a game.</p>
+<p>Until version 1.4, the roles were separated from efkproj for tool editing and efk for game playback.
+For compatibility, the current version can read efkproj and efk.</p>
+</div>
+<div class="section" id="resource-file">
+<h4>Resource file<a class="headerlink" href="#resource-file" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<p>A few resource files referenced by the effect. There are general file formats and Effekseer's own file formats.</p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>extension</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>png</td>
+<td>Texture image file</td>
+</tr>
+<tr>
+<td>wav</td>
+<td>Sound wave file</td>
+</tr>
+<tr>
+<td>efkmat</td>
+<td>Material file(Create by Material editor)</td>
+</tr>
+<tr>
+<td>efkmodel</td>
+<td>3D Model file(Convert from fbx,mqo)</td>
+</tr>
+<tr>
+<td>efkcurve</td>
+<td>Curve parameter file(Convert from fbx)</td>
+</tr>
+</tbody>
+</table></div>
+<div class="section" id="package-file-efkpkg">
+<h4>Package file (efkpkg)<a class="headerlink" href="#package-file-efkpkg" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<p>An efkpkg file is a package file that contains one or more efkefc files and various resource files.</p>
+<p>When you export, the resource files referenced by the effect are automatically packaged with it.
+It can be imported and used in another project of yourself or someone else.</p>
+<ul class="simple">
+<li><p><a href="fileImport.html">Import</a></p></li>
+<li><p><a href="fileExport.html">Export</a></p></li>
+</ul>
 </div>
 </div>
-<div class="section" id="each-window">
-<h2>Each window<a class="headerlink" href="#each-window" title="このヘッドラインへのパーマリンク">¶</a></h2>
+</div>
+<div class="section" id="effect-parameters">
+<h2>Effect parameters<a class="headerlink" href="#effect-parameters" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="common.html">Basic settings</a></li>
@@ -292,24 +351,44 @@ Until 1.4 there were efkproj and efk, but now efkproj and efk are read-only.</p>
 <li class="toctree-l1"><a class="reference internal" href="locationGene.html">Spawning Method</a></li>
 <li class="toctree-l1"><a class="reference internal" href="rotation.html">Rotation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="scale.html">Scale</a></li>
+<li class="toctree-l1"><a class="reference internal" href="depth.html">Depth</a></li>
 <li class="toctree-l1"><a class="reference internal" href="rendererCommon.html">Basic Render Settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rendererCommonAd.html">Basic Render Settings (Advanced)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="rendererSprite.html">Render - Sprite</a></li>
 <li class="toctree-l1"><a class="reference internal" href="rendererRibbon.html">Render - Ribbon</a></li>
 <li class="toctree-l1"><a class="reference internal" href="rendererRing.html">Render - Ring</a></li>
 <li class="toctree-l1"><a class="reference internal" href="rendererModel.html">Render - Model</a></li>
 <li class="toctree-l1"><a class="reference internal" href="rendererTrack.html">Render - Track</a></li>
-<li class="toctree-l1"><a class="reference internal" href="fcurve.html">F-Curve</a></li>
 <li class="toctree-l1"><a class="reference internal" href="sound.html">Sound</a></li>
-<li class="toctree-l1"><a class="reference internal" href="network.html">Network</a></li>
-<li class="toctree-l1"><a class="reference internal" href="culling.html">Culling</a></li>
-<li class="toctree-l1"><a class="reference internal" href="behavior.html">Behavior</a></li>
-<li class="toctree-l1"><a class="reference internal" href="record.html">Recorder</a></li>
-<li class="toctree-l1"><a class="reference internal" href="fileviewer.html">File Viewer (1.3 or later)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="fcurve.html">F-Curve</a></li>
 <li class="toctree-l1"><a class="reference internal" href="global.html">Global Settings</a></li>
-<li class="toctree-l1"><a class="reference internal" href="environment.html">Environment</a></li>
-<li class="toctree-l1"><a class="reference internal" href="options.html">Options</a></li>
-<li class="toctree-l1"><a class="reference internal" href="depth.html">Depth</a></li>
+<li class="toctree-l1"><a class="reference internal" href="culling.html">Culling</a></li>
 <li class="toctree-l1"><a class="reference internal" href="dynamicParameter.html">DynamicParameter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="proceduralModel.html">Procedural Model</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="effect-features">
+<h2>Effect features<a class="headerlink" href="#effect-features" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="image.html">About images</a></li>
+<li class="toctree-l1"><a class="reference internal" href="easing.html">Easing</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="tool-functions">
+<h2>Tool functions<a class="headerlink" href="#tool-functions" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="behavior.html">Behavior</a></li>
+<li class="toctree-l1"><a class="reference internal" href="fileviewer.html">File Viewer (1.3 or later)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="environment.html">Environment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="network.html">Network</a></li>
+<li class="toctree-l1"><a class="reference internal" href="record.html">Recorder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="options.html">Options</a></li>
+<li class="toctree-l1"><a class="reference internal" href="fileImport.html">File - Import</a></li>
+<li class="toctree-l1"><a class="reference internal" href="fileExport.html">File - Export</a></li>
 </ul>
 </div>
 </div>
@@ -337,6 +416,9 @@ Until 1.4 there were efkproj and efk, but now efkproj and efk are read-only.</p>
 </tr>
 <tr class="row-odd"><td><p>-m *</p></td>
 <td><p>Set the magnification ratio of the effect when outputting in standard format to *</p></td>
+</tr>
+<tr class="row-even"><td><p>--materialcache</p></td>
+<td><p>Generate a cache of all materials included in the specified effect</p></td>
 </tr>
 </tbody>
 </table>

@@ -44,8 +44,8 @@
     
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="検索" href="../../search.html" />
-    <link rel="next" title="深度" href="depth.html" />
-    <link rel="prev" title="環境" href="environment.html" /> 
+    <link rel="next" title="ファイル - インポート" href="fileImport.html" />
+    <link rel="prev" title="録画" href="record.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -96,34 +96,20 @@
 <li class="toctree-l2"><a class="reference internal" href="../ToolTutorial/index.html">チュートリアル</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="index.html">ツール・リファレンス</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="index.html#id2">概要</a></li>
-<li class="toctree-l3 current"><a class="reference internal" href="index.html#id12">各ウインドウ</a><ul class="current">
-<li class="toctree-l4"><a class="reference internal" href="common.html">共通</a></li>
-<li class="toctree-l4"><a class="reference internal" href="location.html">位置</a></li>
-<li class="toctree-l4"><a class="reference internal" href="locationAbs.html">力場(ローカル)</a></li>
-<li class="toctree-l4"><a class="reference internal" href="locationGene.html">生成方法</a></li>
-<li class="toctree-l4"><a class="reference internal" href="rotation.html">回転</a></li>
-<li class="toctree-l4"><a class="reference internal" href="scale.html">拡大</a></li>
-<li class="toctree-l4"><a class="reference internal" href="rendererCommon.html">描画共通</a></li>
-<li class="toctree-l4"><a class="reference internal" href="rendererSprite.html">描画-スプライト</a></li>
-<li class="toctree-l4"><a class="reference internal" href="rendererRibbon.html">描画-リボン</a></li>
-<li class="toctree-l4"><a class="reference internal" href="rendererRing.html">描画-リング</a></li>
-<li class="toctree-l4"><a class="reference internal" href="rendererModel.html">描画-モデル</a></li>
-<li class="toctree-l4"><a class="reference internal" href="rendererTrack.html">描画-軌跡</a></li>
-<li class="toctree-l4"><a class="reference internal" href="fcurve.html">Fカーブ</a></li>
-<li class="toctree-l4"><a class="reference internal" href="sound.html">音</a></li>
-<li class="toctree-l4"><a class="reference internal" href="network.html">ネットワーク</a></li>
-<li class="toctree-l4"><a class="reference internal" href="culling.html">カリング</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id13">エフェクトパラメータ</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id14">エフェクト機能</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="index.html#id15">ツール機能</a><ul class="current">
 <li class="toctree-l4"><a class="reference internal" href="behavior.html">振る舞い</a></li>
-<li class="toctree-l4"><a class="reference internal" href="record.html">録画</a></li>
 <li class="toctree-l4"><a class="reference internal" href="fileviewer.html">ファイルビューア</a></li>
-<li class="toctree-l4"><a class="reference internal" href="global.html">全体</a></li>
 <li class="toctree-l4"><a class="reference internal" href="environment.html">環境</a></li>
+<li class="toctree-l4"><a class="reference internal" href="network.html">ネットワーク</a></li>
+<li class="toctree-l4"><a class="reference internal" href="record.html">録画</a></li>
 <li class="toctree-l4 current"><a class="current reference internal" href="#">オプション</a></li>
-<li class="toctree-l4"><a class="reference internal" href="depth.html">深度</a></li>
-<li class="toctree-l4"><a class="reference internal" href="dynamicParameter.html">動的パラメーター</a></li>
+<li class="toctree-l4"><a class="reference internal" href="fileImport.html">ファイル - インポート</a></li>
+<li class="toctree-l4"><a class="reference internal" href="fileExport.html">ファイル - エクスポート</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="index.html#id13">コマンドライン</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id16">コマンドライン</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../MaterialToolReference/index.html">マテリアル・リファレンス</a></li>
@@ -271,6 +257,11 @@
 <p>Unity等、最近のゲームエンジンではカラースペースを変更できます。使用する先のカラースペースに合わせて設定します。 カラースペース自体の意味は各ゲームエンジン等の説明を確認してください。 Effekseerのカラースペースはデフォルトではガンマスペースです。</p>
 </div>
 </div>
+<div class="section" id="id15">
+<h3>マウスマッピング<a class="headerlink" href="#id15" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>マウスによる視点の操作方法を指定します。
+Effekseer、Maya、Unity、Blenderに近い選択肢があります。</p>
+</div>
 <div class="section" id="x">
 <h3>マウスの回転方向(X)<a class="headerlink" href="#x" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>マウスの回転方向を指定します。</p>
@@ -279,20 +270,20 @@
 <h3>マウスの回転方向(Y)<a class="headerlink" href="#y" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>マウスの回転方向を指定します。</p>
 </div>
-<div class="section" id="id15">
-<h3>マウスのスライド方向(X)<a class="headerlink" href="#id15" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<p>マウスのスライド方向を指定します。</p>
-</div>
 <div class="section" id="id16">
-<h3>マウスのスライド方向(Y)<a class="headerlink" href="#id16" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>マウスのスライド方向(X)<a class="headerlink" href="#id16" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>マウスのスライド方向を指定します。</p>
 </div>
 <div class="section" id="id17">
-<h3>フォント<a class="headerlink" href="#id17" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<p>フォントの種類を指定します。</p>
+<h3>マウスのスライド方向(Y)<a class="headerlink" href="#id17" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>マウスのスライド方向を指定します。</p>
 </div>
 <div class="section" id="id18">
-<h3>フォントサイズ<a class="headerlink" href="#id18" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>フォント<a class="headerlink" href="#id18" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>フォントの種類を指定します。</p>
+</div>
+<div class="section" id="id19">
+<h3>フォントサイズ<a class="headerlink" href="#id19" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>フォントの大きさを指定します。</p>
 </div>
 </div>
@@ -304,8 +295,8 @@
           </div>
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="depth.html" class="btn btn-neutral float-right" title="深度" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-        <a href="environment.html" class="btn btn-neutral float-left" title="環境" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="fileImport.html" class="btn btn-neutral float-right" title="ファイル - インポート" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="record.html" class="btn btn-neutral float-left" title="録画" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 
   <hr/>

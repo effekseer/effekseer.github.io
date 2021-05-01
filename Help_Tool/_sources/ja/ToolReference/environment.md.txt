@@ -25,6 +25,16 @@
    :align: center
 ```
 
+### 地面
+
+地面を表示します。
+ソフトパーティクルや深度の確認に役立ちます。
+
+```eval_rst
+.. image:: ../../img/Reference/Environment/ground.png
+   :align: center
+```
+
 ### ブルーム
 
 ブルームのパラメーターを指定します。

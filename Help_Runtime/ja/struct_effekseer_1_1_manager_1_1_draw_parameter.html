@@ -83,12 +83,16 @@ $(function() {
 <tr class="memitem:a5e8aa8becc892ee7f714310ebdac45a5"><td class="memItemLeft" align="right" valign="top"><a id="a5e8aa8becc892ee7f714310ebdac45a5"></a>
 <a class="el" href="struct_effekseer_1_1_vector3_d.html">Vector3D</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CameraPosition</b></td></tr>
 <tr class="separator:a5e8aa8becc892ee7f714310ebdac45a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a54b426bb02854b0c141ac190c363a6"><td class="memItemLeft" align="right" valign="top"><a id="a0a54b426bb02854b0c141ac190c363a6"></a>
-<a class="el" href="struct_effekseer_1_1_vector3_d.html">Vector3D</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CameraDirection</b></td></tr>
-<tr class="separator:a0a54b426bb02854b0c141ac190c363a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae129e4061d907e94d6395ab2655ac671"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_effekseer_1_1_vector3_d.html">Vector3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_effekseer_1_1_manager_1_1_draw_parameter.html#ae129e4061d907e94d6395ab2655ac671">CameraFrontDirection</a></td></tr>
+<tr class="memdesc:ae129e4061d907e94d6395ab2655ac671"><td class="mdescLeft">&#160;</td><td class="mdescRight">カメラの方向  <a href="struct_effekseer_1_1_manager_1_1_draw_parameter.html#ae129e4061d907e94d6395ab2655ac671">[詳解]</a><br /></td></tr>
+<tr class="separator:ae129e4061d907e94d6395ab2655ac671"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a56d740102a462ad6d22789811dd1c86a"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_effekseer_1_1_manager_1_1_draw_parameter.html#a56d740102a462ad6d22789811dd1c86a">CameraCullingMask</a></td></tr>
 <tr class="memdesc:a56d740102a462ad6d22789811dd1c86a"><td class="mdescLeft">&#160;</td><td class="mdescRight">エフェクトを表示するためのビットマスク  <a href="struct_effekseer_1_1_manager_1_1_draw_parameter.html#a56d740102a462ad6d22789811dd1c86a">[詳解]</a><br /></td></tr>
 <tr class="separator:a56d740102a462ad6d22789811dd1c86a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acadedd4215757d9f0fa161217e35e49d"><td class="memItemLeft" align="right" valign="top"><a id="acadedd4215757d9f0fa161217e35e49d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_effekseer_1_1_manager_1_1_draw_parameter.html#acadedd4215757d9f0fa161217e35e49d">IsSortingEffectsEnabled</a> = false</td></tr>
+<tr class="memdesc:acadedd4215757d9f0fa161217e35e49d"><td class="mdescLeft">&#160;</td><td class="mdescRight">エフェクトをカメラの位置と方向でソートするかどうか <br /></td></tr>
+<tr class="separator:acadedd4215757d9f0fa161217e35e49d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
 <div class="textblock"><p><a class="el" href="class_effekseer_1_1_manager.html#afd4e1e2382e91d34fc37df97a0fed5f1" title="描画処理を行う。">Manager::Draw</a> and Manager::DrawHandleに使用するパラメーター </p>
@@ -110,13 +114,30 @@ $(function() {
 
 </div>
 </div>
+<a id="ae129e4061d907e94d6395ab2655ac671"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae129e4061d907e94d6395ab2655ac671">&#9670;&nbsp;</a></span>CameraFrontDirection</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_effekseer_1_1_vector3_d.html">Vector3D</a> Effekseer::Manager::DrawParameter::CameraFrontDirection</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>カメラの方向 </p>
+<dl class="section note"><dt>覚え書き</dt><dd>normalize(focus-position)を意味する。 </dd></dl>
+
+</div>
+</div>
 <hr/>この構造体詳解は次のファイルから抽出されました:<ul>
 <li>Dev/Cpp/Effekseer/<a class="el" href="_effekseer_8h_source.html">Effekseer.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-2020年08月16日(日) 18時48分58秒作成 - Effekseer / 構成:  &#160;<a href="http://www.doxygen.org/index.html">
+2021年04月30日(金) 22時44分57秒作成 - Effekseer / 構成:  &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

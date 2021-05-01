@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['hasmipmap_656',['HasMipmap',['../struct_effekseer_1_1_texture_data.html#a691fba095b64a70645dd2e9ea74e3d7e',1,'Effekseer::TextureData']]]
+  ['g_757',['G',['../struct_effekseer_1_1_color.html#a6d82d496ac86f8ac07ec0e8710126ef9',1,'Effekseer::Color']]]
 ];

@@ -53,3 +53,8 @@ CameraPosition
 ------------------------
 
 Outputs the camera position.
+
+EffectScale
+------------------------
+
+Gets the scale specified when the effect file is loaded

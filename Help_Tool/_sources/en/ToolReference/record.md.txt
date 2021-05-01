@@ -28,6 +28,11 @@ Allows you to output the created effect as a sprite sheet, gif animation, AVI, e
 
 Sets the output size for each frame of the animation.
 
+#### Scale
+
+The recording area is enlarged from the actual screen.
+For example, if the width and height are 256 and the Scale is 2, the 256 range is enlarged by a factor of 2 and recorded, and an image with a resolution of 512 is exported.
+
 #### Show guide
 
 When checked, the bounds of the recording canvas is displayed on the screen. Anything inside the guide will be recorded, anything outside the guide will be cropped out.

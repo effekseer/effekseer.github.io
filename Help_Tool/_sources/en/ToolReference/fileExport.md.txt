@@ -20,7 +20,3 @@ Exports the currently editing effect as an efkpkg file.
 An efkpkg file is a package file that contains one or more efkefc files and various resource files.
 
 Specify the file name of the export destination to complete the export.
-
-## glb形式
-
-## glTF形式

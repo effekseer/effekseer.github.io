@@ -86,8 +86,7 @@ virtual <a class="el" href="class_effekseer_1_1_effect.html">Effect</a> *&#160;<
 <tr class="separator:a82cd29e3b7d4f56bae4f95d3ac1d25a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0e81ffbd3dd65d7f1559fce8c425508"><td class="memItemLeft" align="right" valign="top"><a id="af0e81ffbd3dd65d7f1559fce8c425508"></a>
 virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_effect_node.html#af0e81ffbd3dd65d7f1559fce8c425508">GetGeneration</a> () const =0</td></tr>
-<tr class="memdesc:af0e81ffbd3dd65d7f1559fce8c425508"><td class="mdescLeft">&#160;</td><td class="mdescRight"><br  />
- Get a generation in the node tree. The generation increases by 1 as it moves a child node. <br /></td></tr>
+<tr class="memdesc:af0e81ffbd3dd65d7f1559fce8c425508"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a generation in the node tree. The generation increases by 1 as it moves a child node. <br /></td></tr>
 <tr class="separator:af0e81ffbd3dd65d7f1559fce8c425508"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a195d5b29060452c7d4d4d5c376987c4f"><td class="memItemLeft" align="right" valign="top"><a id="a195d5b29060452c7d4d4d5c376987c4f"></a>
 virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_effect_node.html#a195d5b29060452c7d4d4d5c376987c4f">GetChildrenCount</a> () const =0</td></tr>
@@ -107,13 +106,20 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="separator:a064ec945f4ced3b7935520d625e4c92e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6fc47c5de5057a81240d4df22887b2c2"><td class="memItemLeft" align="right" valign="top"><a id="a6fc47c5de5057a81240d4df22887b2c2"></a>
 virtual <a class="el" href="struct_effekseer_1_1_effect_model_parameter.html">EffectModelParameter</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_effect_node.html#a6fc47c5de5057a81240d4df22887b2c2">GetEffectModelParameter</a> ()=0</td></tr>
-<tr class="memdesc:a6fc47c5de5057a81240d4df22887b2c2"><td class="mdescLeft">&#160;</td><td class="mdescRight"><br  />
- Get a model parameter <br /></td></tr>
+<tr class="memdesc:a6fc47c5de5057a81240d4df22887b2c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a model parameter. <br /></td></tr>
 <tr class="separator:a6fc47c5de5057a81240d4df22887b2c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35a3d23d96e41113cd41d677fae0adec"><td class="memItemLeft" align="right" valign="top"><a id="a35a3d23d96e41113cd41d677fae0adec"></a>
 virtual <a class="el" href="struct_effekseer_1_1_effect_instance_term.html">EffectInstanceTerm</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_effect_node.html#a35a3d23d96e41113cd41d677fae0adec">CalculateInstanceTerm</a> (<a class="el" href="struct_effekseer_1_1_effect_instance_term.html">EffectInstanceTerm</a> &amp;parentTerm) const =0</td></tr>
 <tr class="memdesc:a35a3d23d96e41113cd41d677fae0adec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate a term of instances where instances exists. <br /></td></tr>
 <tr class="separator:a35a3d23d96e41113cd41d677fae0adec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff579c9ec0c326f63e7cc97d40df8644"><td class="memItemLeft" align="right" valign="top"><a id="aff579c9ec0c326f63e7cc97d40df8644"></a>
+virtual <a class="el" href="class_effekseer_1_1_ref_ptr.html">RefPtr</a>&lt; <a class="el" href="class_effekseer_1_1_rendering_user_data.html">RenderingUserData</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_effect_node.html#aff579c9ec0c326f63e7cc97d40df8644">GetRenderingUserData</a> ()=0</td></tr>
+<tr class="memdesc:aff579c9ec0c326f63e7cc97d40df8644"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a user data for rendering in plugins. <br /></td></tr>
+<tr class="separator:aff579c9ec0c326f63e7cc97d40df8644"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae796535006de99c13d7a1506656a2212"><td class="memItemLeft" align="right" valign="top"><a id="ae796535006de99c13d7a1506656a2212"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_effect_node.html#ae796535006de99c13d7a1506656a2212">SetRenderingUserData</a> (const <a class="el" href="class_effekseer_1_1_ref_ptr.html">RefPtr</a>&lt; <a class="el" href="class_effekseer_1_1_rendering_user_data.html">RenderingUserData</a> &gt; &amp;renderingUserData)=0</td></tr>
+<tr class="memdesc:ae796535006de99c13d7a1506656a2212"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specify a user data for rendering in plugins.This variable is passed to the Renderer at rendering time. The variable is compared by the comparison function described by the inheritance of <a class="el" href="class_effekseer_1_1_rendering_user_data.html" title="A user data for rendering in plugins.">RenderingUserData</a>, and if the values are different, DrawCall is issued. <br /></td></tr>
+<tr class="separator:ae796535006de99c13d7a1506656a2212"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>ノードインスタンス生成クラス </p>
@@ -124,7 +130,7 @@ virtual <a class="el" href="struct_effekseer_1_1_effect_instance_term.html">Effe
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 16 2020 18:49:00 for Effekseer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Apr 30 2021 22:44:58 for Effekseer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

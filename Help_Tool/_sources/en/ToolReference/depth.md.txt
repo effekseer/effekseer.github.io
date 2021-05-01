@@ -170,7 +170,3 @@ It is suitable for a lock-on marker.
 You can also suppress the effect of distance.
 
 <iframe src='../../Effects/viewer_en.html#References/Depth/suppression_of_scaling_by_depth.efkefc'></iframe>
-
-### Soft particle
-
-It is a parameter for a specific game engine. It is not reflected in Effekseer in version 1.5.

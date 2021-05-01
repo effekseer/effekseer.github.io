@@ -97,33 +97,31 @@
 <li class="toctree-l2"><a class="reference internal" href="../ToolTutorial/index.html">Tutorial</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="index.html">Tool-Reference</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="index.html#overview">Overview</a></li>
-<li class="toctree-l3 current"><a class="reference internal" href="index.html#each-window">Each window</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="index.html#effect-parameters">Effect parameters</a><ul class="current">
 <li class="toctree-l4"><a class="reference internal" href="common.html">Basic settings</a></li>
 <li class="toctree-l4"><a class="reference internal" href="location.html">Position</a></li>
 <li class="toctree-l4 current"><a class="current reference internal" href="#">Force Field (Local)</a></li>
 <li class="toctree-l4"><a class="reference internal" href="locationGene.html">Spawning Method</a></li>
 <li class="toctree-l4"><a class="reference internal" href="rotation.html">Rotation</a></li>
 <li class="toctree-l4"><a class="reference internal" href="scale.html">Scale</a></li>
+<li class="toctree-l4"><a class="reference internal" href="depth.html">Depth</a></li>
 <li class="toctree-l4"><a class="reference internal" href="rendererCommon.html">Basic Render Settings</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererCommonAd.html">Basic Render Settings (Advanced)</a></li>
 <li class="toctree-l4"><a class="reference internal" href="rendererSprite.html">Render - Sprite</a></li>
 <li class="toctree-l4"><a class="reference internal" href="rendererRibbon.html">Render - Ribbon</a></li>
 <li class="toctree-l4"><a class="reference internal" href="rendererRing.html">Render - Ring</a></li>
 <li class="toctree-l4"><a class="reference internal" href="rendererModel.html">Render - Model</a></li>
 <li class="toctree-l4"><a class="reference internal" href="rendererTrack.html">Render - Track</a></li>
-<li class="toctree-l4"><a class="reference internal" href="fcurve.html">F-Curve</a></li>
 <li class="toctree-l4"><a class="reference internal" href="sound.html">Sound</a></li>
-<li class="toctree-l4"><a class="reference internal" href="network.html">Network</a></li>
-<li class="toctree-l4"><a class="reference internal" href="culling.html">Culling</a></li>
-<li class="toctree-l4"><a class="reference internal" href="behavior.html">Behavior</a></li>
-<li class="toctree-l4"><a class="reference internal" href="record.html">Recorder</a></li>
-<li class="toctree-l4"><a class="reference internal" href="fileviewer.html">File Viewer (1.3 or later)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="fcurve.html">F-Curve</a></li>
 <li class="toctree-l4"><a class="reference internal" href="global.html">Global Settings</a></li>
-<li class="toctree-l4"><a class="reference internal" href="environment.html">Environment</a></li>
-<li class="toctree-l4"><a class="reference internal" href="options.html">Options</a></li>
-<li class="toctree-l4"><a class="reference internal" href="depth.html">Depth</a></li>
+<li class="toctree-l4"><a class="reference internal" href="culling.html">Culling</a></li>
 <li class="toctree-l4"><a class="reference internal" href="dynamicParameter.html">DynamicParameter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="proceduralModel.html">Procedural Model</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#effect-features">Effect features</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#tool-functions">Tool functions</a></li>
 <li class="toctree-l3"><a class="reference internal" href="index.html#command-line">Command Line</a></li>
 </ul>
 </li>
@@ -216,15 +214,39 @@
 </div></div>
 <div class="section" id="force-field">
 <h2>Force Field<a class="headerlink" href="#force-field" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<p>It can specifies up to three types of force fields.</p>
+<p>It can specifies up to 4 types of force fields.</p>
+</div>
+<div class="section" id="kind">
+<h2>Kind<a class="headerlink" href="#kind" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <div class="section" id="none">
 <h3>None<a class="headerlink" href="#none" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>No additional external forces will be applied to the particles.</p>
 </div>
+<div class="section" id="force">
+<h3>Force<a class="headerlink" href="#force" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>The force is applied outward from the specified position.
+You can also make it so that the force decays when it leaves the specified position.</p>
+<div class="video_center"><video autoplay loop="true" muted="true" src="../../movies/Reference/LocalForceField/Force.mp4"/></div></div>
+<div class="section" id="wind">
+<h3>Wind<a class="headerlink" href="#wind" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>It applies a force in the specified direction.
+The direction can be changed by rotation.</p>
+<div class="video_center"><video autoplay loop="true" muted="true" src="../../movies/Reference/LocalForceField/Wind.mp4"/></div></div>
+<div class="section" id="vortex">
+<h3>Vortex<a class="headerlink" href="#vortex" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>It gives the force to rotate the axis in the specified direction.
+The direction of the axis can be changed by rotation.</p>
+<p>The movement speed can be specified so that the rotation speed is the same for the outside, or so that the movement speed is constant regardless of the position.</p>
+<div class="video_center"><video autoplay loop="true" muted="true" src="../../movies/Reference/LocalForceField/Vortex.mp4"/></div></div>
 <div class="section" id="turbulence">
 <h3>Turbulence<a class="headerlink" href="#turbulence" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>It gives power with a turburence.</p>
-<iframe src='../../Effects/viewer_en.html#References/Attraction_Forces/turbulence.efkefc'></iframe><div class="section" id="random-seed">
+<div class="video_center"><video autoplay loop="true" muted="true" src="../../movies/Reference/LocalForceField/Turbulence.mp4"/></div><div class="section" id="id1">
+<h4>Kind<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<p>You can specify whether it is simple or complex.
+The more complex one looks better, but it is slower.</p>
+</div>
+<div class="section" id="random-seed">
 <h4>Random Seed<a class="headerlink" href="#random-seed" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <p>The flow of turbulence changes according to the value.</p>
 </div>
@@ -241,18 +263,14 @@
 <p>Larger value ​​complicates turbulence. However, processing becomes heavy.</p>
 </div>
 </div>
-</div>
-<div class="section" id="force-field-1-4">
-<h2>Force Field(1.4)<a class="headerlink" href="#force-field-1-4" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<p>These are implemented before version 1.4.</p>
-<p>Set parameters that control forces applied to particles that are independent of the position and angle of the parent particle. These parameters move the particles after the parent particle and child particle position changes have been applied.</p>
-<div class="section" id="id1">
-<h3>None<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<p>No additional external forces will be applied to the particles.</p>
-</div>
+<div class="section" id="id2">
+<h3>抵抗<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>It gives a force that suppresses movement.</p>
+<div class="video_center"><video autoplay loop="true" muted="true" src="../../movies/Reference/LocalForceField/Drag.mp4"/></div></div>
 <div class="section" id="gravity">
 <h3>Gravity<a class="headerlink" href="#gravity" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<p>Apply acceleration in one direction. It can be applied not only to the bottom but also to the top and the right.</p>
+<p>Apply acceleration in one direction. It can be applied not only to the bottom but also to the top and the right.
+This direction is not affected by the orientation of the parent particle.</p>
 <iframe src='../../Effects/viewer_en.html#References/Attraction_Forces/gravity.efkefc'></iframe></div>
 <div class="section" id="attraction-if-point-is-set">
 <h3>Attraction (if point is set)<a class="headerlink" href="#attraction-if-point-is-set" title="このヘッドラインへのパーマリンク">¶</a></h3>
@@ -275,6 +293,37 @@
 <p>This is the attenuation end distance of attraction. When the position of the particle is in the range from 0 to the minimum range, the attraction is 100%. If it is farther than the maximum range, the attractive force becomes 0%. If it is between the minimum range and the maximum range, the attraction force interpolates linearly.</p>
 </div>
 </div>
+</div>
+<div class="section" id="position-of-force-field">
+<h2>Position of force field<a class="headerlink" href="#position-of-force-field" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>It specifies the location of the center of the force field.
+It affects the settings of some force fields.</p>
+</div>
+<div class="section" id="angle-of-force-field">
+<h2>Angle of force field<a class="headerlink" href="#angle-of-force-field" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>It specifies the angle of the force field.
+It affects the settings of some force fields.</p>
+</div>
+<div class="section" id="fall-off">
+<h2>Fall off<a class="headerlink" href="#fall-off" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>Outside this range, the effect of the force field is decayed.
+There are several ways to specify the range.</p>
+<div class="section" id="sphere">
+<h3>Sphere<a class="headerlink" href="#sphere" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>This parameter is used to decay the effect of the force field as it approaches or moves away from the center.
+The greater the decay force, the more the force field is decayed as you move outward.</p>
+<div class="video_center"><video autoplay loop="true" muted="true" src="../../movies/Reference/LocalForceField/FallOff_Sphere.mp4"/></div></div>
+<div class="section" id="tube">
+<h3>Tube<a class="headerlink" href="#tube" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>This parameter is used to decay the effect of the force field as it approaches or moves away from the axis at the center of the cylinder to the outside.
+The greater the decay force, the more the force field is decayed as you move outward.</p>
+<div class="video_center"><video autoplay loop="true" muted="true" src="../../movies/Reference/LocalForceField/FallOff_Column.mp4"/></div></div>
+<div class="section" id="cone">
+<h3>Cone<a class="headerlink" href="#cone" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>The shape of the cone is a part of a sphere cut into a cone.
+This parameter is used to decay the force field as it approaches or leaves the outside of the cone.
+The larger the decay force, the more the force field will decay as it approaches the maximum angle.</p>
+<div class="video_center"><video autoplay loop="true" muted="true" src="../../movies/Reference/LocalForceField/FallOff_Cone.mp4"/></div></div>
 </div>
 </div>
 

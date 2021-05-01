@@ -96,34 +96,32 @@
 <li class="toctree-l2"><a class="reference internal" href="../ToolTutorial/index.html">チュートリアル</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="index.html">ツール・リファレンス</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="index.html#id2">概要</a></li>
-<li class="toctree-l3 current"><a class="reference internal" href="index.html#id12">各ウインドウ</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="index.html#id13">エフェクトパラメータ</a><ul class="current">
 <li class="toctree-l4"><a class="reference internal" href="common.html">共通</a></li>
 <li class="toctree-l4"><a class="reference internal" href="location.html">位置</a></li>
 <li class="toctree-l4"><a class="reference internal" href="locationAbs.html">力場(ローカル)</a></li>
 <li class="toctree-l4 current"><a class="current reference internal" href="#">生成方法</a></li>
 <li class="toctree-l4"><a class="reference internal" href="rotation.html">回転</a></li>
 <li class="toctree-l4"><a class="reference internal" href="scale.html">拡大</a></li>
+<li class="toctree-l4"><a class="reference internal" href="depth.html">深度</a></li>
 <li class="toctree-l4"><a class="reference internal" href="rendererCommon.html">描画共通</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererCommonAd.html">描画共通(高度)</a></li>
 <li class="toctree-l4"><a class="reference internal" href="rendererSprite.html">描画-スプライト</a></li>
 <li class="toctree-l4"><a class="reference internal" href="rendererRibbon.html">描画-リボン</a></li>
 <li class="toctree-l4"><a class="reference internal" href="rendererRing.html">描画-リング</a></li>
 <li class="toctree-l4"><a class="reference internal" href="rendererModel.html">描画-モデル</a></li>
 <li class="toctree-l4"><a class="reference internal" href="rendererTrack.html">描画-軌跡</a></li>
-<li class="toctree-l4"><a class="reference internal" href="fcurve.html">Fカーブ</a></li>
 <li class="toctree-l4"><a class="reference internal" href="sound.html">音</a></li>
-<li class="toctree-l4"><a class="reference internal" href="network.html">ネットワーク</a></li>
-<li class="toctree-l4"><a class="reference internal" href="culling.html">カリング</a></li>
-<li class="toctree-l4"><a class="reference internal" href="behavior.html">振る舞い</a></li>
-<li class="toctree-l4"><a class="reference internal" href="record.html">録画</a></li>
-<li class="toctree-l4"><a class="reference internal" href="fileviewer.html">ファイルビューア</a></li>
+<li class="toctree-l4"><a class="reference internal" href="fcurve.html">Fカーブ</a></li>
 <li class="toctree-l4"><a class="reference internal" href="global.html">全体</a></li>
-<li class="toctree-l4"><a class="reference internal" href="environment.html">環境</a></li>
-<li class="toctree-l4"><a class="reference internal" href="options.html">オプション</a></li>
-<li class="toctree-l4"><a class="reference internal" href="depth.html">深度</a></li>
+<li class="toctree-l4"><a class="reference internal" href="culling.html">カリング</a></li>
 <li class="toctree-l4"><a class="reference internal" href="dynamicParameter.html">動的パラメーター</a></li>
+<li class="toctree-l4"><a class="reference internal" href="proceduralModel.html">プロシージャルモデル</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="index.html#id13">コマンドライン</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id14">エフェクト機能</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id15">ツール機能</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id16">コマンドライン</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../MaterialToolReference/index.html">マテリアル・リファレンス</a></li>
@@ -270,8 +268,10 @@
 <div class="section" id="id16">
 <h4>モデル<a class="headerlink" href="#id16" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <p>3Dモデルの形状に沿ってパーティクルを配置します。「生成角度に影響」にチェックを入れた場合、パーティクルのZ方向はモデルの法線方向になります。</p>
-<p>表示に使用するFBX(.fbx)、metasequoiaファイル(.mqo)、もしくは、Effekseer用モデルファイル(.efkmodel)を指定します。 .efkmodel以外を指定した場合、指定したファイルと同じディレクトリに.efkmodelが生成されます。他アプリケーションでエフェクトを再生する場合、 この生成されたファイルが必要です。</p>
+<p>モデルにはファイルとプロシージャルモデルが存在します。</p>
+<p>ファイルから読み込む場合、表示に使用するFBX(.fbx)、metasequoiaファイル(.mqo)、もしくは、Effekseer用モデルファイル(.efkmodel)を指定します。 .efkmodel以外を指定した場合、指定したファイルと同じディレクトリに.efkmodelが生成されます。他アプリケーションでエフェクトを再生する場合、 この生成されたファイルが必要です。</p>
 <p>アニメーション付きのFBX(.fbx)を読み込むこともできます。 FBXファイルで一番目に設定されているアニメーションが再生されます。 親のパーティクルの時間に沿ってアニメーションも再生されます。 アニメーションにより変形したモデルからパーティクルが生成されます。</p>
+<p>プロシージャルモデルを使用する場合、プロシージャルモデルのパネルでモデルを作成し、それを指定します。</p>
 <div class="section" id="id17">
 <h5>生成方法種類<a class="headerlink" href="#id17" title="このヘッドラインへのパーマリンク">¶</a></h5>
 <div class="section" id="id18">

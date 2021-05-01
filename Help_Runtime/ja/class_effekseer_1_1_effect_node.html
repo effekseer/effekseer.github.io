@@ -86,8 +86,7 @@ virtual <a class="el" href="class_effekseer_1_1_effect.html">Effect</a> *&#160;<
 <tr class="separator:a82cd29e3b7d4f56bae4f95d3ac1d25a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0e81ffbd3dd65d7f1559fce8c425508"><td class="memItemLeft" align="right" valign="top"><a id="af0e81ffbd3dd65d7f1559fce8c425508"></a>
 virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_effect_node.html#af0e81ffbd3dd65d7f1559fce8c425508">GetGeneration</a> () const =0</td></tr>
-<tr class="memdesc:af0e81ffbd3dd65d7f1559fce8c425508"><td class="mdescLeft">&#160;</td><td class="mdescRight"><br  />
- ノードツリーの世代を取得する。世代は子のノードになるにしたがって1増える。 <br /></td></tr>
+<tr class="memdesc:af0e81ffbd3dd65d7f1559fce8c425508"><td class="mdescLeft">&#160;</td><td class="mdescRight">ノードツリーの世代を取得する。世代は子のノードになるにしたがって1増える。 <br /></td></tr>
 <tr class="separator:af0e81ffbd3dd65d7f1559fce8c425508"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a195d5b29060452c7d4d4d5c376987c4f"><td class="memItemLeft" align="right" valign="top"><a id="a195d5b29060452c7d4d4d5c376987c4f"></a>
 virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_effect_node.html#a195d5b29060452c7d4d4d5c376987c4f">GetChildrenCount</a> () const =0</td></tr>
@@ -107,24 +106,88 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="separator:a064ec945f4ced3b7935520d625e4c92e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6fc47c5de5057a81240d4df22887b2c2"><td class="memItemLeft" align="right" valign="top"><a id="a6fc47c5de5057a81240d4df22887b2c2"></a>
 virtual <a class="el" href="struct_effekseer_1_1_effect_model_parameter.html">EffectModelParameter</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_effect_node.html#a6fc47c5de5057a81240d4df22887b2c2">GetEffectModelParameter</a> ()=0</td></tr>
-<tr class="memdesc:a6fc47c5de5057a81240d4df22887b2c2"><td class="mdescLeft">&#160;</td><td class="mdescRight"><br  />
- モデルパラメーターを取得する。 <br /></td></tr>
+<tr class="memdesc:a6fc47c5de5057a81240d4df22887b2c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">モデルパラメーターを取得する。 <br /></td></tr>
 <tr class="separator:a6fc47c5de5057a81240d4df22887b2c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35a3d23d96e41113cd41d677fae0adec"><td class="memItemLeft" align="right" valign="top"><a id="a35a3d23d96e41113cd41d677fae0adec"></a>
 virtual <a class="el" href="struct_effekseer_1_1_effect_instance_term.html">EffectInstanceTerm</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_effect_node.html#a35a3d23d96e41113cd41d677fae0adec">CalculateInstanceTerm</a> (<a class="el" href="struct_effekseer_1_1_effect_instance_term.html">EffectInstanceTerm</a> &amp;parentTerm) const =0</td></tr>
 <tr class="memdesc:a35a3d23d96e41113cd41d677fae0adec"><td class="mdescLeft">&#160;</td><td class="mdescRight">インスタンスが存在する期間を計算する。 <br /></td></tr>
 <tr class="separator:a35a3d23d96e41113cd41d677fae0adec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff579c9ec0c326f63e7cc97d40df8644"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_effekseer_1_1_ref_ptr.html">RefPtr</a>&lt; <a class="el" href="class_effekseer_1_1_rendering_user_data.html">RenderingUserData</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_effect_node.html#aff579c9ec0c326f63e7cc97d40df8644">GetRenderingUserData</a> ()=0</td></tr>
+<tr class="memdesc:aff579c9ec0c326f63e7cc97d40df8644"><td class="mdescLeft">&#160;</td><td class="mdescRight">プラグイン向けの描画拡張データを取得する。  <a href="class_effekseer_1_1_effect_node.html#aff579c9ec0c326f63e7cc97d40df8644">[詳解]</a><br /></td></tr>
+<tr class="separator:aff579c9ec0c326f63e7cc97d40df8644"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae796535006de99c13d7a1506656a2212"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_effect_node.html#ae796535006de99c13d7a1506656a2212">SetRenderingUserData</a> (const <a class="el" href="class_effekseer_1_1_ref_ptr.html">RefPtr</a>&lt; <a class="el" href="class_effekseer_1_1_rendering_user_data.html">RenderingUserData</a> &gt; &amp;renderingUserData)=0</td></tr>
+<tr class="memdesc:ae796535006de99c13d7a1506656a2212"><td class="mdescLeft">&#160;</td><td class="mdescRight">プラグイン向けの描画拡張データを設定する。  <a href="class_effekseer_1_1_effect_node.html#ae796535006de99c13d7a1506656a2212">[詳解]</a><br /></td></tr>
+<tr class="separator:ae796535006de99c13d7a1506656a2212"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
 <div class="textblock"><p>ノードインスタンス生成クラス </p>
 <dl class="section note"><dt>覚え書き</dt><dd>エフェクトのノードの実体を生成する。 </dd></dl>
-</div><hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+</div><h2 class="groupheader">関数詳解</h2>
+<a id="aff579c9ec0c326f63e7cc97d40df8644"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff579c9ec0c326f63e7cc97d40df8644">&#9670;&nbsp;</a></span>GetRenderingUserData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_effekseer_1_1_ref_ptr.html">RefPtr</a>&lt;<a class="el" href="class_effekseer_1_1_rendering_user_data.html">RenderingUserData</a>&gt; Effekseer::EffectNode::GetRenderingUserData </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>プラグイン向けの描画拡張データを取得する。 </p>
+<dl class="section note"><dt>覚え書き</dt><dd>詳細はSetterを参照。 </dd></dl>
+
+</div>
+</div>
+<a id="ae796535006de99c13d7a1506656a2212"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae796535006de99c13d7a1506656a2212">&#9670;&nbsp;</a></span>SetRenderingUserData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Effekseer::EffectNode::SetRenderingUserData </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_effekseer_1_1_ref_ptr.html">RefPtr</a>&lt; <a class="el" href="class_effekseer_1_1_rendering_user_data.html">RenderingUserData</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>renderingUserData</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>プラグイン向けの描画拡張データを設定する。 </p>
+<dl class="section note"><dt>覚え書き</dt><dd></dd></dl>
+<p>この変数は描画時にRendererに渡される。 変数は、RenderingUserDataの継承により記述される比較用の関数によって比較され、値が異なる場合、DrawCallを発行する。 </p>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
 <li>Dev/Cpp/Effekseer/<a class="el" href="_effekseer_8h_source.html">Effekseer.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-2020年08月16日(日) 18時48分58秒作成 - Effekseer / 構成:  &#160;<a href="http://www.doxygen.org/index.html">
+2021年04月30日(金) 22時44分57秒作成 - Effekseer / 構成:  &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

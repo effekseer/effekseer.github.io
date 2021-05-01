@@ -34,7 +34,7 @@ Enter a name for the parameter node.This name will appear in Effekseer and will 
 Therefore, try not to change it too much.
 This time, since we are replacing a gradient, we will name it Gradation.
 
-Set the image to ``` Textures/Gradation3.png ``` as the default value.
+Set the image to ``` Textures/Gradation2.png ``` as the default value.
 
 ```eval_rst
 .. image:: ../../img/Tutorial/Mat_03/Grad_Parameter_En.png

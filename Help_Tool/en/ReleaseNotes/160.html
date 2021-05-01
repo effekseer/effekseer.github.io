@@ -160,55 +160,128 @@
 <h1>1.60<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h1>
 <div class="section" id="common">
 <h2>Common<a class="headerlink" href="#common" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<div class="section" id="basic">
+<h3>Basic<a class="headerlink" href="#basic" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<ul class="simple">
+<li><p>Added a behavior for child particles to follow the position of the parent particle in position inheritance.</p></li>
+</ul>
+<div class="video_center"><video autoplay loop="true" muted="true" src="../../movies/Reference/BasicSettings/FollowParent.mp4"/></div></div>
 <div class="section" id="position">
 <h3>Position<a class="headerlink" href="#position" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<p>Added a metho to move with a path</p>
+<ul class="simple">
+<li><p>Added a method to move with a path</p></li>
+</ul>
+<div class="video_center"><video autoplay loop="true" muted="true" src="../../movies/Reference/Location/NURBS-Curve.mp4"/></div><ul class="simple">
+<li><p>Added a View Offset to always show a particle on a center in a screen</p></li>
+</ul>
 </div>
 <div class="section" id="scale">
 <h3>Scale<a class="headerlink" href="#scale" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<p>Added FCurve(Single)</p>
+<ul class="simple">
+<li><p>Added FCurve(Single)</p></li>
+</ul>
 </div>
 <div class="section" id="force-field">
 <h3>force field.<a class="headerlink" href="#force-field" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<p>Add a lot of different force fields.</p>
-</div>
-<div class="section" id="optimization">
-<h3>Optimization<a class="headerlink" href="#optimization" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<p>Implement multithreaded update.</p>
-</div>
+<ul class="simple">
+<li><p>Added a lot of different force fields.</p></li>
+</ul>
+<div class="video_center"><video autoplay loop="true" muted="true" src="../../movies/Reference/LocalForceField/Force.mp4"/></div><div class="video_center"><video autoplay loop="true" muted="true" src="../../movies/Reference/LocalForceField/Wind.mp4"/></div><div class="video_center"><video autoplay loop="true" muted="true" src="../../movies/Reference/LocalForceField/Vortex.mp4"/></div></div>
 <div class="section" id="procedual-model">
 <h3>Procedual Model<a class="headerlink" href="#procedual-model" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<p>Added procedural models to the models and spawn method.</p>
+<ul class="simple">
+<li><p>Added Procedual Model.</p></li>
+</ul>
+<p>In Effekseer, you can create simple models by simply adjusting parameters.
+You can display your model as it is or use it for generating positions.</p>
+<img alt="../../_images/Ribbon.png" class="align-center" src="../../_images/Ribbon.png" />
 </div>
 <div class="section" id="easing">
 <h3>Easing<a class="headerlink" href="#easing" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<p>Added many easing types.</p>
+<ul class="simple">
+<li><p>Added many easing types.</p></li>
+</ul>
+<img alt="../../_images/EaseInBounce.png" class="align-center" src="../../_images/EaseInBounce.png" />
 </div>
 <div class="section" id="rendering">
 <h3>Rendering<a class="headerlink" href="#rendering" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<p>Added many features to rendering</p>
-<p>Textures are now loaded as NoMipMaps when the file name includes _NoMip.</p>
+<ul class="simple">
+<li><p>Added many features to rendering</p></li>
+</ul>
+<p>Up to six images can now be used to create a variety of expressions such as distortion, blending of images, and image cropping without the need for material settings.
+Soft particles can now be used to create a natural boundary between the background and the image.</p>
+<img alt="../../_images/alpha.png" class="align-center" src="../../_images/alpha.png" />
+<img alt="../../_images/dist.png" class="align-center" src="../../_images/dist.png" />
+<img alt="../../_images/softparticle_far.png" class="align-center" src="../../_images/softparticle_far.png" />
+<ul class="simple">
+<li><p>Added animation transitions with Fade</p></li>
+</ul>
+<p>It uses linear completion for animation transitions.
+This will ensure that the image does not change suddenly.</p>
+<div class="video_center"><video autoplay loop="true" muted="true" src="../../movies/Reference/BasicRenderSettings/Flip_Lerp.mp4"/></div><ul class="simple">
+<li><p>Textures are now loaded as NoMipMaps when the file name includes _NoMip.</p></li>
+</ul>
+</div>
+<div class="section" id="material">
+<h3>Material<a class="headerlink" href="#material" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>Added a node to implement soft particles in materials.</p>
+<p>Added a node to get the magnification of the effect.</p>
+</div>
+<div class="section" id="dynamic-parameter">
+<h3>Dynamic parameter<a class="headerlink" href="#dynamic-parameter" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>Added a step function</p>
+</div>
+<div class="section" id="optimization">
+<h3>Optimization<a class="headerlink" href="#optimization" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<ul class="simple">
+<li><p>Implemented multi-threaded updates. Faster update speed.</p></li>
+<li><p>Geometry instances implemented. Improved speed when displaying multiple copies of the same model.</p></li>
+</ul>
 </div>
 </div>
 <div class="section" id="tool">
 <h2>Tool<a class="headerlink" href="#tool" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <div class="section" id="packaging">
 <h3>Packaging<a class="headerlink" href="#packaging" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<p>Added a feature to create a package.</p>
+<ul class="simple">
+<li><p>Added a feature to create a package.</p></li>
+</ul>
+<p>You can export all the files related to an effect to a single package, or import them from a package.</p>
 </div>
 <div class="section" id="ui">
-<h3>UI.<a class="headerlink" href="#ui" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<p>Change the behavior of the docking panel</p>
-<p>Changed to frameless window (Windows)</p>
+<h3>UI<a class="headerlink" href="#ui" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<ul class="simple">
+<li><p>Changed the behavior of the docking panel</p></li>
+<li><p>Changed to frameless window (Windows)</p></li>
+</ul>
 </div>
 <div class="section" id="recording">
 <h3>Recording<a class="headerlink" href="#recording" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<p>Added a recording size scaling factor to the recording function.</p>
+<ul class="simple">
+<li><p>Added a recording size scaling factor to the recording function.</p></li>
+</ul>
 </div>
 <div class="section" id="options">
 <h3>Options<a class="headerlink" href="#options" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<p>Added a setting to change the mouse mapping to manipulate the viewport (you can select Maya style, Blender style, etc.).</p>
+<ul class="simple">
+<li><p>Added a setting to change the mouse mapping to manipulate the viewport (you can select Maya style, Blender style, etc.).</p></li>
+</ul>
 </div>
+<div class="section" id="environment">
+<h3>Environment<a class="headerlink" href="#environment" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<ul class="simple">
+<li><p>Add an option to show a ground</p></li>
+</ul>
+<img alt="../../_images/ground.png" class="align-center" src="../../_images/ground.png" />
+</div>
+</div>
+<div class="section" id="runtime">
+<h2>Runtime<a class="headerlink" href="#runtime" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<ul class="simple">
+<li><p>Major refactoring of the C++ source code.</p></li>
+</ul>
+<p>Safety has been improved.
+However, a number of destructive changes have been made. Please read the readme of the runtime for details.</p>
 </div>
 </div>
 

@@ -18,7 +18,7 @@ When you select an item in the tree on the left side of the screen, the F-Curve 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/kTTrY7wjosg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
 
-### About Timeline (since 1.5)
+### About Timeline
 
 There are two timelines for the F-curve.
 
@@ -67,9 +67,13 @@ These can be toggled by the timeline mode parameter.
 
 You can add a key by left double clicking the mouse on a line.
 
+You can also add it from the menu by right-clicking the mouse on the line.
+
 ### Delete key frame
 
 You can remove a key by left double clicking the mouse on the key or delete button.
+
+You can also delete it from the menu by right-clicking the mouse on the key.
 
 ### Select key frame
 

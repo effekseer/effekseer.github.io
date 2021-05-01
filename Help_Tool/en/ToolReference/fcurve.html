@@ -44,8 +44,8 @@
     
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="検索" href="../../search.html" />
-    <link rel="next" title="Sound" href="sound.html" />
-    <link rel="prev" title="Render - Track" href="rendererTrack.html" /> 
+    <link rel="next" title="Global Settings" href="global.html" />
+    <link rel="prev" title="Sound" href="sound.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -97,33 +97,31 @@
 <li class="toctree-l2"><a class="reference internal" href="../ToolTutorial/index.html">Tutorial</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="index.html">Tool-Reference</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="index.html#overview">Overview</a></li>
-<li class="toctree-l3 current"><a class="reference internal" href="index.html#each-window">Each window</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="index.html#effect-parameters">Effect parameters</a><ul class="current">
 <li class="toctree-l4"><a class="reference internal" href="common.html">Basic settings</a></li>
 <li class="toctree-l4"><a class="reference internal" href="location.html">Position</a></li>
 <li class="toctree-l4"><a class="reference internal" href="locationAbs.html">Force Field (Local)</a></li>
 <li class="toctree-l4"><a class="reference internal" href="locationGene.html">Spawning Method</a></li>
 <li class="toctree-l4"><a class="reference internal" href="rotation.html">Rotation</a></li>
 <li class="toctree-l4"><a class="reference internal" href="scale.html">Scale</a></li>
+<li class="toctree-l4"><a class="reference internal" href="depth.html">Depth</a></li>
 <li class="toctree-l4"><a class="reference internal" href="rendererCommon.html">Basic Render Settings</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererCommonAd.html">Basic Render Settings (Advanced)</a></li>
 <li class="toctree-l4"><a class="reference internal" href="rendererSprite.html">Render - Sprite</a></li>
 <li class="toctree-l4"><a class="reference internal" href="rendererRibbon.html">Render - Ribbon</a></li>
 <li class="toctree-l4"><a class="reference internal" href="rendererRing.html">Render - Ring</a></li>
 <li class="toctree-l4"><a class="reference internal" href="rendererModel.html">Render - Model</a></li>
 <li class="toctree-l4"><a class="reference internal" href="rendererTrack.html">Render - Track</a></li>
-<li class="toctree-l4 current"><a class="current reference internal" href="#">F-Curve</a></li>
 <li class="toctree-l4"><a class="reference internal" href="sound.html">Sound</a></li>
-<li class="toctree-l4"><a class="reference internal" href="network.html">Network</a></li>
-<li class="toctree-l4"><a class="reference internal" href="culling.html">Culling</a></li>
-<li class="toctree-l4"><a class="reference internal" href="behavior.html">Behavior</a></li>
-<li class="toctree-l4"><a class="reference internal" href="record.html">Recorder</a></li>
-<li class="toctree-l4"><a class="reference internal" href="fileviewer.html">File Viewer (1.3 or later)</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">F-Curve</a></li>
 <li class="toctree-l4"><a class="reference internal" href="global.html">Global Settings</a></li>
-<li class="toctree-l4"><a class="reference internal" href="environment.html">Environment</a></li>
-<li class="toctree-l4"><a class="reference internal" href="options.html">Options</a></li>
-<li class="toctree-l4"><a class="reference internal" href="depth.html">Depth</a></li>
+<li class="toctree-l4"><a class="reference internal" href="culling.html">Culling</a></li>
 <li class="toctree-l4"><a class="reference internal" href="dynamicParameter.html">DynamicParameter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="proceduralModel.html">Procedural Model</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#effect-features">Effect features</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#tool-functions">Tool functions</a></li>
 <li class="toctree-l3"><a class="reference internal" href="index.html#command-line">Command Line</a></li>
 </ul>
 </li>
@@ -217,8 +215,8 @@
 <p><img alt="../../_images/fcurve_select_en.png" src="../../_images/fcurve_select_en.png" /></p>
 <p>When you select an item in the tree on the left side of the screen, the F-Curve is displayed. You can also select multiple items at the same time by holding down Shift and selecting items.</p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/kTTrY7wjosg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe></div>
-<div class="section" id="about-timeline-since-1-5">
-<h3>About Timeline (since 1.5)<a class="headerlink" href="#about-timeline-since-1-5" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<div class="section" id="about-timeline">
+<h3>About Timeline<a class="headerlink" href="#about-timeline" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>There are two timelines for the F-curve.</p>
 <p>The first is a timeline represented by a number between 0 and 100, where 0 represents the time when the particle was created, and 100 represents the time the particle was discarded.
 It will still play back to 100 even if the life of the particle changes.</p>
@@ -231,10 +229,12 @@ It will still play back to 100 even if the life of the particle changes.</p>
 <div class="section" id="add-key-frame">
 <h3>Add key frame<a class="headerlink" href="#add-key-frame" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>You can add a key by left double clicking the mouse on a line.</p>
+<p>You can also add it from the menu by right-clicking the mouse on the line.</p>
 </div>
 <div class="section" id="delete-key-frame">
 <h3>Delete key frame<a class="headerlink" href="#delete-key-frame" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>You can remove a key by left double clicking the mouse on the key or delete button.</p>
+<p>You can also delete it from the menu by right-clicking the mouse on the key.</p>
 </div>
 <div class="section" id="select-key-frame">
 <h3>Select key frame<a class="headerlink" href="#select-key-frame" title="このヘッドラインへのパーマリンク">¶</a></h3>
@@ -306,8 +306,8 @@ It will still play back to 100 even if the life of the particle changes.</p>
           </div>
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="sound.html" class="btn btn-neutral float-right" title="Sound" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-        <a href="rendererTrack.html" class="btn btn-neutral float-left" title="Render - Track" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="global.html" class="btn btn-neutral float-right" title="Global Settings" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="sound.html" class="btn btn-neutral float-left" title="Sound" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 
   <hr/>

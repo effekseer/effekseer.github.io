@@ -202,14 +202,14 @@
 <p><code class="docutils literal notranslate"><span class="pre">画像参照ノード</span></code> を追加して、画像には <code class="docutils literal notranslate"><span class="pre">Textures/Noise1.png</span></code> を選択します。
 このままだと、ただ画像が表示されるだけです。</p>
 <img alt="../../_images/Grad_Ja.png" class="align-center" src="../../_images/Grad_Ja.png" />
-<p>動かすために <code class="docutils literal notranslate"><span class="pre">移動UVノード</span></code> を追加します。
+<p>動かすために <code class="docutils literal notranslate"><span class="pre">移動UV座標ノード</span></code> を追加します。
 そして、<code class="docutils literal notranslate"><span class="pre">画像参照ノード</span></code>に接続します。
-<code class="docutils literal notranslate"><span class="pre">移動UVノード</span></code> の速度には <code class="docutils literal notranslate"><span class="pre">(0.0,</span> <span class="pre">0.4)</span></code> を入力します。</p>
+<code class="docutils literal notranslate"><span class="pre">移動UV座標ノード</span></code> の速度には <code class="docutils literal notranslate"><span class="pre">(0.0,</span> <span class="pre">0.4)</span></code> を入力します。</p>
 <p>上下方向に画像が流れるようになりました。</p>
 <img alt="../../_images/Noise_Moving_Ja.png" class="align-center" src="../../_images/Noise_Moving_Ja.png" />
 <p>ただ、このままでは雲模様が粗すぎるので細かくします。
 <code class="docutils literal notranslate"><span class="pre">画像参照ノード</span></code> のUVに <code class="docutils literal notranslate"><span class="pre">掛け算ノード</span></code> を接続します。
-掛け算の値には<code class="docutils literal notranslate"><span class="pre">移動UVノード</span></code>の出力と <code class="docutils literal notranslate"><span class="pre">(4.0,</span> <span class="pre">1.0)</span></code> を指定します。</p>
+掛け算の値には<code class="docutils literal notranslate"><span class="pre">移動UV座標ノード</span></code>の出力と <code class="docutils literal notranslate"><span class="pre">(4.0,</span> <span class="pre">1.0)</span></code> を指定します。</p>
 <p>そうすると、画像のUV座標の1が4になります。
 ということは、今まで1枚表示されていた範囲に4枚表示されます。
 今回は横方向にたくさん表示されるようになります。</p>

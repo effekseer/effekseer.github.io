@@ -34,7 +34,7 @@ Effekseerのマテリアルにはパラメーターというノードがあり�
 そのため、あまり、変更しないようにしましょう。
 今回は、グラデーションを置き換えるので、名前は、Gradationにします。
 
-デフォルトの値として画像に``` Textures/Gradation3.png ```を設定します。
+デフォルトの値として画像に``` Textures/Gradation2.png ```を設定します。
 
 ```eval_rst
 .. image:: ../../img/Tutorial/Mat_03/Grad_Parameter_Ja.png

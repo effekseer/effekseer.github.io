@@ -66,6 +66,11 @@ This is a parameter that reproduces the appearance if you were to change the col
 
 In Unity and other recent game engines, you can change the color space. Set this parameter according to the color space you plan to use in your external game engine. Please check the description of each game engine etc. for the details of the color space itself. Effekseer's color space is gamma space by default.
 
+### Mouse Mapping
+
+Specify how to control the viewpoint with the mouse.
+There are options like Effekseer, Maya, Unity, and Blender.
+
 ### Mouse Rotation (X)
 
 Specify the rotation direction of the mouse.

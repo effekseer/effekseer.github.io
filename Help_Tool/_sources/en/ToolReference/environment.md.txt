@@ -24,6 +24,16 @@ Specify an image for the background.
    :align: center
 ```
 
+### Ground
+
+Show a ground surface.
+It is useful for checking soft particles or depth.
+
+```eval_rst
+.. image:: ../../img/Reference/Environment/ground.png
+   :align: center
+```
+
 ### Bloom
 
 Specify parameters of bloom.

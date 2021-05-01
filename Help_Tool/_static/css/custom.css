@@ -63,3 +63,7 @@ h5 {
   position: relative;
   margin: 0.1em 0;
 }
+
+.video_center {
+  text-align: center;
+}

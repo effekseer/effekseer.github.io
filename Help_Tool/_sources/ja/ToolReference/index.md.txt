@@ -105,14 +105,36 @@ Shiftと同時にクリックすることで、子ノードも含めて表示を
 
 ### ファイル形式
 
+#### エフェクトファイル (efkefc)
 エフェクトはefkefcという拡張子のファイルに保存されます。
 このファイルは、ツールで編集することも、ゲーム中で再生することもできます。
-1.4まではefkprojとefkがありましたが、現在、efkprojとefkは読み込み専用です。
 
-## 各ウインドウ
+バージョン1.4まではツール編集用にefkproj、ゲーム再生用にefkと役割が別れていました。
+互換性維持のため、現在のバージョンはefkprojとefkを読み込むことができます。
+
+#### リソースファイル
+エフェクトから参照されるリソースファイルです。一般的なファイル形式のものと、Effekseer独自のファイル形式のものがあります。
+
+|  拡張子   | 説明   |
+|----------|--------|
+| png      | テクスチャ画像ファイル |
+| wav      | サウンド波形ファイル |
+| efkmat   | マテリアルファイル(マテリアルエディタで作成) |
+| efkmodel | モデルファイル(fbx,mqoから変換) |
+| efkcurve | カーブファイル(fbxから変換) |
+
+#### パッケージファイル (efkpkg)
+efkpkgファイルは1つ以上のefkefcファイルと、各種リソースファイルが含まれたパッケージファイルです。
+
+エクスポートするとエフェクトが参照しているリソースファイルも自動的に一緒にパッケージングされ、
+自分もしくは他人の別のプロジェクトでインポートして使うことができます。
+
+- <a href="fileImport.html">インポート</a>
+- <a href="fileExport.html">エクスポート</a>
+
+## エフェクトパラメータ
 
 ```eval_rst
-
 .. toctree::
     :maxdepth: 1
 
@@ -122,24 +144,47 @@ Shiftと同時にクリックすることで、子ノードも含めて表示を
     locationGene
     rotation
     scale
+    depth
     rendererCommon
+    rendererCommonAd
     rendererSprite
     rendererRibbon
     rendererRing
     rendererModel
     rendererTrack
-    fcurve
     sound
-    network
-    culling
-    behavior
-    record
-    fileviewer
+    fcurve
     global
-    environment
-    options
-    depth
+    culling
     dynamicParameter
+    proceduralModel
+```
+
+## エフェクト機能
+
+```eval_rst
+.. toctree::
+    :maxdepth: 1
+
+    image
+    easing
+```
+
+
+## ツール機能
+
+```eval_rst
+.. toctree::
+    :maxdepth: 1
+
+    behavior
+    fileviewer
+    environment
+    network
+    record
+    options
+    fileImport
+    fileExport
 ```
 
 ## コマンドライン
@@ -161,6 +206,8 @@ Shiftと同時にクリックすることで、子ノードも含めて表示を
      - \*に標準形式で出力
    * - -m \*
      - 標準形式で出力するときのエフェクトの拡大率を\*に設定
+   * - --materialcache
+     - 指定されたエフェクトに含まれているマテリアルのキャッシュを全て生成
 ```
 
 
