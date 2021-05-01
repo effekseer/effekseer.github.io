@@ -1033,6 +1033,14 @@ ul li, ol li {
       text-align: center;
       margin-top: 20px;
       margin-bottom: 20px; }
+    #contents .locale_sections video {
+      width: 80%;
+      max-width: 150px;
+      min-width: 150px;
+      height: auto;
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 20px; }
     #contents .locale_sections p {
       margin: 20px; }
   /*サポート*/
