@@ -1,5 +1,46 @@
 ﻿# Release Notes
 
+## 1.60b
+
+## Common
+
+Improved error handling in OpenGL.
+
+Fixed a bug where the target position was reversed when using the left-hand coordinate system.
+
+Fixed a bug in which distortion was displayed incorrectly when using OpenGL and DirectX9 with advanced renderer.
+
+Fixed a bug where colors would flicker in rare cases.
+
+### Tools
+
+Improved behavior of wireframe display.
+
+Fixed a bug that caused some effects to fail to import.
+
+Fixed a bug that caused a crash when looping with F-curve and only one keypoint was selected.
+
+### Unity
+
+Disabled OpenGL on latest Macs as it no longer compiles with iOS.
+
+Fixed a bug where the effect scale node were not supported.
+
+Improved display of effects in scene view
+
+Fixed a bug that prevented Effekseer from being used anywhere but under Assets
+
+Fixed a bug in the Unity renderer where models with materials applied would display incorrectly.
+
+### DX library
+
+Fixed to compile with different minor versions of compilers.
+
+### Runtime
+
+Fixed a bug that the projection matrix of OpenGL sample was DirectX projection matrix.
+
+
 ## 1.6
 
 [Release note](ReleaseNotes/160)
