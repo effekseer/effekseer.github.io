@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['quaternion_237',['Quaternion',['../struct_effekseer_1_1_matrix44.html#a18702bbfd281cc5e026dcf82d5960030',1,'Effekseer::Matrix44']]]
+  ['textureproperty_75',['TextureProperty',['../struct_effekseer_renderer_d_x12_1_1_texture_property.html',1,'EffekseerRendererDX12::TextureProperty'],['../struct_effekseer_renderer_g_l_1_1_texture_property.html',1,'EffekseerRendererGL::TextureProperty'],['../struct_effekseer_renderer_d_x11_1_1_texture_property.html',1,'EffekseerRendererDX11::TextureProperty']]]
 ];

@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['noderendererbasicparameter_426',['NodeRendererBasicParameter',['../struct_effekseer_1_1_node_renderer_basic_parameter.html',1,'Effekseer']]],
-  ['noderendererdepthparameter_427',['NodeRendererDepthParameter',['../struct_effekseer_1_1_node_renderer_depth_parameter.html',1,'Effekseer']]]
+  ['singleframememorypool_93',['SingleFrameMemoryPool',['../class_effekseer_renderer_1_1_single_frame_memory_pool.html',1,'EffekseerRenderer']]]
 ];
