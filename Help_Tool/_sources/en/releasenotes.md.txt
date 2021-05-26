@@ -1,5 +1,22 @@
 ﻿# Release Notes
 
+## 1.60c
+
+## Common
+
+Fixed a bug that procedural models are not displayed in 32bit environment.
+Fixed a bug that soft particles were not behaving properly in left handed system.
+
+### Cocos2d-x
+
+Changed the maximum number of sprites.
+Improved memory handling in Metal.
+
+### Runtime
+
+Fixed and removed some samples.
+Improved memory handling in Metal
+
 ## 1.60b
 
 ## Common
