@@ -1,5 +1,11 @@
 ﻿# Release Notes
 
+## 1.60c2
+
+### Runtime
+
+Fixed a bug where an culling is flipped with a reversed depth except DirectX11
+
 ## 1.60c
 
 ## Common
