@@ -1,5 +1,33 @@
 ﻿# Release Notes
 
+## 1.60d
+
+### Common
+
+Fixed a bug in which vertex colors R and G were swapped in DirectX9 models.
+
+Fixed a bug in OpenGL where some states were not being restored.
+
+### Tools
+
+Fixed a bug that prevented recording from working properly on MacOS.
+
+Fixed a bug where the wire display in Lighting didn't look right.
+
+Fixed a bug in F-Curve that caused it to behave strangely when the points were swapped.
+
+Fixed a bug where Bloom parameters were displayed incorrectly.
+
+Added Spanish language.
+
+### Unity
+
+Fixed a bug where particles generated in the first frame were not displayed when there was a force field resistance.
+
+Fixed a bug where different files could be loaded if they had the same relative path
+
+Fixed a bug that caused a memory leak when using sound.
+
 ## 1.60c2
 
 ### Runtime
