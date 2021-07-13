@@ -1,5 +1,27 @@
 ﻿# Release Notes
 
+## 1.60e
+
+### Common
+
+Fixed a bug that could cause crashes when playing effects in some 32bit builds.
+
+Fixed a bug that caused strange behavior when using two-element custom data as a material in some graphics backends.
+
+Fixed a bug that caused custom data to behave strangely in the DirectX9 environment.
+
+Fixed a bug that caused compile failure in some Linux environments.
+
+### WebGL
+
+Improved three.js to work without state restoration.
+
+Added a sample without state restoration.
+
+Fixed a bug where TypeScript samples could not be executed.
+
+Changed the version of three.js used in the sample to the latest version.
+
 ## 1.60d
 
 ### Common
