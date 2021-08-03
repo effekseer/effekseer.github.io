@@ -1,5 +1,54 @@
 ﻿# Release Notes
 
+## 1.61a (2021/08/03)
+
+## Common
+
+Optimized the rendering speed of rings.
+
+Optimized rendering speed for WebGL.
+
+Fixed a crash when executing StopRoot with culling enabled.
+
+Fixed a bug in which culling behaved strangely in left-handed systems.
+
+Improved behavior of normals and lighting in left-handed systems.
+
+Fixed a bug with UV animation completion in left handed systems.
+
+### Runtime
+
+Changed internal memory handling in DirectX12, Metal, and Vulkan to use more memory, but less when there's not enough buffer.
+
+
+### Tools
+
+Changed to not show custom data unless a material file is selected.
+
+Fixed a bug that prevented some files from being displayed at runtime before 1.5 after saving them.
+
+## 1.60e
+
+### Common
+
+Fixed a bug that could cause crashes when playing effects in some 32bit builds.
+
+Fixed a bug that caused strange behavior when using two-element custom data as a material in some graphics backends.
+
+Fixed a bug that caused custom data to behave strangely in the DirectX9 environment.
+
+Fixed a bug that caused compile failure in some Linux environments.
+
+### WebGL
+
+Improved three.js to work without state restoration.
+
+Added a sample without state restoration.
+
+Fixed a bug where TypeScript samples could not be executed.
+
+Changed the version of three.js used in the sample to the latest version.
+
 ## 1.60d
 
 ### Common

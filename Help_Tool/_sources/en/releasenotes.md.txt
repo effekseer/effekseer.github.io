@@ -1,5 +1,32 @@
 ﻿# Release Notes
 
+## 1.61a (2021/08/03)
+
+## Common
+
+Optimized the rendering speed of rings.
+
+Optimized rendering speed for WebGL.
+
+Fixed a crash when executing StopRoot with culling enabled.
+
+Fixed a bug in which culling behaved strangely in left-handed systems.
+
+Improved behavior of normals and lighting in left-handed systems.
+
+Fixed a bug with UV animation completion in left handed systems.
+
+### Runtime
+
+Changed internal memory handling in DirectX12, Metal, and Vulkan to use more memory, but less when there's not enough buffer.
+
+
+### Tools
+
+Changed to not show custom data unless a material file is selected.
+
+Fixed a bug that prevented some files from being displayed at runtime before 1.5 after saving them.
+
 ## 1.60e
 
 ### Common
