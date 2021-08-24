@@ -1,5 +1,17 @@
 ﻿# Release Notes
 
+## 1.61b (Aug 24, 2021)
+
+## Common
+
+Fixed memory leak in OpenGL
+
+Fixed a crash when loading a material that fails to compile.
+
+### Tools.
+
+Fixed a crash when clicking the file viewer button when no file is loaded.
+
 ## 1.61a (2021/08/03)
 
 ## Common
