@@ -1,5 +1,23 @@
 ﻿# Release Notes
 
+## 1.61c (Sep 11, 2021)
+
+## Common
+
+Fixed a bug that force field decay always works when the particle is at (0,0,0).
+
+### Tools.
+
+Fixed a bug that the screen turns black when bloom is enabled and an invalid value is entered.
+
+Fixed a bug where the window size would be wrong the next time it was launched if you quit when it was minimized.
+
+Fixed an issue where the F-curve labeling was wrong.
+
+### Unity
+
+Fixed a bug in UnityRenderer that the drawing does not match Effekseer when material distortion is enabled.
+
 ## 1.61b (Aug 24, 2021)
 
 ## Common
