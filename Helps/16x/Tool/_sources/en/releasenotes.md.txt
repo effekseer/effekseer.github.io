@@ -1,5 +1,11 @@
 ﻿# Release Notes
 
+## 1.61d (Sep 14, 2021)
+
+### Unity.
+
+Fixed a bug that caused Archive to fail on iOS.
+
 ## 1.61c (Sep 11, 2021)
 
 ## Common

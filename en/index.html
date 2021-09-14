@@ -1,336 +1,234 @@
+
+
 <!DOCTYPE html>
-<html>
-  <head></head>
-  <meta charset="utf-8">
-  <!--Always force latest IE rendering engine or request Chrome Frame-->
-  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta name="keywords" content="Effekseer,Particle,Effect,Editor,エフェクト"><title>Effekseer - Particle Effect Creation tool</title><link href="../stylesheets/normalize.css" rel="stylesheet" /><link href="../stylesheets/base.css" rel="stylesheet" /><script src="../javascripts/jquery/jquery.min.js"></script><script src="../javascripts/base.js"></script>
-  <body class="en en_index">
-    <div id="header">
-      <div class="logo">
-        <a href="index.html"><img src="../images/top_logo.png" alt="Logo" align="middle"></a>
-      </div>
-      <div class="nav-toggle">
-        <div class="menu-trigger" href="#">
-          <span></span><span></span><span></span>
-        </div>
-      </div>
-      <div class="menunav_allset">
-        <div class="menunav_mobile_allset"></div>
-        <div class="logo_menu">
-          <a href="index.html"><img src="../images/top_logo.png" alt="Logo" align="middle"></a>
-        </div>
-        <div class="unselected">
-          <a href="introduction.html">
-            <h1>
-              Introduction
-            </h1>
+<html class="writer-html5" lang="ja" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Effekseer Help (English) &mdash; Effekseer Help  ドキュメント</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/js/three.min.js"></script>
+        <script src="../_static/js/effekseer.min.js"></script>
+        <script src="../_static/js/iframe.js"></script>
+        <script src="../_static/js/OrbitControls.js"></script>
+        <script src="../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="検索" href="../search.html" />
+    <link rel="next" title="Overview" href="overview.html" />
+    <link rel="prev" title="更新履歴" href="../ja/releasenotes.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Effekseer Help
+          
+
+          
           </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
         </div>
-        <div class="unselected">
-          <a href="download.html">
-            <h1>
-              Download
-            </h1>
-          </a>
-        </div>
-        <div class="unselected">
-          <a href="adoption.html">
-            <h1>
-              Used by
-            </h1>
-          </a>
-        </div>
-        <div class="unselected">
-          <a href="documentation.html">
-            <h1>
-              Documentation
-            </h1>
-          </a>
-        </div>
-        <div class="unselected">
-          <a href="support.html">
-            <h1>
-              Support
-            </h1>
-          </a>
-        </div>
-        <div class="unselected">
-          <a href="contribute.html">
-            <h1>
-              Sample Effects
-            </h1>
-          </a>
-        </div>
-        <div class="navmenu_set">
-          <ul class="languagenav">
-            <li>
-              <img src="../images/world10.png">
-              <p>
-                Select Language
-              </p>
-              <ul>
-                <li>
-                  <a class="drawer-brand" href="/jp/index.html">日本語</a>
-                </li>
-                <li>
-                  <a class="drawer-menu-item" href="/en/index.html">English</a>
-                </li>
-                <li>
-                  <a class="drawer-menu-item" href="/zh-tw/index.html">繁体中文</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="subpcmenu_set">
-        <ul class="languagenav">
-          <li>
-            <img src="../images/world10.png">
-            <p>
-              Select Language
-            </p>
-            <ul>
-              <li>
-                <a class="drawer-brand" href="/jp/index.html">日本語</a>
-              </li>
-              <li>
-                <a class="drawer-menu-item" href="/en/index.html">English</a>
-              </li>
-              <li>
-                <a class="drawer-menu-item" href="/zh-tw/index.html">繁体中文</a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-      <div class="github_ribbon">
-        <span class="forkongithub"><a href="https://github.com/effekseer/Effekseer">Fork me on GitHub </a></span>
-      </div>
-    </div>
-    <div class="language">
-      <div id="contents">
-        <div class="inner">
-          <div class="eyecatch">
-            <div class="eyecatch_text">
-              <p class="eyecatch_1">
-                Particle Effect Creation tool
-              </p>
-              <p class="eyecatch_2">
-                Effekseer
-              </p>
-              <p class="eyecatch_3">
-                v1.61c is available now!
-              </p>
-            </div>
-            <div class="buttons">
-              <a href="download.html">v1.61c Download</a><a href="releasenote.html">v1.6 New features</a>
-            </div>
-            <div class="imgsize_setting1">
-              <img src="../images/top_sectionimg1.jpg">
-            </div>
-          </div>
-          <div class="main">
-            <p>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
               
-            </p>
-            <div class="section1_bg">
-              <div class="section1_setting">
-                <div class="top_section">
-                  <h2>
-                    Easy to Create
-                  </h2>
-                  <img src="../images/section1_img1.jpg">
-                  <p>
-                    Effekseer is a tool that allows easy creation of beautiful particle effects for games and movies.
-                  </p>
-                </div>
-                <div class="top_section">
-                  <h2>
-                    Open-Source
-                  </h2>
-                  <div class="top_img1">
-                    <img src="../images/section1_img2.jpg">
-                  </div>
-                  <p>
-                    Effekseer is a free, open-source program. The effects can be exported as 2D animations or 3D effects. 
-                  </p>
-                </div>
-                <div class="top_section">
-                  <h2>
-                    Multi-Platform
-                  </h2>
-                  <div class="top_img1">
-                    <img src="../images/section1_img3.jpg">
-                  </div>
-                  <p>
-                    Using the included runtimes, these can be displayed in engines including DirectX, OpenGL, Unity, UnrealEngine4 and Cocos2d-x. Furthermore, the effects are available on Windows, Mac OS X, Linux, iOS, Android, Emscripten, and so on.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="section2_bg">
-              <div class="section2_setting">
-                <div class="movie_section">
-                  <div class="iframe">
-                    <iframe class="iframe_container" width="320" height="240" src="https://www.youtube.com/embed/3G5BrmI4V48" frameborder="0">allowfullscreen</iframe>
-                  </div>
-                  <p>
-                    You can create effects easily:
-                  </p>
-                  <p>
-                    Examples of created effects:
-                  </p>
-                  <div class="iframe">
-                    <iframe class="iframe_container" width="320" height="240" src="https://www.youtube.com/embed/JGMu5_opu5Y" frameborder="0">allowfullscreen</iframe>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="section3_setting">
-              <div class="section3_bg">
-                <div class="download_section1">
-                  <h2>
-                    Download
-                  </h2>
-                </div>
-                <div class="download_section2">
-                  <div class="download_inline">
-                    <h3>
-                      For Designers
-                    </h3>
-                    <a href="download.html#tool">Effect Editor</a>
-                  </div>
-                  <img src="../images/tool.jpg">
-                </div>
-                <div class="download_section3">
-                  <div class="download_inline">
-                    <h3>
-                      For Programmers
-                    </h3>
-                    <p>
-                      Libraries and plugins for playing effects:
-                    </p>
-                  </div>
-                  <div class="download_section_links">
-                    <ul>
-                      <li>
-                        <a href="download.html#runtime">DirectX(9,11,12), OpenGL, Metal, Vulkan</a>
-                      </li>
-                      <li>
-                        <a href="download.html#unity">Unity</a>
-                      </li>
-                      <li>
-                        <a href="download.html#cocos2dx">Cocos2d-x</a>
-                      </li>
-                      <li>
-                        <a href="download.html#ue4">UnrealEngine4</a>
-                      </li>
-                      <li>
-                        <a href="download.html#dxlib">DX Library</a>
-                      </li>
-                      <li>
-                        <a href="https://github.com/effekseer/EffekseerForWebGL">WebGL</a>
-                      </li>
-                      <li>
-                        <a href="support.html">Console games (Please mail)</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="section4_bg">
-              <div class="section4_setting">
-                <div class="documentation_section">
-                  <h2>
-                    Documentation
-                  </h2>
-                  <p>
-                    Start learning how to use Effekseer by reading the in-depth tutorials:
-                  </p>
-                  <a href="documentation.html">View Documentation</a>
-                </div>
-                <div class="contribute_section">
-                  <h2>
-                    Sample Effects
-                  </h2>
-                  <p>
-                    Download free-to-use/free-to-edit effects contributed by other Effekseer users:
-                  </p>
-                  <a href="contribute.html">View Sample Effects</a>
-                </div>
-              </div>
-            </div>
-            <div class="section5_bg">
-              <div class="section5_setting">
-                <div class="books_top">
-                  <h2>
-                    Book (Japanese)
-                  </h2>
-                  <h3>
-                    初めてのEffekseer
-                  </h3>
-                </div>
-                <div class="all_books"></div>
-                <div class="left_books">
-                  <img src="../images/books/hajimete_no_effekseer.jpg">
-                </div>
-                <div class="right_books">
-                  <ul>
-                    <li>
-                      <a href="https://www.kohgakusha.co.jp/books/detail/978-4-7775-2076-3">工学社</a>
-                    </li>
-                    <li>
-                      <a href="https://www.yodobashi.com/product/100000009003135804/">ヨドバシ.com</a>
-                    </li>
-                    <li>
-                      <a href="https://books.rakuten.co.jp/rb/15861637/">楽天ブックス</a>
-                    </li>
-                    <li>
-                      <a href="https://www.amazon.co.jp/dp/4777520765/ref=asc_df_47775207652630814/?tag=jpgo-22&creative=9303&creativeASIN=4777520765&linkCode=df0&hvadid=342534585338&hvpos=1o1&hvnetw=g&hvrand=18196272307757529594&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1009322&hvtargid=pla-717123495073&th=1&psc=1">Amazon</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../ja/index.html">Effekseer Help 日本語</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Effekseer Help (English)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="overview.html">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ToolTutorial/index.html">Tutorial</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ToolReference/index.html">Tool-Reference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MaterialToolReference/index.html">Material-Reference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ToolTips/01.html">TIPS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="faq.html">FAQ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="releasenotes.html">Release Notes</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Effekseer Help</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Effekseer Help (English)</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="effekseer-help-english">
+<h1>Effekseer Help (English)<a class="headerlink" href="#effekseer-help-english" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<p>This software is a particle effect editing tool. By incorporating runtime and plug-ins, you can play effects created with Effekseer in your application. It is assumed to be mainly used in games, so that the designer can handle the particle effect editing rather than the programmer.</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ToolTutorial/index.html">Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ToolReference/index.html">Tool-Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="MaterialToolReference/index.html">Material-Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ToolTips/01.html">TIPS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="releasenotes.html">Release Notes</a></li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
           </div>
-          <div class="news_section_bg">
-            <div class="news_section">
-              <h2>
-                News
-              </h2>
-              <ul>
-                <li>
-                  <p>
-                    2021.09.11 Effekseer 1.61c is released.
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    2021.08.24 Effekseer 1.61b is released.
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    2021.08.03 Effekseer 1.61a is released.
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    2021.07.14 Effekseer 1.60d is released.
-                  </p>
-                </li>
-                <li>
-                  <a href="releasenote.html">Release Notes</a>
-                </li>
-              </ul>
-            </div>
-          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="overview.html" class="btn btn-neutral float-right" title="Overview" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../ja/releasenotes.html" class="btn btn-neutral float-left" title="更新履歴" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2019, Effekseer.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
         </div>
       </div>
-    </div>
-  </body>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
 </html>
