@@ -92,21 +92,23 @@
 <li class="toctree-l4"><a class="reference internal" href="#descriptions">Descriptions</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#properties">Properties</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#methods">Methods</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#signals">Signals</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#effekseeremitter2d">EffekseerEmitter2D</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#id1">Descriptions</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#id2">Properties</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#id8">Methods</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id13">Signals</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#effekseereffect">EffekseerEffect</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id13">Properties</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id14">Methods</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id15">Properties</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id16">Methods</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#effekseersystem">EffekseerSystem</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id15">Methods</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id17">Methods</a></li>
 </ul>
 </li>
 </ul>
@@ -213,7 +215,7 @@ In addition, the set transforms (position, rotation, scaling) are reflected in t
 <td>get_effect()</td>
 </tr>
 </tbody>
-</table><p>The effect set on the emitter.</p>
+</table><p>The effect resource set on the emitter.</p>
 </div>
 <hr class="docutils" />
 <div class="section" id="bool-autoplay">
@@ -315,6 +317,28 @@ In addition, the set transforms (position, rotation, scaling) are reflected in t
 </tbody>
 </table><p>Rendering color setting. It is multiplied by the color of the effect.</p>
 </div>
+<hr class="docutils" />
+<div class="section" id="vector3-target-position">
+<h4>Vector3 target_position<a class="headerlink" href="#vector3-target-position" title="Permalink to this headline">¶</a></h4>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>Setter</em></td>
+<td>set_target_position(value)</td>
+</tr>
+<tr>
+<td><em>Getter</em></td>
+<td>get_target_position()</td>
+</tr>
+</tbody>
+</table><p>Target position setting. The position of the effect with the target.</p>
+</div>
 </div>
 <hr class="docutils" />
 <div class="section" id="methods">
@@ -341,6 +365,14 @@ In addition, the set transforms (position, rotation, scaling) are reflected in t
 <li><p>true: Playing</p></li>
 <li><p>false: Not played or finished playing</p></li>
 </ul>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="signals">
+<h3>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="finished">
+<h4>finished()<a class="headerlink" href="#finished" title="Permalink to this headline">¶</a></h4>
+<p>Emitted when the effect finishes playing.</p>
 </div>
 </div>
 </div>
@@ -500,6 +532,28 @@ In addition, the set transforms (position, rotation, scaling) are reflected in t
 </tbody>
 </table><p>3D orientation settings for effects. It is applied before the rotation of Transform2D.</p>
 </div>
+<hr class="docutils" />
+<div class="section" id="vector2-target-position">
+<h4>Vector2 target_position<a class="headerlink" href="#vector2-target-position" title="Permalink to this headline">¶</a></h4>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>Setter</em></td>
+<td>set_target_position(value)</td>
+</tr>
+<tr>
+<td><em>Getter</em></td>
+<td>get_target_position()</td>
+</tr>
+</tbody>
+</table><p>Target position setting. The position of the effect with the target.</p>
+</div>
 </div>
 <hr class="docutils" />
 <div class="section" id="id8">
@@ -528,14 +582,22 @@ In addition, the set transforms (position, rotation, scaling) are reflected in t
 </ul>
 </div>
 </div>
+<hr class="docutils" />
+<div class="section" id="id13">
+<h3>Signals<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id14">
+<h4>finished()<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h4>
+<p>Emitted when the effect finishes playing.</p>
+</div>
+</div>
 </div>
 <hr class="docutils" />
 <div class="section" id="effekseereffect">
 <h2>EffekseerEffect<a class="headerlink" href="#effekseereffect" title="Permalink to this headline">¶</a></h2>
 <p><strong>Extends</strong>: Resource &lt; Reference &lt; Object</p>
 <p>Effekseer effect resource.</p>
-<div class="section" id="id13">
-<h3>Properties<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id15">
+<h3>Properties<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="string-data-path">
 <h4>String data_path<a class="headerlink" href="#string-data-path" title="Permalink to this headline">¶</a></h4>
 <table border="1" class="docutils">
@@ -606,8 +668,8 @@ In addition, the set transforms (position, rotation, scaling) are reflected in t
 </div>
 </div>
 <hr class="docutils" />
-<div class="section" id="id14">
-<h3>Methods<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id16">
+<h3>Methods<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="void-load-string-path">
 <h4>void load(String path)<a class="headerlink" href="#void-load-string-path" title="Permalink to this headline">¶</a></h4>
 <p>Load the effect by specifying the file path.</p>
@@ -626,8 +688,8 @@ In addition, the set transforms (position, rotation, scaling) are reflected in t
 <h2>EffekseerSystem<a class="headerlink" href="#effekseersystem" title="Permalink to this headline">¶</a></h2>
 <p><strong>Extends</strong>: Node &lt; Object</p>
 <p>Effekseer singleton for system management.</p>
-<div class="section" id="id15">
-<h3>Methods<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id17">
+<h3>Methods<a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="void-stop-all-effects">
 <h4>void stop_all_effects()<a class="headerlink" href="#void-stop-all-effects" title="Permalink to this headline">¶</a></h4>
 <p>Stops all currently playing effects.</p>

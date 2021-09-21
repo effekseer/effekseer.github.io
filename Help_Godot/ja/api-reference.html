@@ -93,21 +93,23 @@
 <li class="toctree-l4"><a class="reference internal" href="#id1">説明</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#id2">プロパティ一覧</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#id3">メソッド一覧</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id4">シグナル一覧</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#effekseeremitter2d">EffekseerEmitter2D</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id4">説明</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id5">プロパティ一覧</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id11">メソッド一覧</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id5">説明</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id6">プロパティ一覧</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id12">メソッド一覧</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id17">シグナル一覧</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#effekseereffect">EffekseerEffect</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id16">プロパティ一覧</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id17">メソッド一覧</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id19">プロパティ一覧</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id20">メソッド一覧</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#effekseersystem">EffekseerSystem</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id18">メソッド一覧</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id21">メソッド一覧</a></li>
 </ul>
 </li>
 </ul>
@@ -211,7 +213,7 @@
 <td>get_effect()</td>
 </tr>
 </tbody>
-</table><p>エミッターに設定されたエフェクト。</p>
+</table><p>エミッターに設定されたエフェクトリソース。</p>
 </div>
 <hr class="docutils" />
 <div class="section" id="bool-autoplay">
@@ -313,6 +315,28 @@
 </tbody>
 </table><p>描画色の設定。エフェクトが持つ色と掛け合わされます。</p>
 </div>
+<hr class="docutils" />
+<div class="section" id="vector3-target-position">
+<h4>Vector3 target_position<a class="headerlink" href="#vector3-target-position" title="Permalink to this headline">¶</a></h4>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>Setter</em></td>
+<td>set_target_position(value)</td>
+</tr>
+<tr>
+<td><em>Getter</em></td>
+<td>get_target_position()</td>
+</tr>
+</tbody>
+</table><p>ターゲット位置の設定。ターゲットがあるエフェクトの誘導位置です。</p>
+</div>
 </div>
 <hr class="docutils" />
 <div class="section" id="id3">
@@ -341,20 +365,28 @@
 </ul>
 </div>
 </div>
+<hr class="docutils" />
+<div class="section" id="id4">
+<h3>シグナル一覧<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="finished">
+<h4>finished()<a class="headerlink" href="#finished" title="Permalink to this headline">¶</a></h4>
+<p>エフェクトの再生終了時に発生します。</p>
+</div>
+</div>
 </div>
 <hr class="docutils" />
 <div class="section" id="effekseeremitter2d">
 <h2>EffekseerEmitter2D<a class="headerlink" href="#effekseeremitter2d" title="Permalink to this headline">¶</a></h2>
 <p><strong>継承</strong>: Node2D &lt; CanvasItem &lt;  Node &lt; Object</p>
 <p>Effekseerエフェクトの2D放出源。</p>
-<div class="section" id="id4">
-<h3>説明<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id5">
+<h3>説明<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
 <p>Effekseerのエフェクトを再生、描画するための2Dオブジェクトです。EffekseerEffectをセットし、play()することで再生することができます。また、設定されたトランスフォーム（位置、回転、拡大縮小）はエフェクトの描画に反映されます。</p>
 </div>
-<div class="section" id="id5">
-<h3>プロパティ一覧<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="id6">
-<h4>EffekseerEffect effect<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h4>
+<h3>プロパティ一覧<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id7">
+<h4>EffekseerEffect effect<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h4>
 <table border="1" class="docutils">
 <thead>
 <tr>
@@ -375,8 +407,8 @@
 </table><p>エミッターに設定されたエフェクト。</p>
 </div>
 <hr class="docutils" />
-<div class="section" id="id7">
-<h4>bool autoplay<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id8">
+<h4>bool autoplay<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h4>
 <table border="1" class="docutils">
 <thead>
 <tr>
@@ -401,8 +433,8 @@
 </ul>
 </div>
 <hr class="docutils" />
-<div class="section" id="id8">
-<h4>bool paused<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id9">
+<h4>bool paused<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h4>
 <table border="1" class="docutils">
 <thead>
 <tr>
@@ -427,8 +459,8 @@
 </ul>
 </div>
 <hr class="docutils" />
-<div class="section" id="id9">
-<h4>bool speed<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id10">
+<h4>bool speed<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h4>
 <table border="1" class="docutils">
 <thead>
 <tr>
@@ -453,8 +485,8 @@
 </ul>
 </div>
 <hr class="docutils" />
-<div class="section" id="id10">
-<h4>Color color<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id11">
+<h4>Color color<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h4>
 <table border="1" class="docutils">
 <thead>
 <tr>
@@ -495,32 +527,62 @@
 </tbody>
 </table><p>エフェクトの3D向きの設定。Transform2Dのrotationの前に掛けられます。</p>
 </div>
+<hr class="docutils" />
+<div class="section" id="vector2-target-position">
+<h4>Vector2 target_position<a class="headerlink" href="#vector2-target-position" title="Permalink to this headline">¶</a></h4>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>Setter</em></td>
+<td>set_target_position(value)</td>
+</tr>
+<tr>
+<td><em>Getter</em></td>
+<td>get_target_position()</td>
+</tr>
+</tbody>
+</table><p>ターゲット位置の設定。ターゲットがあるエフェクトの誘導位置です。</p>
+</div>
 </div>
 <hr class="docutils" />
-<div class="section" id="id11">
-<h3>メソッド一覧<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="id12">
-<h4>void play()<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h4>
+<h3>メソッド一覧<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id13">
+<h4>void play()<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h4>
 <p>再生開始します。</p>
 </div>
 <hr class="docutils" />
-<div class="section" id="id13">
-<h4>void stop()<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id14">
+<h4>void stop()<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h4>
 <p>再生停止します。</p>
 </div>
 <hr class="docutils" />
-<div class="section" id="id14">
-<h4>void stop_root()<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id15">
+<h4>void stop_root()<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h4>
 <p>ルートノードを停止します。</p>
 </div>
 <hr class="docutils" />
-<div class="section" id="id15">
-<h4>bool is_playing()<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id16">
+<h4>bool is_playing()<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h4>
 <p>再生状況を取得します。</p>
 <ul class="simple">
 <li><p>true: 再生中</p></li>
 <li><p>false: 未再生、もしくは再生終了</p></li>
 </ul>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="id17">
+<h3>シグナル一覧<a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id18">
+<h4>finished()<a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h4>
+<p>エフェクトの再生終了時に発生します。</p>
 </div>
 </div>
 </div>
@@ -529,8 +591,8 @@
 <h2>EffekseerEffect<a class="headerlink" href="#effekseereffect" title="Permalink to this headline">¶</a></h2>
 <p><strong>継承</strong>: Resource &lt; Reference &lt; Object</p>
 <p>Effekseerのエフェクトリソース。</p>
-<div class="section" id="id16">
-<h3>プロパティ一覧<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id19">
+<h3>プロパティ一覧<a class="headerlink" href="#id19" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="string-data-path">
 <h4>String data_path<a class="headerlink" href="#string-data-path" title="Permalink to this headline">¶</a></h4>
 <table border="1" class="docutils">
@@ -601,8 +663,8 @@
 </div>
 </div>
 <hr class="docutils" />
-<div class="section" id="id17">
-<h3>メソッド一覧<a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id20">
+<h3>メソッド一覧<a class="headerlink" href="#id20" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="void-load-string-path">
 <h4>void load(String path)<a class="headerlink" href="#void-load-string-path" title="Permalink to this headline">¶</a></h4>
 <p>ファイルパス指定でエフェクトのロードを行います。</p>
@@ -621,8 +683,8 @@
 <h2>EffekseerSystem<a class="headerlink" href="#effekseersystem" title="Permalink to this headline">¶</a></h2>
 <p><strong>継承</strong>: Node &lt; Object</p>
 <p>Effekseerのシステム管理用シングルトン。</p>
-<div class="section" id="id18">
-<h3>メソッド一覧<a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id21">
+<h3>メソッド一覧<a class="headerlink" href="#id21" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="void-stop-all-effects">
 <h4>void stop_all_effects()<a class="headerlink" href="#void-stop-all-effects" title="Permalink to this headline">¶</a></h4>
 <p>現在再生中の全てのエフェクトを停止します。</p>
