@@ -1,5 +1,25 @@
 ﻿# Release Notes
 
+## 1.61e (Oct 14, 2021)
+
+## Common
+
+Fixed a bug where the angle in the spawn method was not being applied to the drag of the force field.
+
+Fixed a bug where the force and attraction of force fields sometimes behaved incorrectly when the spawn method was applied.
+
+### Tools
+
+When a comment is added while a node is selected in the Material Editor, the comment now surrounds the node.
+
+Fixed a bug that prevented it from starting on older MacOS.
+
+### Unity
+
+Fixed a bug that caused a warning to appear in URP.
+
+Fixed bug that Unity URP didn't launch on old MacOS.
+
 ## 1.61d (Sep 14, 2021)
 
 ### Unity.
