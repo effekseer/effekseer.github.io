@@ -21,5 +21,9 @@ You can do the following in this dialog:
   - A warning icon will be displayed if the file already exists in the import destination.
 - Rename each file to be imported
   - When you change the file name, the reference name in the file that refers to that file is also rewritten.
+  - There are many features to make edit pathes easily
+    - Combine same files
+    - Avoid to overwrite
+    - Add root directories
 
 If there is no problem, press the "Import" button and the files in efkpkg will be extracted to the import destination.

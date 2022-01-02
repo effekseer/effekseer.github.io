@@ -1,5 +1,49 @@
 ﻿# Release Notes
 
+## 1.62 (Jan 02, 2022)
+
+### Common
+
+Supported a feature to maintain gamma color in a linear color space
+
+Fixed a bug where render batch doesn't work
+
+Fixed a bug where a behavior of drag or follow a parent is wrong with a spawn method
+
+Fixed a bug where a rendering result is wrong with a material and 17 uniforms
+
+Fixed a bug where DirectX9 Runtime failed to render some model
+
+### Tool
+
+Improved efkpkg importer
+
+Made a node select with Enter
+
+Fixed a FCurve Window behavior
+
+Fixed a bug where TextureObject is not imported from efkpkg
+
+Fixed a bug where fbx converter cannot convert some fbx
+
+Fixed a bug where a node is not selected with right clicking
+
+Changed a library to show a dialog into Zenity
+
+### Unity
+
+Separated setting files and added a command to create user settings (Please read documents)
+
+Added a filed to Speed in Emitter Editor
+
+Fixed a bug where a rendering result is wrong with NativeRenderer and minus depth priority
+
+Fixed a bug where a rendering result is wrong with a distortion, Effekseer NativeRenderer and Unity Standard Linear Renderer
+
+### WebGL
+
+Add a feature to load an effect from efkpkg (It requires unzip functions)
+
 ## 1.61e (Oct 14, 2021)
 
 ## Common
