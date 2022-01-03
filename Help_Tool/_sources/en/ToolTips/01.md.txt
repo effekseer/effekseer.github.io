@@ -153,3 +153,10 @@ It is a particle using a square image on the left, and a particle using a thin a
 </table>
 
 </div>
+
+## Enable Inherit Color without showing the parent.
+
+Specify the render method as Sprite.
+In the Common panel, set Visibility On to Off.
+
+In this way, you can enable Inherit Color while the sprite is not shown.
