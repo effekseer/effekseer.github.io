@@ -1,5 +1,11 @@
 ﻿# Release Notes
 
+## 1.62a (Jan 05, 2022)
+
+### Common
+
+Fixed a bug that allowed caches of old materials to be loaded.
+
 ## 1.62 (Jan 02, 2022)
 
 ### Common
