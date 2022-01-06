@@ -89,6 +89,7 @@
 <li class="toctree-l2"><a class="reference internal" href="target-specific.html">ターゲット固有情報</a></li>
 <li class="toctree-l2"><a class="reference internal" href="api-reference.html">APIリファレンス</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">更新履歴</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id2">1.62</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#c">1.61c</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#beta3">1.60 Beta3</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#beta2">1.60 Beta2</a></li>
@@ -164,6 +165,28 @@
             
   <div class="section" id="id1">
 <h1>更新履歴<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id2">
+<h2>1.62<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>変更箇所</p>
+<ul>
+<li><p>Effekseer 1.62へ更新</p></li>
+<li><p>Godot-cpp 3.4へ更新</p></li>
+<li><p>エフェクトプレビューのインスペクタプラグインを追加</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">get_tree().paused</span></code>に対応</p></li>
+<li><p>Emitter/Emitter2Dの<code class="docutils literal notranslate"><span class="pre">visibility</span></code>をエフェクトの表示に反映するように変更</p></li>
+<li><p>Emitter/Emitter2Dのupdate/renderループを効率化</p></li>
+<li><p>EffectResourceのサイズを最適化（不要なデータの削減と圧縮を適用）</p></li>
+<li><p>EffekseerSpatialGizmoPluginに名前を付けた</p></li>
+</ul>
+</li>
+<li><p>不具合修正</p>
+<ul>
+<li><p>Emitterのplay()時に<code class="docutils literal notranslate"><span class="pre">target_position</span></code>が適用されない不具合を修正</p></li>
+</ul>
+</li>
+</ul>
+</div>
 <div class="section" id="c">
 <h2>1.61c<a class="headerlink" href="#c" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
