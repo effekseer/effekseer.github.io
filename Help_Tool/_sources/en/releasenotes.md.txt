@@ -1,5 +1,27 @@
 ﻿# Release Notes
 
+## 1.62b (Jan 31, 2022)
+
+### Common
+
+Fix a bug where behaviors of Normal are wrong in DX9
+
+Fix a bug where point, line and circle in the spawn method is not supported left and right coordinate conversion
+
+Fix a bug where a behavior of particle is wrong with drag and spawn method rotation
+
+### Tool
+
+Fix a bug where Effekseer crashes while importing efkpfg with a model and root directory
+
+### UE4
+
+Fix a bug where it failed to compile in the latest version
+
+### WebGL
+
+default image.crossOrigin was changed into none.
+
 ## 1.62a (Jan 05, 2022)
 
 ### Common
