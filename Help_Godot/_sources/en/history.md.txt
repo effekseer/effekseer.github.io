@@ -1,5 +1,10 @@
 ﻿# Release notes
 
+## 1.62b
+- Bugfixes
+  - Can't reimport efkefc. #8
+  - Not correct color space in material
+
 ## 1.62a
 - Changes
   - Updated to Effekseer 1.62a
