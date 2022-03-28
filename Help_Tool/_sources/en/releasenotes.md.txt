@@ -1,5 +1,19 @@
 ﻿# Release Notes
 
+## 1.62c2 (March 28, 2022)
+
+Change a compile settings on Mac
+
+## 1.62c (March 06, 2022)
+
+Support Notarization on Mac
+
+Fix a bug where normal and tangent are not normalized in a procedural model
+
+Fix a bug where efkpkg importer cannot import a material when a texture file is not found
+
+Fix a SIMD instruction mistakes that regarding integer rounding.
+
 ## 1.62b (Jan 31, 2022)
 
 ### Common
