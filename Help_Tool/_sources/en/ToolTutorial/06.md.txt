@@ -41,7 +41,7 @@ In addition, by changing the area (UV) used for the loaded image, try changing t
 
 The first effect you create is a ring whose shape changes with time.
 
-Please open effect1.efkproj.
+Please open effect1.efkefc.
 
 You specify the ring for particle drawing method.
 You change the sprite in the "Render Settings" window to Ring.
@@ -95,7 +95,7 @@ The ring is compatible with circular effect.
 
 The second effect you create is a triangle.
 
-Please open effect2.efkproj.
+Please open effect2.efkefc.
 
 You can express various shapes by changing the number of vertices composed 0f the ring.
 In the initial setting, the number of vertices is large, so the particles look like circles.
@@ -113,7 +113,7 @@ You can see that changing the value will result in a triangle.
 
 The third effect you create is a ring with an image.
 
-Please open effect3.efkproj.
+Please open effect3.efkefc.
 
 You can also specify an image to the ring.
 By specifying the image, expression of the shock wave and the aura which blows up etc. becomes easier.

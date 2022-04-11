@@ -77,7 +77,7 @@ Let's try it.
 
 Create an effect whose shape is a spiral.
 
-Please open effect1-1.efkproj.
+Please open effect1-1.efkefc.
 
 The parent node's parameters are already specified.
 The parent particle rises with rotating.
@@ -125,7 +125,7 @@ Let's try it.
 
 I create an effect whose shape is a spiral as before.
 
-Please open effect1-2.efkproj.
+Please open effect1-2.efkefc.
 
 Almost parameters already have been specified.
 
@@ -193,7 +193,7 @@ Basically the track is more convenient, but we use the ribbon to create an effec
 As an effect that can not be expressed by the track, there are effects like weapons trajectories.
 Here we create an effect that emerges at the position where the sword has passed with the ribbon.
 
-Please open effect2.efkproj.
+Please open effect2.efkefc.
 
 It consists of a parent node, a child node and a hit node.
 

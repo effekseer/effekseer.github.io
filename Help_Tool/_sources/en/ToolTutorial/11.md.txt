@@ -55,7 +55,7 @@ This chapter explains how to use them.
 
 We show a model as particles.
 
-Please open effect1.efkproj.
+Please open effect1.efkefc.
 
 Just like ```Sprite```, select ```Model``` as rendering method in ```Rendering Settings``` panel.
 
@@ -140,7 +140,7 @@ You can generate particles at the vertices or faces of the model.
 
 Let's try it.
 
-Please open effect2.efkproj.
+Please open effect2.efkefc.
 
 Specify the model to spawning method. Then load Model/Sphere.mqo as a model.
 For clarity, make ```Spawn Mode``` Vertex.

@@ -54,7 +54,7 @@ In the sample, the parent elongated particles move while generating a large amou
 
 Using the parent-child relationships, you create a tornado effect.
 
-Please open effect1.efkproj.
+Please open effect1.efkefc.
 
 This effect consists of parent particles that control rotation and child particles that draw images.
 You create in order of parent node and child node.
@@ -121,7 +121,7 @@ The effect looks better.
 
 Using the parent-child relationships, you create a meteor effect.
 
-Please open effect2.efkproj.
+Please open effect2.efkefc.
 
 In Effekseer, parent-child relationships can be cut off at the moment when child particles are generated.
 Child particles are generated around the parent particle when the child particles are generated.

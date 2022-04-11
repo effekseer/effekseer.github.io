@@ -48,7 +48,7 @@ Effekseerでもパラメーターを設定することで、エフェクトで�
 <p>歪み画像</p>
 </div>
 
-effect1.efkprojを開いてください。
+effect1.efkefcを開いてください。
 
 Texture/Distortion.pngを描画共通パネルから、予め用意されているDistortionノードの色画像に設定します。
 

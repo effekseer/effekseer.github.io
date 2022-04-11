@@ -75,7 +75,7 @@ The particles are displayed in order clockwise.
 This effect can be realized by using parent-child relationships, but it is very troublesome.
 In order to easily realize complicated placement, there is the spawn method.
 
-Please open effect01.efkproj.
+Please open effect01.efkefc.
 
 The "Spawn method" window is not displayed in the initial setting.
 You select "Window -> Spawn method" from the menu bar.
@@ -131,7 +131,7 @@ At the same time, you can see that the particles appear in turn.
 
 Let's place the particles in a spherical shape.
 
-Please open effect02.efkproj.
+Please open effect02.efkefc.
 
 Like a circle, you can also set a spherical shape.
 

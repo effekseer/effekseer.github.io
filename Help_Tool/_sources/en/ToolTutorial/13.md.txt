@@ -50,7 +50,7 @@ Blue color is ignored.
 <p>Distorting image</p>
 </div>
 
-Please open effect1.efkproj.
+Please open effect1.efkefc.
 
 In ```Basic render settings``` panel, Texture/Distortion1.png is specified as color image of Distortion node.
 In ```Basic render settings``` panel, make distortion checked and make distortion enabled.

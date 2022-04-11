@@ -107,7 +107,7 @@ Making particles only using white squares however is no fun. To fix this, let's 
 <a href = "../../Sample/01_Sample.zip">Download</a>
 </div>
 
-After extracting the sample, please locate the file "Sample.efkproj" and extract it. You can open it by either double clicking the file or dragging the project or dragging it onto the 3D screen of Effekseer. After opening the file, press the play button. You should see the following.。
+After extracting the sample, please locate the file "Sample.efkefc" and extract it. You can open it by either double clicking the file or dragging the project or dragging it onto the 3D screen of Effekseer. After opening the file, press the play button. You should see the following.。
 
 
 
