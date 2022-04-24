@@ -1,5 +1,29 @@
 ﻿# Release Notes
 
+## 1.62d (Apr. 17, 2022)
+
+### Common
+
+Fix a bug where a particle is not spawned when StopRoot is called after Play immediately
+
+### Unity
+
+Reduced a memory allocation
+
+Supported 2021.2
+
+### WebGL
+
+Fixed typo
+
+Fixed a memory leak
+
+### UE4
+
+Fixed a bug where EffekseerUE4 fails to compile on some platforms
+
+Fixed a bug where particles are not shown on some platforms
+
 ## 1.62c2 (March 28, 2022)
 
 Change a compile settings on Mac
