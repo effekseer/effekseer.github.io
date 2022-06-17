@@ -1,10 +1,26 @@
 ﻿# Release Notes
 
+## 1.62e (June. 17, 2022)
+
+### Common
+
+Fixed a bug where old effekseer projects causes wrong behaviors.
+
+### Unity
+
+Fixed a bug where URP renderer causes an error with Profiler
+
+Fixed a bug where particles cannot stop after calling StopRoot
+
+### WebGL
+
+Fixed a bug where multiple context causes an error
+
 ## 1.62d (Apr. 17, 2022)
 
 ### Common
 
-Fix a bug where a particle is not spawned when StopRoot is called after Play immediately
+Fixed a bug where a particle is not spawned when StopRoot is called after Play immediately
 
 ### Unity
 
