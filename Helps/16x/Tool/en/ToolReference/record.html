@@ -14,6 +14,7 @@
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
         <script src="../../_static/js/three.min.js"></script>
         <script src="../../_static/js/effekseer.min.js"></script>
@@ -99,46 +100,46 @@
            <div itemprop="articleBody">
              
   <div class="section" id="recorder">
-<h1>Recorder<a class="headerlink" href="#recorder" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<h1>Recorder<a class="headerlink" href="#recorder" title="Permalink to this heading">¶</a></h1>
 <div class="section" id="overview">
-<h2>Overview<a class="headerlink" href="#overview" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this heading">¶</a></h2>
 <p>Allows you to output the created effect as a sprite sheet, gif animation, AVI, etc. This function is very useful in situations such as when posting effects on your Twitter/Blog/Website/etc., or other situations where you cannot directly play effects created with Effekseer, through the runtime or otherwise.</p>
 <table><tbody><tr><td><img src="../../img/Reference/record_anim.jpg"/></td><td><img src="../../img/Reference/record_gifanim.gif"/></td></tr></tbody></table></div>
 <div class="section" id="parameter">
-<h2>Parameter<a class="headerlink" href="#parameter" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>Parameter<a class="headerlink" href="#parameter" title="Permalink to this heading">¶</a></h2>
 <div class="section" id="resolution">
-<h3>Resolution<a class="headerlink" href="#resolution" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>Resolution<a class="headerlink" href="#resolution" title="Permalink to this heading">¶</a></h3>
 <div class="section" id="width-height">
-<h4>Width/Height<a class="headerlink" href="#width-height" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<h4>Width/Height<a class="headerlink" href="#width-height" title="Permalink to this heading">¶</a></h4>
 <p>Sets the output size for each frame of the animation.</p>
 </div>
 <div class="section" id="scale">
-<h4>Scale<a class="headerlink" href="#scale" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<h4>Scale<a class="headerlink" href="#scale" title="Permalink to this heading">¶</a></h4>
 <p>The recording area is enlarged from the actual screen.
 For example, if the width and height are 256 and the Scale is 2, the 256 range is enlarged by a factor of 2 and recorded, and an image with a resolution of 512 is exported.</p>
 </div>
 <div class="section" id="show-guide">
-<h4>Show guide<a class="headerlink" href="#show-guide" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<h4>Show guide<a class="headerlink" href="#show-guide" title="Permalink to this heading">¶</a></h4>
 <p>When checked, the bounds of the recording canvas is displayed on the screen. Anything inside the guide will be recorded, anything outside the guide will be cropped out.</p>
 </div>
 </div>
 <div class="section" id="exported-frame">
-<h3>Exported Frame<a class="headerlink" href="#exported-frame" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>Exported Frame<a class="headerlink" href="#exported-frame" title="Permalink to this heading">¶</a></h3>
 <div class="section" id="start-frame">
-<h4>Start Frame<a class="headerlink" href="#start-frame" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<h4>Start Frame<a class="headerlink" href="#start-frame" title="Permalink to this heading">¶</a></h4>
 <p>Sets the frame to start recording from for outputting the image to a file.</p>
 </div>
 <div class="section" id="end-frame">
-<h4>End Frame<a class="headerlink" href="#end-frame" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<h4>End Frame<a class="headerlink" href="#end-frame" title="Permalink to this heading">¶</a></h4>
 <p>Sets the frame where recording will be stopped when outputting the image to a file.</p>
 </div>
 <div class="section" id="frequency-frame">
-<h4>Frequency (Frame)<a class="headerlink" href="#frequency-frame" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<h4>Frequency (Frame)<a class="headerlink" href="#frequency-frame" title="Permalink to this heading">¶</a></h4>
 <p>Sets the level of frame skipping in the file output. For example, for a value of 1, when 60 frames are recorded, 60 images will be output. For a value of 2, when 60 frames are recorded, only 30 images will be output (every other frame). If you increase the number like this, the file size will become smaller at the cost of choppier animations.</p>
 </div>
 </div>
 <div class="section" id="format">
-<h3>Format<a class="headerlink" href="#format" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>Format<a class="headerlink" href="#format" title="Permalink to this heading">¶</a></h3>
 <p>There are 4 options: &quot;Export as a single image&quot;, &quot;Export images&quot;, &quot;Export as a gif animation&quot;, and &quot;Export as a AVI&quot;.</p>
 <p>&quot;Export as a single image&quot; will create a sprite-sheet image with frames arranged from the upper left to the lower right. The number of frames arranged horizontally will be number specified under &quot;X Count&quot;. Consequently, the number of frames arranged vertically will be the total number of recorded frames / X Count.</p>
 <p>&quot;Export images&quot; outputs frames as individual files with numbers attached to each filename.</p>
@@ -146,30 +147,30 @@ For example, if the width and height are 256 and the Scale is 2, the 256 range i
 <p>&quot;Export as a AVI&quot; outputs the captured effect to an uncompressed animation file.</p>
 <table><tbody><tr><td>Export as a single image</td><td>Export images</td><td>Export as a gif animation</td></tr><tr><td><img src="../../img/Reference/record_single.jpg"/></td><td><img src="../../img/Reference/record_seq.jpg"/></td><td><img src="../../img/Reference/record_gifanim.gif"/></td></tr></tbody></table></div>
 <div class="section" id="options">
-<h3>Options<a class="headerlink" href="#options" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>Options<a class="headerlink" href="#options" title="Permalink to this heading">¶</a></h3>
 </div>
 <div class="section" id="make-transparent">
-<h3>Make transparent<a class="headerlink" href="#make-transparent" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>Make transparent<a class="headerlink" href="#make-transparent" title="Permalink to this heading">¶</a></h3>
 <p>It specifies how to handle the background except gif animation.</p>
 <div class="section" id="none">
-<h4>None<a class="headerlink" href="#none" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<h4>None<a class="headerlink" href="#none" title="Permalink to this heading">¶</a></h4>
 <p>It specifies black color to the background.</p>
 <img alt="../../_images/none.png" class="align-center" src="../../_images/none.png" />
 </div>
 <div class="section" id="original-image">
-<h4>Original image<a class="headerlink" href="#original-image" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<h4>Original image<a class="headerlink" href="#original-image" title="Permalink to this heading">¶</a></h4>
 <p>It specifies transparent to the background.
 If images with a black background are used with additive, it sometimes generates wrong image.</p>
 <img alt="../../_images/original.png" class="align-center" src="../../_images/original.png" />
 </div>
 <div class="section" id="generate-alpha">
-<h4>Generate alpha<a class="headerlink" href="#generate-alpha" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<h4>Generate alpha<a class="headerlink" href="#generate-alpha" title="Permalink to this heading">¶</a></h4>
 <p>It generates alpha channel automatically.
 If images with dark color are used with blend, it sometimes generates wrong image.</p>
 <img alt="../../_images/generate.png" class="align-center" src="../../_images/generate.png" />
 </div>
 <div class="section" id="generate-alpha-blend-add">
-<h4>Generate alpha(Blend+Add)<a class="headerlink" href="#generate-alpha-blend-add" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<h4>Generate alpha(Blend+Add)<a class="headerlink" href="#generate-alpha-blend-add" title="Permalink to this heading">¶</a></h4>
 <p>By outputting the recorded results separately from blend and addition,
 the color when the background is changed can be reproduced in the possible range.
 It can also record an effect which contains blend and additive particles.</p>
@@ -178,13 +179,13 @@ It can also record an effect which contains blend and additive particles.</p>
 <img alt="../../_images/blend_add_desc.png" class="align-center" src="../../_images/blend_add_desc.png" />
 <iframe width="560" height="315" src="https://www.youtube.com/embed/XqhE_pllD90" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 <div class="section" id="comparison-of-methods">
-<h4>Comparison of methods<a class="headerlink" href="#comparison-of-methods" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<h4>Comparison of methods<a class="headerlink" href="#comparison-of-methods" title="Permalink to this heading">¶</a></h4>
 <p>From left to right, None, Original image, Generate alpha, Generate alpha(Blend+Add) images are displayed.</p>
 <img alt="../../_images/compare.png" class="align-center" src="../../_images/compare.png" />
 </div>
 </div>
 <div class="section" id="setting-save-destination">
-<h3>Setting save destination<a class="headerlink" href="#setting-save-destination" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>Setting save destination<a class="headerlink" href="#setting-save-destination" title="Permalink to this heading">¶</a></h3>
 <p>It can specify whether to save the recording settings to the application or the project.</p>
 </div>
 </div>

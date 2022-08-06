@@ -14,6 +14,7 @@
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
         <script src="../../_static/js/three.min.js"></script>
         <script src="../../_static/js/effekseer.min.js"></script>
@@ -101,18 +102,18 @@
            <div itemprop="articleBody">
              
   <div class="section" id="let-s-spread-the-particles">
-<h1>02.Let's spread the particles!<a class="headerlink" href="#let-s-spread-the-particles" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<h1>02.Let's spread the particles!<a class="headerlink" href="#let-s-spread-the-particles" title="Permalink to this heading">¶</a></h1>
 <div class="main"><div class="section" id="overview">
-<h2>Overview<a class="headerlink" href="#overview" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this heading">¶</a></h2>
 <p>In this chapter, You will disperse the particles.&lt;&gt;
 This chapter is not enough to make cool effects, but you can learn the basic operation of Effekseer.
 Based on the knowledge learned in this chapter, you will create a cool effect in the next chapter.
 Therefore, let's understand firmly.</p>
 <iframe src='../../Sample/viewer_en.html#02_Sample/effect.efk'></iframe></div>
 <div class="section" id="edit-location">
-<h2>Edit location<a class="headerlink" href="#edit-location" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>Edit location<a class="headerlink" href="#edit-location" title="Permalink to this heading">¶</a></h2>
 <div class="section" id="edit-initial-location">
-<h3>Edit initial location<a class="headerlink" href="#edit-initial-location" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>Edit initial location<a class="headerlink" href="#edit-initial-location" title="Permalink to this heading">¶</a></h3>
 <p>Currently, particles are shown in the center. Let's move this particle from the center.</p>
 <div align="center">
 <img src="../../img/Tutorial/01_square.png">
@@ -145,7 +146,7 @@ Although it may be surprised if it is the first time, only a part of parameters 
 <p>Move to the outside</p>
 </div></div>
 <div class="section" id="make-the-particle-move">
-<h3>Make the particle move<a class="headerlink" href="#make-the-particle-move" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>Make the particle move<a class="headerlink" href="#make-the-particle-move" title="Permalink to this heading">¶</a></h3>
 <p>It is not fun when the particle is frozen. Let's move the particle.</p>
 <p>Effekseer has several ways to specify the position.</p>
 <p>Although the position is fixed in the initial setting, there is a specification method that can specify speed and acceleration.</p>
@@ -166,7 +167,7 @@ You will be able to set particle velocity and acceleration, so you can move the 
 </div><p>Let's try to see how behavior changes by entering other numbers.</p>
 </div>
 <div class="section" id="display-multiple-particles">
-<h3>Display multiple particles<a class="headerlink" href="#display-multiple-particles" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>Display multiple particles<a class="headerlink" href="#display-multiple-particles" title="Permalink to this heading">¶</a></h3>
 <p>There are little effects constructed of single particle.
 Let's display multiple particles.</p>
 <p>The number of particles is set to the spawn count in the &quot;Basic Settings&quot; window.
@@ -189,7 +190,7 @@ However, as all the particles move in the same direction, the particles will be 
 <p>Add spawn count</p>
 </div></div>
 <div class="section" id="move-randomly-for-each-particle">
-<h3>Move randomly for each particle<a class="headerlink" href="#move-randomly-for-each-particle" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>Move randomly for each particle<a class="headerlink" href="#move-randomly-for-each-particle" title="Permalink to this heading">¶</a></h3>
 <p>When the particle movement direction is the same, the particles will be displayed overlapping.
 So, let's move randomly for each particle.</p>
 <p>Let's enter 0.1 for the xyz deviation of the speed. In addition, we reset 0.1 which was input to mean earlier to 0.</p>
@@ -204,7 +205,7 @@ That is, the particles move to the entire periphery around (0, 0, 0).</p>
 <p>Random</p>
 </div></div>
 <div class="section" id="shorten-the-time-when-particles-are-displayed">
-<h3>Shorten the time when particles are displayed<a class="headerlink" href="#shorten-the-time-when-particles-are-displayed" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>Shorten the time when particles are displayed<a class="headerlink" href="#shorten-the-time-when-particles-are-displayed" title="Permalink to this heading">¶</a></h3>
 <p>Although particles are displayed for a long time now, some effects are displayed for a short time, depending on the effect.
 Let's shorten the display time.</p>
 <p>There is a parameter called Time to live in the common window.
@@ -222,7 +223,7 @@ Let's shorten this parameter. I entered 30 this time.</p>
 </div></div>
 </div>
 <div class="section" id="summary">
-<h2>Summary<a class="headerlink" href="#summary" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>Summary<a class="headerlink" href="#summary" title="Permalink to this heading">¶</a></h2>
 <p>This time I created multiple particles and made move.
 In the next chapter, you will edit from a particle to look more like an effect.</p>
 </div></div>

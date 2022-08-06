@@ -14,6 +14,7 @@
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
         <script src="../../_static/js/three.min.js"></script>
         <script src="../../_static/js/effekseer.min.js"></script>
@@ -101,27 +102,27 @@
            <div itemprop="articleBody">
              
   <div class="section" id="let-s-display-the-image">
-<h1>03. Let's display the image!<a class="headerlink" href="#let-s-display-the-image" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<h1>03. Let's display the image!<a class="headerlink" href="#let-s-display-the-image" title="Permalink to this heading">¶</a></h1>
 <div class="main"><div class="section" id="overview">
-<h2>Overview<a class="headerlink" href="#overview" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this heading">¶</a></h2>
 <p>In this chapter, images are displayed on particles.
 Until now it was a white square, but the white square changes to an image.
 In addition, we will gradually make the particles transparent and change color.</p>
 <iframe src='../../Sample/viewer_en.html#03_02_Sample/effect.efk'></iframe></div>
 <div class="section" id="preliminary-knowledge-when-the-window-is-closed-the-arrangement-of-windows-is-wrong">
-<h2>Preliminary knowledge - When the window is closed, the arrangement of windows is wrong<a class="headerlink" href="#preliminary-knowledge-when-the-window-is-closed-the-arrangement-of-windows-is-wrong" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>Preliminary knowledge - When the window is closed, the arrangement of windows is wrong<a class="headerlink" href="#preliminary-knowledge-when-the-window-is-closed-the-arrangement-of-windows-is-wrong" title="Permalink to this heading">¶</a></h2>
 <p>If you switch windows, the placement may become strange or it may close.
 In that case, select &quot;Window&quot; in the menu bar.
 When &quot;Reset Window Position&quot; is selected, the position of each window is returned to the initial position.
 If you select the name of each window, you can open that window.</p>
 </div>
 <div class="section" id="display-image">
-<h2>Display image<a class="headerlink" href="#display-image" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>Display image<a class="headerlink" href="#display-image" title="Permalink to this heading">¶</a></h2>
 <p>It is troublesome to prepare images yourself, so we can download the pre-created effects from the link below.</p>
 <div align="center">
 <a href = "../../Sample/03_01_Sample.zip">Download</a>
 </div><div class="section" id="image-settings">
-<h3>Image settings<a class="headerlink" href="#image-settings" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>Image settings<a class="headerlink" href="#image-settings" title="Permalink to this heading">¶</a></h3>
 <p>Let's set the image to the white square immediately.
 The image is set from the &quot;Basic Render Settings&quot; window.
 Click the icon of &quot;Basic Render Settings&quot; on the tab on the upper right.</p>
@@ -145,7 +146,7 @@ When you select an image, the image will also be displayed on Effekseer.</p>
 <p>Image</p>
 </div></div>
 <div class="section" id="fade-in-and-out-settings">
-<h3>Fade in and out settings<a class="headerlink" href="#fade-in-and-out-settings" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>Fade in and out settings<a class="headerlink" href="#fade-in-and-out-settings" title="Permalink to this heading">¶</a></h3>
 <p>It is unnatural for particles to appear suddenly or disappear.
 Let's set fade in and fade out so that the transparency change.</p>
 <p>Fade in can be set by changing the value of fade in in the &quot;Basic Render Settings&quot; window.
@@ -160,7 +161,7 @@ We will enter 15 for both this time.</p>
 <p>Fade</p>
 </div></div>
 <div class="section" id="sprite">
-<h3>Sprite<a class="headerlink" href="#sprite" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>Sprite<a class="headerlink" href="#sprite" title="Permalink to this heading">¶</a></h3>
 <p>Effekseer has several drawing methods.
 The default method is &quot;Sprite&quot;. You can draw rectangular particles.
 Although it is difficult only by the contents described up to this chapter, you can create such an effect.</p>
@@ -176,7 +177,7 @@ Let's display the &quot;Render Settings&quot; window as it displayed the &quot;B
 <img src="../../img/Tutorial/03_render_en.png">
 <p>"Render Settings" window</p>
 </div><div class="section" id="color-settings">
-<h4>Color settings<a class="headerlink" href="#color-settings" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<h4>Color settings<a class="headerlink" href="#color-settings" title="Permalink to this heading">¶</a></h4>
 <p>You have set transparency with fade in, but You cannot set the color of the particles.
 Although there is no problem if the image is colorful, you will need to prepare multiple images to change the color for each particle.
 Therefore, you can specify a rough trend of color of particles if a sprite is selected.</p>
@@ -197,7 +198,7 @@ Then you set the min of the value to 0. This means that values are randomly chos
 </div></div>
 </div>
 <div class="section" id="blend-settings">
-<h3>Blend settings<a class="headerlink" href="#blend-settings" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>Blend settings<a class="headerlink" href="#blend-settings" title="Permalink to this heading">¶</a></h3>
 <p>Effekseer allows you to set the method of alpha blending of particles.
 Blend is a method of combining particles and background.
 As shown in the figure below, you can just draw particles or add it to the background.</p>
@@ -219,7 +220,7 @@ You can set the blend method in the &quot;Basic Render Settings&quot; window.</p
 </div></div>
 </div>
 <div class="section" id="summery">
-<h2>Summery<a class="headerlink" href="#summery" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>Summery<a class="headerlink" href="#summery" title="Permalink to this heading">¶</a></h2>
 <p>In this chapter, we changed the sprite parameters to improve the appearance of the particles.
 In the next chapter, we will explain the shape of sprites, rotation and enlargement of particles.</p>
 </div></div>

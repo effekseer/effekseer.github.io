@@ -14,6 +14,7 @@
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
         <script src="../../_static/js/three.min.js"></script>
         <script src="../../_static/js/effekseer.min.js"></script>
@@ -111,32 +112,32 @@
            <div itemprop="articleBody">
              
   <div class="section" id="id1">
-<h1>描画共通<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<h1>描画共通<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h1>
 <div class="section" id="id2">
-<h2>概要<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>概要<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
 <p>全ての描画方法に共通するパラメーターを設定する「描画共通」について説明します。</p>
 </div>
 <div class="section" id="id3">
-<h2>パラメーター<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>パラメーター<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h2>
 <div align="center">
 <img src="../../img/Tutorial/03_rendercommon_ja.png">
 <p>「描画共通」ウインドウ</p>
 </div><div class="section" id="id4">
-<h3>マテリアル<a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>マテリアル<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h3>
 <p>パーティクルの表示に使用する材質を指定します。
 光源の影響を受けたり、背景を歪ませたりといった設定をできます。</p>
 <div class="section" id="id5">
-<h4>標準<a class="headerlink" href="#id5" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<h4>標準<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h4>
 <p>色画像に設定された画像をそのまま表示します。</p>
 <iframe src='../../Effects/viewer_ja.html#References/BasicRender/render_unlit.efkefc'></iframe></div>
 <div class="section" id="id6">
-<h4>ライティング<a class="headerlink" href="#id6" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<h4>ライティング<a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h4>
 <p>パーティクルが光源の影響を受けるようになります。
 色画像の他に、法線画像を設定できます。
 法線画像を設定すると表面の向きが変わるようになります。</p>
 <iframe src='../../Effects/viewer_ja.html#References/BasicRender/render_lit.efkefc'></iframe></div>
 <div class="section" id="id7">
-<h4>歪み(背景)<a class="headerlink" href="#id7" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<h4>歪み(背景)<a class="headerlink" href="#id7" title="Permalink to this heading">¶</a></h4>
 <p>背景を歪ませます。
 歪み画像と歪み強度により、歪み方を設定できます。</p>
 <p>歪みの設定が有効な場合、パーティクルが背景を歪ませるようになります。歪み方は歪み画像、各描画の色の設定、歪み強度に依存します。</p>
@@ -148,7 +149,7 @@
 </td></tr><tr><td><img src="../../img/Reference/renderCommon_distortion_on.gif"/></td><td><img src="../../img/Reference/renderCommon_distortion_off.gif"/></td></tr></tbody></table><p>標準設定の場合、歪みは自分のエフェクト自体を歪ませずに背景のみを歪ませます。 歪みで自分のエフェクトの他のノードを歪ませる場合、深度パネルから描画優先度を設定します。 描画優先度が0未満のノードは自分のエフェクトのノードの歪みにより、背景と共に歪ませられます。</p>
 </div>
 <div class="section" id="id8">
-<h4>ファイル<a class="headerlink" href="#id8" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<h4>ファイル<a class="headerlink" href="#id8" title="Permalink to this heading">¶</a></h4>
 <p>ユーザーが作成したマテリアルのファイルを表示に使用します。
 最も幅広い表現を実現できます。</p>
 <p>ボタンを押すとマテリアルのファイルを作成、編集できます。</p>
@@ -157,7 +158,7 @@
 カスタムパラメーターには定数以外にもイージングやFカーブといった方法によりパラメーターを指定できます。
 カスタムパラメーターの表示される名称はマテリアルのファイルによって変わります。</p>
 <div class="section" id="id9">
-<h5>キャッシュ<a class="headerlink" href="#id9" title="このヘッドラインへのパーマリンク">¶</a></h5>
+<h5>キャッシュ<a class="headerlink" href="#id9" title="Permalink to this heading">¶</a></h5>
 <p>マテリアルの読み込みを早くするためや特定のプラットフォームでエフェクトを再生するために、マテリアルをコンパイルした形式で保存できます。
 そのファイルを生成するには、マテリアルを読み込んだ後、<code class="docutils literal notranslate"><span class="pre">キャッシュ生成</span></code> を押します。</p>
 <p>生成されたキャッシュをマテリアルファイルと同じディレクトリに配置すると読み込みが速くなります。
@@ -167,51 +168,51 @@ Windowsでキャッシュを生成した後、キャッシュが存在する状�
 </div>
 </div>
 <div class="section" id="id10">
-<h3>エミッシブ倍率<a class="headerlink" href="#id10" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>エミッシブ倍率<a class="headerlink" href="#id10" title="Permalink to this heading">¶</a></h3>
 <p>指定された値をパーティクルの色に掛けます。値が大きいほど色が明るくなります。値が1のとき、画像をそのまま使用します。
 マテリアルが標準かライティングのときのみ有効です。
 HDRに対応した環境以外では、値を大きくすると色がおかしくなる可能性があります。</p>
 <img alt="../../_images/EmmisiveScaling.png" class="align-center" src="../../_images/EmmisiveScaling.png" />
 </div>
 <div class="section" id="id11">
-<h3>ブレンド<a class="headerlink" href="#id11" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>ブレンド<a class="headerlink" href="#id11" title="Permalink to this heading">¶</a></h3>
 <p>パーティクルの表示に適用されるアルファブレンドの方法を指定します。半透明、加算、減算といった既に描画された画像に対する合成の方法を指定します。</p>
 <p><img alt="../../_images/AlphaBlend.png" src="../../_images/AlphaBlend.png" /></p>
 </div>
 <div class="section" id="id12">
-<h3>フィルタ<a class="headerlink" href="#id12" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>フィルタ<a class="headerlink" href="#id12" title="Permalink to this heading">¶</a></h3>
 <p>パーティクルの表示に適用されるフィルタの方法を指定します。</p>
 </div>
 <div class="section" id="id13">
-<h3>深度書き込み<a class="headerlink" href="#id13" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>深度書き込み<a class="headerlink" href="#id13" title="Permalink to this heading">¶</a></h3>
 <p>パーティクルを表示するときに深度(奥行き)情報を書き込むか指定します。深度情報を書き込んだ後に、深度テストが有効になっているパーティクルを描画すると、そのパーティクルが奥にある場合、描画されなくなります。</p>
 </div>
 <div class="section" id="id14">
-<h3>深度テスト<a class="headerlink" href="#id14" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>深度テスト<a class="headerlink" href="#id14" title="Permalink to this heading">¶</a></h3>
 <p>深度テストが有効である場合、書き込まれている深度情報より奥にパーティクルが描画されなくなります。</p>
 </div>
 <div class="section" id="id15">
-<h3>フェードイン<a class="headerlink" href="#id15" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>フェードイン<a class="headerlink" href="#id15" title="Permalink to this heading">¶</a></h3>
 <p>パーティクルが表示されるときに、フェードインしつつ表示されるようにします。</p>
 </div>
 <div class="section" id="id16">
-<h3>フェードアウト<a class="headerlink" href="#id16" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>フェードアウト<a class="headerlink" href="#id16" title="Permalink to this heading">¶</a></h3>
 <p>パーティクルが消滅するときに、フェードアウトしつつ消滅するようにします。</p>
 <iframe src='../../Effects/viewer_ja.html#References/Render/fade_in_out.efkefc'></iframe></div>
 <div class="section" id="uv">
-<h3>UV<a class="headerlink" href="#uv" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>UV<a class="headerlink" href="#uv" title="Permalink to this heading">¶</a></h3>
 <p>画像で、実際にパーティクルの表示に使用する範囲を指定します。
 使用される範囲は時間で変化させられるため、画像をアニメーションさせられます。 領域の指定に使用される数値の単位はピクセルです。</p>
 <div class="section" id="id17">
-<h4>アニメーション<a class="headerlink" href="#id17" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<h4>アニメーション<a class="headerlink" href="#id17" title="Permalink to this heading">¶</a></h4>
 <p>アニメーションが連続して配置されている画像を元に、アニメーションを再生します。</p>
 <p><img alt="../../_images/renderCommon_uv_animation.png" src="../../_images/renderCommon_uv_animation.png" /></p>
 <div class="section" id="id18">
-<h5>開始時間<a class="headerlink" href="#id18" title="このヘッドラインへのパーマリンク">¶</a></h5>
+<h5>開始時間<a class="headerlink" href="#id18" title="Permalink to this heading">¶</a></h5>
 <p>再生を開始するアニメーションの時間を指定します。 例えば、4枚の画像で構成されるアニメーションで2枚目から再生できます。</p>
 </div>
 <div class="section" id="id19">
-<h5>アニメーション補間<a class="headerlink" href="#id19" title="このヘッドラインへのパーマリンク">¶</a></h5>
+<h5>アニメーション補間<a class="headerlink" href="#id19" title="Permalink to this heading">¶</a></h5>
 <ul class="simple">
 <li><p>なし</p></li>
 </ul>
@@ -224,17 +225,17 @@ HDRに対応した環境以外では、値を大きくすると色がおかし�
 <div class="video_center"><video autoplay loop="true" muted="true" src="../../movies/Reference/BasicRenderSettings/Flip_Lerp.mp4"/></div></div>
 </div>
 <div class="section" id="id20">
-<h4>スクロール<a class="headerlink" href="#id20" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<h4>スクロール<a class="headerlink" href="#id20" title="Permalink to this heading">¶</a></h4>
 <p>一定の速度でUVの範囲を移動させます。</p>
 <p><img alt="../../_images/renderCommon_uv_scroll.png" src="../../_images/renderCommon_uv_scroll.png" /></p>
 </div>
 <div class="section" id="f">
-<h4>Fカーブ<a class="headerlink" href="#f" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<h4>Fカーブ<a class="headerlink" href="#f" title="Permalink to this heading">¶</a></h4>
 <p>Fカーブを使用します。</p>
 </div>
 </div>
 <div class="section" id="id21">
-<h3>参照画像(UV)<a class="headerlink" href="#id21" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>参照画像(UV)<a class="headerlink" href="#id21" title="Permalink to this heading">¶</a></h3>
 <p>1つのパーティクルに異なる大きさの複数の画像が使用されることがあります。
 その場合、比率の基準となる解像度を画像を用いて指定することが出来ます。
 画像を指定せずに、128x128を基準にUVを指定することもできます。</p>
@@ -242,7 +243,7 @@ HDRに対応した環境以外では、値を大きくすると色がおかし�
 <p><img alt="../../_images/uv_referenced.png" src="../../_images/uv_referenced.png" /></p>
 </div>
 <div class="section" id="id22">
-<h3>色への影響<a class="headerlink" href="#id22" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>色への影響<a class="headerlink" href="#id22" title="Permalink to this heading">¶</a></h3>
 <p>親のパーティクルの色が子のパーティクルの色に影響を与えるか、を指定します。 影響を与える場合、親のパーティクルの色と子のパーティクルの色を掛け合わせた色が最終的な子のパーティクルの色になります。 「生成時のみ」を選択した場合、子のパーティクルが生成された時の親のパーティクルの色が常に適用されます。</p>
 <table><tbody><tr><td><p>なし</p>
 </td><td><p>生成時のみ</p>

@@ -14,6 +14,7 @@
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
         <script src="../../_static/js/three.min.js"></script>
         <script src="../../_static/js/effekseer.min.js"></script>
@@ -101,22 +102,22 @@
            <div itemprop="articleBody">
              
   <div class="section" id="id1">
-<h1>05. ヒットマーク(斬撃)を作成しよう！<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<h1>05. ヒットマーク(斬撃)を作成しよう！<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h1>
 <div class="main"><div class="section" id="id2">
-<h2>概要<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>概要<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
 <p>本章では、実際のゲームに使用されるような斬撃が命中したエフェクト(ヒットマーク)を作成します。
 真ん中に剣線が入り、周囲に細かい衝撃が飛ぶようなエフェクトです。
 その際、新しい内容として、ノードのコピー、追加とイージングについて説明します。</p>
 <iframe src='../../Sample/viewer_ja.html#05_02_Sample/effect.efk'></iframe></div>
 <div class="section" id="id3">
-<h2>準備<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>準備<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h2>
 <p>あらかじめ作成途中のエフェクトを下記のリンクからダウンロードできるようにしました。</p>
 <div align="center">
 <a href = "../../Sample/05_01_Sample.zip">ダウンロード</a>
 </div><p>今回作成するエフェクトの長さは約0.5秒なので、「ビュワー操作」ウインドウの「終了」を30フレームにしています。</p>
 </div>
 <div class="section" id="id4">
-<h2>イージング<a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>イージング<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h2>
 <p>今回は様々なパラメーターにイージングを使用することが多いです。</p>
 <p>イージングとは、始点と終点の値を指定して、間の値は自動的に補完される指定方法です。</p>
 <p>下記の図で示すように、今まで、位置、回転、拡大は速度(1)や加速度で指定していました。
@@ -143,7 +144,7 @@
 <p>補完方法</p>
 </div></div>
 <div class="section" id="id5">
-<h2>作成<a class="headerlink" href="#id5" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>作成<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h2>
 <p>エフェクトは一種類のパーティクルだけでなく、複数種類の全く異なる見た目のパーティクルで構成されることが多いです。
 Effekseerでも、ノードを複数持つことができます。ノードごとに全く異なるパラメーターを与えることができます。
 ヒットマークも複数のノードで構成する必要があります。今回は順番にノードを作成していきます。</p>
@@ -153,7 +154,7 @@ Effekseerでも、ノードを複数持つことができます。ノードご�
 <li><p>色は紫色(255,32,255)～ピンク(255,128,255)</p></li>
 </ul>
 <div class="section" id="id6">
-<h3>剣線ノード<a class="headerlink" href="#id6" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>剣線ノード<a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h3>
 <p>剣線を表す、45度の角度で細長く切るノードを作成します。</p>
 <p>剣線は0.33秒(20フレーム)の間に、45度方向に細長く伸びるように指定します。
 パーティクルに傾いてほしいので、Z軸回転ビルボードを指定しています。</p>
@@ -255,7 +256,7 @@ Effekseerでも、ノードを複数持つことができます。ノードご�
 <p>剣線ノード</p>
 </div></div>
 <div class="section" id="id7">
-<h3>衝撃ノード<a class="headerlink" href="#id7" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>衝撃ノード<a class="headerlink" href="#id7" title="Permalink to this heading">¶</a></h3>
 <p>攻撃がヒットした時に、剣線だけではなく衝撃も発生します。
 剣線と同じように作成します。</p>
 <p>剣線ノードと衝撃ノードはパラメーターが異なるため、ノードを追加する必要があります。
@@ -372,7 +373,7 @@ Effekseerでも、ノードを複数持つことができます。ノードご�
 <p>衝撃ノード</p>
 </div></div>
 <div class="section" id="id8">
-<h3>発光ノードその1<a class="headerlink" href="#id8" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>発光ノードその1<a class="headerlink" href="#id8" title="Permalink to this heading">¶</a></h3>
 <p>命中した瞬間にエフェクトが発行した方が見栄えがいいです。
 これも剣線ノードと同じように設定します。</p>
 <p>値を以下の通りに変更します。</p>
@@ -447,7 +448,7 @@ Effekseerでも、ノードを複数持つことができます。ノードご�
 <p>発光ノードその1</p>
 </div></div>
 <div class="section" id="id9">
-<h3>発光ノードその2<a class="headerlink" href="#id9" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>発光ノードその2<a class="headerlink" href="#id9" title="Permalink to this heading">¶</a></h3>
 <p>まだ、発光が地味なので、発光を追加します。
 この発光ですが、先ほど作成した発光ノードとほとんど変わりません。
 Effekseerではノードをコピーできます。</p>
@@ -491,7 +492,7 @@ Effekseerではノードをコピーできます。</p>
 </div></div>
 </div>
 <div class="section" id="id10">
-<h2>まとめ<a class="headerlink" href="#id10" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>まとめ<a class="headerlink" href="#id10" title="Permalink to this heading">¶</a></h2>
 <p>本章では、実際にゲームで使用できそうなエフェクトを作成しました。
 次章では、さらに複雑なエフェクトを作成していきます。</p>
 </div></div>

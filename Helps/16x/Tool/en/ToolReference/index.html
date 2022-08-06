@@ -14,6 +14,7 @@
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
         <script src="../../_static/js/three.min.js"></script>
         <script src="../../_static/js/effekseer.min.js"></script>
@@ -130,23 +131,23 @@
            <div itemprop="articleBody">
              
   <div class="section" id="tool-reference">
-<h1>Tool-Reference<a class="headerlink" href="#tool-reference" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<h1>Tool-Reference<a class="headerlink" href="#tool-reference" title="Permalink to this heading">¶</a></h1>
 <div class="section" id="overview">
-<h2>Overview<a class="headerlink" href="#overview" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this heading">¶</a></h2>
 <div class="section" id="tool">
-<h3>Tool<a class="headerlink" href="#tool" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>Tool<a class="headerlink" href="#tool" title="Permalink to this heading">¶</a></h3>
 <p>This tool consists of a viewer section to preview effects and multiple windows to edit the effects' parameters. By editing the parameters in each window, you can create an effect and change its appearance and behavior. By dragging and dropping each window, you can rearrange them as you please, or collapse them into tabs. By selecting &quot;Menu bar -&gt; Window&quot;, you can access windows that are not visible in the default view. Also, you can reset all windows back to their default locations.</p>
 </div>
 <div class="section" id="effect">
-<h3>Effect<a class="headerlink" href="#effect" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>Effect<a class="headerlink" href="#effect" title="Permalink to this heading">¶</a></h3>
 <p>With this tool, you create an effect by editing nodes. Nodes have parent-child relationships, where children are influenced by their parents. By utilizing the parent-child relationships, it is possible to create complex effects.</p>
 <p>I will explain parent-child relationships using an example. In this example, node 2 is the child of node 1, and node 3 is the child of node 2. An effect 1 particle will be generated from node 1. After a few frames, several effect 2 particles will be generated relative to the position of the effect 1 particle generated from node 1. After a few more frames, several effect 3 particles will be generated relative to the positions of each of the node 2 particles. This is shown in the figure below. In this way, by describing the behavior of the effect through parent-child relationships on the nodes, a much greater variety of effects can be expressed. In this tool, one effect generated based on the parameters within a &quot;node&quot; is called a &quot;particle&quot;.</p>
 <img alt="../../_images/overview_en.png" class="align-center" src="../../_images/overview_en.png" />
 </div>
 <div class="section" id="how-to-operate">
-<h3>How to operate<a class="headerlink" href="#how-to-operate" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>How to operate<a class="headerlink" href="#how-to-operate" title="Permalink to this heading">¶</a></h3>
 <div class="section" id="preview">
-<h4>Preview<a class="headerlink" href="#preview" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<h4>Preview<a class="headerlink" href="#preview" title="Permalink to this heading">¶</a></h4>
 <div align="center">
 <table border="1">
 <tr>
@@ -164,20 +165,20 @@
 </table>
 </div></div>
 <div class="section" id="how-to-input-a-value">
-<h4>How to input a value<a class="headerlink" href="#how-to-input-a-value" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<h4>How to input a value<a class="headerlink" href="#how-to-input-a-value" title="Permalink to this heading">¶</a></h4>
 <p>A value can be entered from the keyboard by left-clicking a text entry box with the mouse.</p>
 <p>Left-click and drag a text entry box to change the value gradually.</p>
 <img alt="../../_images/input_value.png" class="align-center" src="../../_images/input_value.png" />
 </div>
 <div class="section" id="how-to-input-a-color">
-<h4>How to input a color<a class="headerlink" href="#how-to-input-a-color" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<h4>How to input a color<a class="headerlink" href="#how-to-input-a-color" title="Permalink to this heading">¶</a></h4>
 <p>In addition to the text box, the color can be entered by left-clicking the color field with the mouse.</p>
 <img alt="../../_images/input_color_basic.png" class="align-center" src="../../_images/input_color_basic.png" />
 <p>Left-click and drag a color field to copy the value to another color field.</p>
 <img alt="../../_images/input_color.png" class="align-center" src="../../_images/input_color.png" />
 </div>
 <div class="section" id="node-tree">
-<h4>Node Tree<a class="headerlink" href="#node-tree" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<h4>Node Tree<a class="headerlink" href="#node-tree" title="Permalink to this heading">¶</a></h4>
 <p>In the node tree, you can edit the nodes that compose the effect.
 You can right-click to add or delete a node.</p>
 <p>You can drag &amp; drop nodes to reorder them.</p>
@@ -186,7 +187,7 @@ You can shift and click at the same time to toggle display, including child node
 <img alt="../../_images/node_tree.png" class="align-center" src="../../_images/node_tree.png" />
 </div>
 <div class="section" id="panels-windows">
-<h4>Panels (Windows)<a class="headerlink" href="#panels-windows" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<h4>Panels (Windows)<a class="headerlink" href="#panels-windows" title="Permalink to this heading">¶</a></h4>
 <p>There are very few panels (windows) available for editing the parameters you create for your effects.
 If you select &quot;Window&quot; from the menu bar, you will see a list of windows that can be displayed.
 If you select it, the window will appear.</p>
@@ -199,16 +200,16 @@ If you select it, the window will appear.</p>
 </div>
 </div>
 <div class="section" id="file-format">
-<h3>File Format<a class="headerlink" href="#file-format" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>File Format<a class="headerlink" href="#file-format" title="Permalink to this heading">¶</a></h3>
 <div class="section" id="effect-file-efkefc">
-<h4>Effect file (efkefc)<a class="headerlink" href="#effect-file-efkefc" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<h4>Effect file (efkefc)<a class="headerlink" href="#effect-file-efkefc" title="Permalink to this heading">¶</a></h4>
 <p>An effect is saved in a file with &quot;efkefc&quot; format.
 This file can be editted and played with a runtime in a game.</p>
 <p>Until version 1.4, the roles were separated from efkproj for tool editing and efk for game playback.
 For compatibility, the current version can read efkproj and efk.</p>
 </div>
 <div class="section" id="resource-file">
-<h4>Resource file<a class="headerlink" href="#resource-file" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<h4>Resource file<a class="headerlink" href="#resource-file" title="Permalink to this heading">¶</a></h4>
 <p>A few resource files referenced by the effect. There are general file formats and Effekseer's own file formats.</p>
 <table border="1" class="docutils">
 <thead>
@@ -241,7 +242,7 @@ For compatibility, the current version can read efkproj and efk.</p>
 </tbody>
 </table></div>
 <div class="section" id="package-file-efkpkg">
-<h4>Package file (efkpkg)<a class="headerlink" href="#package-file-efkpkg" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<h4>Package file (efkpkg)<a class="headerlink" href="#package-file-efkpkg" title="Permalink to this heading">¶</a></h4>
 <p>An efkpkg file is a package file that contains one or more efkefc files and various resource files.</p>
 <p>When you export, the resource files referenced by the effect are automatically packaged with it.
 It can be imported and used in another project of yourself or someone else.</p>
@@ -253,7 +254,7 @@ It can be imported and used in another project of yourself or someone else.</p>
 </div>
 </div>
 <div class="section" id="effect-parameters">
-<h2>Effect parameters<a class="headerlink" href="#effect-parameters" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>Effect parameters<a class="headerlink" href="#effect-parameters" title="Permalink to this heading">¶</a></h2>
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="common.html">Basic settings</a></li>
@@ -280,7 +281,7 @@ It can be imported and used in another project of yourself or someone else.</p>
 </div>
 </div>
 <div class="section" id="effect-features">
-<h2>Effect features<a class="headerlink" href="#effect-features" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>Effect features<a class="headerlink" href="#effect-features" title="Permalink to this heading">¶</a></h2>
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="image.html">About images</a></li>
@@ -289,7 +290,7 @@ It can be imported and used in another project of yourself or someone else.</p>
 </div>
 </div>
 <div class="section" id="tool-functions">
-<h2>Tool functions<a class="headerlink" href="#tool-functions" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>Tool functions<a class="headerlink" href="#tool-functions" title="Permalink to this heading">¶</a></h2>
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="behavior.html">Behavior</a></li>
@@ -304,7 +305,7 @@ It can be imported and used in another project of yourself or someone else.</p>
 </div>
 </div>
 <div class="section" id="command-line">
-<h2>Command Line<a class="headerlink" href="#command-line" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>Command Line<a class="headerlink" href="#command-line" title="Permalink to this heading">¶</a></h2>
 <p>When starting Effekseer from the command line, you can change the behavior of Effekseer by adding arguments. For example, you can convert &quot;.efkproj&quot; files to &quot;.efk&quot; without activating the Effekseer GUI. By combining this with a script, you can batch convert effect files in any folder at once.</p>
 <table class="colwidths-given docutils align-default" id="id1">
 <caption><span class="caption-text">Command Line</span><a class="headerlink" href="#id1" title="このテーブルへのパーマリンク">¶</a></caption>

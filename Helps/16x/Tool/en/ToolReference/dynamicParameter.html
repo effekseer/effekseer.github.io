@@ -14,6 +14,7 @@
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
         <script src="../../_static/js/three.min.js"></script>
         <script src="../../_static/js/effekseer.min.js"></script>
@@ -111,29 +112,29 @@
            <div itemprop="articleBody">
              
   <div class="section" id="dynamicparameter">
-<h1>DynamicParameter<a class="headerlink" href="#dynamicparameter" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<h1>DynamicParameter<a class="headerlink" href="#dynamicparameter" title="Permalink to this heading">¶</a></h1>
 <div class="section" id="overview">
-<h2>Overview<a class="headerlink" href="#overview" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this heading">¶</a></h2>
 <p>DynamicParameter specifies a parameter to rewrite refresh (during game) effect parameters during effect playback.
 It controls parameters with simple code. Parameters can be given externally.</p>
 </div>
 <div class="section" id="how-to-use">
-<h2>How to use<a class="headerlink" href="#how-to-use" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>How to use<a class="headerlink" href="#how-to-use" title="Permalink to this heading">¶</a></h2>
 <div class="section" id="basic">
-<h3>Basic<a class="headerlink" href="#basic" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>Basic<a class="headerlink" href="#basic" title="Permalink to this heading">¶</a></h3>
 <div class="section" id="panel">
-<h4>Panel<a class="headerlink" href="#panel" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<h4>Panel<a class="headerlink" href="#panel" title="Permalink to this heading">¶</a></h4>
 <p>Open the dynamic parameter panel.</p>
 <img alt="../../_images/menu_en.png" class="align-center" src="../../_images/menu_en.png" />
 </div>
 <div class="section" id="add-an-expression">
-<h4>Add an expression<a class="headerlink" href="#add-an-expression" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<h4>Add an expression<a class="headerlink" href="#add-an-expression" title="Permalink to this heading">¶</a></h4>
 <p>You can add an expression with the add button.
 You can specify the name of the expression and the content of the expression.</p>
 <img alt="../../_images/add_en.png" class="align-center" src="../../_images/add_en.png" />
 </div>
 <div class="section" id="write-an-expression">
-<h4>Write an expression<a class="headerlink" href="#write-an-expression" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<h4>Write an expression<a class="headerlink" href="#write-an-expression" title="Permalink to this heading">¶</a></h4>
 <p>For example, to rewrite the first parameter to 2.0, write as follows.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nd">@O</span><span class="o">.</span><span class="n">x</span> <span class="o">=</span> <span class="mf">2.0</span>
 </pre></div>
@@ -144,7 +145,7 @@ You can specify the name of the expression and the content of the expression.</p
 </div>
 </div>
 <div class="section" id="apply-the-expression">
-<h4>Apply the expression<a class="headerlink" href="#apply-the-expression" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<h4>Apply the expression<a class="headerlink" href="#apply-the-expression" title="Permalink to this heading">¶</a></h4>
 <p>Right-click on the parameter to which it applies and select Dynamic.
 Then, a field for selecting the expression is displayed.</p>
 <img alt="../../_images/select_dynamic_en.png" class="align-center" src="../../_images/select_dynamic_en.png" />
@@ -155,9 +156,9 @@ Then, a field for selecting the expression is displayed.</p>
 </div>
 </div>
 <div class="section" id="functions-of-an-expression">
-<h3>Functions of an expression<a class="headerlink" href="#functions-of-an-expression" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>Functions of an expression<a class="headerlink" href="#functions-of-an-expression" title="Permalink to this heading">¶</a></h3>
 <div class="section" id="change-multiple-parameters">
-<h4>Change multiple parameters<a class="headerlink" href="#change-multiple-parameters" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<h4>Change multiple parameters<a class="headerlink" href="#change-multiple-parameters" title="Permalink to this heading">¶</a></h4>
 <p>x, y, z, w, each parameter can be changed.
 Entering the following changes the values ​​to 2, 3, 4, and 5, respectively.
 If the destination is a color, x, y, z, w correspond to RGBA.</p>
@@ -169,14 +170,14 @@ If the destination is a color, x, y, z, w correspond to RGBA.</p>
 </div>
 </div>
 <div class="section" id="four-arithmetic-operations">
-<h4>Four arithmetic operations<a class="headerlink" href="#four-arithmetic-operations" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<h4>Four arithmetic operations<a class="headerlink" href="#four-arithmetic-operations" title="Permalink to this heading">¶</a></h4>
 <p>Expressions can use arithmetic operations. You can change the priority of the operation with ().</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nd">@O</span><span class="o">.</span><span class="n">x</span> <span class="o">=</span> <span class="p">(</span><span class="mf">2.0</span> <span class="o">+</span> <span class="mf">3.0</span> <span class="o">*</span> <span class="mf">2.0</span> <span class="o">/</span> <span class="mf">3.0</span><span class="p">)</span> <span class="o">-</span> <span class="mf">2.0</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="parameter">
-<h4>Parameter<a class="headerlink" href="#parameter" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<h4>Parameter<a class="headerlink" href="#parameter" title="Permalink to this heading">¶</a></h4>
 <p>Parameters input from the external can be specified from the numeric field on the panel and runtime.</p>
 <table border="1" class="docutils">
 <thead>
@@ -205,7 +206,7 @@ If the destination is a color, x, y, z, w correspond to RGBA.</p>
 </tbody>
 </table></div>
 <div class="section" id="function">
-<h4>Function<a class="headerlink" href="#function" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<h4>Function<a class="headerlink" href="#function" title="Permalink to this heading">¶</a></h4>
 <p>The following functions can be used.</p>
 <table border="1" class="docutils">
 <thead>
@@ -238,7 +239,7 @@ If the destination is a color, x, y, z, w correspond to RGBA.</p>
 </tbody>
 </table></div>
 <div class="section" id="target">
-<h4>Target<a class="headerlink" href="#target" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<h4>Target<a class="headerlink" href="#target" title="Permalink to this heading">¶</a></h4>
 <p>Dynamic parameter can applies to following parameters.</p>
 <ul class="simple">
 <li><p>Spawn Count</p></li>
@@ -253,16 +254,16 @@ If the destination is a color, x, y, z, w correspond to RGBA.</p>
 </div>
 </div>
 <div class="section" id="examples">
-<h2>Examples<a class="headerlink" href="#examples" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this heading">¶</a></h2>
 <div class="section" id="lod">
-<h3>LOD<a class="headerlink" href="#lod" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>LOD<a class="headerlink" href="#lod" title="Permalink to this heading">¶</a></h3>
 <p>The number of generations can be changed externally.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nd">@O</span><span class="o">.</span><span class="n">x</span> <span class="o">=</span> <span class="nd">@In0</span> <span class="o">*</span> <span class="nd">@P</span><span class="o">.</span><span class="n">x</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="laser">
-<h3>Laser<a class="headerlink" href="#laser" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>Laser<a class="headerlink" href="#laser" title="Permalink to this heading">¶</a></h3>
 <p>The length of the laser can be changed externally.
 The size of Z is controlled externally.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nd">@O</span><span class="o">.</span><span class="n">z</span> <span class="o">=</span> <span class="nd">@In0</span> <span class="o">*</span> <span class="nd">@P</span><span class="o">.</span><span class="n">z</span>
@@ -270,7 +271,7 @@ The size of Z is controlled externally.</p>
 </div>
 </div>
 <div class="section" id="sine-wave">
-<h3>Sine Wave<a class="headerlink" href="#sine-wave" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>Sine Wave<a class="headerlink" href="#sine-wave" title="Permalink to this heading">¶</a></h3>
 <p>Move like a sine wave.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nd">@O</span><span class="o">.</span><span class="n">x</span> <span class="o">=</span> <span class="n">sin</span><span class="p">(</span><span class="nd">@GTime</span><span class="p">)</span>
 <span class="nd">@O</span><span class="o">.</span><span class="n">y</span> <span class="o">=</span> <span class="nd">@GTime</span>

@@ -14,6 +14,7 @@
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
         <script src="../../_static/js/three.min.js"></script>
         <script src="../../_static/js/effekseer.min.js"></script>
@@ -111,15 +112,15 @@
            <div itemprop="articleBody">
              
   <div class="section" id="basic-render-settings-advanced">
-<h1>Basic Render Settings (Advanced)<a class="headerlink" href="#basic-render-settings-advanced" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<h1>Basic Render Settings (Advanced)<a class="headerlink" href="#basic-render-settings-advanced" title="Permalink to this heading">¶</a></h1>
 <div class="section" id="overview">
-<h2>Overview<a class="headerlink" href="#overview" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this heading">¶</a></h2>
 <p>It is possible to specify more complex parameters than those that can be specified in the Basic Render Settings.</p>
 </div>
 <div class="section" id="parameters">
-<h2>Parameters<a class="headerlink" href="#parameters" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>Parameters<a class="headerlink" href="#parameters" title="Permalink to this heading">¶</a></h2>
 <div class="section" id="alpha-texture">
-<h3>Alpha Texture<a class="headerlink" href="#alpha-texture" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>Alpha Texture<a class="headerlink" href="#alpha-texture" title="Permalink to this heading">¶</a></h3>
 <p>Displays a color image of only the red area of the set image.
 For example, if you set a star-shaped image as the alpha texture, you will see a color image of the star-shaped area.
 This image can be set to individual UVs.
@@ -127,7 +128,7 @@ Therefore, by setting up separate UVs, you can create a complex look by scrollin
 <img alt="../../_images/alpha.png" class="align-center" src="../../_images/alpha.png" />
 </div>
 <div class="section" id="uv-distortion-texture">
-<h3>UV Distortion Texture<a class="headerlink" href="#uv-distortion-texture" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>UV Distortion Texture<a class="headerlink" href="#uv-distortion-texture" title="Permalink to this heading">¶</a></h3>
 <p>Distorts the color image according to the set image.
 A distorted image will not be distorted if the color is (127,127,255), and the distortion will increase as you move away from that color.
 This image can be set to individual UVs.
@@ -135,7 +136,7 @@ Therefore, by setting up separate UVs, you can create a complex look by scrollin
 <img alt="../../_images/dist.png" class="align-center" src="../../_images/dist.png" />
 </div>
 <div class="section" id="alpha-cutoff">
-<h3>Alpha Cutoff<a class="headerlink" href="#alpha-cutoff" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>Alpha Cutoff<a class="headerlink" href="#alpha-cutoff" title="Permalink to this heading">¶</a></h3>
 <p>Areas with alpha values lower than the specified value will not be drawn.
 This makes it easier to express toon-like effects.</p>
 <p><a class="reference internal" href="../../_images/alphacutoff_none.png"><img alt="pic_alphacutoff_none" src="../../_images/alphacutoff_none.png" style="width: 240.0px; height: 240.0px;" /></a> <a class="reference internal" href="../../_images/alphacutoff.png"><img alt="pic_alphacutoff" src="../../_images/alphacutoff.png" style="width: 240.0px; height: 240.0px;" /></a></p>
@@ -144,7 +145,7 @@ It makes it easier to express toon-like effects.</p>
 <img alt="../../_images/alphacutoff_edge.png" class="align-center" src="../../_images/alphacutoff_edge.png" />
 </div>
 <div class="section" id="falloff">
-<h3>Falloff<a class="headerlink" href="#falloff" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>Falloff<a class="headerlink" href="#falloff" title="Permalink to this heading">¶</a></h3>
 <p>Specifies the color of the part of the model that is tilted from the viewpoint direction.
 This allows the front of the model to be transparent and the edges to be opaque.</p>
 <p><a class="reference internal" href="../../_images/falloff_none.png"><img alt="pic_falloff_none" src="../../_images/falloff_none.png" style="width: 240.0px; height: 240.0px;" /></a> <a class="reference internal" href="../../_images/falloff_add.png"><img alt="pic_falloff" src="../../_images/falloff_add.png" style="width: 240.0px; height: 240.0px;" /></a></p>
@@ -153,7 +154,7 @@ This allows the front of the model to be transparent and the edges to be opaque.
 <img alt="../../_images/falloff_mul.png" class="align-center" src="../../_images/falloff_mul.png" />
 </div>
 <div class="section" id="soft-particles">
-<h3>Soft Particles<a class="headerlink" href="#soft-particles" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>Soft Particles<a class="headerlink" href="#soft-particles" title="Permalink to this heading">¶</a></h3>
 <p>Reduces the transparency of areas close to the background.
 This will reduce the unnatural border between the background and the particles.
 This feature requires that the environment where Effekseer will be used supports soft particles.</p>
@@ -162,7 +163,7 @@ This feature requires that the environment where Effekseer will be used supports
 <p><a class="reference internal" href="../../_images/softparticle_far_none.png"><img alt="pic_softparticle_near_none" src="../../_images/softparticle_far_none.png" style="width: 240.0px; height: 240.0px;" /></a> <a class="reference internal" href="../../_images/softparticle_near.png"><img alt="pic_softparticle_near" src="../../_images/softparticle_near.png" style="width: 240.0px; height: 240.0px;" /></a></p>
 </div>
 <div class="section" id="blend-texture">
-<h3>Blend Texture<a class="headerlink" href="#blend-texture" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>Blend Texture<a class="headerlink" href="#blend-texture" title="Permalink to this heading">¶</a></h3>
 <p>Adds or subtracts a set image to or from a color image.
 Unlike blending two particles together, the result of adding and subtracting images from each other is used as the particle image.</p>
 <img alt="../../_images/blend.png" class="align-center" src="../../_images/blend.png" />
@@ -172,14 +173,14 @@ Unlike blending two particles together, the result of adding and subtracting ima
 <img alt="../../_images/blend_mul.png" class="align-center" src="../../_images/blend_mul.png" />
 </div>
 <div class="section" id="blend-alpha-texture">
-<h3>Blend Alpha Texture<a class="headerlink" href="#blend-alpha-texture" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>Blend Alpha Texture<a class="headerlink" href="#blend-alpha-texture" title="Permalink to this heading">¶</a></h3>
 <p>Alpha image for use as part of a blended image.
 The behavior is the same as for blended images for color images.
 The only difference is the image to be targeted.</p>
 <img alt="../../_images/blend_alpha.png" class="align-center" src="../../_images/blend_alpha.png" />
 </div>
 <div class="section" id="blend-uv-distortion-texture">
-<h3>Blend UV distortion Texture<a class="headerlink" href="#blend-uv-distortion-texture" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>Blend UV distortion Texture<a class="headerlink" href="#blend-uv-distortion-texture" title="Permalink to this heading">¶</a></h3>
 <p>This image is used to distort the blended image.
 The behavior is the same as the distortion image for color images.
 The only difference is the image to be targeted.</p>

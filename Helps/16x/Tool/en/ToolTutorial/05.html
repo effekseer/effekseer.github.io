@@ -14,6 +14,7 @@
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
         <script src="../../_static/js/three.min.js"></script>
         <script src="../../_static/js/effekseer.min.js"></script>
@@ -101,9 +102,9 @@
            <div itemprop="articleBody">
              
   <div class="section" id="let-s-create-a-hit-mark-slashing">
-<h1>05. Let's create a hit mark (Slashing)!<a class="headerlink" href="#let-s-create-a-hit-mark-slashing" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<h1>05. Let's create a hit mark (Slashing)!<a class="headerlink" href="#let-s-create-a-hit-mark-slashing" title="Permalink to this heading">¶</a></h1>
 <div class="main"><div class="section" id="overview">
-<h2>Overview<a class="headerlink" href="#overview" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this heading">¶</a></h2>
 <p>In this chapter, you create an effect (hit mark) hit by a slash as used in an actual game.
 It is an effect where a sword line is expressed in the middle and small impacts flies around.
 In doing so, we explain copying and adding nodes and easing particles as new contents.</p>
@@ -114,7 +115,7 @@ In doing so, we explain copying and adding nodes and easing particles as new con
 </div><p>Since the length of the effect created is about 0.5 seconds, <code class="docutils literal notranslate"><span class="pre">End</span></code> in the <code class="docutils literal notranslate"><span class="pre">Viewer</span> <span class="pre">Controls</span></code> window is specified to 30 frames.</p>
 </div>
 <div class="section" id="easing">
-<h2>Easing<a class="headerlink" href="#easing" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>Easing<a class="headerlink" href="#easing" title="Permalink to this heading">¶</a></h2>
 <p>Easing is often used for various parameters.</p>
 <p>Easing is a method of representing changes in values by specifying the values of the start and end points and automatically interpolating the values between them.</p>
 <p>As shown in the figure below, position, rotation and scale have been specified by speed (1) or acceleration up to now.
@@ -141,7 +142,7 @@ The lower the speed, the harder the value changes, the faster the value, the eas
 <p>Interpolation method</p>
 </div></div>
 <div class="section" id="create-the-effect">
-<h2>Create the effect<a class="headerlink" href="#create-the-effect" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>Create the effect<a class="headerlink" href="#create-the-effect" title="Permalink to this heading">¶</a></h2>
 <p>Effects are not often composed of single kind of particles but plural kinds of completely different looking particles.
 Effekseer can have multiple nodes. You can give completely different parameters for each node.
 Hit marks must also consist of more than one node. This time, you will create the nodes in order.</p>
@@ -151,7 +152,7 @@ Hit marks must also consist of more than one node. This time, you will create th
 <li><p>Color is purple (255, 32, 255) to pink (255, 128, 255)</p></li>
 </ul>
 <div class="section" id="sword-line-node">
-<h3>Sword line node<a class="headerlink" href="#sword-line-node" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>Sword line node<a class="headerlink" href="#sword-line-node" title="Permalink to this heading">¶</a></h3>
 <p>You create a node where a particle slenderly cuts at an angle of 45 degrees, representing a sword line.</p>
 <p>The sword line is specified to elongate in the direction of 45 degrees during 0.33 seconds (20 frames).
 <code class="docutils literal notranslate"><span class="pre">Rotated</span> <span class="pre">Billboard</span></code> is specified to tilt the particles.</p>
@@ -253,7 +254,7 @@ Hit marks must also consist of more than one node. This time, you will create th
 <p>Sword line node</p>
 </div></div>
 <div class="section" id="impact-node">
-<h3>Impact node<a class="headerlink" href="#impact-node" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>Impact node<a class="headerlink" href="#impact-node" title="Permalink to this heading">¶</a></h3>
 <p>When the attack hits, not only the sword line but also the impact is generated.
 Impact node is created like a sword wire.</p>
 <p>Since the parameters of the sword line node and impact node are different, you need to add a node.
@@ -370,7 +371,7 @@ From the menu, you choose Add Node.</p>
 <p>Impact node</p>
 </div></div>
 <div class="section" id="light-emitting-node-no-1">
-<h3>Light emitting node No.1<a class="headerlink" href="#light-emitting-node-no-1" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>Light emitting node No.1<a class="headerlink" href="#light-emitting-node-no-1" title="Permalink to this heading">¶</a></h3>
 <p>Glowing effects at the moment of hit is better looking.
 The light emmiting node is also specified same as the sword line node.</p>
 <p>Values are changed as fllows.</p>
@@ -445,7 +446,7 @@ The light emmiting node is also specified same as the sword line node.</p>
 <p>Light emitting node No.1</p>
 </div></div>
 <div class="section" id="light-emitting-node-no-2">
-<h3>Light emitting node No.2<a class="headerlink" href="#light-emitting-node-no-2" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>Light emitting node No.2<a class="headerlink" href="#light-emitting-node-no-2" title="Permalink to this heading">¶</a></h3>
 <p>New emiitting node is added because the light emission is still sober.
 This light emitting node is almost same as the light emitting node created earlier.
 Effekseer can copy nodes.</p>
@@ -489,7 +490,7 @@ Effekseer can copy nodes.</p>
 </div></div>
 </div>
 <div class="section" id="summary">
-<h2>Summary<a class="headerlink" href="#summary" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>Summary<a class="headerlink" href="#summary" title="Permalink to this heading">¶</a></h2>
 <p>In this chapter, You created effects that are likely to actually be used in games.
 In the next chapter, you will create even more complicated effects.</p>
 </div></div>

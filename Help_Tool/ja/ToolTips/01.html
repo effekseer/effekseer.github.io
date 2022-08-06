@@ -14,6 +14,7 @@
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
         <script src="../../_static/js/three.min.js"></script>
         <script src="../../_static/js/effekseer.min.js"></script>
@@ -107,30 +108,30 @@
            <div itemprop="articleBody">
              
   <div class="section" id="tips">
-<h1>TIPS<a class="headerlink" href="#tips" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<h1>TIPS<a class="headerlink" href="#tips" title="Permalink to this heading">¶</a></h1>
 <p>目的ごとのパラメーター設定方法や知っていると便利な操作方法を説明しています。
 チュートリアルに目を通した前提で説明しているので、先にチュートリアルを読むことを勧めます。
 項目によっては他のページにリンクすることもあります。</p>
 <div class="section" id="id1">
-<h2>パーティクルの寿命を無限にする。<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>パーティクルの寿命を無限にする。<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h2>
 <p>エフェクトの種類によってはエフェクトを生成してからゲーム終了時まで、エフェクトが存在して欲しい場合があります。
 それを実現するには複数の方法があります。
 ただし、いずれの方法にしても、エフェクトを手動で停止しない限り、エフェクトが消えなくなるので注意してください。</p>
 <div class="section" id="id2">
-<h3>寿命<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>寿命<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h3>
 <p>寿命をゲームのプレイ時間より長くすると、ゲームが終わるまでパーティクルが残り続けます。</p>
 </div>
 <div class="section" id="id3">
-<h3>寿命により削除<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>寿命により削除<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h3>
 <p>共通ウインドウの「寿命により削除」のチェックを外すことです。</p>
 </div>
 <div class="section" id="id4">
-<h3>生成数<a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>生成数<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h3>
 <p>生成数を無限にすると、パーティクル１つ１つは消えたとしても、エフェクト全体は存在し続けます。</p>
 </div>
 </div>
 <div class="section" id="id5">
-<h2>複数のパーティクルを0フレーム目に同時に生成する。<a class="headerlink" href="#id5" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>複数のパーティクルを0フレーム目に同時に生成する。<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h2>
 <p>生成時間を0.0001といった非常に小さい値にします。
 加えて、生成開始時間をマイナスにします。</p>
 <p>生成時間を1より小さくすると、1フレームの間に複数のパーティクルが生成されます。
@@ -138,24 +139,24 @@
 この2つにより、0フレーム目に複数のパーティクルが生成されるようになります。</p>
 </div>
 <div class="section" id="id6">
-<h2>放射状にパーティクルを配置する<a class="headerlink" href="#id6" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>放射状にパーティクルを配置する<a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h2>
 <p>中央から外側の方向にパーティクルが移動するように放射状にパーティクルを配置します。</p>
 <div class="section" id="id7">
-<h3>生成方法<a class="headerlink" href="#id7" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>生成方法<a class="headerlink" href="#id7" title="Permalink to this heading">¶</a></h3>
 <p>チュートリアルの8章を参照お願いします。</p>
 <p><a class="reference internal" href="../ToolTutorial/08.html"><span class="doc">8章</span></a></p>
 </div>
 <div class="section" id="id8">
-<h3>親子関係<a class="headerlink" href="#id8" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>親子関係<a class="headerlink" href="#id8" title="Permalink to this heading">¶</a></h3>
 <p>親のパーティクルが360度方向にランダムに回転するように設定し、
 子を中心から離れた位置に配置すると放射状にパーティクルが配置されます。</p>
 </div>
 </div>
 <div class="section" id="id9">
-<h2>三日月型のパーティクルを生成する<a class="headerlink" href="#id9" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>三日月型のパーティクルを生成する<a class="headerlink" href="#id9" title="Permalink to this heading">¶</a></h2>
 <p>完全な輪でなく、三日月型のパーティクルを生成します。</p>
 <div class="section" id="id10">
-<h3>リング<a class="headerlink" href="#id10" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>リング<a class="headerlink" href="#id10" title="Permalink to this heading">¶</a></h3>
 <p>一部が切れている画像をリングに設定します。そうすると三日月型のパーティクルを生成できます。
 これらをランダムな軸で回転させるだけで見栄えのいいエフェクトになります。</p>
 <table>
@@ -170,7 +171,7 @@
 </table></div>
 </div>
 <div class="section" id="id11">
-<h2>ゲーム中にエフェクトを再生するときにエフェクトがキャラクターにめり込まないようにする<a class="headerlink" href="#id11" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>ゲーム中にエフェクトを再生するときにエフェクトがキャラクターにめり込まないようにする<a class="headerlink" href="#id11" title="Permalink to this heading">¶</a></h2>
 <table>
 	<tr>
 		<td>
@@ -184,18 +185,18 @@
 エフェクトとキャラクターを同じ位置に配置するとキャラクターがエフェクトにめり込みます。
 ゲームのプログラムでエフェクトの位置をずらせば、めり込まずに済みますが、この方法は面倒です。</p>
 <div class="section" id="z">
-<h3>Zオフセット<a class="headerlink" href="#z" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>Zオフセット<a class="headerlink" href="#z" title="Permalink to this heading">¶</a></h3>
 <p>Zオフセットを指定すると、描画した時にエフェクトの位置を奥行き方向に移動します。
 移動するとキャラクターにめり込まなくなります。</p>
 </div>
 <div class="section" id="id12">
-<h3>Zテスト<a class="headerlink" href="#id12" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>Zテスト<a class="headerlink" href="#id12" title="Permalink to this heading">¶</a></h3>
 <p>Zテストをオフにすると他のオブジェクトが存在していてもエフェクトが描画されるようになります。
 ただ、手前にオブジェクトがあったとしても描画されるので障害物がある場合は注意が必要です。</p>
 </div>
 </div>
 <div class="section" id="id13">
-<h2>剣の軌跡を生成する。<a class="headerlink" href="#id13" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>剣の軌跡を生成する。<a class="headerlink" href="#id13" title="Permalink to this heading">¶</a></h2>
 <div align="center">
 <img src="../../img/Tips/SwordLineInEffekseer1.gif">
 </div><p>少し複雑なのでサンプルを用意しました。</p>
@@ -215,7 +216,7 @@
 <p>このTIPSではEffekseerで剣を動かしていますが、ゲーム中の剣に合わせてエフェクトをゲーム中で動かしても大丈夫です。</p>
 </div>
 <div class="section" id="id14">
-<h2>細長いパーティクルの画像について<a class="headerlink" href="#id14" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>細長いパーティクルの画像について<a class="headerlink" href="#id14" title="Permalink to this heading">¶</a></h2>
 <p>細長いパーティクルに正方形の画像を設定した時に、パーティクルから離れたところから見ると表示がおかしくなることがあります。</p>
 <p>これはミップマップにより、画像の解像度が低下して、端の画素と中央の画素が同じ位置を指すようになるためです。</p>
 <p>これを防ぐためには、画像に細長い画像を使用します。</p>
@@ -231,7 +232,7 @@
 	</tr>
 </table></div>
 <div class="section" id="id15">
-<h2>親を表示しない状態で色への影響を有効にする<a class="headerlink" href="#id15" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>親を表示しない状態で色への影響を有効にする<a class="headerlink" href="#id15" title="Permalink to this heading">¶</a></h2>
 <p>描画方法をスプライトにします。
 共通パネルから、描画のOnをOffにします。</p>
 <p>こうすると、スプライトが表示されない状態で色への影響を有効にすることができます。</p>

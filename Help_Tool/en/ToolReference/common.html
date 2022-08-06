@@ -14,6 +14,7 @@
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
         <script src="../../_static/js/three.min.js"></script>
         <script src="../../_static/js/effekseer.min.js"></script>
@@ -111,82 +112,82 @@
            <div itemprop="articleBody">
              
   <div class="section" id="basic-settings">
-<h1>Basic settings<a class="headerlink" href="#basic-settings" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<h1>Basic settings<a class="headerlink" href="#basic-settings" title="Permalink to this heading">¶</a></h1>
 <div class="section" id="overview">
-<h2>Overview<a class="headerlink" href="#overview" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this heading">¶</a></h2>
 <p>From here, you can set some global parameters for the particle node, such as its name, the number of particles to be generated, and other particle settings.</p>
 </div>
 <div class="section" id="parameter">
-<h2>Parameter<a class="headerlink" href="#parameter" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>Parameter<a class="headerlink" href="#parameter" title="Permalink to this heading">¶</a></h2>
 <div align="center">
 <img src="../../img/Tutorial/02_common_en.png">
 <p>"Basic settings" window</p>
 </div><div class="section" id="visibility">
-<h3>Visibility<a class="headerlink" href="#visibility" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>Visibility<a class="headerlink" href="#visibility" title="Permalink to this heading">¶</a></h3>
 <p>Controls whether or not particles generated from this node are drawn on the screen. If you check this, particles will be visible. Note that even when outputting for games, particles will not be drawn unless this is checked.</p>
 </div>
 <div class="section" id="name">
-<h3>Name<a class="headerlink" href="#name" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>Name<a class="headerlink" href="#name" title="Permalink to this heading">¶</a></h3>
 <p>Set the name displayed in the node tree. This is for organizational purposes only; to organize nodes when you have many nodes in your node tree. It does not affect the behavior of the particles in any way.</p>
 </div>
 <div class="section" id="spawn-count">
-<h3>Spawn Count<a class="headerlink" href="#spawn-count" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>Spawn Count<a class="headerlink" href="#spawn-count" title="Permalink to this heading">¶</a></h3>
 <p>Sets the maximum number of particles that will be generated from this node. You can also choose infinite to generate particles indefinitely (or until other conditional settings described later cause the particle generation to be stopped). However, when playing an effect from another application that incorporates Effekseer, please note that the &quot;infinite&quot; effect will not end unless a function is manually called to stop the effect.</p>
 </div>
 <div class="section" id="inherit-position">
-<h3>Inherit Position<a class="headerlink" href="#inherit-position" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>Inherit Position<a class="headerlink" href="#inherit-position" title="Permalink to this heading">¶</a></h3>
 <p>Sets how the position of the parent particle affects the particles generated from this node. Please refer to the following section for information regarding inheritance options.</p>
 <div class="section" id="only-on-create-followparent">
-<h4>Only on create - FollowParent<a class="headerlink" href="#only-on-create-followparent" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<h4>Only on create - FollowParent<a class="headerlink" href="#only-on-create-followparent" title="Permalink to this heading">¶</a></h4>
 <p>The child particles move to follow the parent particle.
 The behavior can be controlled by the speed and steering.</p>
 <div class="video_center"><video autoplay loop="true" muted="true" src="../../movies/Reference/BasicRenderSettings/FollowParent.mp4"/></div></div>
 </div>
 <div class="section" id="inherit-rotation">
-<h3>Inherit Rotation<a class="headerlink" href="#inherit-rotation" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>Inherit Rotation<a class="headerlink" href="#inherit-rotation" title="Permalink to this heading">¶</a></h3>
 <p>Sets how the rotation of parent particles affects particles generated from this node. Please refer to the following section for information regarding inheritance options.</p>
 </div>
 <div class="section" id="inherit-scale">
-<h3>Inherit Scale<a class="headerlink" href="#inherit-scale" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>Inherit Scale<a class="headerlink" href="#inherit-scale" title="Permalink to this heading">¶</a></h3>
 <p>Sets how the enlargement of parent particles affects particles generated from this node. Please refer to the following section for information regarding inheritance options.</p>
 </div>
 <div class="section" id="inherit">
-<h3>Inherit **<a class="headerlink" href="#inherit" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>Inherit **<a class="headerlink" href="#inherit" title="Permalink to this heading">¶</a></h3>
 <div class="section" id="always">
-<h4>Always<a class="headerlink" href="#always" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<h4>Always<a class="headerlink" href="#always" title="Permalink to this heading">¶</a></h4>
 <p>It is continuously inherited. Whenever the value of the parent particle is changed, the child particles are also immediately updated. If the parent particle despawns, the value at the time of disappearance will be what is used for inheritance from that point on.</p>
 </div>
 <div class="section" id="only-on-create">
-<h4>Only on create<a class="headerlink" href="#only-on-create" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<h4>Only on create<a class="headerlink" href="#only-on-create" title="Permalink to this heading">¶</a></h4>
 <p>The inherited value is used to initialize the value for each child particle only once, when the child particle is first generatated.</p>
 </div>
 <div class="section" id="never">
-<h4>Never<a class="headerlink" href="#never" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<h4>Never<a class="headerlink" href="#never" title="Permalink to this heading">¶</a></h4>
 <p>The value will not be inherited. Regardless of the value of the parent particle, the behavior of the particle will be determined only by the parameters of the child node.</p>
 </div>
 </div>
 <div class="section" id="destroy-after-time">
-<h3>Destroy after time<a class="headerlink" href="#destroy-after-time" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>Destroy after time<a class="headerlink" href="#destroy-after-time" title="Permalink to this heading">¶</a></h3>
 <p>When the number of frames spcified in &quot;Time to live&quot; passes, the particle will be despawned. If you do not check this, particles will not be despawned after their lifetime expires.</p>
 </div>
 <div class="section" id="destroy-with-parent">
-<h3>Destroy with parent<a class="headerlink" href="#destroy-with-parent" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>Destroy with parent<a class="headerlink" href="#destroy-with-parent" title="Permalink to this heading">¶</a></h3>
 <p>When the parent particle despawns, the child particle(s) will be despawned as well.</p>
 </div>
 <div class="section" id="destroy-when-no-more-children">
-<h3>Destroy when no more children<a class="headerlink" href="#destroy-when-no-more-children" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>Destroy when no more children<a class="headerlink" href="#destroy-when-no-more-children" title="Permalink to this heading">¶</a></h3>
 <p>If child particles of a parent particle are not present, and it is unlikely that any more children will be generated in the future, delete the parent particle.</p>
 </div>
 <div class="section" id="time-to-live">
-<h3>Time to live<a class="headerlink" href="#time-to-live" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>Time to live<a class="headerlink" href="#time-to-live" title="Permalink to this heading">¶</a></h3>
 <p>Sets the number of frames that should pass between the particle being spawned, and being despawned. However, if &quot;Destroy after time&quot; is unchecked, this parameter has no effect.</p>
 </div>
 <div class="section" id="spawn-rate">
-<h3>Spawn Rate<a class="headerlink" href="#spawn-rate" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>Spawn Rate<a class="headerlink" href="#spawn-rate" title="Permalink to this heading">¶</a></h3>
 <p>Sets the rate at which particles are generated. The number of frames specified will have to pass between one particle generating and the next. You can specify a value less than 1 for the spawn rate, in which case multiple particles will be generated per frame.</p>
 </div>
 <div class="section" id="initial-delay">
-<h3>Initial Delay<a class="headerlink" href="#initial-delay" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>Initial Delay<a class="headerlink" href="#initial-delay" title="Permalink to this heading">¶</a></h3>
 <p>Specify the number of frames that must pass between generation of parent particles and the initial generation of their child particles.</p>
 <p>A negative numerical value can also be specified as Initial Delay. The particles that are supposed to be generated at a negative time are actually generated at the 0th frame.</p>
 <p>The following figure shows the relationship between Spawn Rate, Initial Delay and time. (1) is Spawn Rate, (2) is Initial Delay, (3) is time (frame unit). The start time is shifted by the value of Initial Delay. When Initial Delay elapses from the start time, particles are generated. However, all the particles generated at the negative time are generated in the 0th frame.</p>

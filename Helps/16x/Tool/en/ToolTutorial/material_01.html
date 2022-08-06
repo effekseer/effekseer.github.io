@@ -14,6 +14,7 @@
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
         <script src="../../_static/js/three.min.js"></script>
         <script src="../../_static/js/effekseer.min.js"></script>
@@ -91,9 +92,9 @@
            <div itemprop="articleBody">
              
   <div class="section" id="the-introduction-of-material">
-<h1>01. The Introduction of Material<a class="headerlink" href="#the-introduction-of-material" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<h1>01. The Introduction of Material<a class="headerlink" href="#the-introduction-of-material" title="Permalink to this heading">¶</a></h1>
 <div class="section" id="overview">
-<h2>Overview<a class="headerlink" href="#overview" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this heading">¶</a></h2>
 <p>Until now, the only way to render was to specify images and parameters and do a simple drawing.
 However, this did not allow complicated rendering such as distorting the image itself or adding specific areas.</p>
 <p>Effekseer has materials to accomplish these complex rendering.
@@ -106,7 +107,7 @@ Materials can be created in the Material Editor.</p>
 </div><p>Effects created in this chapter</p>
 </div>
 <div class="section" id="basic">
-<h2>Basic<a class="headerlink" href="#basic" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>Basic<a class="headerlink" href="#basic" title="Permalink to this heading">¶</a></h2>
 <p>Some files have already been prepared.
 Please download from the link below.</p>
 <p><a href="../../Effects/Tutorials/Mat_01_01.zip">Download</a></p>
@@ -144,7 +145,7 @@ There are several types of values ​​that are transfered between nodes.</p>
 It can also be an image.</p>
 </div>
 <div class="section" id="draw-an-image">
-<h2>Draw an image<a class="headerlink" href="#draw-an-image" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>Draw an image<a class="headerlink" href="#draw-an-image" title="Permalink to this heading">¶</a></h2>
 <p>Images can be drawn using a <code class="docutils literal notranslate"><span class="pre">Sample</span> <span class="pre">Image</span></code> node.</p>
 <p>Right-click to add a <code class="docutils literal notranslate"><span class="pre">Sample</span> <span class="pre">Image</span></code> node.</p>
 <div align="center">
@@ -166,7 +167,7 @@ This connects the transparency of the image to the transparency of the material.
 <img src="../../img/Tutorial/Mat_01/state3.png">
 </div></div>
 <div class="section" id="shift-an-area-of-drawing-image">
-<h2>Shift an area of drawing image<a class="headerlink" href="#shift-an-area-of-drawing-image" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>Shift an area of drawing image<a class="headerlink" href="#shift-an-area-of-drawing-image" title="Permalink to this heading">¶</a></h2>
 <p>Until now, the behavior was the same as simply drawing an image on the model.
 However, various expressions can be made using materials.
 As a preparation, change the position of the UV coordinates.</p>
@@ -192,7 +193,7 @@ Both can be connected because the value type is Number 2.</p>
 <img src="../../img/Tutorial/Mat_01/state4.png">
 </div></div>
 <div class="section" id="distort-the-image">
-<h2>Distort the image<a class="headerlink" href="#distort-the-image" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>Distort the image<a class="headerlink" href="#distort-the-image" title="Permalink to this heading">¶</a></h2>
 <p>We just shifted the display area of the image, but now let's distort the image.</p>
 <p>Use an image instead of the <code class="docutils literal notranslate"><span class="pre">Constant2</span></code> node.
 For the image, specify <code class="docutils literal notranslate"><span class="pre">Textures/Distortion01.png</span></code> prepared in advance.</p>
@@ -219,7 +220,7 @@ Decrease the value of the <code class="docutils literal notranslate"><span class
 </div><p>Then it will be distorted well.</p>
 <iframe src='../../Effects/viewer_en.html#Tutorials/Mat_01/Sample05.efkefc'></iframe></div>
 <div class="section" id="move-the-distortion">
-<h2>Move the distortion<a class="headerlink" href="#move-the-distortion" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>Move the distortion<a class="headerlink" href="#move-the-distortion" title="Permalink to this heading">¶</a></h2>
 <p>Let's move the distortion because it is quiet when stopped.</p>
 <p>Add a <code class="docutils literal notranslate"><span class="pre">MovingUV</span></code> node.</p>
 <p>A <code class="docutils literal notranslate"><span class="pre">MovingUV</span></code> node outputs the value of the moving UV over time.
@@ -230,7 +231,7 @@ Change some parameters as well.</p>
 </div><p>You can see that the distortion moves.</p>
 <iframe src='../../Effects/viewer_en.html#Tutorials/Mat_01/Sample06.efkefc'></iframe></div>
 <div class="section" id="color">
-<h2>Color<a class="headerlink" href="#color" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>Color<a class="headerlink" href="#color" title="Permalink to this heading">¶</a></h2>
 <p>Finally, let's color.</p>
 <p>Add a <code class="docutils literal notranslate"><span class="pre">Multiply</span></code> node.</p>
 <p>Connect the <code class="docutils literal notranslate"><span class="pre">Sample</span> <span class="pre">Image</span></code> node that outputs the image and the first fixed 3 nodes added to the <code class="docutils literal notranslate"><span class="pre">Multiply</span></code> node.</p>
@@ -242,12 +243,12 @@ Change some parameters as well.</p>
 <p><a href="../../Effects/Tutorials/Mat_01_02.zip">Download</a></p>
 </div>
 <div class="section" id="samples">
-<h2>Samples<a class="headerlink" href="#samples" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>Samples<a class="headerlink" href="#samples" title="Permalink to this heading">¶</a></h2>
 <p>This time, we have introduced examples of materials, but we can do various things.
 Effeksseer has many sample materials, so you may want to look at them.</p>
 </div>
 <div class="section" id="summary">
-<h2>Summary<a class="headerlink" href="#summary" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>Summary<a class="headerlink" href="#summary" title="Permalink to this heading">¶</a></h2>
 <p>This chapter has explained the basics of materials.
 The use of materials greatly expands the range of expression.</p>
 </div>

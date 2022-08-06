@@ -14,6 +14,7 @@
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
         <script src="../../_static/js/three.min.js"></script>
         <script src="../../_static/js/effekseer.min.js"></script>
@@ -111,15 +112,15 @@
            <div itemprop="articleBody">
              
   <div class="section" id="id1">
-<h1>描画共通(高度)<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<h1>描画共通(高度)<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h1>
 <div class="section" id="id2">
-<h2>概要<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>概要<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
 <p>描画共通で指定できるパラメーターよりも、より複雑なパラメーターを指定することができます。</p>
 </div>
 <div class="section" id="id3">
-<h2>パラメーター<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>パラメーター<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h2>
 <div class="section" id="id4">
-<h3>アルファ画像<a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>アルファ画像<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h3>
 <p>設定された画像の赤色の範囲のみのカラー画像を表示します。
 例えば、アルファテクスチャに星型の画像を設定すると、その星型の領域のカラー画像が表示されます。
 この画像は個別にUVを設定できます。
@@ -127,7 +128,7 @@
 <img alt="../../_images/alpha.png" class="align-center" src="../../_images/alpha.png" />
 </div>
 <div class="section" id="uv">
-<h3>UV歪み画像<a class="headerlink" href="#uv" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>UV歪み画像<a class="headerlink" href="#uv" title="Permalink to this heading">¶</a></h3>
 <p>設定された画像により、カラー画像を歪ませます。
 歪み画像は色が(127,127,255)の場合、歪まず、その色から離れるにしたがって歪みが大きくなります。
 この画像は個別にUVを設定できます。
@@ -135,7 +136,7 @@
 <img alt="../../_images/dist.png" class="align-center" src="../../_images/dist.png" />
 </div>
 <div class="section" id="id5">
-<h3>アルファカットオフ<a class="headerlink" href="#id5" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>アルファカットオフ<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h3>
 <p>アルファ値が指定された値より低い部分が描画されなくなります。
 それにより、トゥーン調のエフェクトを表現しやすくなります。</p>
 <p><a class="reference internal" href="../../_images/alphacutoff_none.png"><img alt="pic_alphacutoff_none" src="../../_images/alphacutoff_none.png" style="width: 240.0px; height: 240.0px;" /></a> <a class="reference internal" href="../../_images/alphacutoff.png"><img alt="pic_alphacutoff" src="../../_images/alphacutoff.png" style="width: 240.0px; height: 240.0px;" /></a></p>
@@ -144,7 +145,7 @@
 <img alt="../../_images/alphacutoff_edge.png" class="align-center" src="../../_images/alphacutoff_edge.png" />
 </div>
 <div class="section" id="id6">
-<h3>フォールオフ<a class="headerlink" href="#id6" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>フォールオフ<a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h3>
 <p>モデルの視点方向から傾いている部分の色を指定します。
 これにより、モデルの正面方向は透明で端だけ不透明、といった表現をできます。</p>
 <p><a class="reference internal" href="../../_images/falloff_none.png"><img alt="pic_falloff_none" src="../../_images/falloff_none.png" style="width: 240.0px; height: 240.0px;" /></a> <a class="reference internal" href="../../_images/falloff_add.png"><img alt="pic_falloff" src="../../_images/falloff_add.png" style="width: 240.0px; height: 240.0px;" /></a></p>
@@ -153,7 +154,7 @@
 <img alt="../../_images/falloff_mul.png" class="align-center" src="../../_images/falloff_mul.png" />
 </div>
 <div class="section" id="id7">
-<h3>ソフトパーティクル<a class="headerlink" href="#id7" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>ソフトパーティクル<a class="headerlink" href="#id7" title="Permalink to this heading">¶</a></h3>
 <p>背景に近い部分の透明度を下げます。
 それにより、背景とパーティクルの境目の不自然さを抑えることができます。
 この機能は、Effekseerを使用する先の環境がソフトパーティクルに対応している必要があります。</p>
@@ -162,7 +163,7 @@
 <p><a class="reference internal" href="../../_images/softparticle_far_none.png"><img alt="pic_softparticle_near_none" src="../../_images/softparticle_far_none.png" style="width: 240.0px; height: 240.0px;" /></a> <a class="reference internal" href="../../_images/softparticle_near.png"><img alt="pic_softparticle_near" src="../../_images/softparticle_near.png" style="width: 240.0px; height: 240.0px;" /></a></p>
 </div>
 <div class="section" id="id8">
-<h3>ブレンド画像<a class="headerlink" href="#id8" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>ブレンド画像<a class="headerlink" href="#id8" title="Permalink to this heading">¶</a></h3>
 <p>設定された画像をカラー画像に加算したり、減算したりします。
 2つのパーティクルをブレンドによって重ねるのと違って、画像同士で加算、減算した結果をパーティクルの画像として使用します。</p>
 <img alt="../../_images/blend.png" class="align-center" src="../../_images/blend.png" />
@@ -172,14 +173,14 @@
 <img alt="../../_images/blend_mul.png" class="align-center" src="../../_images/blend_mul.png" />
 </div>
 <div class="section" id="id9">
-<h3>ブレンドアルファ画像<a class="headerlink" href="#id9" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>ブレンドアルファ画像<a class="headerlink" href="#id9" title="Permalink to this heading">¶</a></h3>
 <p>ブレンド画像の一部を使用するためのアルファ画像です。
 カラー画像に対するブレンド画像と挙動は同じです。
 違いは対象とする画像のみです。</p>
 <img alt="../../_images/blend_alpha.png" class="align-center" src="../../_images/blend_alpha.png" />
 </div>
 <div class="section" id="id10">
-<h3>ブレンドUV歪み画像<a class="headerlink" href="#id10" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>ブレンドUV歪み画像<a class="headerlink" href="#id10" title="Permalink to this heading">¶</a></h3>
 <p>ブレンド画像を歪ませるための画像です。
 カラー画像に対する歪み画像と挙動は同じです。
 違いは対象とする画像のみです。</p>

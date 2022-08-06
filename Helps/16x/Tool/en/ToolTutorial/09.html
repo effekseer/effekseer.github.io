@@ -14,6 +14,7 @@
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
         <script src="../../_static/js/three.min.js"></script>
         <script src="../../_static/js/effekseer.min.js"></script>
@@ -101,9 +102,9 @@
            <div itemprop="articleBody">
              
   <div class="section" id="let-s-create-muzzle-flash">
-<h1>09.Let's create muzzle flash!<a class="headerlink" href="#let-s-create-muzzle-flash" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<h1>09.Let's create muzzle flash!<a class="headerlink" href="#let-s-create-muzzle-flash" title="Permalink to this heading">¶</a></h1>
 <div class="main"><div class="section" id="overview">
-<h2>Overview<a class="headerlink" href="#overview" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this heading">¶</a></h2>
 <p>In this chapter, I create the effect of muzzle flash using knowledge you have learned so far.
 Muzzle flash is the fire that emerges at the tip when shooting a gun.
 In game with shooting, muzzle flash is essential.</p>
@@ -112,7 +113,7 @@ In game with shooting, muzzle flash is essential.</p>
 <p>Muzzle flash</p>
 </div></div>
 <div class="section" id="muzzle-flash">
-<h2>Muzzle flash<a class="headerlink" href="#muzzle-flash" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>Muzzle flash<a class="headerlink" href="#muzzle-flash" title="Permalink to this heading">¶</a></h2>
 <p>I analyze the structure of muzzle flash.
 The muzzle flash created in this chapter is roughly divided into three parts.
 These are flash, spark and smoke.</p>
@@ -141,7 +142,7 @@ In this chapter, I explain how to create each part.</p>
 <div align="center">
 <a href = "../../Sample/09_01_Sample.zip">Download</a>
 </div><div class="section" id="flash">
-<h3>Flash<a class="headerlink" href="#flash" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>Flash<a class="headerlink" href="#flash" title="Permalink to this heading">¶</a></h3>
 <p>Flash is represented by three kinds of sprites.
 I regard Z direction as the direction in which the bullet moves.
 There are two filash spreading in the XY direction and one type spreading in all directions on the condition.</p>
@@ -196,7 +197,7 @@ Since they are only shown for a moment, I make them disappear in about 20 frames
 <p>Flash</p>
 </div></div>
 <div class="section" id="spark">
-<h3>Spark<a class="headerlink" href="#spark" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>Spark<a class="headerlink" href="#spark" title="Permalink to this heading">¶</a></h3>
 <p>Spark is represented by multiple sprites with round image.
 However, I use parent-child relationship to specify the sparking direction.</p>
 <p>Make sure the sparks are circularly arranged with the Z direction as the axis.
@@ -293,7 +294,7 @@ This behavior is realized by moving and scale's easing.</p>
 <p>Spark</p>
 </div></div>
 <div class="section" id="smoke">
-<h3>Smoke<a class="headerlink" href="#smoke" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>Smoke<a class="headerlink" href="#smoke" title="Permalink to this heading">¶</a></h3>
 <p>Smoke is represented by multiple sprites with smoke images.</p>
 <p>The smoke is moved as it moves in the Z direction and head slightly upwards.</p>
 <p>The image of smoke consists of 4 images.
@@ -347,7 +348,7 @@ UV parameters are as follows.</p>
 <p>Smoke</p>
 </div></div>
 <div class="section" id="integration">
-<h3>Integration<a class="headerlink" href="#integration" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>Integration<a class="headerlink" href="#integration" title="Permalink to this heading">¶</a></h3>
 <p>I displayed three parts at the same time.
 Effect of muzzle flash was created.</p>
 <div align="center">
@@ -359,7 +360,7 @@ Effect of muzzle flash was created.</p>
 </div></div>
 </div>
 <div class="section" id="summery">
-<h2>Summery<a class="headerlink" href="#summery" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>Summery<a class="headerlink" href="#summery" title="Permalink to this heading">¶</a></h2>
 <p>In this chapter, I created effects that are likely to actually be used in games.</p>
 </div></div>
 </div>

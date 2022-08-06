@@ -14,6 +14,7 @@
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
         <script src="../../_static/js/three.min.js"></script>
         <script src="../../_static/js/effekseer.min.js"></script>
@@ -101,9 +102,9 @@
            <div itemprop="articleBody">
              
   <div class="section" id="id1">
-<h1>07. 親子関係で複雑な動きしよう！<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<h1>07. 親子関係で複雑な動きしよう！<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h1>
 <div class="main"><div class="section" id="id2">
-<h2>概要<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>概要<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
 <p>本章では、ノードの親子関係を用いて複雑なエフェクトを作成します。
 若干、本章は難しいです。しっかり理解しましょう。</p>
 <div align="center" class='col-md-6'>
@@ -114,7 +115,7 @@
 <p>本章で作成するエフェクト2</p>
 </div></div>
 <div class="section" id="id3">
-<h2>親子関係<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>親子関係<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h2>
 <p>Effekseerでは、ノードが親子関係を持ちます。
 親子関係があると、親のノードが子のノードに様々な影響を与えれます。</p>
 <p>例えば、ノードAとノードBがあるとします。ノードAはノードBの親です。
@@ -136,20 +137,20 @@
 <p><a href = "../../Sample/07_01_Sample.zip">ダウンロード</a></p>
 </div></div>
 <div class="section" id="id4">
-<h2>竜巻エフェクト<a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>竜巻エフェクト<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h2>
 <p>親子関係を利用して、竜巻エフェクトを作成します。</p>
 <p>effect1.efkefcを開いてください。</p>
 <p>このエフェクトは、親の回転を制御するパーティクルと画像を描画する子のパーティクルで構成されています。
 親ノード、子ノードの順番で作成します。</p>
 <div class="section" id="id5">
-<h3>親ノード<a class="headerlink" href="#id5" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>親ノード<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h3>
 <p>親ノードは回転するのみです。パラメーターも設定済みです。</p>
 <div align="center">
 <img src="../../img/Tutorial/07_effect1_rotate1.gif">
 <p>回転</p>
 </div></div>
 <div class="section" id="id6">
-<h3>子ノード<a class="headerlink" href="#id6" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>子ノード<a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h3>
 <p>子ノードを追加します。
 親ノードを左クリックして選択します。
 そして、右クリックして、メニュー表示します。
@@ -251,7 +252,7 @@
 </div></div>
 </div>
 <div class="section" id="id7">
-<h2>流星エフェクト<a class="headerlink" href="#id7" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>流星エフェクト<a class="headerlink" href="#id7" title="Permalink to this heading">¶</a></h2>
 <p>親子関係を利用して流星エフェクトを作成します。</p>
 <p>effect2.efkefcを開いてください。</p>
 <p>Effekseerでは、子のパーティクルが生成された瞬間に親子関係を切ることができます。
@@ -259,12 +260,12 @@
 それ以降、親のパーティクルが移動したり、回転したりしても、子に影響与えることはありません。</p>
 <p>この機能を利用して流星エフェクトを作成します。</p>
 <div class="section" id="id8">
-<h3>親ノード<a class="headerlink" href="#id8" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>親ノード<a class="headerlink" href="#id8" title="Permalink to this heading">¶</a></h3>
 <p>親ノードは移動するのみです。
 パラメーターは設定済みです。</p>
 </div>
 <div class="section" id="id9">
-<h3>子ノード<a class="headerlink" href="#id9" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>子ノード<a class="headerlink" href="#id9" title="Permalink to this heading">¶</a></h3>
 <p>パーティクルを周囲にばらまきます。パラメーターは設定済みです。</p>
 <p>ただ、位置への影響、角度への影響、拡大への影響のパラメーターが「常時」になってます。
 「常時」だと、子のパーティクルが生成された後も、子のパーティクルは親のパーティクルの影響を受け続けます。
@@ -283,7 +284,7 @@
 </div></div>
 </div>
 <div class="section" id="id10">
-<h2>まとめ<a class="headerlink" href="#id10" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>まとめ<a class="headerlink" href="#id10" title="Permalink to this heading">¶</a></h2>
 <p>本章では、親子関係を使用して複雑なエフェクトを作成しました。
 次章では、生成方法を変更して、パーティクルを円形や直線状に配置したりします。</p>
 </div></div>

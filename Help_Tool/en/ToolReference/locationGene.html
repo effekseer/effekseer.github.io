@@ -14,6 +14,7 @@
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
         <script src="../../_static/js/three.min.js"></script>
         <script src="../../_static/js/effekseer.min.js"></script>
@@ -111,53 +112,53 @@
            <div itemprop="articleBody">
              
   <div class="section" id="spawning-method">
-<h1>Spawning Method<a class="headerlink" href="#spawning-method" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<h1>Spawning Method<a class="headerlink" href="#spawning-method" title="Permalink to this heading">¶</a></h1>
 <div class="section" id="overview">
-<h2>Overview<a class="headerlink" href="#overview" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this heading">¶</a></h2>
 <p>Set parameters for specifying the position where the node's particles will be initially generated. In addition to the influence that parent particle positions have on their child particles' positions, the values set here affects position as well. In other words, particles are generated around an origin point located at the parent particle's position, then translated and rotated from that point by the parameters specified for the spawning method. <img alt="../../_images/locationGene.png" src="../../_images/locationGene.png" /></p>
 </div>
 <div class="section" id="parameter">
-<h2>Parameter<a class="headerlink" href="#parameter" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>Parameter<a class="headerlink" href="#parameter" title="Permalink to this heading">¶</a></h2>
 <div align="center">
 <img src="../../img/Tutorial/08_spawn_en.png">
 <p>"Spawning Method" window</p>
 </div><div class="section" id="set-angle-on-spawn">
-<h3>Set angle on spawn<a class="headerlink" href="#set-angle-on-spawn" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>Set angle on spawn<a class="headerlink" href="#set-angle-on-spawn" title="Permalink to this heading">¶</a></h3>
 <p>Specify whether the parameter of the spawning method affects not only the position but also the angle. For example, if you specify &quot;sphere&quot;, the Y direction of the generated particles will be the normal direction of the sphere.</p>
 <table><tbody><tr><td>Checked</td><td>Unchecked</td></tr><tr><td><img src="../../img/Reference/affect_angle.png"/></td><td><img src="../../img/Reference/affect_no_angle.png"/></td></tr></tbody></table></div>
 <div class="section" id="method-of-spawning">
-<h3>Method of Spawning<a class="headerlink" href="#method-of-spawning" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>Method of Spawning<a class="headerlink" href="#method-of-spawning" title="Permalink to this heading">¶</a></h3>
 <p>Specify how to set the generation position.</p>
 <div class="section" id="point">
-<h4>Point<a class="headerlink" href="#point" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<h4>Point<a class="headerlink" href="#point" title="Permalink to this heading">¶</a></h4>
 <p>Treats the point at the specified position as the generation position.</p>
 </div>
 <div class="section" id="line">
-<h4>Line<a class="headerlink" href="#line" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<h4>Line<a class="headerlink" href="#line" title="Permalink to this heading">¶</a></h4>
 <p>Particles are placed on the line. When you specify the init position (1) and the final position (2) of the line, the particle is placed at the position where the line is divided by the number of divisions. The particle rotates so that the X direction of the particle is in the direction of the line.</p>
 <p><img alt="../../_images/locationGene_line.png" src="../../_images/locationGene_line.png" /></p>
 <div class="section" id="position-noise">
-<h5>Position noise<a class="headerlink" href="#position-noise" title="このヘッドラインへのパーマリンク">¶</a></h5>
+<h5>Position noise<a class="headerlink" href="#position-noise" title="Permalink to this heading">¶</a></h5>
 <p>Noise in the distance range specified by this parameter is added to the position value where particles are generated, in the direction of the line. It is possible to suppress the sense of uniformity of the generated position.</p>
 </div>
 <div class="section" id="spwan-mode">
-<h5>Spwan Mode<a class="headerlink" href="#spwan-mode" title="このヘッドラインへのパーマリンク">¶</a></h5>
+<h5>Spwan Mode<a class="headerlink" href="#spwan-mode" title="Permalink to this heading">¶</a></h5>
 <div class="section" id="random">
-<h6>Random<a class="headerlink" href="#random" title="このヘッドラインへのパーマリンク">¶</a></h6>
+<h6>Random<a class="headerlink" href="#random" title="Permalink to this heading">¶</a></h6>
 <p>Particles are placed at randomly chosen points from each point on the line.</p>
 <p><img alt="../../_images/locationGeneModelRand.png" src="../../_images/locationGeneModelRand.png" /></p>
 </div>
 <div class="section" id="order">
-<h6>Order<a class="headerlink" href="#order" title="このヘッドラインへのパーマリンク">¶</a></h6>
+<h6>Order<a class="headerlink" href="#order" title="Permalink to this heading">¶</a></h6>
 <p>Particles are placed at selected points in order from each point on the line.</p>
 </div>
 </div>
 </div>
 <div class="section" id="circle">
-<h4>Circle<a class="headerlink" href="#circle" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<h4>Circle<a class="headerlink" href="#circle" title="Permalink to this heading">¶</a></h4>
 <p>Place the particles in a circle. At this time, you specify just the radius and rotation angle. If &quot;Set angle on spawn&quot; is checked, the Y direction of the particle will be normal to the surface of the circle.</p>
 <div class="section" id="axis-direction">
-<h5>Axis direction<a class="headerlink" href="#axis-direction" title="このヘッドラインへのパーマリンク">¶</a></h5>
+<h5>Axis direction<a class="headerlink" href="#axis-direction" title="Permalink to this heading">¶</a></h5>
 <p>Specify the direction of the axis of the circle. When checking &quot;Influence on generation angle&quot;, the upward direction of particles is as shown in the table below.</p>
 <table><tbody><tr><td><p>X-Axis</p>
 </td><td><p>Y-Axis</p>
@@ -167,16 +168,16 @@
 </td><td><p>Outer direction</p>
 </td></tr><tr><td><img src="../../img/Reference/locationGene_circle_xaxis.png"/></td><td><img src="../../img/Reference/locationGene_circle_yaxis.png"/></td><td><img src="../../img/Reference/locationGene_circle_zaxis.png"/></td></tr></tbody></table></div>
 <div class="section" id="angle-noise">
-<h5>Angle noise<a class="headerlink" href="#angle-noise" title="このヘッドラインへのパーマリンク">¶</a></h5>
+<h5>Angle noise<a class="headerlink" href="#angle-noise" title="Permalink to this heading">¶</a></h5>
 <p>Noise in the angle range specified by this parameter is added to the generated angle. It is possible to suppress the sense of uniformity of the generated position.</p>
 </div>
 </div>
 <div class="section" id="sphere">
-<h4>Sphere<a class="headerlink" href="#sphere" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<h4>Sphere<a class="headerlink" href="#sphere" title="Permalink to this heading">¶</a></h4>
 <p>Place the particles in a spherical shape. At this time, you specify just the radius and rotation angle of the X and Y axes. If &quot;Set angle on spawn&quot; is checked, the Y direction of the particle will be normal to the surface of the sphere.</p>
 </div>
 <div class="section" id="model">
-<h4>Model<a class="headerlink" href="#model" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<h4>Model<a class="headerlink" href="#model" title="Permalink to this heading">¶</a></h4>
 <p>Place particles along the shape of the model for Effekseer. If &quot;Set angle on spawn&quot; is checked, the Z direction of the particle will be normal to the surface of the model.</p>
 <p>There are two types of models: file and procedural models.</p>
 <p>If models are loaded from file, Specify FBX (.fbx), metasequoia file (.mqo) used for display, or model file for Effekseer (.efkmodel). If .efkmodel is specified, .efkmodel is generated in the same directory as the specified file. When playing effects with other applications, this generated file is necessary.</p>
@@ -184,29 +185,29 @@
 <p>プロシージャルモデルを使用する場合、プロシージャルモデルのパネルでモデルを作成し、それを指定します。</p>
 <p>If you want to use a procedural model, create a model in the Procedural Model panel and specify it.</p>
 <div class="section" id="spawn-mode">
-<h5>Spawn Mode<a class="headerlink" href="#spawn-mode" title="このヘッドラインへのパーマリンク">¶</a></h5>
+<h5>Spawn Mode<a class="headerlink" href="#spawn-mode" title="Permalink to this heading">¶</a></h5>
 <div class="section" id="id1">
-<h6>Random<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h6>
+<h6>Random<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h6>
 <p>Place particles randomly along the surface of the model.</p>
 <p><img alt="../../_images/locationGeneModelRand.png" src="../../_images/locationGeneModelRand.png" /></p>
 </div>
 <div class="section" id="vertex">
-<h6>Vertex<a class="headerlink" href="#vertex" title="このヘッドラインへのパーマリンク">¶</a></h6>
+<h6>Vertex<a class="headerlink" href="#vertex" title="Permalink to this heading">¶</a></h6>
 <p>Place particles on vertices in sequential order.</p>
 <p><img alt="../../_images/locationGeneModelVertex.png" src="../../_images/locationGeneModelVertex.png" /></p>
 </div>
 <div class="section" id="random-vertex">
-<h6>Random Vertex<a class="headerlink" href="#random-vertex" title="このヘッドラインへのパーマリンク">¶</a></h6>
+<h6>Random Vertex<a class="headerlink" href="#random-vertex" title="Permalink to this heading">¶</a></h6>
 <p>Place particles randomly on any of the vertices in the model.</p>
 <p><img alt="../../_images/locationGeneModelVertexRand.png" src="../../_images/locationGeneModelVertexRand.png" /></p>
 </div>
 <div class="section" id="surface">
-<h6>Surface<a class="headerlink" href="#surface" title="このヘッドラインへのパーマリンク">¶</a></h6>
+<h6>Surface<a class="headerlink" href="#surface" title="Permalink to this heading">¶</a></h6>
 <p>Place the particles on the center of each of the model's faces, in sequential order.</p>
 <p><img alt="../../_images/locationGeneModelFace.png" src="../../_images/locationGeneModelFace.png" /></p>
 </div>
 <div class="section" id="random-surface">
-<h6>Random Surface<a class="headerlink" href="#random-surface" title="このヘッドラインへのパーマリンク">¶</a></h6>
+<h6>Random Surface<a class="headerlink" href="#random-surface" title="Permalink to this heading">¶</a></h6>
 <p>Place particles on the center of each of the model's faces, chosen in random order.</p>
 <p><img alt="../../_images/locationGeneModelFaceRand.png" src="../../_images/locationGeneModelFaceRand.png" /></p>
 </div>

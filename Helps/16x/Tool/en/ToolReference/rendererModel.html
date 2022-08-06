@@ -14,6 +14,7 @@
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
         <script src="../../_static/js/three.min.js"></script>
         <script src="../../_static/js/effekseer.min.js"></script>
@@ -111,36 +112,36 @@
            <div itemprop="articleBody">
              
   <div class="section" id="render-model">
-<h1>Render - Model<a class="headerlink" href="#render-model" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<h1>Render - Model<a class="headerlink" href="#render-model" title="Permalink to this heading">¶</a></h1>
 <div class="section" id="overview">
-<h2>Overview<a class="headerlink" href="#overview" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this heading">¶</a></h2>
 <p>Here we explain the parameters that affect the drawing when &quot;Model&quot; is selected in the Render window.</p>
 <p>When &quot;Model&quot; is selected, an external 3D model can be imported and displayed.</p>
 <p>The color / distortion image set in the Basic Render Settings window will be used to texture the model. Depending on the model, it may be displayed incorrectly unless depth writing and depth test are enabled.</p>
 <p><img alt="../../_images/renderModel.png" src="../../_images/renderModel.png" /></p>
 </div>
 <div class="section" id="parameters">
-<h2>Parameters<a class="headerlink" href="#parameters" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>Parameters<a class="headerlink" href="#parameters" title="Permalink to this heading">¶</a></h2>
 <div align="center">
 <img src="../../img/Reference/Render/panel_model_en.png">
 <p>"Render Settings" window</p>
 </div><div class="section" id="model">
-<h3>Model<a class="headerlink" href="#model" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>Model<a class="headerlink" href="#model" title="Permalink to this heading">¶</a></h3>
 <p>There are two types of models: file and procedural models.</p>
 <p>If models are loaded from file, Specify FBX (.fbx), metasequoia file (.mqo) used for display, or model file for Effekseer (.efkmodel). If .efkmodel is specified, .efkmodel is generated in the same directory as the specified file. When playing effects with other applications, this generated file is necessary.</p>
 <p>You can also load FBX (.fbx) with animation. The first animation in the FBX file is played.</p>
 <p>If you want to use a procedural model, create a model in the Procedural Model panel and specify it.</p>
 </div>
 <div class="section" id="configuration">
-<h3>Configuration<a class="headerlink" href="#configuration" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>Configuration<a class="headerlink" href="#configuration" title="Permalink to this heading">¶</a></h3>
 <p>Specify how to draw the particle's model. In the case of &quot;Billboard&quot;, the sprite always rotates to face the camera. In the case of &quot;Rotated Billboard&quot;, the model rotates to face the camera while keeping the Z axis fixed. In the case of &quot;Fixed Y-axis&quot;, the sprite rotates to face the camera while keeping the Y axis fixed. For &quot;Fixed&quot;, the model will match the rotation setting of the particle.</p>
 <iframe src='../../Effects/viewer_en.html#References/Render/model_configuration.efkefc'></iframe></div>
 <div class="section" id="culling">
-<h3>Culling<a class="headerlink" href="#culling" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>Culling<a class="headerlink" href="#culling" title="Permalink to this heading">¶</a></h3>
 <p>Specify which side(s) of the model's faces should be displayed.</p>
 </div>
 <div class="section" id="overall-color">
-<h3>Overall Color<a class="headerlink" href="#overall-color" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>Overall Color<a class="headerlink" href="#overall-color" title="Permalink to this heading">¶</a></h3>
 <p>Specify the color tone of the whole model.</p>
 </div>
 </div>

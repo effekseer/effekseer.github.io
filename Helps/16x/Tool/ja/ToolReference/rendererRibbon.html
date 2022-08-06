@@ -14,6 +14,7 @@
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
         <script src="../../_static/js/three.min.js"></script>
         <script src="../../_static/js/effekseer.min.js"></script>
@@ -111,56 +112,56 @@
            <div itemprop="articleBody">
              
   <div class="section" id="id1">
-<h1>描画-リボン<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<h1>描画-リボン<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h1>
 <div class="section" id="id2">
-<h2>概要<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>概要<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
 <p>描画の設定で、「リボン」を選択した場合の描画及びパラメーターについて説明します。</p>
 <p>「リボン」を選択すると、連続的に繋がったリボン上のエフェクトが描画されます。</p>
 <p>リボンはパーティクルごとで描画するのではなく、あるパーティクルの子全てを繋げて描画します。 例えばパーティクル0の子のパーティクル1,2,3と存在すると、1,2,3の間でリボンを引いた様な形状が描画されます。リボンは各パーティクルの(-0.5,0,0)と(0.5,0,0)の間の線を繋げたような形状になります。</p>
 <p><img alt="../../_images/renderRibbon.png" src="../../_images/renderRibbon.png" /></p>
 </div>
 <div class="section" id="id3">
-<h2>パラメーター<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>パラメーター<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h2>
 <div align="center">
 <img src="../../img/Reference/Render/panel_ribbon_ja.png">
 <p>「描画」ウインドウ</p>
 </div><iframe src='../../Effects/viewer_ja.html#References/Render/ribbon_render.efkefc' class='effect'></iframe><div class="section" id="id4">
-<h3>描画順<a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>描画順<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h3>
 <p>同じノードから生成されたパーティクル間で、パーティクルが描画される順番を指定します。 生成順の場合、最初に生成されたパーティクルが最初に、生成順の逆の場合、最初に生成されたパーティクルが最後に描画されます。 すなわち、生成順の場合、最初に生成されたパーティクルより最後に生成されたパーティクルの描画が優先されます。</p>
 </div>
 <div class="section" id="uv">
-<h3>UV タイプ (リボン、軌跡)<a class="headerlink" href="#uv" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>UV タイプ (リボン、軌跡)<a class="headerlink" href="#uv" title="Permalink to this heading">¶</a></h3>
 <p>UVの繰り返しパターンを設定します。</p>
 <div class="section" id="id5">
-<h4>ストレッチ<a class="headerlink" href="#id5" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<h4>ストレッチ<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h4>
 <p>リボン全体で1つの画像を使用します。レーザーなど、1枚の画像が長く表示される表現に適しています。</p>
 <iframe src='../../Effects/viewer_ja.html#References/Render/ribbon_uvtype_strech.efkefc' class='effect'></iframe></div>
 <div class="section" id="id6">
-<h4>タイル<a class="headerlink" href="#id6" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<h4>タイル<a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h4>
 <p>1つのリボン内で1枚の画像を繰り返します。鎖などの繰り返しパターンがある表現に適しています。
 端のみを繰り返さない設定もあります。ループ領域を指定した範囲のみを繰り返します。</p>
 <iframe src='../../Effects/viewer_ja.html#References/Render/ribbon_uvtype_tile.efkefc' class='effect'></iframe></div>
 </div>
 <div class="section" id="id7">
-<h3>視点追従<a class="headerlink" href="#id7" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>視点追従<a class="headerlink" href="#id7" title="Permalink to this heading">¶</a></h3>
 <p>リボンの形状は、パーティクルを中心とした(-0.5,0,0)と(0.5,0,0)の2点を結んだ線を接続した太さのある線です。 通常、その2点間を結んだ線の方向はパーティクルの回転に依存しますが、それを回転させて視点側に向けるかどうかを指定します。</p>
 </div>
 <div class="section" id="id8">
-<h3>スプラインの分割数<a class="headerlink" href="#id8" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>スプラインの分割数<a class="headerlink" href="#id8" title="Permalink to this heading">¶</a></h3>
 <p>リボンを細かく分割して形状を滑らかにします。見た目は綺麗になりますが、処理は重くなります。</p>
 <table><tbody><tr><td><p>分割数 : 1</p>
 </td><td><p>分割数 : 8</p>
 </td></tr><tr><td><img src="../../img/Reference/ribbon_track_division_1.png"/></td><td><img src="../../img/Reference/ribbon_track_division_8.png"/></td></tr></tbody></table></div>
 <div class="section" id="id9">
-<h3>全体色<a class="headerlink" href="#id9" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>全体色<a class="headerlink" href="#id9" title="Permalink to this heading">¶</a></h3>
 <p>リボンの全体の色を指定します。</p>
 </div>
 <div class="section" id="id10">
-<h3>頂点色<a class="headerlink" href="#id10" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>頂点色<a class="headerlink" href="#id10" title="Permalink to this heading">¶</a></h3>
 <p>リボンの各頂点の色を指定します。</p>
 </div>
 <div class="section" id="id11">
-<h3>頂点座標<a class="headerlink" href="#id11" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>頂点座標<a class="headerlink" href="#id11" title="Permalink to this heading">¶</a></h3>
 <p>リボンの各頂点の座標を指定します。ここではX座標しか指定できません。</p>
 </div>
 </div>

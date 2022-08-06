@@ -14,6 +14,7 @@
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
         <script src="../../_static/js/three.min.js"></script>
         <script src="../../_static/js/effekseer.min.js"></script>
@@ -99,65 +100,65 @@
            <div itemprop="articleBody">
              
   <div class="section" id="id1">
-<h1>ネットワーク<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<h1>ネットワーク<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h1>
 <div class="section" id="id2">
-<h2>概要<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>概要<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
 <p>ネットワークに関するパラメーターを設定します。 ネットワーク経由でアプリケーション(ゲーム等)で再生しているエフェクトを外部からアプリケーションの起動中に編集することができます。 UnityやUnrealEngine4等、公式からEffekseerを使用するためのプラグインが提供されている環境では使用できます。 それ以外の環境ではEffekseerのランタイムを組み込んでいる人に相談してください。</p>
 <p><img alt="../../_images/network.png" src="../../_images/network.png" /></p>
 </div>
 <div class="section" id="id3">
-<h2>使い方<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>使い方<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h2>
 <div class="section" id="id4">
-<h3>エフェクトを書き換えられる側(アプリケーション)<a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>エフェクトを書き換えられる側(アプリケーション)<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h3>
 <p>各プラグインやライブラリによって異なります。 ネットワークを経由してエフェクトを書き換えるため、通信に使用するポートを指定します。 明示的に通信のためのサーバーを起動する関数を実行したり、自動的に関数が実行されるようにします。 そして、書き換えたいエフェクトを再生します。</p>
 <p><img alt="../../_images/network_app.png" src="../../_images/network_app.png" /></p>
 </div>
 <div class="section" id="effekseer">
-<h3>Effekseer<a class="headerlink" href="#effekseer" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>Effekseer<a class="headerlink" href="#effekseer" title="Permalink to this heading">¶</a></h3>
 <p>Effekseerでは書き換えたいエフェクトの元になったファイルを開きます。 そして、ネットワークパネルから接続先を設定し、接続します。 エフェクトを編集し、「データ送信」ボタンを押します。 そうすると、アプリケーション内のエフェクトが書き換わります。</p>
 <p><img alt="../../_images/network_tool_ja.png" src="../../_images/network_tool_ja.png" /></p>
 </div>
 <div class="section" id="id5">
-<h3>制限<a class="headerlink" href="#id5" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>制限<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h3>
 <p>アプリケーションで読み込むefkファイルのファイル名と編集するファイル名は同じである必要があります。 例えば、アプリケーションで「Laser.efk」を再生している場合、ツールでは「Laser.efkproj」を編集する必要があります。 また、アプリケーションに存在しない画像、モデル、音には編集が反映されません。</p>
 </div>
 <div class="section" id="tips">
-<h3>TIPS<a class="headerlink" href="#tips" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>TIPS<a class="headerlink" href="#tips" title="Permalink to this heading">¶</a></h3>
 <p>同じコンピューターで起動しているアプリケーションのエフェクトを編集する場合、接続先には127.0.0.1を指定します。</p>
 </div>
 </div>
 <div class="section" id="id6">
-<h2>パラメーター<a class="headerlink" href="#id6" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>パラメーター<a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h2>
 <div class="section" id="id7">
-<h3>接続先<a class="headerlink" href="#id7" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>接続先<a class="headerlink" href="#id7" title="Permalink to this heading">¶</a></h3>
 <p>アプリケーションを起動しているハードウェアのIPアドレスやDNSを記述します。</p>
 </div>
 <div class="section" id="id8">
-<h3>ポート<a class="headerlink" href="#id8" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>ポート<a class="headerlink" href="#id8" title="Permalink to this heading">¶</a></h3>
 <p>アプリケーションにて起動しているサーバーのポート番号を入力します。</p>
 </div>
 <div class="section" id="id9">
-<h3>切断時、自動接続を一定時間ごとに行う<a class="headerlink" href="#id9" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>切断時、自動接続を一定時間ごとに行う<a class="headerlink" href="#id9" title="Permalink to this heading">¶</a></h3>
 <p>どこにも接続されていないのなら、一定時間ごとに設定されている接続先に接続を試みます。</p>
 </div>
 <div class="section" id="id10">
-<h3>ファイル読み込み時にデータを送信する<a class="headerlink" href="#id10" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>ファイル読み込み時にデータを送信する<a class="headerlink" href="#id10" title="Permalink to this heading">¶</a></h3>
 <p>ファイルを読み込んだ際に接続が確立しているなら、エフェクトのデータをアプリケーションに送信します。</p>
 </div>
 <div class="section" id="id11">
-<h3>編集時にデータを送信する<a class="headerlink" href="#id11" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>編集時にデータを送信する<a class="headerlink" href="#id11" title="Permalink to this heading">¶</a></h3>
 <p>エフェクトを編集した際に接続が確立しているなら、エフェクトのデータをアプリケーションに送信します。</p>
 </div>
 <div class="section" id="id12">
-<h3>保存時時にデータを送信する<a class="headerlink" href="#id12" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>保存時時にデータを送信する<a class="headerlink" href="#id12" title="Permalink to this heading">¶</a></h3>
 <p>ファイルを保存した際に接続が確立しているなら、エフェクトのデータをアプリケーションに送信します。</p>
 </div>
 <div class="section" id="id13">
-<h3>データ送信<a class="headerlink" href="#id13" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>データ送信<a class="headerlink" href="#id13" title="Permalink to this heading">¶</a></h3>
 <p>強制的にアプリケーションにエフェクトのデータを送信します。</p>
 </div>
 <div class="section" id="id14">
-<h3>接続<a class="headerlink" href="#id14" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>接続<a class="headerlink" href="#id14" title="Permalink to this heading">¶</a></h3>
 <p>指定されている接続先に接続します。</p>
 </div>
 </div>

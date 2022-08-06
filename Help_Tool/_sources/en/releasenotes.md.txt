@@ -1,5 +1,11 @@
 ﻿# Release Notes
 
+## 1.62f (Aug. 05, 2022)
+
+### Unity
+
+Fixed a bug where URP renderer ignores a depth with some settings
+
 ## 1.62e (June. 17, 2022)
 
 ### Common

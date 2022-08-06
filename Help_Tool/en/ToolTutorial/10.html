@@ -14,6 +14,7 @@
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
         <script src="../../_static/js/three.min.js"></script>
         <script src="../../_static/js/effekseer.min.js"></script>
@@ -101,9 +102,9 @@
            <div itemprop="articleBody">
              
   <div class="section" id="ribbon-and-track">
-<h1>10.Ribbon and Track<a class="headerlink" href="#ribbon-and-track" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<h1>10.Ribbon and Track<a class="headerlink" href="#ribbon-and-track" title="Permalink to this heading">¶</a></h1>
 <div class="main"><div class="section" id="overview">
-<h2>Overview<a class="headerlink" href="#overview" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this heading">¶</a></h2>
 <p>This chapter explains the ribbon and the track.
 The ribbon and the track are long and narrow particles.
 You can express the afterglow of effects that can not be expressed with sprites.</p>
@@ -130,7 +131,7 @@ The ribbon is affected by the angle of the particle, but the track always points
 <a href = "../../Sample/10_01_Sample.zip">Download</a>
 </div></div>
 <div class="section" id="how-to-use">
-<h2>How to use<a class="headerlink" href="#how-to-use" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>How to use<a class="headerlink" href="#how-to-use" title="Permalink to this heading">¶</a></h2>
 <p>The ribbon and the track connect the particles generated from the same parent.
 By connecting it, I express long and narrow particles.</p>
 <div align="center">
@@ -140,7 +141,7 @@ By connecting it, I express long and narrow particles.</p>
 <p>If there is a distance between the particles, you can use the ribbon and the track.
 In order to use effectively, it is necessary to combine with parent-child relationship or spawning method.</p>
 <div class="section" id="parent-child-relationship">
-<h3>Parent-child relationship<a class="headerlink" href="#parent-child-relationship" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>Parent-child relationship<a class="headerlink" href="#parent-child-relationship" title="Permalink to this heading">¶</a></h3>
 <p>Set the parameters so that the parent particles move.</p>
 <p>Ensure that child particles are generated at regular intervals from parent particles.
 Ensure that the child particles remain in the generated position.</p>
@@ -207,7 +208,7 @@ the length of the track is determined according to the number of child particles
 <p>Effect</p>
 </div></div>
 <div class="section" id="spawning-method">
-<h3>Spawning method<a class="headerlink" href="#spawning-method" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>Spawning method<a class="headerlink" href="#spawning-method" title="Permalink to this heading">¶</a></h3>
 <p>By using <code class="docutils literal notranslate"><span class="pre">Spawning</span> <span class="pre">method</span></code>, it is possible to generate beautiful track and ribbon particles without using parent-child relationship.
 In <code class="docutils literal notranslate"><span class="pre">Spawning</span> <span class="pre">method</span></code>, since particles can be regularly arranged in order, track and ribbon are generated in the order specified by <code class="docutils literal notranslate"><span class="pre">Spawning</span> <span class="pre">method</span></code>.</p>
 <p>Let's try it.</p>
@@ -293,7 +294,7 @@ In <code class="docutils literal notranslate"><span class="pre">Spawning</span> 
 </div>
 </div>
 <div class="section" id="the-difference-between-the-track-and-the-ribbon">
-<h2>The difference between the track and the ribbon<a class="headerlink" href="#the-difference-between-the-track-and-the-ribbon" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>The difference between the track and the ribbon<a class="headerlink" href="#the-difference-between-the-track-and-the-ribbon" title="Permalink to this heading">¶</a></h2>
 <p>In order to confirm the difference between the ribbon and the track,
 change the ribbon and the track with the same parameters.</p>
 <div align="center"><table>
@@ -312,7 +313,7 @@ change the ribbon and the track with the same parameters.</p>
 <p>Basically the track is more convenient, but we use the ribbon to create an effect with rotation like a sword trajectory.</p>
 </div>
 <div class="section" id="sword-effect">
-<h2>Sword effect<a class="headerlink" href="#sword-effect" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>Sword effect<a class="headerlink" href="#sword-effect" title="Permalink to this heading">¶</a></h2>
 <p>As an effect that can not be expressed by the track, there are effects like weapons trajectories.
 Here we create an effect that emerges at the position where the sword has passed with the ribbon.</p>
 <p>Please open effect2.efkefc.</p>
@@ -322,7 +323,7 @@ The following is a simple movie. Red is the parent node's particle and green is 
 <div align="center">
 <img src="../../img/Tutorial/10/parent_child.gif">
 </div><div class="section" id="the-parent-node">
-<h3>The parent node<a class="headerlink" href="#the-parent-node" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>The parent node<a class="headerlink" href="#the-parent-node" title="Permalink to this heading">¶</a></h3>
 <p>The parameters of the parent node have already been specified.</p>
 <p>The parent node rotates.</p>
 <p>Since it is a moment to swing the sword, it has specified <code class="docutils literal notranslate"><span class="pre">time</span> <span class="pre">to</span> <span class="pre">live</span></code> to 30.</p>
@@ -332,7 +333,7 @@ So, in the rotation window, the rotation to be 180 degrees from 0 degrees with e
 <img src="../../img/Tutorial/10/parent_en.png">
 </div></div>
 <div class="section" id="the-child-node">
-<h3>The child node<a class="headerlink" href="#the-child-node" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3>The child node<a class="headerlink" href="#the-child-node" title="Permalink to this heading">¶</a></h3>
 <p>Specify the child node's parameters.</p>
 <p>Just as before, we make the Inherit Position, Rotation and Scale <code class="docutils literal notranslate"><span class="pre">Only</span> <span class="pre">on</span> <span class="pre">create</span></code>.
 Specify the ribbon to the rendering method.
@@ -393,7 +394,7 @@ The position is (4, 0, 0) and spawn count is 30.</p>
 </div></div>
 </div>
 <div class="section" id="summary">
-<h2>Summary<a class="headerlink" href="#summary" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2>Summary<a class="headerlink" href="#summary" title="Permalink to this heading">¶</a></h2>
 <p>In this chapter, I explained about the track and the ribbon.</p>
 </div></div>
 </div>
