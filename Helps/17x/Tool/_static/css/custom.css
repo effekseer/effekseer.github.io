@@ -1,0 +1,69 @@
+/*
+Grid system copy from bootstrap 4
+*/
+
+.col-md-4, .col-md-6 {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  float: left;
+}
+
+@media (min-width: 768px) {
+  .col-md-4 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+  .col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+iframe.effect {
+    margin-bottom:50px;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  padding: 0.3em 0.6em;
+  background-color: #eaf3ff;
+  border-left: solid 4px #516ab6;
+}
+
+h3 {
+  padding: 0.3em 0.6em;
+  background-color: #f0f0f0;
+  border-bottom: solid 1px #aaa
+}
+
+h4 {
+  position: relative;
+  padding: 0.1em .5em .2em 1.7em;
+  margin: 0.1em 0;
+}
+h4::after {
+  position: absolute;
+  top: .4em;
+  left: .4em;
+  z-index: 2;
+  content: '';
+  width: 12px;
+  height: 12px;
+  background-color: #ccc;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+h5 {
+  position: relative;
+  margin: 0.1em 0;
+}
+
+.video_center {
+  text-align: center;
+}

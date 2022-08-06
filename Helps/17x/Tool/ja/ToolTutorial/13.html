@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="ja" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>13. 背景を歪ませよう！ &mdash; Effekseer Help  ドキュメント</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/js/three.min.js"></script>
+        <script src="../../_static/js/effekseer.min.js"></script>
+        <script src="../../_static/js/iframe.js"></script>
+        <script src="../../_static/js/OrbitControls.js"></script>
+        <script src="../../_static/translations.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="検索" href="../../search.html" />
+    <link rel="next" title="14. Level of Details (LOD)を設定しよう！" href="14.html" />
+    <link rel="prev" title="12. Fカーブで複雑な動きを指定しよう！" href="12.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> Effekseer Help
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Effekseer Help 日本語</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../overview.html">概要</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">チュートリアル</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="index.html#id2">基本</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="01.html">01.サンプルを見る＆使ってみよう！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="02.html">02.パーティクルをばらまいてみよう！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="03.html">03. 画像を表示してみよう！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="04.html">04. 回転、拡大してみよう！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="05.html">05. ヒットマーク(斬撃)を作成しよう！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="06.html">06. 円形のパーティクルを作成しよう！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="07.html">07. 親子関係で複雑な動きしよう！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="08.html">08. 生成方法でパーティクルを並べよう！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="09.html">09.マズルフラッシュを作成しよう！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="10.html">10.リボンと軌跡</a></li>
+<li class="toctree-l4"><a class="reference internal" href="11.html">11. 3Dモデルを使おう！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="12.html">12. Fカーブで複雑な動きを指定しよう！</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">13. 背景を歪ませよう！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="14.html">14. Level of Details (LOD)を設定しよう！</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id3">マテリアル</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolReference/index.html">ツール・リファレンス</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../MaterialToolReference/index.html">マテリアル・リファレンス</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolTips/01.html">TIPS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq.html">FAQ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../releasenotes.html">更新履歴</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../en/index.html">Effekseer Help (English)</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Effekseer Help</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../index.html">Effekseer Help 日本語</a> &raquo;</li>
+          <li><a href="index.html">チュートリアル</a> &raquo;</li>
+      <li>13. 背景を歪ませよう！</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="id1">
+<h1>13. 背景を歪ませよう！<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h1>
+<div class="main"><div class="section" id="id2">
+<h2>概要<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
+<p>本章では、Effekseerで背景を歪ませる方法について説明します。
+最近のゲームでは、背景を歪ませられるエフェクトが存在します。
+Effekseerでもパラメーターを設定することで、エフェクトで背景を歪ませれます。</p>
+<div align="center">
+<table>
+<tr><td>
+<div align="center">
+<img src="../../img/Tutorial/13/effect1.gif">
+<p>本章で作成するエフェクト1</p>
+</div>
+</td>
+<td>
+<div align="center">
+<img src="../../img/Tutorial/13/effect2.gif">
+<p>本章で作成するエフェクト2</p>
+</div>
+</td></tr>
+</table>
+</div><p>あらかじめ作成途中のエフェクトを下記のリンクからダウンロードできるようにしました。</p>
+<div align="center">
+<p><a href = "../../Sample/13_01_Sample.zip">ダウンロード</a></p>
+</div></div>
+<div class="section" id="id3">
+<h2>使い方<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h2>
+<p>背景を歪ませるためには、歪みのための画像が必要です。
+画像には色情報ではなく、歪み方を描きます。</p>
+<p>歪み用の画像はほとんど法線画像と同じです。ただ、青色だけ扱いが異なります。
+赤色は左右方向の歪みの強さを表します。127を中心として、0は左方向、255は右方向に歪ませます。
+緑色は上下方向の歪みの強さを表します。127を中心として、0は上方向、255は下方向に歪ませます。</p>
+<div align="center">
+<img src="../../img/Tutorial/13/Distortion1.png">
+<p>歪み画像</p>
+</div><p>effect1.efkefcを開いてください。</p>
+<p>Texture/Distortion.pngを描画共通パネルから、予め用意されているDistortionノードの色画像に設定します。</p>
+<p>描画共通パネルから歪みにチェックを入れて有効にします。
+背景が黒いままだと、わかりにくいので環境パネルから背景画像を設定するとわかりやすくなります。</p>
+<div align="center">
+<img src="../../img/Tutorial/13/intesity_1.png">
+<p>歪んだ背景</p>
+</div></div>
+<div class="section" id="id4">
+<h2>歪み強度<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h2>
+<p>描画共通パネルから歪み強度を変更すると、歪み方が変わります。
+歪み強度が大きいほど、歪み方が強くなります。
+歪み強度が0に近いほど、歪まなくなります。</p>
+<div align="center">
+<table>
+<tr><td>
+<div align="center">
+<img src="../../img/Tutorial/13/intesity_1.png">
+<p>歪み強度 : 1</p>
+</div>
+</td>
+<td>
+<div align="center">
+<img src="../../img/Tutorial/13/intesity_3.png">
+<p>歪み強度 : 3</p>
+</div>
+</td></tr>
+</table>
+</div></div>
+<div class="section" id="id5">
+<h2>描画優先度<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h2>
+<p>基本的に歪みは背景を歪ませるのみで、自身のエフェクトは歪ませられません。
+しかし、自身のエフェクトを歪ませたくなる場合があります。
+そのようなときは深度パネルから描画優先度を変更します。</p>
+<p>描画優先度はノード間の描画の順番を決めます。普通は、ノードツリーで下のほうに配置されているノードほど、後に描画されますが、
+描画優先度が異なる場合、描画優先度が大きいノードが後に描画されます。</p>
+<p>この描画優先度が-1以下のノードは、描画優先度が0以上の歪みが設定されているノードに歪ませられます。</p>
+<p>Particleノードの描画優先度を変更しましょう。
+描画優先度を変更すると、ParticleノードのパーティクルがDistortionノードに歪まされていることがわかります。</p>
+<div align="center">
+<table>
+<tr><td>
+<div align="center">
+<img src="../../img/Tutorial/13/priority_off.png">
+<p>描画優先度 : 0</p>
+</div>
+</td>
+<td>
+<div align="center">
+<img src="../../img/Tutorial/13/priority_on.png">
+<p>描画優先度 : -1</p>
+</div>
+</td></tr>
+</table>
+</div></div>
+<div class="section" id="id6">
+<h2>使用例<a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h2>
+<p>歪みはリングやUVスクロールとも併用できます。
+リングとUVスクロールを組み合わせると放射状の歪みを簡単に作成できます。</p>
+<p>このエフェクトはリングとUVスクロールを組み合わせた例です。
+パラメーターを調節したリングに左の画像を適用しました。
+中央の画像が歪みなしで適用させた結果です。
+右の映像がUVスクロールをしつつ歪みを使用したエフェクトです。
+白いパーティクルも全方向に散らばるようにしました。</p>
+<div align="center">
+<table>
+<tr><td>
+<div align="center">
+<img src="../../img/Tutorial/13/Distortion2.png">
+<p>歪み画像</p>
+</div>
+</td><td>
+<div align="center">
+<img src="../../img/Tutorial/13/effect2_original.png">
+<p>エフェクト(歪みなし)</p>
+</div>
+</td><td>
+<div align="center">
+<img src="../../img/Tutorial/13/effect2.gif">
+<p>エフェクト</p>
+</div>
+</td></tr>
+</table>
+</div></div>
+<div class="section" id="id7">
+<h2>注意<a class="headerlink" href="#id7" title="Permalink to this heading">¶</a></h2>
+<p>他のゲームエンジンで再生した場合は見た目が変わることがあります。</p>
+<p>最後に、本章で作成されたエフェクトをダウンロードできるようにしてみました。</p>
+<div align="center">
+<a href = "../../Sample/13_02_Sample.zip">ダウンロード</a>
+</div></div>
+<div class="section" id="id8">
+<h2>まとめ<a class="headerlink" href="#id8" title="Permalink to this heading">¶</a></h2>
+<p>本章では、歪みについて説明しました。
+上手く歪みを指定すると見栄えが良くなります。
+ぜひ使ってみましょう。</p>
+</div></div>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="12.html" class="btn btn-neutral float-left" title="12. Fカーブで複雑な動きを指定しよう！" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="14.html" class="btn btn-neutral float-right" title="14. Level of Details (LOD)を設定しよう！" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2019, Effekseer.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

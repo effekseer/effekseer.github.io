@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="ja" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>03. Let&#39;s display the image! &mdash; Effekseer Help  ドキュメント</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/js/three.min.js"></script>
+        <script src="../../_static/js/effekseer.min.js"></script>
+        <script src="../../_static/js/iframe.js"></script>
+        <script src="../../_static/js/OrbitControls.js"></script>
+        <script src="../../_static/translations.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="検索" href="../../search.html" />
+    <link rel="next" title="04. Let&#39;s rotate and enlarge!" href="04.html" />
+    <link rel="prev" title="02.Let&#39;s spread the particles!" href="02.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> Effekseer Help
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../ja/index.html">Effekseer Help 日本語</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Effekseer Help (English)</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../overview.html">Overview</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Tutorial</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="index.html#basic">Basic</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="01.html">01.Sample and Use！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="02.html">02.Let's spread the particles!</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">03. Let's display the image!</a></li>
+<li class="toctree-l4"><a class="reference internal" href="04.html">04. Let's rotate and enlarge!</a></li>
+<li class="toctree-l4"><a class="reference internal" href="05.html">05. Let's create a hit mark (Slashing)!</a></li>
+<li class="toctree-l4"><a class="reference internal" href="06.html">06. Let's create circular particles!</a></li>
+<li class="toctree-l4"><a class="reference internal" href="07.html">07. Let's move complicated with parent-child relationships!</a></li>
+<li class="toctree-l4"><a class="reference internal" href="08.html">08. Let's arrange particles by spawn method!</a></li>
+<li class="toctree-l4"><a class="reference internal" href="09.html">09.Let's create muzzle flash!</a></li>
+<li class="toctree-l4"><a class="reference internal" href="10.html">10.Ribbon and Track</a></li>
+<li class="toctree-l4"><a class="reference internal" href="11.html">11. Let's use 3D model!!</a></li>
+<li class="toctree-l4"><a class="reference internal" href="12.html">12. Let's specify complicated movement with F-Curve!</a></li>
+<li class="toctree-l4"><a class="reference internal" href="13.html">13. Let's distort a background!</a></li>
+<li class="toctree-l4"><a class="reference internal" href="14.html">14. Let's configure levels of details</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#material">Material</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolReference/index.html">Tool-Reference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../MaterialToolReference/index.html">Material-Reference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolTips/01.html">TIPS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq.html">FAQ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../releasenotes.html">Release Notes</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Effekseer Help</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../index.html">Effekseer Help (English)</a> &raquo;</li>
+          <li><a href="index.html">Tutorial</a> &raquo;</li>
+      <li>03. Let's display the image!</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="let-s-display-the-image">
+<h1>03. Let's display the image!<a class="headerlink" href="#let-s-display-the-image" title="Permalink to this heading">¶</a></h1>
+<div class="main"><div class="section" id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this heading">¶</a></h2>
+<p>In this chapter, images are displayed on particles.
+Until now it was a white square, but the white square changes to an image.
+In addition, we will gradually make the particles transparent and change color.</p>
+<iframe src='../../Sample/viewer_en.html#03_02_Sample/effect.efk'></iframe></div>
+<div class="section" id="preliminary-knowledge-when-the-window-is-closed-the-arrangement-of-windows-is-wrong">
+<h2>Preliminary knowledge - When the window is closed, the arrangement of windows is wrong<a class="headerlink" href="#preliminary-knowledge-when-the-window-is-closed-the-arrangement-of-windows-is-wrong" title="Permalink to this heading">¶</a></h2>
+<p>If you switch windows, the placement may become strange or it may close.
+In that case, select &quot;Window&quot; in the menu bar.
+When &quot;Reset Window Position&quot; is selected, the position of each window is returned to the initial position.
+If you select the name of each window, you can open that window.</p>
+</div>
+<div class="section" id="display-image">
+<h2>Display image<a class="headerlink" href="#display-image" title="Permalink to this heading">¶</a></h2>
+<p>It is troublesome to prepare images yourself, so we can download the pre-created effects from the link below.</p>
+<div align="center">
+<a href = "../../Sample/03_01_Sample.zip">Download</a>
+</div><div class="section" id="image-settings">
+<h3>Image settings<a class="headerlink" href="#image-settings" title="Permalink to this heading">¶</a></h3>
+<p>Let's set the image to the white square immediately.
+The image is set from the &quot;Basic Render Settings&quot; window.
+Click the icon of &quot;Basic Render Settings&quot; on the tab on the upper right.</p>
+<div align="center">
+<img src="../../img/Tutorial/03_render_common_icon.png">
+<p>An icon of Basic Render Settings</p>
+</div><p>Click on the icon of &quot;Basic Render Settings&quot; and then click on the node, the &quot;Basic Render Settings&quot; window will be displayed.</p>
+<div align="center">
+<img src="../../img/Tutorial/03_rendercommon_en.png">
+<p>"Basic Render Settings" window</p>
+</div><p>Click the Load button in the picture of &quot;Basic Render Settings&quot; window.
+When clicked, a window for selecting the image is displayed.
+Select particle.png.
+When you select an image, the image will also be displayed on Effekseer.</p>
+<div align="center">
+<img src="../../img/Tutorial/03_texture_en.png">
+<p>Image</p>
+</div><p>When you play the effect, you can see that the white square has changed to an image.</p>
+<div align="center">
+<img src="../../img/Tutorial/03_texture.gif">
+<p>Image</p>
+</div></div>
+<div class="section" id="fade-in-and-out-settings">
+<h3>Fade in and out settings<a class="headerlink" href="#fade-in-and-out-settings" title="Permalink to this heading">¶</a></h3>
+<p>It is unnatural for particles to appear suddenly or disappear.
+Let's set fade in and fade out so that the transparency change.</p>
+<p>Fade in can be set by changing the value of fade in in the &quot;Basic Render Settings&quot; window.
+Similarly, fade-out can be set by changing the value of fade-out in the &quot;Basic Render Settings&quot; window.
+We will enter 15 for both this time.</p>
+<div align="center">
+<img src="../../img/Tutorial/03_fade_en.png">
+<p>Fade</p>
+</div><p>You can see that the effect appears and disappears gradually.</p>
+<div align="center">
+<img src="../../img/Tutorial/03_fade.gif">
+<p>Fade</p>
+</div></div>
+<div class="section" id="sprite">
+<h3>Sprite<a class="headerlink" href="#sprite" title="Permalink to this heading">¶</a></h3>
+<p>Effekseer has several drawing methods.
+The default method is &quot;Sprite&quot;. You can draw rectangular particles.
+Although it is difficult only by the contents described up to this chapter, you can create such an effect.</p>
+<div align="center">
+<img src="../../img/Tutorial/03_sprite.png">
+<p>Sprite</p>
+</div><p>In the &quot;Render Settings&quot; window, you can set the functions specific to the currently selected drawing method.
+Let's display the &quot;Render Settings&quot; window as it displayed the &quot;Basic Render Settings&quot; window.</p>
+<div align="center">
+<img src="../../img/Tutorial/03_render_icon.png">
+<p>An icon of Render Settings</p>
+</div><div align="center">
+<img src="../../img/Tutorial/03_render_en.png">
+<p>"Render Settings" window</p>
+</div><div class="section" id="color-settings">
+<h4>Color settings<a class="headerlink" href="#color-settings" title="Permalink to this heading">¶</a></h4>
+<p>You have set transparency with fade in, but You cannot set the color of the particles.
+Although there is no problem if the image is colorful, you will need to prepare multiple images to change the color for each particle.
+Therefore, you can specify a rough trend of color of particles if a sprite is selected.</p>
+<p>You can specify that color in the &quot;Render Settings&quot; window. There are several methods to specify colors.
+For this time you choose random as the color changes for each particle.
+Then you set the min of the value to 0. This means that values are randomly chosen between 0 and 255 colors.</p>
+<p>In addition to the text box, the color can be entered by left-clicking the color field with the mouse.</p>
+<img alt="../../_images/input_color_basic.png" class="align-center" src="../../_images/input_color_basic.png" />
+<p>Left-click and drag a color field to copy the value to another color field.</p>
+<img alt="../../_images/input_color.png" class="align-center" src="../../_images/input_color.png" />
+<div align="center">
+<img src="../../img/Tutorial/03_color_en.png">
+<p>Specifiy a color</p>
+</div><p>You can see that the color is different for each particle.</p>
+<div align="center">
+<img src="../../img/Tutorial/03_color.gif">
+<p>Specifiy a color</p>
+</div></div>
+</div>
+<div class="section" id="blend-settings">
+<h3>Blend settings<a class="headerlink" href="#blend-settings" title="Permalink to this heading">¶</a></h3>
+<p>Effekseer allows you to set the method of alpha blending of particles.
+Blend is a method of combining particles and background.
+As shown in the figure below, you can just draw particles or add it to the background.</p>
+<div align="center">
+<img src="../../img/Tutorial/03_blendmode.png">
+<p>Blend mode</p>
+</div><p>For this time you set the method of blending to add for brightening the particles.
+You can set the blend method in the &quot;Basic Render Settings&quot; window.</p>
+<div align="center">
+<img src="../../img/Tutorial/03_blend_en.png">
+<p>Blend mode</p>
+</div><p>If you add the method of blending, you can see that the particles are displayed bright.</p>
+<div align="center">
+<img src="../../img/Tutorial/03_blend.gif">
+<p>Specify blend</p>
+</div><p>Finally, I made it possible to download the effect created in this chapter.</p>
+<div align="center">
+<a href = "../../Sample/03_02_Sample.zip">Download</a>
+</div></div>
+</div>
+<div class="section" id="summery">
+<h2>Summery<a class="headerlink" href="#summery" title="Permalink to this heading">¶</a></h2>
+<p>In this chapter, we changed the sprite parameters to improve the appearance of the particles.
+In the next chapter, we will explain the shape of sprites, rotation and enlargement of particles.</p>
+</div></div>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="02.html" class="btn btn-neutral float-left" title="02.Let&#39;s spread the particles!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="04.html" class="btn btn-neutral float-right" title="04. Let&#39;s rotate and enlarge!" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2019, Effekseer.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

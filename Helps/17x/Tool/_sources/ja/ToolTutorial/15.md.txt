@@ -1,0 +1,109 @@
+﻿# 15.トリガーを送信してエフェクトを変化させよう
+
+<div class="main">
+
+## 概要
+
+本章では、Effekseerのトリガー機能について説明します。
+トリガー機能は再生中のエフェクトを途中で変化させることができます。
+
+例えば次の例のように、エネルギーをチャージしている武器をトリガーで発射させるといったエフェクトが実現できます。
+
+<iframe src='../../Sample/viewer_ja.html#15_Sample/TriggerLaser.efkefc'></iframe>
+
+ダブルクリックでトリガーを送信します。
+
+## トリガー機能
+トリガーは再生中のエフェクトに対して4つまでのトリガーを送信できる仕組みです。
+トリガーを送信されたエフェクトは、ノードに設定されたパラメータに応じて挙動を変化させることができます。
+
+### トリガーの設定
+トリガーによる挙動の変化は、[共通](../ToolReference/Common.html)で設定します。
+
+<div align="center">
+<img src="../../img/Tutorial/15/start_by_trigger_ja.png">
+<p>共通パネルのトリガー設定</p>
+</div>
+
+### エディタからトリガーを送信する
+トリガーはコントローラパネルから送信することができます。
+
+<div align="center">
+<img src="../../img/Tutorial/15/trigger_controller.png">
+<p>トリガーを送信する0,1,2,3ボタン</p>
+</div>
+
+### ゲームからトリガーを送信する
+SDK、各ゲームエンジン向けプラグインにトリガーを送信するAPIがあります。
+
+## サンプルファイル
+本章ではサンプルファイル`TriggerLaser.efkefc`を使って解説します。 
+
+<div align="center">
+<p><a href = "../../Sample/15_Sample.zip">ダウンロード</a></p>
+</div>
+
+<div align="center">
+<img src="../../img/Tutorial/15/nodelist.png">
+<p>本章で作成するエフェクトのノード構成</p>
+</div>
+
+エフェクトをPlayすると、次の動作を行います。
+- `Charge`ノードのパーティクルは生成され、子ノードのパーティクルが生成され続ける。
+- `Laser`ノードのパーティクルは生成されない
+
+エフェクトへトリガー0を送信すると、次の動作を行います。
+- `Charge`ノードのパーティクルは削除され、子ノードのパーティクル生成が停止する
+- `Laser`ノードのパーティクルは生成を開始し、子ノードのパーティクルも生成される
+
+### トリガーを送信すると、パーティクル削除するノード
+
+<div align="center">
+<img src="../../img/Tutorial/15/remove_by_trigger_ja.png">
+<p>Chargeノードのトリガー設定</p>
+</div>
+
+### トリガーを送信すると、パーティクル生成開始するノード
+
+<div align="center">
+<img src="../../img/Tutorial/15/start_by_trigger_ja.png">
+<p>Laserノードのトリガー設定</p>
+</div>
+
+## Tips
+トリガーによって削除されたパーティクルは瞬時に消えてしまって不自然かもしれません。
+その場合は`削除後にフェードアウト`を設定すると、フェードアウトによって自然に消滅させることができます。
+
+<div align="center">
+<img src="../../img/Tutorial/15/fadeout_after_destroyed_ja.png">
+<p>フェードアウト挙動</p>
+</div>
+
+`生存時間内にフェードアウト`では寿命による削除でフェードアウトされますが、トリガーによる削除ではフェードアウトされません。
+次の例はどちらもトリガーによってパーティクルは削除されていますが、フェードアウトの挙動が異なります。
+
+<div align="center">
+<table>
+<tr>
+
+<td>
+<div align="center">
+<img src="../../img/Tutorial/15/fadeout_disabled.gif">
+<p>生存時間内にフェードアウト</p>
+</div>
+</td>
+<td>
+<div align="center">
+<img src="../../img/Tutorial/15/fadeout_enabled.gif">
+<p>削除後にフェードアウト</p>
+</div>
+</td>
+
+</tr>
+</table>
+</div>
+
+## まとめ
+本章ではトリガーの使い方を説明しました。トリガーを活用してインタラクティブなエフェクトを作成しましょう。
+
+</div>

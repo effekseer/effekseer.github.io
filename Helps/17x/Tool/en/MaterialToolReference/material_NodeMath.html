@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="ja" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Material Node (Math) &mdash; Effekseer Help  ドキュメント</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/js/three.min.js"></script>
+        <script src="../../_static/js/effekseer.min.js"></script>
+        <script src="../../_static/js/iframe.js"></script>
+        <script src="../../_static/js/OrbitControls.js"></script>
+        <script src="../../_static/translations.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="検索" href="../../search.html" />
+    <link rel="next" title="Material Node (Image)" href="material_NodeImage.html" />
+    <link rel="prev" title="Material-Reference" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> Effekseer Help
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../ja/index.html">Effekseer Help 日本語</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Effekseer Help (English)</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../overview.html">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolTutorial/index.html">Tutorial</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolReference/index.html">Tool-Reference</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Material-Reference</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="index.html#overview">Overview</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#detailed-operation-method">Detailed operation method</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#about-lighting">About lighting</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#value-types-of-input-and-output">Value types of input and output</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="index.html#node">Node</a><ul class="current">
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Material Node (Math)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="material_NodeImage.html">Material Node (Image)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="material_NodeModel.html">Material Node (Model)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="material_NodeConstant.html">Material Node(Constant)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="material_NodeAdvanced.html">Material Node (Others)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="material_NodeGradient.html">Material Node(Gradient)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="material_NodeNoise.html">Material Node(Noise)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="material_NodeEnvironment.html">Material Node(Environment)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="index.html#output">Output</a></li>
+<li class="toctree-l4"><a class="reference internal" href="index.html#depthfade">DepthFade</a></li>
+<li class="toctree-l4"><a class="reference internal" href="index.html#comment-comment">Comment (Comment)</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#details-of-calculation-behavior">Details of calculation behavior</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolTips/01.html">TIPS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq.html">FAQ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../releasenotes.html">Release Notes</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Effekseer Help</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../index.html">Effekseer Help (English)</a> &raquo;</li>
+          <li><a href="index.html">Material-Reference</a> &raquo;</li>
+      <li>Material Node (Math)</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="material-node-math">
+<h1>Material Node (Math)<a class="headerlink" href="#material-node-math" title="Permalink to this heading">¶</a></h1>
+<div class="section" id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this heading">¶</a></h2>
+</div>
+<div class="section" id="node-list">
+<h2>Node list<a class="headerlink" href="#node-list" title="Permalink to this heading">¶</a></h2>
+<div class="section" id="add">
+<h3>Add<a class="headerlink" href="#add" title="Permalink to this heading">¶</a></h3>
+<p>Outputs the result of adding V1 and V2 is output.
+If the input is not connected, use the value of the property.</p>
+</div>
+<div class="section" id="subtract">
+<h3>Subtract<a class="headerlink" href="#subtract" title="Permalink to this heading">¶</a></h3>
+<p>Outputs the result of subtracting V2 from V1.
+If the input is not connected, use the value of the property.</p>
+</div>
+<div class="section" id="multiply">
+<h3>Multiply<a class="headerlink" href="#multiply" title="Permalink to this heading">¶</a></h3>
+<p>Outputs the result of multiplying V1 and V2.
+If the input is not connected, use the value of the property.</p>
+</div>
+<div class="section" id="divide">
+<h3>Divide<a class="headerlink" href="#divide" title="Permalink to this heading">¶</a></h3>
+<p>Outputs the result of dividing V1 by V2.
+If the input is not connected, use the value of the property.</p>
+</div>
+<div class="section" id="mod">
+<h3>Mod<a class="headerlink" href="#mod" title="Permalink to this heading">¶</a></h3>
+<p>Outputs the remainder when V1 is divided by V2.
+If the input is not connected, use the value of the property.</p>
+</div>
+<div class="section" id="step">
+<h3>Step<a class="headerlink" href="#step" title="Permalink to this heading">¶</a></h3>
+<p>Outputs 1 if the value input to V is larger than Edge,
+and outputs 0 if it is smaller.</p>
+</div>
+<div class="section" id="round-up">
+<h3>Round up<a class="headerlink" href="#round-up" title="Permalink to this heading">¶</a></h3>
+<p>Outputs the result of rounding up V.</p>
+</div>
+<div class="section" id="round-down">
+<h3>Round down<a class="headerlink" href="#round-down" title="Permalink to this heading">¶</a></h3>
+<p>Outputs the value obtained by rounding down V.</p>
+</div>
+<div class="section" id="fractional-part">
+<h3>Fractional part<a class="headerlink" href="#fractional-part" title="Permalink to this heading">¶</a></h3>
+<p>Outputs the fractional part of V.
+For example, if you enter 1.15, it outputs 0.15.</p>
+</div>
+<div class="section" id="maximum">
+<h3>Maximum<a class="headerlink" href="#maximum" title="Permalink to this heading">¶</a></h3>
+<p>Outputs large value at V1 and V2.</p>
+</div>
+<div class="section" id="minimum">
+<h3>Minimum<a class="headerlink" href="#minimum" title="Permalink to this heading">¶</a></h3>
+<p>Outputs small value at V1 and V2.</p>
+</div>
+<div class="section" id="power">
+<h3>Power<a class="headerlink" href="#power" title="Permalink to this heading">¶</a></h3>
+<p>Outputs the value of Base raised to the power of Exp.</p>
+</div>
+<div class="section" id="squareroot">
+<h3>SquareRoot<a class="headerlink" href="#squareroot" title="Permalink to this heading">¶</a></h3>
+<p>Outputs the root of V.</p>
+</div>
+<div class="section" id="clamp">
+<h3>Clamp<a class="headerlink" href="#clamp" title="Permalink to this heading">¶</a></h3>
+<p>Outputs a value in which V is between Min and Max.</p>
+</div>
+<div class="section" id="dot">
+<h3>Dot<a class="headerlink" href="#dot" title="Permalink to this heading">¶</a></h3>
+<p>Outputs the inner product of V1 and V2.</p>
+</div>
+<div class="section" id="cross">
+<h3>Cross<a class="headerlink" href="#cross" title="Permalink to this heading">¶</a></h3>
+<p>Outputs the cross product of V1 and V2.</p>
+</div>
+<div class="section" id="normalize">
+<h3>Normalize<a class="headerlink" href="#normalize" title="Permalink to this heading">¶</a></h3>
+<p>Outputs the normalized value of V.
+Make sure the length of the input number is 1.</p>
+</div>
+<div class="section" id="linearinterpolate">
+<h3>LinearInterpolate<a class="headerlink" href="#linearinterpolate" title="Permalink to this heading">¶</a></h3>
+<p>Outputs the value complemented between V1 and V2 by alpha ratio.
+If the input is not connected, use the value of the property.</p>
+<p>If alpha is 1, V1 is output.
+If alpha is 0, output V2.
+If alpha is 0.7, V1 x 0.3 + V2 x 0.7 is output.</p>
+</div>
+<div class="section" id="v">
+<h3>1-V<a class="headerlink" href="#v" title="Permalink to this heading">¶</a></h3>
+<p>Outputs 1-V.</p>
+</div>
+<div class="section" id="absolute">
+<h3>Absolute<a class="headerlink" href="#absolute" title="Permalink to this heading">¶</a></h3>
+<p>Outputs the absolute value of V.</p>
+</div>
+<div class="section" id="sine">
+<h3>Sine<a class="headerlink" href="#sine" title="Permalink to this heading">¶</a></h3>
+<p>Outputs V Sine.</p>
+</div>
+<div class="section" id="arctangent2">
+<h3>Arctangent2<a class="headerlink" href="#arctangent2" title="Permalink to this heading">¶</a></h3>
+<p>Outputs X / Y Arctangent.
+If the input is not connected, use the value of the property.</p>
+</div>
+<div class="section" id="maskelements">
+<h3>MaskElements<a class="headerlink" href="#maskelements" title="Permalink to this heading">¶</a></h3>
+<p>Extract elements from V.
+For example, extract part of number 4 and output number 2.</p>
+</div>
+<div class="section" id="mergeelements">
+<h3>MergeElements<a class="headerlink" href="#mergeelements" title="Permalink to this heading">¶</a></h3>
+<p>Join the elements of V1 and V2.
+For example, input number 3 and number 1 and output number 4.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="Material-Reference" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="material_NodeImage.html" class="btn btn-neutral float-right" title="Material Node (Image)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2019, Effekseer.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

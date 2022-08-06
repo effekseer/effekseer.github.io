@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="ja" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>生成方法 &mdash; Effekseer Help  ドキュメント</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/js/three.min.js"></script>
+        <script src="../../_static/js/effekseer.min.js"></script>
+        <script src="../../_static/js/iframe.js"></script>
+        <script src="../../_static/js/OrbitControls.js"></script>
+        <script src="../../_static/translations.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="検索" href="../../search.html" />
+    <link rel="next" title="破棄ルール" href="killRules.html" />
+    <link rel="prev" title="力場(ローカル)" href="locationAbs.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> Effekseer Help
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Effekseer Help 日本語</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../overview.html">概要</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolTutorial/index.html">チュートリアル</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">ツール・リファレンス</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="index.html#id2">概要</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="index.html#id13">エフェクトパラメータ</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="common.html">共通</a></li>
+<li class="toctree-l4"><a class="reference internal" href="location.html">位置</a></li>
+<li class="toctree-l4"><a class="reference internal" href="locationAbs.html">力場(ローカル)</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">生成方法</a></li>
+<li class="toctree-l4"><a class="reference internal" href="killRules.html">破棄ルール</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rotation.html">回転</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scale.html">拡大</a></li>
+<li class="toctree-l4"><a class="reference internal" href="depth.html">深度</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererCommon.html">描画共通</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererCommonAd.html">描画共通(高度)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererSprite.html">描画-スプライト</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererRibbon.html">描画-リボン</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererRing.html">描画-リング</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererModel.html">描画-モデル</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererTrack.html">描画-軌跡</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sound.html">音</a></li>
+<li class="toctree-l4"><a class="reference internal" href="fcurve.html">Fカーブ</a></li>
+<li class="toctree-l4"><a class="reference internal" href="global.html">全体</a></li>
+<li class="toctree-l4"><a class="reference internal" href="culling.html">カリング</a></li>
+<li class="toctree-l4"><a class="reference internal" href="levelsOfDetails.html">Levels Of Details</a></li>
+<li class="toctree-l4"><a class="reference internal" href="dynamicParameter.html">動的パラメーター</a></li>
+<li class="toctree-l4"><a class="reference internal" href="proceduralModel.html">プロシージャルモデル</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id14">エフェクト機能</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id15">ツール機能</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id16">コマンドライン</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../MaterialToolReference/index.html">マテリアル・リファレンス</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolTips/01.html">TIPS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq.html">FAQ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../releasenotes.html">更新履歴</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../en/index.html">Effekseer Help (English)</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Effekseer Help</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../index.html">Effekseer Help 日本語</a> &raquo;</li>
+          <li><a href="index.html">ツール・リファレンス</a> &raquo;</li>
+      <li>生成方法</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="id1">
+<h1>生成方法<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h1>
+<div class="section" id="id2">
+<h2>概要<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
+<p>パーティクルが最初に生成される位置を指定するためのパラメーターを設定します。 親のパーティクルの位置が子のパーティクルに与える影響に加えて、ここで設定した値が影響を与えます。 すなわち、親のパーティクルの位置を原点として、この生成方法で指定した分の値だけ移動・回転した位置を中心にパーティクルが生成されます。 <img alt="../../_images/locationGene.png" src="../../_images/locationGene.png" /></p>
+</div>
+<div class="section" id="id3">
+<h2>パラメーター<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h2>
+<div align="center">
+<img src="../../img/Tutorial/08_spawn_ja.png">
+<p>「生成方法」ウインドウ</p>
+</div><div class="section" id="id4">
+<h3>生成角度に影響<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h3>
+<p>生成方法のパラメーターが位置だけでなく、角度にも影響を与えるか指定します。 例えば「球」を指定した場合、生成されるパーティクルのY方向が球の法線方向になります。</p>
+<table><tbody><tr><td>影響がある場合</td><td>影響がない場合</td></tr><tr><td><img src="../../img/Reference/affect_angle.png"/></td><td><img src="../../img/Reference/affect_no_angle.png"/></td></tr></tbody></table></div>
+<div class="section" id="id5">
+<h3>生成方法<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h3>
+<p>生成方法の設定方法を指定します。</p>
+<div class="section" id="id6">
+<h4>点<a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h4>
+<p>指定した位置の点を生成方法として扱います。</p>
+</div>
+<div class="section" id="id7">
+<h4>線<a class="headerlink" href="#id7" title="Permalink to this heading">¶</a></h4>
+<p>線上にパーティクルが配置されます。線の始点(1)と終点(2)を指定すると、線を分割数で分割した位置にパーティクルが配置されます。 パーティクルのX方向が線の方向になるように、パーティクルが回転します。</p>
+<p><img alt="../../_images/locationGene_line.png" src="../../_images/locationGene_line.png" /></p>
+<div class="section" id="id8">
+<h5>位置ノイズ<a class="headerlink" href="#id8" title="Permalink to this heading">¶</a></h5>
+<p>パーティクルが生成される位置の値に、線の方向に向けて、このパラメーターで指定された距離の範囲のノイズが加えられます。 生成される位置の均等感を抑制することができます。</p>
+</div>
+<div class="section" id="id9">
+<h5>生成方法種類<a class="headerlink" href="#id9" title="Permalink to this heading">¶</a></h5>
+<div class="section" id="id10">
+<h6>ランダム<a class="headerlink" href="#id10" title="Permalink to this heading">¶</a></h6>
+<p>線上の各点からランダムに選択された点にパーティクルが配置されます。</p>
+<p><img alt="../../_images/locationGeneModelRand.png" src="../../_images/locationGeneModelRand.png" /></p>
+</div>
+<div class="section" id="id11">
+<h6>順番<a class="headerlink" href="#id11" title="Permalink to this heading">¶</a></h6>
+<p>線上の各点から順番に選択された点にパーティクルが配置されます。</p>
+</div>
+</div>
+</div>
+<div class="section" id="id12">
+<h4>円<a class="headerlink" href="#id12" title="Permalink to this heading">¶</a></h4>
+<p>円状にパーティクルを配置します。この時半径と回転角度を指定します。</p>
+<div class="section" id="id13">
+<h5>軸方向<a class="headerlink" href="#id13" title="Permalink to this heading">¶</a></h5>
+<p>円の軸の方向を指定します。「生成角度に影響」にチェックを入れた場合、パーティクルの上方向は下記の表のようになります。</p>
+<table><tbody><tr><td><p>X軸</p>
+</td><td><p>Y軸</p>
+</td><td><p>Z軸</p>
+</td></tr><tr><td><p>弧の方向</p>
+</td><td><p>軸の方向</p>
+</td><td><p>外周の方向</p>
+</td></tr><tr><td><img src="../../img/Reference/locationGene_circle_xaxis.png"/></td><td><img src="../../img/Reference/locationGene_circle_yaxis.png"/></td><td><img src="../../img/Reference/locationGene_circle_zaxis.png"/></td></tr></tbody></table></div>
+<div class="section" id="id14">
+<h5>角度ノイズ<a class="headerlink" href="#id14" title="Permalink to this heading">¶</a></h5>
+<p>生成される角度に、このパラメーターで指定された角度の範囲のノイズを加えます。 生成される位置の均等感を抑制することができます。</p>
+</div>
+</div>
+<div class="section" id="id15">
+<h4>球<a class="headerlink" href="#id15" title="Permalink to this heading">¶</a></h4>
+<p>球状にパーティクルを配置します。この時半径とX軸、Y軸の回転角度を指定します。「生成角度に影響」にチェックを入れた場合、 パーティクルのY方向は円の外周方向になります。</p>
+</div>
+<div class="section" id="id16">
+<h4>モデル<a class="headerlink" href="#id16" title="Permalink to this heading">¶</a></h4>
+<p>3Dモデルの形状に沿ってパーティクルを配置します。「生成角度に影響」にチェックを入れた場合、パーティクルのZ方向はモデルの法線方向になります。</p>
+<p>モデルにはファイルとプロシージャルモデルが存在します。</p>
+<p>ファイルから読み込む場合、表示に使用するFBX(.fbx)、metasequoiaファイル(.mqo)、もしくは、Effekseer用モデルファイル(.efkmodel)を指定します。 .efkmodel以外を指定した場合、指定したファイルと同じディレクトリに.efkmodelが生成されます。他アプリケーションでエフェクトを再生する場合、 この生成されたファイルが必要です。</p>
+<p>アニメーション付きのFBX(.fbx)を読み込むこともできます。 FBXファイルで一番目に設定されているアニメーションが再生されます。 親のパーティクルの時間に沿ってアニメーションも再生されます。 アニメーションにより変形したモデルからパーティクルが生成されます。</p>
+<p>プロシージャルモデルを使用する場合、プロシージャルモデルのパネルでモデルを作成し、それを指定します。</p>
+<div class="section" id="id17">
+<h5>生成方法種類<a class="headerlink" href="#id17" title="Permalink to this heading">¶</a></h5>
+<div class="section" id="id18">
+<h6>ランダム<a class="headerlink" href="#id18" title="Permalink to this heading">¶</a></h6>
+<p>モデルの面上からランダムにパーティクルを配置します。</p>
+<p><img alt="../../_images/locationGeneModelRand.png" src="../../_images/locationGeneModelRand.png" /></p>
+</div>
+<div class="section" id="id19">
+<h6>頂点<a class="headerlink" href="#id19" title="Permalink to this heading">¶</a></h6>
+<p>モデルの頂点から、順番にパーティクルを配置します。</p>
+<p><img alt="../../_images/locationGeneModelVertex.png" src="../../_images/locationGeneModelVertex.png" /></p>
+</div>
+<div class="section" id="id20">
+<h6>頂点(ランダム)<a class="headerlink" href="#id20" title="Permalink to this heading">¶</a></h6>
+<p>モデルの頂点から、ランダムにパーティクルを配置します。</p>
+<p><img alt="../../_images/locationGeneModelVertexRand.png" src="../../_images/locationGeneModelVertexRand.png" /></p>
+</div>
+<div class="section" id="id21">
+<h6>面<a class="headerlink" href="#id21" title="Permalink to this heading">¶</a></h6>
+<p>モデルの面の中心から、順番にパーティクルを配置します。</p>
+<p><img alt="../../_images/locationGeneModelFace.png" src="../../_images/locationGeneModelFace.png" /></p>
+</div>
+<div class="section" id="id22">
+<h6>面(ランダム)<a class="headerlink" href="#id22" title="Permalink to this heading">¶</a></h6>
+<p>モデルの面の中心から、ランダムにパーティクルを配置します。</p>
+<p><img alt="../../_images/locationGeneModelFaceRand.png" src="../../_images/locationGeneModelFaceRand.png" /></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="locationAbs.html" class="btn btn-neutral float-left" title="力場(ローカル)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="killRules.html" class="btn btn-neutral float-right" title="破棄ルール" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2019, Effekseer.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,109 @@
+﻿# 15.Let's Send triggers to change effects!
+
+<div class="main">
+
+## 概要
+
+This chapter explains the trigger function of Effekseer.
+The trigger function can change effects during playback.
+
+For example, as shown in the following example, a weapon that is being charged with energy can be triggered to fire.
+
+<iframe src='../../Sample/viewer_en.html#15_Sample/TriggerLaser.efkefc'></iframe>
+
+Double-click to send the trigger.
+
+## Trigger function
+Trigger is a mechanism that allows up to four triggers to be sent to the effect currently playing.
+The triggered effect can change its behavior according to the parameters set in the node.
+
+### Trigger settings
+The behavior change by the trigger is set in [Common](../ToolReference/Common.html).
+
+<div align="center">
+<img src="../../img/Tutorial/15/start_by_trigger_en.png">
+<p>Common panel trigger settings</p>
+</div>
+
+### Sending triggers from the editor
+Triggers can be sent from the controller panel.
+
+<div align="center">
+<img src="../../img/Tutorial/15/trigger_controller.png">
+<p>0,1,2,3 button to send triggers</p>
+</div>
+
+### Send triggers from the game
+There are APIs to send triggers to SDKs and plug-ins for each game engine.
+
+## sample effect
+This chapter explains using the sample file `TriggerLaser.efkefc`. 
+
+<div align="center">
+<p><a href = "../../Sample/15_Sample.zip">Download</a></p>
+</div>
+
+<div align="center">
+<img src="../../img/Tutorial/15/nodelist.png">
+<p>Node configuration for the effects created in this chapter</p>
+</div>
+
+When an effect is played, the following actions are performed.
+- `Charge` node particles are generated and child node particles continue to be generated.
+- `Laser` node particles are not generated.
+
+When trigger 0 is sent to the effect, the following operation is performed.
+- `Charge` node particles are deleted and particle generation in child nodes stops
+- `Laser` node particles start generating and child node particles are also generated
+
+### Node to delete particles when triggered
+
+<div align="center">
+<img src="../../img/Tutorial/15/remove_by_trigger_en.png">
+<p>Trigger settings for Charge node</p>
+</div>
+
+### Node that starts particle generation when a trigger is sent
+
+<div align="center">
+<img src="../../img/Tutorial/15/start_by_trigger_en.png">
+<p>Trigger settings for Laser node</p>
+</div>
+
+## Tips
+Particles deleted by a trigger may disappear instantly, which may be unnatural.
+In this case, you can set `Fade out after delete` to make them disappear naturally by fading out.
+
+<div align="center">
+<img src="../../img/Tutorial/15/fadeout_after_destroyed_en.png">
+<p>Fade-out behavior</p>
+</div>
+
+In `Fade out within lifetime`, the particle is faded out by deletion due to lifetime, but not by deletion due to trigger.
+In both of the following examples, the particles are deleted by the trigger, but the fade-out behavior is different.
+
+<div align="center">
+<table>
+<tr>
+
+<td>
+<div align="center">
+<img src="../../img/Tutorial/15/fadeout_disabled.gif">
+<p>Fadeout within lifetime</p>
+</div>
+</td>
+<td>
+<div align="center">
+<img src="../../img/Tutorial/15/fadeout_enabled.gif">
+<p>Fadeout after destroyed</p>
+</div>
+</td>
+
+</tr>
+</table>
+</div>
+
+## Summary
+This chapter explained how to use triggers. Take advantage of triggers to create interactive effects.
+
+</div>

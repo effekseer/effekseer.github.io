@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="ja" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>08. Let&#39;s arrange particles by spawn method! &mdash; Effekseer Help  ドキュメント</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/js/three.min.js"></script>
+        <script src="../../_static/js/effekseer.min.js"></script>
+        <script src="../../_static/js/iframe.js"></script>
+        <script src="../../_static/js/OrbitControls.js"></script>
+        <script src="../../_static/translations.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="検索" href="../../search.html" />
+    <link rel="next" title="09.Let&#39;s create muzzle flash!" href="09.html" />
+    <link rel="prev" title="07. Let&#39;s move complicated with parent-child relationships!" href="07.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> Effekseer Help
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../ja/index.html">Effekseer Help 日本語</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Effekseer Help (English)</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../overview.html">Overview</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Tutorial</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="index.html#basic">Basic</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="01.html">01.Sample and Use！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="02.html">02.Let's spread the particles!</a></li>
+<li class="toctree-l4"><a class="reference internal" href="03.html">03. Let's display the image!</a></li>
+<li class="toctree-l4"><a class="reference internal" href="04.html">04. Let's rotate and enlarge!</a></li>
+<li class="toctree-l4"><a class="reference internal" href="05.html">05. Let's create a hit mark (Slashing)!</a></li>
+<li class="toctree-l4"><a class="reference internal" href="06.html">06. Let's create circular particles!</a></li>
+<li class="toctree-l4"><a class="reference internal" href="07.html">07. Let's move complicated with parent-child relationships!</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">08. Let's arrange particles by spawn method!</a></li>
+<li class="toctree-l4"><a class="reference internal" href="09.html">09.Let's create muzzle flash!</a></li>
+<li class="toctree-l4"><a class="reference internal" href="10.html">10.Ribbon and Track</a></li>
+<li class="toctree-l4"><a class="reference internal" href="11.html">11. Let's use 3D model!!</a></li>
+<li class="toctree-l4"><a class="reference internal" href="12.html">12. Let's specify complicated movement with F-Curve!</a></li>
+<li class="toctree-l4"><a class="reference internal" href="13.html">13. Let's distort a background!</a></li>
+<li class="toctree-l4"><a class="reference internal" href="14.html">14. Let's configure levels of details</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#material">Material</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolReference/index.html">Tool-Reference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../MaterialToolReference/index.html">Material-Reference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolTips/01.html">TIPS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq.html">FAQ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../releasenotes.html">Release Notes</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Effekseer Help</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../index.html">Effekseer Help (English)</a> &raquo;</li>
+          <li><a href="index.html">Tutorial</a> &raquo;</li>
+      <li>08. Let's arrange particles by spawn method!</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="let-s-arrange-particles-by-spawn-method">
+<h1>08. Let's arrange particles by spawn method!<a class="headerlink" href="#let-s-arrange-particles-by-spawn-method" title="Permalink to this heading">¶</a></h1>
+<div class="main"><div class="section" id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this heading">¶</a></h2>
+<p>In this chapter, you change the spawn method and arrange the particles at regular intervals.
+In the spawn method, you can specify the initial pose of the particle.
+The same thing can be reproduced by using the parent-child relationships of the node, but the same thing can be easily realized.</p>
+<div align="center" class='col-md-4'>
+<iframe src='../../Sample/viewer_en.html#08_02_Sample/effect1.efk'></iframe>
+<p>Effect No.1 created in this chapter</p>
+</div><div align="center" class='col-md-4'>
+<iframe src='../../Sample/viewer_en.html#08_02_Sample/effect2.efk'></iframe>
+<p>Effect No.2 created in this chapter</p>
+</div><div align="center"class='col-md-4'>
+<iframe src='../../Sample/viewer_en.html#08_02_Sample/effect3.efk'></iframe>
+<p>Effect No.3 created in this chapter</p>
+</div></div>
+<div class="section" id="spawn-method">
+<h2>Spawn method<a class="headerlink" href="#spawn-method" title="Permalink to this heading">¶</a></h2>
+<p>In Effekseer you can specify the spawn method.
+In the spawn method, you can specify the initial pose when particles are generated.
+For example, you can arrange particles in a circle or sphere.</p>
+<div align="center">
+<img src="../../img/Tutorial/08_spawn_method.png">
+<p>Spawn method</p>
+</div><p>You can specify not only the position but also the angle.
+For example, the upward direction of the particle faces the outside of the sphere.</p>
+<div align="center">
+<table>
+<tr><td>
+<div align="center">
+<img src="../../img/Tutorial/08_affect_no_angle.png">
+<p>Set angle on spawn - Unchecked</p>
+</div>
+</td><td>
+<div align="center">
+<img src="../../img/Tutorial/08_affect_angle.png">
+<p>Set angle on spawn - Checked</p>
+</div>
+</td></tr>
+</table>
+</div><p>We made it possible to download the effect created in advance from the link below.</p>
+<div align="center">
+<p><a href = "../../Sample/08_01_Sample.zip">Download</a></p>
+</div></div>
+<div class="section" id="circular-effect">
+<h2>Circular effect<a class="headerlink" href="#circular-effect" title="Permalink to this heading">¶</a></h2>
+<p>You place the particles in a circle.
+The particles are displayed in order clockwise.</p>
+<p>This effect can be realized by using parent-child relationships, but it is very troublesome.
+In order to easily realize complicated placement, there is the spawn method.</p>
+<p>Please open effect01.efkefc.</p>
+<p>The &quot;Spawn method&quot; window is not displayed in the initial setting.
+You select &quot;Window -&gt; Spawn method&quot; from the menu bar.
+When you select it, the &quot;Spawn method&quot; window will be displayed.</p>
+<div align="center">
+<img src="../../img/Tutorial/08_spawn_en.png">
+<p>Spawn method</p>
+</div><p>You can move the displayed window by moving it while left-clicking the window's menu bar.</p>
+<p>You can also add a window to another panel by overlapping it with the square that appears while moving it.</p>
+<img alt="../../_images/DockPanel_Panel.png" class="align-center" src="../../_images/DockPanel_Panel.png" />
+<p>You can also add to the tabs by dragging and dropping them between the tabs.
+(If you have a single panel of tab, drag &amp; drop them onto the tab.)</p>
+<img alt="../../_images/DockPanel_Tab.png" class="align-center" src="../../_images/DockPanel_Tab.png" />
+<p>From the &quot;Spawn method&quot; window, specify the circle as the spawn method.
+Enter 4 for the radius of the circle.</p>
+<p>You can see that particles are displayed in a circle.</p>
+<div align="center">
+<img src="../../img/Tutorial/08_effect1_random.gif">
+<p>Particles arranged randomly</p>
+</div><p>Particles are randomly arranged, so they do not appear in order.
+Change the <code class="docutils literal notranslate"><span class="pre">Spwan</span> <span class="pre">Mode</span></code> into <code class="docutils literal notranslate"><span class="pre">Clockwise</span></code> so that it appears in order.
+In addition to that, change the <code class="docutils literal notranslate"><span class="pre">Verticies</span></code> and <code class="docutils literal notranslate"><span class="pre">Spawn</span> <span class="pre">Count</span></code> to 12.
+This indicates that particles are caused to appear at positions equally divided by 12 circles.</p>
+<p>You can see that particles are evenly displayed in a circle.
+At the same time, you can see that the particles appear in turn.</p>
+<div align="center">
+<img src="../../img/Tutorial/08_effect1.gif">
+<p>The created effect</p>
+</div></div>
+<div class="section" id="spherical-effect">
+<h2>Spherical effect<a class="headerlink" href="#spherical-effect" title="Permalink to this heading">¶</a></h2>
+<p>Let's place the particles in a spherical shape.</p>
+<p>Please open effect02.efkefc.</p>
+<p>Like a circle, you can also set a spherical shape.</p>
+<p>You change the spawn method from the ”Spawn method&quot; window to sphere.
+Enter 4 for the radius of the sphere.
+In addition, to place particles in all directions, enter 360 degrees for the deviation of the <code class="docutils literal notranslate"><span class="pre">X</span> <span class="pre">Rotation</span></code> and the <code class="docutils literal notranslate"><span class="pre">Y</span> <span class="pre">Rotation</span></code>.</p>
+<p>You can see that particles are arranged in a spherical shape.</p>
+<div align="center">
+<img src="../../img/Tutorial/08_effect2.gif">
+<p>The created effect</p>
+</div><div class="section" id="affect-for-angles">
+<h3>Affect for angles<a class="headerlink" href="#affect-for-angles" title="Permalink to this heading">¶</a></h3>
+<p>I try to make the particles fly outward in the sphere.</p>
+<p>Please open effect03.efjproj.</p>
+<p>You can see that particles are flying upwards in the sphere.</p>
+<div align="center">
+<img src="../../img/Tutorial/08_effect3_start.gif">
+<p>Particles flown upwards</p>
+</div><p>However, in fact, when arranging particles in a spherical shape, particles are desired to fly in and out of the sphere.
+In such cases, check <code class="docutils literal notranslate"><span class="pre">Set</span> <span class="pre">angle</span> <span class="pre">on</span> <span class="pre">spawn</span></code>.
+When checked, particles are rotated so that the top of the particle coincides with the outside direction of the sphere when it is generated.</p>
+<p>In this case, the particles heading upward will be directed to the outside of the sphere.</p>
+<p>When checked, you can see that particles are flying outward from the sphere.</p>
+<div align="center">
+<img src="../../img/Tutorial/08_effect3.gif">
+<p>The created effect</p>
+</div><p>Finally, I made it possible to download the effect created in this chapter.</p>
+<div align="center">
+<a href = "../../Sample/08_02_Sample.zip">Download</a>
+</div></div>
+</div>
+<div class="section" id="summary">
+<h2>Summary<a class="headerlink" href="#summary" title="Permalink to this heading">¶</a></h2>
+<p>In this chapter, you changed the spawn method and arranged the particles circularly or linearly.
+In the next chapter, you will create practical effects based on the knowledge you learned so far.</p>
+</div></div>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="07.html" class="btn btn-neutral float-left" title="07. Let&#39;s move complicated with parent-child relationships!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="09.html" class="btn btn-neutral float-right" title="09.Let&#39;s create muzzle flash!" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2019, Effekseer.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

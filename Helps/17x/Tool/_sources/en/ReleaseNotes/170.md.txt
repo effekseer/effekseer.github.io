@@ -1,0 +1,84 @@
+# 1.70
+
+## Common
+
+### Gradient
+
+Added the ability to specify colors with gradients.
+
+```eval_rst
+.. image:: ../../img/ReleaseNotes/gradient.png
+   :align: center
+```
+
+### Level of Detail
+
+Added the ability to change the behavior of particles based on distance to improve a performance of the effect.
+
+```eval_rst
+.. image:: ../../img/Reference/lods_NodeConfiguration.png
+   :align: center
+```
+
+### Kill Rules
+
+Added the ability to specify a range within which particles will be discarded if they enter or exit within the specified range.
+
+```eval_rst
+.. image:: ../../img/Reference/killRules_Box.png
+   :align: center
+```
+
+### Triggers
+
+Added the ability to remove or create specific particles from the application side.
+
+### Rotation
+
+Added the ability to rotate particles so that they face the camera.
+
+### Ribbon, Track
+
+#### Color Time
+
+Added the ability to set the source of time to determine the color of ribbons and trajectories.
+
+### Materials
+
+#### New nodes
+
+Light, Noise, and Gradient nodes have been added.
+
+### Other
+
+#### Interpolation support for generated time
+
+Particles generated at a small number of times will now interpolate their parent's position.
+For example, children of a fast-moving parent particle can now be generated at equal intervals.
+
+#### Performance Improvements
+
+Performance has been improved when pausing effects or when effects are off-screen.
+
+#### Bug fixes
+
+Various bugs have been fixed.
+
+## Tools
+
+### Overdraw display
+
+Added a display method that shows the number of drawings as a drawing method.
+
+```eval_rst
+... image:: ../../img/Reference/DrawMode_Overdraw.png
+   :align: center
+```
+
+### h264 recording
+
+Added the ability to save recordings in h264 format. (Windows only)
+
+
+
+Translated with www.DeepL.com/Translator (free version)

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="ja" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>1.70 &mdash; Effekseer Help  ドキュメント</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/js/three.min.js"></script>
+        <script src="../../_static/js/effekseer.min.js"></script>
+        <script src="../../_static/js/iframe.js"></script>
+        <script src="../../_static/js/OrbitControls.js"></script>
+        <script src="../../_static/translations.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="検索" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> Effekseer Help
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../ja/index.html">Effekseer Help 日本語</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Effekseer Help (English)</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Effekseer Help</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>1.70</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="id1">
+<h1>1.70<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h1>
+<div class="section" id="common">
+<h2>Common<a class="headerlink" href="#common" title="Permalink to this heading">¶</a></h2>
+<div class="section" id="gradient">
+<h3>Gradient<a class="headerlink" href="#gradient" title="Permalink to this heading">¶</a></h3>
+<p>Added the ability to specify colors with gradients.</p>
+<img alt="../../_images/gradient.png" class="align-center" src="../../_images/gradient.png" />
+</div>
+<div class="section" id="level-of-detail">
+<h3>Level of Detail<a class="headerlink" href="#level-of-detail" title="Permalink to this heading">¶</a></h3>
+<p>Added the ability to change the behavior of particles based on distance to improve a performance of the effect.</p>
+<img alt="../../_images/lods_NodeConfiguration.png" class="align-center" src="../../_images/lods_NodeConfiguration.png" />
+</div>
+<div class="section" id="kill-rules">
+<h3>Kill Rules<a class="headerlink" href="#kill-rules" title="Permalink to this heading">¶</a></h3>
+<p>Added the ability to specify a range within which particles will be discarded if they enter or exit within the specified range.</p>
+<img alt="../../_images/killRules_Box.png" class="align-center" src="../../_images/killRules_Box.png" />
+</div>
+<div class="section" id="triggers">
+<h3>Triggers<a class="headerlink" href="#triggers" title="Permalink to this heading">¶</a></h3>
+<p>Added the ability to remove or create specific particles from the application side.</p>
+</div>
+<div class="section" id="rotation">
+<h3>Rotation<a class="headerlink" href="#rotation" title="Permalink to this heading">¶</a></h3>
+<p>Added the ability to rotate particles so that they face the camera.</p>
+</div>
+<div class="section" id="ribbon-track">
+<h3>Ribbon, Track<a class="headerlink" href="#ribbon-track" title="Permalink to this heading">¶</a></h3>
+<div class="section" id="color-time">
+<h4>Color Time<a class="headerlink" href="#color-time" title="Permalink to this heading">¶</a></h4>
+<p>Added the ability to set the source of time to determine the color of ribbons and trajectories.</p>
+</div>
+</div>
+<div class="section" id="materials">
+<h3>Materials<a class="headerlink" href="#materials" title="Permalink to this heading">¶</a></h3>
+<div class="section" id="new-nodes">
+<h4>New nodes<a class="headerlink" href="#new-nodes" title="Permalink to this heading">¶</a></h4>
+<p>Light, Noise, and Gradient nodes have been added.</p>
+</div>
+</div>
+<div class="section" id="other">
+<h3>Other<a class="headerlink" href="#other" title="Permalink to this heading">¶</a></h3>
+<div class="section" id="interpolation-support-for-generated-time">
+<h4>Interpolation support for generated time<a class="headerlink" href="#interpolation-support-for-generated-time" title="Permalink to this heading">¶</a></h4>
+<p>Particles generated at a small number of times will now interpolate their parent's position.
+For example, children of a fast-moving parent particle can now be generated at equal intervals.</p>
+</div>
+<div class="section" id="performance-improvements">
+<h4>Performance Improvements<a class="headerlink" href="#performance-improvements" title="Permalink to this heading">¶</a></h4>
+<p>Performance has been improved when pausing effects or when effects are off-screen.</p>
+</div>
+<div class="section" id="bug-fixes">
+<h4>Bug fixes<a class="headerlink" href="#bug-fixes" title="Permalink to this heading">¶</a></h4>
+<p>Various bugs have been fixed.</p>
+</div>
+</div>
+</div>
+<div class="section" id="tools">
+<h2>Tools<a class="headerlink" href="#tools" title="Permalink to this heading">¶</a></h2>
+<div class="section" id="overdraw-display">
+<h3>Overdraw display<a class="headerlink" href="#overdraw-display" title="Permalink to this heading">¶</a></h3>
+<p>Added a display method that shows the number of drawings as a drawing method.</p>
+<dl class="simple">
+<dt>... image:: ../../img/Reference/DrawMode_Overdraw.png</dt><dd><dl class="field-list simple">
+<dt class="field-odd">align</dt>
+<dd class="field-odd"><p>center</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</div>
+<div class="section" id="h264-recording">
+<h3>h264 recording<a class="headerlink" href="#h264-recording" title="Permalink to this heading">¶</a></h3>
+<p>Added the ability to save recordings in h264 format. (Windows only)</p>
+<p>Translated with www.DeepL.com/Translator (free version)</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2019, Effekseer.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
