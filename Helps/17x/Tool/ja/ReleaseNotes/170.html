@@ -80,17 +80,20 @@
 </div>
 <div class="section" id="level-of-detail">
 <h3>Level of Detail<a class="headerlink" href="#level-of-detail" title="Permalink to this heading">¶</a></h3>
-<p>距離に応じてパーティクルの振る舞いを変更し、エフェクトを軽量化する機能が追加されました。</p>
+<p>距離に応じてパーティクルの振る舞いを変更し、エフェクトを軽量化する機能が追加されました。
+[by <a class="reference external" href="https://github.com/abvadabra">&#64;abvadabra</a>, <a class="reference external" href="https://github.com/effekseer/Effekseer/pull/820">#820</a>]</p>
 <img alt="../../_images/lods_NodeConfiguration.png" class="align-center" src="../../_images/lods_NodeConfiguration.png" />
 </div>
 <div class="section" id="id4">
 <h3>破棄ルール<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h3>
-<p>指定された範囲内にパーティクルが入る、もしくは出るとパーティクルが破棄される範囲を指定する機能を追加しました。</p>
+<p>指定された範囲内にパーティクルが入る、もしくは出るとパーティクルが破棄される範囲を指定する機能を追加しました。
+[by <a class="reference external" href="https://github.com/abvadabra">&#64;abvadabra</a>, <a class="reference external" href="https://github.com/effekseer/Effekseer/pull/833">#833</a>]</p>
 <img alt="../../_images/killRules_Box.png" class="align-center" src="../../_images/killRules_Box.png" />
 </div>
 <div class="section" id="id5">
 <h3>トリガー<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h3>
-<p>アプリケーション側から特定のパーティクルを削除したり、生成したりする機能を追加しました。</p>
+<p>再生中に特定のパーティクルを削除したり、生成開始したりする機能を追加しました。</p>
+<img alt="../../_images/trigger_anim.gif" class="align-center" src="../../_images/trigger_anim.gif" />
 </div>
 <div class="section" id="id6">
 <h3>回転<a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h3>
@@ -110,41 +113,37 @@
 <p>ライト、ノイズ、グラディエントノードが追加されました。</p>
 </div>
 </div>
+</div>
 <div class="section" id="id11">
-<h3>他<a class="headerlink" href="#id11" title="Permalink to this heading">¶</a></h3>
+<h2>ツール<a class="headerlink" href="#id11" title="Permalink to this heading">¶</a></h2>
 <div class="section" id="id12">
-<h4>生成時間の補間対応<a class="headerlink" href="#id12" title="Permalink to this heading">¶</a></h4>
-<p>少数の時間に生成されたパーティクルが親の位置を補間して表示するようになりました。
-例えば、高速に移動している親パーティクルの子を等間隔に生成できるようになりました。</p>
-</div>
-<div class="section" id="id13">
-<h4>パフォーマンスの改善<a class="headerlink" href="#id13" title="Permalink to this heading">¶</a></h4>
-<p>エフェクトの一時停止や画面外にエフェクトがある時のパフォーマンスを改善しました。</p>
-</div>
-<div class="section" id="id14">
-<h4>不具合修正<a class="headerlink" href="#id14" title="Permalink to this heading">¶</a></h4>
-<p>様々な不具合を修正しました。</p>
-</div>
-</div>
-</div>
-<div class="section" id="id15">
-<h2>ツール<a class="headerlink" href="#id15" title="Permalink to this heading">¶</a></h2>
-<div class="section" id="id16">
-<h3>オーバードロー表示<a class="headerlink" href="#id16" title="Permalink to this heading">¶</a></h3>
+<h3>オーバードロー表示<a class="headerlink" href="#id12" title="Permalink to this heading">¶</a></h3>
 <p>描画方法として描画回数を表示する表示方法を追加しました。</p>
-<dl class="simple">
-<dt>... image:: ../../img/Reference/DrawMode_Overdraw.png</dt><dd><dl class="field-list simple">
-<dt class="field-odd">align</dt>
-<dd class="field-odd"><p>center</p>
-</dd>
-</dl>
-</dd>
-</dl>
+<img alt="img/Reference/DrawMode_Overdraw.png" class="align-center" src="img/Reference/DrawMode_Overdraw.png" />
 </div>
 <div class="section" id="h264">
 <h3>h264録画<a class="headerlink" href="#h264" title="Permalink to this heading">¶</a></h3>
 <p>録画にh264フォーマットでの保存を追加しました。(Windowsのみ)</p>
 </div>
+<div class="section" id="id13">
+<h3>データ復元<a class="headerlink" href="#id13" title="Permalink to this heading">¶</a></h3>
+<p>Effekseer で編集したプロジェクトの自動保存機能を追加しました。
+データ損失の場合、「ファイル &gt; 復元」で自動保存されたファイルからプロジェクトを復元することができます。</p>
+<p>[by <a class="reference external" href="https://github.com/abvadabra">&#64;abvadabra</a>, <a class="reference external" href="https://github.com/effekseer/Effekseer/pull/813">#813</a>]</p>
+</div>
+</div>
+<div class="section" id="id14">
+<h2>その他<a class="headerlink" href="#id14" title="Permalink to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>ランタイム : 少数の時間に生成されたパーティクルが親の位置を補間して表示するようになりました。
+例えば、高速に移動している親パーティクルの子を等間隔に生成できるようになりました。</p></li>
+<li><p>エディター : エディターで小数点の後の桁数を設定する機能を追加 [by <a class="reference external" href="https://github.com/abvadabra">&#64;abvadabra</a>, <a class="reference external" href="https://github.com/effekseer/Effekseer/pull/812">#812</a>].</p></li>
+<li><p>エディター : イージングコンポーネントの中間点に動的な式を使用する機能を追加[by <a class="reference external" href="https://github.com/abvadabra">&#64;abvadabra</a>、<a class="reference external" href="https://github.com/effekseer/Effekseer/pull/816">#816</a>]。</p></li>
+<li><p>API: エフェクトインスタンスによるパーティクル生成を一時的に無効にできる関数を追加 <code class="docutils literal notranslate"><span class="pre">Manager::SetSpawnDisabled(Handle,</span> <span class="pre">bool)</span></code> 関数を追加 [by <a class="reference external" href="https://github.com/abvadabra">&#64;abvadabra</a>, <a class="reference external" href="https://github.com/effekseer/Effekseer/pull/808">#808</a>].</p></li>
+<li><p>OpenGLレンダラー : サンプラーオブジェクトの不正なリセットを修正 [by <a class="reference external" href="https://github.com/abvadabra">&#64;abvadabra</a>, <a class="reference external" href="https://github.com/effekseer/Effekseer/pull/815">#815</a>].</p></li>
+<li><p>その他 : エフェクトの一時停止や画面外にエフェクトがある時のパフォーマンスを改善しました。</p></li>
+<li><p>その他 : 様々なバグが修正されました。</p></li>
+</ul>
 </div>
 </div>
 

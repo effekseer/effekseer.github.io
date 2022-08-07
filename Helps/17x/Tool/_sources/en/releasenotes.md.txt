@@ -4,6 +4,28 @@
 
 [Release note](ReleaseNotes/170)
 
+## 1.62f (Aug. 05, 2022)
+
+### Unity
+
+Fixed a bug where URP renderer ignores a depth with some settings
+
+## 1.62e (June. 17, 2022)
+
+### Common
+
+Fixed a bug where old effekseer projects causes wrong behaviors.
+
+### Unity
+
+Fixed a bug where URP renderer causes an error with Profiler
+
+Fixed a bug where particles cannot stop after calling StopRoot
+
+### WebGL
+
+Fixed a bug where multiple context causes an error
+
 ## 1.62d (Apr. 17, 2022)
 
 ### Common

@@ -106,36 +106,22 @@
 <p>エディターでは、パーティクルをいくつかの描画モードで表示することができ、編集したエフェクトのさまざまな側面をデバッグするのに便利です。</p>
 <div class="section" id="id2">
 <h2>通常<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
-<p>``eval_rst
-... image:: ../../img/Reference/DrawMode_Normal.png
-:align: 中央</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
-これはデフォルトの描画モードです。エンジンでレンダリングされるのと同じようにパーティクルが表示されます。
-
-## ワイヤーフレーム
-
-``eval_rst
-... image:: ../../img/Reference/DrawMode_Wireframe.png
-   :align: 中央
-</pre></div>
-</div>
-<p>パーティクルのワイヤーフレームを表示します。</p>
+<img alt="img/Reference/DrawMode_Normal.png" class="align-center" src="img/Reference/DrawMode_Normal.png" />
+<p>これはデフォルトの描画モードです。エンジンでレンダリングされるのと同じようにパーティクルが表示されます。</p>
 </div>
 <div class="section" id="id3">
-<h2>ワイヤーフレーム＋法線<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h2>
-<p>``eval_rst
-... image:: ../../img/Reference/DrawMode_WireframeNormal.png
-:align: 中央</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
-ワイヤーフレームを重ねたテクスチャパーティクルを表示します。
-
-## オーバーレイ
-
-``eval_rst
-... image:: ../../img/Reference/DrawMode_Overdraw.png
-   :align: 中央
-</pre></div>
+<h2>ワイヤーフレーム<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h2>
+<img alt="img/Reference/DrawMode_Wireframe.png" class="align-center" src="img/Reference/DrawMode_Wireframe.png" />
+<p>パーティクルのワイヤーフレームを表示します。</p>
 </div>
+<div class="section" id="id4">
+<h2>ワイヤーフレーム＋法線<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h2>
+<img alt="img/Reference/DrawMode_WireframeNormal.png" class="align-center" src="img/Reference/DrawMode_WireframeNormal.png" />
+<p>ワイヤーフレームを重ねたテクスチャパーティクルを表示します。</p>
+</div>
+<div class="section" id="id5">
+<h2>オーバーレイ<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h2>
+<img alt="img/Reference/DrawMode_Overdraw.png" class="align-center" src="img/Reference/DrawMode_Overdraw.png" />
 <p>このモードは、最適化の際に便利です。パーティクルの透明な &quot;シルエット&quot;を描画します。
 この透明な色が蓄積されることで、複数のパーティクルが重なっている場所を簡単に見つけることができます。</p>
 <p>パーティクルの過剰描画は通常、パフォーマンス問題の主な原因です。可能であれば、重なり合うパーティクルの量を減らすことで、オーバードローを減らしたいでしょう。</p>

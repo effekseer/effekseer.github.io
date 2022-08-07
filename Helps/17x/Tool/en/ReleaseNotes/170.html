@@ -80,17 +80,20 @@
 </div>
 <div class="section" id="level-of-detail">
 <h3>Level of Detail<a class="headerlink" href="#level-of-detail" title="Permalink to this heading">¶</a></h3>
-<p>Added the ability to change the behavior of particles based on distance to improve a performance of the effect.</p>
+<p>Added the ability to change the behavior of particles based on distance to improve a performance of the effect.
+[by <a class="reference external" href="https://github.com/abvadabra">&#64;abvadabra</a>, <a class="reference external" href="https://github.com/effekseer/Effekseer/pull/820">#820</a>]</p>
 <img alt="../../_images/lods_NodeConfiguration.png" class="align-center" src="../../_images/lods_NodeConfiguration.png" />
 </div>
 <div class="section" id="kill-rules">
 <h3>Kill Rules<a class="headerlink" href="#kill-rules" title="Permalink to this heading">¶</a></h3>
-<p>Added the ability to specify a range within which particles will be discarded if they enter or exit within the specified range.</p>
+<p>Added the ability to specify a range within which particles will be discarded if they enter or exit within the specified range.
+[by <a class="reference external" href="https://github.com/abvadabra">&#64;abvadabra</a>, <a class="reference external" href="https://github.com/effekseer/Effekseer/pull/833">#833</a>]</p>
 <img alt="../../_images/killRules_Box.png" class="align-center" src="../../_images/killRules_Box.png" />
 </div>
 <div class="section" id="triggers">
 <h3>Triggers<a class="headerlink" href="#triggers" title="Permalink to this heading">¶</a></h3>
-<p>Added the ability to remove or create specific particles from the application side.</p>
+<p>Added the ability to remove or start generating specific particles during effect playback.</p>
+<img alt="../../_images/trigger_anim.gif" class="align-center" src="../../_images/trigger_anim.gif" />
 </div>
 <div class="section" id="rotation">
 <h3>Rotation<a class="headerlink" href="#rotation" title="Permalink to this heading">¶</a></h3>
@@ -110,42 +113,36 @@
 <p>Light, Noise, and Gradient nodes have been added.</p>
 </div>
 </div>
-<div class="section" id="other">
-<h3>Other<a class="headerlink" href="#other" title="Permalink to this heading">¶</a></h3>
-<div class="section" id="interpolation-support-for-generated-time">
-<h4>Interpolation support for generated time<a class="headerlink" href="#interpolation-support-for-generated-time" title="Permalink to this heading">¶</a></h4>
-<p>Particles generated at a small number of times will now interpolate their parent's position.
-For example, children of a fast-moving parent particle can now be generated at equal intervals.</p>
-</div>
-<div class="section" id="performance-improvements">
-<h4>Performance Improvements<a class="headerlink" href="#performance-improvements" title="Permalink to this heading">¶</a></h4>
-<p>Performance has been improved when pausing effects or when effects are off-screen.</p>
-</div>
-<div class="section" id="bug-fixes">
-<h4>Bug fixes<a class="headerlink" href="#bug-fixes" title="Permalink to this heading">¶</a></h4>
-<p>Various bugs have been fixed.</p>
-</div>
-</div>
 </div>
 <div class="section" id="tools">
 <h2>Tools<a class="headerlink" href="#tools" title="Permalink to this heading">¶</a></h2>
 <div class="section" id="overdraw-display">
 <h3>Overdraw display<a class="headerlink" href="#overdraw-display" title="Permalink to this heading">¶</a></h3>
 <p>Added a display method that shows the number of drawings as a drawing method.</p>
-<dl class="simple">
-<dt>... image:: ../../img/Reference/DrawMode_Overdraw.png</dt><dd><dl class="field-list simple">
-<dt class="field-odd">align</dt>
-<dd class="field-odd"><p>center</p>
-</dd>
-</dl>
-</dd>
-</dl>
+<img alt="img/Reference/DrawMode_Overdraw.png" class="align-center" src="img/Reference/DrawMode_Overdraw.png" />
 </div>
 <div class="section" id="h264-recording">
 <h3>h264 recording<a class="headerlink" href="#h264-recording" title="Permalink to this heading">¶</a></h3>
 <p>Added the ability to save recordings in h264 format. (Windows only)</p>
-<p>Translated with www.DeepL.com/Translator (free version)</p>
 </div>
+<div class="section" id="data-recovery">
+<h3>Data Recovery<a class="headerlink" href="#data-recovery" title="Permalink to this heading">¶</a></h3>
+<p>Added auto saving of project edited in Effekseer. In case of data loss project can be restored from auto saved files by going into <code class="docutils literal notranslate"><span class="pre">Files</span> <span class="pre">&gt;</span> <span class="pre">Recover</span></code>
+[by <a class="reference external" href="https://github.com/abvadabra">&#64;abvadabra</a>, <a class="reference external" href="https://github.com/effekseer/Effekseer/pull/813">#813</a>]</p>
+</div>
+</div>
+<div class="section" id="other">
+<h2>Other<a class="headerlink" href="#other" title="Permalink to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>Runtime: Particles generated at a small number of times will now interpolate their parent's position.
+For example, children of a fast-moving parent particle can now be generated at equal intervals.</p></li>
+<li><p>Editor: Added ability to configure amount of digits after decimal point in editor [by <a class="reference external" href="https://github.com/abvadabra">&#64;abvadabra</a>, <a class="reference external" href="https://github.com/effekseer/Effekseer/pull/812">#812</a>]</p></li>
+<li><p>Editor: Added ability to use dynamic expressions for middle point of Easing component. [by <a class="reference external" href="https://github.com/abvadabra">&#64;abvadabra</a>, <a class="reference external" href="https://github.com/effekseer/Effekseer/pull/816">#816</a>]</p></li>
+<li><p>API: Added <code class="docutils literal notranslate"><span class="pre">Manager::SetSpawnDisabled(Handle,</span> <span class="pre">bool)</span></code> function which allows to temporarily disable particles generation by effect instance [by <a class="reference external" href="https://github.com/abvadabra">&#64;abvadabra</a>, <a class="reference external" href="https://github.com/effekseer/Effekseer/pull/808">#808</a>]</p></li>
+<li><p>OpenGL Renderer: Fixed incorrect reset of sampler objects [by <a class="reference external" href="https://github.com/abvadabra">&#64;abvadabra</a>, <a class="reference external" href="https://github.com/effekseer/Effekseer/pull/815">#815</a>]</p></li>
+<li><p>Other: Performance has been improved when pausing effects or when effects are off-screen.</p></li>
+<li><p>Various other bugs have been fixed.</p></li>
+</ul>
 </div>
 </div>
 

@@ -4,36 +4,36 @@
 
 ## 通常
 
-``eval_rst
-... image:: ../../img/Reference/DrawMode_Normal.png
-   :align: 中央
+```eval_rst
+.. image:: ../../img/Reference/DrawMode_Normal.png
+   :align: center
 ```
 
 これはデフォルトの描画モードです。エンジンでレンダリングされるのと同じようにパーティクルが表示されます。
 
 ## ワイヤーフレーム
 
-``eval_rst
-... image:: ../../img/Reference/DrawMode_Wireframe.png
-   :align: 中央
+```eval_rst
+.. image:: ../../img/Reference/DrawMode_Wireframe.png
+   :align: center
 ```
 
 パーティクルのワイヤーフレームを表示します。
 
 ## ワイヤーフレーム＋法線
 
-``eval_rst
-... image:: ../../img/Reference/DrawMode_WireframeNormal.png
-   :align: 中央
+```eval_rst
+.. image:: ../../img/Reference/DrawMode_WireframeNormal.png
+   :align: center
 ```
 
 ワイヤーフレームを重ねたテクスチャパーティクルを表示します。
 
 ## オーバーレイ
 
-``eval_rst
-... image:: ../../img/Reference/DrawMode_Overdraw.png
-   :align: 中央
+```eval_rst
+.. image:: ../../img/Reference/DrawMode_Overdraw.png
+   :align: center
 ```
 
 このモードは、最適化の際に便利です。パーティクルの透明な "シルエット"を描画します。
