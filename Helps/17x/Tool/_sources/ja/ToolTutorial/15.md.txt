@@ -18,7 +18,7 @@
 トリガーを送信されたエフェクトは、ノードに設定されたパラメータに応じて挙動を変化させることができます。
 
 ### トリガーの設定
-トリガーによる挙動の変化は、[共通](../ToolReference/Common.html)で設定します。
+トリガーによる挙動の変化は、[共通](../ToolReference/common.md)で設定します。
 
 <div align="center">
 <img src="../../img/Tutorial/15/start_by_trigger_ja.png">

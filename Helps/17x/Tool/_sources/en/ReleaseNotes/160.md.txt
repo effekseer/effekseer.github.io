@@ -1,4 +1,4 @@
-# 1.60
+# 1.60 New Features
 
 ## Common
 

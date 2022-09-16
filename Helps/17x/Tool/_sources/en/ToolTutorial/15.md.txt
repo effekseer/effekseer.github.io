@@ -18,7 +18,7 @@ Trigger is a mechanism that allows up to four triggers to be sent to the effect 
 The triggered effect can change its behavior according to the parameters set in the node.
 
 ### Trigger settings
-The behavior change by the trigger is set in [Common](../ToolReference/Common.html).
+The behavior change by the trigger is set in [Common](../ToolReference/common.md).
 
 <div align="center">
 <img src="../../img/Tutorial/15/start_by_trigger_en.png">

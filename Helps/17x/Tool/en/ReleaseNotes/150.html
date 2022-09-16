@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="ja" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>1.50 New Features &mdash; Effekseer Help  ドキュメント</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/js/three.min.js"></script>
+        <script src="../../_static/js/effekseer.min.js"></script>
+        <script src="../../_static/js/iframe.js"></script>
+        <script src="../../_static/js/OrbitControls.js"></script>
+        <script src="../../_static/translations.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="検索" href="../../search.html" />
+    <link rel="next" title="1.7x Change Logs" href="17x.html" />
+    <link rel="prev" title="1.60 New Features" href="160.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> Effekseer Help
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../ja/index.html">Effekseer Help 日本語</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Effekseer Help (English)</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../overview.html">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolTutorial/index.html">Tutorial</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolReference/index.html">Tool-Reference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../MaterialToolReference/index.html">Material-Reference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolTips/01.html">TIPS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq.html">FAQ</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Release Notes</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="index.html#new-features">New Features</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="170.html">1.70 New Features</a></li>
+<li class="toctree-l4"><a class="reference internal" href="160.html">1.60 New Features</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">1.50 New Features</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#change-logs">Change Logs</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Effekseer Help</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../index.html">Effekseer Help (English)</a> &raquo;</li>
+          <li><a href="index.html">Release Notes</a> &raquo;</li>
+      <li>1.50 New Features</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="new-features">
+<h1>1.50 New Features<a class="headerlink" href="#new-features" title="Permalink to this heading">¶</a></h1>
+<div class="section" id="material">
+<h2>Material<a class="headerlink" href="#material" title="Permalink to this heading">¶</a></h2>
+<p>Material functionality has been added.
+You can now create and use your own materials with nodes.</p>
+<p>Distortion Parameters were removed from Basic Render Settings.
+Lighting Parameters were removed from model Render Settings.
+Instead of these, parameters are reorganized.</p>
+<p>Standard, distortion, and lighting materials have been added in Basic Render Settings.</p>
+<p>You can now specify a sampler for distorting texture independently of color.</p>
+<p>Lighting is now supported for non-models.</p>
+<p>You can now select an image to use for UV calculation. UV can also be specified without an image.</p>
+<p>(Breaking change)
+Due to a bug, the distortion did not behave as the reference correctly.
+The specifications is the same as the previous version if the colors of the vertices are swapped between red and green except for sprites.
+The specifications is the same as the previous version if it makes the color of red twice for sprites.</p>
+<p>(Breaking change)
+Applied read magnification to distortion.
+The magnification and distortion become stronger.
+Therefore, the distortion on the screen remains unchanged when the effect occupies the same area.</p>
+<p>(Breaking change)
+Due to non-model lighting, billboard behavior has been partially changed.
+Models with fixed settings and rings that extend in the depth direction are particularly affected.
+The specifications is the same as the previous version if you reverse the front and back.</p>
+<p>(Breaking change)
+Changed the specification so that pixels are drawn even if the position is the same in DirectX11.
+There is basically no effect, but there may be a change if drawing in the same position.</p>
+<p>(Breaking change)
+Fixed a bug that sprites are not ordered even if the drawing order was reversed.</p>
+</div>
+<div class="section" id="dynamic-parameter">
+<h2>Dynamic Parameter<a class="headerlink" href="#dynamic-parameter" title="Permalink to this heading">¶</a></h2>
+<p>A function has been added to rewrite effect parameters during playback.</p>
+</div>
+<div class="section" id="new-format">
+<h2>New format<a class="headerlink" href="#new-format" title="Permalink to this heading">¶</a></h2>
+<p>efkproj and efk have been combined into efkefc. It is no longer necessary to output another file. Instead, you must specify the load magnification at runtime when a file is loaded.</p>
+</div>
+<div class="section" id="recording">
+<h2>Recording<a class="headerlink" href="#recording" title="Permalink to this heading">¶</a></h2>
+<p>The color when the background is changed can be reproduced as much as possible by separating the recorded result into normal and additive.</p>
+<p>You can now specify whether to save recording settings in the application or project. Effects can now have recording settings.</p>
+<p>Behavior is now reflected in recordings. Recording of loop effects has become easier.</p>
+<p>Fixed the problem that extra frames were recorded when recording as a spreadsheet.</p>
+</div>
+<div class="section" id="ui">
+<h2>UI<a class="headerlink" href="#ui" title="Permalink to this heading">¶</a></h2>
+<p>The behavior of the node tree has been improved in many points.</p>
+<p>The behavior of the F-curve has been improved in many points.</p>
+<p>Copy and paste can be performed for each panel.</p>
+<p>The part whose value has been changed from the default is now emphasized.</p>
+<p>Added support for changing DPI scale.</p>
+<p>Fixed a bug that playback started when a space was entered during character string input.</p>
+<p>Added options to change font and font size.</p>
+</div>
+<div class="section" id="environment">
+<h2>Environment<a class="headerlink" href="#environment" title="Permalink to this heading">¶</a></h2>
+<p>Bloom and tone mapping can now be specified in the editor.
+This is for checking the behavior of the effect because it is applied only to the appearance of the editor.
+Background and lighting have been moved to the environment because of the frequency of changes.</p>
+</div>
+<div class="section" id="sprite-ring-model">
+<h2>Sprite, ring, model<a class="headerlink" href="#sprite-ring-model" title="Permalink to this heading">¶</a></h2>
+<p>(Breaking change) The direction of rotation of <code class="docutils literal notranslate"><span class="pre">Rotated</span> <span class="pre">billboard</span></code> has been reversed.</p>
+</div>
+<div class="section" id="track">
+<h2>Track<a class="headerlink" href="#track" title="Permalink to this heading">¶</a></h2>
+<p>(Breaking change) The track has been flipped.</p>
+</div>
+<div class="section" id="ring">
+<h2>Ring<a class="headerlink" href="#ring" title="Permalink to this heading">¶</a></h2>
+<p>It changed <code class="docutils literal notranslate"><span class="pre">viewing</span> <span class="pre">angle</span></code> setting to a ring shape setting.
+If you specify a crescent type, a ring is drawn as a partially cut circle.
+You can now specify the start and end angles and the fade angle of the circle.</p>
+<p>(Breaking change)
+The appearance may change depending on <code class="docutils literal notranslate"><span class="pre">viewing</span> <span class="pre">angle</span></code>.</p>
+</div>
+<div class="section" id="ribbon-track">
+<h2>Ribbon, Track<a class="headerlink" href="#ribbon-track" title="Permalink to this heading">¶</a></h2>
+<p>UV repeat pattern can now be specified.
+UV can be repeated according to the length. You can also specify not to repeat only the edges.
+Suitable for expressions with repeating patterns such as chains.</p>
+</div>
+<div class="section" id="f-curve">
+<h2>F-curve<a class="headerlink" href="#f-curve" title="Permalink to this heading">¶</a></h2>
+<p>The value change can now be specified with the particle extinction time as 100. In addition, the default has been changed to 100%.</p>
+</div>
+<div class="section" id="depth">
+<h2>Depth<a class="headerlink" href="#depth" title="Permalink to this heading">¶</a></h2>
+<p>Added a parameter to set the scale so that it does not change even if the distance changes. You can also suppress the change.</p>
+<p>Added depth offset to ribbon and track.</p>
+<p>Z-sort is now applied to ring and model.</p>
+<p>(Breaking change)
+Fixed incorrect calculation of ignore of scaling by offset.</p>
+</div>
+<div class="section" id="attractionforce">
+<h2>AttractionForce<a class="headerlink" href="#attractionforce" title="Permalink to this heading">¶</a></h2>
+<p>It is renamed into ForceField.
+Turbulence was implemented.</p>
+</div>
+<div class="section" id="optimisation">
+<h2>Optimisation<a class="headerlink" href="#optimisation" title="Permalink to this heading">¶</a></h2>
+<p>Update process is 30-50% faster.</p>
+</div>
+<div class="section" id="point-of-view">
+<h2>Point of view<a class="headerlink" href="#point-of-view" title="Permalink to this heading">¶</a></h2>
+<p>You can now save and load the current viewpoint.</p>
+<p>You can now specify near-far clips.</p>
+</div>
+<div class="section" id="misc">
+<h2>Misc<a class="headerlink" href="#misc" title="Permalink to this heading">¶</a></h2>
+<p>Added support for reading FBX without bone or FBX without animation and with bone.</p>
+<p>Added a playbackspeed in Behavior</p>
+<p>(Breaking change)
+Fixed a bug that random numbers overflowed. The random behavior may change.</p>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="160.html" class="btn btn-neutral float-left" title="1.60 New Features" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="17x.html" class="btn btn-neutral float-right" title="1.7x Change Logs" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2019, Effekseer.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

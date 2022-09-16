@@ -94,7 +94,7 @@ If a trigger number is specified, particles will not be generated until the trig
 
 If the default "none" is specified, particle generation will start without sending a trigger.
 
-See also: [15.Let's Send triggers to change effects!](../ToolTutorial/15.html)
+See also: [15.Let's Send triggers to change effects!](../ToolTutorial/15.md)
 
 ### Spawn Stop Trigger
 
@@ -104,7 +104,7 @@ If a trigger number is specified, particle generation will stop when the trigger
 
 If the default "None" is specified, the trigger will not stop particle generation.
 
-See also: [15.Let's Send triggers to change effects!](../ToolTutorial/15.html)
+See also: [15.Let's Send triggers to change effects!](../ToolTutorial/15.md)
 
 ### Destroy Trigger
 
@@ -116,4 +116,4 @@ If the default "None" is specified, particles are not deleted by the trigger.
 
 Also, if you set the `Fadeout` in the `Common panel` to `Fadeout after destroyed`, the fade out will be performed after the trigger is sent.
 
-See also: [15.Let's Send triggers to change effects!](../ToolTutorial/15.html)
+See also: [15.Let's Send triggers to change effects!](../ToolTutorial/15.md)

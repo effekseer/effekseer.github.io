@@ -1,9 +1,9 @@
-﻿=====================
+﻿================================================
 Material-Reference
-=====================
+================================================
 
 Overview
-========================
+================================================
 
 Effekseer allows you to create materials for use with the Material Editor.
 You can use materials to specify how particles are drawn.
@@ -46,15 +46,15 @@ Then, the value of Constant3 is displayed on the particle.
    :align: center
 
 Detailed operation method
-========================
+================================================
 
 Move node
-------------------------
+------------------------------------------------
 
 After selecting with left click, you can move with left drag.
 
 Search node
-------------------------
+------------------------------------------------
 
 If you enter a keyword in the menu with right-click, only the nodes that contain that keyword are displayed.
 Keyword is shown by mouse over.
@@ -64,7 +64,7 @@ Keyword is shown by mouse over.
    :align: center
 
 Delete line or node
-------------------------
+------------------------------------------------
 
 Left-click to select and right-click to display Delete in the menu.
 Select Delete to delete nodes and lines.
@@ -74,14 +74,14 @@ Select Delete to delete nodes and lines.
    :align: center
 
 Description of parameters
-------------------------
+------------------------------------------------
 
 A summary and description can be written in the parameter node.
 This summary and description are displayed in Effekseer.
 I recommend that you write a clear description.
 
 Shortcut
-------------------------
+------------------------------------------------
 
 .. csv-table::
    
@@ -92,7 +92,7 @@ Shortcut
    "Ctrl(Command) + S", "Save"
 
 About lighting
-========================
+================================================
 
 You can select whether are particles lighttten with the property of Outout node in a material.
 
@@ -105,7 +105,7 @@ You can select whether are particles lighttten with the property of Outout node 
    :scale: 100%
 
 Value types of input and output
-========================
+================================================
 
 There are two value types: Number and Image.
 Number in the material consists of 1 to 4 numerical values.
@@ -116,7 +116,7 @@ In this document, I call Number 1 to Number 4 depending on the number of element
 
 
 Node
-========================
+================================================
 
 There are various nodes in the material editor.
 
@@ -133,7 +133,7 @@ There are various nodes in the material editor.
     material_NodeEnvironment
     
 Output
-------------------------
+------------------------------------------------
 
 You can specify the final output value.
 
@@ -202,18 +202,18 @@ If the refractive index is not 1, it show the refracted background.
 Input larger value than 1.
 
 DepthFade
-------------------------
+------------------------------------------------
 
 Output a smaller value as it gets closer to the background object.
 Output 1 if the distance is farther than FadeDistance, 0 if the distance is 0.
 
 Comment (Comment)
-------------------------
+------------------------------------------------
 
 Comments for clarity. Does not affect operation.
 
 Details of calculation behavior
-========================
+================================================
 
 If V1 and V2 have inputs, you can enter the same type of value or the Number 1 for V1 or V2.
 If V1 and V2 are of the same type, the result with the type is output.

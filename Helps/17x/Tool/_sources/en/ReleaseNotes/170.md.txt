@@ -1,4 +1,4 @@
-# 1.70
+# 1.70 New Features
 
 ## Common
 
@@ -76,6 +76,9 @@ Added the ability to save recordings in h264 format. (Windows only)
 Added auto saving of project edited in Effekseer. In case of data loss project can be restored from auto saved files by going into `Files > Recover`
 [by [@abvadabra](https://github.com/abvadabra), [#813](https://github.com/effekseer/Effekseer/pull/813)]
 
+## UnrealEngine5
+
+Supported UnrealEngine5
 
 ## Other
 
