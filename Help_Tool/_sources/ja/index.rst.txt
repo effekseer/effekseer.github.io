@@ -13,4 +13,4 @@ Effekseer Help 日本語
     MaterialToolReference/index
     ToolTips/01
     faq
-    releasenotes
+    ReleaseNotes/index

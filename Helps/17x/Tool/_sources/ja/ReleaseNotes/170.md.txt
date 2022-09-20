@@ -78,6 +78,10 @@ Effekseer で編集したプロジェクトの自動保存機能を追加しま�
 
 [by [@abvadabra](https://github.com/abvadabra), [#813](https://github.com/effekseer/Effekseer/pull/813)]
 
+## Unity
+
+M1 Macをサポートしました。
+
 ## UnrealEngine5
 
 UnrealEngine5をサポートしました。

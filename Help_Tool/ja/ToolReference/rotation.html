@@ -25,7 +25,7 @@
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="検索" href="../../search.html" />
     <link rel="next" title="拡大" href="scale.html" />
-    <link rel="prev" title="生成方法" href="locationGene.html" /> 
+    <link rel="prev" title="破棄ルール" href="killRules.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -54,6 +54,7 @@
 <li class="toctree-l4"><a class="reference internal" href="location.html">位置</a></li>
 <li class="toctree-l4"><a class="reference internal" href="locationAbs.html">力場(ローカル)</a></li>
 <li class="toctree-l4"><a class="reference internal" href="locationGene.html">生成方法</a></li>
+<li class="toctree-l4"><a class="reference internal" href="killRules.html">破棄ルール</a></li>
 <li class="toctree-l4 current"><a class="current reference internal" href="#">回転</a></li>
 <li class="toctree-l4"><a class="reference internal" href="scale.html">拡大</a></li>
 <li class="toctree-l4"><a class="reference internal" href="depth.html">深度</a></li>
@@ -68,6 +69,7 @@
 <li class="toctree-l4"><a class="reference internal" href="fcurve.html">Fカーブ</a></li>
 <li class="toctree-l4"><a class="reference internal" href="global.html">全体</a></li>
 <li class="toctree-l4"><a class="reference internal" href="culling.html">カリング</a></li>
+<li class="toctree-l4"><a class="reference internal" href="levelsOfDetails.html">Levels Of Details</a></li>
 <li class="toctree-l4"><a class="reference internal" href="dynamicParameter.html">動的パラメーター</a></li>
 <li class="toctree-l4"><a class="reference internal" href="proceduralModel.html">プロシージャルモデル</a></li>
 </ul>
@@ -141,6 +143,11 @@
 <h4>角度(Fカーブ)<a class="headerlink" href="#f" title="Permalink to this heading">¶</a></h4>
 <p>Fカーブを使用します。</p>
 <iframe src='../../Effects/viewer_ja.html#References/Rotation/rotation_f_curve.efkefc' class='effect'></iframe></div>
+<div class="section" id="id8">
+<h4>視点方向に回転<a class="headerlink" href="#id8" title="Permalink to this heading">¶</a></h4>
+<p>Z軸がカメラの方向を向くように回転します。
+カメラの位置を使用するので、複数のカメラが存在する場合は正しく動作しません。</p>
+</div>
 </div>
 </div>
 </div>
@@ -149,7 +156,7 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="locationGene.html" class="btn btn-neutral float-left" title="生成方法" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="killRules.html" class="btn btn-neutral float-left" title="破棄ルール" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
         <a href="scale.html" class="btn btn-neutral float-right" title="拡大" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 

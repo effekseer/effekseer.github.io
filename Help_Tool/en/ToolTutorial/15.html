@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="ja" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>15.Let&#39;s Send triggers to change effects! &mdash; Effekseer Help  ドキュメント</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/js/three.min.js"></script>
+        <script src="../../_static/js/effekseer.min.js"></script>
+        <script src="../../_static/js/iframe.js"></script>
+        <script src="../../_static/js/OrbitControls.js"></script>
+        <script src="../../_static/translations.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="検索" href="../../search.html" />
+    <link rel="next" title="01. The Introduction of Material" href="material_01.html" />
+    <link rel="prev" title="14. Let&#39;s configure levels of details" href="14.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> Effekseer Help
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../ja/index.html">Effekseer Help 日本語</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Effekseer Help (English)</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../overview.html">Overview</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Tutorial</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="index.html#basic">Basic</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="01.html">01.Sample and Use！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="02.html">02.Let's spread the particles!</a></li>
+<li class="toctree-l4"><a class="reference internal" href="03.html">03. Let's display the image!</a></li>
+<li class="toctree-l4"><a class="reference internal" href="04.html">04. Let's rotate and enlarge!</a></li>
+<li class="toctree-l4"><a class="reference internal" href="05.html">05. Let's create a hit mark (Slashing)!</a></li>
+<li class="toctree-l4"><a class="reference internal" href="06.html">06. Let's create circular particles!</a></li>
+<li class="toctree-l4"><a class="reference internal" href="07.html">07. Let's move complicated with parent-child relationships!</a></li>
+<li class="toctree-l4"><a class="reference internal" href="08.html">08. Let's arrange particles by spawn method!</a></li>
+<li class="toctree-l4"><a class="reference internal" href="09.html">09.Let's create muzzle flash!</a></li>
+<li class="toctree-l4"><a class="reference internal" href="10.html">10.Ribbon and Track</a></li>
+<li class="toctree-l4"><a class="reference internal" href="11.html">11. Let's use 3D model!!</a></li>
+<li class="toctree-l4"><a class="reference internal" href="12.html">12. Let's specify complicated movement with F-Curve!</a></li>
+<li class="toctree-l4"><a class="reference internal" href="13.html">13. Let's distort a background!</a></li>
+<li class="toctree-l4"><a class="reference internal" href="14.html">14. Let's configure levels of details</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">15.Let's Send triggers to change effects!</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#material">Material</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolReference/index.html">Tool-Reference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../MaterialToolReference/index.html">Material-Reference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolTips/01.html">TIPS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq.html">FAQ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ReleaseNotes/index.html">Release Notes</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Effekseer Help</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../index.html">Effekseer Help (English)</a> &raquo;</li>
+          <li><a href="index.html">Tutorial</a> &raquo;</li>
+      <li>15.Let's Send triggers to change effects!</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="let-s-send-triggers-to-change-effects">
+<h1>15.Let's Send triggers to change effects!<a class="headerlink" href="#let-s-send-triggers-to-change-effects" title="Permalink to this heading">¶</a></h1>
+<div class="main"><div class="section" id="id1">
+<h2>概要<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h2>
+<p>This chapter explains the trigger function of Effekseer.
+The trigger function can change effects during playback.</p>
+<p>For example, as shown in the following example, a weapon that is being charged with energy can be triggered to fire.</p>
+<iframe src='../../Sample/viewer_en.html#15_Sample/TriggerLaser.efkefc'></iframe><p>Double-click to send the trigger.</p>
+</div>
+<div class="section" id="trigger-function">
+<h2>Trigger function<a class="headerlink" href="#trigger-function" title="Permalink to this heading">¶</a></h2>
+<p>Trigger is a mechanism that allows up to four triggers to be sent to the effect currently playing.
+The triggered effect can change its behavior according to the parameters set in the node.</p>
+<div class="section" id="trigger-settings">
+<h3>Trigger settings<a class="headerlink" href="#trigger-settings" title="Permalink to this heading">¶</a></h3>
+<p>The behavior change by the trigger is set in <a class="reference internal" href="../ToolReference/common.html"><span class="doc">Common</span></a>.</p>
+<div align="center">
+<img src="../../img/Tutorial/15/start_by_trigger_en.png">
+<p>Common panel trigger settings</p>
+</div></div>
+<div class="section" id="sending-triggers-from-the-editor">
+<h3>Sending triggers from the editor<a class="headerlink" href="#sending-triggers-from-the-editor" title="Permalink to this heading">¶</a></h3>
+<p>Triggers can be sent from the controller panel.</p>
+<div align="center">
+<img src="../../img/Tutorial/15/trigger_controller.png">
+<p>0,1,2,3 button to send triggers</p>
+</div></div>
+<div class="section" id="send-triggers-from-the-game">
+<h3>Send triggers from the game<a class="headerlink" href="#send-triggers-from-the-game" title="Permalink to this heading">¶</a></h3>
+<p>There are APIs to send triggers to SDKs and plug-ins for each game engine.</p>
+</div>
+</div>
+<div class="section" id="sample-effect">
+<h2>sample effect<a class="headerlink" href="#sample-effect" title="Permalink to this heading">¶</a></h2>
+<p>This chapter explains using the sample file <code class="docutils literal notranslate"><span class="pre">TriggerLaser.efkefc</span></code>.</p>
+<div align="center">
+<p><a href = "../../Sample/15_Sample.zip">Download</a></p>
+</div><div align="center">
+<img src="../../img/Tutorial/15/nodelist.png">
+<p>Node configuration for the effects created in this chapter</p>
+</div><p>When an effect is played, the following actions are performed.</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Charge</span></code> node particles are generated and child node particles continue to be generated.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Laser</span></code> node particles are not generated.</p></li>
+</ul>
+<p>When trigger 0 is sent to the effect, the following operation is performed.</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Charge</span></code> node particles are deleted and particle generation in child nodes stops</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Laser</span></code> node particles start generating and child node particles are also generated</p></li>
+</ul>
+<div class="section" id="node-to-delete-particles-when-triggered">
+<h3>Node to delete particles when triggered<a class="headerlink" href="#node-to-delete-particles-when-triggered" title="Permalink to this heading">¶</a></h3>
+<div align="center">
+<img src="../../img/Tutorial/15/remove_by_trigger_en.png">
+<p>Trigger settings for Charge node</p>
+</div></div>
+<div class="section" id="node-that-starts-particle-generation-when-a-trigger-is-sent">
+<h3>Node that starts particle generation when a trigger is sent<a class="headerlink" href="#node-that-starts-particle-generation-when-a-trigger-is-sent" title="Permalink to this heading">¶</a></h3>
+<div align="center">
+<img src="../../img/Tutorial/15/start_by_trigger_en.png">
+<p>Trigger settings for Laser node</p>
+</div></div>
+</div>
+<div class="section" id="tips">
+<h2>Tips<a class="headerlink" href="#tips" title="Permalink to this heading">¶</a></h2>
+<p>Particles deleted by a trigger may disappear instantly, which may be unnatural.
+In this case, you can set <code class="docutils literal notranslate"><span class="pre">Fade</span> <span class="pre">out</span> <span class="pre">after</span> <span class="pre">delete</span></code> to make them disappear naturally by fading out.</p>
+<div align="center">
+<img src="../../img/Tutorial/15/fadeout_after_destroyed_en.png">
+<p>Fade-out behavior</p>
+</div><p>In <code class="docutils literal notranslate"><span class="pre">Fade</span> <span class="pre">out</span> <span class="pre">within</span> <span class="pre">lifetime</span></code>, the particle is faded out by deletion due to lifetime, but not by deletion due to trigger.
+In both of the following examples, the particles are deleted by the trigger, but the fade-out behavior is different.</p>
+<div align="center">
+<table>
+<tr><td>
+<div align="center">
+<img src="../../img/Tutorial/15/fadeout_disabled.gif">
+<p>Fadeout within lifetime</p>
+</div>
+</td>
+<td>
+<div align="center">
+<img src="../../img/Tutorial/15/fadeout_enabled.gif">
+<p>Fadeout after destroyed</p>
+</div>
+</td></tr>
+</table>
+</div></div>
+<div class="section" id="summary">
+<h2>Summary<a class="headerlink" href="#summary" title="Permalink to this heading">¶</a></h2>
+<p>This chapter explained how to use triggers. Take advantage of triggers to create interactive effects.</p>
+</div></div>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="14.html" class="btn btn-neutral float-left" title="14. Let&#39;s configure levels of details" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="material_01.html" class="btn btn-neutral float-right" title="01. The Introduction of Material" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2019, Effekseer.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

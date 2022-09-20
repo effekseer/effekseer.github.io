@@ -1,7 +1,4 @@
 var searchData=
 [
-  ['vec2f_76',['Vec2f',['../struct_effekseer_1_1_s_i_m_d_1_1_vec2f.html',1,'Effekseer::SIMD']]],
-  ['vec3f_77',['Vec3f',['../struct_effekseer_1_1_s_i_m_d_1_1_vec3f.html',1,'Effekseer::SIMD']]],
-  ['vec4f_78',['Vec4f',['../struct_effekseer_1_1_s_i_m_d_1_1_vec4f.html',1,'Effekseer::SIMD']]],
-  ['vulkanimageinfo_79',['VulkanImageInfo',['../struct_effekseer_renderer_vulkan_1_1_vulkan_image_info.html',1,'EffekseerRendererVulkan']]]
+  ['textureproperty_80',['TextureProperty',['../struct_effekseer_renderer_g_l_1_1_texture_property.html',1,'EffekseerRendererGL::TextureProperty'],['../struct_effekseer_renderer_d_x11_1_1_texture_property.html',1,'EffekseerRendererDX11::TextureProperty'],['../struct_effekseer_renderer_d_x12_1_1_texture_property.html',1,'EffekseerRendererDX12::TextureProperty']]]
 ];

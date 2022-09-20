@@ -12,6 +12,9 @@ $(function () {
     var renderer = new THREE.WebGLRenderer({ canvas: canvas.get(0), preserveDrawingBuffer: true });
     renderer.setSize($(this).width(), $(this).width() * (3 / 4));
 
+    var handle = null;
+    var effect = null;
+
     effekseer.initRuntime('../_static/js/effekseer.wasm', () => {
         context = effekseer.createContext();
 
@@ -22,37 +25,35 @@ $(function () {
         scene.add(directionalLight);
         var gridHelper = new THREE.GridHelper(20);
         scene.add(gridHelper);
+        
+        function effectLoop() {
+            if (handle && handle.exists) {
+            } else {
+                handle = context.play(effect, 0, 0, 0);
+            }
+        }
+
         (function renderLoop() {
             requestAnimationFrame(renderLoop);
 
-            context.update();
+            if (effect.isLoaded) {
+                effectLoop();
+            }
 
+            context.update();
             controls.update();
 
             renderer.render(scene, camera);
             context.setProjectionMatrix(camera.projectionMatrix.elements);
             context.setCameraMatrix(camera.matrixWorldInverse.elements);
             context.draw();
-
-
         })();
-        function effectLoop() {
-            var play = context.play(effect, 0, 0, 0);
-            var timer = setInterval(function () {
-                if (!play.exists) {
-                    effectLoop();
-                    clearInterval(timer);
-                }
-            }, 100);
-
-
-        }
-        var timer = setInterval(function () {
-            if (effect.isLoaded) {
-                effectLoop();
-                clearInterval(timer);
+        
+        window.addEventListener("dblclick", function(e) {
+            if (handle && handle.exists) {
+                handle.sendTrigger(0)
             }
-        }, 100);
+        });
         $(window).resize(function () {
             renderer.setSize($(window).width(), $(window).width() * (3 / 4));
         })

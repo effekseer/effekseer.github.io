@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="ja" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>1.50 新機能 &mdash; Effekseer Help  ドキュメント</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/js/three.min.js"></script>
+        <script src="../../_static/js/effekseer.min.js"></script>
+        <script src="../../_static/js/iframe.js"></script>
+        <script src="../../_static/js/OrbitControls.js"></script>
+        <script src="../../_static/translations.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="検索" href="../../search.html" />
+    <link rel="next" title="1.7x 更新履歴" href="17x.html" />
+    <link rel="prev" title="1.60 新機能" href="160.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> Effekseer Help
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Effekseer Help 日本語</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../overview.html">概要</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolTutorial/index.html">チュートリアル</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolReference/index.html">ツール・リファレンス</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../MaterialToolReference/index.html">マテリアル・リファレンス</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolTips/01.html">TIPS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq.html">FAQ</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">リリースノート</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="index.html#id2">新機能</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="170.html">1.70 新機能</a></li>
+<li class="toctree-l4"><a class="reference internal" href="160.html">1.60 新機能</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">1.50 新機能</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id3">更新履歴</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../en/index.html">Effekseer Help (English)</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Effekseer Help</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../index.html">Effekseer Help 日本語</a> &raquo;</li>
+          <li><a href="index.html">リリースノート</a> &raquo;</li>
+      <li>1.50 新機能</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="id1">
+<h1>1.50 新機能<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h1>
+<div class="section" id="id2">
+<h2>マテリアル<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
+<p>マテリアルの機能が追加されました。</p>
+<p>ノードで独自のマテリアルを作成、使用できるようになりました。</p>
+<p>モデルからライティングが削除されました。描画共通から歪みが削除されました。それらの代わりにパラメーターを整理しました。</p>
+<p>描画共通に、標準、歪み、ライティングのマテリアルを加えました。</p>
+<p>サンプラーをカラーとは別に設定できるようになりました。</p>
+<p>モデル以外もライティングに対応しました。</p>
+<p>UVの計算に使用する画像を選択できるようになりました。また、画像がなくともUVを指定できるようになりました。</p>
+<p>(破壊的変更) 不具合により、歪みがリファレンス通りの挙動をしていなかったため修正しました。
+スプライト以外は頂点の色を赤色と緑色を入れ替えると前のバージョンと同じ仕様になります。
+スプライトは赤色かつ強度を2倍にすると前バージョンと同じ仕様になります。</p>
+<p>(破壊的変更) 読み込み時の拡大率を歪みに適用するようにしました。
+拡大率をと歪みも強くなります。
+そのため、エフェクトが画面内で同じ面積を占める時の歪み方が変わらなくなります。</p>
+<p>(破壊的変更) モデル以外のライティングにともない、ビルボードの挙動が一部変更されました。配置方法が固定以外のモデル、及び、奥行き方向に伸ばしたリングが特に影響を受けます。
+1.4の挙動を再現するには前後を逆にする必要があります。</p>
+<p>(破壊的変更) DirectX11で位置が同じだとしても描画されるように仕様変更しました。基本的に影響はないですが、同じ位置に描画したときに変化がある可能性があります。</p>
+<p>(破壊的変更) スプライトの描画順を逆にしたときに正しく実行されない不具合を修正しました。</p>
+</div>
+<div class="section" id="id3">
+<h2>動的パラメーター<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h2>
+<p>エフェクトのパラメーターをアプリケーション内で再生中に書き換える機能が追加されました。</p>
+</div>
+<div class="section" id="id4">
+<h2>新フォーマット<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h2>
+<p>efkprojとefkが結合し、efkefcになりました。今までのように別ファイルを出力する必要がなくなりました。かわりに読み込み時拡大率をランタイムで指定する必要があります。</p>
+</div>
+<div class="section" id="id5">
+<h2>録画<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h2>
+<p>録画した結果を通常と加算に分離して出力することで、背景を変えた場合の色を可能な範囲で再現するようになりました。通常と加算が混ざったエフェクトも録画できます。</p>
+<p>本体かプロジェクトかどちらに録画設定を保存するか指定できるようになりました。録画が必要なエフェクトの設定をエフェクトが持てるようになりました。</p>
+<p>録画に振る舞いが反映されるようになりました。ループエフェクトの録画が容易になりました。</p>
+<p>スプレッドシートとして録画すると余計なフレームが録画される不具合を修正しました。</p>
+</div>
+<div class="section" id="ui">
+<h2>UI<a class="headerlink" href="#ui" title="Permalink to this heading">¶</a></h2>
+<p>様々な点でノードツリーの挙動が改善されました。</p>
+<p>様々な点でFカーブの挙動が改善されました。</p>
+<p>パネルごとにコピー＆ペーストができるようになりました。</p>
+<p>デフォルトから値が変更された部分が強調されるようになりました。</p>
+<p>DPIスケールの変更に対応しました。</p>
+<p>文字列入力中にスペースの入力で再生が始まる不具合を修正しました。</p>
+<p>フォントとフォントサイズを変更するオプションを追加しました。</p>
+</div>
+<div class="section" id="id6">
+<h2>環境<a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h2>
+<p>ブルームやトーンマッピングをエディタ上で設定できるようになりました。
+エディタの見た目にのみ適用なのでエフェクトの挙動の確認用です。
+変更する回数が多いため、背景とライティングを環境に移動しました。</p>
+</div>
+<div class="section" id="id7">
+<h2>スプライト、リング、モデル<a class="headerlink" href="#id7" title="Permalink to this heading">¶</a></h2>
+<p>(破壊的変更) <code class="docutils literal notranslate"><span class="pre">Z軸回転ビルボード</span></code>の回転方向が逆になりました。</p>
+</div>
+<div class="section" id="id8">
+<h2>軌跡<a class="headerlink" href="#id8" title="Permalink to this heading">¶</a></h2>
+<p>(破壊的変更) 軌跡の左右が反転しました。</p>
+</div>
+<div class="section" id="id9">
+<h2>リング<a class="headerlink" href="#id9" title="Permalink to this heading">¶</a></h2>
+<p>現在の描画角度の設定から円の形状の設定に変更しました。
+三日月型を設定すると一部が切れた円を設定できます。
+円の開始終了角度およびフェード角度を設定できます。</p>
+<p>(破壊的変更) 描画角度の設定によっては見た目が変化することがあります。</p>
+</div>
+<div class="section" id="id10">
+<h2>リボン、軌跡<a class="headerlink" href="#id10" title="Permalink to this heading">¶</a></h2>
+<p>UVの繰り返しパターンの設定をできるようになりました。
+今までは、指定したUV全体をリボン、軌跡全体に設定していましたが、
+長さに応じてUVを繰り返せるようになりました。端のみ繰り返さない設定もできます。
+鎖等の繰り返しパターンがある表現に適しています。</p>
+</div>
+<div class="section" id="f">
+<h2>Fカーブ<a class="headerlink" href="#f" title="Permalink to this heading">¶</a></h2>
+<p>パーティクルが消滅する時間を100として、値の変化を設定できるようにしました。加えて、デフォルトを100%の設定に変更しました。</p>
+</div>
+<div class="section" id="id11">
+<h2>深度<a class="headerlink" href="#id11" title="Permalink to this heading">¶</a></h2>
+<p>距離が変化しても大きさが変化しないように設定するパラメーターを追加しました。変化を抑制のみもできます。</p>
+<p>深度オフセットをリボンと軌跡にも適用するようにしました。</p>
+<p>Zソートをリングとモデルにも適用するようにしました。</p>
+<p>(破壊的変更) オフセットによる拡大の無効化の計算が間違っていた部分を修正しました。</p>
+</div>
+<div class="section" id="id12">
+<h2>引力<a class="headerlink" href="#id12" title="Permalink to this heading">¶</a></h2>
+<p>力場に名前が変更されました。
+乱流が実装されました。</p>
+</div>
+<div class="section" id="id13">
+<h2>最適化<a class="headerlink" href="#id13" title="Permalink to this heading">¶</a></h2>
+<p>更新処理が30から50%の高速化されます。</p>
+</div>
+<div class="section" id="id14">
+<h2>視点<a class="headerlink" href="#id14" title="Permalink to this heading">¶</a></h2>
+<p>現在の視点を保存、読み込みできるようになりました。</p>
+<p>視点でニア―ファークリップを設定できるようになりました。</p>
+</div>
+<div class="section" id="id15">
+<h2>他<a class="headerlink" href="#id15" title="Permalink to this heading">¶</a></h2>
+<p>ボーンなしFBXやアニメーションなし、かつボーンありFBXの読込に対応に対応しました。</p>
+<p>振る舞いに再生速度が追加されました。</p>
+<p>(破壊的変更) 乱数がオーバーフローしていた不具合を修正しました。ランダムの振る舞いが変わる可能性があります。</p>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="160.html" class="btn btn-neutral float-left" title="1.60 新機能" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="17x.html" class="btn btn-neutral float-right" title="1.7x 更新履歴" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2019, Effekseer.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

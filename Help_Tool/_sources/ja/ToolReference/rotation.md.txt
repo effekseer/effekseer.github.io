@@ -34,3 +34,8 @@
 
 Fカーブを使用します。
 <iframe src='../../Effects/viewer_ja.html#References/Rotation/rotation_f_curve.efkefc' class='effect'></iframe>
+
+#### 視点方向に回転
+
+Z軸がカメラの方向を向くように回転します。
+カメラの位置を使用するので、複数のカメラが存在する場合は正しく動作しません。

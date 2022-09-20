@@ -55,6 +55,7 @@
 <li class="toctree-l4"><a class="reference internal" href="location.html">Position</a></li>
 <li class="toctree-l4"><a class="reference internal" href="locationAbs.html">Force Field (Local)</a></li>
 <li class="toctree-l4"><a class="reference internal" href="locationGene.html">Spawning Method</a></li>
+<li class="toctree-l4"><a class="reference internal" href="killRules.html">Kill Rules</a></li>
 <li class="toctree-l4"><a class="reference internal" href="rotation.html">Rotation</a></li>
 <li class="toctree-l4"><a class="reference internal" href="scale.html">Scale</a></li>
 <li class="toctree-l4"><a class="reference internal" href="depth.html">Depth</a></li>
@@ -69,6 +70,7 @@
 <li class="toctree-l4"><a class="reference internal" href="fcurve.html">F-Curve</a></li>
 <li class="toctree-l4"><a class="reference internal" href="global.html">Global Settings</a></li>
 <li class="toctree-l4"><a class="reference internal" href="culling.html">Culling</a></li>
+<li class="toctree-l4"><a class="reference internal" href="levelsOfDetails.html">Levels Of Details</a></li>
 <li class="toctree-l4"><a class="reference internal" href="dynamicParameter.html">DynamicParameter</a></li>
 <li class="toctree-l4"><a class="reference internal" href="proceduralModel.html">Procedural Model</a></li>
 </ul>
@@ -81,7 +83,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../MaterialToolReference/index.html">Material-Reference</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ToolTips/01.html">TIPS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../faq.html">FAQ</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../releasenotes.html">Release Notes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ReleaseNotes/index.html">Release Notes</a></li>
 </ul>
 </li>
 </ul>
@@ -120,7 +122,7 @@
 <div class="section" id="parameter">
 <h2>Parameter<a class="headerlink" href="#parameter" title="Permalink to this heading">¶</a></h2>
 <div align="center">
-<img src="../../img/Tutorial/02_common_en.png">
+<img src="../../img/Reference/common_parameters_en.png">
 <p>"Basic settings" window</p>
 </div><div class="section" id="visibility">
 <h3>Visibility<a class="headerlink" href="#visibility" title="Permalink to this heading">¶</a></h3>
@@ -192,6 +194,28 @@ The behavior can be controlled by the speed and steering.</p>
 <p>A negative numerical value can also be specified as Initial Delay. The particles that are supposed to be generated at a negative time are actually generated at the 0th frame.</p>
 <p>The following figure shows the relationship between Spawn Rate, Initial Delay and time. (1) is Spawn Rate, (2) is Initial Delay, (3) is time (frame unit). The start time is shifted by the value of Initial Delay. When Initial Delay elapses from the start time, particles are generated. However, all the particles generated at the negative time are generated in the 0th frame.</p>
 <p><img alt="../../_images/common_generatedTime.png" src="../../_images/common_generatedTime.png" /></p>
+</div>
+<div class="section" id="spawn-start-trigger">
+<h3>Spawn Start Trigger<a class="headerlink" href="#spawn-start-trigger" title="Permalink to this heading">¶</a></h3>
+<p>Specifies the trigger number to initiate particle generation.</p>
+<p>If a trigger number is specified, particles will not be generated until the trigger is sent.</p>
+<p>If the default &quot;none&quot; is specified, particle generation will start without sending a trigger.</p>
+<p>See also: <a class="reference internal" href="../ToolTutorial/15.html"><span class="doc">15.Let's Send triggers to change effects!</span></a></p>
+</div>
+<div class="section" id="spawn-stop-trigger">
+<h3>Spawn Stop Trigger<a class="headerlink" href="#spawn-stop-trigger" title="Permalink to this heading">¶</a></h3>
+<p>Specify a trigger number to stop particle generation.</p>
+<p>If a trigger number is specified, particle generation will stop when the trigger is sent.</p>
+<p>If the default &quot;None&quot; is specified, the trigger will not stop particle generation.</p>
+<p>See also: <a class="reference internal" href="../ToolTutorial/15.html"><span class="doc">15.Let's Send triggers to change effects!</span></a></p>
+</div>
+<div class="section" id="destroy-trigger">
+<h3>Destroy Trigger<a class="headerlink" href="#destroy-trigger" title="Permalink to this heading">¶</a></h3>
+<p>Specifies the trigger number for deleting particles.</p>
+<p>If a trigger number is specified, particles existing at that moment will be deleted when the trigger is sent.</p>
+<p>If the default &quot;None&quot; is specified, particles are not deleted by the trigger.</p>
+<p>Also, if you set the <code class="docutils literal notranslate"><span class="pre">Fadeout</span></code> in the <code class="docutils literal notranslate"><span class="pre">Common</span> <span class="pre">panel</span></code> to <code class="docutils literal notranslate"><span class="pre">Fadeout</span> <span class="pre">after</span> <span class="pre">destroyed</span></code>, the fade out will be performed after the trigger is sent.</p>
+<p>See also: <a class="reference internal" href="../ToolTutorial/15.html"><span class="doc">15.Let's Send triggers to change effects!</span></a></p>
 </div>
 </div>
 </div>

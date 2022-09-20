@@ -54,6 +54,7 @@
 <li class="toctree-l4"><a class="reference internal" href="location.html">位置</a></li>
 <li class="toctree-l4"><a class="reference internal" href="locationAbs.html">力場(ローカル)</a></li>
 <li class="toctree-l4"><a class="reference internal" href="locationGene.html">生成方法</a></li>
+<li class="toctree-l4"><a class="reference internal" href="killRules.html">破棄ルール</a></li>
 <li class="toctree-l4"><a class="reference internal" href="rotation.html">回転</a></li>
 <li class="toctree-l4"><a class="reference internal" href="scale.html">拡大</a></li>
 <li class="toctree-l4"><a class="reference internal" href="depth.html">深度</a></li>
@@ -68,6 +69,7 @@
 <li class="toctree-l4"><a class="reference internal" href="fcurve.html">Fカーブ</a></li>
 <li class="toctree-l4"><a class="reference internal" href="global.html">全体</a></li>
 <li class="toctree-l4"><a class="reference internal" href="culling.html">カリング</a></li>
+<li class="toctree-l4"><a class="reference internal" href="levelsOfDetails.html">Levels Of Details</a></li>
 <li class="toctree-l4"><a class="reference internal" href="dynamicParameter.html">動的パラメーター</a></li>
 <li class="toctree-l4"><a class="reference internal" href="proceduralModel.html">プロシージャルモデル</a></li>
 </ul>
@@ -80,7 +82,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../MaterialToolReference/index.html">マテリアル・リファレンス</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ToolTips/01.html">TIPS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../faq.html">FAQ</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../releasenotes.html">更新履歴</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ReleaseNotes/index.html">リリースノート</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../en/index.html">Effekseer Help (English)</a></li>
@@ -120,7 +122,7 @@
 <div class="section" id="id3">
 <h2>パラメーター<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h2>
 <div align="center">
-<img src="../../img/Tutorial/02_common_ja.png">
+<img src="../../img/Reference/common_parameters_ja.png">
 <p>「共通」ウインドウ</p>
 </div><div class="section" id="id4">
 <h3>描画<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h3>
@@ -190,9 +192,32 @@
 <div class="section" id="id20">
 <h3>生成開始時間<a class="headerlink" href="#id20" title="Permalink to this heading">¶</a></h3>
 <p>親のパーティクルが生成されてから子のパーティクルが初めて生成されるまでの時間を指定します。</p>
+<p>後述の&quot;生成開始トリガー&quot;が指定されている場合、トリガーが送信されてからパーティクルが初めて生成されるまでの時間になります。</p>
 <p>生成開始時間にはマイナスの数値も指定できます。 マイナスの時間に生成される予定のパーティクルは、実際には0フレーム目に生成されます。</p>
 <p>下の図に生成時間、生成開始時間と生成される時間の関係性を示します。(1)は生成時間、(2)は生成開始時間、(3)は時間(フレーム単位)です。 生成開始時間の値の分だけ、開始時間がずれます。 ずれた開始時間から生成時間の値の分、時間が経過するとパーティクルが生成されます。 ただし、マイナスの時間に生成されたパーティクルは全て0フレーム目に生成されます。</p>
 <p><img alt="../../_images/common_generatedTime.png" src="../../_images/common_generatedTime.png" /></p>
+</div>
+<div class="section" id="id21">
+<h3>生成開始トリガー<a class="headerlink" href="#id21" title="Permalink to this heading">¶</a></h3>
+<p>パーティクル生成を開始するためのトリガー番号を指定します。</p>
+<p>トリガー番号が指定されている場合、トリガーを送信するまでパーティクルは生成されません。</p>
+<p>デフォルト&quot;無し&quot;が指定されている場合は、トリガーを送信しなくてもパーティクルの生成が開始されます。</p>
+<p>参照: <a class="reference internal" href="../ToolTutorial/15.html"><span class="doc">15.トリガーを送信してエフェクトを変化させよう</span></a></p>
+</div>
+<div class="section" id="id22">
+<h3>生成停止トリガー<a class="headerlink" href="#id22" title="Permalink to this heading">¶</a></h3>
+<p>パーティクル生成を停止するためのトリガー番号を指定します。</p>
+<p>トリガー番号が指定されている場合、トリガーを送信するとパーティクル生成を停止します。</p>
+<p>デフォルト&quot;無し&quot;が指定されている場合は、トリガーによるパーティクル生成停止は行われません。</p>
+<p>参照: <a class="reference internal" href="../ToolTutorial/15.html"><span class="doc">15.トリガーを送信してエフェクトを変化させよう</span></a></p>
+</div>
+<div class="section" id="id23">
+<h3>削除トリガー<a class="headerlink" href="#id23" title="Permalink to this heading">¶</a></h3>
+<p>パーティクルを削除するためのトリガー番号を指定します。</p>
+<p>トリガー番号が指定されている場合、トリガーを送信するとその瞬間に存在するパーティクルを削除します。</p>
+<p>デフォルト&quot;無し&quot;が指定されている場合は、トリガーによるパーティクル削除は行われません。</p>
+<p>また、<code class="docutils literal notranslate"><span class="pre">描画共通パネル</span></code>の<code class="docutils literal notranslate"><span class="pre">フェードアウト</span></code>を<code class="docutils literal notranslate"><span class="pre">削除後にフェードアウト</span></code>に設定すると、トリガー送信後にフェードアウトが行われます。</p>
+<p>参照: <a class="reference internal" href="../ToolTutorial/15.html"><span class="doc">15.トリガーを送信してエフェクトを変化させよう</span></a></p>
 </div>
 </div>
 </div>

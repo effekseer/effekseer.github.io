@@ -33,3 +33,8 @@ Specify the initial angle for the particle, as well as the final angle for the p
 
 Use an F-curve to modify the rotational value over the lifetime of the particle.
 <iframe src='../../Effects/viewer_en.html#References/Rotation/rotation_f_curve.efkefc' class='effect'></iframe>
+
+#### Rotate in the viewpoint direction
+
+Rotates so that the Z-axis points toward the camera.
+Since it uses the position of the camera, it will not work correctly if multiple cameras are present.

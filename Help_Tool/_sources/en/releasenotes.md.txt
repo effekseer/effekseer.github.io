@@ -1,5 +1,9 @@
 ﻿# Release Notes
 
+## 1.7
+
+[Release note](ReleaseNotes/170)
+
 ## 1.62f (Aug. 05, 2022)
 
 ### Unity
@@ -26,7 +30,7 @@ Fixed a bug where multiple context causes an error
 
 ### Common
 
-Fixed a bug where a particle is not spawned when StopRoot is called after Play immediately
+Fix a bug where a particle is not spawned when StopRoot is called after Play immediately
 
 ### Unity
 

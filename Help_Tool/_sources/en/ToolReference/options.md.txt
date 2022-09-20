@@ -94,3 +94,12 @@ Specify a kind of fonts.
 ### Font size
 
 Specify the size of font.
+
+### Float Format Digits
+
+Controls displayed amount of digits after decimal points for floating point numbers.
+
+### Auto Save Interval
+
+Defines interval at which auto saves of the edited projects are performed.
+See [Recovering Data](recoveringData.md)

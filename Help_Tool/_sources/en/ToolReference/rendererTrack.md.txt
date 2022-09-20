@@ -33,6 +33,23 @@ It can also specify not to repeat only the edges.
 
 <iframe src='../../Effects/viewer_en.html#References/Render/track_uvtype_tile.efkefc' class='effect'></iframe>
 
+### Smoothing
+
+Smooth or set even on a sharply bent part, etc.
+
+### Source of color time
+
+When using time to obtain UVs and colors, select from which element to obtain the time.
+
+#### Group
+
+Use the time survived by the entire particle of the track.
+
+#### First particle
+
+Uses the first particle time.
+Left mainly for compatibility with past versions.
+
 ### The number of spline division
 
 This parameter makes the shape smooth by dividing the track finely. It looks beautiful, although processing becomes heavier.

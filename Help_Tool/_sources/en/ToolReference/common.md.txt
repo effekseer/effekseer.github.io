@@ -7,7 +7,7 @@ From here, you can set some global parameters for the particle node, such as its
 ## Parameter
 
 <div align="center">
-<img src="../../img/Tutorial/02_common_en.png">
+<img src="../../img/Reference/common_parameters_en.png">
 <p>"Basic settings" window</p>
 </div>
 
@@ -85,3 +85,35 @@ A negative numerical value can also be specified as Initial Delay. The particles
 The following figure shows the relationship between Spawn Rate, Initial Delay and time. (1) is Spawn Rate, (2) is Initial Delay, (3) is time (frame unit). The start time is shifted by the value of Initial Delay. When Initial Delay elapses from the start time, particles are generated. However, all the particles generated at the negative time are generated in the 0th frame.
 
 ![](../../img/Reference/common_generatedTime.png)
+
+### Spawn Start Trigger
+
+Specifies the trigger number to initiate particle generation.
+
+If a trigger number is specified, particles will not be generated until the trigger is sent.
+
+If the default "none" is specified, particle generation will start without sending a trigger.
+
+See also: [15.Let's Send triggers to change effects!](../ToolTutorial/15.md)
+
+### Spawn Stop Trigger
+
+Specify a trigger number to stop particle generation.
+
+If a trigger number is specified, particle generation will stop when the trigger is sent.
+
+If the default "None" is specified, the trigger will not stop particle generation.
+
+See also: [15.Let's Send triggers to change effects!](../ToolTutorial/15.md)
+
+### Destroy Trigger
+
+Specifies the trigger number for deleting particles.
+
+If a trigger number is specified, particles existing at that moment will be deleted when the trigger is sent.
+
+If the default "None" is specified, particles are not deleted by the trigger.
+
+Also, if you set the `Fadeout` in the `Common panel` to `Fadeout after destroyed`, the fade out will be performed after the trigger is sent.
+
+See also: [15.Let's Send triggers to change effects!](../ToolTutorial/15.md)

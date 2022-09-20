@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="ja" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>14. Let&#39;s configure levels of details &mdash; Effekseer Help  ドキュメント</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/js/three.min.js"></script>
+        <script src="../../_static/js/effekseer.min.js"></script>
+        <script src="../../_static/js/iframe.js"></script>
+        <script src="../../_static/js/OrbitControls.js"></script>
+        <script src="../../_static/translations.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="検索" href="../../search.html" />
+    <link rel="next" title="15.Let&#39;s Send triggers to change effects!" href="15.html" />
+    <link rel="prev" title="13. Let&#39;s distort a background!" href="13.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> Effekseer Help
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../ja/index.html">Effekseer Help 日本語</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Effekseer Help (English)</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../overview.html">Overview</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Tutorial</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="index.html#basic">Basic</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="01.html">01.Sample and Use！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="02.html">02.Let's spread the particles!</a></li>
+<li class="toctree-l4"><a class="reference internal" href="03.html">03. Let's display the image!</a></li>
+<li class="toctree-l4"><a class="reference internal" href="04.html">04. Let's rotate and enlarge!</a></li>
+<li class="toctree-l4"><a class="reference internal" href="05.html">05. Let's create a hit mark (Slashing)!</a></li>
+<li class="toctree-l4"><a class="reference internal" href="06.html">06. Let's create circular particles!</a></li>
+<li class="toctree-l4"><a class="reference internal" href="07.html">07. Let's move complicated with parent-child relationships!</a></li>
+<li class="toctree-l4"><a class="reference internal" href="08.html">08. Let's arrange particles by spawn method!</a></li>
+<li class="toctree-l4"><a class="reference internal" href="09.html">09.Let's create muzzle flash!</a></li>
+<li class="toctree-l4"><a class="reference internal" href="10.html">10.Ribbon and Track</a></li>
+<li class="toctree-l4"><a class="reference internal" href="11.html">11. Let's use 3D model!!</a></li>
+<li class="toctree-l4"><a class="reference internal" href="12.html">12. Let's specify complicated movement with F-Curve!</a></li>
+<li class="toctree-l4"><a class="reference internal" href="13.html">13. Let's distort a background!</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">14. Let's configure levels of details</a></li>
+<li class="toctree-l4"><a class="reference internal" href="15.html">15.Let's Send triggers to change effects!</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#material">Material</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolReference/index.html">Tool-Reference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../MaterialToolReference/index.html">Material-Reference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolTips/01.html">TIPS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq.html">FAQ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../releasenotes.html">Release Notes</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Effekseer Help</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../index.html">Effekseer Help (English)</a> &raquo;</li>
+          <li><a href="index.html">Tutorial</a> &raquo;</li>
+      <li>14. Let's configure levels of details</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="let-s-configure-levels-of-details">
+<h1>14. Let's configure levels of details<a class="headerlink" href="#let-s-configure-levels-of-details" title="Permalink to this heading">¶</a></h1>
+<div class="section" id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this heading">¶</a></h2>
+<p>Levels of Details enable artists to create effects which make effecient
+use of system resources and screen space depending on distance to
+the camera.</p>
+<img alt="../../_images/lods_Effect.png" class="align-center" src="../../_images/lods_Effect.png" />
+<p>In this article we will examine sample file <code class="docutils literal notranslate"><span class="pre">Aura01.efkefc</span></code>.
+<a href = "../../Sample/14_Sample.zip">You can download it here</a></p>
+<img alt="../../_images/lods_NodeList.png" class="align-center" src="../../_images/lods_NodeList.png" />
+<p>In the given effect we can see a node called <code class="docutils literal notranslate"><span class="pre">Particle</span></code>.
+It generates small particles which fly from the base of the tornado to the top.
+When camera is close to the effect these particles are visible and add nice
+details to the effect.</p>
+<img alt="../../_images/lods_ParticleInViewer.png" class="align-center" src="../../_images/lods_ParticleInViewer.png" />
+<p>However, when camera is far you almost cannot see them because they're quite small,
+but they still need to be calculated and processed each frame of the simulation.
+This is a great case of Levels of Details, since it allows to simplify effects
+based on the distance. So that effect node can be hidden or shutdown completely when
+effect is far from the viewer.</p>
+</div>
+<div class="section" id="levels-setup">
+<h2>Levels Setup<a class="headerlink" href="#levels-setup" title="Permalink to this heading">¶</a></h2>
+<p>Let's get started with configuring levels we're going to use. Navigate to <code class="docutils literal notranslate"><span class="pre">Menu</span> <span class="pre">&gt;</span> <span class="pre">Levels</span> <span class="pre">of</span> <span class="pre">Details</span></code>.</p>
+<img alt="../../_images/lods_Panel.png" class="align-center" src="../../_images/lods_Panel.png" />
+<p>In this panel you specify enabled levels of details and distances from which each
+level is enabled. Level 0 is the base level which always starts from distance 0 and is
+used when there is no other level which can be selected. You can use up to 4 levels in one effect.</p>
+<p>Let's enable Level 1. By default it will have minimum distance set 16, which is
+fine for our case. You can freely set minimum distances of levels to any value which
+is not smaller than previous level and not greater than next level.</p>
+<img alt="../../_images/lods_Panel2.png" class="align-center" src="../../_images/lods_Panel2.png" />
+<p>Now you can try to change camera position using mouse wheel in the Editor
+and you will see that <code class="docutils literal notranslate"><span class="pre">Current</span> <span class="pre">LOD</span></code> in lower right corner of the player changes
+to <code class="docutils literal notranslate"><span class="pre">1</span></code> when distance to the effect is greater than 16.</p>
+</div>
+<div class="section" id="configuring-particle-node">
+<h2>Configuring Particle Node<a class="headerlink" href="#configuring-particle-node" title="Permalink to this heading">¶</a></h2>
+<img alt="../../_images/lods_NodeTreeSelectors.png" class="align-center" src="../../_images/lods_NodeTreeSelectors.png" />
+<p>As you might have noticed, after you've enabled second level each colored button
+in the node hierarchy now shows two lines, one for each level. It displays levels
+on which each effect node is enabled. By clicking this button
+you can change selected levels for each node</p>
+<p>Let's click on this button near our <code class="docutils literal notranslate"><span class="pre">Particle</span></code> node.</p>
+<img alt="../../_images/lods_NodeConfiguration.png" class="align-center" src="../../_images/lods_NodeConfiguration.png" />
+<p>Here you can select levels on which this node is enabled and behaves as usual.
+By default each node is enabled on all levels, but we want to disable <code class="docutils literal notranslate"><span class="pre">Particle</span></code> node
+on level 1, so let's uncheck that level.</p>
+<p>Below levels selection you can change the behaviour of the node which takes
+effect when current LOD is not selected. There are three available types of behaviours:</p>
+<ul class="simple">
+<li><p>Hide Particles - particles continue to spawn and update but they're no longer submitted for rendering.
+This reduces usage of the GPU but still consumes CPU resources since update is performed.</p></li>
+<li><p>Stop New Particles Spawn - already spawned particles will continue to update and render but new particles wont be spawned.
+This allows  smooth transition between levels since particles wont be abruptly hidden and will be visible until their end of life.</p></li>
+<li><p>Stop New Particles Spawn and Hide Existing - combines two of the previous behaviours. New particles wont be spawned
+and already spawned particle will be hidden. It must be noted that spawned particles will continue to update until their death.</p></li>
+</ul>
+<p>By default <code class="docutils literal notranslate"><span class="pre">Hide</span> <span class="pre">Particles</span></code> is selected.
+Let's choose <code class="docutils literal notranslate"><span class="pre">Stop</span> <span class="pre">New</span> <span class="pre">Particles</span> <span class="pre">Spawn</span> <span class="pre">and</span> <span class="pre">Hide</span> <span class="pre">Existing</span></code> since it's suitable in our case.</p>
+</div>
+<div class="section" id="examining-results">
+<h2>Examining Results<a class="headerlink" href="#examining-results" title="Permalink to this heading">¶</a></h2>
+<p>We're going to verify our configuration by taking a look at statistics shown in the bottom right corner of the viewer.</p>
+<ul class="simple">
+<li><p>Current LOD: Level of Detail is currently utilized</p></li>
+<li><p>D: Draw calls of current rendering.</p></li>
+<li><p>V: Vertex count of current rendering.</p></li>
+<li><p>P: Particle count of current rendering.</p></li>
+</ul>
+<p>If we did everything correctly when LOD 0 is active we should see ~115 particles. Then, if you move camera away from effect
+up to the distance at which LOD 1 is selected we should observe amount of particles gradually going down to about ~15.</p>
+</div>
+<div class="section" id="summary">
+<h2>Summary<a class="headerlink" href="#summary" title="Permalink to this heading">¶</a></h2>
+<p>You've learned how to setup levels of details and configure effect nodes to change their behavior
+based on currently active level. It's recommended to setup levels of detail at the last step
+of your effect production process when you're satisfied with effect look.</p>
+<p>Level of Details are quite versatile and can be setup in various ways, you can even completely replace
+effect at the certain distance by making separate root nodes for different level. Effect optimisation
+process can be tricky, but sometimes it's what separates the game which barely runs at 30 fps from running
+at stable 60 fps.</p>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="13.html" class="btn btn-neutral float-left" title="13. Let&#39;s distort a background!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="15.html" class="btn btn-neutral float-right" title="15.Let&#39;s Send triggers to change effects!" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2019, Effekseer.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

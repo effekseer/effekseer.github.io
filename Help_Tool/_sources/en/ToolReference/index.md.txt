@@ -143,6 +143,7 @@ It can be imported and used in another project of yourself or someone else.
     location
     locationAbs
     locationGene
+    killRules
     rotation
     scale
     depth
@@ -157,6 +158,7 @@ It can be imported and used in another project of yourself or someone else.
     fcurve
     global
     culling
+    levelsOfDetails
     dynamicParameter
     proceduralModel
 ```
@@ -185,6 +187,8 @@ It can be imported and used in another project of yourself or someone else.
     options
     fileImport
     fileExport
+    recoveringData
+    drawMode
 ```
 
 ## Command Line

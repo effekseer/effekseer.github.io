@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="ja" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>15.トリガーを送信してエフェクトを変化させよう &mdash; Effekseer Help  ドキュメント</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/js/three.min.js"></script>
+        <script src="../../_static/js/effekseer.min.js"></script>
+        <script src="../../_static/js/iframe.js"></script>
+        <script src="../../_static/js/OrbitControls.js"></script>
+        <script src="../../_static/translations.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="検索" href="../../search.html" />
+    <link rel="next" title="01. マテリアル入門" href="material_01.html" />
+    <link rel="prev" title="14. Level of Details (LOD)を設定しよう！" href="14.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> Effekseer Help
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Effekseer Help 日本語</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../overview.html">概要</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">チュートリアル</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="index.html#id2">基本</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="01.html">01.サンプルを見る＆使ってみよう！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="02.html">02.パーティクルをばらまいてみよう！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="03.html">03. 画像を表示してみよう！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="04.html">04. 回転、拡大してみよう！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="05.html">05. ヒットマーク(斬撃)を作成しよう！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="06.html">06. 円形のパーティクルを作成しよう！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="07.html">07. 親子関係で複雑な動きしよう！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="08.html">08. 生成方法でパーティクルを並べよう！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="09.html">09.マズルフラッシュを作成しよう！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="10.html">10.リボンと軌跡</a></li>
+<li class="toctree-l4"><a class="reference internal" href="11.html">11. 3Dモデルを使おう！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="12.html">12. Fカーブで複雑な動きを指定しよう！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="13.html">13. 背景を歪ませよう！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="14.html">14. Level of Details (LOD)を設定しよう！</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">15.トリガーを送信してエフェクトを変化させよう</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id3">マテリアル</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolReference/index.html">ツール・リファレンス</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../MaterialToolReference/index.html">マテリアル・リファレンス</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolTips/01.html">TIPS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq.html">FAQ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ReleaseNotes/index.html">リリースノート</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../en/index.html">Effekseer Help (English)</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Effekseer Help</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../index.html">Effekseer Help 日本語</a> &raquo;</li>
+          <li><a href="index.html">チュートリアル</a> &raquo;</li>
+      <li>15.トリガーを送信してエフェクトを変化させよう</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="id1">
+<h1>15.トリガーを送信してエフェクトを変化させよう<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h1>
+<div class="main"><div class="section" id="id2">
+<h2>概要<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
+<p>本章では、Effekseerのトリガー機能について説明します。
+トリガー機能は再生中のエフェクトを途中で変化させることができます。</p>
+<p>例えば次の例のように、エネルギーをチャージしている武器をトリガーで発射させるといったエフェクトが実現できます。</p>
+<iframe src='../../Sample/viewer_ja.html#15_Sample/TriggerLaser.efkefc'></iframe><p>ダブルクリックでトリガーを送信します。</p>
+</div>
+<div class="section" id="id3">
+<h2>トリガー機能<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h2>
+<p>トリガーは再生中のエフェクトに対して4つまでのトリガーを送信できる仕組みです。
+トリガーを送信されたエフェクトは、ノードに設定されたパラメータに応じて挙動を変化させることができます。</p>
+<div class="section" id="id4">
+<h3>トリガーの設定<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h3>
+<p>トリガーによる挙動の変化は、<a class="reference internal" href="../ToolReference/common.html"><span class="doc">共通</span></a>で設定します。</p>
+<div align="center">
+<img src="../../img/Tutorial/15/start_by_trigger_ja.png">
+<p>共通パネルのトリガー設定</p>
+</div></div>
+<div class="section" id="id5">
+<h3>エディタからトリガーを送信する<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h3>
+<p>トリガーはコントローラパネルから送信することができます。</p>
+<div align="center">
+<img src="../../img/Tutorial/15/trigger_controller.png">
+<p>トリガーを送信する0,1,2,3ボタン</p>
+</div></div>
+<div class="section" id="id6">
+<h3>ゲームからトリガーを送信する<a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h3>
+<p>SDK、各ゲームエンジン向けプラグインにトリガーを送信するAPIがあります。</p>
+</div>
+</div>
+<div class="section" id="id7">
+<h2>サンプルファイル<a class="headerlink" href="#id7" title="Permalink to this heading">¶</a></h2>
+<p>本章ではサンプルファイル<code class="docutils literal notranslate"><span class="pre">TriggerLaser.efkefc</span></code>を使って解説します。</p>
+<div align="center">
+<p><a href = "../../Sample/15_Sample.zip">ダウンロード</a></p>
+</div><div align="center">
+<img src="../../img/Tutorial/15/nodelist.png">
+<p>本章で作成するエフェクトのノード構成</p>
+</div><p>エフェクトをPlayすると、次の動作を行います。</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Charge</span></code>ノードのパーティクルは生成され、子ノードのパーティクルが生成され続ける。</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Laser</span></code>ノードのパーティクルは生成されない</p></li>
+</ul>
+<p>エフェクトへトリガー0を送信すると、次の動作を行います。</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Charge</span></code>ノードのパーティクルは削除され、子ノードのパーティクル生成が停止する</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Laser</span></code>ノードのパーティクルは生成を開始し、子ノードのパーティクルも生成される</p></li>
+</ul>
+<div class="section" id="id8">
+<h3>トリガーを送信すると、パーティクル削除するノード<a class="headerlink" href="#id8" title="Permalink to this heading">¶</a></h3>
+<div align="center">
+<img src="../../img/Tutorial/15/remove_by_trigger_ja.png">
+<p>Chargeノードのトリガー設定</p>
+</div></div>
+<div class="section" id="id9">
+<h3>トリガーを送信すると、パーティクル生成開始するノード<a class="headerlink" href="#id9" title="Permalink to this heading">¶</a></h3>
+<div align="center">
+<img src="../../img/Tutorial/15/start_by_trigger_ja.png">
+<p>Laserノードのトリガー設定</p>
+</div></div>
+</div>
+<div class="section" id="tips">
+<h2>Tips<a class="headerlink" href="#tips" title="Permalink to this heading">¶</a></h2>
+<p>トリガーによって削除されたパーティクルは瞬時に消えてしまって不自然かもしれません。
+その場合は<code class="docutils literal notranslate"><span class="pre">削除後にフェードアウト</span></code>を設定すると、フェードアウトによって自然に消滅させることができます。</p>
+<div align="center">
+<img src="../../img/Tutorial/15/fadeout_after_destroyed_ja.png">
+<p>フェードアウト挙動</p>
+</div><p><code class="docutils literal notranslate"><span class="pre">生存時間内にフェードアウト</span></code>では寿命による削除でフェードアウトされますが、トリガーによる削除ではフェードアウトされません。
+次の例はどちらもトリガーによってパーティクルは削除されていますが、フェードアウトの挙動が異なります。</p>
+<div align="center">
+<table>
+<tr><td>
+<div align="center">
+<img src="../../img/Tutorial/15/fadeout_disabled.gif">
+<p>生存時間内にフェードアウト</p>
+</div>
+</td>
+<td>
+<div align="center">
+<img src="../../img/Tutorial/15/fadeout_enabled.gif">
+<p>削除後にフェードアウト</p>
+</div>
+</td></tr>
+</table>
+</div></div>
+<div class="section" id="id10">
+<h2>まとめ<a class="headerlink" href="#id10" title="Permalink to this heading">¶</a></h2>
+<p>本章ではトリガーの使い方を説明しました。トリガーを活用してインタラクティブなエフェクトを作成しましょう。</p>
+</div></div>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="14.html" class="btn btn-neutral float-left" title="14. Level of Details (LOD)を設定しよう！" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="material_01.html" class="btn btn-neutral float-right" title="01. マテリアル入門" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2019, Effekseer.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

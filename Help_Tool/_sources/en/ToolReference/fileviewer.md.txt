@@ -1,25 +1,36 @@
-﻿# File Viewer (1.3 or later)
+﻿# File Browser
 
 ## Overview
 
-The file viewer displays a list of files in the directory where contains Effekseer related files.
+The File Browser is a panel that displays asset files related to Effekseer.
 
-![](../../img/Reference/fileviewer_en.png)
+### Icon display mode
+![](../../img/Reference/FileBrowser/FileIcons1.png)
+
+### Preview image files
+![](../../img/Reference/FileBrowser/FileIcons2.png)
+
+### List display mode
+![](../../img/Reference/FileBrowser/FileList1.png)
 
 ## How to use
 
-### Move directory
+### Move current directory
 
-Double-clicking a directory will list the files in that directory.
+Double-clicking a directory displays the asset files in that directory.
 
-Double-click on Parent directory to display a list of the files in the upper hierarchical directory.
+Pressing the UP button displays the asset files in the directory above.
 
-### Assignment of material files
+### Open effect files
 
-You can specify files by dragging and dropping them into textures, models, and sounds.
+Double-click on an efkefc file to open it in the current editor.
 
-![](../../img/Reference/fileviewerDrag_en.png)
+### Open other files
 
-### Open another project
+Double-clicking on any other file will open it in its associated application.
 
-Double click on another Effekseer project file to open the project.
+### D&D assignment of asset files
+
+Textures, models, and sound files can be specified by dragging and dropping them into the parameters.
+
+![](../../img/Reference/FileBrowser/DragDrop_en.png)

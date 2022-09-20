@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="ja" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>14. Level of Details (LOD)を設定しよう！ &mdash; Effekseer Help  ドキュメント</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/js/three.min.js"></script>
+        <script src="../../_static/js/effekseer.min.js"></script>
+        <script src="../../_static/js/iframe.js"></script>
+        <script src="../../_static/js/OrbitControls.js"></script>
+        <script src="../../_static/translations.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="検索" href="../../search.html" />
+    <link rel="next" title="15.トリガーを送信してエフェクトを変化させよう" href="15.html" />
+    <link rel="prev" title="13. 背景を歪ませよう！" href="13.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> Effekseer Help
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Effekseer Help 日本語</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../overview.html">概要</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">チュートリアル</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="index.html#id2">基本</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="01.html">01.サンプルを見る＆使ってみよう！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="02.html">02.パーティクルをばらまいてみよう！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="03.html">03. 画像を表示してみよう！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="04.html">04. 回転、拡大してみよう！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="05.html">05. ヒットマーク(斬撃)を作成しよう！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="06.html">06. 円形のパーティクルを作成しよう！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="07.html">07. 親子関係で複雑な動きしよう！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="08.html">08. 生成方法でパーティクルを並べよう！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="09.html">09.マズルフラッシュを作成しよう！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="10.html">10.リボンと軌跡</a></li>
+<li class="toctree-l4"><a class="reference internal" href="11.html">11. 3Dモデルを使おう！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="12.html">12. Fカーブで複雑な動きを指定しよう！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="13.html">13. 背景を歪ませよう！</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">14. Level of Details (LOD)を設定しよう！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="15.html">15.トリガーを送信してエフェクトを変化させよう</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id3">マテリアル</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolReference/index.html">ツール・リファレンス</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../MaterialToolReference/index.html">マテリアル・リファレンス</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolTips/01.html">TIPS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq.html">FAQ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../releasenotes.html">更新履歴</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../en/index.html">Effekseer Help (English)</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Effekseer Help</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../index.html">Effekseer Help 日本語</a> &raquo;</li>
+          <li><a href="index.html">チュートリアル</a> &raquo;</li>
+      <li>14. Level of Details (LOD)を設定しよう！</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="level-of-details-lod">
+<h1>14. Level of Details (LOD)を設定しよう！<a class="headerlink" href="#level-of-details-lod" title="Permalink to this heading">¶</a></h1>
+<div class="section" id="id1">
+<h2>概要<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h2>
+<p>Level of Details (LOD)により、アーティストは、距離に応じてシステムリソースとスクリーンスペースを効率的に使用するエフェクトを作成することができます。
+カメラとの距離に応じて、システムリソースとスクリーンスペースを効率的に使用するエフェクトを エフェクトを作成できます。</p>
+<img alt="../../_images/lods_Effect.png" class="align-center" src="../../_images/lods_Effect.png" />
+<p>本記事ではサンプルファイル <code class="docutils literal notranslate"><span class="pre">Aura01.efkefc</span></code>で検証します。
+<a href = "../../Sample/14_Sample.zip">ここからダウンロードできます。</a></p>
+<img alt="../../_images/lods_NodeList.png" class="align-center" src="../../_images/lods_NodeList.png" />
+<p>このエフェクトでは、 <code class="docutils literal notranslate"><span class="pre">Particle</span></code> というノードが見えます。
+これは小さな粒子を生成し、竜巻の底部から頂上に向かって飛びます。
+カメラがエフェクトに近づくと、これらのパーティクルが見え、エフェクトに素晴らしいディテールを加えられ、詳細が表示されます。</p>
+<img alt="../../_images/lods_ParticleInViewer.png" class="align-center" src="../../_images/lods_ParticleInViewer.png" />
+<p>しかし、カメラが遠くにある場合は、かなり小さいので、ほとんど見えませんが、それでもシミュレーションの各フレームで計算し、処理する必要があります。
+これは、距離に応じて効果を簡略化することができるため、「Level of Details (LOD)」の優れた事例と言えます。
+を簡略化することができるからです。そのため、エフェクトノードが視聴者から遠い場合は、非表示にしたり、完全にシャットダウンすることができます。</p>
+</div>
+<div class="section" id="levels-setup">
+<h2>Levels Setup<a class="headerlink" href="#levels-setup" title="Permalink to this heading">¶</a></h2>
+<p>さっそく、これから使うレベルの設定をしてみましょう。<code class="docutils literal notranslate"><span class="pre">メニュー</span> <span class="pre">&gt;</span> <span class="pre">詳細レベル</span></code> に移動します。</p>
+<img alt="../../_images/lods_Panel.png" class="align-center" src="../../_images/lods_Panel.png" />
+<p>このパネルでは、有効な詳細レベルと、各レベルを有効にする距離を指定します。
+レベル0は基本レベルで、常に距離0から始まり、選択できる他のレベルがない場合に使用されます。
+1つのエフェクトで最大4つのレベルを使用することができます。</p>
+<p>Level 1 を有効にしてみましょう。デフォルトでは、最小距離が16に設定されていて、今回のケースでは問題ありません。
+レベルの最小距離は自由に設定することができます。</p>
+<img alt="../../_images/lods_Panel2.png" class="align-center" src="../../_images/lods_Panel2.png" />
+<p>エディタ上でマウスホイールを使ってカメラの位置を変えてみましょう。
+エフェクトまでの距離が16より大きくなると、プレイヤーの右下にある<code class="docutils literal notranslate"><span class="pre">Current</span> <span class="pre">LOD</span></code>が<code class="docutils literal notranslate"><span class="pre">1</span></code>に変わるのがわかると思います。</p>
+</div>
+<div class="section" id="id2">
+<h2>パーティクルノードの設定<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
+<img alt="../../_images/lods_NodeTreeSelectors.png" class="align-center" src="../../_images/lods_NodeTreeSelectors.png" />
+<p>お気づきのように、セカンドレベルを有効にした後、ノード階層の各色ボタンは、各レベルごとに2行で表示されます。
+これは、各エフェクトノードが有効なレベルが表示され、各エフェクトノードが有効であることを示します。
+このボタンをクリックすると、各ノードで選択されているレベルを変更できます。</p>
+<p><code class="docutils literal notranslate"><span class="pre">Particle</span></code>ノードの近くでこのボタンをクリックしてみましょう。</p>
+<img alt="../../_images/lods_NodeConfiguration.png" class="align-center" src="../../_images/lods_NodeConfiguration.png" />
+<p>ここでは、このノードを有効にし、通常通り動作させるレベルを選択することができます。
+デフォルトでは、各ノードはすべてのレベルで有効になっていますが、レベル1では <code class="docutils literal notranslate"><span class="pre">Particle</span></code> ノードを無効にしたいので、そのレベルのチェックを外しておきます。</p>
+<p>レベル選択の下で、現在のLODが選択されていない時に有効になるノードの挙動を変更することができます。
+現在のLODが選択されていない時に適用されます。3種類の動作が用意されています。</p>
+<ul class="simple">
+<li><p>Hide Particles - パーティクルは引き続きスポーンして更新されますが、レンダリングのために送信されなくなります。これは GPU の使用を減らしますが、更新が行われるため CPU リソースは消費されます。</p></li>
+<li><p>Stop New Particles Spawn - 既にスポーンされたパーティクルは引き続きアップデートとレンダリングを行いますが、新しいパーティクルはスポーンされません。これにより、パーティクルが突然隠されることがなく、寿命が尽きるまで表示されるので、レベル間の移行がスムーズになります。</p></li>
+<li><p>Stop New Particles Spawn and Hide Existing - 前の2つの動作を組み合わせたものです。新しいパーティクルは生まれず、すでにスポーンされたパーティクルは隠されます。ただし、スポーンされたパーティクルは死ぬまで更新され続けることに注意してください。</p></li>
+</ul>
+<p>デフォルトでは<code class="docutils literal notranslate"><span class="pre">Hide</span> <span class="pre">Particles</span></code>が選択されています。
+ここでは <code class="docutils literal notranslate"><span class="pre">Stop</span> <span class="pre">New</span> <span class="pre">Particles</span> <span class="pre">Spawn</span> <span class="pre">and</span> <span class="pre">Hide</span> <span class="pre">Existing</span></code> を選択しましょう。</p>
+</div>
+<div class="section" id="id3">
+<h2>結果の検証<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h2>
+<p>ビューワーの右下に表示される統計情報を見て、設定を確認することにします。</p>
+<ul class="simple">
+<li><p>Current LOD: 現在使用されている詳細度</p></li>
+<li><p>D: 現在のレンダリングの描画コール数</p></li>
+<li><p>V: 現在のレンダリングの頂点数</p></li>
+<li><p>P: 現在のレンダリングのパーティクル数。</p></li>
+</ul>
+<p>LOD 0 がアクティブなときにすべてを正しく実行した場合、約 115 個のパーティクルが表示されるはずです。
+次に、LOD 1 が選択された距離までカメラをエフェクトから遠ざけると、パーティクルの数が徐々に減っていき、約 15 個になることを確認できます。</p>
+</div>
+<div class="section" id="id4">
+<h2>まとめ<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h2>
+<p>詳細レベルを設定する方法と、現在アクティブなレベルに基づいて動作を変更するエフェクトノードの構成を設定する方法について説明しました。
+詳細レベルの設定は、エフェクト制作の最後のステップで設定することをお勧めします。</p>
+<p>Level of Detailsは非常に汎用性が高く、様々な方法で設定することができます。
+レベルごとに別々のルートノードを作成すれば、ある距離のエフェクトを完全に置き換えることもできます。
+エフェクトの最適化処理は厄介ですが、30fpsでやっと動くゲームと60fpsで安定して動くゲームを分けるのは、このプロセスである場合もあります。</p>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="13.html" class="btn btn-neutral float-left" title="13. 背景を歪ませよう！" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="15.html" class="btn btn-neutral float-right" title="15.トリガーを送信してエフェクトを変化させよう" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2019, Effekseer.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
