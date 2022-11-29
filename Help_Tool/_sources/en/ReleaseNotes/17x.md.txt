@@ -1,5 +1,30 @@
 ﻿# 1.7x Change Logs
 
+## 1.70a (Nov. 30, 2022)
+
+### Common
+
+Fixed a bug where rotation with axis enlarges particles
+Fixed a bug where a normal of procedural model is a bit wrong
+
+### Tool
+
+Fixed a bug where a modify button is still shown when an efkmodel is loaded
+
+### Runtime
+
+Removed VAO from a shader for multi threading in OpenGL
+Added a code to verify generating thread in VAO in OpenGL
+
+### UE
+
+Supported Unreal Engine 5.1
+Fixed many bugs
+
+### Unity
+
+Fixed a bug where a model sometimes be unlinked
+
 ## 1.70 (Sep. 20, 2022)
 
 [New Features](170)
