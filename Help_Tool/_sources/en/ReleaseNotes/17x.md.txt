@@ -1,5 +1,26 @@
 ﻿# 1.7x Change Logs
 
+## 1.70b (Dec. 24, 2022)
+
+### Common
+
+Fixed a bug where a single easing behavior is wrong
+
+### Tool
+
+Fixed a bug where Effekseer crashes when a network config file is broken
+
+### Runtime
+
+Fixed a bug where a sound feature is called from an another thread
+
+### Unity
+
+Fixed a bug where the plugin sometimes freezes with a sound feature
+Fixed a bug where a distortion is invalid on URP except VR
+Fixed a bug where Unity 2021.3 causes undefined symbol error
+Fixed a bug where the depth wasn't passed into SetRenderTarget correctly when using Unity 2022
+
 ## 1.70a (Nov. 30, 2022)
 
 ### Common
