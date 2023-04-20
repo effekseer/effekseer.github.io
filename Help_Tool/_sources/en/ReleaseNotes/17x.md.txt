@@ -1,5 +1,11 @@
 ﻿# 1.7x Change Logs
 
+## 1.70d (Apr. 21, 2023)
+
+### Unity
+
+Fixed a bug that could cause memory leaks.
+
 ## 1.70c (Jan. 04, 2023)
 
 ### Unity
