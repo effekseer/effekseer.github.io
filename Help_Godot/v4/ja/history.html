@@ -94,6 +94,9 @@
 <li class="toctree-l2"><a class="reference internal" href="faq.html">FAQ</a></li>
 <li class="toctree-l2"><a class="reference internal" href="api-reference.html">APIリファレンス</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">更新履歴</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#e-1">1.70e.1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#b-1">1.70b.1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#b-beta2">1.70b.beta2</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#b-beta1">1.70b.beta1</a></li>
 </ul>
 </li>
@@ -168,6 +171,48 @@
             
   <section id="id1">
 <h1>更新履歴<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h1>
+<section id="e-1">
+<h2>1.70e.1<a class="headerlink" href="#e-1" title="Permalink to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>プロジェクト設定のデフォルト値を変更</p>
+<ul>
+<li><p>Instance Max Count: 2000 -&gt; 4000</p></li>
+<li><p>Square Max Count: 8000 -&gt; 16000</p></li>
+<li><p>Draw Max Count: 128 -&gt; 256</p></li>
+</ul>
+</li>
+<li><p>エフェクトロード処理を改善</p></li>
+<li><p>新しいシェーダ生成処理に移行</p></li>
+<li><p>エディタビューポートでのプレビュー機能を追加</p></li>
+<li><p>“res://”直下にリソースを置くとロード失敗する不具合を修正</p></li>
+<li><p>テクスチャの外側モードにクランプを指定してもリピートになる不具合を修正</p></li>
+<li><p>Effekseerを1.70eにアップデート</p></li>
+<li><p>godot-cppを4.0.3にアップデート</p></li>
+</ul>
+</section>
+<section id="b-1">
+<h2>1.70b.1<a class="headerlink" href="#b-1" title="Permalink to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>終了時のクラッシュを回避</p></li>
+<li><p>3Dのトランスフォーム計算のミスを修正</p></li>
+<li><p>EffekseerServer.gdを削除</p></li>
+<li><p>EffekseerSystemに次のメソッドを追加</p>
+<ul>
+<li><p>spawn_effect_2d(effect, parent, xform)</p></li>
+<li><p>spawn_effect_3d(effect, parent, xform)</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="b-beta2">
+<h2>1.70b.beta2<a class="headerlink" href="#b-beta2" title="Permalink to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>モデルのインスタンスドレンダリングに対応</p></li>
+<li><p>高度シェーダー(高度描画パネルの機能)に対応</p></li>
+<li><p>Emitter3Dのギズモ表示を有効化</p></li>
+<li><p>シェーダプリローダーを有効化</p></li>
+</ul>
+</section>
 <section id="b-beta1">
 <h2>1.70b.beta1<a class="headerlink" href="#b-beta1" title="Permalink to this heading">¶</a></h2>
 <ul class="simple">

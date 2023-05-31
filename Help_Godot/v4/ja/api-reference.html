@@ -88,8 +88,8 @@
             
             
               <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../en/index.html">EffekseerForGodot Help (English)</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="index.html">EffekseerForGodot Help (日本語)</a><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../en/index.html">EffekseerForGodot4 Help (English)</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">EffekseerForGodot4 Help (日本語)</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="introduction.html">概要</a></li>
 <li class="toctree-l2"><a class="reference internal" href="how-to-use.html">プラグインの使い方</a></li>
 <li class="toctree-l2"><a class="reference internal" href="faq.html">FAQ</a></li>
@@ -104,17 +104,17 @@
 <li class="toctree-l3"><a class="reference internal" href="#effekseeremitter2d">EffekseerEmitter2D</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#id5">説明</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#id6">プロパティ一覧</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id12">メソッド一覧</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id19">シグナル一覧</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id13">メソッド一覧</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id20">シグナル一覧</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#effekseereffect">EffekseerEffect</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id21">プロパティ一覧</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id22">メソッド一覧</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id22">プロパティ一覧</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id23">メソッド一覧</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#effekseersystem">EffekseerSystem</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id23">メソッド一覧</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id24">メソッド一覧</a></li>
 </ul>
 </li>
 </ul>
@@ -170,7 +170,7 @@
     
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
         
-          <li><a href="index.html">EffekseerForGodot Help (日本語)</a> &raquo;</li>
+          <li><a href="index.html">EffekseerForGodot4 Help (日本語)</a> &raquo;</li>
         
       <li>APIリファレンス</li>
     
@@ -242,10 +242,36 @@
 <td>is_autoplay()</td>
 </tr>
 </tbody>
-</table><p>自動再生の設定。</p>
+</table><p>自動再生の設定。<code class="docutils literal notranslate"><span class="pre">true</span></code>を指定すると<code class="docutils literal notranslate"><span class="pre">ready()</span></code>で再生が開始されます。</p>
 <ul class="simple">
 <li><p>true: 自動再生を行う</p></li>
 <li><p>false: 自動再生を行わない</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="bool-autofree">
+<h4>bool autofree<a class="headerlink" href="#bool-autofree" title="Permalink to this heading">¶</a></h4>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>Setter</em></td>
+<td>set_autofree(value)</td>
+</tr>
+<tr>
+<td><em>Getter</em></td>
+<td>is_autofree()</td>
+</tr>
+</tbody>
+</table><p>自動解放の設定。<code class="docutils literal notranslate"><span class="pre">true</span></code>を指定すると再生が終了したときエミッターの<code class="docutils literal notranslate"><span class="pre">queue_free()</span></code>が呼ばれます。</p>
+<ul class="simple">
+<li><p>true: 自動解放を行う</p></li>
+<li><p>false: 自動解放を行わない</p></li>
 </ul>
 </section>
 <hr class="docutils" />
@@ -471,7 +497,7 @@
 <td>is_autoplay()</td>
 </tr>
 </tbody>
-</table><p>自動再生の設定。</p>
+</table><p>自動再生の設定。<code class="docutils literal notranslate"><span class="pre">true</span></code>を指定すると<code class="docutils literal notranslate"><span class="pre">ready()</span></code>で再生が開始されます。</p>
 <ul class="simple">
 <li><p>true: 自動再生を行う</p></li>
 <li><p>false: 自動再生を行わない</p></li>
@@ -479,7 +505,33 @@
 </section>
 <hr class="docutils" />
 <section id="id9">
-<h4>bool paused<a class="headerlink" href="#id9" title="Permalink to this heading">¶</a></h4>
+<h4>bool autofree<a class="headerlink" href="#id9" title="Permalink to this heading">¶</a></h4>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>Setter</em></td>
+<td>set_autofree(value)</td>
+</tr>
+<tr>
+<td><em>Getter</em></td>
+<td>is_autofree()</td>
+</tr>
+</tbody>
+</table><p>自動解放の設定。<code class="docutils literal notranslate"><span class="pre">true</span></code>を指定すると再生が終了したときエミッターの<code class="docutils literal notranslate"><span class="pre">queue_free()</span></code>が呼ばれます。</p>
+<ul class="simple">
+<li><p>true: 自動解放を行う</p></li>
+<li><p>false: 自動解放を行わない</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="id10">
+<h4>bool paused<a class="headerlink" href="#id10" title="Permalink to this heading">¶</a></h4>
 <table border="1" class="docutils">
 <thead>
 <tr>
@@ -504,8 +556,8 @@
 </ul>
 </section>
 <hr class="docutils" />
-<section id="id10">
-<h4>bool speed<a class="headerlink" href="#id10" title="Permalink to this heading">¶</a></h4>
+<section id="id11">
+<h4>bool speed<a class="headerlink" href="#id11" title="Permalink to this heading">¶</a></h4>
 <table border="1" class="docutils">
 <thead>
 <tr>
@@ -530,8 +582,8 @@
 </ul>
 </section>
 <hr class="docutils" />
-<section id="id11">
-<h4>Color color<a class="headerlink" href="#id11" title="Permalink to this heading">¶</a></h4>
+<section id="id12">
+<h4>Color color<a class="headerlink" href="#id12" title="Permalink to this heading">¶</a></h4>
 <table border="1" class="docutils">
 <thead>
 <tr>
@@ -596,33 +648,33 @@
 </section>
 </section>
 <hr class="docutils" />
-<section id="id12">
-<h3>メソッド一覧<a class="headerlink" href="#id12" title="Permalink to this heading">¶</a></h3>
 <section id="id13">
-<h4>void play()<a class="headerlink" href="#id13" title="Permalink to this heading">¶</a></h4>
+<h3>メソッド一覧<a class="headerlink" href="#id13" title="Permalink to this heading">¶</a></h3>
+<section id="id14">
+<h4>void play()<a class="headerlink" href="#id14" title="Permalink to this heading">¶</a></h4>
 <p>再生開始します。</p>
 </section>
 <hr class="docutils" />
-<section id="id14">
-<h4>void stop()<a class="headerlink" href="#id14" title="Permalink to this heading">¶</a></h4>
+<section id="id15">
+<h4>void stop()<a class="headerlink" href="#id15" title="Permalink to this heading">¶</a></h4>
 <p>再生停止します。</p>
 </section>
 <hr class="docutils" />
-<section id="id15">
-<h4>void stop_root()<a class="headerlink" href="#id15" title="Permalink to this heading">¶</a></h4>
+<section id="id16">
+<h4>void stop_root()<a class="headerlink" href="#id16" title="Permalink to this heading">¶</a></h4>
 <p>ルートノードを停止します。</p>
 </section>
 <hr class="docutils" />
-<section id="id16">
-<h4>bool is_playing()<a class="headerlink" href="#id16" title="Permalink to this heading">¶</a></h4>
+<section id="id17">
+<h4>bool is_playing()<a class="headerlink" href="#id17" title="Permalink to this heading">¶</a></h4>
 <p>再生状況を取得します。</p>
 <ul class="simple">
 <li><p>true: 再生中</p></li>
 <li><p>false: 未再生、もしくは再生終了</p></li>
 </ul>
 </section>
-<section id="id17">
-<h4>void set_dynamic_input(int index, float value)<a class="headerlink" href="#id17" title="Permalink to this heading">¶</a></h4>
+<section id="id18">
+<h4>void set_dynamic_input(int index, float value)<a class="headerlink" href="#id18" title="Permalink to this heading">¶</a></h4>
 <table border="1" class="docutils">
 <thead>
 <tr>
@@ -642,8 +694,8 @@
 </tbody>
 </table><p>再生中のエフェクトに対し、動的パラメータを指定します。</p>
 </section>
-<section id="id18">
-<h4>void send_trigger(int index)<a class="headerlink" href="#id18" title="Permalink to this heading">¶</a></h4>
+<section id="id19">
+<h4>void send_trigger(int index)<a class="headerlink" href="#id19" title="Permalink to this heading">¶</a></h4>
 <table border="1" class="docutils">
 <thead>
 <tr>
@@ -661,10 +713,10 @@
 </section>
 </section>
 <hr class="docutils" />
-<section id="id19">
-<h3>シグナル一覧<a class="headerlink" href="#id19" title="Permalink to this heading">¶</a></h3>
 <section id="id20">
-<h4>finished()<a class="headerlink" href="#id20" title="Permalink to this heading">¶</a></h4>
+<h3>シグナル一覧<a class="headerlink" href="#id20" title="Permalink to this heading">¶</a></h3>
+<section id="id21">
+<h4>finished()<a class="headerlink" href="#id21" title="Permalink to this heading">¶</a></h4>
 <p>エフェクトの再生終了時に発生します。</p>
 </section>
 </section>
@@ -674,8 +726,8 @@
 <h2>EffekseerEffect<a class="headerlink" href="#effekseereffect" title="Permalink to this heading">¶</a></h2>
 <p><strong>継承</strong>: Resource &lt; Reference &lt; Object</p>
 <p>Effekseerのエフェクトリソース。</p>
-<section id="id21">
-<h3>プロパティ一覧<a class="headerlink" href="#id21" title="Permalink to this heading">¶</a></h3>
+<section id="id22">
+<h3>プロパティ一覧<a class="headerlink" href="#id22" title="Permalink to this heading">¶</a></h3>
 <section id="string-data-path">
 <h4>String data_path<a class="headerlink" href="#string-data-path" title="Permalink to this heading">¶</a></h4>
 <table border="1" class="docutils">
@@ -746,8 +798,8 @@
 </section>
 </section>
 <hr class="docutils" />
-<section id="id22">
-<h3>メソッド一覧<a class="headerlink" href="#id22" title="Permalink to this heading">¶</a></h3>
+<section id="id23">
+<h3>メソッド一覧<a class="headerlink" href="#id23" title="Permalink to this heading">¶</a></h3>
 <section id="void-load-string-path">
 <h4>void load(String path)<a class="headerlink" href="#void-load-string-path" title="Permalink to this heading">¶</a></h4>
 <p>ファイルパス指定でエフェクトのロードを行います。</p>
@@ -766,8 +818,72 @@
 <h2>EffekseerSystem<a class="headerlink" href="#effekseersystem" title="Permalink to this heading">¶</a></h2>
 <p><strong>継承</strong>: Node &lt; Object</p>
 <p>Effekseerのシステム管理用シングルトン。</p>
-<section id="id23">
-<h3>メソッド一覧<a class="headerlink" href="#id23" title="Permalink to this heading">¶</a></h3>
+<section id="id24">
+<h3>メソッド一覧<a class="headerlink" href="#id24" title="Permalink to this heading">¶</a></h3>
+<section id="effekseeremitter2d-spawn-effect-2d-effekseereffect-effect-node-parent-transform2d-xform">
+<h4>EffekseerEmitter2D spawn_effect_2d(EffekseerEffect effect, Node parent, Transform2D xform)<a class="headerlink" href="#effekseeremitter2d-spawn-effect-2d-effekseereffect-effect-node-parent-transform2d-xform" title="Permalink to this heading">¶</a></h4>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>引数</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>effect</td>
+<td>エフェクトリソース</td>
+</tr>
+<tr>
+<td>parent</td>
+<td>エミッターを追加するノード</td>
+</tr>
+<tr>
+<td>xform</td>
+<td>エミッターのトランスフォーム</td>
+</tr>
+</tbody>
+</table><p>エミッター(EffekseerEmitter2D)を生成しエフェクトを再生します。再生が終了するとエミッターは削除されます。</p>
+<div class="highlight-gd notranslate"><div class="highlight"><pre><span></span><span class="k">extends</span><span class="w"> </span><span class="n">Node2D</span>
+
+<span class="k">func</span><span class="w"> </span><span class="n">ready</span><span class="p">():</span>
+<span class="w">    </span><span class="n">EffekseerSystem</span><span class="o">.</span><span class="n">spawn_effect_2d</span><span class="p">(</span><span class="n">effect</span><span class="p">,</span><span class="w"> </span><span class="n">get_viewport</span><span class="p">(),</span><span class="w"> </span><span class="n">global_transform</span><span class="p">())</span>
+</pre></div>
+</div>
+</section>
+<hr class="docutils" />
+<section id="effekseeremitter3d-spawn-effect-3d-effekseereffect-effect-node-parent-transform3d-xform">
+<h4>EffekseerEmitter3D spawn_effect_3d(EffekseerEffect effect, Node parent, Transform3D xform)<a class="headerlink" href="#effekseeremitter3d-spawn-effect-3d-effekseereffect-effect-node-parent-transform3d-xform" title="Permalink to this heading">¶</a></h4>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>引数</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>effect</td>
+<td>エフェクトリソース</td>
+</tr>
+<tr>
+<td>parent</td>
+<td>エミッターを追加するノード</td>
+</tr>
+<tr>
+<td>xform</td>
+<td>エミッターのトランスフォーム</td>
+</tr>
+</tbody>
+</table><p>エミッター(EffekseerEmitter3D)を生成しエフェクトを再生します。再生が終了するとエミッターは削除されます。</p>
+<div class="highlight-gd notranslate"><div class="highlight"><pre><span></span><span class="k">extends</span><span class="w"> </span><span class="n">Node3D</span>
+
+<span class="k">func</span><span class="w"> </span><span class="n">ready</span><span class="p">():</span>
+<span class="w">    </span><span class="n">EffekseerSystem</span><span class="o">.</span><span class="n">spawn_effect_3d</span><span class="p">(</span><span class="n">effect</span><span class="p">,</span><span class="w"> </span><span class="n">get_viewport</span><span class="p">(),</span><span class="w"> </span><span class="n">global_transform</span><span class="p">())</span>
+</pre></div>
+</div>
+</section>
+<hr class="docutils" />
 <section id="void-stop-all-effects">
 <h4>void stop_all_effects()<a class="headerlink" href="#void-stop-all-effects" title="Permalink to this heading">¶</a></h4>
 <p>現在再生中の全てのエフェクトを停止します。</p>

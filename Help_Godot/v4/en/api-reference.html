@@ -88,7 +88,7 @@
             
             
               <ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="index.html">EffekseerForGodot Help (English)</a><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">EffekseerForGodot4 Help (English)</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="introduction.html">Introduction</a></li>
 <li class="toctree-l2"><a class="reference internal" href="how-to-use.html">How to use</a></li>
 <li class="toctree-l2"><a class="reference internal" href="faq.html">FAQ</a></li>
@@ -103,17 +103,17 @@
 <li class="toctree-l3"><a class="reference internal" href="#effekseeremitter2d">EffekseerEmitter2D</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#id1">Descriptions</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#id2">Properties</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id8">Methods</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id15">Signals</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id9">Methods</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id16">Signals</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#effekseereffect">EffekseerEffect</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id17">Properties</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id18">Methods</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id18">Properties</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id19">Methods</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#effekseersystem">EffekseerSystem</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id19">Methods</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id20">Methods</a></li>
 </ul>
 </li>
 </ul>
@@ -121,7 +121,7 @@
 <li class="toctree-l2"><a class="reference internal" href="history.html">Release notes</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../ja/index.html">EffekseerForGodot Help (日本語)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ja/index.html">EffekseerForGodot4 Help (日本語)</a></li>
 </ul>
 
             
@@ -170,7 +170,7 @@
     
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
         
-          <li><a href="index.html">EffekseerForGodot Help (English)</a> &raquo;</li>
+          <li><a href="index.html">EffekseerForGodot4 Help (English)</a> &raquo;</li>
         
       <li>API Reference</li>
     
@@ -244,10 +244,36 @@ In addition, the set transforms (position, rotation, scaling) are reflected in t
 <td>is_autoplay()</td>
 </tr>
 </tbody>
-</table><p>Autoplay settings.</p>
+</table><p>Autoplay settings. If <code class="docutils literal notranslate"><span class="pre">true</span></code>, playback will start with <code class="docutils literal notranslate"><span class="pre">ready()</span></code>.</p>
 <ul class="simple">
-<li><p>true: play automatically</p></li>
+<li><p>true: Do play automatically</p></li>
 <li><p>false: Do not play automatically</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="bool-autofree">
+<h4>bool autofree<a class="headerlink" href="#bool-autofree" title="Permalink to this heading">¶</a></h4>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>Setter</em></td>
+<td>set_autofree(value)</td>
+</tr>
+<tr>
+<td><em>Getter</em></td>
+<td>is_autofree()</td>
+</tr>
+</tbody>
+</table><p>Automatic free settings. If <code class="docutils literal notranslate"><span class="pre">true</span></code>, the emitter will call <code class="docutils literal notranslate"><span class="pre">queue_free()</span></code> when playback is finished.</p>
+<ul class="simple">
+<li><p>true: Do free automatically</p></li>
+<li><p>false: Do not free automatically</p></li>
 </ul>
 </section>
 <hr class="docutils" />
@@ -475,15 +501,41 @@ In addition, the set transforms (position, rotation, scaling) are reflected in t
 <td>is_autoplay()</td>
 </tr>
 </tbody>
-</table><p>Autoplay settings.</p>
+</table><p>Autoplay settings. If <code class="docutils literal notranslate"><span class="pre">true</span></code>, playback will start with <code class="docutils literal notranslate"><span class="pre">ready()</span></code>.</p>
 <ul class="simple">
-<li><p>true: play automatically</p></li>
+<li><p>true: Do play automatically</p></li>
 <li><p>false: Do not play automatically</p></li>
 </ul>
 </section>
 <hr class="docutils" />
 <section id="id5">
-<h4>bool paused<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h4>
+<h4>bool autofree<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h4>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>Setter</em></td>
+<td>set_autofree(value)</td>
+</tr>
+<tr>
+<td><em>Getter</em></td>
+<td>is_autofree()</td>
+</tr>
+</tbody>
+</table><p>Automatic free settings. If <code class="docutils literal notranslate"><span class="pre">true</span></code>, the emitter will call <code class="docutils literal notranslate"><span class="pre">queue_free()</span></code> when playback is finished.</p>
+<ul class="simple">
+<li><p>true: Do free automatically</p></li>
+<li><p>false: Do not free automatically</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="id6">
+<h4>bool paused<a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h4>
 <table border="1" class="docutils">
 <thead>
 <tr>
@@ -508,8 +560,8 @@ In addition, the set transforms (position, rotation, scaling) are reflected in t
 </ul>
 </section>
 <hr class="docutils" />
-<section id="id6">
-<h4>bool speed<a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h4>
+<section id="id7">
+<h4>bool speed<a class="headerlink" href="#id7" title="Permalink to this heading">¶</a></h4>
 <table border="1" class="docutils">
 <thead>
 <tr>
@@ -534,8 +586,8 @@ In addition, the set transforms (position, rotation, scaling) are reflected in t
 </ul>
 </section>
 <hr class="docutils" />
-<section id="id7">
-<h4>Color color<a class="headerlink" href="#id7" title="Permalink to this heading">¶</a></h4>
+<section id="id8">
+<h4>Color color<a class="headerlink" href="#id8" title="Permalink to this heading">¶</a></h4>
 <table border="1" class="docutils">
 <thead>
 <tr>
@@ -601,33 +653,33 @@ In addition, the set transforms (position, rotation, scaling) are reflected in t
 </section>
 </section>
 <hr class="docutils" />
-<section id="id8">
-<h3>Methods<a class="headerlink" href="#id8" title="Permalink to this heading">¶</a></h3>
 <section id="id9">
-<h4>void play()<a class="headerlink" href="#id9" title="Permalink to this heading">¶</a></h4>
+<h3>Methods<a class="headerlink" href="#id9" title="Permalink to this heading">¶</a></h3>
+<section id="id10">
+<h4>void play()<a class="headerlink" href="#id10" title="Permalink to this heading">¶</a></h4>
 <p>Playback will start.</p>
 </section>
 <hr class="docutils" />
-<section id="id10">
-<h4>void stop()<a class="headerlink" href="#id10" title="Permalink to this heading">¶</a></h4>
+<section id="id11">
+<h4>void stop()<a class="headerlink" href="#id11" title="Permalink to this heading">¶</a></h4>
 <p>Playback will stop.</p>
 </section>
 <hr class="docutils" />
-<section id="id11">
-<h4>void stop_root()<a class="headerlink" href="#id11" title="Permalink to this heading">¶</a></h4>
+<section id="id12">
+<h4>void stop_root()<a class="headerlink" href="#id12" title="Permalink to this heading">¶</a></h4>
 <p>Stop the root node.</p>
 </section>
 <hr class="docutils" />
-<section id="id12">
-<h4>bool is_playing()<a class="headerlink" href="#id12" title="Permalink to this heading">¶</a></h4>
+<section id="id13">
+<h4>bool is_playing()<a class="headerlink" href="#id13" title="Permalink to this heading">¶</a></h4>
 <p>Get the playback status.</p>
 <ul class="simple">
 <li><p>true: Playing</p></li>
 <li><p>false: Not played or finished playing</p></li>
 </ul>
 </section>
-<section id="id13">
-<h4>void set_dynamic_input(int index, float value)<a class="headerlink" href="#id13" title="Permalink to this heading">¶</a></h4>
+<section id="id14">
+<h4>void set_dynamic_input(int index, float value)<a class="headerlink" href="#id14" title="Permalink to this heading">¶</a></h4>
 <table border="1" class="docutils">
 <thead>
 <tr>
@@ -647,8 +699,8 @@ In addition, the set transforms (position, rotation, scaling) are reflected in t
 </tbody>
 </table><p>Specifies a dynamic parameter for the playing effect.</p>
 </section>
-<section id="id14">
-<h4>void send_trigger(int index)<a class="headerlink" href="#id14" title="Permalink to this heading">¶</a></h4>
+<section id="id15">
+<h4>void send_trigger(int index)<a class="headerlink" href="#id15" title="Permalink to this heading">¶</a></h4>
 <table border="1" class="docutils">
 <thead>
 <tr>
@@ -666,10 +718,10 @@ In addition, the set transforms (position, rotation, scaling) are reflected in t
 </section>
 </section>
 <hr class="docutils" />
-<section id="id15">
-<h3>Signals<a class="headerlink" href="#id15" title="Permalink to this heading">¶</a></h3>
 <section id="id16">
-<h4>finished()<a class="headerlink" href="#id16" title="Permalink to this heading">¶</a></h4>
+<h3>Signals<a class="headerlink" href="#id16" title="Permalink to this heading">¶</a></h3>
+<section id="id17">
+<h4>finished()<a class="headerlink" href="#id17" title="Permalink to this heading">¶</a></h4>
 <p>Emitted when the effect finishes playing.</p>
 </section>
 </section>
@@ -679,8 +731,8 @@ In addition, the set transforms (position, rotation, scaling) are reflected in t
 <h2>EffekseerEffect<a class="headerlink" href="#effekseereffect" title="Permalink to this heading">¶</a></h2>
 <p><strong>Extends</strong>: Resource &lt; Reference &lt; Object</p>
 <p>Effekseer effect resource.</p>
-<section id="id17">
-<h3>Properties<a class="headerlink" href="#id17" title="Permalink to this heading">¶</a></h3>
+<section id="id18">
+<h3>Properties<a class="headerlink" href="#id18" title="Permalink to this heading">¶</a></h3>
 <section id="string-data-path">
 <h4>String data_path<a class="headerlink" href="#string-data-path" title="Permalink to this heading">¶</a></h4>
 <table border="1" class="docutils">
@@ -751,8 +803,8 @@ In addition, the set transforms (position, rotation, scaling) are reflected in t
 </section>
 </section>
 <hr class="docutils" />
-<section id="id18">
-<h3>Methods<a class="headerlink" href="#id18" title="Permalink to this heading">¶</a></h3>
+<section id="id19">
+<h3>Methods<a class="headerlink" href="#id19" title="Permalink to this heading">¶</a></h3>
 <section id="void-load-string-path">
 <h4>void load(String path)<a class="headerlink" href="#void-load-string-path" title="Permalink to this heading">¶</a></h4>
 <p>Load the effect by specifying the file path.</p>
@@ -771,8 +823,72 @@ In addition, the set transforms (position, rotation, scaling) are reflected in t
 <h2>EffekseerSystem<a class="headerlink" href="#effekseersystem" title="Permalink to this heading">¶</a></h2>
 <p><strong>Extends</strong>: Node &lt; Object</p>
 <p>Effekseer singleton for system management.</p>
-<section id="id19">
-<h3>Methods<a class="headerlink" href="#id19" title="Permalink to this heading">¶</a></h3>
+<section id="id20">
+<h3>Methods<a class="headerlink" href="#id20" title="Permalink to this heading">¶</a></h3>
+<section id="effekseeremitter2d-spawn-effect-2d-effekseereffect-effect-node-parent-transform2d-xform">
+<h4>EffekseerEmitter2D spawn_effect_2d(EffekseerEffect effect, Node parent, Transform2D xform)<a class="headerlink" href="#effekseeremitter2d-spawn-effect-2d-effekseereffect-effect-node-parent-transform2d-xform" title="Permalink to this heading">¶</a></h4>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Arguments</th>
+<th>Descriptions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>effect</td>
+<td>Effect resource</td>
+</tr>
+<tr>
+<td>parent</td>
+<td>Node to which emitters are added</td>
+</tr>
+<tr>
+<td>xform</td>
+<td>Transform specify for the emitter</td>
+</tr>
+</tbody>
+</table><p>An emitter (EffekseerEmitter2D) is spawned and the effect is played back. When playback is complete, the emitters are deleted.</p>
+<div class="highlight-gd notranslate"><div class="highlight"><pre><span></span><span class="k">extends</span><span class="w"> </span><span class="n">Node2D</span>
+
+<span class="k">func</span><span class="w"> </span><span class="n">ready</span><span class="p">():</span>
+<span class="w">    </span><span class="n">EffekseerSystem</span><span class="o">.</span><span class="n">spawn_effect_2d</span><span class="p">(</span><span class="n">effect</span><span class="p">,</span><span class="w"> </span><span class="n">get_viewport</span><span class="p">(),</span><span class="w"> </span><span class="n">global_transform</span><span class="p">())</span>
+</pre></div>
+</div>
+</section>
+<hr class="docutils" />
+<section id="effekseeremitter3d-spawn-effect-3d-effekseereffect-effect-node-parent-transform3d-xform">
+<h4>EffekseerEmitter3D spawn_effect_3d(EffekseerEffect effect, Node parent, Transform3D xform)<a class="headerlink" href="#effekseeremitter3d-spawn-effect-3d-effekseereffect-effect-node-parent-transform3d-xform" title="Permalink to this heading">¶</a></h4>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Arguments</th>
+<th>Descriptions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>effect</td>
+<td>Effect resource</td>
+</tr>
+<tr>
+<td>parent</td>
+<td>Node to which emitters are added</td>
+</tr>
+<tr>
+<td>xform</td>
+<td>Transform specify for the emitter</td>
+</tr>
+</tbody>
+</table><p>An emitter (EffekseerEmitter3D) is spawned and the effect is played back. When playback is complete, the emitters are deleted.</p>
+<div class="highlight-gd notranslate"><div class="highlight"><pre><span></span><span class="k">extends</span><span class="w"> </span><span class="n">Node3D</span>
+
+<span class="k">func</span><span class="w"> </span><span class="n">ready</span><span class="p">():</span>
+<span class="w">    </span><span class="n">EffekseerSystem</span><span class="o">.</span><span class="n">spawn_effect_3d</span><span class="p">(</span><span class="n">effect</span><span class="p">,</span><span class="w"> </span><span class="n">get_viewport</span><span class="p">(),</span><span class="w"> </span><span class="n">global_transform</span><span class="p">())</span>
+</pre></div>
+</div>
+</section>
+<hr class="docutils" />
 <section id="void-stop-all-effects">
 <h4>void stop_all_effects()<a class="headerlink" href="#void-stop-all-effects" title="Permalink to this heading">¶</a></h4>
 <p>Stops all currently playing effects.</p>

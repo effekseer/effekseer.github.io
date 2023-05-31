@@ -94,6 +94,9 @@
 <li class="toctree-l2"><a class="reference internal" href="faq.html">FAQ</a></li>
 <li class="toctree-l2"><a class="reference internal" href="api-reference.html">API Reference</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Release notes</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#e-1">1.70e.1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#b-1">1.70b.1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#b-beta2">1.70b.beta2</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#b-beta1">1.70b.beta1</a></li>
 </ul>
 </li>
@@ -169,6 +172,48 @@
             
   <section id="release-notes">
 <h1>Release notes<a class="headerlink" href="#release-notes" title="Permalink to this heading">¶</a></h1>
+<section id="e-1">
+<h2>1.70e.1<a class="headerlink" href="#e-1" title="Permalink to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>Change default values for project settings</p>
+<ul>
+<li><p>Instance Max Count: 2000 -&gt; 4000</p></li>
+<li><p>Square Max Count: 8000 -&gt; 16000</p></li>
+<li><p>Draw Max Count: 128 -&gt; 256</p></li>
+</ul>
+</li>
+<li><p>Improved effects loading process</p></li>
+<li><p>Migration to new shader generation process</p></li>
+<li><p>Added preview rendering in the editor viewport</p></li>
+<li><p>Fixed a loading failure when placing resources directly under “res://”.</p></li>
+<li><p>Fixed a bug that the texture repeats even if a clamp is specified for the wrap mode of the texture</p></li>
+<li><p>Updated Effekseer to 1.70e</p></li>
+<li><p>godot-cpp updated to 4.0.3</p></li>
+</ul>
+</section>
+<section id="b-1">
+<h2>1.70b.1<a class="headerlink" href="#b-1" title="Permalink to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>Avoided crash on exit</p></li>
+<li><p>Fixed 3D transform convertion miss</p></li>
+<li><p>Removed EffekseerServer.gd</p></li>
+<li><p>Added the following methods to EffekseerSystem</p>
+<ul>
+<li><p>spawn_effect_2d(effect, parent, xform)</p></li>
+<li><p>spawn_effect_3d(effect, parent, xform)</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="b-beta2">
+<h2>1.70b.beta2<a class="headerlink" href="#b-beta2" title="Permalink to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>Support instanced rendering of models</p></li>
+<li><p>Support for advanced shaders (Advanced rendering panel)</p></li>
+<li><p>Enabled Emitter3D gizmo display in editor</p></li>
+<li><p>Enabled shader preloader</p></li>
+</ul>
+</section>
 <section id="b-beta1">
 <h2>1.70b.beta1<a class="headerlink" href="#b-beta1" title="Permalink to this heading">¶</a></h2>
 <ul class="simple">
