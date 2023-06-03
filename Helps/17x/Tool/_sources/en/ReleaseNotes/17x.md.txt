@@ -1,5 +1,23 @@
 ﻿# 1.7x Change Logs
 
+## 1.70e (June. 03, 2023)
+
+### Editor
+ 
+Fixed a bug where FCurve Crashes.
+
+Added a feature to copy fcurve from menu.
+
+### C++
+
+Refactor codes
+
+Fixed a bug where frame is specified in SetTime
+
+### Unity
+
+Supported Unity 2022.3
+
 ## 1.70d (Apr. 21, 2023)
 
 ### Unity
