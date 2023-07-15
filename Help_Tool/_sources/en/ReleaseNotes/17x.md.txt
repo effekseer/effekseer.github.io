@@ -1,5 +1,11 @@
 ﻿# 1.7x Change Logs
 
+## 1.70f (Jul. 15, 2023)
+
+### UnrealEngine
+
+Fixed a bug that Reimport was not available in 5.2.
+
 ## 1.70e (June. 03, 2023)
 
 ### Editor
