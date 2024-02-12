@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>02. 用材质表现卡通风格火焰。 &mdash; Effekseer Help  ドキュメント</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/js/three.min.js"></script>
+        <script src="../../_static/js/effekseer.min.js"></script>
+        <script src="../../_static/js/iframe.js"></script>
+        <script src="../../_static/js/OrbitControls.js"></script>
+        <script src="../../_static/translations.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="検索" href="../../search.html" />
+    <link rel="next" title="03. 有序材质的卡通火焰。" href="material_03.html" />
+    <link rel="prev" title="01. 材质入门" href="material_01.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> Effekseer Help
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../ja/index.html">Effekseer Help 日本語</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../en/index.html">Effekseer Help (English)</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Effekseer Help (中文)</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../overview.html">概要</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">教程</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="index.html#id2">基础</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="index.html#id3">材质</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="material_01.html">01. 材质入门</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">02. 用材质表现卡通风格火焰。</a></li>
+<li class="toctree-l4"><a class="reference internal" href="material_03.html">03. 有序材质的卡通火焰。</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolReference/index.html">工具参考</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../MaterialToolReference/index.html">材质参考</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolTips/01.html">TIPS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq.html">常见问题解答</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ReleaseNotes/index.html">版本说明</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Effekseer Help</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../index.html">Effekseer Help (中文)</a> &raquo;</li>
+          <li><a href="index.html">教程</a> &raquo;</li>
+      <li>02. 用材质表现卡通风格火焰。</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="id1">
+<h1>02. 用材质表现卡通风格火焰。<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h1>
+<div class="section" id="id2">
+<h2>概要<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
+<p>在这一章中，我们用材质表现卡通风格的火焰。你可以用材质实现原本很难实现的表现。</p>
+<div align="center">
+<iframe src='../../Effects/viewer_zh_CN.html#Tutorials/Mat_02/Fire.efkefc'></iframe>
+<p>本章制作的特效</p>
+</div></div>
+<div class="section" id="id3">
+<h2>制作<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h2>
+<p>本章使用了各种图像和3D模型。你可以用你熟悉的软件制作类似的材质素材。</p>
+<p>准备这些数据是很耗时的，所以我们准备了预制的材质素材。我也会稍微解释一下如何制作它们，但如果你不能或不想制作这些素材，可以使用我们准备好的。</p>
+<p>创建这些数据是很耗时的，所以我们在这里准备了我们已经创建的材料数据。我们也会稍微解释一下如何创建它们，但是如果你无法创建材料或者觉得创建材料很繁琐，请使用这些材料。</p>
+<p><a href="../../Effects/Tutorials/Mat_02_01.zip">下载</a></p>
+<p>模型和材质都已经设置好了。关于创建新材质和基本用法，请参见前一章。</p>
+<p>首先，显示一张带有滚动的云层图案的灰色图像。</p>
+<p>添加一个<code class="docutils literal notranslate"><span class="pre">采样图像</span></code>节点，图像选择<code class="docutils literal notranslate"><span class="pre">Textures/Noise1.png</span></code>。它的作用仅仅是显示图片。</p>
+<img alt="../../_images/Grad_En.png" class="align-center" src="../../_images/Grad_En.png" />
+<p>添加一个<code class="docutils literal notranslate"><span class="pre">移动UV</span></code>节点来移动它。然后把它连接到<code class="docutils literal notranslate"><span class="pre">采样图像</span></code>节点。移动UV节点的速度输入(0.0, 0.4)。</p>
+<p>现在图像将垂直移动。</p>
+<img alt="../../_images/Noise_Moving_En.png" class="align-center" src="../../_images/Noise_Moving_En.png" />
+<p>然而，现在的云层图案太粗糙了，需要加以完善。将一个<code class="docutils literal notranslate"><span class="pre">乘</span></code>节点连接到<code class="docutils literal notranslate"><span class="pre">采样图像</span></code>节点的UV上。乘法的输入是<code class="docutils literal notranslate"><span class="pre">移动UV</span></code>节点的输出和<code class="docutils literal notranslate"><span class="pre">(4.0,</span> <span class="pre">1.0)</span></code>。</p>
+<p>原本图像水平方向UV坐标中的1将变成4。这意味着之前水平方向显示一张图像的范围内将会显示4张图像。</p>
+<img alt="../../_images/Noise_Enlarge_En.png" class="align-center" src="../../_images/Noise_Enlarge_En.png" />
+<p>就像现在这样，它看起来根本就不像一个火焰。添加扭曲来使运动复杂化。</p>
+<p>添加一个<code class="docutils literal notranslate"><span class="pre">采样图像</span></code>节点，选择扭曲贴图<code class="docutils literal notranslate"><span class="pre">Textures/Normal1.png</span></code>。</p>
+<p>添加一个<code class="docutils literal notranslate"><span class="pre">遮罩元素</span></code>节点并选择RG。然后添加一个<code class="docutils literal notranslate"><span class="pre">减</span></code>节点并减去0.5。扭曲贴图中的红色和绿色表示上下和左右方向的扭曲，0.5表示0。因此，减去中间值0.5。</p>
+<p>此外，乘以0.5来调整扭曲的强度。</p>
+<p>然后把扭曲值加到UV上。</p>
+<p>这样，图像就被扭曲了。它可能看起来有点像火焰。</p>
+<img alt="../../_images/Noise_Distort_En.png" class="align-center" src="../../_images/Noise_Distort_En.png" />
+<p>火焰在顶部较暗，在底部较亮。为了实现这一点，可以加上或乘一个渐变图像。</p>
+<p>添加一个<code class="docutils literal notranslate"><span class="pre">采样图像</span></code>节点并选择图像<code class="docutils literal notranslate"><span class="pre">Textures/Gradation1.png</span></code>。</p>
+<img alt="../../_images/Grad_En.png" class="align-center" src="../../_images/Grad_En.png" />
+<p>然后用加法节点把它和之前的扭曲图像加在一起。</p>
+<p>现在图像的底部会发光。</p>
+<img alt="../../_images/Grad_Add_En.png" class="align-center" src="../../_images/Grad_Add_En.png" />
+<p>接下来，为了使图像的顶部变暗，用<code class="docutils literal notranslate"><span class="pre">乘</span></code>节点将之前的图像和新增的图像相乘。</p>
+<p>这将使图像的顶部部分变暗。现在它有点像火焰了。</p>
+<img alt="../../_images/Grad_Mul_En.png" class="align-center" src="../../_images/Grad_Mul_En.png" />
+<p>最后，上色。</p>
+<p>使用一个彩色的渐变图像来着色。添加一个<code class="docutils literal notranslate"><span class="pre">采样图像</span></code>节点并选择图像<code class="docutils literal notranslate"><span class="pre">Textures/Gradation2.png</span></code>。</p>
+<img alt="../../_images/Grad_Color_En.png" class="align-center" src="../../_images/Grad_Color_En.png" />
+<p>然后，<code class="docutils literal notranslate"><span class="pre">遮罩元素</span></code>节点从流动的图像中提取RG。把它输入到UV中。（译注：图中未使用遮罩元素节点，而是直接将乘法的输出连接到UV中）</p>
+<p>然后颜色将随着渐变图像改变。</p>
+<img alt="../../_images/Grad_Color_Distort_En.png" class="align-center" src="../../_images/Grad_Color_Distort_En.png" />
+<p>渐变图像被参照的位置随着输入的流动的图像的颜色而改变。这导致颜色随着渐变而变化。</p>
+<p>黑色的值为0，所以会被替换成Gradient2.png顶部的颜色，而白色的值为1，所以会被替换成Gradient2.png底部的颜色。这样可以将一张灰色的图像转换为一张彩色的图像。</p>
+<img alt="../../_images/LookUp.png" class="align-center" src="../../_images/LookUp.png" />
+<p>流动的图像RG值被转换为Gradient2.png的横纵坐标，在这个例子中，R值和G值是同步变化的，也就是说，实际上黑色采样的是Gradient2.png的左上方(0,0)，白色采样的是Gradient2.png的右下方(1,1)。由于Gradient2.png在水平方向没有变化，所以即便输入的R值变化了，输出的颜色也不会受到影响。</p>
+<p>如果Gradient2.png在水平方向上也有变化，而你只需要竖直方向的变化，你需要固定输入的R值，而只改变G值。</p>
+<p>同样地，为了改变透明度。添加一个<code class="docutils literal notranslate"><span class="pre">采样图像</span></code>节点并选择图像<code class="docutils literal notranslate"><span class="pre">Textures/Gradation3.png</span></code>。以同样方式连接流动的图像。白色区域将是不透明的，黑色区域是透明的。</p>
+<img alt="../../_images/Grad_OpacityMask_Distort_En.png" class="align-center" src="../../_images/Grad_OpacityMask_Distort_En.png" />
+<p>将Gradation2的<code class="docutils literal notranslate"><span class="pre">采样图像</span></code>节点连接到输出节点的Emmisive（自发光）。</p>
+<p>将Gradation3的<code class="docutils literal notranslate"><span class="pre">采样图像</span></code>节点连接到输出节点的OpacityMask（不透明度遮罩）。</p>
+<p>火焰图案就显示出来了。</p>
+<img alt="../../_images/Output_En.png" class="align-center" src="../../_images/Output_En.png" />
+<p>但是，细节部分的颜色并不正确。</p>
+<img alt="../../_images/PreResult.png" class="align-center" src="../../_images/PreResult.png" />
+<p>原因是<code class="docutils literal notranslate"><span class="pre">采样图像</span></code>节点在引用图像时选择了Repeat（重复）。</p>
+<p>图像可以设置为Clamp（钳制）或Repeat，这是决定如何处理边缘的参数。</p>
+<p>当UV坐标超过1.0时，你可以设置超出边缘的区域是应该填充边缘的颜色，还是应该重复图像。如果设置为Repeat，它将从另一侧开始重复采样。</p>
+<p>下图左边是Clamp，右边是Repeat。</p>
+<img alt="../../_images/Clamp_Repeat.png" class="align-center" src="../../_images/Clamp_Repeat.png" />
+<p>颜色值可能超过1.0（255）或低于0，导致颜色被错误地引用到另一边。</p>
+<p>它可能由于计算中的错误而超过1.0，就本案例而言，是因为图像被相加。</p>
+<p>因此，将渐变图像的<code class="docutils literal notranslate"><span class="pre">采样图像</span></code>节点的Repeat改为Clamp。</p>
+<img alt="../../_images/Sampler_En.png" class="align-center" src="../../_images/Sampler_En.png" />
+<p>这样就完成了。</p>
+<div align="center">
+<iframe src='../../Effects/viewer_zh_CN.html#Tutorials/Mat_02/Fire.efkefc'></iframe>
+</div><p>最后，你可以通过下面的链接下载本章中制作的特效。</p>
+<p><a href="../../Effects/Tutorials/Mat_02_02.zip">下载</a></p>
+<div class="section" id="id4">
+<h3>如何制作云层图像<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h3>
+<p>这次我使用PhotoShop。新建一张分辨率为1024的图像，在PhotoShop中选择云彩（译注：滤镜-渲染-云彩）。提高对比度使黑白对比更显著。</p>
+<p>然后将分辨率降低到512并保存。</p>
+<img alt="../../_images/Image_Cloud.png" class="align-center" src="../../_images/Image_Cloud.png" />
+</div>
+<div class="section" id="id5">
+<h3>如何制作扭曲贴图<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h3>
+<p>这次我使用PhotoShop。新建一张分辨率为1024的图像，在PhotoShop中选择云彩。</p>
+<p>然后，我们新建一张3072x3071的图像。从之前的步骤复制九次云层的图案。这是为了方便地制作循环图案。然后，生成法线（译注：滤镜-3D-生成法线）。</p>
+<p>最后，剪切出中间的1024x1024的图案，将分辨率降低到512并保存。</p>
+<img alt="../../_images/Image_Normal.png" class="align-center" src="../../_images/Image_Normal.png" />
+</div>
+<div class="section" id="id6">
+<h3>如何制作渐变图像<a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h3>
+<p>这是通过PhotoShop的梯度制作的。由于是卡通风格，颜色做成了突然变化的样子。</p>
+</div>
+</div>
+<div class="section" id="id7">
+<h2>总结<a class="headerlink" href="#id7" title="Permalink to this heading">¶</a></h2>
+<p>本章中，我们制作了火焰。为了表述清楚，用了多张分开的图像，但是在实践中，这些图像可能被合并，以使之更轻量化。</p>
+<p>However, this will only result in a fixed continuous flow of flame.
+In the next chapter, we will be able to apply this to a variety of things.</p>
+<p>然而，制作出的火焰只是在固定地持续流动。在下一章，我们可以将其应用于各种东西。（译注：看不懂）</p>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="material_01.html" class="btn btn-neutral float-left" title="01. 材质入门" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="material_03.html" class="btn btn-neutral float-right" title="03. 有序材质的卡通火焰。" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2019, Effekseer.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

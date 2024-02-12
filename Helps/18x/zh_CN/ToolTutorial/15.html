@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>15.通过触发器改变特效！ &mdash; Effekseer Help  ドキュメント</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/js/three.min.js"></script>
+        <script src="../../_static/js/effekseer.min.js"></script>
+        <script src="../../_static/js/iframe.js"></script>
+        <script src="../../_static/js/OrbitControls.js"></script>
+        <script src="../../_static/translations.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="検索" href="../../search.html" />
+    <link rel="next" title="01. 材质入门" href="material_01.html" />
+    <link rel="prev" title="14. 设置细节层级（LOD）" href="14.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> Effekseer Help
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../ja/index.html">Effekseer Help 日本語</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../en/index.html">Effekseer Help (English)</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Effekseer Help (中文)</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../overview.html">概要</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">教程</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="index.html#id2">基础</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="01.html">01.查看并使用示例！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="02.html">02.让粒子散射开！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="03.html">03. 显示图片！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="04.html">04. 旋转和缩放！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="05.html">05. 制作一个斩击命中特效！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="06.html">06. 创建环形粒子!</a></li>
+<li class="toctree-l4"><a class="reference internal" href="07.html">07. 使用父子关系实现复杂移动！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="08.html">08. 通过设置生成方法排列粒子!</a></li>
+<li class="toctree-l4"><a class="reference internal" href="09.html">09.制作枪口焰！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="10.html">10.丝带和轨迹</a></li>
+<li class="toctree-l4"><a class="reference internal" href="11.html">11. 使用3D模型！！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="12.html">12. 用F曲线表示复杂的运动</a></li>
+<li class="toctree-l4"><a class="reference internal" href="13.html">13. 扭曲背景！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="14.html">14. 设置细节层级（LOD）</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">15.通过触发器改变特效！</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id3">材质</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolReference/index.html">工具参考</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../MaterialToolReference/index.html">材质参考</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolTips/01.html">TIPS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq.html">常见问题解答</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ReleaseNotes/index.html">版本说明</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Effekseer Help</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../index.html">Effekseer Help (中文)</a> &raquo;</li>
+          <li><a href="index.html">教程</a> &raquo;</li>
+      <li>15.通过触发器改变特效！</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="id1">
+<h1>15.通过触发器改变特效！<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h1>
+<div class="section" id="id2">
+<h2>概要<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
+<p>本章介绍Effekseer中的触发器功能。触发器允许你在播放过程中改变特效。</p>
+<p>如下例所示，你可以触发一个充能的武器的发射特效。</p>
+<iframe src='../../Sample/viewer_zh_CN.html#15_Sample/TriggerLaser.efkefc'></iframe><p>双击发送触发器信号。</p>
+</div>
+<div class="section" id="id3">
+<h2>触发器功能<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h2>
+<p>触发器是一种机制，允许向当前播放的特效发送多达四种触发信号。被触发的特效可以根据节点中设置的参数改变其行为。</p>
+<div class="section" id="id4">
+<h3>触发器设置<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h3>
+<p>触发器引起的行为变化在<a class="reference internal" href="../ToolReference/common.html"><span class="doc">基础设置</span></a>中设置。</p>
+<div align="center">
+<img src="../../img/Tutorial/15/start_by_trigger_en.png">
+<p>基础设置面板中的触发器设置</p>
+</div></div>
+<div class="section" id="id5">
+<h3>在编辑器中发送触发信号<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h3>
+<p>触发信号可以在控制面板发送。</p>
+<div align="center">
+<img src="../../img/Tutorial/15/trigger_controller.png">
+<p>用于发送触发信号的按钮</p>
+</div></div>
+<div class="section" id="id6">
+<h3>在游戏中发送触发信号<a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h3>
+<p>SDK和游戏引擎的插件中有发送触发信号的API。</p>
+</div>
+</div>
+<div class="section" id="id7">
+<h2>示例特效<a class="headerlink" href="#id7" title="Permalink to this heading">¶</a></h2>
+<p>本章使用示例文件<code class="docutils literal notranslate"><span class="pre">TriggerLaser.efkefc</span></code>进行讲解。</p>
+<div align="center">
+<p><a href = "../../Sample/15_Sample.zip">下载</a></p>
+</div><div align="center">
+<img src="../../img/Tutorial/15/nodelist.png">
+<p>本章制作的特效的节点设置</p>
+</div><p>特效播放时，会执行以下行为。</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Charge</span></code>节点的粒子被生成，子节点粒子随之生成。</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Laser</span></code>节点的粒子不被生成。</p></li>
+</ul>
+<p>当触发信号0被发送给特效时，会执行以下行为。</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Charge</span></code>节点的粒子被删除，子节点的粒子随之停止生成</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Laser</span></code>节点的粒子开始生成，子节点的粒子随之生成</p></li>
+</ul>
+<div class="section" id="id8">
+<h3>触发时删除粒子的节点<a class="headerlink" href="#id8" title="Permalink to this heading">¶</a></h3>
+<div align="center">
+<img src="../../img/Tutorial/15/remove_by_trigger_en.png">
+<p>Charge节点的触发器设置</p>
+</div></div>
+<div class="section" id="id9">
+<h3>触发时开始生成粒子的节点<a class="headerlink" href="#id9" title="Permalink to this heading">¶</a></h3>
+<div align="center">
+<img src="../../img/Tutorial/15/start_by_trigger_en.png">
+<p>Laser节点的触发器设置</p>
+</div></div>
+</div>
+<div class="section" id="id10">
+<h2>提示<a class="headerlink" href="#id10" title="Permalink to this heading">¶</a></h2>
+<p>被触发器删除的粒子可能会瞬间消失，这可能是不自然的。在这种情况下，你可以设置<code class="docutils literal notranslate"><span class="pre">删除后淡出</span></code>，使它们通过淡出而自然消失。</p>
+<div align="center">
+<img src="../../img/Tutorial/15/fadeout_after_destroyed_en.png">
+<p>淡出行为</p>
+</div><p>设置了<code class="docutils literal notranslate"><span class="pre">在生命周期内淡出</span></code>时，粒子会在生命周期结束被删除时淡出，但不会随着被触发器删除而淡出。在以下两个例子中，粒子都是由触发器删除的，但淡出行为是不同的。</p>
+<div align="center">
+<table>
+<tr><td>
+<div align="center">
+<img src="../../img/Tutorial/15/fadeout_disabled.gif">
+<p>在生命周期内淡出</p>
+</div>
+</td>
+<td>
+<div align="center">
+<img src="../../img/Tutorial/15/fadeout_enabled.gif">
+<p>在销毁后淡出</p>
+</div>
+</td></tr>
+</table>
+</div></div>
+<div class="section" id="id11">
+<h2>总结<a class="headerlink" href="#id11" title="Permalink to this heading">¶</a></h2>
+<p>本章解释了如何使用触发器。利用触发器可以制作可交互的特效。</p>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="14.html" class="btn btn-neutral float-left" title="14. 设置细节层级（LOD）" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="material_01.html" class="btn btn-neutral float-right" title="01. 材质入门" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2019, Effekseer.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

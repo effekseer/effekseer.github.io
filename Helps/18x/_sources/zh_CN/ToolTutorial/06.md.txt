@@ -1,0 +1,150 @@
+﻿# 06. 创建环形粒子!
+
+## 概要
+
+在本章中, 你将使用环形(Ring)渲染方法创建多种效果。
+我们已经介绍了渲染方法中的“精灵”，而这次，我们将介绍“环”。
+顾名思义，它被用来绘制环形粒子。
+但通过改变其参数, 你创建的特效将不会仅局限于环形。
+
+<div align="center">
+<img src="../../img/Tutorial/06_renderRing.png">
+<p>各种环形特效</p>
+</div>
+
+此外，也可以尝试通过改变贴图的选区(UV)获得更好的表现效果。
+
+<div align="center" class='col-md-4'>
+<iframe src='../../Sample/viewer_zh_CN.html#06_02_Sample/effect1.efk'></iframe>
+<p>本章中创建的第一个效果</p>
+</div>
+
+<div align="center" class='col-md-4'>
+<iframe src='../../Sample/viewer_zh_CN.html#06_02_Sample/effect2.efk'></iframe>
+<p>本章中创建的第二个效果</p>
+</div>
+
+<div align="center" class='col-md-4'>
+<iframe src='../../Sample/viewer_zh_CN.html#06_02_Sample/effect3.efk'></iframe>
+<p>本章中创建的第三个效果</p>
+</div>
+
+<p>你可以通过下面的链接下载为本章内容预制的特效素材。</p>
+<div align="center">
+<p><a href = "../../Sample/06_01_Sample.zip">下载</a></p>
+</div>
+
+## 基础圆环
+
+你将要创建的第一个效果是一个随时间改变形状的圆环。
+
+请打开 effect1.efkefc。
+
+为达到预想的效果，你需要将渲染方法设置为环形。
+在节点树中选中Node，切换到“渲染设置(Render Settings)”选项卡，将渲染方法由“精灵(Sprite)”改为“环(Ring)”
+
+<div align="center">
+<img src="../../img/Tutorial/06_ring_en.png">
+<p>修改完成后的渲染设置应当如此图所示</p>
+</div>
+
+修改完成后播放效果，你应当看到预览画面中显示的是一个圆环。
+
+<div align="center">
+<img src="../../img/Tutorial/06_ring.png">
+<p>环</p>
+</div>
+
+你可以通过改变其参数来改变它的形状。
+
+圆环的形状由“渲染设置”选项卡中的外沿(Outer)和内沿(Inner)控制。
+在这两项中，你可以设置圆环内外沿的平面半径(x)和轴向高度(y)。(译者注:类似圆台的上下表面半径及其高度)
+
+<b> 注意：不要将这里的xy与预览画面中的xyz相混淆 </b>
+
+<div align="center">
+<img src="../../img/Tutorial/06_ring_inout.png">
+<p>外沿(1)和内沿(2)</p>
+</div>
+
+这些参数也可以通过缓动来达到随时间变化的效果。
+
+根据下方表格修改粒子节点的参数。它表示```外沿位置(Outer-Position)```将会由(1,2)变为(3,0)而```内沿位置(Inner-Position)```保持在(1,0)不变。
+
+|窗口|参数|值|
+|:----|:----|:----|
+|基础设置|生命周期|60|
+|旋转|角度|x=0, y=0, z=-45|
+|渲染设置|外沿Outer|缓动|
+|渲染设置|外沿Outer-Start(平均)|x=1, y=2|
+|渲染设置|外沿Outer-End(平均)|x=3, y=0|
+
+播放效果，你可以看到圆环的形状在随时间改变了。
+基于同样的原理，只需将内沿半径设为0，你就可以创建圆盘/圆锥效果了。
+
+<div align="center">
+<img src="../../img/Tutorial/06_ring_easing.gif">
+<p>内沿不变, 外沿缓动</p>
+</div>
+
+## 三角形
+
+你将要创建的第二个效果是一个三角形。
+请打开 effect2.efkefc。
+
+通过改变圆环的顶点数，你可以绘制出多种形状。
+顶点数的初始值较大，因此粒子看起来更像是个圆，
+降低顶点数则允许你绘制出三角形，矩形，六边形等形状。
+你只需要将“渲染设置”选项卡中的顶点数(Vertex Count)修改为3，即可得到一个三角形，如图所示。
+
+<div align="center">
+<img src="../../img/Tutorial/06_tri.png">
+<p>一个三角形</p>
+</div>
+
+## 滚动UV
+
+你将要创建的第三个效果是一个带贴图的圆筒。
+
+请打开 effect3.efkefc。
+
+你同样可以为环形粒子设置贴图，这样你就可以更简单地表现冲击波或爆发光环等效果。
+
+在“基础渲染设置(Basic Render Settings)”选项卡的纹理选项中选择“Scroll.png”。
+
+可以看到，圆筒的外观由纯色变为了图片。
+
+<div align="center">
+<img src="../../img/Tutorial/06_ring_img.png">
+<p>效果应如图所示</p>
+</div>
+
+但这看起来并不怎么吸引人，如果能让贴图随时间变化，看起来就更好了。
+在Effekseer中, 你可以改变粒子在贴图上使用的选区(UV)。
+
+为了让粒子的UV随时间变化，你需要：
+
+切换到“基础渲染设置”选项卡
+将 UV 设置由 ```基础(Standard)``` 修改为 ```滚动(Scroll)```。
+到这里，你会发现圆筒表面什么也没有显示。
+这是因为你还没有设置贴图要采用的选区。
+
+在尺寸(Size)中输入图片尺寸(256, 256)。接下来，在滚动速度(Scroll)中输入(0, 5)。
+
+播放效果，可以看到贴图在随时间变化。
+
+<div align="center">
+<img src="../../img/Tutorial/06_scroll.gif">
+<p>滚动UV</p>
+</div>
+
+最后，你可以通过下面的链接下载本章中制作的效果。
+
+<div align="center">
+<a href = "../../Sample/06_02_Sample.zip">下载</a>
+</div>
+
+## 总结
+
+本章节中，你通过圆环渲染方法创建了一系列效果。
+在下一章节，你将利用节点父子关系创建复杂的效果。

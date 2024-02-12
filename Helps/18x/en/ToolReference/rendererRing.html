@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Render - Ring &mdash; Effekseer Help  ドキュメント</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/js/three.min.js"></script>
+        <script src="../../_static/js/effekseer.min.js"></script>
+        <script src="../../_static/js/iframe.js"></script>
+        <script src="../../_static/js/OrbitControls.js"></script>
+        <script src="../../_static/translations.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="検索" href="../../search.html" />
+    <link rel="next" title="Render - Model" href="rendererModel.html" />
+    <link rel="prev" title="Render - Ribbon" href="rendererRibbon.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> Effekseer Help
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../ja/index.html">Effekseer Help 日本語</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Effekseer Help (English)</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../overview.html">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolTutorial/index.html">Tutorial</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Tool-Reference</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="index.html#overview">Overview</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="index.html#effect-parameters">Effect parameters</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="common.html">Basic settings</a></li>
+<li class="toctree-l4"><a class="reference internal" href="location.html">Position</a></li>
+<li class="toctree-l4"><a class="reference internal" href="locationAbs.html">Force Field (Local)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="locationGene.html">Spawning Method</a></li>
+<li class="toctree-l4"><a class="reference internal" href="killRules.html">Kill Rules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rotation.html">Rotation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scale.html">Scale</a></li>
+<li class="toctree-l4"><a class="reference internal" href="depth.html">Depth</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererCommon.html">Basic Render Settings</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererCommonAd.html">Basic Render Settings (Advanced)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererSprite.html">Render - Sprite</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererRibbon.html">Render - Ribbon</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Render - Ring</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererModel.html">Render - Model</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererTrack.html">Render - Track</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sound.html">Sound</a></li>
+<li class="toctree-l4"><a class="reference internal" href="fcurve.html">F-Curve</a></li>
+<li class="toctree-l4"><a class="reference internal" href="global.html">Global Settings</a></li>
+<li class="toctree-l4"><a class="reference internal" href="culling.html">Culling</a></li>
+<li class="toctree-l4"><a class="reference internal" href="levelsOfDetails.html">Levels Of Details</a></li>
+<li class="toctree-l4"><a class="reference internal" href="dynamicParameter.html">DynamicParameter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="proceduralModel.html">Procedural Model</a></li>
+<li class="toctree-l4"><a class="reference internal" href="collisions.html">Collision</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#effect-features">Effect features</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#tool-functions">Tool functions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#command-line">Command Line</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../MaterialToolReference/index.html">Material-Reference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolTips/01.html">TIPS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq.html">FAQ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ReleaseNotes/index.html">Release Notes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../zh_CN/index.html">Effekseer Help (中文)</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Effekseer Help</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../index.html">Effekseer Help (English)</a> &raquo;</li>
+          <li><a href="index.html">Tool-Reference</a> &raquo;</li>
+      <li>Render - Ring</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="render-ring">
+<h1>Render - Ring<a class="headerlink" href="#render-ring" title="Permalink to this heading">¶</a></h1>
+<div class="section" id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this heading">¶</a></h2>
+<p>Here we explain the parameters that affect the drawing when &quot;Ring&quot; is selected in the Render window.</p>
+<p>When &quot;Ring&quot; is selected, a circular effect is drawn.</p>
+<p>The ring consists of a triple structure of outside, center and inside.</p>
+<p><img alt="../../_images/renderRing.png" src="../../_images/renderRing.png" /></p>
+</div>
+<div class="section" id="parameters">
+<h2>Parameters<a class="headerlink" href="#parameters" title="Permalink to this heading">¶</a></h2>
+<div align="center">
+<img src="../../img/Reference/Render/panel_ring_en.png">
+<p>"Render Settings" window</p>
+</div><div class="section" id="rendering-order">
+<h3>Rendering Order<a class="headerlink" href="#rendering-order" title="Permalink to this heading">¶</a></h3>
+<p>Specify the order in which particles are drawn among particles generated from the same node. For &quot;Order of spawn&quot;, the first generated particle is the first drawn, while in &quot;Reversed&quot;, the first generated particle will be drawn last. That is, in the order of generation, the drawing of the last generated particle is given priority over the first generated particle.</p>
+</div>
+<div class="section" id="configuration">
+<h3>Configuration<a class="headerlink" href="#configuration" title="Permalink to this heading">¶</a></h3>
+<p>Specify how to draw the particle's ring.</p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Configuration</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Billboard</td>
+<td>The ring always rotates to face the camera.</td>
+</tr>
+<tr>
+<td>Rotated Billboard</td>
+<td>The ring rotates to face the camera while keeping the Z axis fixed.</td>
+</tr>
+<tr>
+<td>Directional Billboard</td>
+<td>The ring rotates to face the camera while the Y+ direction toward the direction of movement.</td>
+</tr>
+<tr>
+<td>Fixed Y-axis</td>
+<td>The ring rotates to face the camera while keeping the Y axis fixed.</td>
+</tr>
+<tr>
+<td>Fixed</td>
+<td>The ring will match the rotation setting of the particle.</td>
+</tr>
+</tbody>
+</table><iframe src='../../Effects/viewer_en.html#References/Render/ring_configuration.efkefc' class='effect'></iframe></div>
+<div class="section" id="vertex-count">
+<h3>Vertex Count<a class="headerlink" href="#vertex-count" title="Permalink to this heading">¶</a></h3>
+<p>The number of corner verticies that will be used to display the ring. The more corners there are, the closer it will be to a smooth circle. However, you can also use small numbers to reduce it to a polygon. For example, 3 vertices will make the ring a triangle, 4 will make it a diamond, 5 will make it a pentagon, etc.</p>
+<iframe src='../../Effects/viewer_en.html#References/Render/render_ring_vertexcount.efkefc' class='effect'></iframe></div>
+<div class="section" id="shape">
+<h3>Shape<a class="headerlink" href="#shape" title="Permalink to this heading">¶</a></h3>
+<p>It can specify the shape of the ring.</p>
+<div class="section" id="donut">
+<h4>Donut<a class="headerlink" href="#donut" title="Permalink to this heading">¶</a></h4>
+<p>It can draw a shape like a donut</p>
+</div>
+<div class="section" id="crescent">
+<h4>Crescent<a class="headerlink" href="#crescent" title="Permalink to this heading">¶</a></h4>
+<p>It can draw a circle with a part cut. It can set the start / end angle and fade angle of the circle.</p>
+<iframe src='../../Effects/viewer_en.html#References/Render/render_ring_viewingangle.efkefc' class='effect'></iframe></div>
+</div>
+<div class="section" id="outer">
+<h3>Outer<a class="headerlink" href="#outer" title="Permalink to this heading">¶</a></h3>
+<p>This is the shape/position of the outer part of the circle. The x value specifies the radius, while the y value specifies the height.</p>
+</div>
+<div class="section" id="inner">
+<h3>Inner<a class="headerlink" href="#inner" title="Permalink to this heading">¶</a></h3>
+<p>This is the shape/position of the inner part of the circle. The x value specifies the radius, while the y value specifies the height.</p>
+</div>
+<div class="section" id="center-ratio">
+<h3>Center Ratio<a class="headerlink" href="#center-ratio" title="Permalink to this heading">¶</a></h3>
+<p>This is the ratio of the center gradient that transitions between the inner and outer rings. 0.5 will result in a smooth even gradient between the inside and outside edges. 0.0 will place the center gradient on the inner edge. 1.0 will place the center gradient on the outer edge.</p>
+</div>
+<div class="section" id="outer-color">
+<h3>Outer Color<a class="headerlink" href="#outer-color" title="Permalink to this heading">¶</a></h3>
+<p>This is the color of the outer part of the circle.</p>
+</div>
+<div class="section" id="center-color">
+<h3>Center Color<a class="headerlink" href="#center-color" title="Permalink to this heading">¶</a></h3>
+<p>This is the color of the center part of the circle.</p>
+</div>
+<div class="section" id="inner-color">
+<h3>Inner Color<a class="headerlink" href="#inner-color" title="Permalink to this heading">¶</a></h3>
+<p>This is the color of the inside part of the circle.</p>
+<iframe src='../../Effects/viewer_en.html#References/Render/render_ring_outin.efkefc'></iframe></div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="rendererRibbon.html" class="btn btn-neutral float-left" title="Render - Ribbon" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="rendererModel.html" class="btn btn-neutral float-right" title="Render - Model" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2019, Effekseer.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

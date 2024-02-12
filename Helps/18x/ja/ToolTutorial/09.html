@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="ja" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>09.マズルフラッシュを作成しよう！ &mdash; Effekseer Help  ドキュメント</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/js/three.min.js"></script>
+        <script src="../../_static/js/effekseer.min.js"></script>
+        <script src="../../_static/js/iframe.js"></script>
+        <script src="../../_static/js/OrbitControls.js"></script>
+        <script src="../../_static/translations.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="検索" href="../../search.html" />
+    <link rel="next" title="10.リボンと軌跡" href="10.html" />
+    <link rel="prev" title="08. 生成方法でパーティクルを並べよう！" href="08.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> Effekseer Help
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Effekseer Help 日本語</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../overview.html">概要</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">チュートリアル</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="index.html#id2">基本</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="01.html">01.サンプルを見る＆使ってみよう！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="02.html">02.パーティクルをばらまいてみよう！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="03.html">03. 画像を表示してみよう！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="04.html">04. 回転、拡大してみよう！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="05.html">05. ヒットマーク(斬撃)を作成しよう！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="06.html">06. 円形のパーティクルを作成しよう！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="07.html">07. 親子関係で複雑な動きしよう！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="08.html">08. 生成方法でパーティクルを並べよう！</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">09.マズルフラッシュを作成しよう！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="10.html">10.リボンと軌跡</a></li>
+<li class="toctree-l4"><a class="reference internal" href="11.html">11. 3Dモデルを使おう！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="12.html">12. Fカーブで複雑な動きを指定しよう！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="13.html">13. 背景を歪ませよう！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="14.html">14. Level of Details (LOD)を設定しよう！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="15.html">15.トリガーを送信してエフェクトを変化させよう</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id3">マテリアル</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolReference/index.html">ツール・リファレンス</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../MaterialToolReference/index.html">マテリアル・リファレンス</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolTips/01.html">TIPS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq.html">FAQ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ReleaseNotes/index.html">リリースノート</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../en/index.html">Effekseer Help (English)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../zh_CN/index.html">Effekseer Help (中文)</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Effekseer Help</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../index.html">Effekseer Help 日本語</a> &raquo;</li>
+          <li><a href="index.html">チュートリアル</a> &raquo;</li>
+      <li>09.マズルフラッシュを作成しよう！</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="id1">
+<h1>09.マズルフラッシュを作成しよう！<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h1>
+<div class="main"><div class="section" id="id2">
+<h2>概要<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
+<p>本章では、今までに覚えた知識を用いてマズルフラッシュのエフェクトを作成します。
+マズルフラッシュとは、銃を撃った時に先端に出現する火です。
+射撃があるゲームでは、マズルフラッシュは必須です。</p>
+<div align="center">
+<iframe src='../../Sample/viewer_ja.html#09_02_Sample/09.efk'></iframe>
+<p>マズルフラッシュ</p>
+</div></div>
+<div class="section" id="id3">
+<h2>マズルフラッシュ<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h2>
+<p>マズルフラッシュの構造を分解してみます。
+本章で作成するマズルフラッシュは、大きく分けて3つのパーツで構成されます。
+それは、閃光、火花、煙の3つです。</p>
+<div align="center">
+<table>
+<tr><td>
+<div align="center">
+<img src="../../img/Tutorial/09/flash.png">
+<p>閃光</p>
+</div>
+</td><td>
+<div align="center">
+<img src="../../img/Tutorial/09/spark.png">
+<p>火花</p>
+</div>
+</td><td>
+<div align="center">
+<img src="../../img/Tutorial/09/smoke.png">
+<p>煙</p>
+</div>
+</td></tr>
+</table>
+</div><p>複雑なエフェクトを作成する場合は、パーツごとに分けて考えることが大事です。
+本章では、それぞれのパーツの作成方法を説明します。</p>
+<p>あらかじめ作成途中のエフェクトを下記のリンクからダウンロードできるようにしました。</p>
+<div align="center">
+<a href = "../../Sample/09_01_Sample.zip">ダウンロード</a>
+</div><div class="section" id="id4">
+<h3>閃光<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h3>
+<p>閃光は3種類のスプライトで表現します。
+本章では、弾が移動する方向をZとします。
+XY方向に広がる閃光2種類と、全方向に広がる1種類です。</p>
+<p>XY方向に広がる閃光は、配置方法を固定に設定したスプライトで表現します。
+表現を豊かにするために、拡大して消えるスプライトと縮小して消えるスプライトの2種類を用意します。
+いずれも一瞬だけ表示されるだけなので、20フレーム程度で消えるようにします。</p>
+<p>全方向に広がるスプライトは拡大して消えるようにします。</p>
+<p>それぞれに使用されている画像とパーティクルは以下のようになります。</p>
+<p>フェードイン、フェードアウト、全体色等、今までの章で説明したパラメーターも変更しています。</p>
+<p>変更するパラメーターが多いため、予めサンプルでは全て設定済みです。</p>
+<div align="center">
+<table>
+<tr><td>
+<div align="center">
+<img src="../../img/Tutorial/09/flash1.png">
+<p>閃光1</p>
+</div>
+</td><td>
+<div align="center">
+<img src="../../img/Tutorial/09/flash2.png">
+<p>閃光2</p>
+</div>
+</td><td>
+<div align="center">
+<img src="../../img/Tutorial/09/flash3.png">
+<p>閃光3</p>
+</div>
+</td></tr>
+</table>
+</div><div align="center">
+<table>
+<tr><td>
+<div align="center">
+<img src="../../img/Tutorial/09/flash1_image.png">
+<p>閃光1</p>
+</div>
+</td><td>
+<div align="center">
+<img src="../../img/Tutorial/09/flash2_image.png">
+<p>閃光2</p>
+</div>
+</td><td>
+<div align="center">
+<img src="../../img/Tutorial/09/flash3_image.png">
+<p>閃光3</p>
+</div>
+</td></tr>
+</table>
+</div><p>閃光エフェクトは以下の映像のようになりました。</p>
+<div align="center">
+<img src="../../img/Tutorial/09/flash.gif">
+<p>閃光</p>
+</div></div>
+<div class="section" id="id5">
+<h3>火花<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h3>
+<p>火花は丸い画像が表示された複数のスプライトで表現します。
+ただ、火花が飛び散る方向を指定するために親子関係を用います。</p>
+<p>Z方向を軸として円形に火花が配置されるようにします。
+円形に配置するために、親のノードのの生成方法に円を指定します。
+火花が円の外側を向くように、角度に影響にチェックします。</p>
+<p>そうすると、子のパーティクルがY方向に移動すると円の外側に向かうようになります。</p>
+<div align="center">
+<img src="../../img/Tutorial/09/parent.png">
+<p>生成方法と親子関係</p>
+</div><p>それに加えて、Z方向を軸として親のノードを回転させます。
+そうすると、子のパーティクルがY方向に移動すると弾が移動する方向に向かうようになります。</p>
+<div align="center">
+<img src="../../img/Tutorial/09/rotatedParent.png">
+<p>生成方法と親子関係</p>
+</div><p>子のパーティクルの形状は最初は長く、最後は短くなるようにします。
+その動作を、移動と拡大のイージングで実現しています。</p>
+<p>子のパーティクルの動作は今までの章で解説しているため、予め設定しています。</p>
+<p>親のノードのパラメーターは以下の通りです。</p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th align="left">ウインドウ</th>
+<th align="left">値の名称</th>
+<th align="left">値</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">共通</td>
+<td align="left">名称</td>
+<td align="left">SparkEmitter</td>
+</tr>
+<tr>
+<td align="left">共通</td>
+<td align="left">生成数</td>
+<td align="left">16</td>
+</tr>
+<tr>
+<td align="left">共通</td>
+<td align="left">生存時間</td>
+<td align="left">30</td>
+</tr>
+<tr>
+<td align="left">共通</td>
+<td align="left">生成時間</td>
+<td align="left">0.01</td>
+</tr>
+<tr>
+<td align="left">回転</td>
+<td align="left">回転方法</td>
+<td align="left">角度・速度・加速度</td>
+</tr>
+<tr>
+<td align="left">回転</td>
+<td align="left">角度(度)-中心</td>
+<td align="left">x=55, y=0, z=0</td>
+</tr>
+<tr>
+<td align="left">回転</td>
+<td align="left">角度(度)-振幅</td>
+<td align="left">x=10, y=0, z=0</td>
+</tr>
+<tr>
+<td align="left">生成方法</td>
+<td align="left">角度に影響</td>
+<td align="left">On</td>
+</tr>
+<tr>
+<td align="left">生成方法</td>
+<td align="left">生成方法</td>
+<td align="left">円</td>
+</tr>
+<tr>
+<td align="left">生成方法</td>
+<td align="left">分割数</td>
+<td align="left">32</td>
+</tr>
+<tr>
+<td align="left">生成方法</td>
+<td align="left">半径(中心)</td>
+<td align="left">0.5</td>
+</tr>
+<tr>
+<td align="left">描画</td>
+<td align="left"></td>
+<td align="left">無し</td>
+</tr>
+</tbody>
+</table><p>火花エフェクトは以下の映像のようになりました。</p>
+<div align="center">
+<img src="../../img/Tutorial/09/spark.gif">
+<p>火花</p>
+</div></div>
+<div class="section" id="id6">
+<h3>煙<a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h3>
+<p>煙は煙の画像が表示された複数のスプライトで表現します。</p>
+<p>煙はZ方向に移動しつつ、やや上に向かうようにします。</p>
+<p>煙の画像は4枚のアニメーションで構成されています。
+一定時間経過するごとに画像を切り替えることで、煙が変化しているように見せます。
+画像が切り替わるようにするためには、UVをアニメーションにします。</p>
+<div align="center">
+<img src="../../img/Tutorial/09/smoke_image.png">
+<p>煙の画像</p>
+</div><p>煙の動作も今までの章で解説した変更がほとんどのため、サンプルでは予め設定しています。
+UVのみ設定されていません。
+また、描画を無効にしています。編集するときに描画を有効にしてください。
+UVのパラメーターは以下の通りです。</p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th align="left">ウインドウ</th>
+<th align="left">値の名称</th>
+<th align="left">値</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">描画共通</td>
+<td align="left">UV</td>
+<td align="left">アニメーション</td>
+</tr>
+<tr>
+<td align="left">描画共通</td>
+<td align="left">大きさ</td>
+<td align="left">256,256</td>
+</tr>
+<tr>
+<td align="left">描画共通</td>
+<td align="left">一枚当たりの時間</td>
+<td align="left">10</td>
+</tr>
+<tr>
+<td align="left">描画共通</td>
+<td align="left">横方向枚数</td>
+<td align="left">2</td>
+</tr>
+<tr>
+<td align="left">描画共通</td>
+<td align="left">縦方向枚数</td>
+<td align="left">2</td>
+</tr>
+</tbody>
+</table><p>煙エフェクトは以下の映像のようになりました。</p>
+<div align="center">
+<img src="../../img/Tutorial/09/smoke.gif">
+<p>煙</p>
+</div></div>
+<div class="section" id="id7">
+<h3>統合<a class="headerlink" href="#id7" title="Permalink to this heading">¶</a></h3>
+<p>3つのパーツを同時に表示してみました。
+マズルフラッシュのエフェクトが作成できました。</p>
+<div align="center">
+<img src="../../img/Tutorial/09/completed.gif">
+<p>マズルフラッシュ</p>
+</div><p>最後に、本章で作成されたエフェクトをダウンロードできるようにしてみました。</p>
+<div align="center">
+<a href = "../../Sample/09_02_Sample.zip">ダウンロード</a>
+</div></div>
+</div>
+<div class="section" id="id8">
+<h2>まとめ<a class="headerlink" href="#id8" title="Permalink to this heading">¶</a></h2>
+<p>本章では、実際にゲームで使用できそうなエフェクトを作成しました。</p>
+</div></div>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="08.html" class="btn btn-neutral float-left" title="08. 生成方法でパーティクルを並べよう！" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="10.html" class="btn btn-neutral float-right" title="10.リボンと軌跡" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2019, Effekseer.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

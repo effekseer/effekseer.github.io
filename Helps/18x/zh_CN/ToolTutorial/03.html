@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>03. 显示图片！ &mdash; Effekseer Help  ドキュメント</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/js/three.min.js"></script>
+        <script src="../../_static/js/effekseer.min.js"></script>
+        <script src="../../_static/js/iframe.js"></script>
+        <script src="../../_static/js/OrbitControls.js"></script>
+        <script src="../../_static/translations.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="検索" href="../../search.html" />
+    <link rel="next" title="04. 旋转和缩放！" href="04.html" />
+    <link rel="prev" title="02.让粒子散射开！" href="02.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> Effekseer Help
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../ja/index.html">Effekseer Help 日本語</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../en/index.html">Effekseer Help (English)</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Effekseer Help (中文)</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../overview.html">概要</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">教程</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="index.html#id2">基础</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="01.html">01.查看并使用示例！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="02.html">02.让粒子散射开！</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">03. 显示图片！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="04.html">04. 旋转和缩放！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="05.html">05. 制作一个斩击命中特效！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="06.html">06. 创建环形粒子!</a></li>
+<li class="toctree-l4"><a class="reference internal" href="07.html">07. 使用父子关系实现复杂移动！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="08.html">08. 通过设置生成方法排列粒子!</a></li>
+<li class="toctree-l4"><a class="reference internal" href="09.html">09.制作枪口焰！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="10.html">10.丝带和轨迹</a></li>
+<li class="toctree-l4"><a class="reference internal" href="11.html">11. 使用3D模型！！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="12.html">12. 用F曲线表示复杂的运动</a></li>
+<li class="toctree-l4"><a class="reference internal" href="13.html">13. 扭曲背景！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="14.html">14. 设置细节层级（LOD）</a></li>
+<li class="toctree-l4"><a class="reference internal" href="15.html">15.通过触发器改变特效！</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id3">材质</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolReference/index.html">工具参考</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../MaterialToolReference/index.html">材质参考</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolTips/01.html">TIPS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq.html">常见问题解答</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ReleaseNotes/index.html">版本说明</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Effekseer Help</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../index.html">Effekseer Help (中文)</a> &raquo;</li>
+          <li><a href="index.html">教程</a> &raquo;</li>
+      <li>03. 显示图片！</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="id1">
+<h1>03. 显示图片！<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h1>
+<div class="section" id="id2">
+<h2>概要<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
+<p>在这一章中，粒子上会显示图像。到目前为止，它们一直是白色的方块，但白色方块将换成图像。此外，粒子会逐渐变得透明并改变颜色。</p>
+<iframe src='../../Sample/viewer_zh_CN.html#03_02_Sample/effect.efk'></iframe></div>
+<div class="section" id="id3">
+<h2>预备知识 - 当窗口关闭或者错位<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h2>
+<p>如果你在窗口之间来回切换，它们可能会变得错位或关闭。如果发生这种情况，在菜单栏中选择“窗口”，选择“重置窗口位置”，使每个窗口回到其初始位置。选择每个窗口的名称来打开该窗口。</p>
+</div>
+<div class="section" id="id4">
+<h2>显示图像<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h2>
+<p>自己准备图片很麻烦，所以我们让大家可以从下面的链接下载预制的特效素材。</p>
+<div align="center">
+<a href = "../../Sample/03_01_Sample.zip">下载</a>
+</div><div class="section" id="id5">
+<h3>图像设置<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h3>
+<p>让我们开始在白色方块中添加图像。图像是在“基础渲染设置”窗口中设置的。点击右上角选项卡中的“基础渲染设置”图标，并选中一个节点。</p>
+<div align="center">
+<img src="../../img/Tutorial/03_render_common_icon.png">
+<p>基础渲染设置的图标</p>
+</div><p>点击“基础渲染设置”图标，并选中一个节点，将显示“基础渲染设置”窗口。</p>
+<div align="center">
+<img src="../../img/Tutorial/03_rendercommon_en.png">
+<p>“基础渲染设置”窗口</p>
+</div><p>点击“基础渲染设置”窗口中的载入按钮。点击后，出现一个选择图像的窗口。选择particle.png。选择后，该图像也将出现在Effekseer中。</p>
+<div align="center">
+<img src="../../img/Tutorial/03_texture_en.png">
+<p>图像设置</p>
+</div><p>播放特效，你会看到白色方块已经变成了一个图像。</p>
+<div align="center">
+<img src="../../img/Tutorial/03_texture.gif">
+<p>图像设置</p>
+</div></div>
+<div class="section" id="id6">
+<h3>淡入淡出设置<a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h3>
+<p>粒子突然出现或消失是不自然的。设置一下淡入和淡出，使透明度发生变化。</p>
+<p>淡入可以通过改变“基础渲染设置”窗口中的淡入值来设置。同样地，淡出可以通过改变“基础渲染设置”窗口中的淡出值来设置。在这个例子中，两者都输入15。</p>
+<div align="center">
+<img src="../../img/Tutorial/03_fade_en.png">
+<p>淡入淡出设置</p>
+</div><p>你可以看到特效逐渐出现和消失。</p>
+<div align="center">
+<img src="../../img/Tutorial/03_fade.gif">
+<p>淡入淡出设置</p>
+</div></div>
+<div class="section" id="id7">
+<h3>精灵<a class="headerlink" href="#id7" title="Permalink to this heading">¶</a></h3>
+<p>Effekseer提供几种渲染方法。默认设置是“精灵”。你可以绘制方形的粒子。你可以创造这样的特效，尽管只用到本章为止所介绍的内容很难做到。</p>
+<div align="center">
+<img src="../../img/Tutorial/03_sprite.png">
+<p>精灵</p>
+</div><p>在“渲染设置”窗口中，你可以为当前选定的渲染方法设置特定的功能。我们可以像打开“基础渲染设置”窗口一样打开“渲染设置”窗口。</p>
+<div align="center">
+<img src="../../img/Tutorial/03_render_icon.png">
+<p>渲染设置的图标</p>
+</div><div align="center">
+<img src="../../img/Tutorial/03_render_en.png">
+<p>“渲染设置”窗口</p>
+</div><div class="section" id="id8">
+<h4>颜色设置<a class="headerlink" href="#id8" title="Permalink to this heading">¶</a></h4>
+<p>你可以用淡出设置透明度，但不可以设置粒子的颜色。如果图像是彩色的，这不是问题，但要改变每个粒子的颜色，你需要准备几个图像。因此，你可以在选择一个精灵时为粒子设置一个粗略的颜色范围。</p>
+<p>你可以在“渲染设置”窗口中设置该颜色。有几种方法来设置颜色。对于这个例子，选择随机，这样每个粒子的颜色都会变化。然后，将最小值设置为0。这意味着颜色将随机地选择0到255之间的数值。</p>
+<p>除了在文本框中输入颜色外，还可以用鼠标左键点击颜色区域。</p>
+<img alt="../../_images/input_color_basic.png" class="align-center" src="../../_images/input_color_basic.png" />
+<p>左键点击并拖拽颜色区域可以将其复制到另一个颜色区域。</p>
+<img alt="../../_images/input_color.png" class="align-center" src="../../_images/input_color.png" />
+<div align="center">
+<img src="../../img/Tutorial/03_color_en.png">
+<p>设置一个颜色</p>
+</div><p>你可以看到每个粒子的颜色都是不同的。</p>
+<div align="center">
+<img src="../../img/Tutorial/03_color.gif">
+<p>设置一个颜色</p>
+</div></div>
+</div>
+<div class="section" id="id9">
+<h3>混合设置<a class="headerlink" href="#id9" title="Permalink to this heading">¶</a></h3>
+<p>在Effekseer中，你可以为粒子设置alpha混合方法。混合方法是将粒子与背景相结合的方法。你可以直接绘制粒子或将它们添加到背景中，如下图所示。</p>
+<div align="center">
+<img src="../../img/Tutorial/03_blendmode.png">
+<p>混合方法设置</p>
+</div><p>这一次，将混合方法设置为加法，以使粒子更加明亮。你可以在“基础渲染设置”窗口中设置混合方法。</p>
+<div align="center">
+<img src="../../img/Tutorial/03_blend_en.png">
+<p>混合方法设置</p>
+</div><p>如果你把混合方法设置为加法，你会看到粒子显得更亮。</p>
+<div align="center">
+<img src="../../img/Tutorial/03_blend.gif">
+<p>设置混合方法</p>
+</div><p>最后，在本章中制作的粒子可以通过下面的链接下载。</p>
+<div align="center">
+<a href = "../../Sample/03_02_Sample.zip">下载</a>
+</div></div>
+</div>
+<div class="section" id="id10">
+<h2>总结<a class="headerlink" href="#id10" title="Permalink to this heading">¶</a></h2>
+<p>在这一章中，我们改变了精灵的参数以改善粒子的外观。在下一章中，我们将讨论精灵的形状，以及粒子的旋转和缩放。</p>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="02.html" class="btn btn-neutral float-left" title="02.让粒子散射开！" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="04.html" class="btn btn-neutral float-right" title="04. 旋转和缩放！" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2019, Effekseer.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

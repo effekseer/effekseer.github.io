@@ -1,0 +1,121 @@
+﻿# 12. 用F曲线表示复杂的运动
+
+## 概要
+
+在本章中，我们使用F曲线来表示复杂的运动。我们在过去已经介绍了各种运动方式。很多情况下，这些方法就足够了。然而，有时这还不够。因此，你可以使用F曲线让它们自由变化到你需要的任何数值。
+
+<div align="center">
+<iframe src='../../Sample/viewer_zh_CN.html#12_02_Sample/effect1.efk'></iframe>
+<p>本章制作的特效</p>
+</div>
+
+但是，本章将不制作具体的特效。上图中的特效可以用本章和之前的章节中讲解的知识制作。
+
+## F曲线
+
+在Effekseer中，可以通过设置F曲线来控制一些参数，例如位置、角度、缩放、颜色等。
+
+让我们打开F曲线窗口。
+
+从窗口菜单中选择F曲线。 然后会出现编辑F曲线的窗口。
+
+<div align="center">
+<img src="../../img/Tutorial/12/init_en.png" width="80%">
+</div>
+
+但是，并没有显示要编辑的F曲线。
+
+在```位置```窗口中选择F曲线。
+
+然后，F曲线的窗口的左侧就会显示一个可编辑的F曲线的标签。
+
+左键单击标签，F曲线就会显示出来。
+
+<div align="center">
+<img src="../../img/Tutorial/12/init_en.png" width="80%">
+</div>
+
+要向F曲线添加控制点，请双击F曲线。让我们添加两个控制点。
+
+<div align="center">
+<img src="../../img/Tutorial/12/two_points_en.png" width="80%">
+</div>
+
+控制点可以通过左键单击来选择，并通过拖动控制点来移动。试着移动控制点，使其数值发生变化。
+
+<div align="center">
+<img src="../../img/Tutorial/12/add_points_en.png" width="80%">
+</div>
+
+如果你播放特效，你会看到粒子是按照F曲线来移动的。
+
+<div align="center">
+<img src="../../img/Tutorial/12/curve1.gif">
+</div>
+
+曲线可以自由控制。选择一个控制点，点击左上角的```展开锚点```。然后你会看到用于控制曲线的锚点。移动锚点来改变曲线。
+
+<div align="center">
+<img src="../../img/Tutorial/12/curve_en.png" width="80%">
+</div>
+
+<div align="center">
+<img src="../../img/Tutorial/12/curve2.gif">
+</div>
+
+如果选择相邻的```收缩锚点```，会导致数值突然变化。
+
+<div align="center">
+<img src="../../img/Tutorial/12/add_points_en.png" width="80%">
+</div>
+
+要删除一个控制点，请双击它或按Delete键。
+
+你可以将这些方法组合起来表示复杂的运动。
+
+除了位置之外，也可以控制角度和颜色。
+
+### 采样
+
+Effekseer实际上使用了F曲线的近似值。因此，它可能无法应对数值的突然变化。在这种情况下，降低```采样```。这将使您能够应对数值的突然变化。
+
+### 有用的操作
+
+#### 多选
+
+通过Shift和左键点击F曲线标签，可以同时编辑多条F曲线。
+
+也可以通过Shift和左键点击选择多个控制点。也可以同时移动多个控制点。
+
+<div align="center">
+<img src="../../img/Tutorial/12/multi_ja.png" width="80%">
+</div>
+
+#### 全部显示
+
+双击F曲线的标签可以显示F曲线的整体。
+
+<div align="center">
+<img src="../../img/Tutorial/12/show_entire.png" width="80%">
+</div>
+
+#### 关于时间线（1.5之后）
+
+从Effekseer 1.5开始，可以选择时间线模式。你可以将其设置为特效的生命周期的百分比或直接设置为时间。更多信息请看参考。
+
+你可以利用这些知识来制作复杂的特效。
+
+<div align="center">
+<img src="../../img/Tutorial/12/effect1.gif">
+<p>特效</p>
+</div>
+
+最后，你可以通过下面的链接下载本章中制作的特效。
+
+<div align="center">
+<a href = "../../Sample/12_02_Sample.zip">下载</a>
+</div>
+
+## 总结
+
+本章解释了F曲线，你可以用它制作复杂的特效。

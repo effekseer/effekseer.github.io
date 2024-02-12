@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>01. The Introduction of Material &mdash; Effekseer Help  ドキュメント</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/js/three.min.js"></script>
+        <script src="../../_static/js/effekseer.min.js"></script>
+        <script src="../../_static/js/iframe.js"></script>
+        <script src="../../_static/js/OrbitControls.js"></script>
+        <script src="../../_static/translations.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="検索" href="../../search.html" />
+    <link rel="next" title="02. Represent toon-like flames with materials." href="material_02.html" />
+    <link rel="prev" title="15.Let&#39;s Send triggers to change effects!" href="15.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> Effekseer Help
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../ja/index.html">Effekseer Help 日本語</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Effekseer Help (English)</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../overview.html">Overview</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Tutorial</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="index.html#basic">Basic</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="index.html#material">Material</a><ul class="current">
+<li class="toctree-l4 current"><a class="current reference internal" href="#">01. The Introduction of Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="material_02.html">02. Represent toon-like flames with materials.</a></li>
+<li class="toctree-l4"><a class="reference internal" href="material_03.html">03. Toon-like flames with sequential materials.</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolReference/index.html">Tool-Reference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../MaterialToolReference/index.html">Material-Reference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolTips/01.html">TIPS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq.html">FAQ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ReleaseNotes/index.html">Release Notes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../zh_CN/index.html">Effekseer Help (中文)</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Effekseer Help</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../index.html">Effekseer Help (English)</a> &raquo;</li>
+          <li><a href="index.html">Tutorial</a> &raquo;</li>
+      <li>01. The Introduction of Material</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="the-introduction-of-material">
+<h1>01. The Introduction of Material<a class="headerlink" href="#the-introduction-of-material" title="Permalink to this heading">¶</a></h1>
+<div class="section" id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this heading">¶</a></h2>
+<p>Until now, the only way to render was to specify images and parameters and do a simple drawing.
+However, this did not allow complicated rendering such as distorting the image itself or adding specific areas.</p>
+<p>Effekseer has materials to accomplish these complex rendering.
+You can use materials to specify how particles are drawn.
+Materials can be created in the Material Editor.</p>
+<p>Here, let's create a material to create a complex rendering.</p>
+<div align="center">
+<iframe src='../../Effects/viewer_en.html#Tutorials/Mat_01/Sample07.efkefc'></iframe>
+<p>The effect created in this chapter</p>
+</div><p>Effects created in this chapter</p>
+</div>
+<div class="section" id="basic">
+<h2>Basic<a class="headerlink" href="#basic" title="Permalink to this heading">¶</a></h2>
+<p>Some files have already been prepared.
+Please download from the link below.</p>
+<p><a href="../../Effects/Tutorials/Mat_01_01.zip">Download</a></p>
+<p>When you open it, you can see that a simple sphere model has been drawn.</p>
+<div align="center">
+<img src="../../img/Tutorial/Mat_01/state1.png">
+</div><p>In order to create a material, change <code class="docutils literal notranslate"><span class="pre">Material</span></code> to <code class="docutils literal notranslate"><span class="pre">File</span></code> in <code class="docutils literal notranslate"><span class="pre">Basic</span> <span class="pre">Render</span> <span class="pre">Settings</span></code>.</p>
+<div align="center">
+<img src="../../img/Tutorial/Mat_01/material_create_en.png">
+</div><p>Press the Create button. A dialog for creating a new material appears.
+When saving material is completed, the material editor starts.</p>
+<p>Initially, only <code class="docutils literal notranslate"><span class="pre">Output</span></code> node exists.
+The value connected to this <code class="docutils literal notranslate"><span class="pre">Output</span></code> node is drawn on the particle.</p>
+<div align="center">
+<img src="../../img/Tutorial/Mat_01/initial_en.png">
+</div><p>In the Material Editor, connect these nodes and specify the formula for drawing.
+The result of the calculation is drawn as particles.
+It may seem difficult at first, but let's edit it little by little.</p>
+<p>The simplest configuration is to connect <code class="docutils literal notranslate"><span class="pre">Constant3</span></code> node to the <code class="docutils literal notranslate"><span class="pre">Output</span></code> node.</p>
+<p>Press right click to add a <code class="docutils literal notranslate"><span class="pre">Constant3</span></code> node.</p>
+<div align="center">
+<img src="../../img/Tutorial/Mat_01/add_constant3_en.png">
+</div><p>Connect the <code class="docutils literal notranslate"><span class="pre">Constant3</span></code> node and <code class="docutils literal notranslate"><span class="pre">Emissive</span></code> in the <code class="docutils literal notranslate"><span class="pre">Output</span></code> node.</p>
+<div align="center">
+<img src="../../img/Tutorial/Mat_01/connect_en.png">
+</div><p>Then, left-click on the <code class="docutils literal notranslate"><span class="pre">Constant3</span></code> node and enter a value from the input field on the left of the screen.</p>
+<div align="center">
+<img src="../../img/Tutorial/Mat_01/input_constant3.png">
+</div><p>Then, you can see that the color of the sphere changes according to the numerical value.</p>
+<div align="center">
+<img src="../../img/Tutorial/Mat_01/state2.png">
+</div><p>When adding <code class="docutils literal notranslate"><span class="pre">Constant3</span></code> node, did you see that <code class="docutils literal notranslate"><span class="pre">Constant1-4</span></code> node existed?
+There are several types of values ​​that are transfered between nodes.</p>
+<p>It is often a value type consisting of 1 to 4 numerical values, from Number 1 to Number 4.
+It can also be an image.</p>
+</div>
+<div class="section" id="draw-an-image">
+<h2>Draw an image<a class="headerlink" href="#draw-an-image" title="Permalink to this heading">¶</a></h2>
+<p>Images can be drawn using a <code class="docutils literal notranslate"><span class="pre">Sample</span> <span class="pre">Image</span></code> node.</p>
+<p>Right-click to add a <code class="docutils literal notranslate"><span class="pre">Sample</span> <span class="pre">Image</span></code> node.</p>
+<div align="center">
+<img src="../../img/Tutorial/Mat_01/add_GridImage_en.png">
+</div><p>Specify the image from the input field on the left of the screen.
+This time, specify <code class="docutils literal notranslate"><span class="pre">Textures/Grid01.png</span></code> prepared.</p>
+<p>Connect RGB in the <code class="docutils literal notranslate"><span class="pre">Sample</span> <span class="pre">Image</span></code> node instead of the <code class="docutils literal notranslate"><span class="pre">Constant3</span></code> node.</p>
+<div align="center">
+<img src="../../img/Tutorial/Mat_01/add_GridImage_en.png">
+</div><div align="center">
+<img src="../../img/Tutorial/Mat_01/state1.png">
+</div><p>The image is drawn, but the transparent parts are not transparent.</p>
+<p>Therefore, connect <code class="docutils literal notranslate"><span class="pre">A</span></code> in the <code class="docutils literal notranslate"><span class="pre">Sample</span> <span class="pre">Image</span></code> to <code class="docutils literal notranslate"><span class="pre">Opacity</span></code> in the <code class="docutils literal notranslate"><span class="pre">Output</span></code> node.
+This connects the transparency of the image to the transparency of the material.</p>
+<div align="center">
+<img src="../../img/Tutorial/Mat_01/connect_alpha_en.png">
+</div><p>Then, the image was drawn.</p>
+<div align="center">
+<img src="../../img/Tutorial/Mat_01/state3.png">
+</div></div>
+<div class="section" id="shift-an-area-of-drawing-image">
+<h2>Shift an area of drawing image<a class="headerlink" href="#shift-an-area-of-drawing-image" title="Permalink to this heading">¶</a></h2>
+<p>Until now, the behavior was the same as simply drawing an image on the model.
+However, various expressions can be made using materials.
+As a preparation, change the position of the UV coordinates.</p>
+<p>UV in the <code class="docutils literal notranslate"><span class="pre">Sample</span> <span class="pre">Image</span></code> is a value indicating the pixel position of the image used for draw.
+Let's replace this UV.</p>
+<p>Add a <code class="docutils literal notranslate"><span class="pre">UV</span></code> node.</p>
+<div align="center">
+<img src="../../img/Tutorial/Mat_01/add_uv_en.png">
+</div><p>Then, connect to the UV　in the <code class="docutils literal notranslate"><span class="pre">Sample</span> <span class="pre">Image</span></code> node.</p>
+<div align="center">
+<img src="../../img/Tutorial/Mat_01/connect_uv_en.png">
+</div><p>Nothing changes. The reason is that a <code class="docutils literal notranslate"><span class="pre">UV</span></code> node outputs the UV value of the model or particle as it is.</p>
+<p>Let's change this UV value and move the display area of ​​the image.</p>
+<p>Add an <code class="docutils literal notranslate"><span class="pre">Add</span></code> node and a <code class="docutils literal notranslate"><span class="pre">Constant2</span></code> node.</p>
+<p>Then, connect the <code class="docutils literal notranslate"><span class="pre">Constant2</span></code> node and the <code class="docutils literal notranslate"><span class="pre">UV</span></code> node to the <code class="docutils literal notranslate"><span class="pre">Add</span></code> node.
+Both can be connected because the value type is Number 2.</p>
+<div align="center">
+<img src="../../img/Tutorial/Mat_01/connect_add_en.png">
+</div><p>Then, change the value of the <code class="docutils literal notranslate"><span class="pre">Constant2</span></code> node. Then you can see that the display position is shifted.</p>
+<div align="center">
+<img src="../../img/Tutorial/Mat_01/change_constant2_en.png">
+</div><div align="center">
+<img src="../../img/Tutorial/Mat_01/state4.png">
+</div></div>
+<div class="section" id="distort-the-image">
+<h2>Distort the image<a class="headerlink" href="#distort-the-image" title="Permalink to this heading">¶</a></h2>
+<p>We just shifted the display area of the image, but now let's distort the image.</p>
+<p>Use an image instead of the <code class="docutils literal notranslate"><span class="pre">Constant2</span></code> node.
+For the image, specify <code class="docutils literal notranslate"><span class="pre">Textures/Distortion01.png</span></code> prepared in advance.</p>
+<p>Add a <code class="docutils literal notranslate"><span class="pre">Sample</span> <span class="pre">Image</span></code> node and specify the image.</p>
+<div align="center">
+<img src="../../img/Tutorial/Mat_01/add_DistortionImage_en.png">
+</div><p>Since the value type of the image is Number 3, use a <code class="docutils literal notranslate"><span class="pre">MaskElements</span></code> node.</p>
+<p>A <code class="docutils literal notranslate"><span class="pre">MaskElements</span></code> node extracts a part of an element.
+Here, we will use the first two values, so check R and G.</p>
+<div align="center">
+<img src="../../img/Tutorial/Mat_01/add_mask_en.png">
+</div><p>Then, connect the <code class="docutils literal notranslate"><span class="pre">MaskElements</span></code> node to the <code class="docutils literal notranslate"><span class="pre">Add</span></code> node.</p>
+<div align="center">
+<img src="../../img/Tutorial/Mat_01/connect_mask_en.png">
+</div><p>Heavy distortion. But I don't want that distortion.</p>
+<div align="center">
+<img src="../../img/Tutorial/Mat_01/state5.png">
+</div><p>Use a <code class="docutils literal notranslate"><span class="pre">Multiply</span></code> node to make it smaller.
+Add a <code class="docutils literal notranslate"><span class="pre">Multiply</span></code> node.</p>
+<p>Then, connect the <code class="docutils literal notranslate"><span class="pre">MaskElements</span></code> node to the <code class="docutils literal notranslate"><span class="pre">Multiply</span></code> node.
+Decrease the value of the <code class="docutils literal notranslate"><span class="pre">Multiply</span></code> node.</p>
+<div align="center">
+<img src="../../img/Tutorial/Mat_01/add_multiply_en.png">
+</div><p>Then it will be distorted well.</p>
+<iframe src='../../Effects/viewer_en.html#Tutorials/Mat_01/Sample05.efkefc'></iframe></div>
+<div class="section" id="move-the-distortion">
+<h2>Move the distortion<a class="headerlink" href="#move-the-distortion" title="Permalink to this heading">¶</a></h2>
+<p>Let's move the distortion because it is quiet when stopped.</p>
+<p>Add a <code class="docutils literal notranslate"><span class="pre">MovingUV</span></code> node.</p>
+<p>A <code class="docutils literal notranslate"><span class="pre">MovingUV</span></code> node outputs the value of the moving UV over time.
+Connect this to the <code class="docutils literal notranslate"><span class="pre">Sample</span> <span class="pre">Image</span></code> node.
+Change some parameters as well.</p>
+<div align="center">
+<img src="../../img/Tutorial/Mat_01/connect_movinguv_en.png">
+</div><p>You can see that the distortion moves.</p>
+<iframe src='../../Effects/viewer_en.html#Tutorials/Mat_01/Sample06.efkefc'></iframe></div>
+<div class="section" id="color">
+<h2>Color<a class="headerlink" href="#color" title="Permalink to this heading">¶</a></h2>
+<p>Finally, let's color.</p>
+<p>Add a <code class="docutils literal notranslate"><span class="pre">Multiply</span></code> node.</p>
+<p>Connect the <code class="docutils literal notranslate"><span class="pre">Sample</span> <span class="pre">Image</span></code> node that outputs the image and the first fixed 3 nodes added to the <code class="docutils literal notranslate"><span class="pre">Multiply</span></code> node.</p>
+<p>And connect it to Emissive.</p>
+<div align="center">
+<img src="../../img/Tutorial/Mat_01/colorlize_en.png">
+</div><p>Because the colors are multiplied together, they are colored.</p>
+<iframe src='../../Effects/viewer_en.html#Tutorials/Mat_01/Sample07.efkefc'></iframe><p>Finally, I made it possible to download the effect created in this chapter.</p>
+<p><a href="../../Effects/Tutorials/Mat_01_02.zip">Download</a></p>
+</div>
+<div class="section" id="samples">
+<h2>Samples<a class="headerlink" href="#samples" title="Permalink to this heading">¶</a></h2>
+<p>This time, we have introduced examples of materials, but we can do various things.
+Effeksseer has many sample materials, so you may want to look at them.</p>
+</div>
+<div class="section" id="summary">
+<h2>Summary<a class="headerlink" href="#summary" title="Permalink to this heading">¶</a></h2>
+<p>This chapter has explained the basics of materials.
+The use of materials greatly expands the range of expression.</p>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="15.html" class="btn btn-neutral float-left" title="15.Let&#39;s Send triggers to change effects!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="material_02.html" class="btn btn-neutral float-right" title="02. Represent toon-like flames with materials." accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2019, Effekseer.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

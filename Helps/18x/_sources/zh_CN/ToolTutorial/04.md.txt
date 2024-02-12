@@ -1,0 +1,176 @@
+﻿# 04. 旋转和缩放！
+
+## 概要
+
+在本章中，我们将旋转并缩放粒子。还将把精灵的形状从方形改为矩形。这使你能够创造复杂的特效。
+
+<iframe src='../../Sample/viewer_zh_CN.html#04_02_Sample/effect.efk'></iframe>
+
+## 旋转和缩放
+
+可以从下面的链接下载预制的特效素材。
+
+<div align="center">
+<a href = "../../Sample/04_01_Sample.zip">下载</a>
+</div>
+
+### 旋转
+
+让我们现在旋转粒子。旋转可以通过“旋转”窗口设置。
+
+点击“旋转”窗口图标，打开旋转窗口。
+
+<div align="center">
+<img src="../../img/Tutorial/04_rotation_icon.png">
+<p>旋转窗口的图标</p>
+</div>
+
+<div align="center">
+<img src="../../img/Tutorial/04_rotation_en.png">
+<p>“旋转”窗口</p>
+</div>
+
+与位置一样，可以通过多种方法设置旋转。默认选项是```固定角度```。将其改为```角度・速度・加速度```。然后在Z轴的```角速度```中输入5。
+
+这表示以Z方向（正面方向）为轴，每帧旋转5度。
+
+<div align="center">
+<img src="../../img/Tutorial/04_rotation_pva_en.png">
+<p>角速度</p>
+</div>
+
+输入后，进行回放……但是没有任何变化！这是因为精灵绘图方式的默认设置是，无论粒子是否被旋转，矩形总是朝前。
+
+在“渲染设置”窗口中将放置方法从```告示牌```改为```Z轴旋转告示牌```。```Z轴旋转告示牌```是一种放置方法，矩形面向前方，但Z轴旋转仍然有效。
+
+<div align="center">
+<img src="../../img/Tutorial/04_conf_en.png">
+<p>放置方法</p>
+</div>
+
+设置好```Z轴旋转告示牌```后，可以看到矩形沿Z轴方向（前方）旋转。
+
+<div align="center">
+<img src="../../img/Tutorial/04_rotate.gif">
+<p>旋转</p>
+</div>
+
+
+### 缩放
+
+与位置和旋转一样，可以缩放粒子。缩放可以通过“缩放”窗口设置。
+
+点击“缩放”窗口图标来打开缩放窗口。
+
+<div align="center">
+<img src="../../img/Tutorial/04_scale_icon.png">
+<p>缩放窗口的图标</p>
+</div>
+
+<div align="center">
+<img src="../../img/Tutorial/04_scale_en.png">
+<p>“缩放”窗口</p>
+</div>
+
+与位置和旋转一样，可以通过多种方法设置缩放。默认选项是```固定缩放```。将其改为```缩放・速度・加速度（统一）```。然后在```放大速度```中输入0.01。
+
+尽管也可以为X、Y和Z方向单独设置```放大速度```，但它们通常是一样的。因此，可以设置统一的```放大速度```。
+
+<div align="center">
+<img src="../../img/Tutorial/04_scale_pva_en.png">
+<p>放大速度</p>
+</div>
+
+可以看到精灵在旋转和放大。
+
+<div align="center">
+<img src="../../img/Tutorial/04_scale.gif">
+<p>缩放</p>
+</div>
+
+## 精灵形状
+
+现在的精灵是正方形的，但也可以改成矩形、梯形等形状。
+
+在“渲染设置”窗口中将```顶点坐标```从```默认```改为```固定```。然后你可以设置矩形顶点的坐标。
+
+现在，为了使它在垂直方向放大，输入以下内容。
+
+<div align="center">
+<img src="../../img/Tutorial/04_v_en.png">
+<p>顶点坐标</p>
+</div>
+
+可以看到粒子竖直方向的长度长于水平方向的长度。
+
+<div align="center">
+<img src="../../img/Tutorial/04_shape.gif">
+<p>顶点坐标</p>
+</div>
+
+## 收尾
+
+它现在的样子并不好看，可以做以下修改。
+
+### “基础设置”窗口
+
+将```生成数量```修改为10
+
+<div align="center">
+<img src="../../img/Tutorial/04/parameters_basic_en.png">
+</div>
+
+### “位置”窗口
+
+改为位置・速度・加速度
+
+将位置振幅修改为2
+
+<div align="center">
+<img src="../../img/Tutorial/04/parameters_position_en.png">
+</div>
+
+### “基础渲染设置”窗口
+
+```纹理```选择particle.png
+
+将```混合方法```改为```加法```
+
+<div align="center">
+<img src="../../img/Tutorial/04/parameters_basic_render_en.png">
+</div>
+
+### “旋转”窗口
+
+将Z轴角度振幅修改为180
+
+<div align="center">
+<img src="../../img/Tutorial/04/parameters_rotation_en.png">
+</div>
+
+### “缩放”窗口
+
+将```缩放比率```修改为0
+
+<div align="center">
+<img src="../../img/Tutorial/04/parameters_scale_en.png">
+</div>
+
+### 结果
+
+如果你不知道如何修改这些参数，请回顾第1到3章。
+
+<div align="center">
+<img src="../../img/Tutorial/04_completed.gif">
+<p>结果</p>
+</div>
+
+最后，在本章中制作的粒子可以通过下面的链接下载。
+
+<div align="center">
+<a href = "../../Sample/04_02_Sample.zip">下载</a>
+</div>
+
+## 总结
+
+本章解释了如何旋转和缩放精灵。在下一章中，我们将尽可能利用迄今为止了解的内容来制作实际的特效。

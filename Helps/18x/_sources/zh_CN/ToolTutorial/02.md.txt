@@ -1,0 +1,175 @@
+﻿# 02.让粒子散射开！
+
+## 概要
+
+在本章中，我们将尝试散射粒子。虽然有些无趣，但你会学到Effekseer的基础操作。基于你在本章学到的知识，你可以接下来的章节中制作出很酷的特效。所以要确保你能很好地理解它。
+
+<iframe src='../../Sample/viewer_zh_CN.html#02_Sample/effect.efk'></iframe>
+
+## 编辑位置
+   
+### 编辑初始位置
+
+现在，粒子显示在中心位置。让我们把这个粒子从中心位置移开。
+
+<div align="center">
+<img src="../../img/Tutorial/01_square.png">
+<p>显示在中心位置</p>
+</div>
+
+首先，点击屏幕右侧的“节点树”上的“Node（节点）”。“节点树”窗口显示了整个特效的结构，其中Node代表粒子。通过它，你可以编辑这些粒子的形状。
+
+<div align="center">
+<img src="../../img/Tutorial/02_nodetree.png">
+<p>节点树窗口</p>
+</div>
+
+点击之后，你会看到大量的可编辑参数。新手可能会感到惊讶，但在本章中只需要编辑部分参数。
+
+要编辑初始位置，请编辑“位置”窗口的参数。
+
+要显示位置窗口，点击屏幕右上角显示的标签中的“位置窗口”图标。
+
+<div align="center">
+<img src="../../img/Tutorial/02_position_icon.png">
+<p>位置窗口的图标</p>
+</div>
+
+<div align="center">
+<img src="../../img/Tutorial/02_position_en.png">
+<p>位置窗口</p>
+</div>
+
+让我们把位置窗口中X的值从0改为2。
+
+用鼠标左键点击输入栏，可以用键盘输入数值。
+
+按下鼠标左键并拖动输入栏，可以逐步改变数值。
+
+```eval_rst
+.. image:: ../../img/Reference/Overview/input_value.png
+   :align: center
+```
+
+<div align="center">
+<img src="../../img/Tutorial/02_position_input_en.png">
+<p>改变x的值</p>
+</div>
+
+然后，粒子就从中心移到了一侧。
+
+<div align="center">
+<img src="../../img/Tutorial/02_position_input_view.png">
+<p>移动到一侧</p>
+</div>
+
+### 让粒子运动
+
+粒子现在是静止不动的，有些无聊。要让粒子的运动起来。
+
+在Effekseer中，有几种方法来设置位置。
+
+默认情况下，位置是固定的，但是有一些方法可以设置速度和加速度。
+
+点击位置窗口的下拉列表，从固定位置改为位置·速度·加速度。这将在位置窗口中增加一些文本框，你可以在其中输入速度和加速度，从而让粒子运动起来。
+
+<div align="center">
+<img src="../../img/Tutorial/02_pva_en.png">
+<p>位置·速度·加速度</p>
+</div>
+
+让我们在x方向的速度（中心）中输入0.1。
+
+<div align="center">
+<img src="../../img/Tutorial/02_pva_input_en.png">
+<p>位置·速度·加速度</p>
+</div>
+
+接着，粒子飞出了画面。
+
+<div align="center">
+<img src="../../img/Tutorial/02_pva.gif">
+<p>运动中的特效</p>
+</div>
+
+试试输入其他数值，看看粒子的行为会如何变化吧。
+
+### 显示多个粒子
+
+很少有特效只由一个粒子组成。你可以显示一个以上的粒子。
+
+粒子的数量可以通过“基础设置”窗口中的“生成数量”设置。如果你增加这个数字，就会产生很多粒子。
+
+要显示“基础设置”窗口，请点击“基础设置”窗口的图标。
+
+<div align="center">
+<img src="../../img/Tutorial/02_common_icon.png">
+<p>基础设置的图标</p>
+</div>
+
+<div align="center">
+<img src="../../img/Tutorial/02_common_en.png">
+<p>生成数量</p>
+</div>
+
+让我们将生成数量设置为100。
+
+<div align="center">
+<img src="../../img/Tutorial/02_common_count_en.png">
+<p>增加生成数量</p>
+</div>
+
+现在生成了大量粒子。然而，因为所有粒子的运动方向都是一样的，所以粒子的显示是相互重叠的。
+
+<div align="center">
+<img src="../../img/Tutorial/02_count.gif">
+<p>增加生成数量</p>
+</div>
+
+### 让每个粒子随机运动
+
+如果粒子向同一方向移动，它们将相互重叠。因此，我们让每个粒子随机移动。
+
+将位置窗口中的xyz方向的速度振幅都设置为0.1。并将你刚刚在x轴速度的平均值中输入的的0.1重置为0。
+
+这表明每个方向的速度被随机设置在-0.1和0.1之间。这意味着粒子从原点向整个外围扩散。
+
+<div align="center">
+<img src="../../img/Tutorial/02_random_input_en.png">
+<p>随机</p>
+</div>
+
+粒子现在朝向整个球体的外围运动。
+
+<div align="center">
+<img src="../../img/Tutorial/02_random.gif">
+<p>随机</p>
+</div>
+
+### 缩短粒子显示的时间
+
+现在粒子显示的时间很长，但有些特效需要更短的时间。让我们缩短显示时间。
+
+在基础设置窗口中有一个叫做生命周期的参数。试着缩短这个参数。在这个例子中，我们输入30。
+
+<div align="center">
+<img src="../../img/Tutorial/02_life_input_en.png">
+<p>生命周期</p>
+</div>
+
+如果设置更小的值，粒子将更快消失。
+
+<div align="center">
+<img src="../../img/Tutorial/02_completed.gif">
+<p>生命周期</p>
+</div>
+
+最后，在本章中制作的粒子可以通过下面的链接下载。
+
+<div align="center">
+<a href = "../../Sample/02_Sample.zip">下载</a>
+</div>
+
+## 总结
+
+这次我们创建了多个粒子并让它们动了起来。在下一章中，我们将使之更像一个特效。

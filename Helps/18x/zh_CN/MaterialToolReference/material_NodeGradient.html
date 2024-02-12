@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>材质节点（梯度） &mdash; Effekseer Help  ドキュメント</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/js/three.min.js"></script>
+        <script src="../../_static/js/effekseer.min.js"></script>
+        <script src="../../_static/js/iframe.js"></script>
+        <script src="../../_static/js/OrbitControls.js"></script>
+        <script src="../../_static/translations.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="検索" href="../../search.html" />
+    <link rel="next" title="材质节点（噪声）" href="material_NodeNoise.html" />
+    <link rel="prev" title="材质节点（高级）" href="material_NodeAdvanced.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> Effekseer Help
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../ja/index.html">Effekseer Help 日本語</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../en/index.html">Effekseer Help (English)</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Effekseer Help (中文)</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../overview.html">概要</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolTutorial/index.html">教程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolReference/index.html">工具参考</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">材质参考</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="index.html#id2">概述</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id3">细节操作方法</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id9">关于光照</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id10">输入值和输出值的类型</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="index.html#id11">节点</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="material_NodeMath.html">材质节点（数学）</a></li>
+<li class="toctree-l4"><a class="reference internal" href="material_NodeImage.html">材质节点（图像）</a></li>
+<li class="toctree-l4"><a class="reference internal" href="material_NodeModel.html">材质节点（模型）</a></li>
+<li class="toctree-l4"><a class="reference internal" href="material_NodeConstant.html">材质节点（常量）</a></li>
+<li class="toctree-l4"><a class="reference internal" href="material_NodeAdvanced.html">材质节点（高级）</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">材质节点（梯度）</a></li>
+<li class="toctree-l4"><a class="reference internal" href="material_NodeNoise.html">材质节点（噪声）</a></li>
+<li class="toctree-l4"><a class="reference internal" href="material_NodeEnvironment.html">材质节点（环境）</a></li>
+<li class="toctree-l4"><a class="reference internal" href="index.html#id12">输出</a></li>
+<li class="toctree-l4"><a class="reference internal" href="index.html#id13">深度衰减</a></li>
+<li class="toctree-l4"><a class="reference internal" href="index.html#id14">注释</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id15">计算行为的细节</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolTips/01.html">TIPS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq.html">常见问题解答</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ReleaseNotes/index.html">版本说明</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Effekseer Help</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../index.html">Effekseer Help (中文)</a> &raquo;</li>
+          <li><a href="index.html">材质参考</a> &raquo;</li>
+      <li>材质节点（梯度）</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="id1">
+<h1>材质节点（梯度）<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h1>
+<div class="section" id="id2">
+<h2>概述<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
+</div>
+<div class="section" id="id3">
+<h2>节点列表<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h2>
+<div class="section" id="id4">
+<h3>采样梯度<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h3>
+<p>根据输入的梯度将输入的Alpha值映射为颜色。
+如果Gradient未连接输入值，则使用这个节点的梯度。</p>
+</div>
+<div class="section" id="id5">
+<h3>梯度<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h3>
+<p>输出一个梯度。</p>
+<img alt="../../_images/node_Gradient.png" class="align-center" src="../../_images/node_Gradient.png" />
+</div>
+<div class="section" id="id6">
+<h3>梯度参数<a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h3>
+<p>输出外部设置的梯度。
+梯度对于每个节点都相同。
+梯度中设置的概要和详细会在Effekseer和外部工具中显示。</p>
+<p>梯度参数可以在Effekseer的基础渲染设置面板中设置。</p>
+<p>右键Effekseer中的输入框并点击弹出的重置按钮，可以输入材质中设置的默认值。</p>
+<img alt="../../_images/node_GradientParameter.png" class="align-center" src="../../_images/node_GradientParameter.png" />
+<img alt="../../_images/node_GradientParameter_External.png" class="align-center" src="../../_images/node_GradientParameter_External.png" />
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="material_NodeAdvanced.html" class="btn btn-neutral float-left" title="材质节点（高级）" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="material_NodeNoise.html" class="btn btn-neutral float-right" title="材质节点（噪声）" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2019, Effekseer.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

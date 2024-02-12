@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>04. 旋转和缩放！ &mdash; Effekseer Help  ドキュメント</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/js/three.min.js"></script>
+        <script src="../../_static/js/effekseer.min.js"></script>
+        <script src="../../_static/js/iframe.js"></script>
+        <script src="../../_static/js/OrbitControls.js"></script>
+        <script src="../../_static/translations.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="検索" href="../../search.html" />
+    <link rel="next" title="05. 制作一个斩击命中特效！" href="05.html" />
+    <link rel="prev" title="03. 显示图片！" href="03.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> Effekseer Help
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../ja/index.html">Effekseer Help 日本語</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../en/index.html">Effekseer Help (English)</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Effekseer Help (中文)</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../overview.html">概要</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">教程</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="index.html#id2">基础</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="01.html">01.查看并使用示例！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="02.html">02.让粒子散射开！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="03.html">03. 显示图片！</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">04. 旋转和缩放！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="05.html">05. 制作一个斩击命中特效！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="06.html">06. 创建环形粒子!</a></li>
+<li class="toctree-l4"><a class="reference internal" href="07.html">07. 使用父子关系实现复杂移动！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="08.html">08. 通过设置生成方法排列粒子!</a></li>
+<li class="toctree-l4"><a class="reference internal" href="09.html">09.制作枪口焰！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="10.html">10.丝带和轨迹</a></li>
+<li class="toctree-l4"><a class="reference internal" href="11.html">11. 使用3D模型！！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="12.html">12. 用F曲线表示复杂的运动</a></li>
+<li class="toctree-l4"><a class="reference internal" href="13.html">13. 扭曲背景！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="14.html">14. 设置细节层级（LOD）</a></li>
+<li class="toctree-l4"><a class="reference internal" href="15.html">15.通过触发器改变特效！</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id3">材质</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolReference/index.html">工具参考</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../MaterialToolReference/index.html">材质参考</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolTips/01.html">TIPS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq.html">常见问题解答</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ReleaseNotes/index.html">版本说明</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Effekseer Help</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../index.html">Effekseer Help (中文)</a> &raquo;</li>
+          <li><a href="index.html">教程</a> &raquo;</li>
+      <li>04. 旋转和缩放！</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="id1">
+<h1>04. 旋转和缩放！<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h1>
+<div class="section" id="id2">
+<h2>概要<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
+<p>在本章中，我们将旋转并缩放粒子。还将把精灵的形状从方形改为矩形。这使你能够创造复杂的特效。</p>
+<iframe src='../../Sample/viewer_zh_CN.html#04_02_Sample/effect.efk'></iframe></div>
+<div class="section" id="id3">
+<h2>旋转和缩放<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h2>
+<p>可以从下面的链接下载预制的特效素材。</p>
+<div align="center">
+<a href = "../../Sample/04_01_Sample.zip">下载</a>
+</div><div class="section" id="id4">
+<h3>旋转<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h3>
+<p>让我们现在旋转粒子。旋转可以通过“旋转”窗口设置。</p>
+<p>点击“旋转”窗口图标，打开旋转窗口。</p>
+<div align="center">
+<img src="../../img/Tutorial/04_rotation_icon.png">
+<p>旋转窗口的图标</p>
+</div><div align="center">
+<img src="../../img/Tutorial/04_rotation_en.png">
+<p>“旋转”窗口</p>
+</div><p>与位置一样，可以通过多种方法设置旋转。默认选项是<code class="docutils literal notranslate"><span class="pre">固定角度</span></code>。将其改为<code class="docutils literal notranslate"><span class="pre">角度・速度・加速度</span></code>。然后在Z轴的<code class="docutils literal notranslate"><span class="pre">角速度</span></code>中输入5。</p>
+<p>这表示以Z方向（正面方向）为轴，每帧旋转5度。</p>
+<div align="center">
+<img src="../../img/Tutorial/04_rotation_pva_en.png">
+<p>角速度</p>
+</div><p>输入后，进行回放……但是没有任何变化！这是因为精灵绘图方式的默认设置是，无论粒子是否被旋转，矩形总是朝前。</p>
+<p>在“渲染设置”窗口中将放置方法从<code class="docutils literal notranslate"><span class="pre">告示牌</span></code>改为<code class="docutils literal notranslate"><span class="pre">Z轴旋转告示牌</span></code>。<code class="docutils literal notranslate"><span class="pre">Z轴旋转告示牌</span></code>是一种放置方法，矩形面向前方，但Z轴旋转仍然有效。</p>
+<div align="center">
+<img src="../../img/Tutorial/04_conf_en.png">
+<p>放置方法</p>
+</div><p>设置好<code class="docutils literal notranslate"><span class="pre">Z轴旋转告示牌</span></code>后，可以看到矩形沿Z轴方向（前方）旋转。</p>
+<div align="center">
+<img src="../../img/Tutorial/04_rotate.gif">
+<p>旋转</p>
+</div></div>
+<div class="section" id="id5">
+<h3>缩放<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h3>
+<p>与位置和旋转一样，可以缩放粒子。缩放可以通过“缩放”窗口设置。</p>
+<p>点击“缩放”窗口图标来打开缩放窗口。</p>
+<div align="center">
+<img src="../../img/Tutorial/04_scale_icon.png">
+<p>缩放窗口的图标</p>
+</div><div align="center">
+<img src="../../img/Tutorial/04_scale_en.png">
+<p>“缩放”窗口</p>
+</div><p>与位置和旋转一样，可以通过多种方法设置缩放。默认选项是<code class="docutils literal notranslate"><span class="pre">固定缩放</span></code>。将其改为<code class="docutils literal notranslate"><span class="pre">缩放・速度・加速度（统一）</span></code>。然后在<code class="docutils literal notranslate"><span class="pre">放大速度</span></code>中输入0.01。</p>
+<p>尽管也可以为X、Y和Z方向单独设置<code class="docutils literal notranslate"><span class="pre">放大速度</span></code>，但它们通常是一样的。因此，可以设置统一的<code class="docutils literal notranslate"><span class="pre">放大速度</span></code>。</p>
+<div align="center">
+<img src="../../img/Tutorial/04_scale_pva_en.png">
+<p>放大速度</p>
+</div><p>可以看到精灵在旋转和放大。</p>
+<div align="center">
+<img src="../../img/Tutorial/04_scale.gif">
+<p>缩放</p>
+</div></div>
+</div>
+<div class="section" id="id6">
+<h2>精灵形状<a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h2>
+<p>现在的精灵是正方形的，但也可以改成矩形、梯形等形状。</p>
+<p>在“渲染设置”窗口中将<code class="docutils literal notranslate"><span class="pre">顶点坐标</span></code>从<code class="docutils literal notranslate"><span class="pre">默认</span></code>改为<code class="docutils literal notranslate"><span class="pre">固定</span></code>。然后你可以设置矩形顶点的坐标。</p>
+<p>现在，为了使它在垂直方向放大，输入以下内容。</p>
+<div align="center">
+<img src="../../img/Tutorial/04_v_en.png">
+<p>顶点坐标</p>
+</div><p>可以看到粒子竖直方向的长度长于水平方向的长度。</p>
+<div align="center">
+<img src="../../img/Tutorial/04_shape.gif">
+<p>顶点坐标</p>
+</div></div>
+<div class="section" id="id7">
+<h2>收尾<a class="headerlink" href="#id7" title="Permalink to this heading">¶</a></h2>
+<p>它现在的样子并不好看，可以做以下修改。</p>
+<div class="section" id="id8">
+<h3>“基础设置”窗口<a class="headerlink" href="#id8" title="Permalink to this heading">¶</a></h3>
+<p>将<code class="docutils literal notranslate"><span class="pre">生成数量</span></code>修改为10</p>
+<div align="center">
+<img src="../../img/Tutorial/04/parameters_basic_en.png">
+</div></div>
+<div class="section" id="id9">
+<h3>“位置”窗口<a class="headerlink" href="#id9" title="Permalink to this heading">¶</a></h3>
+<p>改为位置・速度・加速度</p>
+<p>将位置振幅修改为2</p>
+<div align="center">
+<img src="../../img/Tutorial/04/parameters_position_en.png">
+</div></div>
+<div class="section" id="id10">
+<h3>“基础渲染设置”窗口<a class="headerlink" href="#id10" title="Permalink to this heading">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">纹理</span></code>选择particle.png</p>
+<p>将<code class="docutils literal notranslate"><span class="pre">混合方法</span></code>改为<code class="docutils literal notranslate"><span class="pre">加法</span></code></p>
+<div align="center">
+<img src="../../img/Tutorial/04/parameters_basic_render_en.png">
+</div></div>
+<div class="section" id="id11">
+<h3>“旋转”窗口<a class="headerlink" href="#id11" title="Permalink to this heading">¶</a></h3>
+<p>将Z轴角度振幅修改为180</p>
+<div align="center">
+<img src="../../img/Tutorial/04/parameters_rotation_en.png">
+</div></div>
+<div class="section" id="id12">
+<h3>“缩放”窗口<a class="headerlink" href="#id12" title="Permalink to this heading">¶</a></h3>
+<p>将<code class="docutils literal notranslate"><span class="pre">缩放比率</span></code>修改为0</p>
+<div align="center">
+<img src="../../img/Tutorial/04/parameters_scale_en.png">
+</div></div>
+<div class="section" id="id13">
+<h3>结果<a class="headerlink" href="#id13" title="Permalink to this heading">¶</a></h3>
+<p>如果你不知道如何修改这些参数，请回顾第1到3章。</p>
+<div align="center">
+<img src="../../img/Tutorial/04_completed.gif">
+<p>结果</p>
+</div><p>最后，在本章中制作的粒子可以通过下面的链接下载。</p>
+<div align="center">
+<a href = "../../Sample/04_02_Sample.zip">下载</a>
+</div></div>
+</div>
+<div class="section" id="id14">
+<h2>总结<a class="headerlink" href="#id14" title="Permalink to this heading">¶</a></h2>
+<p>本章解释了如何旋转和缩放精灵。在下一章中，我们将尽可能利用迄今为止了解的内容来制作实际的特效。</p>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="03.html" class="btn btn-neutral float-left" title="03. 显示图片！" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="05.html" class="btn btn-neutral float-right" title="05. 制作一个斩击命中特效！" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2019, Effekseer.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

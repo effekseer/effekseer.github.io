@@ -1,0 +1,267 @@
+﻿# 1.5x Change Logs
+
+## 1.53e (21/03/29)
+
+### Editor (Windows)
+
+Fixed a bug where FPS may decrease after Windows10 2004
+
+## 1.53d (21/03/27)
+
+### Editor
+
+Fixed a bug where RenderingMode is not changed without rerunning
+
+Fixed bugs about Comment node in the Material Editor
+
+Added a text to show the number of parameters in the Material Editor
+
+## 1.53c (21/03/17)
+
+### Common
+
+Fixed a bug where Effekseer crashes when 1.6 files are loaded.
+
+### Editor
+
+Replaced docking panel.
+
+### Runtime
+
+Fixed a bug where effects sometimes blinks with culling
+
+## 1.53b (21/03/08)
+
+### Unity
+
+Fixed a bug that prevented images from loading when a same image asset was specified in multiple paths in effect assets.
+
+### WebGL
+
+Significantly improved a performance.
+
+## 1.53a (20/12/13)
+
+### Common
+
+- Removed glTF extension (because it was unmaintained and not implemented perfectly)
+- Fixed a bug where UV2 nodes were not working properly in OpenGL materials.
+- Fixed a bug where effects are not displayed with custom data 1 and 2 were set to all RGBA in OpenGL ES2.0 materials.
+- Fixed a bug where effects are not displayed  lighting in Metal materials.
+
+### Runtime
+
+- Added bat file to output x86 and x64.
+- Disabled OpenAL samples on Windows.
+
+### Unity
+
+- Added the feature to draw effects in PostProcessingStack.
+- Fixed a bug where materials were disabled after upgrading Unity version.
+- Changed Mac binary to Hardened Runtime.
+
+### Cocos2d-x
+
+- Fixed a bug where images were not drawn correctly when mipmap was enabled in Metal environment.
+
+### UnrealEngine4
+
+- 4.26 support.
+- Changed to suppress the generation of extra materials.
+
+## 1.52n (20/10/23)
+
+### Cmmon
+
+- Fixed a bug where scaling was not applied to the cull size.
+- Fixed a bug where material normals was incorrect.
+
+### Tool
+
+- Fixed a bug where the original image of the recording behaved strangely
+- Changed to show a warning when connecting the normal and the normals in material.
+
+### Runtime
+
+- Fixed a bug that caused a crash when drawing a lot on DirectX12.
+
+### WebGL
+
+Fixed a bug where PremultiplyAlpha was not disabled.
+
+## 1.52m (20/08/28)
+
+### Common
+
+- Fixed a bug that caused a crash when creating too many particles that exceeded the amount of memory allocated under certain conditions. 
+
+### UnrealEngine4
+
+- Fixed a bug that prevented the Clamp node from working properly.
+- Fixed a bug that caused a delay in drawing one frame.
+- Fixed a bug that could cause incorrect rotation.
+
+### Runtime
+
+- Refreshed samples of culling
+- Fixed a bug where culling was not working properly.
+
+## 1.52l（20/08/18）
+
+### Tools, Unity, Runtime, DXLib
+
+- Fixed a bug that caused a crash when playing an effect without setting a model file when a model was selected for rendering.
+
+## 1.52k（20/08/16）
+
+### Common
+
+- Fixed a bug where the effect is not displayed when render method is ribbons, the number of divisions is more than 2, the magnification is 0 for one particle.
+- Moving the timing of sending the model to the GPU before rendering (to make it easier to process in the rendering thread)
+
+### Tools
+
+- Fixed omissions in the English version.
+- Fixed a bug where the app crashed when you don't have file permissions.
+- Fixed a bug that prevented creation of shader cache (x86 only)
+
+### Unity
+
+- Fixed a bug where effects would not play when switching emitters after playing an emitter in the Scene window.
+- Fixed a bug that prevented material compilation if the material contains a reserved word
+- Supports material wrapping and repeats
+
+### UnrealEngine 4
+
+- Fixed a bug where R and G of Texture Sample node were switched.
+- Fixed a bug where a material compile error would occur under certain circumstances
+- Fixed a bug where lighting parameters were not supported
+- Fixed a bug that prevented re-importation.
+- Fixed a bug where images of normals could not be loaded with materials.
+- Supports material wrapping and repeats
+
+### Runtime
+
+- Fixed a bug that caused network reloads to behave strangely with multiple Manager classes
+
+### DX Library.
+
+- Fixed a bug that caused network reloads to behave strangely
+
+### Cocos2d-x
+
+- Changed to show a warning when non-squared images are loaded.
+
+- Fixed a bug that did not support Android distortion.
+
+### WebGL
+
+- Change image.crossOrigin to use-credentials
+
+## 1.52j（20/08/02）
+
+Fixed a bug where Bloom was behaving strangely in certain environments.
+
+Fixed a bug where the memory locator alignment could go wrong in x86 environments.
+
+Fixed a bug where noise could occur in MSAA environments.
+
+## 1.52i (20/07/31)
+
+Fixed a bug where opening a file was disabled with certain operation (Mac)
+
+Fixed a bug where Effeksee cannot run in environments that did not support MSAA (Windows)
+
+Fixed a bug where ``` Is scaling invalid with Z-Offset ``` behaved strangely.
+
+Fixed a bug where dynamic parameters giving Vector as an argument behaved strangely.
+
+Fixed a bug where the F-curve of UV behaved strangely.
+
+Fixed a bug where the network reloading function was behaving strangely.
+
+Fixed a bug that caused loading problems when saving a file with a default value of 0 and the same value as the default in custom data.
+
+Fixed a bug where the memory locator alignment could go wrong in x86 environments.
+
+## 1.52h（20/07/09）
+
+Unify drawing behavior due to opacity on all platforms
+
+Effekseer now can remove redundant nodes when effects are exported
+
+Fixed a bug that caused a crash when executing UNDO without displaying the node tree.
+
+Fixed a bug that occurred when the value of a material's step node was negative.
+
+Fixed a bug that recording with high frequency is wrong
+
+Fixed a bug that caused a crash when much particles are spawn
+
+## 1.52g（20/06/09）
+
+Fixed a bug that pngs with interlacing could not be displayed correctly
+
+Fixed a bug that caused a crash when displaying a new effect after playing a lot of effect.
+
+Fixed a bug that caused a crash when saving camera settings.
+
+Fixed a bug where batch processing was not working.
+
+(Runtime) Fixed a bug that it crashs if you end up not finding a format when extending a file reading
+
+## 1.52f（20/05/13）
+
+Fixed a bug that parameters of turbulence is not saved
+
+Added an error message when it fails to save a file
+
+## 1.52e（20/05/07）
+
+Make delete button enabled in F-Curve on Mac
+
+Fix a bug that removing points with double click was disabled in F-Curve.
+
+Improve behavior of drag in F-Curve.
+
+## 1.52d（20/05/06）
+
+Fixed a bug where the magnification of recorded images is wrong.
+
+## 1.52c(Mac Only)（20/05/06）
+
+Fixed a crash on Mac when saving a file after importing new image .
+
+## 1.52b（20/05/05）
+
+Fixed a bug where particles are not shown with Line of SpawnMethod
+Fixed a bug in which Japanese is selected in an environment where the language is neither Japanese nor English.
+Fixed a bug that it fails to start if the current directory at startup is not the same as Effekseer.
+
+## 1.52a（20/04/28）
+
+Fixed a bug that a behavior of rotated billboard is something wrong when an angle is about 90 degree
+
+## 1.52（20/04/27）
+
+Fixed a bug where files could not be saved on some Mac environments.
+
+Fixed a bug that caused a rare crash.
+
+Fixed a bag where the FPS changed when not using the 60FPS display.
+
+Fixed a bug where the color space did not work properly.
+
+Improved UI for recording.
+
+## 1.51（20/04/02）
+
+Fix a bug that Effekseer doesn't run on ShaderModel4.0 (Windows)
+
+Optimize Turbulence
+
+Support 2D Mode (Experimental)
+
+## 1.50（20/03/18）
+
+[New Features](150)

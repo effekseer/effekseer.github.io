@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>06. 创建环形粒子! &mdash; Effekseer Help  ドキュメント</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/js/three.min.js"></script>
+        <script src="../../_static/js/effekseer.min.js"></script>
+        <script src="../../_static/js/iframe.js"></script>
+        <script src="../../_static/js/OrbitControls.js"></script>
+        <script src="../../_static/translations.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="検索" href="../../search.html" />
+    <link rel="next" title="07. 使用父子关系实现复杂移动！" href="07.html" />
+    <link rel="prev" title="05. 制作一个斩击命中特效！" href="05.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> Effekseer Help
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../ja/index.html">Effekseer Help 日本語</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../en/index.html">Effekseer Help (English)</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Effekseer Help (中文)</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../overview.html">概要</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">教程</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="index.html#id2">基础</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="01.html">01.查看并使用示例！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="02.html">02.让粒子散射开！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="03.html">03. 显示图片！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="04.html">04. 旋转和缩放！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="05.html">05. 制作一个斩击命中特效！</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">06. 创建环形粒子!</a></li>
+<li class="toctree-l4"><a class="reference internal" href="07.html">07. 使用父子关系实现复杂移动！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="08.html">08. 通过设置生成方法排列粒子!</a></li>
+<li class="toctree-l4"><a class="reference internal" href="09.html">09.制作枪口焰！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="10.html">10.丝带和轨迹</a></li>
+<li class="toctree-l4"><a class="reference internal" href="11.html">11. 使用3D模型！！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="12.html">12. 用F曲线表示复杂的运动</a></li>
+<li class="toctree-l4"><a class="reference internal" href="13.html">13. 扭曲背景！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="14.html">14. 设置细节层级（LOD）</a></li>
+<li class="toctree-l4"><a class="reference internal" href="15.html">15.通过触发器改变特效！</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id3">材质</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolReference/index.html">工具参考</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../MaterialToolReference/index.html">材质参考</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolTips/01.html">TIPS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq.html">常见问题解答</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ReleaseNotes/index.html">版本说明</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Effekseer Help</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../index.html">Effekseer Help (中文)</a> &raquo;</li>
+          <li><a href="index.html">教程</a> &raquo;</li>
+      <li>06. 创建环形粒子!</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="id1">
+<h1>06. 创建环形粒子!<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h1>
+<div class="section" id="id2">
+<h2>概要<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
+<p>在本章中, 你将使用环形(Ring)渲染方法创建多种效果。
+我们已经介绍了渲染方法中的“精灵”，而这次，我们将介绍“环”。
+顾名思义，它被用来绘制环形粒子。
+但通过改变其参数, 你创建的特效将不会仅局限于环形。</p>
+<div align="center">
+<img src="../../img/Tutorial/06_renderRing.png">
+<p>各种环形特效</p>
+</div><p>此外，也可以尝试通过改变贴图的选区(UV)获得更好的表现效果。</p>
+<div align="center" class='col-md-4'>
+<iframe src='../../Sample/viewer_zh_CN.html#06_02_Sample/effect1.efk'></iframe>
+<p>本章中创建的第一个效果</p>
+</div><div align="center" class='col-md-4'>
+<iframe src='../../Sample/viewer_zh_CN.html#06_02_Sample/effect2.efk'></iframe>
+<p>本章中创建的第二个效果</p>
+</div><div align="center" class='col-md-4'>
+<iframe src='../../Sample/viewer_zh_CN.html#06_02_Sample/effect3.efk'></iframe>
+<p>本章中创建的第三个效果</p>
+</div><p>你可以通过下面的链接下载为本章内容预制的特效素材。</p>
+<div align="center">
+<p><a href = "../../Sample/06_01_Sample.zip">下载</a></p>
+</div></div>
+<div class="section" id="id3">
+<h2>基础圆环<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h2>
+<p>你将要创建的第一个效果是一个随时间改变形状的圆环。</p>
+<p>请打开 effect1.efkefc。</p>
+<p>为达到预想的效果，你需要将渲染方法设置为环形。
+在节点树中选中Node，切换到“渲染设置(Render Settings)”选项卡，将渲染方法由“精灵(Sprite)”改为“环(Ring)”</p>
+<div align="center">
+<img src="../../img/Tutorial/06_ring_en.png">
+<p>修改完成后的渲染设置应当如此图所示</p>
+</div><p>修改完成后播放效果，你应当看到预览画面中显示的是一个圆环。</p>
+<div align="center">
+<img src="../../img/Tutorial/06_ring.png">
+<p>环</p>
+</div><p>你可以通过改变其参数来改变它的形状。</p>
+<p>圆环的形状由“渲染设置”选项卡中的外沿(Outer)和内沿(Inner)控制。
+在这两项中，你可以设置圆环内外沿的平面半径(x)和轴向高度(y)。(译者注:类似圆台的上下表面半径及其高度)</p>
+<p><b> 注意：不要将这里的xy与预览画面中的xyz相混淆 </b></p>
+<div align="center">
+<img src="../../img/Tutorial/06_ring_inout.png">
+<p>外沿(1)和内沿(2)</p>
+</div><p>这些参数也可以通过缓动来达到随时间变化的效果。</p>
+<p>根据下方表格修改粒子节点的参数。它表示<code class="docutils literal notranslate"><span class="pre">外沿位置(Outer-Position)</span></code>将会由(1,2)变为(3,0)而<code class="docutils literal notranslate"><span class="pre">内沿位置(Inner-Position)</span></code>保持在(1,0)不变。</p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th align="left">窗口</th>
+<th align="left">参数</th>
+<th align="left">值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">基础设置</td>
+<td align="left">生命周期</td>
+<td align="left">60</td>
+</tr>
+<tr>
+<td align="left">旋转</td>
+<td align="left">角度</td>
+<td align="left">x=0, y=0, z=-45</td>
+</tr>
+<tr>
+<td align="left">渲染设置</td>
+<td align="left">外沿Outer</td>
+<td align="left">缓动</td>
+</tr>
+<tr>
+<td align="left">渲染设置</td>
+<td align="left">外沿Outer-Start(平均)</td>
+<td align="left">x=1, y=2</td>
+</tr>
+<tr>
+<td align="left">渲染设置</td>
+<td align="left">外沿Outer-End(平均)</td>
+<td align="left">x=3, y=0</td>
+</tr>
+</tbody>
+</table><p>播放效果，你可以看到圆环的形状在随时间改变了。
+基于同样的原理，只需将内沿半径设为0，你就可以创建圆盘/圆锥效果了。</p>
+<div align="center">
+<img src="../../img/Tutorial/06_ring_easing.gif">
+<p>内沿不变, 外沿缓动</p>
+</div></div>
+<div class="section" id="id4">
+<h2>三角形<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h2>
+<p>你将要创建的第二个效果是一个三角形。
+请打开 effect2.efkefc。</p>
+<p>通过改变圆环的顶点数，你可以绘制出多种形状。
+顶点数的初始值较大，因此粒子看起来更像是个圆，
+降低顶点数则允许你绘制出三角形，矩形，六边形等形状。
+你只需要将“渲染设置”选项卡中的顶点数(Vertex Count)修改为3，即可得到一个三角形，如图所示。</p>
+<div align="center">
+<img src="../../img/Tutorial/06_tri.png">
+<p>一个三角形</p>
+</div></div>
+<div class="section" id="uv">
+<h2>滚动UV<a class="headerlink" href="#uv" title="Permalink to this heading">¶</a></h2>
+<p>你将要创建的第三个效果是一个带贴图的圆筒。</p>
+<p>请打开 effect3.efkefc。</p>
+<p>你同样可以为环形粒子设置贴图，这样你就可以更简单地表现冲击波或爆发光环等效果。</p>
+<p>在“基础渲染设置(Basic Render Settings)”选项卡的纹理选项中选择“Scroll.png”。</p>
+<p>可以看到，圆筒的外观由纯色变为了图片。</p>
+<div align="center">
+<img src="../../img/Tutorial/06_ring_img.png">
+<p>效果应如图所示</p>
+</div><p>但这看起来并不怎么吸引人，如果能让贴图随时间变化，看起来就更好了。
+在Effekseer中, 你可以改变粒子在贴图上使用的选区(UV)。</p>
+<p>为了让粒子的UV随时间变化，你需要：</p>
+<p>切换到“基础渲染设置”选项卡
+将 UV 设置由 <code class="docutils literal notranslate"><span class="pre">基础(Standard)</span></code> 修改为 <code class="docutils literal notranslate"><span class="pre">滚动(Scroll)</span></code>。
+到这里，你会发现圆筒表面什么也没有显示。
+这是因为你还没有设置贴图要采用的选区。</p>
+<p>在尺寸(Size)中输入图片尺寸(256, 256)。接下来，在滚动速度(Scroll)中输入(0, 5)。</p>
+<p>播放效果，可以看到贴图在随时间变化。</p>
+<div align="center">
+<img src="../../img/Tutorial/06_scroll.gif">
+<p>滚动UV</p>
+</div><p>最后，你可以通过下面的链接下载本章中制作的效果。</p>
+<div align="center">
+<a href = "../../Sample/06_02_Sample.zip">下载</a>
+</div></div>
+<div class="section" id="id5">
+<h2>总结<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h2>
+<p>本章节中，你通过圆环渲染方法创建了一系列效果。
+在下一章节，你将利用节点父子关系创建复杂的效果。</p>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="05.html" class="btn btn-neutral float-left" title="05. 制作一个斩击命中特效！" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="07.html" class="btn btn-neutral float-right" title="07. 使用父子关系实现复杂移动！" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2019, Effekseer.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

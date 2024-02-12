@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>02.让粒子散射开！ &mdash; Effekseer Help  ドキュメント</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/js/three.min.js"></script>
+        <script src="../../_static/js/effekseer.min.js"></script>
+        <script src="../../_static/js/iframe.js"></script>
+        <script src="../../_static/js/OrbitControls.js"></script>
+        <script src="../../_static/translations.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="検索" href="../../search.html" />
+    <link rel="next" title="03. 显示图片！" href="03.html" />
+    <link rel="prev" title="01.查看并使用示例！" href="01.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> Effekseer Help
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../ja/index.html">Effekseer Help 日本語</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../en/index.html">Effekseer Help (English)</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Effekseer Help (中文)</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../overview.html">概要</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">教程</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="index.html#id2">基础</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="01.html">01.查看并使用示例！</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">02.让粒子散射开！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="03.html">03. 显示图片！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="04.html">04. 旋转和缩放！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="05.html">05. 制作一个斩击命中特效！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="06.html">06. 创建环形粒子!</a></li>
+<li class="toctree-l4"><a class="reference internal" href="07.html">07. 使用父子关系实现复杂移动！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="08.html">08. 通过设置生成方法排列粒子!</a></li>
+<li class="toctree-l4"><a class="reference internal" href="09.html">09.制作枪口焰！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="10.html">10.丝带和轨迹</a></li>
+<li class="toctree-l4"><a class="reference internal" href="11.html">11. 使用3D模型！！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="12.html">12. 用F曲线表示复杂的运动</a></li>
+<li class="toctree-l4"><a class="reference internal" href="13.html">13. 扭曲背景！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="14.html">14. 设置细节层级（LOD）</a></li>
+<li class="toctree-l4"><a class="reference internal" href="15.html">15.通过触发器改变特效！</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id3">材质</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolReference/index.html">工具参考</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../MaterialToolReference/index.html">材质参考</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolTips/01.html">TIPS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq.html">常见问题解答</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ReleaseNotes/index.html">版本说明</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Effekseer Help</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../index.html">Effekseer Help (中文)</a> &raquo;</li>
+          <li><a href="index.html">教程</a> &raquo;</li>
+      <li>02.让粒子散射开！</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="id1">
+<h1>02.让粒子散射开！<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h1>
+<div class="section" id="id2">
+<h2>概要<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
+<p>在本章中，我们将尝试散射粒子。虽然有些无趣，但你会学到Effekseer的基础操作。基于你在本章学到的知识，你可以接下来的章节中制作出很酷的特效。所以要确保你能很好地理解它。</p>
+<iframe src='../../Sample/viewer_zh_CN.html#02_Sample/effect.efk'></iframe></div>
+<div class="section" id="id3">
+<h2>编辑位置<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h2>
+<div class="section" id="id4">
+<h3>编辑初始位置<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h3>
+<p>现在，粒子显示在中心位置。让我们把这个粒子从中心位置移开。</p>
+<div align="center">
+<img src="../../img/Tutorial/01_square.png">
+<p>显示在中心位置</p>
+</div><p>首先，点击屏幕右侧的“节点树”上的“Node（节点）”。“节点树”窗口显示了整个特效的结构，其中Node代表粒子。通过它，你可以编辑这些粒子的形状。</p>
+<div align="center">
+<img src="../../img/Tutorial/02_nodetree.png">
+<p>节点树窗口</p>
+</div><p>点击之后，你会看到大量的可编辑参数。新手可能会感到惊讶，但在本章中只需要编辑部分参数。</p>
+<p>要编辑初始位置，请编辑“位置”窗口的参数。</p>
+<p>要显示位置窗口，点击屏幕右上角显示的标签中的“位置窗口”图标。</p>
+<div align="center">
+<img src="../../img/Tutorial/02_position_icon.png">
+<p>位置窗口的图标</p>
+</div><div align="center">
+<img src="../../img/Tutorial/02_position_en.png">
+<p>位置窗口</p>
+</div><p>让我们把位置窗口中X的值从0改为2。</p>
+<p>用鼠标左键点击输入栏，可以用键盘输入数值。</p>
+<p>按下鼠标左键并拖动输入栏，可以逐步改变数值。</p>
+<img alt="../../_images/input_value.png" class="align-center" src="../../_images/input_value.png" />
+<div align="center">
+<img src="../../img/Tutorial/02_position_input_en.png">
+<p>改变x的值</p>
+</div><p>然后，粒子就从中心移到了一侧。</p>
+<div align="center">
+<img src="../../img/Tutorial/02_position_input_view.png">
+<p>移动到一侧</p>
+</div></div>
+<div class="section" id="id5">
+<h3>让粒子运动<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h3>
+<p>粒子现在是静止不动的，有些无聊。要让粒子的运动起来。</p>
+<p>在Effekseer中，有几种方法来设置位置。</p>
+<p>默认情况下，位置是固定的，但是有一些方法可以设置速度和加速度。</p>
+<p>点击位置窗口的下拉列表，从固定位置改为位置·速度·加速度。这将在位置窗口中增加一些文本框，你可以在其中输入速度和加速度，从而让粒子运动起来。</p>
+<div align="center">
+<img src="../../img/Tutorial/02_pva_en.png">
+<p>位置·速度·加速度</p>
+</div><p>让我们在x方向的速度（中心）中输入0.1。</p>
+<div align="center">
+<img src="../../img/Tutorial/02_pva_input_en.png">
+<p>位置·速度·加速度</p>
+</div><p>接着，粒子飞出了画面。</p>
+<div align="center">
+<img src="../../img/Tutorial/02_pva.gif">
+<p>运动中的特效</p>
+</div><p>试试输入其他数值，看看粒子的行为会如何变化吧。</p>
+</div>
+<div class="section" id="id6">
+<h3>显示多个粒子<a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h3>
+<p>很少有特效只由一个粒子组成。你可以显示一个以上的粒子。</p>
+<p>粒子的数量可以通过“基础设置”窗口中的“生成数量”设置。如果你增加这个数字，就会产生很多粒子。</p>
+<p>要显示“基础设置”窗口，请点击“基础设置”窗口的图标。</p>
+<div align="center">
+<img src="../../img/Tutorial/02_common_icon.png">
+<p>基础设置的图标</p>
+</div><div align="center">
+<img src="../../img/Tutorial/02_common_en.png">
+<p>生成数量</p>
+</div><p>让我们将生成数量设置为100。</p>
+<div align="center">
+<img src="../../img/Tutorial/02_common_count_en.png">
+<p>增加生成数量</p>
+</div><p>现在生成了大量粒子。然而，因为所有粒子的运动方向都是一样的，所以粒子的显示是相互重叠的。</p>
+<div align="center">
+<img src="../../img/Tutorial/02_count.gif">
+<p>增加生成数量</p>
+</div></div>
+<div class="section" id="id7">
+<h3>让每个粒子随机运动<a class="headerlink" href="#id7" title="Permalink to this heading">¶</a></h3>
+<p>如果粒子向同一方向移动，它们将相互重叠。因此，我们让每个粒子随机移动。</p>
+<p>将位置窗口中的xyz方向的速度振幅都设置为0.1。并将你刚刚在x轴速度的平均值中输入的的0.1重置为0。</p>
+<p>这表明每个方向的速度被随机设置在-0.1和0.1之间。这意味着粒子从原点向整个外围扩散。</p>
+<div align="center">
+<img src="../../img/Tutorial/02_random_input_en.png">
+<p>随机</p>
+</div><p>粒子现在朝向整个球体的外围运动。</p>
+<div align="center">
+<img src="../../img/Tutorial/02_random.gif">
+<p>随机</p>
+</div></div>
+<div class="section" id="id8">
+<h3>缩短粒子显示的时间<a class="headerlink" href="#id8" title="Permalink to this heading">¶</a></h3>
+<p>现在粒子显示的时间很长，但有些特效需要更短的时间。让我们缩短显示时间。</p>
+<p>在基础设置窗口中有一个叫做生命周期的参数。试着缩短这个参数。在这个例子中，我们输入30。</p>
+<div align="center">
+<img src="../../img/Tutorial/02_life_input_en.png">
+<p>生命周期</p>
+</div><p>如果设置更小的值，粒子将更快消失。</p>
+<div align="center">
+<img src="../../img/Tutorial/02_completed.gif">
+<p>生命周期</p>
+</div><p>最后，在本章中制作的粒子可以通过下面的链接下载。</p>
+<div align="center">
+<a href = "../../Sample/02_Sample.zip">下载</a>
+</div></div>
+</div>
+<div class="section" id="id9">
+<h2>总结<a class="headerlink" href="#id9" title="Permalink to this heading">¶</a></h2>
+<p>这次我们创建了多个粒子并让它们动了起来。在下一章中，我们将使之更像一个特效。</p>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="01.html" class="btn btn-neutral float-left" title="01.查看并使用示例！" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="03.html" class="btn btn-neutral float-right" title="03. 显示图片！" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2019, Effekseer.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

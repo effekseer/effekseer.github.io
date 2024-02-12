@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>基础渲染设置 &mdash; Effekseer Help  ドキュメント</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/js/three.min.js"></script>
+        <script src="../../_static/js/effekseer.min.js"></script>
+        <script src="../../_static/js/iframe.js"></script>
+        <script src="../../_static/js/OrbitControls.js"></script>
+        <script src="../../_static/translations.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="検索" href="../../search.html" />
+    <link rel="next" title="高级渲染设置" href="rendererCommonAd.html" />
+    <link rel="prev" title="深度" href="depth.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> Effekseer Help
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../ja/index.html">Effekseer Help 日本語</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../en/index.html">Effekseer Help (English)</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Effekseer Help (中文)</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../overview.html">概要</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolTutorial/index.html">教程</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">工具参考</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="index.html#id2">概述</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="index.html#id13">特效参数</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="common.html">基础设置</a></li>
+<li class="toctree-l4"><a class="reference internal" href="location.html">位置</a></li>
+<li class="toctree-l4"><a class="reference internal" href="locationAbs.html">力场（Local）</a></li>
+<li class="toctree-l4"><a class="reference internal" href="locationGene.html">生成方法</a></li>
+<li class="toctree-l4"><a class="reference internal" href="killRules.html">销毁规则</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rotation.html">旋转</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scale.html">缩放</a></li>
+<li class="toctree-l4"><a class="reference internal" href="depth.html">深度</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">基础渲染设置</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererCommonAd.html">高级渲染设置</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererSprite.html">渲染 - 精灵</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererRibbon.html">渲染 - 丝带</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererRing.html">渲染 - 环</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererModel.html">渲染 - 模型</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererTrack.html">渲染 - 轨迹</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sound.html">声音</a></li>
+<li class="toctree-l4"><a class="reference internal" href="fcurve.html">F曲线</a></li>
+<li class="toctree-l4"><a class="reference internal" href="global.html">全局设置</a></li>
+<li class="toctree-l4"><a class="reference internal" href="culling.html">剔除</a></li>
+<li class="toctree-l4"><a class="reference internal" href="levelsOfDetails.html">细节层级（LOD）</a></li>
+<li class="toctree-l4"><a class="reference internal" href="dynamicParameter.html">动态参数</a></li>
+<li class="toctree-l4"><a class="reference internal" href="proceduralModel.html">程序化模型</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id14">特效特性</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id15">工具方法</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id16">命令行</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../MaterialToolReference/index.html">材质参考</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolTips/01.html">TIPS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq.html">常见问题解答</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ReleaseNotes/index.html">版本说明</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Effekseer Help</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../index.html">Effekseer Help (中文)</a> &raquo;</li>
+          <li><a href="index.html">工具参考</a> &raquo;</li>
+      <li>基础渲染设置</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="id1">
+<h1>基础渲染设置<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h1>
+<div class="section" id="id2">
+<h2>概述<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
+<p>本章讲解“基础渲染窗口”，它提供了用于控制当前粒子渲染的基础参数。</p>
+</div>
+<div class="section" id="id3">
+<h2>参数<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h2>
+<div align="center">
+<img src="../../img/Tutorial/03_rendercommon_en.png">
+<p>“基础渲染设置”窗口</p>
+</div><div class="section" id="id4">
+<h3>材质<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h3>
+<p>设置用于绘制粒子的材质。
+你可以设置光照对粒子的影响或者扭曲背景之类。</p>
+<div class="section" id="id5">
+<h4>默认<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h4>
+<p>粒子将直接显示贴图的颜色。</p>
+<iframe src='../../Effects/viewer_zh_CN.html#References/BasicRender/render_unlit.efkefc'></iframe></div>
+<div class="section" id="id6">
+<h4>照明<a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h4>
+<p>粒子会受到光照的影响（出现明暗）。
+除了用于提供颜色的贴图（可以称为漫反射贴图）外，还可以设置法线（Normal）贴图。
+设置了法线贴图之后，表面的方向会被改变。</p>
+<iframe src='../../Effects/viewer_zh_CN.html#References/BasicRender/render_lit.efkefc'></iframe></div>
+<div class="section" id="id7">
+<h4>扭曲（背景）<a class="headerlink" href="#id7" title="Permalink to this heading">¶</a></h4>
+<p>如果启用了扭曲，粒子将会扭曲它后面的任何东西。扭曲的方式取决于扭曲贴图的像素数据和扭曲强度。</p>
+<p>扭曲贴图的红色和绿色通道将被用作扭曲信息。它们的值为127时，不会产生扭曲效果。当红色通道的值超过127时，背景将向右扭曲，小于127时，背景将向左扭曲。绿色通道的值大于127时，背景将向上扭曲，小于127时，背景将向下扭曲。但是，这里的上下左右取决于渲染方法。例如，渲染方法为精灵时，上下左右方向垂直于图片的四个边。</p>
+<p>扭曲强度调整所有颜色的强度。值为0时，扭曲不会生效。</p>
+<table><tbody><tr><td><p>扭曲</p>
+</td><td><p>无扭曲</p>
+</td></tr><tr><td><img src="../../img/Reference/renderCommon_distortion_on.gif"/></td><td><img src="../../img/Reference/renderCommon_distortion_off.gif"/></td></tr></tbody></table><p>在默认设置下，扭曲只会影响背景，而不会影响特效自身。要扭曲特效自身的其他节点，可在深度面板中设置绘制优先级。绘制优先级小于0的节点会因特效自身的扭曲而与背景一起扭曲。</p>
+</div>
+<div class="section" id="id8">
+<h4>文件<a class="headerlink" href="#id8" title="Permalink to this heading">¶</a></h4>
+<p>你可以用用户创建的材质绘制粒子。
+可以实现最广的表现力。</p>
+<p>点击按钮新建并编辑材质文件。</p>
+<p>详情参考材质的说明。</p>
+<p>根据材质文件的不同，可以为该材质添加更多参数。
+除常量外，还可以通过缓动或F曲线设置自定义参数。
+自定义参数显示的名称取决于材质文件。</p>
+<div class="section" id="id9">
+<h5>缓存<a class="headerlink" href="#id9" title="Permalink to this heading">¶</a></h5>
+<p>要加速材质的读取，或者在特定的平台播放特效，你可以在加载材质后点击“生成缓存”，将材质保存为编译后的格式。</p>
+<p>如果生成的缓存在与材质文件相同的文件夹下，加载会变得更快。
+在一些平台，特效必须依靠缓存才能播放。
+要生成可同时用于Windows和Mac的缓存，需要在Windows生成缓存之后，再在Mac生成一遍缓存。</p>
+<iframe src='../../Effects/viewer_zh_CN.html#References/BasicRender/render_file.efkefc'></iframe></div>
+</div>
+</div>
+<div class="section" id="id10">
+<h3>发光系数<a class="headerlink" href="#id10" title="Permalink to this heading">¶</a></h3>
+<p>用设置的值乘粒子的颜色。值越高，颜色越亮。如果值为1，图片会保持原样。
+仅当材质是基础或照明时有效。
+在不支持HDR的环境，提高这个值会产生奇怪的颜色表现。</p>
+<img alt="../../_images/EmmisiveScaling.png" class="align-center" src="../../_images/EmmisiveScaling.png" />
+</div>
+<div class="section" id="id11">
+<h3>混合<a class="headerlink" href="#id11" title="Permalink to this heading">¶</a></h3>
+<p>设置粒子显示时的Alpha混合方式。控制图片互相重叠时如何混合，例如半透明、加法、减法。</p>
+<p><img alt="../../_images/AlphaBlend.png" src="../../_images/AlphaBlend.png" /></p>
+</div>
+<div class="section" id="id12">
+<h3>过滤<a class="headerlink" href="#id12" title="Permalink to this heading">¶</a></h3>
+<p>设置粒子显示时的过滤方式。</p>
+</div>
+<div class="section" id="id13">
+<h3>深度写入<a class="headerlink" href="#id13" title="Permalink to this heading">¶</a></h3>
+<p>设置粒子显示时是否会写入深度信息（用来表示粒子到摄像机的距离）。写入深度信息之后，渲染开启了深度测试的粒子时，如果这些开启了深度测试的粒子在写入了深度信息的粒子之后，它们就不会被渲染。</p>
+</div>
+<div class="section" id="id14">
+<h3>深度测试<a class="headerlink" href="#id14" title="Permalink to this heading">¶</a></h3>
+<p>如果启用了深度测试，比已经写入的深度信息更深的粒子不会被渲染。</p>
+</div>
+<div class="section" id="id15">
+<h3>淡入<a class="headerlink" href="#id15" title="Permalink to this heading">¶</a></h3>
+<p>粒子在生成时淡入。</p>
+</div>
+<div class="section" id="id16">
+<h3>淡出<a class="headerlink" href="#id16" title="Permalink to this heading">¶</a></h3>
+<p>粒子在将要销毁时淡出。</p>
+<iframe src='../../Effects/viewer_zh_CN.html#References/Render/fade_in_out.efkefc'></iframe></div>
+<div class="section" id="uv">
+<h3>UV<a class="headerlink" href="#uv" title="Permalink to this heading">¶</a></h3>
+<p>设置粒子会显示出图像的哪个区域。
+这个区域可以随时间变化，允许你让图片滚动或播放动画。
+此处使用的单位是像素。</p>
+<div class="section" id="id17">
+<h4>动画<a class="headerlink" href="#id17" title="Permalink to this heading">¶</a></h4>
+<p>基于由一系列帧组成的图像播放动画。</p>
+<p><img alt="../../_images/renderCommon_uv_animation.png" src="../../_images/renderCommon_uv_animation.png" /></p>
+<div class="section" id="id18">
+<h5>开始时间<a class="headerlink" href="#id18" title="Permalink to this heading">¶</a></h5>
+<p>设置动画开始播放的时间。例如，你可以从由四帧图像构成的动画的第二帧开始播放。</p>
+</div>
+<div class="section" id="id19">
+<h5>动画补间<a class="headerlink" href="#id19" title="Permalink to this heading">¶</a></h5>
+<ul class="simple">
+<li><p>无</p></li>
+</ul>
+<p>按照固定间隔切换位置。</p>
+<div class="video_center"><video autoplay loop="true" muted="true" src="../../movies/Reference/BasicRenderSettings/Flip_None.mp4"/></div><ul class="simple">
+<li><p>线性</p></li>
+</ul>
+<p>动画切换时使用线性插值。
+用于确保图像不会突然变化。</p>
+<div class="video_center"><video autoplay loop="true" muted="true" src="../../movies/Reference/BasicRenderSettings/Flip_Lerp.mp4"/></div></div>
+</div>
+<div class="section" id="id20">
+<h4>滚动<a class="headerlink" href="#id20" title="Permalink to this heading">¶</a></h4>
+<p>匀速移动UV区域。</p>
+<p><img alt="../../_images/renderCommon_uv_scroll.png" src="../../_images/renderCommon_uv_scroll.png" /></p>
+</div>
+<div class="section" id="f">
+<h4>F-曲线<a class="headerlink" href="#f" title="Permalink to this heading">¶</a></h4>
+<p>使用F-曲线。</p>
+</div>
+</div>
+<div class="section" id="id21">
+<h3>引用（UV）<a class="headerlink" href="#id21" title="Permalink to this heading">¶</a></h3>
+<p>一个粒子可以使用多张不同尺寸的图片。
+在这种情况下，你可以选择一张图片将其分辨率作为图像的基础比例。
+你还可以以128x128为基础设置UV，而无需设置图片。</p>
+<p>使用材质时，参考图像的编号与材质的图像的优先级一致。</p>
+<p><img alt="../../_images/uv_referenced.png" src="../../_images/uv_referenced.png" /></p>
+</div>
+<div class="section" id="id22">
+<h3>继承颜色<a class="headerlink" href="#id22" title="Permalink to this heading">¶</a></h3>
+<p>设置父粒子的颜色是否会影响子粒子的颜色。如果设置了继承颜色，子粒子最终渲染的颜色是父粒子的颜色乘子粒子设置的的颜色。如果选择了“仅生成时”，则生成子粒子时会应用父粒子当前的颜色。</p>
+<table><tbody><tr><td><p>从不</p>
+</td><td><p>仅生成时</p>
+</td><td><p>始终</p>
+</td></tr><tr><td><img src="../../img/Reference/renderCommon_inherit_color_none.gif"/></td><td><img src="../../img/Reference/renderCommon_inherit_color_when.gif"/></td><td><img src="../../img/Reference/renderCommon_inherit_color_always.gif"/></td></tr></tbody></table></div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="depth.html" class="btn btn-neutral float-left" title="深度" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="rendererCommonAd.html" class="btn btn-neutral float-right" title="高级渲染设置" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2019, Effekseer.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

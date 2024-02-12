@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>生成方法 &mdash; Effekseer Help  ドキュメント</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/js/three.min.js"></script>
+        <script src="../../_static/js/effekseer.min.js"></script>
+        <script src="../../_static/js/iframe.js"></script>
+        <script src="../../_static/js/OrbitControls.js"></script>
+        <script src="../../_static/translations.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="検索" href="../../search.html" />
+    <link rel="next" title="销毁规则" href="killRules.html" />
+    <link rel="prev" title="力场（Local）" href="locationAbs.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> Effekseer Help
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../ja/index.html">Effekseer Help 日本語</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../en/index.html">Effekseer Help (English)</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Effekseer Help (中文)</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../overview.html">概要</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolTutorial/index.html">教程</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">工具参考</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="index.html#id2">概述</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="index.html#id13">特效参数</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="common.html">基础设置</a></li>
+<li class="toctree-l4"><a class="reference internal" href="location.html">位置</a></li>
+<li class="toctree-l4"><a class="reference internal" href="locationAbs.html">力场（Local）</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">生成方法</a></li>
+<li class="toctree-l4"><a class="reference internal" href="killRules.html">销毁规则</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rotation.html">旋转</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scale.html">缩放</a></li>
+<li class="toctree-l4"><a class="reference internal" href="depth.html">深度</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererCommon.html">基础渲染设置</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererCommonAd.html">高级渲染设置</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererSprite.html">渲染 - 精灵</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererRibbon.html">渲染 - 丝带</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererRing.html">渲染 - 环</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererModel.html">渲染 - 模型</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererTrack.html">渲染 - 轨迹</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sound.html">声音</a></li>
+<li class="toctree-l4"><a class="reference internal" href="fcurve.html">F曲线</a></li>
+<li class="toctree-l4"><a class="reference internal" href="global.html">全局设置</a></li>
+<li class="toctree-l4"><a class="reference internal" href="culling.html">剔除</a></li>
+<li class="toctree-l4"><a class="reference internal" href="levelsOfDetails.html">细节层级（LOD）</a></li>
+<li class="toctree-l4"><a class="reference internal" href="dynamicParameter.html">动态参数</a></li>
+<li class="toctree-l4"><a class="reference internal" href="proceduralModel.html">程序化模型</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id14">特效特性</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id15">工具方法</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id16">命令行</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../MaterialToolReference/index.html">材质参考</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolTips/01.html">TIPS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq.html">常见问题解答</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ReleaseNotes/index.html">版本说明</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Effekseer Help</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../index.html">Effekseer Help (中文)</a> &raquo;</li>
+          <li><a href="index.html">工具参考</a> &raquo;</li>
+      <li>生成方法</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="id1">
+<h1>生成方法<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h1>
+<div class="section" id="id2">
+<h2>概述<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
+<p>设置用于指定节点粒子初始生成位置的参数。除了父粒子的位置会影响子粒子的位置外，这里设置的值也会影响位置。换句话说，粒子是围绕位于父粒子位置的原点生成的，然后再根据指定的生成方法参数从该点开始平移和旋转。</p>
+<p>用于设置节点的粒子的初始生成位置。除了父粒子的位置会影响子粒子的位置，这里设置的值也会影响位置。换句话说，粒子是围绕父粒子的原点位置生成的，然后再根据在生成方法中设置的参数进行平移和旋转。 <img alt="../../_images/locationGene.png" src="../../_images/locationGene.png" /></p>
+</div>
+<div class="section" id="id3">
+<h2>参数<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h2>
+<div align="center">
+<img src="../../img/Tutorial/08_spawn_en.png">
+<p>“生成方法”窗口</p>
+</div><div class="section" id="id4">
+<h3>影响生成角度<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h3>
+<p>让生成方法的参数影响角度。例如，如果勾选此项，且选择“球”，那么粒子的Y方向就会是球的法向。</p>
+<table><tbody><tr><td>勾选</td><td>未勾选</td></tr><tr><td><img src="../../img/Reference/affect_angle.png"/></td><td><img src="../../img/Reference/affect_no_angle.png"/></td></tr></tbody></table></div>
+<div class="section" id="id5">
+<h3>生成方法<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h3>
+<p>指定如何设置生成的位置。</p>
+<div class="section" id="id6">
+<h4>点<a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h4>
+<p>将某个点设置为生成的位置。</p>
+</div>
+<div class="section" id="id7">
+<h4>线<a class="headerlink" href="#id7" title="Permalink to this heading">¶</a></h4>
+<p>粒子会沿着线生成。当你指定了线的起点位置和终点位置时，粒子会被放置在按照顶点数分割线的等分点上。粒子的X方向会沿着线的方向（勾选“影响生成角度”时）。</p>
+<p><img alt="../../_images/locationGene_line.png" src="../../_images/locationGene_line.png" /></p>
+<div class="section" id="id8">
+<h5>位置噪声<a class="headerlink" href="#id8" title="Permalink to this heading">¶</a></h5>
+<p>会在粒子的位置上沿着线的方向添加指定范围内的噪声。可以用来降低生成位置的单一性。</p>
+</div>
+<div class="section" id="id9">
+<h5>生成模式<a class="headerlink" href="#id9" title="Permalink to this heading">¶</a></h5>
+<div class="section" id="id10">
+<h6>随机<a class="headerlink" href="#id10" title="Permalink to this heading">¶</a></h6>
+<p>粒子会被随机放置在线的任意一个分割点上。</p>
+<p><img alt="../../_images/locationGeneModelRand.png" src="../../_images/locationGeneModelRand.png" /></p>
+</div>
+<div class="section" id="id11">
+<h6>顺序<a class="headerlink" href="#id11" title="Permalink to this heading">¶</a></h6>
+<p>粒子会依次放置在线从起点到终点的每一个分割点上。</p>
+</div>
+</div>
+</div>
+<div class="section" id="id12">
+<h4>圆<a class="headerlink" href="#id12" title="Permalink to this heading">¶</a></h4>
+<p>将粒子置于一个圆上。此时，你只需设置半径和旋转角度。如果勾选了“影响生成角度”，粒子的Y方向将会是圆的法向。</p>
+<div class="section" id="id13">
+<h5>轴方向<a class="headerlink" href="#id13" title="Permalink to this heading">¶</a></h5>
+<p>设置圆的轴线方向，如果勾选了“影响生成角度”，粒子的Y方向将如下表所示。</p>
+<table><tbody><tr><td><p>X轴</p>
+</td><td><p>Y轴</p>
+</td><td><p>Z轴</p>
+</td></tr><tr><td><p>弧</p>
+</td><td><p>沿轴</p>
+</td><td><p>向外</p>
+</td></tr><tr><td><img src="../../img/Reference/locationGene_circle_xaxis.png"/></td><td><img src="../../img/Reference/locationGene_circle_yaxis.png"/></td><td><img src="../../img/Reference/locationGene_circle_zaxis.png"/></td></tr></tbody></table></div>
+<div class="section" id="id14">
+<h5>角度噪声<a class="headerlink" href="#id14" title="Permalink to this heading">¶</a></h5>
+<p>会在粒子的角度上添加指定范围内的噪声。可以用来降低生成角度的单一性。</p>
+</div>
+</div>
+<div class="section" id="id15">
+<h4>球<a class="headerlink" href="#id15" title="Permalink to this heading">¶</a></h4>
+<p>将粒子放在球体内。此时，只需设置半径和X与Y轴的旋转角度。如果勾选了“影响生成角度”，粒子的Y方向将朝向球的表面法向。</p>
+</div>
+<div class="section" id="id16">
+<h4>模型<a class="headerlink" href="#id16" title="Permalink to this heading">¶</a></h4>
+<p>沿着模型的表面放置粒子。如果勾选了“影响生成角度”。粒子的Z方向将会是模型表面的法向。</p>
+<p>有两种类型的模型：文件和程序化模型。</p>
+<p>如果模型是从文件中读取的，选择FBX (.fbx)、metasequoia (.mqo)或Effeksser的模型格式 (.efkmodel)。如果选择的不是.efkmodel，选择的文件同文件夹下将会生成.efkmodel文件。在其他应用程序中播放特效时，这个生成的文件是必需的。</p>
+<p>你还可以读取带有动画的FBX (.fbx)文件。将会播放FBX文件的第一个动画。动画将会按照父粒子的存在时间播放。粒子将会在受到动画影响的模型的表面生成。</p>
+<p>如果你想使用一个程序化模型，在程序化模型面板中新建一个程序化模型，并在此选择它。</p>
+<div class="section" id="id17">
+<h5>生成模式<a class="headerlink" href="#id17" title="Permalink to this heading">¶</a></h5>
+<div class="section" id="id18">
+<h6>随机<a class="headerlink" href="#id18" title="Permalink to this heading">¶</a></h6>
+<p>将粒子随机置于模型的表面。</p>
+<p><img alt="../../_images/locationGeneModelRand.png" src="../../_images/locationGeneModelRand.png" /></p>
+</div>
+<div class="section" id="id19">
+<h6>顶点<a class="headerlink" href="#id19" title="Permalink to this heading">¶</a></h6>
+<p>将粒子按照顺序置于顶点。</p>
+<p><img alt="../../_images/locationGeneModelVertex.png" src="../../_images/locationGeneModelVertex.png" /></p>
+</div>
+<div class="section" id="id20">
+<h6>随机顶点<a class="headerlink" href="#id20" title="Permalink to this heading">¶</a></h6>
+<p>将粒子随机置于模型的顶点。</p>
+<p><img alt="../../_images/locationGeneModelVertexRand.png" src="../../_images/locationGeneModelVertexRand.png" /></p>
+</div>
+<div class="section" id="id21">
+<h6>表面<a class="headerlink" href="#id21" title="Permalink to this heading">¶</a></h6>
+<p>将粒子按照顺序置于模型的面的中心。</p>
+<p><img alt="../../_images/locationGeneModelFace.png" src="../../_images/locationGeneModelFace.png" /></p>
+</div>
+<div class="section" id="id22">
+<h6>随机表面<a class="headerlink" href="#id22" title="Permalink to this heading">¶</a></h6>
+<p>将粒子随机置于模型的面的中心。</p>
+<p><img alt="../../_images/locationGeneModelFaceRand.png" src="../../_images/locationGeneModelFaceRand.png" /></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="locationAbs.html" class="btn btn-neutral float-left" title="力场（Local）" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="killRules.html" class="btn btn-neutral float-right" title="销毁规则" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2019, Effekseer.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

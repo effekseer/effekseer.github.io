@@ -1,0 +1,334 @@
+﻿# 1.6x Change Logs
+
+## 1.62f (Aug. 05, 2022)
+
+### Unity
+
+Fixed a bug where URP renderer ignores a depth with some settings
+
+## 1.62e (June. 17, 2022)
+
+### Common
+
+Fixed a bug where old effekseer projects causes wrong behaviors.
+
+### Unity
+
+Fixed a bug where URP renderer causes an error with Profiler
+
+Fixed a bug where particles cannot stop after calling StopRoot
+
+### WebGL
+
+Fixed a bug where multiple context causes an error
+
+## 1.62d (Apr. 17, 2022)
+
+### Common
+
+Fix a bug where a particle is not spawned when StopRoot is called after Play immediately
+
+### Unity
+
+Reduced a memory allocation
+
+Supported 2021.2
+
+### WebGL
+
+Fixed typo
+
+Fixed a memory leak
+
+### UE4
+
+Fixed a bug where EffekseerUE4 fails to compile on some platforms
+
+Fixed a bug where particles are not shown on some platforms
+
+## 1.62c2 (March 28, 2022)
+
+Change a compile settings on Mac
+
+## 1.62c (March 06, 2022)
+
+Support Notarization on Mac
+
+Fix a bug where normal and tangent are not normalized in a procedural model
+
+Fix a bug where efkpkg importer cannot import a material when a texture file is not found
+
+Fix a SIMD instruction mistakes that regarding integer rounding.
+
+## 1.62b (Jan 31, 2022)
+
+### Common
+
+Fix a bug where behaviors of Normal are wrong in DX9
+
+Fix a bug where point, line and circle in the spawn method is not supported left and right coordinate conversion
+
+Fix a bug where a behavior of particle is wrong with drag and spawn method rotation
+
+### Tool
+
+Fix a bug where Effekseer crashes while importing efkpfg with a model and root directory
+
+### UE4
+
+Fix a bug where it failed to compile in the latest version
+
+### WebGL
+
+default image.crossOrigin was changed into none.
+
+## 1.62a (Jan 05, 2022)
+
+### Common
+
+Fixed a bug that allowed caches of old materials to be loaded.
+
+## 1.62 (Jan 02, 2022)
+
+### Common
+
+Supported a feature to maintain gamma color in a linear color space
+
+Fixed a bug where render batch doesn't work
+
+Fixed a bug where a behavior of drag or follow a parent is wrong with a spawn method
+
+Fixed a bug where a rendering result is wrong with a material and 17 uniforms
+
+Fixed a bug where DirectX9 Runtime failed to render some model
+
+### Tool
+
+Improved efkpkg importer
+
+Made a node select with Enter
+
+Fixed a FCurve Window behavior
+
+Fixed a bug where TextureObject is not imported from efkpkg
+
+Fixed a bug where fbx converter cannot convert some fbx
+
+Fixed a bug where a node is not selected with right clicking
+
+Changed a library to show a dialog into Zenity
+
+### Unity
+
+Separated setting files and added a command to create user settings (Please read documents)
+
+Added a filed to Speed in Emitter Editor
+
+Fixed a bug where a rendering result is wrong with NativeRenderer and minus depth priority
+
+Fixed a bug where a rendering result is wrong with a distortion, Effekseer NativeRenderer and Unity Standard Linear Renderer
+
+### WebGL
+
+Add a feature to load an effect from efkpkg (It requires unzip functions)
+
+## 1.61e (Oct 14, 2021)
+
+### Common
+
+Fixed a bug where the angle in the spawn method was not being applied to the drag of the force field.
+
+Fixed a bug where the force and attraction of force fields sometimes behaved incorrectly when the spawn method was applied.
+
+### Tools
+
+When a comment is added while a node is selected in the Material Editor, the comment now surrounds the node.
+
+Fixed a bug that prevented it from starting on older MacOS.
+
+### Unity
+
+Fixed a bug that caused a warning to appear in URP.
+
+Fixed bug that Unity URP didn't launch on old MacOS.
+
+## 1.61d (Sep 14, 2021)
+
+### Unity.
+
+Fixed a bug that caused Archive to fail on iOS.
+
+## 1.61c (Sep 11, 2021)
+
+### Common
+
+Fixed a bug that force field decay always works when the particle is at (0,0,0).
+
+### Tools.
+
+Fixed a bug that the screen turns black when bloom is enabled and an invalid value is entered.
+
+Fixed a bug where the window size would be wrong the next time it was launched if you quit when it was minimized.
+
+Fixed an issue where the F-curve labeling was wrong.
+
+### Unity
+
+Fixed a bug in UnityRenderer that the drawing does not match Effekseer when material distortion is enabled.
+
+## 1.61b (Aug 24, 2021)
+
+### Common
+
+Fixed memory leak in OpenGL
+
+Fixed a crash when loading a material that fails to compile.
+
+### Tools.
+
+Fixed a crash when clicking the file viewer button when no file is loaded.
+
+## 1.61a (2021/08/03)
+
+### Common
+
+Optimized the rendering speed of rings.
+
+Optimized rendering speed for WebGL.
+
+Fixed a crash when executing StopRoot with culling enabled.
+
+Fixed a bug in which culling behaved strangely in left-handed systems.
+
+Improved behavior of normals and lighting in left-handed systems.
+
+Fixed a bug with UV animation completion in left handed systems.
+
+### Runtime
+
+Changed internal memory handling in DirectX12, Metal, and Vulkan to use more memory, but less when there's not enough buffer.
+
+
+### Tools
+
+Changed to not show custom data unless a material file is selected.
+
+Fixed a bug that prevented some files from being displayed at runtime before 1.5 after saving them.
+
+## 1.60e
+
+### Common
+
+Fixed a bug that could cause crashes when playing effects in some 32bit builds.
+
+Fixed a bug that caused strange behavior when using two-element custom data as a material in some graphics backends.
+
+Fixed a bug that caused custom data to behave strangely in the DirectX9 environment.
+
+Fixed a bug that caused compile failure in some Linux environments.
+
+### WebGL
+
+Improved three.js to work without state restoration.
+
+Added a sample without state restoration.
+
+Fixed a bug where TypeScript samples could not be executed.
+
+Changed the version of three.js used in the sample to the latest version.
+
+## 1.60d
+
+### Common
+
+Fixed a bug in which vertex colors R and G were swapped in DirectX9 models.
+
+Fixed a bug in OpenGL where some states were not being restored.
+
+### Tools
+
+Fixed a bug that prevented recording from working properly on MacOS.
+
+Fixed a bug where the wire display in Lighting didn't look right.
+
+Fixed a bug in F-Curve that caused it to behave strangely when the points were swapped.
+
+Fixed a bug where Bloom parameters were displayed incorrectly.
+
+Added Spanish language.
+
+### Unity
+
+Fixed a bug where particles generated in the first frame were not displayed when there was a force field resistance.
+
+Fixed a bug where different files could be loaded if they had the same relative path
+
+Fixed a bug that caused a memory leak when using sound.
+
+## 1.60c2
+
+### Runtime
+
+Fixed a bug where an culling is flipped with a reversed depth except DirectX11
+
+## 1.60c
+
+### Common
+
+Fixed a bug that procedural models are not displayed in 32bit environment.
+Fixed a bug that soft particles were not behaving properly in left handed system.
+
+### Cocos2d-x
+
+Changed the maximum number of sprites.
+Improved memory handling in Metal.
+
+### Runtime
+
+Fixed and removed some samples.
+Improved memory handling in Metal
+
+## 1.60b
+
+### Common
+
+Improved error handling in OpenGL.
+
+Fixed a bug where the target position was reversed when using the left-hand coordinate system.
+
+Fixed a bug in which distortion was displayed incorrectly when using OpenGL and DirectX9 with advanced renderer.
+
+Fixed a bug where colors would flicker in rare cases.
+
+### Tools
+
+Improved behavior of wireframe display.
+
+Fixed a bug that caused some effects to fail to import.
+
+Fixed a bug that caused a crash when looping with F-curve and only one keypoint was selected.
+
+### Unity
+
+Disabled OpenGL on latest Macs as it no longer compiles with iOS.
+
+Fixed a bug where the effect scale node were not supported.
+
+Improved display of effects in scene view
+
+Fixed a bug that prevented Effekseer from being used anywhere but under Assets
+
+Fixed a bug in the Unity renderer where models with materials applied would display incorrectly.
+
+### DX library
+
+Fixed to compile with different minor versions of compilers.
+
+### Runtime
+
+Fixed a bug that the projection matrix of OpenGL sample was DirectX projection matrix.
+
+
+## 1.60
+
+[New Features](160)

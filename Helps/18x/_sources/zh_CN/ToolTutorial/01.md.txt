@@ -1,0 +1,221 @@
+﻿# 01.查看并使用示例！
+
+## 概要
+
+在本章中，我们将运行Effekseer并查看示例，以解释它的基础操作。然后我们将讲解如何在其他应用（例如游戏）当中使用Effekseer。
+
+<div align="center">
+<img src="../../img/Tutorial/02_completed.gif">
+<p>我们将在本章制作的特效。</p>
+</div>
+
+## 启动Effekseer
+
+### 启动方法（Windows）
+
+Effekseer位于“Tool/Effekseer.exe”。打开该文件夹并双击可执行文件可启动程序。
+
+<div align="center">
+<img src="../../img/Tutorial/01_icon.png">
+<p>
+Effekseer的图标
+</p>
+</div>
+
+### 如果Effekseer启动失败（Windows）
+
+#### 操作系统太旧了
+
+Effekseer可以运行于Windows 7 SP1或之后的版本。
+
+#### 未安装D3DCompiler_47.dll
+
+可通过以下链接下载。
+
+<ul>
+<li><a href="https://support.microsoft.com/en-us/help/4020302/the-net-framework-4-7-installation-is-blocked-on-windows-7-windows-ser" target="_top">D3DCompiler_47.dll</a></li>
+</ul>
+
+#### 直接在.zip文件中启动Effekseer
+
+在运行前需要解压文件。右键.zip文件并在弹出的菜单栏中选择解压选项。
+
+#### Effekseer仍然无法启动
+
+请在官网联系我们。
+
+### 启动方法（Mac）
+
+Effekseer位于“Effekseer.dmg”。将Effekseer移动到其他文件夹，例如Applications，并双击可执行文件以启动程序。
+
+<div align="center">
+<img src="../../img/Tutorial/01_icon_mac.png">
+</div>
+
+### 如果Effekseer启动失败（Windows）
+
+#### 操作系统太旧了
+
+Effekseer可以运行于macOS Sierra或之后的版本。
+
+#### 直接在dmg中启动Effekseer
+
+将Effekseer移动到其他文件夹。
+
+#### Effekseer仍然无法启动
+
+请在官方网站联系我们。
+
+### 成功启动
+
+如果成功启动，将显示以下界面。
+
+<div align="center">
+<img src="../../img/Tutorial/01_all_en.png">
+<p>
+Effekseer的开始界面
+</p>
+</div>
+
+现在，让我们打开一个示例。
+
+## 打开示例~基础操作
+
+启动后你将看到一个什么都没有显示的3D屏幕。请点击位于左下方的播放按钮。
+
+<div align="center">
+<img src="../../img/Tutorial/01_play.png">
+<p>
+播放按钮
+</p>
+</div>
+
+按下播放按钮后，屏幕中央会出现一个白色的方块。这个白色的方块就是构成特效的<b>粒子</b>。一个特效可以由许多<b>粒子</b>组成。因为目前还未进行任何设置，所以只有一个白色正方形粒子。你可以在这个基础上制作这个软件能够制作的所有粒子特效，但这对于新手来说很困难。所以本章将不做任何编辑。
+
+<div align="center">
+<img src="../../img/Tutorial/01_square.png">
+<p>
+方形的粒子
+</p>
+</div>
+
+只用白色的方块制作粒子有些无趣。所以打开一个示例文件。请从下面的链接中下载并解压示例文件。
+
+<div align="center">
+<a href = "../../Sample/01_Sample.zip">下载</a>
+</div>
+
+然后你会发现一个叫做'Sample.efkefc'的文件，你可以从菜单栏中选择'文件->打开'来打开该文件，或者将该文件拖放到3D屏幕上。打开文件后，播放特效，你会看到以下画面。
+
+<div align="center">
+<img src="../../img/Tutorial/01_sample.png">
+<p>
+示例项目
+</p>
+</div>
+
+除了这个示例外，官网上还有150多个免费提供的示例。更多信息见下面的链接。
+
+<div align="center">
+<a href = "https://effekseer.github.io/jp/contribute.html">官方网站</a>
+</div>
+
+直到现在我们都在看向一个固定的方向，你可以试着移动视角。下表中总结了操作方法。所有操作都可以用鼠标进行。
+
+<div align="center">
+<table border="1">
+<tr>
+<td>旋转</td>
+<td>按住鼠标右键并移动鼠标。</td>
+</tr>
+<tr>
+<td>平移</td>
+<td>按下鼠标中键并移动鼠标，或者按下鼠标右键和Shift键并移动鼠标。</td>
+</tr>
+<tr>
+<td>缩放</td>
+<td>滑动鼠标滚轮，或者按下鼠标右键和Ctrl键并上下移动鼠标。</td>
+</tr>
+</table>
+</div>
+
+使用鼠标，从不同方向看向示例粒子。
+
+<div align="center">
+<img src="../../img/Tutorial/01_view.png">
+<p>
+从新视角观察的示例
+</p>
+</div>
+
+为了使编辑特效更容易，特效默认循环播放。你可以在左下角的文本框中设置循环范围（如下图）。Effekseer每帧为<b>1/60秒</b>。因此，默认范围指0到2秒。
+
+<div align="center">
+<img src="../../img/Tutorial/01_time_en.png">
+<p>
+循环范围
+</p>
+</div>
+
+
+## 在外部程序中使用
+
+如果你只关注怎么创建特效，你不需要阅读本节。但是，你所创建的特效通常要导出给其他应用程序使用。本节介绍了在外部应用程序中使用Effekseer创建的特效的两种不同方法。
+
+### 录像
+
+Effekseer可以按一定的时间间隔输出精灵表单（Sprite Sheet）或gif动画。从菜单栏中选择“窗口->录像”来打开录像窗口。在这里你可以设置录像的参数，例如图像的大小和录像的帧率。
+
+<div align="center">
+<img src="../../img/Tutorial/01_record_en.png">
+<p>
+录像窗口
+</p>
+</div>
+
+Effekseer可以输出精灵表单或视频文件，其中特效的图片以固定的时间间隔排列。精灵表单是一张由顺序排列的图像序列组成的图片。
+
+在设置完参数并点击“录像”键后，会出现一个对话框，要求设置录像的存储位置。在对话框中点击“保存”，就可以把录像的结果保存到设置位置。
+
+因为输出的精灵表单只是一张图片，所以容易地在其他应用程序中使用。视频文件也可以用于视频编辑软件，如AfterEffects。
+
+<div align="center">
+<img src="../../img/Tutorial/01_record_sprite.png">
+<p>
+精灵表单的示例
+</p>
+</div>
+
+### 用于Unity、虚幻4等
+
+Effekseer的efkefc格式的特效文件可以被Unity、虚幻4和Cocos2d-x等游戏引擎读取。
+
+也可以通过在专有游戏引擎中集成Effekseer运行时来加载（详细信息请咨询开发者）。
+
+<div align="center">
+<img src="../../img/Tutorial/01_unity.png">
+<p>
+用于Unity的示例
+</p>
+</div>
+
+## 关于示例特效
+
+在Effekseer官方网站上有许多示例特效。它们是免费的，而且没有使用限制。也就是说，你可以直接用于自己的游戏，或者以之为基础制作自己的特效。这些特效可以用于大多数地方，仅仅通过改变颜色，你就可以为一个游戏提供足够的特效。
+
+<div align="center">
+<img src="../../img/Tutorial/01_samples_01.gif">
+<img src="../../img/Tutorial/01_samples_02.gif">
+<img src="../../img/Tutorial/01_samples_03.gif">
+<p>
+示例合集
+</p>
+</div>
+
+希望你能标注你使用的示例特效的作者的名字，但这并非强制要求。
+
+你也可以把它们作为参考，制作自己的特效。一开始，你可能觉得它们太复杂，难以理解。但是在接下来的章节中，我们将慢慢解释如何制作特效。
+
+## 总结
+
+本章介绍了Effekseer的基础操作，以及如何在外部应用程序中播放特效。下一章将介绍如何自己制作特效。

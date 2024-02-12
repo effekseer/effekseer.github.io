@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EffekseerProject>
+  <Root>
+    <Name>Root</Name>
+    <Children>
+      <Node>
+        <CommonValues>
+          <Life>
+            <Center>60</Center>
+            <Max>60</Max>
+            <Min>60</Min>
+          </Life>
+        </CommonValues>
+        <RendererCommonValues>
+          <FadeInType>1</FadeInType>
+          <FadeIn>
+            <Frame>15</Frame>
+          </FadeIn>
+          <FadeOutType>1</FadeOutType>
+          <FadeOut>
+            <Frame>15</Frame>
+          </FadeOut>
+        </RendererCommonValues>
+        <DrawingValues>
+          <Sprite>
+            <ColorAll_Random>
+              <R>
+                <Center>127</Center>
+                <Min>0</Min>
+              </R>
+              <G>
+                <Center>127</Center>
+                <Min>0</Min>
+              </G>
+              <B>
+                <Center>127</Center>
+                <Min>0</Min>
+              </B>
+              <DrawnAs>0</DrawnAs>
+            </ColorAll_Random>
+          </Sprite>
+        </DrawingValues>
+        <Name>Node</Name>
+        <Children />
+      </Node>
+    </Children>
+  </Root>
+  <ToolVersion>1.22</ToolVersion>
+  <Version>3</Version>
+  <StartFrame>0</StartFrame>
+  <EndFrame>120</EndFrame>
+  <IsLoop>True</IsLoop>
+</EffekseerProject>

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>07. 使用父子关系实现复杂移动！ &mdash; Effekseer Help  ドキュメント</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/js/three.min.js"></script>
+        <script src="../../_static/js/effekseer.min.js"></script>
+        <script src="../../_static/js/iframe.js"></script>
+        <script src="../../_static/js/OrbitControls.js"></script>
+        <script src="../../_static/translations.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="検索" href="../../search.html" />
+    <link rel="next" title="08. 通过设置生成方法排列粒子!" href="08.html" />
+    <link rel="prev" title="06. 创建环形粒子!" href="06.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> Effekseer Help
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../ja/index.html">Effekseer Help 日本語</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../en/index.html">Effekseer Help (English)</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Effekseer Help (中文)</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../overview.html">概要</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">教程</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="index.html#id2">基础</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="01.html">01.查看并使用示例！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="02.html">02.让粒子散射开！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="03.html">03. 显示图片！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="04.html">04. 旋转和缩放！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="05.html">05. 制作一个斩击命中特效！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="06.html">06. 创建环形粒子!</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">07. 使用父子关系实现复杂移动！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="08.html">08. 通过设置生成方法排列粒子!</a></li>
+<li class="toctree-l4"><a class="reference internal" href="09.html">09.制作枪口焰！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="10.html">10.丝带和轨迹</a></li>
+<li class="toctree-l4"><a class="reference internal" href="11.html">11. 使用3D模型！！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="12.html">12. 用F曲线表示复杂的运动</a></li>
+<li class="toctree-l4"><a class="reference internal" href="13.html">13. 扭曲背景！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="14.html">14. 设置细节层级（LOD）</a></li>
+<li class="toctree-l4"><a class="reference internal" href="15.html">15.通过触发器改变特效！</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id3">材质</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolReference/index.html">工具参考</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../MaterialToolReference/index.html">材质参考</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolTips/01.html">TIPS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq.html">常见问题解答</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ReleaseNotes/index.html">版本说明</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Effekseer Help</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../index.html">Effekseer Help (中文)</a> &raquo;</li>
+          <li><a href="index.html">教程</a> &raquo;</li>
+      <li>07. 使用父子关系实现复杂移动！</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="id1">
+<h1>07. 使用父子关系实现复杂移动！<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h1>
+<div class="section" id="id2">
+<h2>概要<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
+<p>在本章中，你将使用节点的父子关系创建复杂的特效。这一章多少有些难度。请确保你能很好地理解它。</p>
+<div align="center" class='col-md-6'>
+<iframe src='../../Sample/viewer_zh_CN.html#07_02_Sample/effect1.efk'></iframe>
+<p>本章制作的特效1</p>
+</div><div align="center" class='col-md-6'>
+<iframe src='../../Sample/viewer_zh_CN.html#07_02_Sample/effect2.efk'></iframe>
+<p>本章制作的特效2</p>
+</div>
+&nbsp;</div>
+<div class="section" id="id3">
+<h2>父子关系<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h2>
+<p>在Effekseer中，节点有父子关系。父子关系让父节点以某些方式影响子节点。</p>
+<p>例如，假设你有节点A和节点B。 节点A是节点B的父节点。在这个例子中，节点B产生的粒子会围绕节点A的粒子生成、移动、旋转和缩放。这很难用语言来理解，所以下面播放了一段视频。</p>
+<p>节点A的粒子为红色，节点B的粒子为绿色。你可以看到，粒子B围绕着粒子A旋转，而粒子A自身在移动和旋转。</p>
+<div align="center">
+<img src="../../img/Tutorial/07_parent.gif">
+<p>父子关系</p>
+</div><p>父子关系可以用来创造复杂的特效。例如，你可以让子粒子从父粒子中发射出来。在下面的例子中，父节点是正在移动的拉长的粒子，而子节点是从父粒子的尖端发出的大量雪粒子。</p>
+<div align="center">
+<img src="../../img/Tutorial/07_sample.gif">
+<p>示例</p>
+</div><p>你可以通过下面的链接下载为本章内容预制的特效素材。</p>
+<div align="center">
+<p><a href = "../../Sample/07_01_Sample.zip">下载</a></p>
+</div></div>
+<div class="section" id="id4">
+<h2>龙卷风特效<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h2>
+<p>使用父子关系制作一个龙卷风特效。</p>
+<p>打开文件effect1.efkefc。</p>
+<p>这个特效由控制旋转的父粒子和绘制图像的子粒子组成。按顺序创建父节点和子节点。</p>
+<div class="section" id="id5">
+<h3>父节点<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h3>
+<p>父节点只需要旋转。参数已经提前设置好了。</p>
+<div align="center">
+<img src="../../img/Tutorial/07_effect1_rotate1.gif">
+<p>旋转</p>
+</div></div>
+<div class="section" id="id6">
+<h3>子节点<a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h3>
+<p>添加一个子节点。左键单击选中父节点。然后右键单击以显示菜单。从菜单中，选择添加节点。</p>
+<div align="center">
+<img src="../../img/Tutorial/07_addnode_en.png">
+<p>添加节点</p>
+</div><p>左键单击选择刚添加的节点。为子节点输入参数，使粒子向上移动。</p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th align="left">窗口</th>
+<th align="left">参数</th>
+<th align="left">值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">位置</td>
+<td align="left">位置方法</td>
+<td align="left">位置・速度・加速度</td>
+</tr>
+<tr>
+<td align="left">位置</td>
+<td align="left">位置（平均）</td>
+<td align="left">x=2, y=0, z= 0</td>
+</tr>
+<tr>
+<td align="left">位置</td>
+<td align="left">速度（平均）</td>
+<td align="left">x=0, y=0.5, z= 0</td>
+</tr>
+</tbody>
+</table><p>你可以看到，子粒子跟随父粒子的旋转而移动。</p>
+<div align="center">
+<img src="../../img/Tutorial/07_effect1_rotate2.gif">
+<p>旋转</p>
+</div><p>此外，可以输入以下参数来改善外观。</p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th align="left">窗口</th>
+<th align="left">参数</th>
+<th align="left">值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">基础设置</td>
+<td align="left">名称</td>
+<td align="left">Child</td>
+</tr>
+<tr>
+<td align="left">基础设置</td>
+<td align="left">生成数量</td>
+<td align="left">正无穷</td>
+</tr>
+<tr>
+<td align="left">位置</td>
+<td align="left">位置（平均）</td>
+<td align="left">x=0, y=0, z= 0</td>
+</tr>
+<tr>
+<td align="left">位置</td>
+<td align="left">位置（振幅）</td>
+<td align="left">x=3, y=3, z= 3</td>
+</tr>
+<tr>
+<td align="left">基础渲染设置</td>
+<td align="left">纹理</td>
+<td align="left">Partcle1.png</td>
+</tr>
+<tr>
+<td align="left">基础渲染设置</td>
+<td align="left">混合方法</td>
+<td align="left">加法</td>
+</tr>
+<tr>
+<td align="left">渲染设置</td>
+<td align="left">整体颜色</td>
+<td align="left">随机</td>
+</tr>
+<tr>
+<td align="left">渲染设置</td>
+<td align="left">整体颜色（最小）</td>
+<td align="left">255,177,177,255</td>
+</tr>
+<tr>
+<td align="left">渲染设置</td>
+<td align="left">整体颜色（最大）</td>
+<td align="left">255,255,255,255</td>
+</tr>
+</tbody>
+</table><p>特效更好看了。</p>
+<div align="center">
+<img src="../../img/Tutorial/07_effect1.gif">
+<p>完成的特效</p>
+</div></div>
+</div>
+<div class="section" id="id7">
+<h2>流星特效<a class="headerlink" href="#id7" title="Permalink to this heading">¶</a></h2>
+<p>使用父子关系制作一个流星特效。</p>
+<p>打开effect2.efkefc。</p>
+<p>在Effekseer中，父子关系可以在子粒子生成的瞬间切断。这意味着虽然子粒子是围绕着父粒子创建的，但父粒子之后的移动或旋转不会影响到子粒子。</p>
+<p>你可以用这个功能制作流星特效。</p>
+<div class="section" id="id8">
+<h3>父节点<a class="headerlink" href="#id8" title="Permalink to this heading">¶</a></h3>
+<p>父节点只需要移动。参数已经提前设置好了。</p>
+</div>
+<div class="section" id="id9">
+<h3>子节点<a class="headerlink" href="#id9" title="Permalink to this heading">¶</a></h3>
+<p>周围散射的粒子的参数已经提前设置好了。</p>
+<p>但是，参数“继承位置”、“继承旋转”和“继承缩放”被设置为“始终”。“始终”表示子粒子在被创建之后将继续受到父粒子的影响。换句话说，子粒子会随着父粒子的移动而移动。</p>
+<div align="center">
+<img src="../../img/Tutorial/07_effect2_always.gif">
+<p>始终</p>
+</div><p>在“基础设置”窗口中，将“继承位置”、“继承旋转”和“继承缩放”参数改为“仅生成时”。你会看到，当父粒子移动时，子粒子将不会跟随父粒子移动。</p>
+<div align="center">
+<img src="../../img/Tutorial/07_effect2.gif">
+<p>仅生成时</p>
+</div><p>最后，你可以通过下面的链接下载本章中制作的特效。</p>
+<div align="center">
+<a href = "../../Sample/07_02_Sample.zip">下载</a>
+</div></div>
+</div>
+<div class="section" id="id10">
+<h2>总结<a class="headerlink" href="#id10" title="Permalink to this heading">¶</a></h2>
+<p>在本章中，你使用父子关系创建了复杂的效果。在下一章中，你将更改生成方法，把粒子放在圆形或直线上。</p>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="06.html" class="btn btn-neutral float-left" title="06. 创建环形粒子!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="08.html" class="btn btn-neutral float-right" title="08. 通过设置生成方法排列粒子!" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2019, Effekseer.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

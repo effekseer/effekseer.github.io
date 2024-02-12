@@ -1,0 +1,92 @@
+﻿# 1.7x Change Logs
+
+## 1.70f (Jul. 15, 2023)
+
+### UnrealEngine
+
+Fixed a bug that Reimport was not available in 5.2.
+
+## 1.70e (June. 03, 2023)
+
+### Editor
+ 
+Fixed a bug where FCurve Crashes.
+
+Added a feature to copy fcurve from menu.
+
+### C++
+
+Refactor codes
+
+Fixed a bug where frame is specified in SetTime
+
+### Unity
+
+Supported Unity 2022.3
+
+## 1.70d (Apr. 21, 2023)
+
+### Unity
+
+Fixed a bug that could cause memory leaks.
+
+## 1.70c (Jan. 04, 2023)
+
+### Unity
+
+Fixed a bug where Effekseer cannot load a material which is created with 1.7 on UnityRenderer
+
+Fixed a bug where a distorted color is white on NativeRenderer with URP
+
+## 1.70b (Dec. 24, 2022)
+
+### Common
+
+Fixed a bug where a single easing behavior is wrong
+
+### Tool
+
+Fixed a bug where Effekseer crashes when a network config file is broken
+
+### Runtime
+
+Fixed a bug where a sound feature is called from an another thread
+
+### Unity
+
+Fixed a bug where the plugin sometimes freezes with a sound feature
+
+Fixed a bug where a distortion is invalid on URP except VR
+
+Fixed a bug where Unity 2021.3 causes undefined symbol error
+
+Fixed a bug where the depth wasn't passed into SetRenderTarget correctly when using Unity 2022
+
+## 1.70a (Nov. 30, 2022)
+
+### Common
+
+Fixed a bug where rotation with axis enlarges particles
+Fixed a bug where a normal of procedural model is a bit wrong
+
+### Tool
+
+Fixed a bug where a modify button is still shown when an efkmodel is loaded
+
+### Runtime
+
+Removed VAO from a shader for multi threading in OpenGL
+Added a code to verify generating thread in VAO in OpenGL
+
+### UE
+
+Supported Unreal Engine 5.1
+Fixed many bugs
+
+### Unity
+
+Fixed a bug where a model sometimes be unlinked
+
+## 1.70 (Sep. 20, 2022)
+
+[New Features](170)

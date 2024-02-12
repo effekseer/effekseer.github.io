@@ -1,0 +1,17 @@
+## 1.80 New Features
+
+## Common
+
+### Collisions
+
+Added the feature to make particles and surfaces collide.
+
+### Track, Ribbon
+
+Added the feature to set UVs that repeat every specified length.
+
+### Rotation
+
+Added the feature to rotate particles in the direction of movement.
+
+

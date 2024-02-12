@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>12. 用F曲线表示复杂的运动 &mdash; Effekseer Help  ドキュメント</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/js/three.min.js"></script>
+        <script src="../../_static/js/effekseer.min.js"></script>
+        <script src="../../_static/js/iframe.js"></script>
+        <script src="../../_static/js/OrbitControls.js"></script>
+        <script src="../../_static/translations.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="検索" href="../../search.html" />
+    <link rel="next" title="13. 扭曲背景！" href="13.html" />
+    <link rel="prev" title="11. 使用3D模型！！" href="11.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> Effekseer Help
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../ja/index.html">Effekseer Help 日本語</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../en/index.html">Effekseer Help (English)</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Effekseer Help (中文)</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../overview.html">概要</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">教程</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="index.html#id2">基础</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="01.html">01.查看并使用示例！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="02.html">02.让粒子散射开！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="03.html">03. 显示图片！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="04.html">04. 旋转和缩放！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="05.html">05. 制作一个斩击命中特效！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="06.html">06. 创建环形粒子!</a></li>
+<li class="toctree-l4"><a class="reference internal" href="07.html">07. 使用父子关系实现复杂移动！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="08.html">08. 通过设置生成方法排列粒子!</a></li>
+<li class="toctree-l4"><a class="reference internal" href="09.html">09.制作枪口焰！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="10.html">10.丝带和轨迹</a></li>
+<li class="toctree-l4"><a class="reference internal" href="11.html">11. 使用3D模型！！</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">12. 用F曲线表示复杂的运动</a></li>
+<li class="toctree-l4"><a class="reference internal" href="13.html">13. 扭曲背景！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="14.html">14. 设置细节层级（LOD）</a></li>
+<li class="toctree-l4"><a class="reference internal" href="15.html">15.通过触发器改变特效！</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id3">材质</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolReference/index.html">工具参考</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../MaterialToolReference/index.html">材质参考</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolTips/01.html">TIPS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq.html">常见问题解答</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ReleaseNotes/index.html">版本说明</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Effekseer Help</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../index.html">Effekseer Help (中文)</a> &raquo;</li>
+          <li><a href="index.html">教程</a> &raquo;</li>
+      <li>12. 用F曲线表示复杂的运动</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="f">
+<h1>12. 用F曲线表示复杂的运动<a class="headerlink" href="#f" title="Permalink to this heading">¶</a></h1>
+<div class="section" id="id1">
+<h2>概要<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h2>
+<p>在本章中，我们使用F曲线来表示复杂的运动。我们在过去已经介绍了各种运动方式。很多情况下，这些方法就足够了。然而，有时这还不够。因此，你可以使用F曲线让它们自由变化到你需要的任何数值。</p>
+<div align="center">
+<iframe src='../../Sample/viewer_zh_CN.html#12_02_Sample/effect1.efk'></iframe>
+<p>本章制作的特效</p>
+</div><p>但是，本章将不制作具体的特效。上图中的特效可以用本章和之前的章节中讲解的知识制作。</p>
+</div>
+<div class="section" id="id2">
+<h2>F曲线<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
+<p>在Effekseer中，可以通过设置F曲线来控制一些参数，例如位置、角度、缩放、颜色等。</p>
+<p>让我们打开F曲线窗口。</p>
+<p>从窗口菜单中选择F曲线。 然后会出现编辑F曲线的窗口。</p>
+<div align="center">
+<img src="../../img/Tutorial/12/init_en.png" width="80%">
+</div><p>但是，并没有显示要编辑的F曲线。</p>
+<p>在<code class="docutils literal notranslate"><span class="pre">位置</span></code>窗口中选择F曲线。</p>
+<p>然后，F曲线的窗口的左侧就会显示一个可编辑的F曲线的标签。</p>
+<p>左键单击标签，F曲线就会显示出来。</p>
+<div align="center">
+<img src="../../img/Tutorial/12/init_en.png" width="80%">
+</div><p>要向F曲线添加控制点，请双击F曲线。让我们添加两个控制点。</p>
+<div align="center">
+<img src="../../img/Tutorial/12/two_points_en.png" width="80%">
+</div><p>控制点可以通过左键单击来选择，并通过拖动控制点来移动。试着移动控制点，使其数值发生变化。</p>
+<div align="center">
+<img src="../../img/Tutorial/12/add_points_en.png" width="80%">
+</div><p>如果你播放特效，你会看到粒子是按照F曲线来移动的。</p>
+<div align="center">
+<img src="../../img/Tutorial/12/curve1.gif">
+</div><p>曲线可以自由控制。选择一个控制点，点击左上角的<code class="docutils literal notranslate"><span class="pre">展开锚点</span></code>。然后你会看到用于控制曲线的锚点。移动锚点来改变曲线。</p>
+<div align="center">
+<img src="../../img/Tutorial/12/curve_en.png" width="80%">
+</div><div align="center">
+<img src="../../img/Tutorial/12/curve2.gif">
+</div><p>如果选择相邻的<code class="docutils literal notranslate"><span class="pre">收缩锚点</span></code>，会导致数值突然变化。</p>
+<div align="center">
+<img src="../../img/Tutorial/12/add_points_en.png" width="80%">
+</div><p>要删除一个控制点，请双击它或按Delete键。</p>
+<p>你可以将这些方法组合起来表示复杂的运动。</p>
+<p>除了位置之外，也可以控制角度和颜色。</p>
+<div class="section" id="id3">
+<h3>采样<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h3>
+<p>Effekseer实际上使用了F曲线的近似值。因此，它可能无法应对数值的突然变化。在这种情况下，降低<code class="docutils literal notranslate"><span class="pre">采样</span></code>。这将使您能够应对数值的突然变化。</p>
+</div>
+<div class="section" id="id4">
+<h3>有用的操作<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h3>
+<div class="section" id="id5">
+<h4>多选<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h4>
+<p>通过Shift和左键点击F曲线标签，可以同时编辑多条F曲线。</p>
+<p>也可以通过Shift和左键点击选择多个控制点。也可以同时移动多个控制点。</p>
+<div align="center">
+<img src="../../img/Tutorial/12/multi_ja.png" width="80%">
+</div></div>
+<div class="section" id="id6">
+<h4>全部显示<a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h4>
+<p>双击F曲线的标签可以显示F曲线的整体。</p>
+<div align="center">
+<img src="../../img/Tutorial/12/show_entire.png" width="80%">
+</div></div>
+<div class="section" id="id7">
+<h4>关于时间线（1.5之后）<a class="headerlink" href="#id7" title="Permalink to this heading">¶</a></h4>
+<p>从Effekseer 1.5开始，可以选择时间线模式。你可以将其设置为特效的生命周期的百分比或直接设置为时间。更多信息请看参考。</p>
+<p>你可以利用这些知识来制作复杂的特效。</p>
+<div align="center">
+<img src="../../img/Tutorial/12/effect1.gif">
+<p>特效</p>
+</div><p>最后，你可以通过下面的链接下载本章中制作的特效。</p>
+<div align="center">
+<a href = "../../Sample/12_02_Sample.zip">下载</a>
+</div></div>
+</div>
+</div>
+<div class="section" id="id8">
+<h2>总结<a class="headerlink" href="#id8" title="Permalink to this heading">¶</a></h2>
+<p>本章解释了F曲线，你可以用它制作复杂的特效。</p>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="11.html" class="btn btn-neutral float-left" title="11. 使用3D模型！！" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="13.html" class="btn btn-neutral float-right" title="13. 扭曲背景！" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2019, Effekseer.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

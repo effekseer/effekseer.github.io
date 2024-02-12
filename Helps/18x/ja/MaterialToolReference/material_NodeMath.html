@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="ja" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>マテリアルノード(計算) &mdash; Effekseer Help  ドキュメント</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/js/three.min.js"></script>
+        <script src="../../_static/js/effekseer.min.js"></script>
+        <script src="../../_static/js/iframe.js"></script>
+        <script src="../../_static/js/OrbitControls.js"></script>
+        <script src="../../_static/translations.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="検索" href="../../search.html" />
+    <link rel="next" title="マテリアルノード(画像)" href="material_NodeImage.html" />
+    <link rel="prev" title="マテリアル・リファレンス" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> Effekseer Help
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Effekseer Help 日本語</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../overview.html">概要</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolTutorial/index.html">チュートリアル</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolReference/index.html">ツール・リファレンス</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">マテリアル・リファレンス</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="index.html#id2">概要</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id3">詳細な操作方法</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id9">ライティングについて</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id10">入出力の値の種類について</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="index.html#id11">ノード</a><ul class="current">
+<li class="toctree-l4 current"><a class="current reference internal" href="#">マテリアルノード(計算)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="material_NodeImage.html">マテリアルノード(画像)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="material_NodeModel.html">マテリアルノード(モデル)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="material_NodeConstant.html">マテリアルノード(定数)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="material_NodeAdvanced.html">マテリアルノード(応用)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="material_NodeGradient.html">マテリアルノード(グラディエント)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="material_NodeNoise.html">マテリアルノード(ノイズ)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="material_NodeEnvironment.html">マテリアルノード(環境)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="index.html#id12">出力</a></li>
+<li class="toctree-l4"><a class="reference internal" href="index.html#id13">フェード(深度)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="index.html#comment">コメント (Comment)</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id14">計算の挙動の詳細</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolTips/01.html">TIPS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq.html">FAQ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ReleaseNotes/index.html">リリースノート</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../en/index.html">Effekseer Help (English)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../zh_CN/index.html">Effekseer Help (中文)</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Effekseer Help</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../index.html">Effekseer Help 日本語</a> &raquo;</li>
+          <li><a href="index.html">マテリアル・リファレンス</a> &raquo;</li>
+      <li>マテリアルノード(計算)</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="id1">
+<h1>マテリアルノード(計算)<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h1>
+<div class="section" id="id2">
+<h2>概要<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
+</div>
+<div class="section" id="id3">
+<h2>ノード一覧<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h2>
+<div class="section" id="id4">
+<h3>足し算<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h3>
+<p>V1とV2を足した結果を出力します。
+入力が接続されてない場合、プロパティの値を使用します。</p>
+</div>
+<div class="section" id="id5">
+<h3>引き算<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h3>
+<p>V1からV2を引いた結果を出力します。
+入力が接続されてない場合、プロパティの値を使用します。</p>
+</div>
+<div class="section" id="id6">
+<h3>掛け算<a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h3>
+<p>V1とV2を掛けた結果を出力します。
+入力が接続されてない場合、プロパティの値を使用します。</p>
+</div>
+<div class="section" id="id7">
+<h3>割り算<a class="headerlink" href="#id7" title="Permalink to this heading">¶</a></h3>
+<p>V1をV2で割った結果を出力します。
+入力が接続されてない場合、プロパティの値を使用します。</p>
+</div>
+<div class="section" id="id8">
+<h3>余り<a class="headerlink" href="#id8" title="Permalink to this heading">¶</a></h3>
+<p>V1をV2で割った余りを出力します。
+入力が接続されてない場合、プロパティの値を使用します。</p>
+</div>
+<div class="section" id="id9">
+<h3>ステップ<a class="headerlink" href="#id9" title="Permalink to this heading">¶</a></h3>
+<p>Vに入力された値がEdgeより大きい場合、1を、小さい場合、0を出力します。</p>
+</div>
+<div class="section" id="id10">
+<h3>切り上げ<a class="headerlink" href="#id10" title="Permalink to this heading">¶</a></h3>
+<p>Vを切り上げた結果を出力します。</p>
+</div>
+<div class="section" id="id11">
+<h3>切り下げ<a class="headerlink" href="#id11" title="Permalink to this heading">¶</a></h3>
+<p>Vを切り下げた値を出力します。</p>
+</div>
+<div class="section" id="id12">
+<h3>小数部<a class="headerlink" href="#id12" title="Permalink to this heading">¶</a></h3>
+<p>Vの少数部を出力します。</p>
+<p>例えば、1.15を入力した場合、0.15を出力します。</p>
+</div>
+<div class="section" id="id13">
+<h3>最大<a class="headerlink" href="#id13" title="Permalink to this heading">¶</a></h3>
+<p>V1とV2で大きい値を出力します。</p>
+</div>
+<div class="section" id="id14">
+<h3>最小<a class="headerlink" href="#id14" title="Permalink to this heading">¶</a></h3>
+<p>V1とV2で小さい値を出力します。</p>
+</div>
+<div class="section" id="id15">
+<h3>乗数<a class="headerlink" href="#id15" title="Permalink to this heading">¶</a></h3>
+<p>BaseをExp乗した値を出力します。</p>
+</div>
+<div class="section" id="id16">
+<h3>ルート<a class="headerlink" href="#id16" title="Permalink to this heading">¶</a></h3>
+<p>Vのルートを出力します。</p>
+</div>
+<div class="section" id="id17">
+<h3>クランプ<a class="headerlink" href="#id17" title="Permalink to this heading">¶</a></h3>
+<p>VをMinとMaxの間に収めた値を出力します。</p>
+</div>
+<div class="section" id="id18">
+<h3>内積<a class="headerlink" href="#id18" title="Permalink to this heading">¶</a></h3>
+<p>V1とV2の内積を出力します。</p>
+</div>
+<div class="section" id="id19">
+<h3>外積<a class="headerlink" href="#id19" title="Permalink to this heading">¶</a></h3>
+<p>V1とV2の外積を出力します。</p>
+</div>
+<div class="section" id="id20">
+<h3>正規化<a class="headerlink" href="#id20" title="Permalink to this heading">¶</a></h3>
+<p>Vを正規化した値を出力します。
+入力された数値の長さが1になるようにします。</p>
+</div>
+<div class="section" id="id21">
+<h3>線形補間<a class="headerlink" href="#id21" title="Permalink to this heading">¶</a></h3>
+<p>V1とV2の間をアルファの割合で補完した値を出力します。
+入力が接続されてない場合、プロパティの値を使用します。</p>
+<p>アルファが1だったらV1を出力します。
+アルファが0だったらV2を出力します。
+アルファが0.7だったらV1 x 0.3 + V2 x 0.7を出力します。</p>
+</div>
+<div class="section" id="v">
+<h3>1-V<a class="headerlink" href="#v" title="Permalink to this heading">¶</a></h3>
+<p>1 - V を出力します。</p>
+</div>
+<div class="section" id="abs">
+<h3>絶対値 (Abs)<a class="headerlink" href="#abs" title="Permalink to this heading">¶</a></h3>
+<p>Vの絶対値を出力します。</p>
+</div>
+<div class="section" id="sine">
+<h3>Sine<a class="headerlink" href="#sine" title="Permalink to this heading">¶</a></h3>
+<p>VのSineを出力します。</p>
+</div>
+<div class="section" id="arctangent2">
+<h3>Arctangent2<a class="headerlink" href="#arctangent2" title="Permalink to this heading">¶</a></h3>
+<p>X/YのArctangentを出力します。
+入力が接続されてない場合、プロパティの値を使用します。</p>
+</div>
+<div class="section" id="id22">
+<h3>要素抽出<a class="headerlink" href="#id22" title="Permalink to this heading">¶</a></h3>
+<p>Vから要素を抽出します。
+例えば、数値4の一部を抽出して、数値2を出力します。</p>
+</div>
+<div class="section" id="id23">
+<h3>要素結合<a class="headerlink" href="#id23" title="Permalink to this heading">¶</a></h3>
+<p>V1とV2の要素を結合します。
+例えば、数値3と数値1を入力して、数値4を出力します。</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="マテリアル・リファレンス" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="material_NodeImage.html" class="btn btn-neutral float-right" title="マテリアルノード(画像)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2019, Effekseer.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

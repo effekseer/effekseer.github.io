@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>深度 &mdash; Effekseer Help  ドキュメント</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/js/three.min.js"></script>
+        <script src="../../_static/js/effekseer.min.js"></script>
+        <script src="../../_static/js/iframe.js"></script>
+        <script src="../../_static/js/OrbitControls.js"></script>
+        <script src="../../_static/translations.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="検索" href="../../search.html" />
+    <link rel="next" title="基础渲染设置" href="rendererCommon.html" />
+    <link rel="prev" title="缩放" href="scale.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> Effekseer Help
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../ja/index.html">Effekseer Help 日本語</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../en/index.html">Effekseer Help (English)</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Effekseer Help (中文)</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../overview.html">概要</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolTutorial/index.html">教程</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">工具参考</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="index.html#id2">概述</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="index.html#id13">特效参数</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="common.html">基础设置</a></li>
+<li class="toctree-l4"><a class="reference internal" href="location.html">位置</a></li>
+<li class="toctree-l4"><a class="reference internal" href="locationAbs.html">力场（Local）</a></li>
+<li class="toctree-l4"><a class="reference internal" href="locationGene.html">生成方法</a></li>
+<li class="toctree-l4"><a class="reference internal" href="killRules.html">销毁规则</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rotation.html">旋转</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scale.html">缩放</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">深度</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererCommon.html">基础渲染设置</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererCommonAd.html">高级渲染设置</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererSprite.html">渲染 - 精灵</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererRibbon.html">渲染 - 丝带</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererRing.html">渲染 - 环</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererModel.html">渲染 - 模型</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererTrack.html">渲染 - 轨迹</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sound.html">声音</a></li>
+<li class="toctree-l4"><a class="reference internal" href="fcurve.html">F曲线</a></li>
+<li class="toctree-l4"><a class="reference internal" href="global.html">全局设置</a></li>
+<li class="toctree-l4"><a class="reference internal" href="culling.html">剔除</a></li>
+<li class="toctree-l4"><a class="reference internal" href="levelsOfDetails.html">细节层级（LOD）</a></li>
+<li class="toctree-l4"><a class="reference internal" href="dynamicParameter.html">动态参数</a></li>
+<li class="toctree-l4"><a class="reference internal" href="proceduralModel.html">程序化模型</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id14">特效特性</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id15">工具方法</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id16">命令行</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../MaterialToolReference/index.html">材质参考</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolTips/01.html">TIPS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq.html">常见问题解答</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ReleaseNotes/index.html">版本说明</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Effekseer Help</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../index.html">Effekseer Help (中文)</a> &raquo;</li>
+          <li><a href="index.html">工具参考</a> &raquo;</li>
+      <li>深度</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="id1">
+<h1>深度<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h1>
+<div class="section" id="id2">
+<h2>概述<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
+<p>设置深度的相关参数。</p>
+</div>
+<div class="section" id="id3">
+<h2>参数<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h2>
+<div class="section" id="z">
+<h3>Z偏移<a class="headerlink" href="#z" title="Permalink to this heading">¶</a></h3>
+<p>在渲染时在深度方向上移动粒子的位置。这个参数只影响渲染。在1.4版本中，只有设置了这个参数的粒子会被移动，子粒子不会被移动。例如，在渲染击中特效时，这个参数可以用于防止角色与特效直接接触。</p>
+<p>(1)是一个接触到角色的特效。(2)是Z偏移。Z偏移防止角色与特效接触。</p>
+<img src="../../img/Reference/depth_Z-Offset.png"/><table><tbody><tr><td><p>Z偏移：0</p>
+</td><td><p>Z偏移：2</p>
+</td></tr><tr><td><img src="../../img/Reference/depth_Z-Offset-None.png"/></td><td><img src="../../img/Reference/depth_Z-Offset-4.png"/></td></tr></tbody></table></div>
+<div class="section" id="id4">
+<h3>禁用Z偏移导致的缩放<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h3>
+<p>使用Z偏移可以移动渲染特效的位置，改变与摄像机的距离。当距离改变时，渲染的粒子的大小也会改变。你可以通过这个参数阻止这种变化的发生。</p>
+<table><tbody><tr><td><p>关闭</p>
+</td><td><p>开启</p>
+</td></tr><tr><td><img src="../../img/Reference/depth_Z-Offset-4.png"/></td><td><img src="../../img/Reference/depth_Z-Offset-None.png"/></td></tr></tbody></table></div>
+<div class="section" id="id5">
+<h3>缩放Z偏移<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h3>
+<p>设置Z偏移的值是否会随着粒子的缩放值而变化。</p>
+<table><tbody><tr><td><p>关闭</p>
+</td><td><p>开启</p>
+</td></tr><tr><td><img src="../../img/Reference/depth_Z-Offset-2-Scale-2.png"/></td><td><img src="../../img/Reference/depth_Z-Offset-2-Scale-2-With.png"/></td></tr></tbody></table></div>
+<div class="section" id="id6">
+<h3>深度排序<a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h3>
+<p>设置同一个节点生成的粒子是否按照距离排序。如果开启了此参数，粒子会有更好的表现效果，但性能消耗也会增加。</p>
+<table><tbody><tr><td><p>关闭</p>
+</td><td><p>开启</p>
+</td></tr><tr><td><img src="../../img/Reference/depth_Z-Sort-Off.png"/></td><td><img src="../../img/Reference/depth_Z-Sort-On.png"/></td></tr></tbody></table></div>
+<div class="section" id="id7">
+<h3>渲染优先级<a class="headerlink" href="#id7" title="Permalink to this heading">¶</a></h3>
+<p>设置节点之间的渲染顺序。这个参数的值越高，则粒子越晚被绘制。这个参数也会影响到扭曲。如果渲染优先级低于0，扭曲将只影响到背景。粒子之间不会互相扭曲。如果渲染优先级大于或等于0，背景和渲染优先级小于0的粒子就会被扭曲。</p>
+<p>下图是渲染优先级的粒子。(1)是(2)的父节点，其渲染优先级为0，(2)的渲染优先级为0。(3)的渲染优先级为1。可以看出，渲染的顺序是由渲染优先级决定的，在具有相同的渲染优先级的节点之间，子节点在后绘制。</p>
+<img src="../../img/Reference/depth_drawingPriority.png"/></div>
+<div class="section" id="id8">
+<h3>抑制随深度变化的缩放变化<a class="headerlink" href="#id8" title="Permalink to this heading">¶</a></h3>
+<p>确保粒子以大致相同的尺寸显示，与粒子和相机之间的距离无关。
+适用于锁定标记等。</p>
+<p>还可以降低距离的影响。</p>
+<iframe src='../../Effects/viewer_zh_CN.html#References/Depth/suppression_of_scaling_by_depth.efkefc'></iframe></div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="scale.html" class="btn btn-neutral float-left" title="缩放" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="rendererCommon.html" class="btn btn-neutral float-right" title="基础渲染设置" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2019, Effekseer.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

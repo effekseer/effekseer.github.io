@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>05. 制作一个斩击命中特效！ &mdash; Effekseer Help  ドキュメント</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/js/three.min.js"></script>
+        <script src="../../_static/js/effekseer.min.js"></script>
+        <script src="../../_static/js/iframe.js"></script>
+        <script src="../../_static/js/OrbitControls.js"></script>
+        <script src="../../_static/translations.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="検索" href="../../search.html" />
+    <link rel="next" title="06. 创建环形粒子!" href="06.html" />
+    <link rel="prev" title="04. 旋转和缩放！" href="04.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> Effekseer Help
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../ja/index.html">Effekseer Help 日本語</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../en/index.html">Effekseer Help (English)</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Effekseer Help (中文)</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../overview.html">概要</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">教程</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="index.html#id2">基础</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="01.html">01.查看并使用示例！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="02.html">02.让粒子散射开！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="03.html">03. 显示图片！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="04.html">04. 旋转和缩放！</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">05. 制作一个斩击命中特效！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="06.html">06. 创建环形粒子!</a></li>
+<li class="toctree-l4"><a class="reference internal" href="07.html">07. 使用父子关系实现复杂移动！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="08.html">08. 通过设置生成方法排列粒子!</a></li>
+<li class="toctree-l4"><a class="reference internal" href="09.html">09.制作枪口焰！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="10.html">10.丝带和轨迹</a></li>
+<li class="toctree-l4"><a class="reference internal" href="11.html">11. 使用3D模型！！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="12.html">12. 用F曲线表示复杂的运动</a></li>
+<li class="toctree-l4"><a class="reference internal" href="13.html">13. 扭曲背景！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="14.html">14. 设置细节层级（LOD）</a></li>
+<li class="toctree-l4"><a class="reference internal" href="15.html">15.通过触发器改变特效！</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id3">材质</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolReference/index.html">工具参考</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../MaterialToolReference/index.html">材质参考</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolTips/01.html">TIPS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq.html">常见问题解答</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ReleaseNotes/index.html">版本说明</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Effekseer Help</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../index.html">Effekseer Help (中文)</a> &raquo;</li>
+          <li><a href="index.html">教程</a> &raquo;</li>
+      <li>05. 制作一个斩击命中特效！</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="id1">
+<h1>05. 制作一个斩击命中特效！<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h1>
+<div class="section" id="id2">
+<h2>概要<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
+<p>在这一章中，你将创建一个像真实游戏中使用的斩击命中特效。这个特效中间有一条较长的光效表示刀光，周围迸出较短的光效表示冲击力。在此过程中，你将学到复制和添加节点，以及缓动粒子。</p>
+<iframe src='../../Sample/viewer_zh_CN.html#05_02_Sample/effect.efk'></iframe></div>
+<div class="section" id="id3">
+<h2>准备<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h2>
+<p>可以从下面的链接下载预制的特效素材。</p>
+<div align="center">
+<a href = "../../Sample/05_01_Sample.zip">下载</a>
+</div><p>这次制作的特效大约时长0.5秒，所以我们将<code class="docutils literal notranslate"><span class="pre">显示控制</span></code>窗口中的结束时间设置为30帧。</p>
+</div>
+<div class="section" id="id4">
+<h2>缓动<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h2>
+<p>在这个例子中，有多个参数用到了缓动。</p>
+<p>缓动是一种设置初始值和结束值，自动完成中间的值的方法。</p>
+<p>如下图所示，目前，位置、旋转和缩放都是由速度（1）和加速度来设置的。然而，用这种方法的话，粒子的生命周期越长，这些数值就越大。</p>
+<p>而缓动，则是设置粒子刚生成时的数值（2），和消失之前的数值（3），并在它们之间的时间间隔内自动进行插值。因为能够设置粒子消失之前的数值，也就更容易把握粒子的形状。</p>
+<div align="center">
+<table>
+<tr>
+<td>
+<img src="../../img/Tutorial/05_pva_type.png">
+<p>位置・速度・加速度</p>
+</td>
+<td>
+<img src="../../img/Tutorial/05_easing_type.png">
+<p>缓动</p>
+</td>
+</tr>
+</table>
+</div><p>存在若干种插值方法。在起点和终点，可以分别设置从低速3到高速3的速度。速度越慢，数值变化越慢；速度越快，数值变化越快。</p>
+<div align="center">
+<img src="../../img/Tutorial/05_easing.gif">
+<p>插值方法</p>
+</div></div>
+<div class="section" id="id5">
+<h2>制作特效<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h2>
+<p>特效往往不止由一种粒子，而是几种外观完全不同的粒子组成。Effekseer中也可以存在多个节点。可以赋予每个节点完全不同的参数。命中特效也必须由几个节点组成。在这个例子中，我们将按顺序创建节点。</p>
+<p>特效的大致方向如下。</p>
+<ul class="simple">
+<li><p>播放时长大约是0.5秒（30帧）</p></li>
+<li><p>颜色是紫色(255, 32, 255)~粉色(255, 128, 255)</p></li>
+</ul>
+<div class="section" id="id6">
+<h3>刀光节点<a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h3>
+<p>创建一个代表刀光的节点，以45度的角度拉长。</p>
+<p>剑气应该在0.33秒（20帧）的时间内向45度方向拉长。我们想让粒子倾斜，所以设置为<code class="docutils literal notranslate"><span class="pre">Z轴旋转告示牌</span></code>。</p>
+<p>按如下方式改变数值。</p>
+<p><b>在这一章中，需要更改大量的数值。即便氛围相似，也没必要把它们设置成一模一样的。</b></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th align="left">窗口</th>
+<th align="left">变量</th>
+<th align="left">值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">基础设置</td>
+<td align="left">名称</td>
+<td align="left">Line1</td>
+</tr>
+<tr>
+<td align="left">基础设置</td>
+<td align="left">生命周期</td>
+<td align="left">20</td>
+</tr>
+<tr>
+<td align="left">旋转</td>
+<td align="left">角度</td>
+<td align="left">x=0, y=0, z=-45</td>
+</tr>
+<tr>
+<td align="left">缩放</td>
+<td align="left">缩放方法</td>
+<td align="left">缓动</td>
+</tr>
+<tr>
+<td align="left">缩放</td>
+<td align="left">起点（平均）</td>
+<td align="left">x=4, y=1, z=1</td>
+</tr>
+<tr>
+<td align="left">缩放</td>
+<td align="left">终点（平均）</td>
+<td align="left">x=1, y=25, z=1</td>
+</tr>
+<tr>
+<td align="left">缩放</td>
+<td align="left">起点速度</td>
+<td align="left">高速3</td>
+</tr>
+<tr>
+<td align="left">缩放</td>
+<td align="left">终点速度</td>
+<td align="left">低速3</td>
+</tr>
+<tr>
+<td align="left">基础渲染设置</td>
+<td align="left">纹理</td>
+<td align="left">Texture/Line01.png</td>
+</tr>
+<tr>
+<td align="left">基础渲染设置</td>
+<td align="left">混合方法</td>
+<td align="left">加法</td>
+</tr>
+<tr>
+<td align="left">渲染设置</td>
+<td align="left">放置方法</td>
+<td align="left">Z轴旋转告示牌</td>
+</tr>
+<tr>
+<td align="left">渲染设置</td>
+<td align="left">整体颜色</td>
+<td align="left">缓动</td>
+</tr>
+<tr>
+<td align="left">渲染设置</td>
+<td align="left">整体颜色-起点（平均）</td>
+<td align="left">255,128,255,255</td>
+</tr>
+<tr>
+<td align="left">渲染设置</td>
+<td align="left">整体颜色-终点（平均）</td>
+<td align="left">255,255,255,0</td>
+</tr>
+<tr>
+<td align="left">渲染设置</td>
+<td align="left">整体颜色-起点速度</td>
+<td align="left">低速3</td>
+</tr>
+<tr>
+<td align="left">渲染设置</td>
+<td align="left">整体颜色-终点速度</td>
+<td align="left">高速3</td>
+</tr>
+</tbody>
+</table><p>此时特效看起来像这样。</p>
+<div align="center">
+<img src="../../img/Tutorial/05_01.gif">
+<p>刀光节点</p>
+</div></div>
+<div class="section" id="id7">
+<h3>冲击节点<a class="headerlink" href="#id7" title="Permalink to this heading">¶</a></h3>
+<p>当攻击击中时，除了刀光之外，还会产生冲击。它的创建方式与刀光相同。</p>
+<p>刀光节点和冲击节点有不同的参数，所以你需要添加节点。首先，选择“Root”。然后，右击Root，会出现一个菜单。从菜单中，选择添加节点。</p>
+<div align="center">
+<img src="../../img/Tutorial/05_addnode_en.png">
+<p>添加节点</p>
+</div><p>添加后，点击添加的节点进行编辑。</p>
+<p>按以下方式更改数值。</p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th align="left">窗口</th>
+<th align="left">变量</th>
+<th align="left">值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">基础设置</td>
+<td align="left">名称</td>
+<td align="left">Line2</td>
+</tr>
+<tr>
+<td align="left">基础设置</td>
+<td align="left">生成数量</td>
+<td align="left">10</td>
+</tr>
+<tr>
+<td align="left">基础设置</td>
+<td align="left">生命周期</td>
+<td align="left">20</td>
+</tr>
+<tr>
+<td align="left">旋转</td>
+<td align="left">旋转方法</td>
+<td align="left">角度・速度・加速度</td>
+</tr>
+<tr>
+<td align="left">旋转</td>
+<td align="left">角度（振幅）</td>
+<td align="left">x=0, y=0, z=180</td>
+</tr>
+<tr>
+<td align="left">缩放</td>
+<td align="left">缩放方法</td>
+<td align="left">缓动</td>
+</tr>
+<tr>
+<td align="left">缩放</td>
+<td align="left">起点</td>
+<td align="left">x=1, y=1, z=1</td>
+</tr>
+<tr>
+<td align="left">缩放</td>
+<td align="left">终点</td>
+<td align="left">x=1, y=10, z=1</td>
+</tr>
+<tr>
+<td align="left">缩放</td>
+<td align="left">起点速度</td>
+<td align="left">高速3</td>
+</tr>
+<tr>
+<td align="left">缩放</td>
+<td align="left">终点速度</td>
+<td align="left">低速3</td>
+</tr>
+<tr>
+<td align="left">基础渲染设置</td>
+<td align="left">纹理</td>
+<td align="left">Texture/Line01.png</td>
+</tr>
+<tr>
+<td align="left">基础渲染设置</td>
+<td align="left">混合方法</td>
+<td align="left">加法</td>
+</tr>
+<tr>
+<td align="left">渲染设置</td>
+<td align="left">放置方法</td>
+<td align="left">Z轴旋转告示牌</td>
+</tr>
+<tr>
+<td align="left">渲染设置</td>
+<td align="left">整体颜色</td>
+<td align="left">缓动</td>
+</tr>
+<tr>
+<td align="left">渲染设置</td>
+<td align="left">整体颜色-起点（平均）</td>
+<td align="left">255,128,255,255</td>
+</tr>
+<tr>
+<td align="left">渲染设置</td>
+<td align="left">整体颜色-终点（平均）</td>
+<td align="left">255,255,255,0</td>
+</tr>
+<tr>
+<td align="left">渲染设置</td>
+<td align="left">整体颜色-起点速度</td>
+<td align="left">低速3</td>
+</tr>
+<tr>
+<td align="left">渲染设置</td>
+<td align="left">整体颜色-终点速度</td>
+<td align="left">高速3</td>
+</tr>
+</tbody>
+</table><p>现在特效看起来像这样。</p>
+<div align="center">
+<img src="../../img/Tutorial/05_02.gif">
+<p>冲击节点</p>
+</div></div>
+<div class="section" id="id8">
+<h3>发光节点1<a class="headerlink" href="#id8" title="Permalink to this heading">¶</a></h3>
+<p>如果击中的瞬间发出闪光，看起来会更好。以与刀光节点相同的方式设置这个节点。</p>
+<p>更改数值如下。</p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th align="left">窗口</th>
+<th align="left">变量</th>
+<th align="left">值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">基础设置</td>
+<td align="left">名称</td>
+<td align="left">Flash1</td>
+</tr>
+<tr>
+<td align="left">基础设置</td>
+<td align="left">生命周期</td>
+<td align="left">20</td>
+</tr>
+<tr>
+<td align="left">缩放</td>
+<td align="left">缩放方法</td>
+<td align="left">缩放・速度・加速度（统一）</td>
+</tr>
+<tr>
+<td align="left">缩放</td>
+<td align="left">放大速度</td>
+<td align="left">0.6</td>
+</tr>
+<tr>
+<td align="left">基础渲染设置</td>
+<td align="left">纹理</td>
+<td align="left">Texture/Particle01.png</td>
+</tr>
+<tr>
+<td align="left">基础渲染设置</td>
+<td align="left">混合方法</td>
+<td align="left">加法</td>
+</tr>
+<tr>
+<td align="left">渲染设置</td>
+<td align="left">整体颜色</td>
+<td align="left">缓动</td>
+</tr>
+<tr>
+<td align="left">渲染设置</td>
+<td align="left">整体颜色-起点（平均）</td>
+<td align="left">255,32,255,255</td>
+</tr>
+<tr>
+<td align="left">渲染设置</td>
+<td align="left">整体颜色-终点（平均）</td>
+<td align="left">255,128,255,0</td>
+</tr>
+<tr>
+<td align="left">渲染设置</td>
+<td align="left">整体颜色-起点速度</td>
+<td align="left">低速3</td>
+</tr>
+<tr>
+<td align="left">渲染设置</td>
+<td align="left">整体颜色-终点速度</td>
+<td align="left">高速3</td>
+</tr>
+</tbody>
+</table><p>现在特效看起来像这样。</p>
+<div align="center">
+<img src="../../img/Tutorial/05_03.gif">
+<p>发光节点1</p>
+</div></div>
+<div class="section" id="id9">
+<h3>发光节点2<a class="headerlink" href="#id9" title="Permalink to this heading">¶</a></h3>
+<p>但现在的发光效果看起来很土，所以再添加一个发光节点。而这个发光节点与我们刚刚创建的发光节点几乎是一样的。在Effekseer中，你可以复制节点。</p>
+<p>选择发光节点，按右键选择复制节点。</p>
+<div align="center">
+<img src="../../img/Tutorial/05_copynode_en.png">
+<p>复制节点</p>
+</div><p>选择Root后，右键粘贴节点。</p>
+<div align="center">
+<img src="../../img/Tutorial/05_pastenode_en.png">
+<p>粘贴节点</p>
+</div><p>你可以看到，发光节点已经被复制了。</p>
+<p>在原来的发光节点的基础上作如下修改。</p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th align="left">窗口</th>
+<th align="left">变量</th>
+<th align="left">值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">基础设置</td>
+<td align="left">名称</td>
+<td align="left">Flash2</td>
+</tr>
+<tr>
+<td align="left">基础渲染设置</td>
+<td align="left">纹理</td>
+<td align="left">Texture/Particle03.png</td>
+</tr>
+</tbody>
+</table><p>现在一个斜线斩击特效已经完成了。</p>
+<div align="center">
+<img src="../../img/Tutorial/05_completed.gif">
+<p>完成</p>
+</div><p>最后，在本章中制作的粒子可以通过下面的链接下载。</p>
+<div align="center">
+<a href = "../../Sample/05_02_Sample.zip">下载</a>
+</div></div>
+</div>
+<div class="section" id="id10">
+<h2>总结<a class="headerlink" href="#id10" title="Permalink to this heading">¶</a></h2>
+<p>在这一章中，我们已经制作了可以在游戏中实际使用的特效。在下一章中，我们将制作更复杂的特效。</p>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="04.html" class="btn btn-neutral float-left" title="04. 旋转和缩放！" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="06.html" class="btn btn-neutral float-right" title="06. 创建环形粒子!" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2019, Effekseer.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

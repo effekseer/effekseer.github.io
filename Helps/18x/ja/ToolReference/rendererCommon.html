@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="ja" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>描画共通 &mdash; Effekseer Help  ドキュメント</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/js/three.min.js"></script>
+        <script src="../../_static/js/effekseer.min.js"></script>
+        <script src="../../_static/js/iframe.js"></script>
+        <script src="../../_static/js/OrbitControls.js"></script>
+        <script src="../../_static/translations.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="検索" href="../../search.html" />
+    <link rel="next" title="描画共通(高度)" href="rendererCommonAd.html" />
+    <link rel="prev" title="深度" href="depth.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> Effekseer Help
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Effekseer Help 日本語</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../overview.html">概要</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolTutorial/index.html">チュートリアル</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">ツール・リファレンス</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="index.html#id2">概要</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="index.html#id13">エフェクトパラメータ</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="common.html">共通</a></li>
+<li class="toctree-l4"><a class="reference internal" href="location.html">位置</a></li>
+<li class="toctree-l4"><a class="reference internal" href="locationAbs.html">力場(ローカル)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="locationGene.html">生成方法</a></li>
+<li class="toctree-l4"><a class="reference internal" href="killRules.html">破棄ルール</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rotation.html">回転</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scale.html">拡大</a></li>
+<li class="toctree-l4"><a class="reference internal" href="depth.html">深度</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">描画共通</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererCommonAd.html">描画共通(高度)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererSprite.html">描画-スプライト</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererRibbon.html">描画-リボン</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererRing.html">描画-リング</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererModel.html">描画-モデル</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererTrack.html">描画-軌跡</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sound.html">音</a></li>
+<li class="toctree-l4"><a class="reference internal" href="fcurve.html">Fカーブ</a></li>
+<li class="toctree-l4"><a class="reference internal" href="global.html">全体</a></li>
+<li class="toctree-l4"><a class="reference internal" href="culling.html">カリング</a></li>
+<li class="toctree-l4"><a class="reference internal" href="levelsOfDetails.html">Levels Of Details</a></li>
+<li class="toctree-l4"><a class="reference internal" href="dynamicParameter.html">動的パラメーター</a></li>
+<li class="toctree-l4"><a class="reference internal" href="proceduralModel.html">プロシージャルモデル</a></li>
+<li class="toctree-l4"><a class="reference internal" href="collisions.html">衝突</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id14">エフェクト機能</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id15">ツール機能</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id16">コマンドライン</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../MaterialToolReference/index.html">マテリアル・リファレンス</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolTips/01.html">TIPS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq.html">FAQ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ReleaseNotes/index.html">リリースノート</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../en/index.html">Effekseer Help (English)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../zh_CN/index.html">Effekseer Help (中文)</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Effekseer Help</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../index.html">Effekseer Help 日本語</a> &raquo;</li>
+          <li><a href="index.html">ツール・リファレンス</a> &raquo;</li>
+      <li>描画共通</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="id1">
+<h1>描画共通<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h1>
+<div class="section" id="id2">
+<h2>概要<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
+<p>全ての描画方法に共通するパラメーターを設定する「描画共通」について説明します。</p>
+</div>
+<div class="section" id="id3">
+<h2>パラメーター<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h2>
+<div align="center">
+<img src="../../img/Tutorial/03_rendercommon_ja.png">
+<p>「描画共通」ウインドウ</p>
+</div><div class="section" id="id4">
+<h3>マテリアル<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h3>
+<p>パーティクルの表示に使用する材質を指定します。
+光源の影響を受けたり、背景を歪ませたりといった設定をできます。</p>
+<div class="section" id="id5">
+<h4>標準<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h4>
+<p>色画像に設定された画像をそのまま表示します。</p>
+<iframe src='../../Effects/viewer_ja.html#References/BasicRender/render_unlit.efkefc'></iframe></div>
+<div class="section" id="id6">
+<h4>ライティング<a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h4>
+<p>パーティクルが光源の影響を受けるようになります。
+色画像の他に、法線画像を設定できます。
+法線画像を設定すると表面の向きが変わるようになります。</p>
+<iframe src='../../Effects/viewer_ja.html#References/BasicRender/render_lit.efkefc'></iframe></div>
+<div class="section" id="id7">
+<h4>歪み(背景)<a class="headerlink" href="#id7" title="Permalink to this heading">¶</a></h4>
+<p>背景を歪ませます。
+歪み画像と歪み強度により、歪み方を設定できます。</p>
+<p>歪みの設定が有効な場合、パーティクルが背景を歪ませるようになります。歪み方は歪み画像、各描画の色の設定、歪み強度に依存します。</p>
+<p>歪み画像の色のうち、赤と緑を歪みの情報として使用します。両方とも値が127のとき、全く歪みません。赤が127以上の時、右方向に歪み、127未満の時左方向に歪みます。 緑が127以上の時、上方向に歪み、127未満の時下方向に歪みます。ただし、この上下左右の方向は描画方法に依存します。例えば、スプライトの場合、長方形の辺の方向で上下左右が定まります。</p>
+<p>各描画の色は歪みの強度を弱めます。255が最大で0になると歪まなくなります。赤は左右、緑は上下に影響します。</p>
+<p>歪み強度は全ての歪みの強さを調節します。0になると歪まなくなります。</p>
+<table><tbody><tr><td><p>歪みあり</p>
+</td><td><p>歪みなし</p>
+</td></tr><tr><td><img src="../../img/Reference/renderCommon_distortion_on.gif"/></td><td><img src="../../img/Reference/renderCommon_distortion_off.gif"/></td></tr></tbody></table><p>標準設定の場合、歪みは自分のエフェクト自体を歪ませずに背景のみを歪ませます。 歪みで自分のエフェクトの他のノードを歪ませる場合、深度パネルから描画優先度を設定します。 描画優先度が0未満のノードは自分のエフェクトのノードの歪みにより、背景と共に歪ませられます。</p>
+</div>
+<div class="section" id="id8">
+<h4>ファイル<a class="headerlink" href="#id8" title="Permalink to this heading">¶</a></h4>
+<p>ユーザーが作成したマテリアルのファイルを表示に使用します。
+最も幅広い表現を実現できます。</p>
+<p>ボタンを押すとマテリアルのファイルを作成、編集できます。</p>
+<p>詳細はマテリアルに関するリファレンスを参照してください。</p>
+<p>マテリアルのファイルにより、そのマテリアルに応じたパラメーターが増えることがあります。
+カスタムパラメーターには定数以外にもイージングやFカーブといった方法によりパラメーターを指定できます。
+カスタムパラメーターの表示される名称はマテリアルのファイルによって変わります。</p>
+<div class="section" id="id9">
+<h5>キャッシュ<a class="headerlink" href="#id9" title="Permalink to this heading">¶</a></h5>
+<p>マテリアルの読み込みを早くするためや特定のプラットフォームでエフェクトを再生するために、マテリアルをコンパイルした形式で保存できます。
+そのファイルを生成するには、マテリアルを読み込んだ後、<code class="docutils literal notranslate"><span class="pre">キャッシュ生成</span></code> を押します。</p>
+<p>生成されたキャッシュをマテリアルファイルと同じディレクトリに配置すると読み込みが速くなります。
+一部のプラットフォームではキャッシュを使用しないとエフェクトを再生できません。
+Windowsでキャッシュを生成した後、キャッシュが存在する状態でMacでキャッシュを生成すると、WindowsでもMacでも使用できるキャッシュが生成されます。</p>
+<iframe src='../../Effects/viewer_ja.html#References/BasicRender/render_file.efkefc'></iframe></div>
+</div>
+</div>
+<div class="section" id="id10">
+<h3>エミッシブ倍率<a class="headerlink" href="#id10" title="Permalink to this heading">¶</a></h3>
+<p>指定された値をパーティクルの色に掛けます。値が大きいほど色が明るくなります。値が1のとき、画像をそのまま使用します。
+マテリアルが標準かライティングのときのみ有効です。
+HDRに対応した環境以外では、値を大きくすると色がおかしくなる可能性があります。</p>
+<img alt="../../_images/EmmisiveScaling.png" class="align-center" src="../../_images/EmmisiveScaling.png" />
+</div>
+<div class="section" id="id11">
+<h3>ブレンド<a class="headerlink" href="#id11" title="Permalink to this heading">¶</a></h3>
+<p>パーティクルの表示に適用されるアルファブレンドの方法を指定します。半透明、加算、減算といった既に描画された画像に対する合成の方法を指定します。</p>
+<p><img alt="../../_images/AlphaBlend.png" src="../../_images/AlphaBlend.png" /></p>
+</div>
+<div class="section" id="id12">
+<h3>フィルタ<a class="headerlink" href="#id12" title="Permalink to this heading">¶</a></h3>
+<p>パーティクルの表示に適用されるフィルタの方法を指定します。</p>
+</div>
+<div class="section" id="id13">
+<h3>外側<a class="headerlink" href="#id13" title="Permalink to this heading">¶</a></h3>
+<p>UVが0.0を下回ったり、UVが1.0を上回ったりした場合の画像を参照する位置を計算する方法を指定します。</p>
+</div>
+<div class="section" id="id14">
+<h3>深度書き込み<a class="headerlink" href="#id14" title="Permalink to this heading">¶</a></h3>
+<p>パーティクルを表示するときに深度(奥行き)情報を書き込むか指定します。深度情報を書き込んだ後に、深度テストが有効になっているパーティクルを描画すると、そのパーティクルが奥にある場合、描画されなくなります。</p>
+</div>
+<div class="section" id="id15">
+<h3>深度テスト<a class="headerlink" href="#id15" title="Permalink to this heading">¶</a></h3>
+<p>深度テストが有効である場合、書き込まれている深度情報より奥にパーティクルが描画されなくなります。</p>
+</div>
+<div class="section" id="id16">
+<h3>フェードイン<a class="headerlink" href="#id16" title="Permalink to this heading">¶</a></h3>
+<p>パーティクルが表示されるときに、フェードインしつつ表示されるようにします。</p>
+</div>
+<div class="section" id="id17">
+<h3>フェードアウト<a class="headerlink" href="#id17" title="Permalink to this heading">¶</a></h3>
+<p>パーティクルが消滅するときに、フェードアウトしつつ消滅するようにします。</p>
+<iframe src='../../Effects/viewer_ja.html#References/Render/fade_in_out.efkefc'></iframe></div>
+<div class="section" id="uv">
+<h3>UV<a class="headerlink" href="#uv" title="Permalink to this heading">¶</a></h3>
+<p>画像で、実際にパーティクルの表示に使用する範囲を指定します。
+使用される範囲は時間で変化させられるため、画像をアニメーションさせられます。 領域の指定に使用される数値の単位はピクセルです。</p>
+<div class="section" id="id18">
+<h4>アニメーション<a class="headerlink" href="#id18" title="Permalink to this heading">¶</a></h4>
+<p>アニメーションが連続して配置されている画像を元に、アニメーションを再生します。</p>
+<p><img alt="../../_images/renderCommon_uv_animation.png" src="../../_images/renderCommon_uv_animation.png" /></p>
+<div class="section" id="id19">
+<h5>開始時間<a class="headerlink" href="#id19" title="Permalink to this heading">¶</a></h5>
+<p>再生を開始するアニメーションの時間を指定します。 例えば、4枚の画像で構成されるアニメーションで2枚目から再生できます。</p>
+</div>
+<div class="section" id="id20">
+<h5>アニメーション補間<a class="headerlink" href="#id20" title="Permalink to this heading">¶</a></h5>
+<ul class="simple">
+<li><p>なし</p></li>
+</ul>
+<p>一定時間ごとに表示する位置を切り替えます。</p>
+<div class="video_center"><video autoplay loop="true" muted="true" src="../../movies/Reference/BasicRenderSettings/Flip_None.mp4"/></div><ul class="simple">
+<li><p>線形補間</p></li>
+</ul>
+<p>アニメーションの切り替わりを線形補完するようにします。
+それにより、急に画像が変化しないようにします。</p>
+<div class="video_center"><video autoplay loop="true" muted="true" src="../../movies/Reference/BasicRenderSettings/Flip_Lerp.mp4"/></div></div>
+</div>
+<div class="section" id="id21">
+<h4>スクロール<a class="headerlink" href="#id21" title="Permalink to this heading">¶</a></h4>
+<p>一定の速度でUVの範囲を移動させます。</p>
+<p><img alt="../../_images/renderCommon_uv_scroll.png" src="../../_images/renderCommon_uv_scroll.png" /></p>
+</div>
+<div class="section" id="f">
+<h4>Fカーブ<a class="headerlink" href="#f" title="Permalink to this heading">¶</a></h4>
+<p>Fカーブを使用します。</p>
+</div>
+</div>
+<div class="section" id="id22">
+<h3>参照画像(UV)<a class="headerlink" href="#id22" title="Permalink to this heading">¶</a></h3>
+<p>1つのパーティクルに異なる大きさの複数の画像が使用されることがあります。
+その場合、比率の基準となる解像度を画像を用いて指定することが出来ます。
+画像を指定せずに、128x128を基準にUVを指定することもできます。</p>
+<p>マテリアルを使用する場合、参照画像の番号はマテリアルの画像の優先度と一致します。</p>
+<p><img alt="../../_images/uv_referenced.png" src="../../_images/uv_referenced.png" /></p>
+</div>
+<div class="section" id="id23">
+<h3>色への影響<a class="headerlink" href="#id23" title="Permalink to this heading">¶</a></h3>
+<p>親のパーティクルの色が子のパーティクルの色に影響を与えるか、を指定します。 影響を与える場合、親のパーティクルの色と子のパーティクルの色を掛け合わせた色が最終的な子のパーティクルの色になります。 「生成時のみ」を選択した場合、子のパーティクルが生成された時の親のパーティクルの色が常に適用されます。</p>
+<table><tbody><tr><td><p>なし</p>
+</td><td><p>生成時のみ</p>
+</td><td><p>常時</p>
+</td></tr><tr><td><img src="../../img/Reference/renderCommon_inherit_color_none.gif"/></td><td><img src="../../img/Reference/renderCommon_inherit_color_when.gif"/></td><td><img src="../../img/Reference/renderCommon_inherit_color_always.gif"/></td></tr></tbody></table></div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="depth.html" class="btn btn-neutral float-left" title="深度" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="rendererCommonAd.html" class="btn btn-neutral float-right" title="描画共通(高度)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2019, Effekseer.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

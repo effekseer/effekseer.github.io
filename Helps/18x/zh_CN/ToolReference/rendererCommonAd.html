@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>高级渲染设置 &mdash; Effekseer Help  ドキュメント</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/js/three.min.js"></script>
+        <script src="../../_static/js/effekseer.min.js"></script>
+        <script src="../../_static/js/iframe.js"></script>
+        <script src="../../_static/js/OrbitControls.js"></script>
+        <script src="../../_static/translations.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="検索" href="../../search.html" />
+    <link rel="next" title="渲染 - 精灵" href="rendererSprite.html" />
+    <link rel="prev" title="基础渲染设置" href="rendererCommon.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> Effekseer Help
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../ja/index.html">Effekseer Help 日本語</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../en/index.html">Effekseer Help (English)</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Effekseer Help (中文)</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../overview.html">概要</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolTutorial/index.html">教程</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">工具参考</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="index.html#id2">概述</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="index.html#id13">特效参数</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="common.html">基础设置</a></li>
+<li class="toctree-l4"><a class="reference internal" href="location.html">位置</a></li>
+<li class="toctree-l4"><a class="reference internal" href="locationAbs.html">力场（Local）</a></li>
+<li class="toctree-l4"><a class="reference internal" href="locationGene.html">生成方法</a></li>
+<li class="toctree-l4"><a class="reference internal" href="killRules.html">销毁规则</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rotation.html">旋转</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scale.html">缩放</a></li>
+<li class="toctree-l4"><a class="reference internal" href="depth.html">深度</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererCommon.html">基础渲染设置</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">高级渲染设置</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererSprite.html">渲染 - 精灵</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererRibbon.html">渲染 - 丝带</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererRing.html">渲染 - 环</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererModel.html">渲染 - 模型</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererTrack.html">渲染 - 轨迹</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sound.html">声音</a></li>
+<li class="toctree-l4"><a class="reference internal" href="fcurve.html">F曲线</a></li>
+<li class="toctree-l4"><a class="reference internal" href="global.html">全局设置</a></li>
+<li class="toctree-l4"><a class="reference internal" href="culling.html">剔除</a></li>
+<li class="toctree-l4"><a class="reference internal" href="levelsOfDetails.html">细节层级（LOD）</a></li>
+<li class="toctree-l4"><a class="reference internal" href="dynamicParameter.html">动态参数</a></li>
+<li class="toctree-l4"><a class="reference internal" href="proceduralModel.html">程序化模型</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id14">特效特性</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id15">工具方法</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id16">命令行</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../MaterialToolReference/index.html">材质参考</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolTips/01.html">TIPS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq.html">常见问题解答</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ReleaseNotes/index.html">版本说明</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Effekseer Help</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../index.html">Effekseer Help (中文)</a> &raquo;</li>
+          <li><a href="index.html">工具参考</a> &raquo;</li>
+      <li>高级渲染设置</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="id1">
+<h1>高级渲染设置<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h1>
+<div class="section" id="id2">
+<h2>概述<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
+<p>设置比基础渲染设置更加复杂的参数。</p>
+</div>
+<div class="section" id="id3">
+<h2>参数<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h2>
+<div class="section" id="alpha">
+<h3>Alpha纹理<a class="headerlink" href="#alpha" title="Permalink to this heading">¶</a></h3>
+<p>将Alpha纹理的红色区域作为遮罩，显示颜色贴图（漫反射贴图）。
+例如，如果你将一张星形的图片设置为Alpha纹理，会显示颜色贴图的星形区域。
+这个贴图可以单独设置UV。
+通过单独设置UV，你可以通过滚动和动画实现复杂的效果。</p>
+<img alt="../../_images/alpha.png" class="align-center" src="../../_images/alpha.png" />
+</div>
+<div class="section" id="uv">
+<h3>UV扭曲纹理<a class="headerlink" href="#uv" title="Permalink to this heading">¶</a></h3>
+<p>使用设置的贴图扭曲颜色贴图。
+如果扭曲贴图的颜色是(127,127,255)，则它不会产生效果，远离这个颜色时，扭曲将会增强。
+这个贴图可以单独设置UV。
+通过单独设置UV，你可以通过滚动和动画实现复杂的效果。</p>
+<img alt="../../_images/dist.png" class="align-center" src="../../_images/dist.png" />
+</div>
+<div class="section" id="id4">
+<h3>Alpha衰减<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h3>
+<p>Alpha值低于指定值的部分将不会被绘制。
+可用于表现卡通风格化渲染效果。</p>
+<p><a class="reference internal" href="../../_images/alphacutoff_none.png"><img alt="pic_alphacutoff_none" src="../../_images/alphacutoff_none.png" style="width: 240.0px; height: 240.0px;" /></a> <a class="reference internal" href="../../_images/alphacutoff.png"><img alt="pic_alphacutoff" src="../../_images/alphacutoff.png" style="width: 240.0px; height: 240.0px;" /></a></p>
+<p>将Alpha值低的区域视为编译，单独改变边缘的颜色。
+易于表现卡通风格的渲染效果。</p>
+<img alt="../../_images/alphacutoff_edge.png" class="align-center" src="../../_images/alphacutoff_edge.png" />
+</div>
+<div class="section" id="id5">
+<h3>衰减<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h3>
+<p>设置模型的颜色沿着视线方向衰减。
+可实现模型的正面透明，边缘不透明。</p>
+<p><a class="reference internal" href="../../_images/falloff_none.png"><img alt="pic_falloff_none" src="../../_images/falloff_none.png" style="width: 240.0px; height: 240.0px;" /></a> <a class="reference internal" href="../../_images/falloff_add.png"><img alt="pic_falloff" src="../../_images/falloff_add.png" style="width: 240.0px; height: 240.0px;" /></a></p>
+<p>还可以使用减法和乘法。</p>
+<img alt="../../_images/falloff_sub.png" class="align-center" src="../../_images/falloff_sub.png" />
+<img alt="../../_images/falloff_mul.png" class="align-center" src="../../_images/falloff_mul.png" />
+</div>
+<div class="section" id="id6">
+<h3>软粒子<a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h3>
+<p>降低靠近背景区域的透明度。（这个透明度指Alpha值，Alpha值越低越透明）
+可以缓和背景和粒子之间不自然的边界。
+需要Effekseer的运行环境支持软粒子。</p>
+<p><a class="reference internal" href="../../_images/softparticle_far_none.png"><img alt="pic_softparticle_far_none" src="../../_images/softparticle_far_none.png" style="width: 240.0px; height: 240.0px;" /></a> <a class="reference internal" href="../../_images/softparticle_far.png"><img alt="pic_softparticle_far" src="../../_images/softparticle_far.png" style="width: 240.0px; height: 240.0px;" /></a></p>
+<p>还可以让靠近摄像机的区域透明。</p>
+<p><a class="reference internal" href="../../_images/softparticle_far_none.png"><img alt="pic_softparticle_near_none" src="../../_images/softparticle_far_none.png" style="width: 240.0px; height: 240.0px;" /></a> <a class="reference internal" href="../../_images/softparticle_near.png"><img alt="pic_softparticle_near" src="../../_images/softparticle_near.png" style="width: 240.0px; height: 240.0px;" /></a></p>
+</div>
+<div class="section" id="id7">
+<h3>混合纹理<a class="headerlink" href="#id7" title="Permalink to this heading">¶</a></h3>
+<p>将颜色贴图与指定的贴图混合。
+不同于混合两个粒子，贴图的混合结果用于粒子的贴图。</p>
+<img alt="../../_images/blend.png" class="align-center" src="../../_images/blend.png" />
+<p>还可以使用加法、乘法和减法。</p>
+<img alt="../../_images/blend_add.png" class="align-center" src="../../_images/blend_add.png" />
+<img alt="../../_images/blend_sub.png" class="align-center" src="../../_images/blend_sub.png" />
+<img alt="../../_images/blend_mul.png" class="align-center" src="../../_images/blend_mul.png" />
+</div>
+<div class="section" id="id8">
+<h3>混合Alpha纹理<a class="headerlink" href="#id8" title="Permalink to this heading">¶</a></h3>
+<p>用作混合贴图的一部分的Alpha贴图。
+行为与用于颜色贴图的混合贴图一致。
+唯一的区别是目标贴图。</p>
+<img alt="../../_images/blend_alpha.png" class="align-center" src="../../_images/blend_alpha.png" />
+</div>
+<div class="section" id="id9">
+<h3>混合UV扭曲纹理<a class="headerlink" href="#id9" title="Permalink to this heading">¶</a></h3>
+<p>用于扭曲混合贴图的贴图。
+行为与用于颜色贴图的扭曲贴图一致。
+唯一的区别是目标贴图。</p>
+<img alt="../../_images/blend_dist.png" class="align-center" src="../../_images/blend_dist.png" />
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="rendererCommon.html" class="btn btn-neutral float-left" title="基础渲染设置" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="rendererSprite.html" class="btn btn-neutral float-right" title="渲染 - 精灵" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2019, Effekseer.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

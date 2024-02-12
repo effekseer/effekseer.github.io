@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>剔除 &mdash; Effekseer Help  ドキュメント</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/js/three.min.js"></script>
+        <script src="../../_static/js/effekseer.min.js"></script>
+        <script src="../../_static/js/iframe.js"></script>
+        <script src="../../_static/js/OrbitControls.js"></script>
+        <script src="../../_static/translations.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="検索" href="../../search.html" />
+    <link rel="next" title="细节层级（LOD）" href="levelsOfDetails.html" />
+    <link rel="prev" title="全局设置" href="global.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> Effekseer Help
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../ja/index.html">Effekseer Help 日本語</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../en/index.html">Effekseer Help (English)</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Effekseer Help (中文)</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../overview.html">概要</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolTutorial/index.html">教程</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">工具参考</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="index.html#id2">概述</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="index.html#id13">特效参数</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="common.html">基础设置</a></li>
+<li class="toctree-l4"><a class="reference internal" href="location.html">位置</a></li>
+<li class="toctree-l4"><a class="reference internal" href="locationAbs.html">力场（Local）</a></li>
+<li class="toctree-l4"><a class="reference internal" href="locationGene.html">生成方法</a></li>
+<li class="toctree-l4"><a class="reference internal" href="killRules.html">销毁规则</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rotation.html">旋转</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scale.html">缩放</a></li>
+<li class="toctree-l4"><a class="reference internal" href="depth.html">深度</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererCommon.html">基础渲染设置</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererCommonAd.html">高级渲染设置</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererSprite.html">渲染 - 精灵</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererRibbon.html">渲染 - 丝带</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererRing.html">渲染 - 环</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererModel.html">渲染 - 模型</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererTrack.html">渲染 - 轨迹</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sound.html">声音</a></li>
+<li class="toctree-l4"><a class="reference internal" href="fcurve.html">F曲线</a></li>
+<li class="toctree-l4"><a class="reference internal" href="global.html">全局设置</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">剔除</a></li>
+<li class="toctree-l4"><a class="reference internal" href="levelsOfDetails.html">细节层级（LOD）</a></li>
+<li class="toctree-l4"><a class="reference internal" href="dynamicParameter.html">动态参数</a></li>
+<li class="toctree-l4"><a class="reference internal" href="proceduralModel.html">程序化模型</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id14">特效特性</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id15">工具方法</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id16">命令行</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../MaterialToolReference/index.html">材质参考</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolTips/01.html">TIPS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq.html">常见问题解答</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ReleaseNotes/index.html">版本说明</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Effekseer Help</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../index.html">Effekseer Help (中文)</a> &raquo;</li>
+          <li><a href="index.html">工具参考</a> &raquo;</li>
+      <li>剔除</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="id1">
+<h1>剔除<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h1>
+<div class="section" id="id2">
+<h2>概述<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
+<p>你可以设置和剔除相关的参数。剔除的用途是不渲染位于屏幕外的特效。如果“剔除”设置的粗糙的形状位于屏幕之外，那么特效本身就不会被渲染。如果没有设置剔除，特效总是被渲染。</p>
+<p>译注：就是设置一个包裹特效的形状，当这个形状位于屏幕之外时，就判断特效整体都位于屏幕之外，就不需要渲染特效了。</p>
+</div>
+<div class="section" id="id3">
+<h2>参数<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h2>
+<div class="section" id="id4">
+<h3>显示剔除<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h3>
+<p>设置是否在屏幕上显示剔除的形状。</p>
+</div>
+<div class="section" id="id5">
+<h3>剔除类型<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h3>
+<p>设置剔除的形状。</p>
+<div class="section" id="id6">
+<h4>无<a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h4>
+<p>不使用剔除，特效一直被绘制。</p>
+</div>
+<div class="section" id="id7">
+<h4>球<a class="headerlink" href="#id7" title="Permalink to this heading">¶</a></h4>
+<p>球形剔除。</p>
+<div class="section" id="id8">
+<h5>半径<a class="headerlink" href="#id8" title="Permalink to this heading">¶</a></h5>
+<p>球的半径。</p>
+</div>
+<div class="section" id="id9">
+<h5>位置<a class="headerlink" href="#id9" title="Permalink to this heading">¶</a></h5>
+<p>球的中心的位置。</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="global.html" class="btn btn-neutral float-left" title="全局设置" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="levelsOfDetails.html" class="btn btn-neutral float-right" title="细节层级（LOD）" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2019, Effekseer.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

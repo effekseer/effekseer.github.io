@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>14. 设置细节层级（LOD） &mdash; Effekseer Help  ドキュメント</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/js/three.min.js"></script>
+        <script src="../../_static/js/effekseer.min.js"></script>
+        <script src="../../_static/js/iframe.js"></script>
+        <script src="../../_static/js/OrbitControls.js"></script>
+        <script src="../../_static/translations.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="検索" href="../../search.html" />
+    <link rel="next" title="15.通过触发器改变特效！" href="15.html" />
+    <link rel="prev" title="13. 扭曲背景！" href="13.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> Effekseer Help
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../ja/index.html">Effekseer Help 日本語</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../en/index.html">Effekseer Help (English)</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Effekseer Help (中文)</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../overview.html">概要</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">教程</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="index.html#id2">基础</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="01.html">01.查看并使用示例！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="02.html">02.让粒子散射开！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="03.html">03. 显示图片！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="04.html">04. 旋转和缩放！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="05.html">05. 制作一个斩击命中特效！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="06.html">06. 创建环形粒子!</a></li>
+<li class="toctree-l4"><a class="reference internal" href="07.html">07. 使用父子关系实现复杂移动！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="08.html">08. 通过设置生成方法排列粒子!</a></li>
+<li class="toctree-l4"><a class="reference internal" href="09.html">09.制作枪口焰！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="10.html">10.丝带和轨迹</a></li>
+<li class="toctree-l4"><a class="reference internal" href="11.html">11. 使用3D模型！！</a></li>
+<li class="toctree-l4"><a class="reference internal" href="12.html">12. 用F曲线表示复杂的运动</a></li>
+<li class="toctree-l4"><a class="reference internal" href="13.html">13. 扭曲背景！</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">14. 设置细节层级（LOD）</a></li>
+<li class="toctree-l4"><a class="reference internal" href="15.html">15.通过触发器改变特效！</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id3">材质</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolReference/index.html">工具参考</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../MaterialToolReference/index.html">材质参考</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolTips/01.html">TIPS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq.html">常见问题解答</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ReleaseNotes/index.html">版本说明</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Effekseer Help</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../index.html">Effekseer Help (中文)</a> &raquo;</li>
+          <li><a href="index.html">教程</a> &raquo;</li>
+      <li>14. 设置细节层级（LOD）</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="lod">
+<h1>14. 设置细节层级（LOD）<a class="headerlink" href="#lod" title="Permalink to this heading">¶</a></h1>
+<div class="section" id="id1">
+<h2>概要<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h2>
+<p>细节层级（LOD）使艺术家们能够根据到相机的距离有效利用系统资源和屏幕空间。</p>
+<img alt="../../_images/lods_Effect.png" class="align-center" src="../../_images/lods_Effect.png" />
+<p>本章我们将验证示例文件<code class="docutils literal notranslate"><span class="pre">Aura01.efkefc</span></code>。<a href = "../../Sample/14_Sample.zip">可以在此处下载。</a></p>
+<img alt="../../_images/lods_NodeList.png" class="align-center" src="../../_images/lods_NodeList.png" />
+<p>在这个特效中，你可以看到一个叫做<code class="docutils literal notranslate"><span class="pre">Particle</span></code>的节点。它生成了从龙卷风的底部飞向顶部的小颗粒。当相机靠近特效时，你能看到这些粒子，它们为特效增加了很棒的细节。</p>
+<img alt="../../_images/lods_ParticleInViewer.png" class="align-center" src="../../_images/lods_ParticleInViewer.png" />
+<p>然而，如果摄像机离得很远，它们就会很小，几乎看不到，但仍然需要在每一帧中进行计算和处理。这是细节层级（LOD）的一个很好的例子，因为可以根据距离来简化特效。如果一个特效节点离视窗很远，它可以被隐藏或完全关闭。</p>
+</div>
+<div class="section" id="id2">
+<h2>层级设置<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
+<p>让我们设置要使用的层级。打开<code class="docutils literal notranslate"><span class="pre">窗口</span> <span class="pre">&gt;</span> <span class="pre">细节层级（LOD）</span></code>。</p>
+<img alt="../../_images/lods_Panel.png" class="align-center" src="../../_images/lods_Panel.png" />
+<p>这个面板设置了有效的细节层级和每个层级的距离。0级是基本层级，它总是从距离0开始，当没有其他级别可供选择时就会使用。一个特效中最多可以使用四个层级。</p>
+<p>让我们启用层级1。 默认情况下，最小距离被设置为16，在这个例子中使用默认值就很好。你可以自由设置一个层级的最小距离，但值必须在上一个层级和下一个层级之间。</p>
+<img alt="../../_images/lods_Panel2.png" class="align-center" src="../../_images/lods_Panel2.png" />
+<p>在编辑器中使用鼠标滚轮来改变摄像机的位置。如果与特效的距离大于16，你会看到播放器右下角的<code class="docutils literal notranslate"><span class="pre">Current</span> <span class="pre">LOD</span></code>变为1。</p>
+</div>
+<div class="section" id="id3">
+<h2>设置粒子节点<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h2>
+<img alt="../../_images/lods_NodeTreeSelectors.png" class="align-center" src="../../_images/lods_NodeTreeSelectors.png" />
+<p>你会注意到，在启用第二个层级后，节点层级结构中的每个颜色按钮都显示为两行，每个层级一行。它显示了每个特效节点启用的层级。点击这个按钮可以更改每个节点选择的层级。</p>
+<p>点击<code class="docutils literal notranslate"><span class="pre">Particle</span></code>节点附近的这个按钮。</p>
+<img alt="../../_images/lods_NodeConfiguration.png" class="align-center" src="../../_images/lods_NodeConfiguration.png" />
+<p>在这里，你可以选择你希望这个节点在哪一层级被启用并正常运行。默认情况下，每个节点在所有层级上都是启用的，但是我们想在层级1上禁用<code class="docutils literal notranslate"><span class="pre">Particle</span></code>节点，所以我们取消选中该层级。</p>
+<p>在选择层级的下方，你可以改变当前LOD未被选中时节点的行为。有三种不同的行为可供选择：</p>
+<ul class="simple">
+<li><p>隐藏粒子 - 粒子将继续生成并更新，但不再被渲染。这可以减少GPU的使用，但是在更新时仍然会消耗CPU资源。</p></li>
+<li><p>停止生成新粒子 - 已经生成的粒子将继续更新和渲染，但新的粒子将不会生成。这可以确保粒子不会突然被隐藏起来，直到它们的生命周期结束前仍然可见，从而使层级之间的过渡更加平滑。</p></li>
+<li><p>停止生成新粒子并隐藏现存的粒子 - 结合了之前的两种行为。不会生成新粒子，已经生成的粒子将被隐藏。但是，请注意，已经生成的粒子将继续被更新，直到它们被销毁。</p></li>
+</ul>
+<p>默认选项是<code class="docutils literal notranslate"><span class="pre">隐藏粒子</span></code>。
+我们选择<code class="docutils literal notranslate"><span class="pre">停止生成新粒子并隐藏现存的粒子</span></code>，它适合这个例子。</p>
+</div>
+<div class="section" id="id4">
+<h2>检查结果<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h2>
+<p>查看视窗右下角的统计数据以检查设置。</p>
+<ul class="simple">
+<li><p>Current LOD: 当前有效的细节层级</p></li>
+<li><p>D：当前渲染中的Draw call次数。</p></li>
+<li><p>V：当前渲染中的顶点数量。</p></li>
+<li><p>P：当前渲染中的粒子数。</p></li>
+</ul>
+<p>如果一切操作正确，那么在层级0时，你应该看到大约115个粒子。然后，如果你让摄像机远离特效，到层级1的距离，你会看到粒子的数量逐渐减少到大约15个。</p>
+</div>
+<div class="section" id="id5">
+<h2>总结<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h2>
+<p>本章介绍了如何设置细节层级，以及如何配置特效节点，使其根据当前的细节层级改变行为。建议在特效制作过程的最后一步设置细节层级。</p>
+<p>细节层级是非常通用的，可以用许多不同的方式来设置。通过为每个层级创建一个单独的根节点，你甚至可以完全替换一定距离下的特效。优化特效的过程可能很棘手，但有时它就是勉强运行在30帧的游戏与稳定运行在60帧的游戏的区别。</p>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="13.html" class="btn btn-neutral float-left" title="13. 扭曲背景！" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="15.html" class="btn btn-neutral float-right" title="15.通过触发器改变特效！" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2019, Effekseer.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
