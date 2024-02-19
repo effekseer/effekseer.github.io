@@ -161,6 +161,7 @@ efkpkgファイルは1つ以上のefkefcファイルと、各種リソースフ�
     dynamicParameter
     proceduralModel
     collisions
+    gpuParticles
 ```
 
 ## エフェクト機能
