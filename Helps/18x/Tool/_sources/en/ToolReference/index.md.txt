@@ -162,6 +162,7 @@ It can be imported and used in another project of yourself or someone else.
     dynamicParameter
     proceduralModel
     collisions
+    gpuParticles
 ```
 
 ## Effect features

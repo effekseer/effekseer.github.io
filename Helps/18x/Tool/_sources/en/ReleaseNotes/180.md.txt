@@ -1,0 +1,25 @@
+## 1.80 New Features
+
+## Common
+
+### Collisions
+
+Added the feature to make particles and surfaces collide.
+
+### Track, Ribbon
+
+Added the feature to set UVs that repeat every specified length.
+
+### Rotation
+
+Added the feature to rotate particles in the direction of movement.
+
+### GPU Particles
+
+Added the feature to compute particles processing using GPU.
+This is currently a preview feature and may not be available in all targets.
+
+### Profiler
+
+Added the function to measure and display GPU load.
+This is currently a preview feature and may not be available in all targets.
