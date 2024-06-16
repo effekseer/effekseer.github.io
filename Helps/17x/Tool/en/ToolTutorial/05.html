@@ -1,26 +1,27 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="ja" >
+<html class="writer-html5" lang="ja" data-content_root="../../">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>05. Let&#39;s create a hit mark (Slashing)! &mdash; Effekseer Help  ドキュメント</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=77cdefee" />
+
+  
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/js/three.min.js"></script>
-        <script src="../../_static/js/effekseer.min.js"></script>
-        <script src="../../_static/js/iframe.js"></script>
-        <script src="../../_static/js/OrbitControls.js"></script>
-        <script src="../../_static/translations.js"></script>
+        <script src="../../_static/documentation_options.js?v=c033477b"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/js/three.min.js?v=1b2a738c"></script>
+        <script src="../../_static/js/effekseer.min.js?v=02ca8712"></script>
+        <script src="../../_static/js/iframe.js?v=0460a6df"></script>
+        <script src="../../_static/js/OrbitControls.js?v=366c62db"></script>
+        <script src="../../_static/translations.js?v=4dbe4bdc"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="検索" href="../../search.html" />
@@ -33,11 +34,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../index.html" class="icon icon-home"> Effekseer Help
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Effekseer Help
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -91,10 +96,10 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../index.html">Effekseer Help (English)</a> &raquo;</li>
-          <li><a href="index.html">Tutorial</a> &raquo;</li>
-      <li>05. Let's create a hit mark (Slashing)!</li>
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Effekseer Help (English)</a></li>
+          <li class="breadcrumb-item"><a href="index.html">Tutorial</a></li>
+      <li class="breadcrumb-item active">05. Let's create a hit mark (Slashing)!</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -103,10 +108,10 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="let-s-create-a-hit-mark-slashing">
-<h1>05. Let's create a hit mark (Slashing)!<a class="headerlink" href="#let-s-create-a-hit-mark-slashing" title="Permalink to this heading">¶</a></h1>
-<div class="main"><div class="section" id="overview">
-<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this heading">¶</a></h2>
+  <section id="let-s-create-a-hit-mark-slashing">
+<h1>05. Let's create a hit mark (Slashing)!<a class="headerlink" href="#let-s-create-a-hit-mark-slashing" title="Link to this heading">¶</a></h1>
+<div class="main"><section id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Link to this heading">¶</a></h2>
 <p>In this chapter, you create an effect (hit mark) hit by a slash as used in an actual game.
 It is an effect where a sword line is expressed in the middle and small impacts flies around.
 In doing so, we explain copying and adding nodes and easing particles as new contents.</p>
@@ -115,9 +120,9 @@ In doing so, we explain copying and adding nodes and easing particles as new con
 <div align="center">
 <a href = "../../Sample/05_01_Sample.zip">Download</a>
 </div><p>Since the length of the effect created is about 0.5 seconds, <code class="docutils literal notranslate"><span class="pre">End</span></code> in the <code class="docutils literal notranslate"><span class="pre">Viewer</span> <span class="pre">Controls</span></code> window is specified to 30 frames.</p>
-</div>
-<div class="section" id="easing">
-<h2>Easing<a class="headerlink" href="#easing" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="easing">
+<h2>Easing<a class="headerlink" href="#easing" title="Link to this heading">¶</a></h2>
 <p>Easing is often used for various parameters.</p>
 <p>Easing is a method of representing changes in values by specifying the values of the start and end points and automatically interpolating the values between them.</p>
 <p>As shown in the figure below, position, rotation and scale have been specified by speed (1) or acceleration up to now.
@@ -142,9 +147,9 @@ The lower the speed, the harder the value changes, the faster the value, the eas
 <div align="center">
 <img src="../../img/Tutorial/05_easing.gif">
 <p>Interpolation method</p>
-</div></div>
-<div class="section" id="create-the-effect">
-<h2>Create the effect<a class="headerlink" href="#create-the-effect" title="Permalink to this heading">¶</a></h2>
+</div></section>
+<section id="create-the-effect">
+<h2>Create the effect<a class="headerlink" href="#create-the-effect" title="Link to this heading">¶</a></h2>
 <p>Effects are not often composed of single kind of particles but plural kinds of completely different looking particles.
 Effekseer can have multiple nodes. You can give completely different parameters for each node.
 Hit marks must also consist of more than one node. This time, you will create the nodes in order.</p>
@@ -153,8 +158,8 @@ Hit marks must also consist of more than one node. This time, you will create th
 <li><p>The playback time is about 0.5 seconds (30 frames)</p></li>
 <li><p>Color is purple (255, 32, 255) to pink (255, 128, 255)</p></li>
 </ul>
-<div class="section" id="sword-line-node">
-<h3>Sword line node<a class="headerlink" href="#sword-line-node" title="Permalink to this heading">¶</a></h3>
+<section id="sword-line-node">
+<h3>Sword line node<a class="headerlink" href="#sword-line-node" title="Link to this heading">¶</a></h3>
 <p>You create a node where a particle slenderly cuts at an angle of 45 degrees, representing a sword line.</p>
 <p>The sword line is specified to elongate in the direction of 45 degrees during 0.33 seconds (20 frames).
 <code class="docutils literal notranslate"><span class="pre">Rotated</span> <span class="pre">Billboard</span></code> is specified to tilt the particles.</p>
@@ -163,100 +168,100 @@ Hit marks must also consist of more than one node. This time, you will create th
 <table border="1" class="docutils">
 <thead>
 <tr>
-<th align="left">Window</th>
-<th align="left">Value type</th>
-<th align="left">Value</th>
+<th style="text-align: left;">Window</th>
+<th style="text-align: left;">Value type</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left">Basic Settings</td>
-<td align="left">Name</td>
-<td align="left">Line1</td>
+<td style="text-align: left;">Basic Settings</td>
+<td style="text-align: left;">Name</td>
+<td style="text-align: left;">Line1</td>
 </tr>
 <tr>
-<td align="left">Basic Settings</td>
-<td align="left">Time to live</td>
-<td align="left">20</td>
+<td style="text-align: left;">Basic Settings</td>
+<td style="text-align: left;">Time to live</td>
+<td style="text-align: left;">20</td>
 </tr>
 <tr>
-<td align="left">Rotation</td>
-<td align="left">Angle</td>
-<td align="left">x=0, y=0, z=-45</td>
+<td style="text-align: left;">Rotation</td>
+<td style="text-align: left;">Angle</td>
+<td style="text-align: left;">x=0, y=0, z=-45</td>
 </tr>
 <tr>
-<td align="left">Scale</td>
-<td align="left">Scale Method</td>
-<td align="left">Easing</td>
+<td style="text-align: left;">Scale</td>
+<td style="text-align: left;">Scale Method</td>
+<td style="text-align: left;">Easing</td>
 </tr>
 <tr>
-<td align="left">Scale</td>
-<td align="left">Start(Mean)</td>
-<td align="left">x=4, y=1, z=1</td>
+<td style="text-align: left;">Scale</td>
+<td style="text-align: left;">Start(Mean)</td>
+<td style="text-align: left;">x=4, y=1, z=1</td>
 </tr>
 <tr>
-<td align="left">Scale</td>
-<td align="left">End(Mean)</td>
-<td align="left">x=1, y=25, z=1</td>
+<td style="text-align: left;">Scale</td>
+<td style="text-align: left;">End(Mean)</td>
+<td style="text-align: left;">x=1, y=25, z=1</td>
 </tr>
 <tr>
-<td align="left">Scale</td>
-<td align="left">Ease In</td>
-<td align="left">Fastest</td>
+<td style="text-align: left;">Scale</td>
+<td style="text-align: left;">Ease In</td>
+<td style="text-align: left;">Fastest</td>
 </tr>
 <tr>
-<td align="left">Scale</td>
-<td align="left">Ease Out</td>
-<td align="left">Slowest</td>
+<td style="text-align: left;">Scale</td>
+<td style="text-align: left;">Ease Out</td>
+<td style="text-align: left;">Slowest</td>
 </tr>
 <tr>
-<td align="left">Basic Render Settings</td>
-<td align="left">Texture</td>
-<td align="left">Texture/Line01.png</td>
+<td style="text-align: left;">Basic Render Settings</td>
+<td style="text-align: left;">Texture</td>
+<td style="text-align: left;">Texture/Line01.png</td>
 </tr>
 <tr>
-<td align="left">Basic Render Settings</td>
-<td align="left">Blend</td>
-<td align="left">Additive</td>
+<td style="text-align: left;">Basic Render Settings</td>
+<td style="text-align: left;">Blend</td>
+<td style="text-align: left;">Additive</td>
 </tr>
 <tr>
-<td align="left">Render Settings</td>
-<td align="left">Configuration</td>
-<td align="left">Rotated Billboard</td>
+<td style="text-align: left;">Render Settings</td>
+<td style="text-align: left;">Configuration</td>
+<td style="text-align: left;">Rotated Billboard</td>
 </tr>
 <tr>
-<td align="left">Render Settings</td>
-<td align="left">ColorAll</td>
-<td align="left">Easing</td>
+<td style="text-align: left;">Render Settings</td>
+<td style="text-align: left;">ColorAll</td>
+<td style="text-align: left;">Easing</td>
 </tr>
 <tr>
-<td align="left">Render Settings</td>
-<td align="left">ColorAll-Start(Mean)</td>
-<td align="left">255,128,255,255</td>
+<td style="text-align: left;">Render Settings</td>
+<td style="text-align: left;">ColorAll-Start(Mean)</td>
+<td style="text-align: left;">255,128,255,255</td>
 </tr>
 <tr>
-<td align="left">Render Settings</td>
-<td align="left">ColorAll-End(Mean)</td>
-<td align="left">255,255,255,0</td>
+<td style="text-align: left;">Render Settings</td>
+<td style="text-align: left;">ColorAll-End(Mean)</td>
+<td style="text-align: left;">255,255,255,0</td>
 </tr>
 <tr>
-<td align="left">Render Settings</td>
-<td align="left">ColorAll-Ease In</td>
-<td align="left">Slowest</td>
+<td style="text-align: left;">Render Settings</td>
+<td style="text-align: left;">ColorAll-Ease In</td>
+<td style="text-align: left;">Slowest</td>
 </tr>
 <tr>
-<td align="left">Render Settings</td>
-<td align="left">ColorAll-Ease Out</td>
-<td align="left">Fastest</td>
+<td style="text-align: left;">Render Settings</td>
+<td style="text-align: left;">ColorAll-Ease Out</td>
+<td style="text-align: left;">Fastest</td>
 </tr>
 </tbody>
 </table><p>At this point the effect is now as follows.</p>
 <div align="center">
 <img src="../../img/Tutorial/05_01.gif">
 <p>Sword line node</p>
-</div></div>
-<div class="section" id="impact-node">
-<h3>Impact node<a class="headerlink" href="#impact-node" title="Permalink to this heading">¶</a></h3>
+</div></section>
+<section id="impact-node">
+<h3>Impact node<a class="headerlink" href="#impact-node" title="Link to this heading">¶</a></h3>
 <p>When the attack hits, not only the sword line but also the impact is generated.
 Impact node is created like a sword wire.</p>
 <p>Since the parameters of the sword line node and impact node are different, you need to add a node.
@@ -270,185 +275,185 @@ From the menu, you choose Add Node.</p>
 <table border="1" class="docutils">
 <thead>
 <tr>
-<th align="left">Window</th>
-<th align="left">Value type</th>
-<th align="left">Value</th>
+<th style="text-align: left;">Window</th>
+<th style="text-align: left;">Value type</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left">Basic Settings</td>
-<td align="left">Name</td>
-<td align="left">Line2</td>
+<td style="text-align: left;">Basic Settings</td>
+<td style="text-align: left;">Name</td>
+<td style="text-align: left;">Line2</td>
 </tr>
 <tr>
-<td align="left">Basic Settings</td>
-<td align="left">Spawn Count</td>
-<td align="left">10</td>
+<td style="text-align: left;">Basic Settings</td>
+<td style="text-align: left;">Spawn Count</td>
+<td style="text-align: left;">10</td>
 </tr>
 <tr>
-<td align="left">Basic Settings</td>
-<td align="left">Time to live</td>
-<td align="left">20</td>
+<td style="text-align: left;">Basic Settings</td>
+<td style="text-align: left;">Time to live</td>
+<td style="text-align: left;">20</td>
 </tr>
 <tr>
-<td align="left">Rotation</td>
-<td align="left">Rotation Method</td>
-<td align="left">PVA</td>
+<td style="text-align: left;">Rotation</td>
+<td style="text-align: left;">Rotation Method</td>
+<td style="text-align: left;">PVA</td>
 </tr>
 <tr>
-<td align="left">Rotation</td>
-<td align="left">Angle(Deviation)</td>
-<td align="left">x=0, y=0, z=180</td>
+<td style="text-align: left;">Rotation</td>
+<td style="text-align: left;">Angle(Deviation)</td>
+<td style="text-align: left;">x=0, y=0, z=180</td>
 </tr>
 <tr>
-<td align="left">Scale</td>
-<td align="left">Scale Method</td>
-<td align="left">Easing</td>
+<td style="text-align: left;">Scale</td>
+<td style="text-align: left;">Scale Method</td>
+<td style="text-align: left;">Easing</td>
 </tr>
 <tr>
-<td align="left">Scale</td>
-<td align="left">Start(Mean)</td>
-<td align="left">x=1, y=1, z=1</td>
+<td style="text-align: left;">Scale</td>
+<td style="text-align: left;">Start(Mean)</td>
+<td style="text-align: left;">x=1, y=1, z=1</td>
 </tr>
 <tr>
-<td align="left">Scale</td>
-<td align="left">End(Mean)</td>
-<td align="left">x=1, y=10, z=1</td>
+<td style="text-align: left;">Scale</td>
+<td style="text-align: left;">End(Mean)</td>
+<td style="text-align: left;">x=1, y=10, z=1</td>
 </tr>
 <tr>
-<td align="left">Scale</td>
-<td align="left">Ease In</td>
-<td align="left">Fastest</td>
+<td style="text-align: left;">Scale</td>
+<td style="text-align: left;">Ease In</td>
+<td style="text-align: left;">Fastest</td>
 </tr>
 <tr>
-<td align="left">Scale</td>
-<td align="left">Ease Out</td>
-<td align="left">Slowest</td>
+<td style="text-align: left;">Scale</td>
+<td style="text-align: left;">Ease Out</td>
+<td style="text-align: left;">Slowest</td>
 </tr>
 <tr>
-<td align="left">Basic Render Settings</td>
-<td align="left">Texture</td>
-<td align="left">Texture/Line01.png</td>
+<td style="text-align: left;">Basic Render Settings</td>
+<td style="text-align: left;">Texture</td>
+<td style="text-align: left;">Texture/Line01.png</td>
 </tr>
 <tr>
-<td align="left">Basic Render Settings</td>
-<td align="left">Blend</td>
-<td align="left">Additive</td>
+<td style="text-align: left;">Basic Render Settings</td>
+<td style="text-align: left;">Blend</td>
+<td style="text-align: left;">Additive</td>
 </tr>
 <tr>
-<td align="left">Render Settings</td>
-<td align="left">Configuration</td>
-<td align="left">Rotated Billboard</td>
+<td style="text-align: left;">Render Settings</td>
+<td style="text-align: left;">Configuration</td>
+<td style="text-align: left;">Rotated Billboard</td>
 </tr>
 <tr>
-<td align="left">Render Settings</td>
-<td align="left">ColorAll</td>
-<td align="left">Easing</td>
+<td style="text-align: left;">Render Settings</td>
+<td style="text-align: left;">ColorAll</td>
+<td style="text-align: left;">Easing</td>
 </tr>
 <tr>
-<td align="left">Render Settings</td>
-<td align="left">ColorAll-Start(Mean)</td>
-<td align="left">255,128,255,255</td>
+<td style="text-align: left;">Render Settings</td>
+<td style="text-align: left;">ColorAll-Start(Mean)</td>
+<td style="text-align: left;">255,128,255,255</td>
 </tr>
 <tr>
-<td align="left">Render Settings</td>
-<td align="left">ColorAll-End(Mean)</td>
-<td align="left">255,255,255,0</td>
+<td style="text-align: left;">Render Settings</td>
+<td style="text-align: left;">ColorAll-End(Mean)</td>
+<td style="text-align: left;">255,255,255,0</td>
 </tr>
 <tr>
-<td align="left">Render Settings</td>
-<td align="left">ColorAll-Ease In</td>
-<td align="left">Slowest</td>
+<td style="text-align: left;">Render Settings</td>
+<td style="text-align: left;">ColorAll-Ease In</td>
+<td style="text-align: left;">Slowest</td>
 </tr>
 <tr>
-<td align="left">Render Settings</td>
-<td align="left">ColorAll-Ease Out</td>
-<td align="left">Fastest</td>
+<td style="text-align: left;">Render Settings</td>
+<td style="text-align: left;">ColorAll-Ease Out</td>
+<td style="text-align: left;">Fastest</td>
 </tr>
 </tbody>
 </table><p>fect is now as follows.</p>
 <div align="center">
 <img src="../../img/Tutorial/05_02.gif">
 <p>Impact node</p>
-</div></div>
-<div class="section" id="light-emitting-node-no-1">
-<h3>Light emitting node No.1<a class="headerlink" href="#light-emitting-node-no-1" title="Permalink to this heading">¶</a></h3>
+</div></section>
+<section id="light-emitting-node-no-1">
+<h3>Light emitting node No.1<a class="headerlink" href="#light-emitting-node-no-1" title="Link to this heading">¶</a></h3>
 <p>Glowing effects at the moment of hit is better looking.
 The light emmiting node is also specified same as the sword line node.</p>
 <p>Values are changed as fllows.</p>
 <table border="1" class="docutils">
 <thead>
 <tr>
-<th align="left">Window</th>
-<th align="left">Value type</th>
-<th align="left">Value</th>
+<th style="text-align: left;">Window</th>
+<th style="text-align: left;">Value type</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left">Basic Settings</td>
-<td align="left">Name</td>
-<td align="left">Flash1</td>
+<td style="text-align: left;">Basic Settings</td>
+<td style="text-align: left;">Name</td>
+<td style="text-align: left;">Flash1</td>
 </tr>
 <tr>
-<td align="left">Basic Settings</td>
-<td align="left">Time to live</td>
-<td align="left">20</td>
+<td style="text-align: left;">Basic Settings</td>
+<td style="text-align: left;">Time to live</td>
+<td style="text-align: left;">20</td>
 </tr>
 <tr>
-<td align="left">Scale</td>
-<td align="left">Scale Method</td>
-<td align="left">PVA(Single)</td>
+<td style="text-align: left;">Scale</td>
+<td style="text-align: left;">Scale Method</td>
+<td style="text-align: left;">PVA(Single)</td>
 </tr>
 <tr>
-<td align="left">Scale</td>
-<td align="left">Expansion Speed</td>
-<td align="left">0.6</td>
+<td style="text-align: left;">Scale</td>
+<td style="text-align: left;">Expansion Speed</td>
+<td style="text-align: left;">0.6</td>
 </tr>
 <tr>
-<td align="left">Basic Render Settings</td>
-<td align="left">Texture</td>
-<td align="left">Texture/Particle01.png</td>
+<td style="text-align: left;">Basic Render Settings</td>
+<td style="text-align: left;">Texture</td>
+<td style="text-align: left;">Texture/Particle01.png</td>
 </tr>
 <tr>
-<td align="left">Basic Render Settings</td>
-<td align="left">Blend</td>
-<td align="left">Additive</td>
+<td style="text-align: left;">Basic Render Settings</td>
+<td style="text-align: left;">Blend</td>
+<td style="text-align: left;">Additive</td>
 </tr>
 <tr>
-<td align="left">Render Settings</td>
-<td align="left">ColorAll</td>
-<td align="left">Easing</td>
+<td style="text-align: left;">Render Settings</td>
+<td style="text-align: left;">ColorAll</td>
+<td style="text-align: left;">Easing</td>
 </tr>
 <tr>
-<td align="left">Render Settings</td>
-<td align="left">ColorAll-Start(Mean)</td>
-<td align="left">255,32,255,255</td>
+<td style="text-align: left;">Render Settings</td>
+<td style="text-align: left;">ColorAll-Start(Mean)</td>
+<td style="text-align: left;">255,32,255,255</td>
 </tr>
 <tr>
-<td align="left">Render Settings</td>
-<td align="left">ColorAll-End(Mean)</td>
-<td align="left">255,128,255,0</td>
+<td style="text-align: left;">Render Settings</td>
+<td style="text-align: left;">ColorAll-End(Mean)</td>
+<td style="text-align: left;">255,128,255,0</td>
 </tr>
 <tr>
-<td align="left">Render Settings</td>
-<td align="left">ColorAll-Ease In</td>
-<td align="left">Slowest</td>
+<td style="text-align: left;">Render Settings</td>
+<td style="text-align: left;">ColorAll-Ease In</td>
+<td style="text-align: left;">Slowest</td>
 </tr>
 <tr>
-<td align="left">Render Settings</td>
-<td align="left">ColorAll-Ease Out</td>
-<td align="left">Fastest</td>
+<td style="text-align: left;">Render Settings</td>
+<td style="text-align: left;">ColorAll-Ease Out</td>
+<td style="text-align: left;">Fastest</td>
 </tr>
 </tbody>
 </table><p>At this point the effect is now as follows.</p>
 <div align="center">
 <img src="../../img/Tutorial/05_03.gif">
 <p>Light emitting node No.1</p>
-</div></div>
-<div class="section" id="light-emitting-node-no-2">
-<h3>Light emitting node No.2<a class="headerlink" href="#light-emitting-node-no-2" title="Permalink to this heading">¶</a></h3>
+</div></section>
+<section id="light-emitting-node-no-2">
+<h3>Light emitting node No.2<a class="headerlink" href="#light-emitting-node-no-2" title="Link to this heading">¶</a></h3>
 <p>New emiitting node is added because the light emission is still sober.
 This light emitting node is almost same as the light emitting node created earlier.
 Effekseer can copy nodes.</p>
@@ -465,21 +470,21 @@ Effekseer can copy nodes.</p>
 <table border="1" class="docutils">
 <thead>
 <tr>
-<th align="left">Window</th>
-<th align="left">Value type</th>
-<th align="left">Value</th>
+<th style="text-align: left;">Window</th>
+<th style="text-align: left;">Value type</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left">Basic Settings</td>
-<td align="left">Name</td>
-<td align="left">Flash2</td>
+<td style="text-align: left;">Basic Settings</td>
+<td style="text-align: left;">Name</td>
+<td style="text-align: left;">Flash2</td>
 </tr>
 <tr>
-<td align="left">Basic Render Settings</td>
-<td align="left">Texture</td>
-<td align="left">Texture/Particle03.png</td>
+<td style="text-align: left;">Basic Render Settings</td>
+<td style="text-align: left;">Texture</td>
+<td style="text-align: left;">Texture/Particle03.png</td>
 </tr>
 </tbody>
 </table><p>You could create an effect that a slash hit.</p>
@@ -489,14 +494,14 @@ Effekseer can copy nodes.</p>
 </div><p>Finally, I made it possible to download the effect created in this chapter.</p>
 <div align="center">
 <a href = "../../Sample/05_02_Sample.zip">Download</a>
-</div></div>
-</div>
-<div class="section" id="summary">
-<h2>Summary<a class="headerlink" href="#summary" title="Permalink to this heading">¶</a></h2>
+</div></section>
+</section>
+<section id="summary">
+<h2>Summary<a class="headerlink" href="#summary" title="Link to this heading">¶</a></h2>
 <p>In this chapter, You created effects that are likely to actually be used in games.
 In the next chapter, you will create even more complicated effects.</p>
-</div></div>
-</div>
+</div></section>
+</section>
 
 
            </div>

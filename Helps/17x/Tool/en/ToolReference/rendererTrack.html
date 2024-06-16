@@ -1,26 +1,27 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="ja" >
+<html class="writer-html5" lang="ja" data-content_root="../../">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Render - Track &mdash; Effekseer Help  ドキュメント</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=77cdefee" />
+
+  
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/js/three.min.js"></script>
-        <script src="../../_static/js/effekseer.min.js"></script>
-        <script src="../../_static/js/iframe.js"></script>
-        <script src="../../_static/js/OrbitControls.js"></script>
-        <script src="../../_static/translations.js"></script>
+        <script src="../../_static/documentation_options.js?v=c033477b"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/js/three.min.js?v=1b2a738c"></script>
+        <script src="../../_static/js/effekseer.min.js?v=02ca8712"></script>
+        <script src="../../_static/js/iframe.js?v=0460a6df"></script>
+        <script src="../../_static/js/OrbitControls.js?v=366c62db"></script>
+        <script src="../../_static/translations.js?v=4dbe4bdc"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="検索" href="../../search.html" />
@@ -33,11 +34,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../index.html" class="icon icon-home"> Effekseer Help
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Effekseer Help
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -101,10 +106,10 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../index.html">Effekseer Help (English)</a> &raquo;</li>
-          <li><a href="index.html">Tool-Reference</a> &raquo;</li>
-      <li>Render - Track</li>
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Effekseer Help (English)</a></li>
+          <li class="breadcrumb-item"><a href="index.html">Tool-Reference</a></li>
+      <li class="breadcrumb-item active">Render - Track</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -113,94 +118,94 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="render-track">
-<h1>Render - Track<a class="headerlink" href="#render-track" title="Permalink to this heading">¶</a></h1>
-<div class="section" id="overview">
-<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this heading">¶</a></h2>
+  <section id="render-track">
+<h1>Render - Track<a class="headerlink" href="#render-track" title="Link to this heading">¶</a></h1>
+<section id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Link to this heading">¶</a></h2>
 <p>Here we explain the parameters that affect the drawing when &quot;Track&quot; is selected in the Render window.</p>
 <p>When &quot;Track&quot; is selected, effects are drawn along a continuous track.</p>
 <p>The track is drawn by connecting a thick line between all the children of a certain particle instead of drawing each particle individually. For example, if particles 1, 2, and 3 are the children of particle 0, a shape is generated with a track drawn between 1, 2, and 3. The track is shaped by &quot;connecting the dots&quot; between each particle. Unlike the ribbon, which is influenced by the rotation and enlargement of the particle, the track is not influenced by them and always faces the camera.</p>
 <p><img alt="../../_images/renderTrack.png" src="../../_images/renderTrack.png" /></p>
-</div>
-<div class="section" id="parameters">
-<h2>Parameters<a class="headerlink" href="#parameters" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="parameters">
+<h2>Parameters<a class="headerlink" href="#parameters" title="Link to this heading">¶</a></h2>
 <div align="center">
 <img src="../../img/Reference/Render/panel_track_en.png">
 <p>"Render Settings" window</p>
-</div><div class="section" id="uv-type">
-<h3>UV Type<a class="headerlink" href="#uv-type" title="Permalink to this heading">¶</a></h3>
+</div><section id="uv-type">
+<h3>UV Type<a class="headerlink" href="#uv-type" title="Link to this heading">¶</a></h3>
 <p>It sets the UV repeat pattern.</p>
-<div class="section" id="strech">
-<h4>Strech<a class="headerlink" href="#strech" title="Permalink to this heading">¶</a></h4>
+<section id="strech">
+<h4>Strech<a class="headerlink" href="#strech" title="Link to this heading">¶</a></h4>
 <p>It uses one image for the entire track. It is suitable for particles with a long length, such as a laser.</p>
-<iframe src='../../Effects/viewer_en.html#References/Render/track_uvtype_strech.efkefc' class='effect'></iframe></div>
-<div class="section" id="tile">
-<h4>Tile<a class="headerlink" href="#tile" title="Permalink to this heading">¶</a></h4>
+<iframe src='../../Effects/viewer_en.html#References/Render/track_uvtype_strech.efkefc' class='effect'></iframe></section>
+<section id="tile">
+<h4>Tile<a class="headerlink" href="#tile" title="Link to this heading">¶</a></h4>
 <p>It repeats one image within one track. It is suitable for particles with repeating patterns, such as chains.
 It can also specify not to repeat only the edges.</p>
-<iframe src='../../Effects/viewer_en.html#References/Render/track_uvtype_tile.efkefc' class='effect'></iframe></div>
-</div>
-<div class="section" id="smoothing">
-<h3>Smoothing<a class="headerlink" href="#smoothing" title="Permalink to this heading">¶</a></h3>
+<iframe src='../../Effects/viewer_en.html#References/Render/track_uvtype_tile.efkefc' class='effect'></iframe></section>
+</section>
+<section id="smoothing">
+<h3>Smoothing<a class="headerlink" href="#smoothing" title="Link to this heading">¶</a></h3>
 <p>Smooth or set even on a sharply bent part, etc.</p>
-</div>
-<div class="section" id="source-of-color-time">
-<h3>Source of color time<a class="headerlink" href="#source-of-color-time" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="source-of-color-time">
+<h3>Source of color time<a class="headerlink" href="#source-of-color-time" title="Link to this heading">¶</a></h3>
 <p>When using time to obtain UVs and colors, select from which element to obtain the time.</p>
-<div class="section" id="group">
-<h4>Group<a class="headerlink" href="#group" title="Permalink to this heading">¶</a></h4>
+<section id="group">
+<h4>Group<a class="headerlink" href="#group" title="Link to this heading">¶</a></h4>
 <p>Use the time survived by the entire particle of the track.</p>
-</div>
-<div class="section" id="first-particle">
-<h4>First particle<a class="headerlink" href="#first-particle" title="Permalink to this heading">¶</a></h4>
+</section>
+<section id="first-particle">
+<h4>First particle<a class="headerlink" href="#first-particle" title="Link to this heading">¶</a></h4>
 <p>Uses the first particle time.
 Left mainly for compatibility with past versions.</p>
-</div>
-</div>
-<div class="section" id="the-number-of-spline-division">
-<h3>The number of spline division<a class="headerlink" href="#the-number-of-spline-division" title="Permalink to this heading">¶</a></h3>
+</section>
+</section>
+<section id="the-number-of-spline-division">
+<h3>The number of spline division<a class="headerlink" href="#the-number-of-spline-division" title="Link to this heading">¶</a></h3>
 <p>This parameter makes the shape smooth by dividing the track finely. It looks beautiful, although processing becomes heavier.</p>
 <table><tbody><tr><td><p>Division : 1</p>
 </td><td><p>Division : 8</p>
-</td></tr><tr><td><img src="../../img/Reference/ribbon_track_division_1.png"/></td><td><img src="../../img/Reference/ribbon_track_division_8.png"/></td></tr></tbody></table></div>
-<div class="section" id="front-size">
-<h3>Front Size<a class="headerlink" href="#front-size" title="Permalink to this heading">¶</a></h3>
+</td></tr><tr><td><img src="../../img/Reference/ribbon_track_division_1.png"/></td><td><img src="../../img/Reference/ribbon_track_division_8.png"/></td></tr></tbody></table></section>
+<section id="front-size">
+<h3>Front Size<a class="headerlink" href="#front-size" title="Link to this heading">¶</a></h3>
 <p>Specify the width of the front of the track.</p>
-</div>
-<div class="section" id="middle-size">
-<h3>Middle Size<a class="headerlink" href="#middle-size" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="middle-size">
+<h3>Middle Size<a class="headerlink" href="#middle-size" title="Link to this heading">¶</a></h3>
 <p>Specify the width of the middle of the track.</p>
-</div>
-<div class="section" id="back-size">
-<h3>Back Size<a class="headerlink" href="#back-size" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="back-size">
+<h3>Back Size<a class="headerlink" href="#back-size" title="Link to this heading">¶</a></h3>
 <p>Specify the width behind the track.</p>
-</div>
-<div class="section" id="color-left">
-<h3>Color, Left<a class="headerlink" href="#color-left" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="color-left">
+<h3>Color, Left<a class="headerlink" href="#color-left" title="Link to this heading">¶</a></h3>
 <p>Specify the color of the left front and left rear of the track.</p>
-</div>
-<div class="section" id="color-left-center">
-<h3>Color, Left-Center<a class="headerlink" href="#color-left-center" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="color-left-center">
+<h3>Color, Left-Center<a class="headerlink" href="#color-left-center" title="Link to this heading">¶</a></h3>
 <p>Specify the color of the left middle of the track.</p>
-</div>
-<div class="section" id="color-center">
-<h3>Color, Center<a class="headerlink" href="#color-center" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="color-center">
+<h3>Color, Center<a class="headerlink" href="#color-center" title="Link to this heading">¶</a></h3>
 <p>Specify the color in front of the middle of the track and the rear in the center.</p>
-</div>
-<div class="section" id="color-center-middle">
-<h3>Color, Center-Middle<a class="headerlink" href="#color-center-middle" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="color-center-middle">
+<h3>Color, Center-Middle<a class="headerlink" href="#color-center-middle" title="Link to this heading">¶</a></h3>
 <p>Specify the middle middle color of the track.</p>
-</div>
-<div class="section" id="color-right">
-<h3>Color, Right<a class="headerlink" href="#color-right" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="color-right">
+<h3>Color, Right<a class="headerlink" href="#color-right" title="Link to this heading">¶</a></h3>
 <p>Specify the color to the front right and back right of the track.</p>
-</div>
-<div class="section" id="color-right-center">
-<h3>Color, Right-Center<a class="headerlink" href="#color-right-center" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="color-right-center">
+<h3>Color, Right-Center<a class="headerlink" href="#color-right-center" title="Link to this heading">¶</a></h3>
 <p>Specify the color of the right middle of the track.</p>
-<iframe src='../../Effects/viewer_en.html#References/Render/render_track.efkefc'></iframe></div>
-</div>
-</div>
+<iframe src='../../Effects/viewer_en.html#References/Render/render_track.efkefc'></iframe></section>
+</section>
+</section>
 
 
            </div>

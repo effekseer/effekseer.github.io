@@ -1,26 +1,27 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="ja" >
+<html class="writer-html5" lang="ja" data-content_root="../../">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Depth &mdash; Effekseer Help  ドキュメント</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=77cdefee" />
+
+  
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/js/three.min.js"></script>
-        <script src="../../_static/js/effekseer.min.js"></script>
-        <script src="../../_static/js/iframe.js"></script>
-        <script src="../../_static/js/OrbitControls.js"></script>
-        <script src="../../_static/translations.js"></script>
+        <script src="../../_static/documentation_options.js?v=c033477b"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/js/three.min.js?v=1b2a738c"></script>
+        <script src="../../_static/js/effekseer.min.js?v=02ca8712"></script>
+        <script src="../../_static/js/iframe.js?v=0460a6df"></script>
+        <script src="../../_static/js/OrbitControls.js?v=366c62db"></script>
+        <script src="../../_static/translations.js?v=4dbe4bdc"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="検索" href="../../search.html" />
@@ -33,11 +34,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../index.html" class="icon icon-home"> Effekseer Help
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Effekseer Help
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -101,10 +106,10 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../index.html">Effekseer Help (English)</a> &raquo;</li>
-          <li><a href="index.html">Tool-Reference</a> &raquo;</li>
-      <li>Depth</li>
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Effekseer Help (English)</a></li>
+          <li class="breadcrumb-item"><a href="index.html">Tool-Reference</a></li>
+      <li class="breadcrumb-item active">Depth</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -113,52 +118,52 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="depth">
-<h1>Depth<a class="headerlink" href="#depth" title="Permalink to this heading">¶</a></h1>
-<div class="section" id="overview">
-<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this heading">¶</a></h2>
+  <section id="depth">
+<h1>Depth<a class="headerlink" href="#depth" title="Link to this heading">¶</a></h1>
+<section id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Link to this heading">¶</a></h2>
 <p>Set the parameters for depth-of-direction processing.</p>
-</div>
-<div class="section" id="parameter">
-<h2>Parameter<a class="headerlink" href="#parameter" title="Permalink to this heading">¶</a></h2>
-<div class="section" id="z-offset">
-<h3>Z-Offset<a class="headerlink" href="#z-offset" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="parameter">
+<h2>Parameter<a class="headerlink" href="#parameter" title="Link to this heading">¶</a></h2>
+<section id="z-offset">
+<h3>Z-Offset<a class="headerlink" href="#z-offset" title="Link to this heading">¶</a></h3>
 <p>Moves the particle position in the depth direction when it is drawn. This parameter affects drawing only. Only particles with this parameter are moved. Child's particles are not moved in Version 1.4. For example, when drawing a hit effect, this parameter can be used to prevent that the character clips the effect.</p>
 <p>(1) is an effect clipping the character. (2) is Z offset. You can see that Z-offset protect the character to be clipped.</p>
 <img src="../../img/Reference/depth_Z-Offset.png"/><table><tbody><tr><td><p>Z-Offset : 0</p>
 </td><td><p>Z-Offset : 2</p>
-</td></tr><tr><td><img src="../../img/Reference/depth_Z-Offset-None.png"/></td><td><img src="../../img/Reference/depth_Z-Offset-4.png"/></td></tr></tbody></table></div>
-<div class="section" id="is-scaling-invalid-with-z-offset">
-<h3>Is scaling invalid with Z offset<a class="headerlink" href="#is-scaling-invalid-with-z-offset" title="Permalink to this heading">¶</a></h3>
+</td></tr><tr><td><img src="../../img/Reference/depth_Z-Offset-None.png"/></td><td><img src="../../img/Reference/depth_Z-Offset-4.png"/></td></tr></tbody></table></section>
+<section id="is-scaling-invalid-with-z-offset">
+<h3>Is scaling invalid with Z offset<a class="headerlink" href="#is-scaling-invalid-with-z-offset" title="Link to this heading">¶</a></h3>
 <p>If Z-offset is changed, the position where an effect is drawn is moved and a distance between a camera and an effect. A size of drawn particle is changed by changing distance. This paramether specifies whether the size of particles does not change.</p>
 <table><tbody><tr><td><p>Off</p>
 </td><td><p>On</p>
-</td></tr><tr><td><img src="../../img/Reference/depth_Z-Offset-4.png"/></td><td><img src="../../img/Reference/depth_Z-Offset-None.png"/></td></tr></tbody></table></div>
-<div class="section" id="scaling-z-offset">
-<h3>Scaling Z-Offset<a class="headerlink" href="#scaling-z-offset" title="Permalink to this heading">¶</a></h3>
+</td></tr><tr><td><img src="../../img/Reference/depth_Z-Offset-4.png"/></td><td><img src="../../img/Reference/depth_Z-Offset-None.png"/></td></tr></tbody></table></section>
+<section id="scaling-z-offset">
+<h3>Scaling Z-Offset<a class="headerlink" href="#scaling-z-offset" title="Link to this heading">¶</a></h3>
 <p>Specifies whether Z-offset increases with particle's scale parameter.</p>
 <table><tbody><tr><td><p>Off</p>
 </td><td><p>On</p>
-</td></tr><tr><td><img src="../../img/Reference/depth_Z-Offset-2-Scale-2.png"/></td><td><img src="../../img/Reference/depth_Z-Offset-2-Scale-2-With.png"/></td></tr></tbody></table></div>
-<div class="section" id="depth-sort">
-<h3>Depth sort<a class="headerlink" href="#depth-sort" title="Permalink to this heading">¶</a></h3>
+</td></tr><tr><td><img src="../../img/Reference/depth_Z-Offset-2-Scale-2.png"/></td><td><img src="../../img/Reference/depth_Z-Offset-2-Scale-2-With.png"/></td></tr></tbody></table></section>
+<section id="depth-sort">
+<h3>Depth sort<a class="headerlink" href="#depth-sort" title="Link to this heading">¶</a></h3>
 <p>Specify whether particles belonging to the same node are sorted by the distance in the depth direction. If this parameter is on, particles get a better appearance and processing becomes heavier.</p>
 <table><tbody><tr><td><p>Off</p>
 </td><td><p>On</p>
-</td></tr><tr><td><img src="../../img/Reference/depth_Z-Sort-Off.png"/></td><td><img src="../../img/Reference/depth_Z-Sort-On.png"/></td></tr></tbody></table></div>
-<div class="section" id="drawing-priority">
-<h3>Drawing priority<a class="headerlink" href="#drawing-priority" title="Permalink to this heading">¶</a></h3>
+</td></tr><tr><td><img src="../../img/Reference/depth_Z-Sort-Off.png"/></td><td><img src="../../img/Reference/depth_Z-Sort-On.png"/></td></tr></tbody></table></section>
+<section id="drawing-priority">
+<h3>Drawing priority<a class="headerlink" href="#drawing-priority" title="Link to this heading">¶</a></h3>
 <p>Specify the drawing order between nodes. The higher this parameter, the later particles are drawn. This parameter also affect a distortion. If the drawing priority is less than 0, distortion distorts only the background. Distortion does not distorts between particles. If the drawing priority is 0 or more, it distorts the background and particles with drawing priority less than 0.</p>
 <p>This picture is an example of a drawing order. (1) is parent node of (2) and a drawing priority is 0. (2)'s drawing priority is 0. (3)'s drawing priority is 1. You can see that the drawing order is determined by the drawing priority and child nodes are drawn later between nodes with the same drawing priority.</p>
-<img src="../../img/Reference/depth_drawingPriority.png"/></div>
-<div class="section" id="suppression-of-scaling-by-depth">
-<h3>Suppression of scaling by depth<a class="headerlink" href="#suppression-of-scaling-by-depth" title="Permalink to this heading">¶</a></h3>
+<img src="../../img/Reference/depth_drawingPriority.png"/></section>
+<section id="suppression-of-scaling-by-depth">
+<h3>Suppression of scaling by depth<a class="headerlink" href="#suppression-of-scaling-by-depth" title="Link to this heading">¶</a></h3>
 <p>Makes particles appear approximately the same size, independent of the distance between particles and the camera.
 It is suitable for a lock-on marker.</p>
 <p>You can also suppress the effect of distance.</p>
-<iframe src='../../Effects/viewer_en.html#References/Depth/suppression_of_scaling_by_depth.efkefc'></iframe></div>
-</div>
-</div>
+<iframe src='../../Effects/viewer_en.html#References/Depth/suppression_of_scaling_by_depth.efkefc'></iframe></section>
+</section>
+</section>
 
 
            </div>

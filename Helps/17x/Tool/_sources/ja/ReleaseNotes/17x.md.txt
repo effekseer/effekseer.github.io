@@ -1,5 +1,13 @@
 ﻿# 1.7x 更新履歴
 
+## 1.7.1.0 (2024/06/16)
+
+### UnrealEngine
+
+UnrealEngine 5.4をサポートしました。
+
+Translucency Sort Priorityをサポートしました。
+
 ## 1.70f (2023/07/15)
 
 ### UnrealEngine

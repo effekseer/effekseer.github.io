@@ -1,26 +1,27 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="ja" >
+<html class="writer-html5" lang="ja" data-content_root="../../">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>深度 &mdash; Effekseer Help  ドキュメント</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=77cdefee" />
+
+  
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/js/three.min.js"></script>
-        <script src="../../_static/js/effekseer.min.js"></script>
-        <script src="../../_static/js/iframe.js"></script>
-        <script src="../../_static/js/OrbitControls.js"></script>
-        <script src="../../_static/translations.js"></script>
+        <script src="../../_static/documentation_options.js?v=c033477b"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/js/three.min.js?v=1b2a738c"></script>
+        <script src="../../_static/js/effekseer.min.js?v=02ca8712"></script>
+        <script src="../../_static/js/iframe.js?v=0460a6df"></script>
+        <script src="../../_static/js/OrbitControls.js?v=366c62db"></script>
+        <script src="../../_static/translations.js?v=4dbe4bdc"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="検索" href="../../search.html" />
@@ -33,11 +34,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../index.html" class="icon icon-home"> Effekseer Help
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Effekseer Help
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -101,10 +106,10 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../index.html">Effekseer Help 日本語</a> &raquo;</li>
-          <li><a href="index.html">ツール・リファレンス</a> &raquo;</li>
-      <li>深度</li>
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Effekseer Help 日本語</a></li>
+          <li class="breadcrumb-item"><a href="index.html">ツール・リファレンス</a></li>
+      <li class="breadcrumb-item active">深度</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -113,52 +118,52 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="id1">
-<h1>深度<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h1>
-<div class="section" id="id2">
-<h2>概要<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
+  <section id="id1">
+<h1>深度<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h1>
+<section id="id2">
+<h2>概要<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
 <p>奥行き方向の処理に関するパラメーターを設定します。</p>
-</div>
-<div class="section" id="id3">
-<h2>パラメーター<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h2>
-<div class="section" id="z">
-<h3>Zオフセット<a class="headerlink" href="#z" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="id3">
+<h2>パラメーター<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
+<section id="z">
+<h3>Zオフセット<a class="headerlink" href="#z" title="Link to this heading">¶</a></h3>
 <p>描画する時に、パーティクルの位置を奥行き方向に移動させます。 描画にのみ影響を与えます。 1.4では、このパラメーターが設定されているパーティクルのみ移動させます。子は移動されません。 例えば、ヒットエフェクトを表示する場合に、キャラクターにエフェクトがめり込まないようにするために使用できます。</p>
 <p>(1)はキャラクターにめり込んでいるエフェクト、(2)はZオフセットです。 Zオフセットでキャラクターがエフェクトにめり込まなくなったことがわかります。</p>
 <img src="../../img/Reference/depth_Z-Offset.png"/><table><tbody><tr><td><p>Zオフセット : 0</p>
 </td><td><p>Zオフセット : 2</p>
-</td></tr><tr><td><img src="../../img/Reference/depth_Z-Offset-None.png"/></td><td><img src="../../img/Reference/depth_Z-Offset-4.png"/></td></tr></tbody></table></div>
-<div class="section" id="id4">
-<h3>Zオフセットによる拡大無効化<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h3>
+</td></tr><tr><td><img src="../../img/Reference/depth_Z-Offset-None.png"/></td><td><img src="../../img/Reference/depth_Z-Offset-4.png"/></td></tr></tbody></table></section>
+<section id="id4">
+<h3>Zオフセットによる拡大無効化<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h3>
 <p>Zオフセットを使用するとエフェクトが描画される位置が移動し、カメラとの距離が変化します。 距離が変化すると描画されるエフェクトの大きさが変化します。 その変化が起きないようにするか、設定します。</p>
 <table><tbody><tr><td><p>Off</p>
 </td><td><p>On</p>
-</td></tr><tr><td><img src="../../img/Reference/depth_Z-Offset-4.png"/></td><td><img src="../../img/Reference/depth_Z-Offset-None.png"/></td></tr></tbody></table></div>
-<div class="section" id="id5">
-<h3>Zオフセットの拡大<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h3>
+</td></tr><tr><td><img src="../../img/Reference/depth_Z-Offset-4.png"/></td><td><img src="../../img/Reference/depth_Z-Offset-None.png"/></td></tr></tbody></table></section>
+<section id="id5">
+<h3>Zオフセットの拡大<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h3>
 <p>Zオフセットがパーティクルの拡大で大きくなるか、設定します。</p>
 <table><tbody><tr><td><p>Off</p>
 </td><td><p>On</p>
-</td></tr><tr><td><img src="../../img/Reference/depth_Z-Offset-2-Scale-2.png"/></td><td><img src="../../img/Reference/depth_Z-Offset-2-Scale-2-With.png"/></td></tr></tbody></table></div>
-<div class="section" id="id6">
-<h3>深度ソート<a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h3>
+</td></tr><tr><td><img src="../../img/Reference/depth_Z-Offset-2-Scale-2.png"/></td><td><img src="../../img/Reference/depth_Z-Offset-2-Scale-2-With.png"/></td></tr></tbody></table></section>
+<section id="id6">
+<h3>深度ソート<a class="headerlink" href="#id6" title="Link to this heading">¶</a></h3>
 <p>同じノードに属するパーティクルが奥行き方向の距離によって並び替えられるか指定します。 指定したほうが見栄えがいいことが多いですが、処理も重くなります。</p>
 <table><tbody><tr><td><p>Off</p>
 </td><td><p>On</p>
-</td></tr><tr><td><img src="../../img/Reference/depth_Z-Sort-Off.png"/></td><td><img src="../../img/Reference/depth_Z-Sort-On.png"/></td></tr></tbody></table></div>
-<div class="section" id="id7">
-<h3>描画優先度<a class="headerlink" href="#id7" title="Permalink to this heading">¶</a></h3>
+</td></tr><tr><td><img src="../../img/Reference/depth_Z-Sort-Off.png"/></td><td><img src="../../img/Reference/depth_Z-Sort-On.png"/></td></tr></tbody></table></section>
+<section id="id7">
+<h3>描画優先度<a class="headerlink" href="#id7" title="Link to this heading">¶</a></h3>
 <p>ノード間の描画順序を指定します。値が大きいほど、後に描画されます。 描画優先度は歪みにも影響します。 描画優先度が0より小さい場合、歪みは背景のみを歪ませます。パーティクル同士で歪みは発生しません。 描画優先度が0以上の場合、背景と描画優先度が0より小さいパーティクルを歪ませます。</p>
 <p>描画順序の例です。 (1)は(2)の親のノードで描画優先度は0です。 (2)の描画優先度は0です。 (3)の描画優先度は1です。 描画優先度により描画順序が決まり、描画優先度が同じノード間では子のノードが後に描画されることがわかります。</p>
-<img src="../../img/Reference/depth_drawingPriority.png"/></div>
-<div class="section" id="id8">
-<h3>深度によるスケール変化の抑制<a class="headerlink" href="#id8" title="Permalink to this heading">¶</a></h3>
+<img src="../../img/Reference/depth_drawingPriority.png"/></section>
+<section id="id8">
+<h3>深度によるスケール変化の抑制<a class="headerlink" href="#id8" title="Link to this heading">¶</a></h3>
 <p>パーティクルとカメラの距離に依存せずに、ほぼ同じ大きさでパーティクルを表示するようにします。
 ロックオンのマーカー等に適しています。</p>
 <p>距離の影響を抑制することもできます。</p>
-<iframe src='../../Effects/viewer_ja.html#References/Depth/suppression_of_scaling_by_depth.efkefc'></iframe></div>
-</div>
-</div>
+<iframe src='../../Effects/viewer_ja.html#References/Depth/suppression_of_scaling_by_depth.efkefc'></iframe></section>
+</section>
+</section>
 
 
            </div>

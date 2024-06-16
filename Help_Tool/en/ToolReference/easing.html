@@ -1,26 +1,27 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="ja" >
+<html class="writer-html5" lang="ja" data-content_root="../../">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Easing &mdash; Effekseer Help  ドキュメント</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=77cdefee" />
+
+  
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/js/three.min.js"></script>
-        <script src="../../_static/js/effekseer.min.js"></script>
-        <script src="../../_static/js/iframe.js"></script>
-        <script src="../../_static/js/OrbitControls.js"></script>
-        <script src="../../_static/translations.js"></script>
+        <script src="../../_static/documentation_options.js?v=c033477b"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/js/three.min.js?v=1b2a738c"></script>
+        <script src="../../_static/js/effekseer.min.js?v=02ca8712"></script>
+        <script src="../../_static/js/iframe.js?v=0460a6df"></script>
+        <script src="../../_static/js/OrbitControls.js?v=366c62db"></script>
+        <script src="../../_static/translations.js?v=4dbe4bdc"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="検索" href="../../search.html" />
@@ -33,11 +34,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../index.html" class="icon icon-home"> Effekseer Help
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Effekseer Help
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -81,10 +86,10 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../index.html">Effekseer Help (English)</a> &raquo;</li>
-          <li><a href="index.html">Tool-Reference</a> &raquo;</li>
-      <li>Easing</li>
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Effekseer Help (English)</a></li>
+          <li class="breadcrumb-item"><a href="index.html">Tool-Reference</a></li>
+      <li class="breadcrumb-item active">Easing</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -93,35 +98,35 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="easing">
-<h1>Easing<a class="headerlink" href="#easing" title="Permalink to this heading">¶</a></h1>
+  <section id="easing">
+<h1>Easing<a class="headerlink" href="#easing" title="Link to this heading">¶</a></h1>
 <p>Easing is a feature that allows you to specify two or three points and interpolate between them to change their values.
 In Effekseer, you can apply easing to various parmeters of your effects. There are various types of easing, and we describe them here.</p>
-<div class="section" id="types-of-easing">
-<h2>Types of easing<a class="headerlink" href="#types-of-easing" title="Permalink to this heading">¶</a></h2>
+<section id="types-of-easing">
+<h2>Types of easing<a class="headerlink" href="#types-of-easing" title="Link to this heading">¶</a></h2>
 <p>There are many different types of easing, such as a behavior that starts with a sudden change and ends with a slow change.</p>
 <p>A graph showing all types of easing is available at the end of this page.</p>
-</div>
-<div class="section" id="middle-point">
-<h2>Middle point<a class="headerlink" href="#middle-point" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="middle-point">
+<h2>Middle point<a class="headerlink" href="#middle-point" title="Link to this heading">¶</a></h2>
 <p>The standard easing is two points, but you can also add an intermediate point.
 The values always change via the middle point.</p>
-</div>
-<div class="section" id="random-group">
-<h2>Random group<a class="headerlink" href="#random-group" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="random-group">
+<h2>Random group<a class="headerlink" href="#random-group" title="Link to this heading">¶</a></h2>
 <p>Effekseer's easing can be randomized for both start and end points.
 This is not a problem if all the values are disparate, but sometimes you want XY to be random but the same value, and only Z to be different.
 For example, if you have a 3D model of a cylinder that you want to use as a beam, the random XY values need to be the same because you want to keep the shape of the circle.</p>
 <p>In such a case, there is a feature called groups.</p>
 <p>If the group numbers are the same, the random behavior will be the same.
 It allows you to reproduce randomness where XY is equal but Z is different.</p>
-</div>
-<div class="section" id="type-individual">
-<h2>Type individual<a class="headerlink" href="#type-individual" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="type-individual">
+<h2>Type individual<a class="headerlink" href="#type-individual" title="Link to this heading">¶</a></h2>
 <p>It allows you to set different types of easing for each of XYZ.</p>
-</div>
-<div class="section" id="list-of-easing-types">
-<h2>List of easing types<a class="headerlink" href="#list-of-easing-types" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="list-of-easing-types">
+<h2>List of easing types<a class="headerlink" href="#list-of-easing-types" title="Link to this heading">¶</a></h2>
 <ul class="simple">
 <li><p>EaseInBack</p></li>
 </ul>
@@ -194,8 +199,8 @@ It allows you to reproduce randomness where XY is equal but Z is different.</p>
 <li><p>EaseOutQuintic</p></li>
 </ul>
 <img alt="../../_images/EaseOutQuintic.png" class="align-center" src="../../_images/EaseOutQuintic.png" />
-</div>
-</div>
+</section>
+</section>
 
 
            </div>

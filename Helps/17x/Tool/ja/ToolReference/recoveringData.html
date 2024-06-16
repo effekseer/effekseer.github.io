@@ -1,26 +1,27 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="ja" >
+<html class="writer-html5" lang="ja" data-content_root="../../">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>データの復元 &mdash; Effekseer Help  ドキュメント</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=77cdefee" />
+
+  
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/js/three.min.js"></script>
-        <script src="../../_static/js/effekseer.min.js"></script>
-        <script src="../../_static/js/iframe.js"></script>
-        <script src="../../_static/js/OrbitControls.js"></script>
-        <script src="../../_static/translations.js"></script>
+        <script src="../../_static/documentation_options.js?v=c033477b"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/js/three.min.js?v=1b2a738c"></script>
+        <script src="../../_static/js/effekseer.min.js?v=02ca8712"></script>
+        <script src="../../_static/js/iframe.js?v=0460a6df"></script>
+        <script src="../../_static/js/OrbitControls.js?v=366c62db"></script>
+        <script src="../../_static/translations.js?v=4dbe4bdc"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="検索" href="../../search.html" />
@@ -33,11 +34,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../index.html" class="icon icon-home"> Effekseer Help
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Effekseer Help
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -89,10 +94,10 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../index.html">Effekseer Help 日本語</a> &raquo;</li>
-          <li><a href="index.html">ツール・リファレンス</a> &raquo;</li>
-      <li>データの復元</li>
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Effekseer Help 日本語</a></li>
+          <li class="breadcrumb-item"><a href="index.html">ツール・リファレンス</a></li>
+      <li class="breadcrumb-item active">データの復元</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -101,32 +106,32 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="id1">
-<h1>データの復元<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h1>
+  <section id="id1">
+<h1>データの復元<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h1>
 <p>唐突にあなたの作品が失われる様々な理由があります。
 エディタがクラッシュするかもしれないですし、バッテリーが切れるか、単純に間違ったボタンを押して数時間分の作業のエフェクトを崩壊させるかもしれません。
 Effekseerのエディタは失ったプロジェクトの復元に成功する傾向を高めるために自動保存があります。</p>
 <p>自動保存は固定時間ごとに、またエディタを閉じるたびに動作します。
 自動保存はデフォルトで有効で、エディタを閉じるまで無効にできません。</p>
-<div class="section" id="id2">
-<h2>自動保存の復元<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
-<div class="section" id="last-session">
-<h3>Last Session<a class="headerlink" href="#last-session" title="Permalink to this heading">¶</a></h3>
+<section id="id2">
+<h2>自動保存の復元<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
+<section id="last-session">
+<h3>Last Session<a class="headerlink" href="#last-session" title="Link to this heading">¶</a></h3>
 <p><code class="docutils literal notranslate"><span class="pre">Menu:</span> <span class="pre">File</span> <span class="pre">&gt;</span> <span class="pre">Recover</span> <span class="pre">&gt;</span> <span class="pre">Last</span> <span class="pre">Session</span></code></p>
 <p>通常の手順でエディタが閉じられたときにテンポラリディレクトリに保存された <code class="docutils literal notranslate"><span class="pre">efk_quit.efkbac</span></code> を開きます。
 このオプションはあなたがアクシデントでエディタを閉じて変更を保存していない時にプロジェクトを復元させます。
 もし、このファイルが見つからない場合、エラーが表示されます。</p>
-</div>
-<div class="section" id="auto-save">
-<h3>Auto Save<a class="headerlink" href="#auto-save" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="auto-save">
+<h3>Auto Save<a class="headerlink" href="#auto-save" title="Link to this heading">¶</a></h3>
 <p><code class="docutils literal notranslate"><span class="pre">Menu:</span> <span class="pre">File</span> <span class="pre">&gt;</span> <span class="pre">Recover</span> <span class="pre">&gt;</span> <span class="pre">Auto</span> <span class="pre">Save...</span></code></p>
 <p>一時的なディレクトリから自動的に保存したファイルを選択することをします。
 自動的に保存されたファイルは <code class="docutils literal notranslate"><span class="pre">efk_autosave</span></code> というプレフィクスと <code class="docutils literal notranslate"><span class="pre">efkbac</span></code> という拡張子を持ちます。</p>
 <p>これらのファイルはオプションで設定された間隔(デフォルト2分)ごとに、自動的に保存されます。
 もし、間隔が0に設定された場合、自動保存は動作しません。</p>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
 
            </div>

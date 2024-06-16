@@ -1,5 +1,13 @@
 ﻿# 1.7x Change Logs
 
+## 1.7.1.0 (June. 16, 2024)
+
+### UnrealEngine
+
+Supported UnrealEngine 5.4.
+
+Supported Translucency Sort Priority.
+
 ## 1.70f (Jul. 15, 2023)
 
 ### UnrealEngine

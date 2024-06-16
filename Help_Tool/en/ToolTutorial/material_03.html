@@ -1,26 +1,27 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="ja" >
+<html class="writer-html5" lang="ja" data-content_root="../../">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>03. Toon-like flames with sequential materials. &mdash; Effekseer Help  ドキュメント</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=77cdefee" />
+
+  
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/js/three.min.js"></script>
-        <script src="../../_static/js/effekseer.min.js"></script>
-        <script src="../../_static/js/iframe.js"></script>
-        <script src="../../_static/js/OrbitControls.js"></script>
-        <script src="../../_static/translations.js"></script>
+        <script src="../../_static/documentation_options.js?v=c033477b"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/js/three.min.js?v=1b2a738c"></script>
+        <script src="../../_static/js/effekseer.min.js?v=02ca8712"></script>
+        <script src="../../_static/js/iframe.js?v=0460a6df"></script>
+        <script src="../../_static/js/OrbitControls.js?v=366c62db"></script>
+        <script src="../../_static/translations.js?v=4dbe4bdc"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="検索" href="../../search.html" />
@@ -33,11 +34,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../index.html" class="icon icon-home"> Effekseer Help
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Effekseer Help
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -79,10 +84,10 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../index.html">Effekseer Help (English)</a> &raquo;</li>
-          <li><a href="index.html">Tutorial</a> &raquo;</li>
-      <li>03. Toon-like flames with sequential materials.</li>
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Effekseer Help (English)</a></li>
+          <li class="breadcrumb-item"><a href="index.html">Tutorial</a></li>
+      <li class="breadcrumb-item active">03. Toon-like flames with sequential materials.</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -91,10 +96,10 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="toon-like-flames-with-sequential-materials">
-<h1>03. Toon-like flames with sequential materials.<a class="headerlink" href="#toon-like-flames-with-sequential-materials" title="Permalink to this heading">¶</a></h1>
-<div class="section" id="overview">
-<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this heading">¶</a></h2>
+  <section id="toon-like-flames-with-sequential-materials">
+<h1>03. Toon-like flames with sequential materials.<a class="headerlink" href="#toon-like-flames-with-sequential-materials" title="Link to this heading">¶</a></h1>
+<section id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Link to this heading">¶</a></h2>
 <p>In the previous chapter, we created a toon-like flame.
 However, the parameters are all included in the material and cannot be used interchangeably.
 Also, it plays continuously and does not disappear in the middle.
@@ -102,14 +107,14 @@ In this chapter, the flames from the previous chapter will be made available for
 <div align="center">
 <iframe src='../../Effects/viewer_en.html#Tutorials/Mat_03/Fire.efkefc'></iframe>
 <p>Effects to be created in this chapter</p>
-</div></div>
-<div class="section" id="create">
-<h2>Create<a class="headerlink" href="#create" title="Permalink to this heading">¶</a></h2>
+</div></section>
+<section id="create">
+<h2>Create<a class="headerlink" href="#create" title="Link to this heading">¶</a></h2>
 <p>In this chapter, we will make changes based on the effects we created in the previous chapter.
 For the sake of clarity, we have changed the lifetime of the particles.</p>
 <p><a href="../../Effects/Tutorials/Mat_03_01.zip">Download</a></p>
-<div class="section" id="parameters">
-<h3>Parameters<a class="headerlink" href="#parameters" title="Permalink to this heading">¶</a></h3>
+<section id="parameters">
+<h3>Parameters<a class="headerlink" href="#parameters" title="Link to this heading">¶</a></h3>
 <p>Effekseer's materials have a node called Parameters.
 This node, called Parameters, allows you to change the parameters of the material from the Effekseer.</p>
 <p>First, to be able to edit the color of the effect from outside, we will replace the gradient image with a parameter.</p>
@@ -138,9 +143,9 @@ Set the default parameter to (0.1,0.1).</p>
 <p>Changing the value will change the speed.
 In this case, the default value is fine, so we will leave the value at (0.1,0.1).</p>
 <p>These can be set externally without having to embed the parameters in the material.</p>
-</div>
-<div class="section" id="custom-data">
-<h3>Custom Data<a class="headerlink" href="#custom-data" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="custom-data">
+<h3>Custom Data<a class="headerlink" href="#custom-data" title="Link to this heading">¶</a></h3>
 <p>As it is, you have just externalized the parameters, but the flame is still flowing continuously.
 Custom data can be used to set the beginning and end.</p>
 <p>In this case, we will specify a node called Custom Data.
@@ -164,14 +169,14 @@ This means that the image will disappear.</p>
 <iframe src='../../Effects/viewer_en.html#Tutorials/Mat_03/Fire.efkefc'></iframe>
 </div><p>Finally, we have made the effects created in this chapter available for download.</p>
 <p><a href="../../Effects/Tutorials/Mat_03_02.zip">Download</a></p>
-</div>
-</div>
-<div class="section" id="summary">
-<h2>Summary<a class="headerlink" href="#summary" title="Permalink to this heading">¶</a></h2>
+</section>
+</section>
+<section id="summary">
+<h2>Summary<a class="headerlink" href="#summary" title="Link to this heading">¶</a></h2>
 <p>This time I created a variation of the flame.
 Creating a material for each effect is a lot of work, so it is important to create a generic material that can be used in many different ways.</p>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>

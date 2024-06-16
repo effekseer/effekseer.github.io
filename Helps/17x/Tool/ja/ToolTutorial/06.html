@@ -1,26 +1,27 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="ja" >
+<html class="writer-html5" lang="ja" data-content_root="../../">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>06. 円形のパーティクルを作成しよう！ &mdash; Effekseer Help  ドキュメント</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=77cdefee" />
+
+  
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/js/three.min.js"></script>
-        <script src="../../_static/js/effekseer.min.js"></script>
-        <script src="../../_static/js/iframe.js"></script>
-        <script src="../../_static/js/OrbitControls.js"></script>
-        <script src="../../_static/translations.js"></script>
+        <script src="../../_static/documentation_options.js?v=c033477b"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/js/three.min.js?v=1b2a738c"></script>
+        <script src="../../_static/js/effekseer.min.js?v=02ca8712"></script>
+        <script src="../../_static/js/iframe.js?v=0460a6df"></script>
+        <script src="../../_static/js/OrbitControls.js?v=366c62db"></script>
+        <script src="../../_static/translations.js?v=4dbe4bdc"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="検索" href="../../search.html" />
@@ -33,11 +34,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../index.html" class="icon icon-home"> Effekseer Help
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Effekseer Help
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -91,10 +96,10 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../index.html">Effekseer Help 日本語</a> &raquo;</li>
-          <li><a href="index.html">チュートリアル</a> &raquo;</li>
-      <li>06. 円形のパーティクルを作成しよう！</li>
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Effekseer Help 日本語</a></li>
+          <li class="breadcrumb-item"><a href="index.html">チュートリアル</a></li>
+      <li class="breadcrumb-item active">06. 円形のパーティクルを作成しよう！</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -103,10 +108,10 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="id1">
-<h1>06. 円形のパーティクルを作成しよう！<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h1>
-<div class="main"><div class="section" id="id2">
-<h2>概要<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
+  <section id="id1">
+<h1>06. 円形のパーティクルを作成しよう！<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h1>
+<div class="main"><section id="id2">
+<h2>概要<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
 <p>本章では、リングを使って様々なエフェクトを作成してみます。
 今までは、描画方法にスプライトを指定していましたが、今回はリングを指定します。
 リングは、円筒状のパーティクルを描画します。
@@ -127,9 +132,9 @@
 </div><p>あらかじめ作成途中のエフェクトを下記のリンクからダウンロードできるようにしました。</p>
 <div align="center">
 <p><a href = "../../Sample/06_01_Sample.zip">ダウンロード</a></p>
-</div></div>
-<div class="section" id="id3">
-<h2>基本的な輪っか<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h2>
+</div></section>
+<section id="id3">
+<h2>基本的な輪っか<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
 <p>1つ目に作成するエフェクトは、形状が時間に応じて変化する輪っかです。</p>
 <p>effect1.efkefcを開いてください。</p>
 <p>パーティクルの描画方法にリングを指定します。
@@ -154,36 +159,36 @@
 <table border="1" class="docutils">
 <thead>
 <tr>
-<th align="left">ウインドウ</th>
-<th align="left">値の名称</th>
-<th align="left">値</th>
+<th style="text-align: left;">ウインドウ</th>
+<th style="text-align: left;">値の名称</th>
+<th style="text-align: left;">値</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left">共通</td>
-<td align="left">生存時間</td>
-<td align="left">60</td>
+<td style="text-align: left;">共通</td>
+<td style="text-align: left;">生存時間</td>
+<td style="text-align: left;">60</td>
 </tr>
 <tr>
-<td align="left">回転</td>
-<td align="left">角度(度)</td>
-<td align="left">x=0, y=0, z=-45</td>
+<td style="text-align: left;">回転</td>
+<td style="text-align: left;">角度(度)</td>
+<td style="text-align: left;">x=0, y=0, z=-45</td>
 </tr>
 <tr>
-<td align="left">描画</td>
-<td align="left">外輪</td>
-<td align="left">イージング</td>
+<td style="text-align: left;">描画</td>
+<td style="text-align: left;">外輪</td>
+<td style="text-align: left;">イージング</td>
 </tr>
 <tr>
-<td align="left">描画</td>
-<td align="left">外輪-始点(中心)</td>
-<td align="left">x=1, y=2</td>
+<td style="text-align: left;">描画</td>
+<td style="text-align: left;">外輪-始点(中心)</td>
+<td style="text-align: left;">x=1, y=2</td>
 </tr>
 <tr>
-<td align="left">描画</td>
-<td align="left">外輪-終点(中心)</td>
-<td align="left">x=3, y=0</td>
+<td style="text-align: left;">描画</td>
+<td style="text-align: left;">外輪-終点(中心)</td>
+<td style="text-align: left;">x=3, y=0</td>
 </tr>
 </tbody>
 </table><p>輪っかの形状が変化していることがわかります。
@@ -191,9 +196,9 @@
 <div align="center">
 <img src="../../img/Tutorial/06_ring_easing.gif">
 <p>内輪・外輪</p>
-</div></div>
-<div class="section" id="id4">
-<h2>三角<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h2>
+</div></section>
+<section id="id4">
+<h2>三角<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h2>
 <p>2つ目に作成するエフェクトは、三角形です。</p>
 <p>effect2.efkefcを開いてください。</p>
 <p>リングを更生する頂点の数を変更することで、様々な形状を表現できます。
@@ -204,9 +209,9 @@
 <div align="center">
 <img src="../../img/Tutorial/06_tri.png">
 <p>三角</p>
-</div></div>
-<div class="section" id="uv">
-<h2>UVスクロール<a class="headerlink" href="#uv" title="Permalink to this heading">¶</a></h2>
+</div></section>
+<section id="uv">
+<h2>UVスクロール<a class="headerlink" href="#uv" title="Link to this heading">¶</a></h2>
 <p>3つ目に作成するエフェクトは、画像を使用した輪っかです。</p>
 <p>effect3.efkefcを開いてください。</p>
 <p>リングにも画像を設定できます。
@@ -231,13 +236,13 @@ UVの「標準」を「スクロール」に変更します。
 </div><p>最後に、本章で作成されたエフェクトをダウンロードできるようにしてみました。</p>
 <div align="center">
 <a href = "../../Sample/06_02_Sample.zip">ダウンロード</a>
-</div></div>
-<div class="section" id="id5">
-<h2>まとめ<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h2>
+</div></section>
+<section id="id5">
+<h2>まとめ<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h2>
 <p>本章では、リングを使用したエフェクトを作成しました。
 次章では、親子関係を用いて複雑なエフェクトを作成します。</p>
-</div></div>
-</div>
+</div></section>
+</section>
 
 
            </div>

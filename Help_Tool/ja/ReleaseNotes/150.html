@@ -1,26 +1,27 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="ja" >
+<html class="writer-html5" lang="ja" data-content_root="../../">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>1.50 新機能 &mdash; Effekseer Help  ドキュメント</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=77cdefee" />
+
+  
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/js/three.min.js"></script>
-        <script src="../../_static/js/effekseer.min.js"></script>
-        <script src="../../_static/js/iframe.js"></script>
-        <script src="../../_static/js/OrbitControls.js"></script>
-        <script src="../../_static/translations.js"></script>
+        <script src="../../_static/documentation_options.js?v=c033477b"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/js/three.min.js?v=1b2a738c"></script>
+        <script src="../../_static/js/effekseer.min.js?v=02ca8712"></script>
+        <script src="../../_static/js/iframe.js?v=0460a6df"></script>
+        <script src="../../_static/js/OrbitControls.js?v=366c62db"></script>
+        <script src="../../_static/translations.js?v=4dbe4bdc"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="検索" href="../../search.html" />
@@ -33,11 +34,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../index.html" class="icon icon-home"> Effekseer Help
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Effekseer Help
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -79,10 +84,10 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../index.html">Effekseer Help 日本語</a> &raquo;</li>
-          <li><a href="index.html">リリースノート</a> &raquo;</li>
-      <li>1.50 新機能</li>
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Effekseer Help 日本語</a></li>
+          <li class="breadcrumb-item"><a href="index.html">リリースノート</a></li>
+      <li class="breadcrumb-item active">1.50 新機能</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -91,10 +96,10 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="id1">
-<h1>1.50 新機能<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h1>
-<div class="section" id="id2">
-<h2>マテリアル<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
+  <section id="id1">
+<h1>1.50 新機能<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h1>
+<section id="id2">
+<h2>マテリアル<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
 <p>マテリアルの機能が追加されました。</p>
 <p>ノードで独自のマテリアルを作成、使用できるようになりました。</p>
 <p>モデルからライティングが削除されました。描画共通から歪みが削除されました。それらの代わりにパラメーターを整理しました。</p>
@@ -112,24 +117,24 @@
 1.4の挙動を再現するには前後を逆にする必要があります。</p>
 <p>(破壊的変更) DirectX11で位置が同じだとしても描画されるように仕様変更しました。基本的に影響はないですが、同じ位置に描画したときに変化がある可能性があります。</p>
 <p>(破壊的変更) スプライトの描画順を逆にしたときに正しく実行されない不具合を修正しました。</p>
-</div>
-<div class="section" id="id3">
-<h2>動的パラメーター<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="id3">
+<h2>動的パラメーター<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
 <p>エフェクトのパラメーターをアプリケーション内で再生中に書き換える機能が追加されました。</p>
-</div>
-<div class="section" id="id4">
-<h2>新フォーマット<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="id4">
+<h2>新フォーマット<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h2>
 <p>efkprojとefkが結合し、efkefcになりました。今までのように別ファイルを出力する必要がなくなりました。かわりに読み込み時拡大率をランタイムで指定する必要があります。</p>
-</div>
-<div class="section" id="id5">
-<h2>録画<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="id5">
+<h2>録画<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h2>
 <p>録画した結果を通常と加算に分離して出力することで、背景を変えた場合の色を可能な範囲で再現するようになりました。通常と加算が混ざったエフェクトも録画できます。</p>
 <p>本体かプロジェクトかどちらに録画設定を保存するか指定できるようになりました。録画が必要なエフェクトの設定をエフェクトが持てるようになりました。</p>
 <p>録画に振る舞いが反映されるようになりました。ループエフェクトの録画が容易になりました。</p>
 <p>スプレッドシートとして録画すると余計なフレームが録画される不具合を修正しました。</p>
-</div>
-<div class="section" id="ui">
-<h2>UI<a class="headerlink" href="#ui" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="ui">
+<h2>UI<a class="headerlink" href="#ui" title="Link to this heading">¶</a></h2>
 <p>様々な点でノードツリーの挙動が改善されました。</p>
 <p>様々な点でFカーブの挙動が改善されました。</p>
 <p>パネルごとにコピー＆ペーストができるようになりました。</p>
@@ -137,67 +142,67 @@
 <p>DPIスケールの変更に対応しました。</p>
 <p>文字列入力中にスペースの入力で再生が始まる不具合を修正しました。</p>
 <p>フォントとフォントサイズを変更するオプションを追加しました。</p>
-</div>
-<div class="section" id="id6">
-<h2>環境<a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="id6">
+<h2>環境<a class="headerlink" href="#id6" title="Link to this heading">¶</a></h2>
 <p>ブルームやトーンマッピングをエディタ上で設定できるようになりました。
 エディタの見た目にのみ適用なのでエフェクトの挙動の確認用です。
 変更する回数が多いため、背景とライティングを環境に移動しました。</p>
-</div>
-<div class="section" id="id7">
-<h2>スプライト、リング、モデル<a class="headerlink" href="#id7" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="id7">
+<h2>スプライト、リング、モデル<a class="headerlink" href="#id7" title="Link to this heading">¶</a></h2>
 <p>(破壊的変更) <code class="docutils literal notranslate"><span class="pre">Z軸回転ビルボード</span></code>の回転方向が逆になりました。</p>
-</div>
-<div class="section" id="id8">
-<h2>軌跡<a class="headerlink" href="#id8" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="id8">
+<h2>軌跡<a class="headerlink" href="#id8" title="Link to this heading">¶</a></h2>
 <p>(破壊的変更) 軌跡の左右が反転しました。</p>
-</div>
-<div class="section" id="id9">
-<h2>リング<a class="headerlink" href="#id9" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="id9">
+<h2>リング<a class="headerlink" href="#id9" title="Link to this heading">¶</a></h2>
 <p>現在の描画角度の設定から円の形状の設定に変更しました。
 三日月型を設定すると一部が切れた円を設定できます。
 円の開始終了角度およびフェード角度を設定できます。</p>
 <p>(破壊的変更) 描画角度の設定によっては見た目が変化することがあります。</p>
-</div>
-<div class="section" id="id10">
-<h2>リボン、軌跡<a class="headerlink" href="#id10" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="id10">
+<h2>リボン、軌跡<a class="headerlink" href="#id10" title="Link to this heading">¶</a></h2>
 <p>UVの繰り返しパターンの設定をできるようになりました。
 今までは、指定したUV全体をリボン、軌跡全体に設定していましたが、
 長さに応じてUVを繰り返せるようになりました。端のみ繰り返さない設定もできます。
 鎖等の繰り返しパターンがある表現に適しています。</p>
-</div>
-<div class="section" id="f">
-<h2>Fカーブ<a class="headerlink" href="#f" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="f">
+<h2>Fカーブ<a class="headerlink" href="#f" title="Link to this heading">¶</a></h2>
 <p>パーティクルが消滅する時間を100として、値の変化を設定できるようにしました。加えて、デフォルトを100%の設定に変更しました。</p>
-</div>
-<div class="section" id="id11">
-<h2>深度<a class="headerlink" href="#id11" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="id11">
+<h2>深度<a class="headerlink" href="#id11" title="Link to this heading">¶</a></h2>
 <p>距離が変化しても大きさが変化しないように設定するパラメーターを追加しました。変化を抑制のみもできます。</p>
 <p>深度オフセットをリボンと軌跡にも適用するようにしました。</p>
 <p>Zソートをリングとモデルにも適用するようにしました。</p>
 <p>(破壊的変更) オフセットによる拡大の無効化の計算が間違っていた部分を修正しました。</p>
-</div>
-<div class="section" id="id12">
-<h2>引力<a class="headerlink" href="#id12" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="id12">
+<h2>引力<a class="headerlink" href="#id12" title="Link to this heading">¶</a></h2>
 <p>力場に名前が変更されました。
 乱流が実装されました。</p>
-</div>
-<div class="section" id="id13">
-<h2>最適化<a class="headerlink" href="#id13" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="id13">
+<h2>最適化<a class="headerlink" href="#id13" title="Link to this heading">¶</a></h2>
 <p>更新処理が30から50%の高速化されます。</p>
-</div>
-<div class="section" id="id14">
-<h2>視点<a class="headerlink" href="#id14" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="id14">
+<h2>視点<a class="headerlink" href="#id14" title="Link to this heading">¶</a></h2>
 <p>現在の視点を保存、読み込みできるようになりました。</p>
 <p>視点でニア―ファークリップを設定できるようになりました。</p>
-</div>
-<div class="section" id="id15">
-<h2>他<a class="headerlink" href="#id15" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="id15">
+<h2>他<a class="headerlink" href="#id15" title="Link to this heading">¶</a></h2>
 <p>ボーンなしFBXやアニメーションなし、かつボーンありFBXの読込に対応に対応しました。</p>
 <p>振る舞いに再生速度が追加されました。</p>
 <p>(破壊的変更) 乱数がオーバーフローしていた不具合を修正しました。ランダムの振る舞いが変わる可能性があります。</p>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
