@@ -1,8 +1,12 @@
 ﻿# 1.7x Change Logs
 
-## 1.7.1.0 (June. 16, 2024)
+## 1.7.1.0
 
-### UnrealEngine
+### Unity (June. 22, 2024)
+
+Supported the latest environement.
+
+### UnrealEngine (June. 16, 2024)
 
 Supported UnrealEngine 5.4.
 
