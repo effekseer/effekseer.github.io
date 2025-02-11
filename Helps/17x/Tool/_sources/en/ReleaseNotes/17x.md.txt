@@ -1,5 +1,11 @@
 ﻿# 1.7x Change Logs
 
+## 1.7.1.1
+
+### Unity (Feb. 11, 2025)
+
+Supported the latest environement.
+
 ## 1.7.1.0
 
 ### Unity (June. 22, 2024)
