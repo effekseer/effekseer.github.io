@@ -1,26 +1,27 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../../">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>06. Let&#39;s create circular particles! &mdash; Effekseer Help  ドキュメント</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=77cdefee" />
+
+  
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/js/three.min.js"></script>
-        <script src="../../_static/js/effekseer.min.js"></script>
-        <script src="../../_static/js/iframe.js"></script>
-        <script src="../../_static/js/OrbitControls.js"></script>
-        <script src="../../_static/translations.js"></script>
+        <script src="../../_static/documentation_options.js?v=c033477b"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/js/three.min.js?v=1b2a738c"></script>
+        <script src="../../_static/js/effekseer.min.js?v=02ca8712"></script>
+        <script src="../../_static/js/iframe.js?v=0460a6df"></script>
+        <script src="../../_static/js/OrbitControls.js?v=366c62db"></script>
+        <script src="../../_static/translations.js?v=4dbe4bdc"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="検索" href="../../search.html" />
@@ -33,11 +34,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../index.html" class="icon icon-home"> Effekseer Help
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Effekseer Help
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -92,10 +97,10 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../index.html">Effekseer Help (English)</a> &raquo;</li>
-          <li><a href="index.html">Tutorial</a> &raquo;</li>
-      <li>06. Let's create circular particles!</li>
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Effekseer Help (English)</a></li>
+          <li class="breadcrumb-item"><a href="index.html">Tutorial</a></li>
+      <li class="breadcrumb-item active">06. Let's create circular particles!</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -104,10 +109,10 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="let-s-create-circular-particles">
-<h1>06. Let's create circular particles!<a class="headerlink" href="#let-s-create-circular-particles" title="Permalink to this heading">¶</a></h1>
-<div class="main"><div class="section" id="overview">
-<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this heading">¶</a></h2>
+  <section id="let-s-create-circular-particles">
+<h1>06. Let's create circular particles!<a class="headerlink" href="#let-s-create-circular-particles" title="Link to this heading">¶</a></h1>
+<div class="main"><section id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Link to this heading">¶</a></h2>
 <p>In this chapter, you will create various effects using rings.
 You have specified the sprite as the drawing method, but this time you will specify the ring.
 The ring draws cylindrical particles.
@@ -128,9 +133,9 @@ By changing the parameters, you can create not only circular but also various ef
 </div><p>We made it possible to download the effect created in advance from the link below.</p>
 <div align="center">
 <p><a href = "../../Sample/06_01_Sample.zip">Download</a></p>
-</div></div>
-<div class="section" id="a-basic-ring">
-<h2>A basic ring<a class="headerlink" href="#a-basic-ring" title="Permalink to this heading">¶</a></h2>
+</div></section>
+<section id="a-basic-ring">
+<h2>A basic ring<a class="headerlink" href="#a-basic-ring" title="Link to this heading">¶</a></h2>
 <p>The first effect you create is a ring whose shape changes with time.</p>
 <p>Please open effect1.efkefc.</p>
 <p>You specify the ring for particle drawing method.
@@ -155,36 +160,36 @@ This indicates that only the <code class="docutils literal notranslate"><span cl
 <table border="1" class="docutils">
 <thead>
 <tr>
-<th align="left">Window</th>
-<th align="left">Value type</th>
-<th align="left">Value</th>
+<th style="text-align: left;">Window</th>
+<th style="text-align: left;">Value type</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left">Basic Settings</td>
-<td align="left">Time to live</td>
-<td align="left">60</td>
+<td style="text-align: left;">Basic Settings</td>
+<td style="text-align: left;">Time to live</td>
+<td style="text-align: left;">60</td>
 </tr>
 <tr>
-<td align="left">Rotation</td>
-<td align="left">Angle</td>
-<td align="left">x=0, y=0, z=-45</td>
+<td style="text-align: left;">Rotation</td>
+<td style="text-align: left;">Angle</td>
+<td style="text-align: left;">x=0, y=0, z=-45</td>
 </tr>
 <tr>
-<td align="left">Render Settings</td>
-<td align="left">Outer</td>
-<td align="left">Easing</td>
+<td style="text-align: left;">Render Settings</td>
+<td style="text-align: left;">Outer</td>
+<td style="text-align: left;">Easing</td>
 </tr>
 <tr>
-<td align="left">Render Settings</td>
-<td align="left">Outer-Start(Mean)</td>
-<td align="left">x=1, y=2</td>
+<td style="text-align: left;">Render Settings</td>
+<td style="text-align: left;">Outer-Start(Mean)</td>
+<td style="text-align: left;">x=1, y=2</td>
 </tr>
 <tr>
-<td align="left">Render Settings</td>
-<td align="left">Outer-End(Mean)</td>
-<td align="left">x=3, y=0</td>
+<td style="text-align: left;">Render Settings</td>
+<td style="text-align: left;">Outer-End(Mean)</td>
+<td style="text-align: left;">x=3, y=0</td>
 </tr>
 </tbody>
 </table><p>You can see that the shape of the ring is changing.
@@ -192,9 +197,9 @@ The ring is compatible with circular effect.</p>
 <div align="center">
 <img src="../../img/Tutorial/06_ring_easing.gif">
 <p>Inner ring, Outer ring</p>
-</div></div>
-<div class="section" id="a-triangle">
-<h2>A triangle<a class="headerlink" href="#a-triangle" title="Permalink to this heading">¶</a></h2>
+</div></section>
+<section id="a-triangle">
+<h2>A triangle<a class="headerlink" href="#a-triangle" title="Link to this heading">¶</a></h2>
 <p>The second effect you create is a triangle.</p>
 <p>Please open effect2.efkefc.</p>
 <p>You can express various shapes by changing the number of vertices composed 0f the ring.
@@ -205,9 +210,9 @@ You can see that changing the value will result in a triangle.</p>
 <div align="center">
 <img src="../../img/Tutorial/06_tri.png">
 <p>A triangle</p>
-</div></div>
-<div class="section" id="uv-scroll">
-<h2>UV Scroll<a class="headerlink" href="#uv-scroll" title="Permalink to this heading">¶</a></h2>
+</div></section>
+<section id="uv-scroll">
+<h2>UV Scroll<a class="headerlink" href="#uv-scroll" title="Link to this heading">¶</a></h2>
 <p>The third effect you create is a ring with an image.</p>
 <p>Please open effect3.efkefc.</p>
 <p>You can also specify an image to the ring.
@@ -232,13 +237,13 @@ This is because you have not set the area of the image to use.</p>
 </div><p>Finally, I made it possible to download the effect created in this chapter.</p>
 <div align="center">
 <a href = "../../Sample/06_02_Sample.zip">Download</a>
-</div></div>
-<div class="section" id="summery">
-<h2>Summery<a class="headerlink" href="#summery" title="Permalink to this heading">¶</a></h2>
+</div></section>
+<section id="summery">
+<h2>Summery<a class="headerlink" href="#summery" title="Link to this heading">¶</a></h2>
 <p>In this chapter, you created an effect using a ring.
 In the next chapter, you will create complicated effects using parent-child relationships.</p>
-</div></div>
-</div>
+</div></section>
+</section>
 
 
            </div>

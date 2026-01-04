@@ -150,15 +150,18 @@ Place the particles in a spherical shape. At this time, you specify just the rad
 
 Place particles along the shape of the model for Effekseer. If "Set angle on spawn" is checked, the Z direction of the particle will be normal to the surface of the model.
 
-There are two types of models: file and procedural models.
+There are three types of models: file, procedural, and external models.
 
-If models are loaded from file, Specify FBX (.fbx), metasequoia file (.mqo) used for display, or model file for Effekseer (.efkmodel). If .efkmodel is specified, .efkmodel is generated in the same directory as the specified file. When playing effects with other applications, this generated file is necessary.
+If models are loaded from file, specify FBX (.fbx), metasequoia (.mqo), gltf (.gltf/.glb), obj (.obj), geo (.geo/.bgeo), or Effekseer model files (.efkmodel). If a source format is specified, an .efkmodel is generated in the same directory as the specified file. When playing effects with other applications, this generated file is necessary.
 
 You can also load FBX (.fbx) with animation. The first animation in the FBX file is played. The animation is played along the time of the parent particle. Particles are generated from the model deformed by animation.
 
 プロシージャルモデルを使用する場合、プロシージャルモデルのパネルでモデルを作成し、それを指定します。
 
 If you want to use a procedural model, create a model in the Procedural Model panel and specify it.
+
+In the editor, external models reference entries registered in [Behavior](behavior.html).
+At runtime, provide external models when playing the effect and reference them by index and coordinate system (local/world).
 
 
 ##### Spawn Mode

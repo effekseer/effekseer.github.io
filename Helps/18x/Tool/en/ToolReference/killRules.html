@@ -1,26 +1,27 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../../">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kill Rules &mdash; Effekseer Help  ドキュメント</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=77cdefee" />
+
+  
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/js/three.min.js"></script>
-        <script src="../../_static/js/effekseer.min.js"></script>
-        <script src="../../_static/js/iframe.js"></script>
-        <script src="../../_static/js/OrbitControls.js"></script>
-        <script src="../../_static/translations.js"></script>
+        <script src="../../_static/documentation_options.js?v=c033477b"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/js/three.min.js?v=1b2a738c"></script>
+        <script src="../../_static/js/effekseer.min.js?v=02ca8712"></script>
+        <script src="../../_static/js/iframe.js?v=0460a6df"></script>
+        <script src="../../_static/js/OrbitControls.js?v=366c62db"></script>
+        <script src="../../_static/translations.js?v=4dbe4bdc"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="検索" href="../../search.html" />
@@ -33,11 +34,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../index.html" class="icon icon-home"> Effekseer Help
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Effekseer Help
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -74,6 +79,7 @@
 <li class="toctree-l4"><a class="reference internal" href="dynamicParameter.html">DynamicParameter</a></li>
 <li class="toctree-l4"><a class="reference internal" href="proceduralModel.html">Procedural Model</a></li>
 <li class="toctree-l4"><a class="reference internal" href="collisions.html">Collision</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gpuParticles.html">GPU Particles</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="index.html#effect-features">Effect features</a></li>
@@ -103,10 +109,10 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../index.html">Effekseer Help (English)</a> &raquo;</li>
-          <li><a href="index.html">Tool-Reference</a> &raquo;</li>
-      <li>Kill Rules</li>
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Effekseer Help (English)</a></li>
+          <li class="breadcrumb-item"><a href="index.html">Tool-Reference</a></li>
+      <li class="breadcrumb-item active">Kill Rules</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -115,83 +121,83 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="kill-rules">
-<h1>Kill Rules<a class="headerlink" href="#kill-rules" title="Permalink to this heading">¶</a></h1>
-<div class="section" id="overview">
-<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this heading">¶</a></h2>
+  <section id="kill-rules">
+<h1>Kill Rules<a class="headerlink" href="#kill-rules" title="Link to this heading">¶</a></h1>
+<section id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Link to this heading">¶</a></h2>
 <p>Kill rules allow you to specify an area in which particles should be destroyed.
 If a particle has configured fade out, it will be applied before removal.</p>
 <p>While in the editor, you can select a node in the node tree to preview its configured kill rule shape.</p>
-</div>
-<div class="section" id="box">
-<h2>Box<a class="headerlink" href="#box" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="box">
+<h2>Box<a class="headerlink" href="#box" title="Link to this heading">¶</a></h2>
 <p>Box is used to kill particles when they're either inside or outside the defined box.</p>
 <img alt="../../_images/killRules_Box.png" class="align-center" src="../../_images/killRules_Box.png" />
-<div class="section" id="center">
-<h3>Center<a class="headerlink" href="#center" title="Permalink to this heading">¶</a></h3>
+<section id="center">
+<h3>Center<a class="headerlink" href="#center" title="Link to this heading">¶</a></h3>
 <p>The position of the center of the box in effect space.</p>
-</div>
-<div class="section" id="size">
-<h3>Size<a class="headerlink" href="#size" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="size">
+<h3>Size<a class="headerlink" href="#size" title="Link to this heading">¶</a></h3>
 <p>Extents of the box around its center.
 For example, if size is set to (0.5, 0.5, 0.5) the box will have a width, height, and depth of 1.</p>
-</div>
-<div class="section" id="kill-inside">
-<h3>Kill Inside<a class="headerlink" href="#kill-inside" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="kill-inside">
+<h3>Kill Inside<a class="headerlink" href="#kill-inside" title="Link to this heading">¶</a></h3>
 <p>If enabled, particles will be killed when they fall INSIDE the box.
 If disabled (the default), they will be killed when they fall OUTSIDE the box.</p>
-</div>
-<div class="section" id="scale-and-rotation-applied">
-<h3>Scale And Rotation Applied<a class="headerlink" href="#scale-and-rotation-applied" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="scale-and-rotation-applied">
+<h3>Scale And Rotation Applied<a class="headerlink" href="#scale-and-rotation-applied" title="Link to this heading">¶</a></h3>
 <p>If enabled (the default), the box will be rotated and scaled with effect.
 If disabled, the box will be axis aligned and have a fixed size.</p>
-</div>
-</div>
-<div class="section" id="plane">
-<h2>Plane<a class="headerlink" href="#plane" title="Permalink to this heading">¶</a></h2>
+</section>
+</section>
+<section id="plane">
+<h2>Plane<a class="headerlink" href="#plane" title="Link to this heading">¶</a></h2>
 <p>Plane is used to kill a particle when it moves beyond a certain position along a specified axis.</p>
 <img alt="../../_images/killRules_Plane.png" class="align-center" src="../../_images/killRules_Plane.png" />
-<div class="section" id="plane-axis">
-<h3>Plane Axis<a class="headerlink" href="#plane-axis" title="Permalink to this heading">¶</a></h3>
+<section id="plane-axis">
+<h3>Plane Axis<a class="headerlink" href="#plane-axis" title="Link to this heading">¶</a></h3>
 <p>Defines the axis with which the plane's normal will be aligned.
 Inverting the axis allows to change the side on which particles will be killed.
 For example, if the axis is set +Y particles will be killed when they are above the plane, but if you set the axis to -Y particles will be killed when they are below the plane.</p>
-</div>
-<div class="section" id="plane-offset-along-axis">
-<h3>Plane Offset Along Axis<a class="headerlink" href="#plane-offset-along-axis" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="plane-offset-along-axis">
+<h3>Plane Offset Along Axis<a class="headerlink" href="#plane-offset-along-axis" title="Link to this heading">¶</a></h3>
 <p>Defines how far plane will be moved along its axis.
 For example, if the axis is set to +Y and the plane offset is set to 1.0, then particles will be killed when their Y position is greater than 1.0, but if the axis is set to -Y and plane offset is set to 1.0, then particles will be killed when their Y position is less than -1.0.</p>
-</div>
-<div class="section" id="id1">
-<h3>Scale And Rotation Applied<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="id1">
+<h3>Scale And Rotation Applied<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h3>
 <p>If enabled (the default) plane orientation will be rotated when effect orientation changes, and the plane's offset will be scaled with the effect's scale.
 If disabled, the plane's orientation will remain fixed and its offset won't change with effect scale.</p>
-</div>
-</div>
-<div class="section" id="sphere">
-<h2>Sphere<a class="headerlink" href="#sphere" title="Permalink to this heading">¶</a></h2>
+</section>
+</section>
+<section id="sphere">
+<h2>Sphere<a class="headerlink" href="#sphere" title="Link to this heading">¶</a></h2>
 <p>Sphere used to kill particles when they move inside or outside of the specified sphere.</p>
 <img alt="../../_images/killRules_Sphere.png" class="align-center" src="../../_images/killRules_Sphere.png" />
-<div class="section" id="id2">
-<h3>Center<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h3>
+<section id="id2">
+<h3>Center<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h3>
 <p>Position of the center of the sphere in effect space.</p>
-</div>
-<div class="section" id="radius">
-<h3>Radius<a class="headerlink" href="#radius" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="radius">
+<h3>Radius<a class="headerlink" href="#radius" title="Link to this heading">¶</a></h3>
 <p>Radius of the sphere.</p>
-</div>
-<div class="section" id="id3">
-<h3>Kill Inside<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="id3">
+<h3>Kill Inside<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h3>
 <p>If enabled, particles will be killed when they fall INSIDE the sphere.
 If disabled (the default), they will be killed when they fall OUTSIDE the sphere.</p>
-</div>
-<div class="section" id="id4">
-<h3>Scale And Rotation Applied<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="id4">
+<h3>Scale And Rotation Applied<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h3>
 <p>If enabled (the default) the sphere position will be rotated relative to the effect's space origin and the sphere's radius will be scaled with the effect's scale.
 If disabled, the sphere position will remain at a constant position relative to the effect's space origin and radius will be fixed.</p>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
 
            </div>

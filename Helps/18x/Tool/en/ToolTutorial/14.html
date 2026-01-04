@@ -1,26 +1,27 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../../">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>14. Let&#39;s configure levels of details &mdash; Effekseer Help  ドキュメント</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=77cdefee" />
+
+  
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/js/three.min.js"></script>
-        <script src="../../_static/js/effekseer.min.js"></script>
-        <script src="../../_static/js/iframe.js"></script>
-        <script src="../../_static/js/OrbitControls.js"></script>
-        <script src="../../_static/translations.js"></script>
+        <script src="../../_static/documentation_options.js?v=c033477b"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/js/three.min.js?v=1b2a738c"></script>
+        <script src="../../_static/js/effekseer.min.js?v=02ca8712"></script>
+        <script src="../../_static/js/iframe.js?v=0460a6df"></script>
+        <script src="../../_static/js/OrbitControls.js?v=366c62db"></script>
+        <script src="../../_static/translations.js?v=4dbe4bdc"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="検索" href="../../search.html" />
@@ -33,11 +34,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../index.html" class="icon icon-home"> Effekseer Help
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Effekseer Help
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -92,10 +97,10 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../index.html">Effekseer Help (English)</a> &raquo;</li>
-          <li><a href="index.html">Tutorial</a> &raquo;</li>
-      <li>14. Let's configure levels of details</li>
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Effekseer Help (English)</a></li>
+          <li class="breadcrumb-item"><a href="index.html">Tutorial</a></li>
+      <li class="breadcrumb-item active">14. Let's configure levels of details</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -104,10 +109,10 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="let-s-configure-levels-of-details">
-<h1>14. Let's configure levels of details<a class="headerlink" href="#let-s-configure-levels-of-details" title="Permalink to this heading">¶</a></h1>
-<div class="section" id="overview">
-<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this heading">¶</a></h2>
+  <section id="let-s-configure-levels-of-details">
+<h1>14. Let's configure levels of details<a class="headerlink" href="#let-s-configure-levels-of-details" title="Link to this heading">¶</a></h1>
+<section id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Link to this heading">¶</a></h2>
 <p>Levels of Details enable artists to create effects which make effecient
 use of system resources and screen space depending on distance to
 the camera.</p>
@@ -125,9 +130,9 @@ but they still need to be calculated and processed each frame of the simulation.
 This is a great case of Levels of Details, since it allows to simplify effects
 based on the distance. So that effect node can be hidden or shutdown completely when
 effect is far from the viewer.</p>
-</div>
-<div class="section" id="levels-setup">
-<h2>Levels Setup<a class="headerlink" href="#levels-setup" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="levels-setup">
+<h2>Levels Setup<a class="headerlink" href="#levels-setup" title="Link to this heading">¶</a></h2>
 <p>Let's get started with configuring levels we're going to use. Navigate to <code class="docutils literal notranslate"><span class="pre">Menu</span> <span class="pre">&gt;</span> <span class="pre">Levels</span> <span class="pre">of</span> <span class="pre">Details</span></code>.</p>
 <img alt="../../_images/lods_Panel.png" class="align-center" src="../../_images/lods_Panel.png" />
 <p>In this panel you specify enabled levels of details and distances from which each
@@ -140,9 +145,9 @@ is not smaller than previous level and not greater than next level.</p>
 <p>Now you can try to change camera position using mouse wheel in the Editor
 and you will see that <code class="docutils literal notranslate"><span class="pre">Current</span> <span class="pre">LOD</span></code> in lower right corner of the player changes
 to <code class="docutils literal notranslate"><span class="pre">1</span></code> when distance to the effect is greater than 16.</p>
-</div>
-<div class="section" id="configuring-particle-node">
-<h2>Configuring Particle Node<a class="headerlink" href="#configuring-particle-node" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="configuring-particle-node">
+<h2>Configuring Particle Node<a class="headerlink" href="#configuring-particle-node" title="Link to this heading">¶</a></h2>
 <img alt="../../_images/lods_NodeTreeSelectors.png" class="align-center" src="../../_images/lods_NodeTreeSelectors.png" />
 <p>As you might have noticed, after you've enabled second level each colored button
 in the node hierarchy now shows two lines, one for each level. It displays levels
@@ -165,9 +170,9 @@ and already spawned particle will be hidden. It must be noted that spawned parti
 </ul>
 <p>By default <code class="docutils literal notranslate"><span class="pre">Hide</span> <span class="pre">Particles</span></code> is selected.
 Let's choose <code class="docutils literal notranslate"><span class="pre">Stop</span> <span class="pre">New</span> <span class="pre">Particles</span> <span class="pre">Spawn</span> <span class="pre">and</span> <span class="pre">Hide</span> <span class="pre">Existing</span></code> since it's suitable in our case.</p>
-</div>
-<div class="section" id="examining-results">
-<h2>Examining Results<a class="headerlink" href="#examining-results" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="examining-results">
+<h2>Examining Results<a class="headerlink" href="#examining-results" title="Link to this heading">¶</a></h2>
 <p>We're going to verify our configuration by taking a look at statistics shown in the bottom right corner of the viewer.</p>
 <ul class="simple">
 <li><p>Current LOD: Level of Detail is currently utilized</p></li>
@@ -177,9 +182,9 @@ Let's choose <code class="docutils literal notranslate"><span class="pre">Stop</
 </ul>
 <p>If we did everything correctly when LOD 0 is active we should see ~115 particles. Then, if you move camera away from effect
 up to the distance at which LOD 1 is selected we should observe amount of particles gradually going down to about ~15.</p>
-</div>
-<div class="section" id="summary">
-<h2>Summary<a class="headerlink" href="#summary" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="summary">
+<h2>Summary<a class="headerlink" href="#summary" title="Link to this heading">¶</a></h2>
 <p>You've learned how to setup levels of details and configure effect nodes to change their behavior
 based on currently active level. It's recommended to setup levels of detail at the last step
 of your effect production process when you're satisfied with effect look.</p>
@@ -187,8 +192,8 @@ of your effect production process when you're satisfied with effect look.</p>
 effect at the certain distance by making separate root nodes for different level. Effect optimisation
 process can be tricky, but sometimes it's what separates the game which barely runs at 30 fps from running
 at stable 60 fps.</p>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>

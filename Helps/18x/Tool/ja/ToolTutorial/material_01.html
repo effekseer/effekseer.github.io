@@ -1,26 +1,27 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="ja" >
+<html class="writer-html5" lang="ja" data-content_root="../../">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>01. マテリアル入門 &mdash; Effekseer Help  ドキュメント</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=77cdefee" />
+
+  
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/js/three.min.js"></script>
-        <script src="../../_static/js/effekseer.min.js"></script>
-        <script src="../../_static/js/iframe.js"></script>
-        <script src="../../_static/js/OrbitControls.js"></script>
-        <script src="../../_static/translations.js"></script>
+        <script src="../../_static/documentation_options.js?v=c033477b"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/js/three.min.js?v=1b2a738c"></script>
+        <script src="../../_static/js/effekseer.min.js?v=02ca8712"></script>
+        <script src="../../_static/js/iframe.js?v=0460a6df"></script>
+        <script src="../../_static/js/OrbitControls.js?v=366c62db"></script>
+        <script src="../../_static/translations.js?v=4dbe4bdc"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="検索" href="../../search.html" />
@@ -33,11 +34,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../index.html" class="icon icon-home"> Effekseer Help
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Effekseer Help
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -80,10 +85,10 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../index.html">Effekseer Help 日本語</a> &raquo;</li>
-          <li><a href="index.html">チュートリアル</a> &raquo;</li>
-      <li>01. マテリアル入門</li>
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Effekseer Help 日本語</a></li>
+          <li class="breadcrumb-item"><a href="index.html">チュートリアル</a></li>
+      <li class="breadcrumb-item active">01. マテリアル入門</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -92,10 +97,10 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="id1">
-<h1>01. マテリアル入門<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h1>
-<div class="section" id="id2">
-<h2>概要<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
+  <section id="id1">
+<h1>01. マテリアル入門<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h1>
+<section id="id2">
+<h2>概要<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
 <p>今まで、描画方法では画像やパラメーターを設定し、簡単な描画を行うのみでした。
 しかし、これだと画像自体が歪んだり、特定の領域を加算するといった複雑な描画ができませんでした。</p>
 <p>それらの複雑な描画を実現するために、Effekseerにはマテリアルがあります。
@@ -140,9 +145,9 @@
 ノード間を伝わる値には複数の種類があります。</p>
 <p>数値1から数値4という、1～4つの数値で構成された値の種類であることが多いです。
 また、画像であることもあります。</p>
-</div>
-<div class="section" id="id3">
-<h2>画像の表示<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="id3">
+<h2>画像の表示<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
 <p>画像は<code class="docutils literal notranslate"><span class="pre">画像参照</span></code>ノードを使用すると表示できます。</p>
 <p>右クリックで、<code class="docutils literal notranslate"><span class="pre">画像参照</span></code>ノードを追加します。</p>
 <div align="center">
@@ -162,9 +167,9 @@
 </div><p>そうすると、画像が表示されました。</p>
 <div align="center">
 <img src="../../img/Tutorial/Mat_01/state3.png">
-</div></div>
-<div class="section" id="id4">
-<h2>画像の表示領域の変更<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h2>
+</div></section>
+<section id="id4">
+<h2>画像の表示領域の変更<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h2>
 <p>今までは、単純にモデルに画像を表示した場合と挙動が同じでした。
 しかし、マテリアルを使うと様々な表現ができます。
 その準備として、UV座標の位置を変更します。</p>
@@ -188,9 +193,9 @@
 <img src="../../img/Tutorial/Mat_01/change_constant2_ja.png">
 </div><div align="center">
 <img src="../../img/Tutorial/Mat_01/state4.png">
-</div></div>
-<div class="section" id="id5">
-<h2>画像の歪み<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h2>
+</div></section>
+<section id="id5">
+<h2>画像の歪み<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h2>
 <p>先ほどは画像の表示領域をずらしただけですが、今度は画像を歪ませましょう。</p>
 <p>先ほどの<code class="docutils literal notranslate"><span class="pre">定数2</span></code>ノードの代わりに、画像を使用します。
 画像には、あらかじめ用意された <code class="docutils literal notranslate"><span class="pre">Textures/Distortion01.png</span></code> を指定します。</p>
@@ -215,9 +220,9 @@
 <div align="center">
 <img src="../../img/Tutorial/Mat_01/add_multiply_ja.png">
 </div><p>そうすると、程よく歪みます。</p>
-<iframe src='../../Effects/viewer_ja.html#Tutorials/Mat_01/Sample05.efkefc'></iframe></div>
-<div class="section" id="id6">
-<h2>歪みの移動<a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h2>
+<iframe src='../../Effects/viewer_ja.html#Tutorials/Mat_01/Sample05.efkefc'></iframe></section>
+<section id="id6">
+<h2>歪みの移動<a class="headerlink" href="#id6" title="Link to this heading">¶</a></h2>
 <p>止まったままでは地味なので、歪みを移動させてみましょう。
 <code class="docutils literal notranslate"><span class="pre">移動UV座標</span></code>ノードを追加します。
 <code class="docutils literal notranslate"><span class="pre">移動UV座標</span></code>ノードは時間経過で移動するUVの値を出力します。
@@ -226,9 +231,9 @@
 <div align="center">
 <img src="../../img/Tutorial/Mat_01/connect_movinguv_ja.png">
 </div><p>歪みが移動することがわかります。</p>
-<iframe src='../../Effects/viewer_ja.html#Tutorials/Mat_01/Sample06.efkefc'></iframe></div>
-<div class="section" id="id7">
-<h2>着色<a class="headerlink" href="#id7" title="Permalink to this heading">¶</a></h2>
+<iframe src='../../Effects/viewer_ja.html#Tutorials/Mat_01/Sample06.efkefc'></iframe></section>
+<section id="id7">
+<h2>着色<a class="headerlink" href="#id7" title="Link to this heading">¶</a></h2>
 <p>最後に、着色してみましょう。</p>
 <p><code class="docutils literal notranslate"><span class="pre">掛け算</span></code>ノードを追加します。</p>
 <p>画像を出力している<code class="docutils literal notranslate"><span class="pre">画像参照</span></code>ノードと最初に追加した固定3ノードを<code class="docutils literal notranslate"><span class="pre">掛け算</span></code>ノードに接続します。</p>
@@ -238,18 +243,18 @@
 </div><p>色同士が掛け合わさるので、色が付きました。</p>
 <iframe src='../../Effects/viewer_ja.html#Tutorials/Mat_01/Sample07.efkefc'></iframe><p>最後に、本章で作成されたエフェクトをダウンロードできるようにしてみました。</p>
 <p><a href="../../Effects/Tutorials/Mat_01_02.zip">ダウンロード</a></p>
-</div>
-<div class="section" id="id8">
-<h2>サンプル<a class="headerlink" href="#id8" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="id8">
+<h2>サンプル<a class="headerlink" href="#id8" title="Link to this heading">¶</a></h2>
 <p>今回はマテリアルの一例を紹介しましたが、様々なことができます。
 Effeksseerのサンプルにマテリアルが多数保存されているので、それらを見るのがいいでしょう。</p>
-</div>
-<div class="section" id="id9">
-<h2>まとめ<a class="headerlink" href="#id9" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="id9">
+<h2>まとめ<a class="headerlink" href="#id9" title="Link to this heading">¶</a></h2>
 <p>本章ではマテリアルの基本を説明しました。
 マテリアルを使用することにより、表現の幅が大きく広がります。</p>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>

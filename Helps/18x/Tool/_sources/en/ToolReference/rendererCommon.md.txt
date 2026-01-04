@@ -121,6 +121,7 @@ Specify the filtering method to be applied when displaying the particle.
 ### Wrap
 
 Specifies how to calculate the position to reference the image if the UV is below 0.0 or above 1.0.
+You can choose Repeat, Clamp, or Mirror.
 
 ### Depth Set
 
@@ -179,6 +180,10 @@ Move the UV range at a constant speed.
 #### F-Curve
 
 Use the F-Curve window to control the UV by defining automation curves.
+
+#### UV Horizontal Flip Probability
+
+Specifies the probability of flipping the UV horizontally.
 
 ### Referenced(UV)
 

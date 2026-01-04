@@ -1,26 +1,27 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh-CN" data-content_root="../../">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>力场（Local） &mdash; Effekseer Help  ドキュメント</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=77cdefee" />
+
+  
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/js/three.min.js"></script>
-        <script src="../../_static/js/effekseer.min.js"></script>
-        <script src="../../_static/js/iframe.js"></script>
-        <script src="../../_static/js/OrbitControls.js"></script>
-        <script src="../../_static/translations.js"></script>
+        <script src="../../_static/documentation_options.js?v=c033477b"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/js/three.min.js?v=1b2a738c"></script>
+        <script src="../../_static/js/effekseer.min.js?v=02ca8712"></script>
+        <script src="../../_static/js/iframe.js?v=0460a6df"></script>
+        <script src="../../_static/js/OrbitControls.js?v=366c62db"></script>
+        <script src="../../_static/translations.js?v=4dbe4bdc"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="検索" href="../../search.html" />
@@ -33,11 +34,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../index.html" class="icon icon-home"> Effekseer Help
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Effekseer Help
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -56,6 +61,7 @@
 <li class="toctree-l4"><a class="reference internal" href="location.html">位置</a></li>
 <li class="toctree-l4 current"><a class="current reference internal" href="#">力场（Local）</a></li>
 <li class="toctree-l4"><a class="reference internal" href="locationGene.html">生成方法</a></li>
+<li class="toctree-l4"><a class="reference internal" href="collisions.html">碰撞</a></li>
 <li class="toctree-l4"><a class="reference internal" href="killRules.html">销毁规则</a></li>
 <li class="toctree-l4"><a class="reference internal" href="rotation.html">旋转</a></li>
 <li class="toctree-l4"><a class="reference internal" href="scale.html">缩放</a></li>
@@ -102,10 +108,10 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../index.html">Effekseer Help (中文)</a> &raquo;</li>
-          <li><a href="index.html">工具参考</a> &raquo;</li>
-      <li>力场（Local）</li>
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Effekseer Help (中文)</a></li>
+          <li class="breadcrumb-item"><a href="index.html">工具参考</a></li>
+      <li class="breadcrumb-item active">力场（Local）</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -114,132 +120,132 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="local">
-<h1>力场（Local）<a class="headerlink" href="#local" title="Permalink to this heading">¶</a></h1>
-<div class="section" id="id1">
-<h2>概述<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h2>
+  <section id="local">
+<h1>力场（Local）<a class="headerlink" href="#local" title="Link to this heading">¶</a></h1>
+<section id="id1">
+<h2>概述<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h2>
 <p>设定外力对粒子的影响。</p>
-</div>
-<div class="section" id="parameters">
-<h2>Parameters<a class="headerlink" href="#parameters" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="parameters">
+<h2>Parameters<a class="headerlink" href="#parameters" title="Link to this heading">¶</a></h2>
 <div align="center">
 <img src="../../img/Reference/Atraction/panel_en.png">
 <p>“力场（Local）”窗口</p>
-</div></div>
-<div class="section" id="id2">
-<h2>力场<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
+</div></section>
+<section id="id2">
+<h2>力场<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
 <p>最多可同时设置4种力场。</p>
-</div>
-<div class="section" id="id3">
-<h2>类型<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h2>
-<div class="section" id="id4">
-<h3>无<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="id3">
+<h2>类型<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
+<section id="id4">
+<h3>无<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h3>
 <p>粒子不受外力影响。</p>
-</div>
-<div class="section" id="id5">
-<h3>力<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="id5">
+<h3>力<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h3>
 <p>从指定的位置向外侧施加力。
 也可以让远离指定位置的力场产生衰减。</p>
-<div class="video_center"><video autoplay loop="true" muted="true" src="../../movies/Reference/LocalForceField/Force.mp4"/></div></div>
-<div class="section" id="id6">
-<h3>风<a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h3>
+<div class="video_center"><video autoplay loop="true" muted="true" src="../../movies/Reference/LocalForceField/Force.mp4"/></div></section>
+<section id="id6">
+<h3>风<a class="headerlink" href="#id6" title="Link to this heading">¶</a></h3>
 <p>朝向指定的方向施加力。
 可以通过旋转改变方向。</p>
-<div class="video_center"><video autoplay loop="true" muted="true" src="../../movies/Reference/LocalForceField/Wind.mp4"/></div></div>
-<div class="section" id="id7">
-<h3>龙卷风<a class="headerlink" href="#id7" title="Permalink to this heading">¶</a></h3>
+<div class="video_center"><video autoplay loop="true" muted="true" src="../../movies/Reference/LocalForceField/Wind.mp4"/></div></section>
+<section id="id7">
+<h3>龙卷风<a class="headerlink" href="#id7" title="Link to this heading">¶</a></h3>
 <p>施加绕指定方向旋转的力。
 可以通过旋转改变轴的方向。</p>
 <p>可以设置移动速度，使外侧的旋转速度和内侧相同，否则内外侧的移动速度是相同的。</p>
-<div class="video_center"><video autoplay loop="true" muted="true" src="../../movies/Reference/LocalForceField/Vortex.mp4"/></div></div>
-<div class="section" id="id8">
-<h3>湍流<a class="headerlink" href="#id8" title="Permalink to this heading">¶</a></h3>
+<div class="video_center"><video autoplay loop="true" muted="true" src="../../movies/Reference/LocalForceField/Vortex.mp4"/></div></section>
+<section id="id8">
+<h3>湍流<a class="headerlink" href="#id8" title="Link to this heading">¶</a></h3>
 <p>施加具有湍流的力。</p>
-<div class="video_center"><video autoplay loop="true" muted="true" src="../../movies/Reference/LocalForceField/Turbulence.mp4"/></div><div class="section" id="id9">
-<h4>类型<a class="headerlink" href="#id9" title="Permalink to this heading">¶</a></h4>
+<div class="video_center"><video autoplay loop="true" muted="true" src="../../movies/Reference/LocalForceField/Turbulence.mp4"/></div><section id="id9">
+<h4>类型<a class="headerlink" href="#id9" title="Link to this heading">¶</a></h4>
 <p>你可以选择简单或复杂。
 越复杂，视觉效果越好，但运算速度也更慢。</p>
-</div>
-<div class="section" id="id10">
-<h4>随机种子<a class="headerlink" href="#id10" title="Permalink to this heading">¶</a></h4>
+</section>
+<section id="id10">
+<h4>随机种子<a class="headerlink" href="#id10" title="Link to this heading">¶</a></h4>
 <p>通过随机种子产生随机的湍流。</p>
-</div>
-<div class="section" id="id11">
-<h4>粒度<a class="headerlink" href="#id11" title="Permalink to this heading">¶</a></h4>
+</section>
+<section id="id11">
+<h4>粒度<a class="headerlink" href="#id11" title="Link to this heading">¶</a></h4>
 <p>值越大，湍流越宽。</p>
-</div>
-<div class="section" id="id12">
-<h4>强度<a class="headerlink" href="#id12" title="Permalink to this heading">¶</a></h4>
+</section>
+<section id="id12">
+<h4>强度<a class="headerlink" href="#id12" title="Link to this heading">¶</a></h4>
 <p>湍流的强度。</p>
 <p>译注：似乎没有这个设置。也许是统一改成“力”了。</p>
-</div>
-<div class="section" id="id13">
-<h4>复杂度<a class="headerlink" href="#id13" title="Permalink to this heading">¶</a></h4>
+</section>
+<section id="id13">
+<h4>复杂度<a class="headerlink" href="#id13" title="Link to this heading">¶</a></h4>
 <p>值越大，湍流越复杂。但也会增大计算负担。</p>
-</div>
-</div>
-<div class="section" id="id14">
-<h3>粘滞阻力<a class="headerlink" href="#id14" title="Permalink to this heading">¶</a></h3>
+</section>
+</section>
+<section id="id14">
+<h3>粘滞阻力<a class="headerlink" href="#id14" title="Link to this heading">¶</a></h3>
 <p>施加一个阻碍运动的力。</p>
-<div class="video_center"><video autoplay loop="true" muted="true" src="../../movies/Reference/LocalForceField/Drag.mp4"/></div></div>
-<div class="section" id="id15">
-<h3>重力<a class="headerlink" href="#id15" title="Permalink to this heading">¶</a></h3>
+<div class="video_center"><video autoplay loop="true" muted="true" src="../../movies/Reference/LocalForceField/Drag.mp4"/></div></section>
+<section id="id15">
+<h3>重力<a class="headerlink" href="#id15" title="Link to this heading">¶</a></h3>
 <p>在一个方向上施加加速度。重力可以朝向任意方向。且不会受到父节点的方向影响。</p>
-<iframe src='../../Effects/viewer_zh_CN.html#References/Attraction_Forces/gravity.efkefc'></iframe></div>
-<div class="section" id="id16">
-<h3>引力（需要设置引力点）<a class="headerlink" href="#id16" title="Permalink to this heading">¶</a></h3>
+<iframe src='../../Effects/viewer_zh_CN.html#References/Attraction_Forces/gravity.efkefc'></iframe></section>
+<section id="id16">
+<h3>引力（需要设置引力点）<a class="headerlink" href="#id16" title="Link to this heading">¶</a></h3>
 <p>粒子向“行为”窗口中的“引力点”处移动。</p>
 <p><img alt="../../_images/locationAbs_attraction.gif" src="../../_images/locationAbs_attraction.gif" /></p>
-<div class="section" id="id17">
-<h4>引力<a class="headerlink" href="#id17" title="Permalink to this heading">¶</a></h4>
+<section id="id17">
+<h4>引力<a class="headerlink" href="#id17" title="Link to this heading">¶</a></h4>
 <p>一帧中向目标位置的速度增量。</p>
-</div>
-<div class="section" id="id18">
-<h4>阻力<a class="headerlink" href="#id18" title="Permalink to this heading">¶</a></h4>
+</section>
+<section id="id18">
+<h4>阻力<a class="headerlink" href="#id18" title="Link to this heading">¶</a></h4>
 <p>一帧中运动方向修正为目标方向的百分比，取值在0.00和1.00之间。</p>
-</div>
-<div class="section" id="id19">
-<h4>最小范围<a class="headerlink" href="#id19" title="Permalink to this heading">¶</a></h4>
+</section>
+<section id="id19">
+<h4>最小范围<a class="headerlink" href="#id19" title="Link to this heading">¶</a></h4>
 <p>引力开始衰减的距离。</p>
-</div>
-<div class="section" id="id20">
-<h4>最大范围<a class="headerlink" href="#id20" title="Permalink to this heading">¶</a></h4>
+</section>
+<section id="id20">
+<h4>最大范围<a class="headerlink" href="#id20" title="Link to this heading">¶</a></h4>
 <p>引力结束衰减的距离。当粒子的位置在0到最小范围之间时，引力为100%。如果位置大于最大范围，引力为0%。如果在最小范围和最大范围之间，引力线性插值。</p>
-</div>
-</div>
-</div>
-<div class="section" id="id21">
-<h2>力场的位置<a class="headerlink" href="#id21" title="Permalink to this heading">¶</a></h2>
+</section>
+</section>
+</section>
+<section id="id21">
+<h2>力场的位置<a class="headerlink" href="#id21" title="Link to this heading">¶</a></h2>
 <p>设置力场中心的位置。
 影响部分力场的行为。</p>
-</div>
-<div class="section" id="id22">
-<h2>力场的角度<a class="headerlink" href="#id22" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="id22">
+<h2>力场的角度<a class="headerlink" href="#id22" title="Link to this heading">¶</a></h2>
 <p>设置力场的角度。
 影响部分力场的行为。</p>
-</div>
-<div class="section" id="id23">
-<h2>衰减类型<a class="headerlink" href="#id23" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="id23">
+<h2>衰减类型<a class="headerlink" href="#id23" title="Link to this heading">¶</a></h2>
 <p>在范围之外，力场的效果会衰减。
 有几种方式指定范围。</p>
-<div class="section" id="id24">
-<h3>球<a class="headerlink" href="#id24" title="Permalink to this heading">¶</a></h3>
+<section id="id24">
+<h3>球<a class="headerlink" href="#id24" title="Link to this heading">¶</a></h3>
 <p>远离球心时，力场会发生衰减。
 衰减力越大，向外移动时力场衰减的越多。</p>
-<div class="video_center"><video autoplay loop="true" muted="true" src="../../movies/Reference/LocalForceField/FallOff_Sphere.mp4"/></div></div>
-<div class="section" id="id25">
-<h3>管道<a class="headerlink" href="#id25" title="Permalink to this heading">¶</a></h3>
+<div class="video_center"><video autoplay loop="true" muted="true" src="../../movies/Reference/LocalForceField/FallOff_Sphere.mp4"/></div></section>
+<section id="id25">
+<h3>管道<a class="headerlink" href="#id25" title="Link to this heading">¶</a></h3>
 <p>远离圆柱中轴线时，力场会发生衰减。
 衰减力越大，向外移动时力场衰减的越多。</p>
-<div class="video_center"><video autoplay loop="true" muted="true" src="../../movies/Reference/LocalForceField/FallOff_Column.mp4"/></div></div>
-<div class="section" id="id26">
-<h3>圆锥<a class="headerlink" href="#id26" title="Permalink to this heading">¶</a></h3>
+<div class="video_center"><video autoplay loop="true" muted="true" src="../../movies/Reference/LocalForceField/FallOff_Column.mp4"/></div></section>
+<section id="id26">
+<h3>圆锥<a class="headerlink" href="#id26" title="Link to this heading">¶</a></h3>
 <p>这个圆锥是球的一部分切出来的。（在球的表面画一个圆，再与球心连接起来）
 圆锥范围外的地方，力场会发生衰减。该位置和圆锥顶点的连线与圆锥轴线之间的夹角越大，衰减越大。
 衰减力越大，向外移动时力场衰减的越多。</p>
-<div class="video_center"><video autoplay loop="true" muted="true" src="../../movies/Reference/LocalForceField/FallOff_Cone.mp4"/></div></div>
-</div>
-</div>
+<div class="video_center"><video autoplay loop="true" muted="true" src="../../movies/Reference/LocalForceField/FallOff_Cone.mp4"/></div></section>
+</section>
+</section>
 
 
            </div>

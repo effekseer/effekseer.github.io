@@ -37,6 +37,7 @@
 #### 瓦片
 
 它在丝带中重复一张图片。它适用于有重复图案的粒子，例如链条。
+可以通过“瓦片长度”指定重复间隔。
 还可以设置为不只重复边缘，而是在设置的循环区域内重复。
 
 <iframe src='../../Effects/viewer_zh_CN.html#References/Render/ribbon_uvtype_tile.efkefc' class='effect'></iframe>

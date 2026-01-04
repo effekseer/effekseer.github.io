@@ -1,26 +1,27 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh-CN" data-content_root="../../">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>06. 创建环形粒子! &mdash; Effekseer Help  ドキュメント</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=77cdefee" />
+
+  
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/js/three.min.js"></script>
-        <script src="../../_static/js/effekseer.min.js"></script>
-        <script src="../../_static/js/iframe.js"></script>
-        <script src="../../_static/js/OrbitControls.js"></script>
-        <script src="../../_static/translations.js"></script>
+        <script src="../../_static/documentation_options.js?v=c033477b"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/js/three.min.js?v=1b2a738c"></script>
+        <script src="../../_static/js/effekseer.min.js?v=02ca8712"></script>
+        <script src="../../_static/js/iframe.js?v=0460a6df"></script>
+        <script src="../../_static/js/OrbitControls.js?v=366c62db"></script>
+        <script src="../../_static/translations.js?v=4dbe4bdc"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="検索" href="../../search.html" />
@@ -33,11 +34,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../index.html" class="icon icon-home"> Effekseer Help
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Effekseer Help
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -92,10 +97,10 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../index.html">Effekseer Help (中文)</a> &raquo;</li>
-          <li><a href="index.html">教程</a> &raquo;</li>
-      <li>06. 创建环形粒子!</li>
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Effekseer Help (中文)</a></li>
+          <li class="breadcrumb-item"><a href="index.html">教程</a></li>
+      <li class="breadcrumb-item active">06. 创建环形粒子!</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -104,10 +109,10 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="id1">
-<h1>06. 创建环形粒子!<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h1>
-<div class="section" id="id2">
-<h2>概要<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
+  <section id="id1">
+<h1>06. 创建环形粒子!<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h1>
+<section id="id2">
+<h2>概要<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
 <p>在本章中, 你将使用环形(Ring)渲染方法创建多种效果。
 我们已经介绍了渲染方法中的“精灵”，而这次，我们将介绍“环”。
 顾名思义，它被用来绘制环形粒子。
@@ -128,9 +133,9 @@
 </div><p>你可以通过下面的链接下载为本章内容预制的特效素材。</p>
 <div align="center">
 <p><a href = "../../Sample/06_01_Sample.zip">下载</a></p>
-</div></div>
-<div class="section" id="id3">
-<h2>基础圆环<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h2>
+</div></section>
+<section id="id3">
+<h2>基础圆环<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
 <p>你将要创建的第一个效果是一个随时间改变形状的圆环。</p>
 <p>请打开 effect1.efkefc。</p>
 <p>为达到预想的效果，你需要将渲染方法设置为环形。
@@ -154,36 +159,36 @@
 <table border="1" class="docutils">
 <thead>
 <tr>
-<th align="left">窗口</th>
-<th align="left">参数</th>
-<th align="left">值</th>
+<th style="text-align: left;">窗口</th>
+<th style="text-align: left;">参数</th>
+<th style="text-align: left;">值</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left">基础设置</td>
-<td align="left">生命周期</td>
-<td align="left">60</td>
+<td style="text-align: left;">基础设置</td>
+<td style="text-align: left;">生命周期</td>
+<td style="text-align: left;">60</td>
 </tr>
 <tr>
-<td align="left">旋转</td>
-<td align="left">角度</td>
-<td align="left">x=0, y=0, z=-45</td>
+<td style="text-align: left;">旋转</td>
+<td style="text-align: left;">角度</td>
+<td style="text-align: left;">x=0, y=0, z=-45</td>
 </tr>
 <tr>
-<td align="left">渲染设置</td>
-<td align="left">外沿Outer</td>
-<td align="left">缓动</td>
+<td style="text-align: left;">渲染设置</td>
+<td style="text-align: left;">外沿Outer</td>
+<td style="text-align: left;">缓动</td>
 </tr>
 <tr>
-<td align="left">渲染设置</td>
-<td align="left">外沿Outer-Start(平均)</td>
-<td align="left">x=1, y=2</td>
+<td style="text-align: left;">渲染设置</td>
+<td style="text-align: left;">外沿Outer-Start(平均)</td>
+<td style="text-align: left;">x=1, y=2</td>
 </tr>
 <tr>
-<td align="left">渲染设置</td>
-<td align="left">外沿Outer-End(平均)</td>
-<td align="left">x=3, y=0</td>
+<td style="text-align: left;">渲染设置</td>
+<td style="text-align: left;">外沿Outer-End(平均)</td>
+<td style="text-align: left;">x=3, y=0</td>
 </tr>
 </tbody>
 </table><p>播放效果，你可以看到圆环的形状在随时间改变了。
@@ -191,9 +196,9 @@
 <div align="center">
 <img src="../../img/Tutorial/06_ring_easing.gif">
 <p>内沿不变, 外沿缓动</p>
-</div></div>
-<div class="section" id="id4">
-<h2>三角形<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h2>
+</div></section>
+<section id="id4">
+<h2>三角形<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h2>
 <p>你将要创建的第二个效果是一个三角形。
 请打开 effect2.efkefc。</p>
 <p>通过改变圆环的顶点数，你可以绘制出多种形状。
@@ -203,9 +208,9 @@
 <div align="center">
 <img src="../../img/Tutorial/06_tri.png">
 <p>一个三角形</p>
-</div></div>
-<div class="section" id="uv">
-<h2>滚动UV<a class="headerlink" href="#uv" title="Permalink to this heading">¶</a></h2>
+</div></section>
+<section id="uv">
+<h2>滚动UV<a class="headerlink" href="#uv" title="Link to this heading">¶</a></h2>
 <p>你将要创建的第三个效果是一个带贴图的圆筒。</p>
 <p>请打开 effect3.efkefc。</p>
 <p>你同样可以为环形粒子设置贴图，这样你就可以更简单地表现冲击波或爆发光环等效果。</p>
@@ -229,13 +234,13 @@
 </div><p>最后，你可以通过下面的链接下载本章中制作的效果。</p>
 <div align="center">
 <a href = "../../Sample/06_02_Sample.zip">下载</a>
-</div></div>
-<div class="section" id="id5">
-<h2>总结<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h2>
+</div></section>
+<section id="id5">
+<h2>总结<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h2>
 <p>本章节中，你通过圆环渲染方法创建了一系列效果。
 在下一章节，你将利用节点父子关系创建复杂的效果。</p>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>

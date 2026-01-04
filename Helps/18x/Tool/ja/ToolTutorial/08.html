@@ -1,26 +1,27 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="ja" >
+<html class="writer-html5" lang="ja" data-content_root="../../">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>08. 生成方法でパーティクルを並べよう！ &mdash; Effekseer Help  ドキュメント</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=77cdefee" />
+
+  
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/js/three.min.js"></script>
-        <script src="../../_static/js/effekseer.min.js"></script>
-        <script src="../../_static/js/iframe.js"></script>
-        <script src="../../_static/js/OrbitControls.js"></script>
-        <script src="../../_static/translations.js"></script>
+        <script src="../../_static/documentation_options.js?v=c033477b"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/js/three.min.js?v=1b2a738c"></script>
+        <script src="../../_static/js/effekseer.min.js?v=02ca8712"></script>
+        <script src="../../_static/js/iframe.js?v=0460a6df"></script>
+        <script src="../../_static/js/OrbitControls.js?v=366c62db"></script>
+        <script src="../../_static/translations.js?v=4dbe4bdc"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="検索" href="../../search.html" />
@@ -33,11 +34,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../index.html" class="icon icon-home"> Effekseer Help
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Effekseer Help
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -92,10 +97,10 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../index.html">Effekseer Help 日本語</a> &raquo;</li>
-          <li><a href="index.html">チュートリアル</a> &raquo;</li>
-      <li>08. 生成方法でパーティクルを並べよう！</li>
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Effekseer Help 日本語</a></li>
+          <li class="breadcrumb-item"><a href="index.html">チュートリアル</a></li>
+      <li class="breadcrumb-item active">08. 生成方法でパーティクルを並べよう！</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -104,10 +109,10 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="id1">
-<h1>08. 生成方法でパーティクルを並べよう！<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h1>
-<div class="main"><div class="section" id="id2">
-<h2>概要<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
+  <section id="id1">
+<h1>08. 生成方法でパーティクルを並べよう！<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h1>
+<div class="main"><section id="id2">
+<h2>概要<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
 <p>本章では、生成方法を変更して、パーティクルを一定間隔で並べてみます。
 生成方法では、パーティクルの最初の姿勢を指定できます。
 ノードの親子関係を使えば同じようなことを再現できますが、同じことを簡単に実現できます。</p>
@@ -120,9 +125,9 @@
 </div><div align="center"class='col-md-4'>
 <iframe src='../../Sample/viewer_ja.html#08_02_Sample/effect3.efk'></iframe>
 <p>本章で作成するエフェクト3</p>
-</div></div>
-<div class="section" id="id3">
-<h2>生成方法<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h2>
+</div></section>
+<section id="id3">
+<h2>生成方法<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
 <p>Effekseerでは、生成方法を指定できます。
 生成方法では、パーティクルが生成されたときの最初の姿勢を指定できます。
 例えば、パーティクルを円形に配置したり、球形に配置したりできます。</p>
@@ -148,9 +153,9 @@
 </div><p>あらかじめ作成途中のエフェクトを下記のリンクからダウンロードできるようにしました。</p>
 <div align="center">
 <p><a href = "../../Sample/08_01_Sample.zip">ダウンロード</a></p>
-</div></div>
-<div class="section" id="id4">
-<h2>円形エフェクト<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h2>
+</div></section>
+<section id="id4">
+<h2>円形エフェクト<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h2>
 <p>パーティクルを円形に配置します。
 パーティクルは時計回りに順番に表示されるようにします。</p>
 <p>このエフェクトは親子関係を利用して実現できますが、それはとても面倒です。
@@ -183,9 +188,9 @@
 <div align="center">
 <img src="../../img/Tutorial/08_effect1.gif">
 <p>作成されたエフェクト</p>
-</div></div>
-<div class="section" id="id5">
-<h2>球形エフェクト<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h2>
+</div></section>
+<section id="id5">
+<h2>球形エフェクト<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h2>
 <p>パーティクルを球形に配置してみます。</p>
 <p>effect02.efkefcを開いてください。</p>
 <p>円形と同じように、球形も設定できます。</p>
@@ -196,8 +201,8 @@
 <div align="center">
 <img src="../../img/Tutorial/08_effect2.gif">
 <p>作成されたエフェクト</p>
-</div><div class="section" id="id6">
-<h3>角度の影響<a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h3>
+</div><section id="id6">
+<h3>角度の影響<a class="headerlink" href="#id6" title="Link to this heading">¶</a></h3>
 <p>球の外側方向に向けてパーティクルが飛ぶようにしてみます。</p>
 <p>effect03.efjprojを開いてください。</p>
 <p>球の上方向にパーティクルが飛んでいくのがわかります。</p>
@@ -215,14 +220,14 @@
 </div><p>最後に、本章で作成されたエフェクトをダウンロードできるようにしてみました。</p>
 <div align="center">
 <a href = "../../Sample/08_02_Sample.zip">ダウンロード</a>
-</div></div>
-</div>
-<div class="section" id="id7">
-<h2>まとめ<a class="headerlink" href="#id7" title="Permalink to this heading">¶</a></h2>
+</div></section>
+</section>
+<section id="id7">
+<h2>まとめ<a class="headerlink" href="#id7" title="Link to this heading">¶</a></h2>
 <p>本章では、生成方法を変更して、パーティクルを円形や直線状に配置しました。
 次章では、ここまでで学んだ知識を元に実践的なエフェクトを作成します。</p>
-</div></div>
-</div>
+</div></section>
+</section>
 
 
            </div>

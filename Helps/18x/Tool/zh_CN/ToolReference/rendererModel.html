@@ -1,26 +1,27 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh-CN" data-content_root="../../">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>渲染 - 模型 &mdash; Effekseer Help  ドキュメント</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=77cdefee" />
+
+  
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/js/three.min.js"></script>
-        <script src="../../_static/js/effekseer.min.js"></script>
-        <script src="../../_static/js/iframe.js"></script>
-        <script src="../../_static/js/OrbitControls.js"></script>
-        <script src="../../_static/translations.js"></script>
+        <script src="../../_static/documentation_options.js?v=c033477b"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/js/three.min.js?v=1b2a738c"></script>
+        <script src="../../_static/js/effekseer.min.js?v=02ca8712"></script>
+        <script src="../../_static/js/iframe.js?v=0460a6df"></script>
+        <script src="../../_static/js/OrbitControls.js?v=366c62db"></script>
+        <script src="../../_static/translations.js?v=4dbe4bdc"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="検索" href="../../search.html" />
@@ -33,11 +34,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../index.html" class="icon icon-home"> Effekseer Help
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Effekseer Help
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -56,6 +61,7 @@
 <li class="toctree-l4"><a class="reference internal" href="location.html">位置</a></li>
 <li class="toctree-l4"><a class="reference internal" href="locationAbs.html">力场（Local）</a></li>
 <li class="toctree-l4"><a class="reference internal" href="locationGene.html">生成方法</a></li>
+<li class="toctree-l4"><a class="reference internal" href="collisions.html">碰撞</a></li>
 <li class="toctree-l4"><a class="reference internal" href="killRules.html">销毁规则</a></li>
 <li class="toctree-l4"><a class="reference internal" href="rotation.html">旋转</a></li>
 <li class="toctree-l4"><a class="reference internal" href="scale.html">缩放</a></li>
@@ -102,10 +108,10 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../index.html">Effekseer Help (中文)</a> &raquo;</li>
-          <li><a href="index.html">工具参考</a> &raquo;</li>
-      <li>渲染 - 模型</li>
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Effekseer Help (中文)</a></li>
+          <li class="breadcrumb-item"><a href="index.html">工具参考</a></li>
+      <li class="breadcrumb-item active">渲染 - 模型</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -114,29 +120,31 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="id1">
-<h1>渲染 - 模型<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h1>
-<div class="section" id="id2">
-<h2>概述<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
+  <section id="id1">
+<h1>渲染 - 模型<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h1>
+<section id="id2">
+<h2>概述<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
 <p>这里我们解释在渲染设置窗口中选择了“模型”时，影响渲染的参数。</p>
 <p>在选择了“模型”时，可以导入并显示一个外部的3D模型。</p>
 <p>在基础渲染设置窗口设置的颜色/扭曲图案可用于模型的纹理。如果不启用深度写入和深度测试，一些模型可能显示不正确。</p>
 <p><img alt="../../_images/renderModel.png" src="../../_images/renderModel.png" /></p>
-</div>
-<div class="section" id="id3">
-<h2>参数<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="id3">
+<h2>参数<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
 <div align="center">
 <img src="../../img/Reference/Render/panel_model_en.png">
 <p>“渲染设置”窗口</p>
-</div><div class="section" id="id4">
-<h3>模型<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h3>
-<p>有两种类型的模型：文件和程序化模型。</p>
-<p>如果从文件加载模型，需设置FBX（.fbx），水杉（.mqo）或Effekseer的模型文件（.efkmodel）。如果设置了.efkmodel以外的文件，将在与设置文件的同一目录下生成.efkmodel。如果你想在其他应用程序中播放特效，这个生成的文件是必需的。</p>
+</div><section id="id4">
+<h3>模型<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h3>
+<p>有三种类型的模型：文件、程序化模型和外部模型。</p>
+<p>如果从文件加载模型，需设置FBX（.fbx）、水杉（.mqo）、gltf（.gltf/.glb）、obj（.obj）、geo（.geo/.bgeo）或Effekseer的模型文件（.efkmodel）。如果设置了.efkmodel以外的文件，将在与设置文件的同一目录下生成.efkmodel。如果你想在其他应用程序中播放特效，这个生成的文件是必需的。</p>
 <p>也可以加载带有动画的FBX（.fbx）。会播放在FBX文件中设置的第一个动画。</p>
 <p>如果你想使用程序化模型，请在程序化模型面板中创建一个模型并设置它。</p>
-</div>
-<div class="section" id="id5">
-<h3>放置方法<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h3>
+<p>工具中使用外部模型时，参照在<a class="reference external" href="behavior.html">行为</a>中登记的模型。
+实际运行时需要在播放特效时提供外部模型，并在渲染侧指定外部模型的索引。</p>
+</section>
+<section id="id5">
+<h3>放置方法<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h3>
 <p>设置如何绘制粒子的模型。</p>
 <table border="1" class="docutils">
 <thead>
@@ -167,17 +175,17 @@
 <td>模型将会与粒子的旋转设置一致</td>
 </tr>
 </tbody>
-</table><iframe src='../../Effects/viewer_zh_CN.html#References/Render/model_configuration.efkefc'></iframe></div>
-<div class="section" id="id6">
-<h3>剔除<a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h3>
+</table><iframe src='../../Effects/viewer_zh_CN.html#References/Render/model_configuration.efkefc'></iframe></section>
+<section id="id6">
+<h3>剔除<a class="headerlink" href="#id6" title="Link to this heading">¶</a></h3>
 <p>设置模型的哪个/哪些面会被显示。</p>
-</div>
-<div class="section" id="id7">
-<h3>整体颜色<a class="headerlink" href="#id7" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="id7">
+<h3>整体颜色<a class="headerlink" href="#id7" title="Link to this heading">¶</a></h3>
 <p>设置整个模型的色调。</p>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
 
            </div>

@@ -1,26 +1,27 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh-CN" data-content_root="../../">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>剔除 &mdash; Effekseer Help  ドキュメント</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=77cdefee" />
+
+  
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/js/three.min.js"></script>
-        <script src="../../_static/js/effekseer.min.js"></script>
-        <script src="../../_static/js/iframe.js"></script>
-        <script src="../../_static/js/OrbitControls.js"></script>
-        <script src="../../_static/translations.js"></script>
+        <script src="../../_static/documentation_options.js?v=c033477b"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/js/three.min.js?v=1b2a738c"></script>
+        <script src="../../_static/js/effekseer.min.js?v=02ca8712"></script>
+        <script src="../../_static/js/iframe.js?v=0460a6df"></script>
+        <script src="../../_static/js/OrbitControls.js?v=366c62db"></script>
+        <script src="../../_static/translations.js?v=4dbe4bdc"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="検索" href="../../search.html" />
@@ -33,11 +34,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../index.html" class="icon icon-home"> Effekseer Help
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Effekseer Help
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -56,6 +61,7 @@
 <li class="toctree-l4"><a class="reference internal" href="location.html">位置</a></li>
 <li class="toctree-l4"><a class="reference internal" href="locationAbs.html">力场（Local）</a></li>
 <li class="toctree-l4"><a class="reference internal" href="locationGene.html">生成方法</a></li>
+<li class="toctree-l4"><a class="reference internal" href="collisions.html">碰撞</a></li>
 <li class="toctree-l4"><a class="reference internal" href="killRules.html">销毁规则</a></li>
 <li class="toctree-l4"><a class="reference internal" href="rotation.html">旋转</a></li>
 <li class="toctree-l4"><a class="reference internal" href="scale.html">缩放</a></li>
@@ -102,10 +108,10 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../index.html">Effekseer Help (中文)</a> &raquo;</li>
-          <li><a href="index.html">工具参考</a> &raquo;</li>
-      <li>剔除</li>
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Effekseer Help (中文)</a></li>
+          <li class="breadcrumb-item"><a href="index.html">工具参考</a></li>
+      <li class="breadcrumb-item active">剔除</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -114,41 +120,41 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="id1">
-<h1>剔除<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h1>
-<div class="section" id="id2">
-<h2>概述<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
+  <section id="id1">
+<h1>剔除<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h1>
+<section id="id2">
+<h2>概述<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
 <p>你可以设置和剔除相关的参数。剔除的用途是不渲染位于屏幕外的特效。如果“剔除”设置的粗糙的形状位于屏幕之外，那么特效本身就不会被渲染。如果没有设置剔除，特效总是被渲染。</p>
 <p>译注：就是设置一个包裹特效的形状，当这个形状位于屏幕之外时，就判断特效整体都位于屏幕之外，就不需要渲染特效了。</p>
-</div>
-<div class="section" id="id3">
-<h2>参数<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h2>
-<div class="section" id="id4">
-<h3>显示剔除<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="id3">
+<h2>参数<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
+<section id="id4">
+<h3>显示剔除<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h3>
 <p>设置是否在屏幕上显示剔除的形状。</p>
-</div>
-<div class="section" id="id5">
-<h3>剔除类型<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="id5">
+<h3>剔除类型<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h3>
 <p>设置剔除的形状。</p>
-<div class="section" id="id6">
-<h4>无<a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h4>
+<section id="id6">
+<h4>无<a class="headerlink" href="#id6" title="Link to this heading">¶</a></h4>
 <p>不使用剔除，特效一直被绘制。</p>
-</div>
-<div class="section" id="id7">
-<h4>球<a class="headerlink" href="#id7" title="Permalink to this heading">¶</a></h4>
+</section>
+<section id="id7">
+<h4>球<a class="headerlink" href="#id7" title="Link to this heading">¶</a></h4>
 <p>球形剔除。</p>
-<div class="section" id="id8">
-<h5>半径<a class="headerlink" href="#id8" title="Permalink to this heading">¶</a></h5>
+<section id="id8">
+<h5>半径<a class="headerlink" href="#id8" title="Link to this heading">¶</a></h5>
 <p>球的半径。</p>
-</div>
-<div class="section" id="id9">
-<h5>位置<a class="headerlink" href="#id9" title="Permalink to this heading">¶</a></h5>
+</section>
+<section id="id9">
+<h5>位置<a class="headerlink" href="#id9" title="Link to this heading">¶</a></h5>
 <p>球的中心的位置。</p>
-</div>
-</div>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
+</section>
+</section>
 
 
            </div>

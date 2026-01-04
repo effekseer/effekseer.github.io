@@ -28,6 +28,7 @@ Specify an image for the background.
 
 Show a ground surface.
 It is useful for checking soft particles or depth.
+You can also enable ground collisions here.
 
 ```eval_rst
 .. image:: ../../img/Reference/Environment/ground.png

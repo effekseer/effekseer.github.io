@@ -23,6 +23,10 @@ Set the name displayed in the node tree. This is for organizational purposes onl
 
 Sets the maximum number of particles that will be generated from this node. You can also choose infinite to generate particles indefinitely (or until other conditional settings described later cause the particle generation to be stopped). However, when playing an effect from another application that incorporates Effekseer, please note that the "infinite" effect will not end unless a function is manually called to stop the effect.
 
+### Spawn Enabled
+
+Specifies whether spawning is enabled at the start of playback.
+
 ### Inherit Position
 
 Sets how the position of the parent particle affects the particles generated from this node. Please refer to the following section for information regarding inheritance options.
@@ -72,9 +76,15 @@ If child particles of a parent particle are not present, and it is unlikely that
 
 Sets the number of frames that should pass between the particle being spawned, and being despawned. However, if "Destroy after time" is unchecked, this parameter has no effect.
 
+### Generation Mode
+
+Selects `Continuous` or `Trigger` spawning.
+`Continuous` uses Spawn Rate, while `Trigger` uses Spawn Trigger and Spawn Count.
+
 ### Spawn Rate
 
 Sets the rate at which particles are generated. The number of frames specified will have to pass between one particle generating and the next. You can specify a value less than 1 for the spawn rate, in which case multiple particles will be generated per frame.
+This is used in `Continuous` mode.
 
 ### Initial Delay
 
@@ -106,7 +116,15 @@ If the default "None" is specified, the trigger will not stop particle generatio
 
 See also: [15.Let's Send triggers to change effects!](../ToolTutorial/15.md)
 
-### Destroy Trigger
+### Spawn Trigger
+
+When Generation Mode is `Trigger`, this specifies the trigger number that spawns particles.
+
+### Particles per Trigger
+
+When Generation Mode is `Trigger`, specifies how many particles are spawned per trigger.
+
+### Destroy on Trigger
 
 Specifies the trigger number for deleting particles.
 
@@ -117,3 +135,5 @@ If the default "None" is specified, particles are not deleted by the trigger.
 Also, if you set the `Fadeout` in the `Common panel` to `Fadeout after destroyed`, the fade out will be performed after the trigger is sent.
 
 See also: [15.Let's Send triggers to change effects!](../ToolTutorial/15.md)
+
+Trigger types include `Trigger 0-3`, `On Parent Removed`, and `On Parent Collision`.

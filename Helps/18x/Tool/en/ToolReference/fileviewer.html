@@ -1,26 +1,27 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../../">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>File Browser &mdash; Effekseer Help  ドキュメント</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=77cdefee" />
+
+  
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/js/three.min.js"></script>
-        <script src="../../_static/js/effekseer.min.js"></script>
-        <script src="../../_static/js/iframe.js"></script>
-        <script src="../../_static/js/OrbitControls.js"></script>
-        <script src="../../_static/translations.js"></script>
+        <script src="../../_static/documentation_options.js?v=c033477b"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/js/three.min.js?v=1b2a738c"></script>
+        <script src="../../_static/js/effekseer.min.js?v=02ca8712"></script>
+        <script src="../../_static/js/iframe.js?v=0460a6df"></script>
+        <script src="../../_static/js/OrbitControls.js?v=366c62db"></script>
+        <script src="../../_static/translations.js?v=4dbe4bdc"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="検索" href="../../search.html" />
@@ -33,11 +34,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../index.html" class="icon icon-home"> Effekseer Help
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Effekseer Help
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -63,6 +68,7 @@
 <li class="toctree-l4"><a class="reference internal" href="fileExport.html">File - Export</a></li>
 <li class="toctree-l4"><a class="reference internal" href="recoveringData.html">Recovering Data</a></li>
 <li class="toctree-l4"><a class="reference internal" href="drawMode.html">Draw Modes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="profiler.html">Profiler</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="index.html#command-line">Command Line</a></li>
@@ -90,10 +96,10 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../index.html">Effekseer Help (English)</a> &raquo;</li>
-          <li><a href="index.html">Tool-Reference</a> &raquo;</li>
-      <li>File Browser</li>
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Effekseer Help (English)</a></li>
+          <li class="breadcrumb-item"><a href="index.html">Tool-Reference</a></li>
+      <li class="breadcrumb-item active">File Browser</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -102,46 +108,46 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="file-browser">
-<h1>File Browser<a class="headerlink" href="#file-browser" title="Permalink to this heading">¶</a></h1>
-<div class="section" id="overview">
-<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this heading">¶</a></h2>
+  <section id="file-browser">
+<h1>File Browser<a class="headerlink" href="#file-browser" title="Link to this heading">¶</a></h1>
+<section id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Link to this heading">¶</a></h2>
 <p>The File Browser is a panel that displays asset files related to Effekseer.</p>
-<div class="section" id="icon-display-mode">
-<h3>Icon display mode<a class="headerlink" href="#icon-display-mode" title="Permalink to this heading">¶</a></h3>
+<section id="icon-display-mode">
+<h3>Icon display mode<a class="headerlink" href="#icon-display-mode" title="Link to this heading">¶</a></h3>
 <p><img alt="../../_images/FileIcons1.png" src="../../_images/FileIcons1.png" /></p>
-</div>
-<div class="section" id="preview-image-files">
-<h3>Preview image files<a class="headerlink" href="#preview-image-files" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="preview-image-files">
+<h3>Preview image files<a class="headerlink" href="#preview-image-files" title="Link to this heading">¶</a></h3>
 <p><img alt="../../_images/FileIcons2.png" src="../../_images/FileIcons2.png" /></p>
-</div>
-<div class="section" id="list-display-mode">
-<h3>List display mode<a class="headerlink" href="#list-display-mode" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="list-display-mode">
+<h3>List display mode<a class="headerlink" href="#list-display-mode" title="Link to this heading">¶</a></h3>
 <p><img alt="../../_images/FileList1.png" src="../../_images/FileList1.png" /></p>
-</div>
-</div>
-<div class="section" id="how-to-use">
-<h2>How to use<a class="headerlink" href="#how-to-use" title="Permalink to this heading">¶</a></h2>
-<div class="section" id="move-current-directory">
-<h3>Move current directory<a class="headerlink" href="#move-current-directory" title="Permalink to this heading">¶</a></h3>
+</section>
+</section>
+<section id="how-to-use">
+<h2>How to use<a class="headerlink" href="#how-to-use" title="Link to this heading">¶</a></h2>
+<section id="move-current-directory">
+<h3>Move current directory<a class="headerlink" href="#move-current-directory" title="Link to this heading">¶</a></h3>
 <p>Double-clicking a directory displays the asset files in that directory.</p>
 <p>Pressing the UP button displays the asset files in the directory above.</p>
-</div>
-<div class="section" id="open-effect-files">
-<h3>Open effect files<a class="headerlink" href="#open-effect-files" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="open-effect-files">
+<h3>Open effect files<a class="headerlink" href="#open-effect-files" title="Link to this heading">¶</a></h3>
 <p>Double-click on an efkefc file to open it in the current editor.</p>
-</div>
-<div class="section" id="open-other-files">
-<h3>Open other files<a class="headerlink" href="#open-other-files" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="open-other-files">
+<h3>Open other files<a class="headerlink" href="#open-other-files" title="Link to this heading">¶</a></h3>
 <p>Double-clicking on any other file will open it in its associated application.</p>
-</div>
-<div class="section" id="d-d-assignment-of-asset-files">
-<h3>D&amp;D assignment of asset files<a class="headerlink" href="#d-d-assignment-of-asset-files" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="d-d-assignment-of-asset-files">
+<h3>D&amp;D assignment of asset files<a class="headerlink" href="#d-d-assignment-of-asset-files" title="Link to this heading">¶</a></h3>
 <p>Textures, models, and sound files can be specified by dragging and dropping them into the parameters.</p>
 <p><img alt="../../_images/DragDrop_en.png" src="../../_images/DragDrop_en.png" /></p>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
 
            </div>

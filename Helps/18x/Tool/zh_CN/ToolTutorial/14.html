@@ -1,26 +1,27 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh-CN" data-content_root="../../">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>14. 设置细节层级（LOD） &mdash; Effekseer Help  ドキュメント</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=77cdefee" />
+
+  
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/js/three.min.js"></script>
-        <script src="../../_static/js/effekseer.min.js"></script>
-        <script src="../../_static/js/iframe.js"></script>
-        <script src="../../_static/js/OrbitControls.js"></script>
-        <script src="../../_static/translations.js"></script>
+        <script src="../../_static/documentation_options.js?v=c033477b"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/js/three.min.js?v=1b2a738c"></script>
+        <script src="../../_static/js/effekseer.min.js?v=02ca8712"></script>
+        <script src="../../_static/js/iframe.js?v=0460a6df"></script>
+        <script src="../../_static/js/OrbitControls.js?v=366c62db"></script>
+        <script src="../../_static/translations.js?v=4dbe4bdc"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="検索" href="../../search.html" />
@@ -33,11 +34,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../index.html" class="icon icon-home"> Effekseer Help
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Effekseer Help
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -92,10 +97,10 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../index.html">Effekseer Help (中文)</a> &raquo;</li>
-          <li><a href="index.html">教程</a> &raquo;</li>
-      <li>14. 设置细节层级（LOD）</li>
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Effekseer Help (中文)</a></li>
+          <li class="breadcrumb-item"><a href="index.html">教程</a></li>
+      <li class="breadcrumb-item active">14. 设置细节层级（LOD）</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -104,10 +109,10 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="lod">
-<h1>14. 设置细节层级（LOD）<a class="headerlink" href="#lod" title="Permalink to this heading">¶</a></h1>
-<div class="section" id="id1">
-<h2>概要<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h2>
+  <section id="lod">
+<h1>14. 设置细节层级（LOD）<a class="headerlink" href="#lod" title="Link to this heading">¶</a></h1>
+<section id="id1">
+<h2>概要<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h2>
 <p>细节层级（LOD）使艺术家们能够根据到相机的距离有效利用系统资源和屏幕空间。</p>
 <img alt="../../_images/lods_Effect.png" class="align-center" src="../../_images/lods_Effect.png" />
 <p>本章我们将验证示例文件<code class="docutils literal notranslate"><span class="pre">Aura01.efkefc</span></code>。<a href = "../../Sample/14_Sample.zip">可以在此处下载。</a></p>
@@ -115,18 +120,18 @@
 <p>在这个特效中，你可以看到一个叫做<code class="docutils literal notranslate"><span class="pre">Particle</span></code>的节点。它生成了从龙卷风的底部飞向顶部的小颗粒。当相机靠近特效时，你能看到这些粒子，它们为特效增加了很棒的细节。</p>
 <img alt="../../_images/lods_ParticleInViewer.png" class="align-center" src="../../_images/lods_ParticleInViewer.png" />
 <p>然而，如果摄像机离得很远，它们就会很小，几乎看不到，但仍然需要在每一帧中进行计算和处理。这是细节层级（LOD）的一个很好的例子，因为可以根据距离来简化特效。如果一个特效节点离视窗很远，它可以被隐藏或完全关闭。</p>
-</div>
-<div class="section" id="id2">
-<h2>层级设置<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="id2">
+<h2>层级设置<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
 <p>让我们设置要使用的层级。打开<code class="docutils literal notranslate"><span class="pre">窗口</span> <span class="pre">&gt;</span> <span class="pre">细节层级（LOD）</span></code>。</p>
 <img alt="../../_images/lods_Panel.png" class="align-center" src="../../_images/lods_Panel.png" />
 <p>这个面板设置了有效的细节层级和每个层级的距离。0级是基本层级，它总是从距离0开始，当没有其他级别可供选择时就会使用。一个特效中最多可以使用四个层级。</p>
 <p>让我们启用层级1。 默认情况下，最小距离被设置为16，在这个例子中使用默认值就很好。你可以自由设置一个层级的最小距离，但值必须在上一个层级和下一个层级之间。</p>
 <img alt="../../_images/lods_Panel2.png" class="align-center" src="../../_images/lods_Panel2.png" />
 <p>在编辑器中使用鼠标滚轮来改变摄像机的位置。如果与特效的距离大于16，你会看到播放器右下角的<code class="docutils literal notranslate"><span class="pre">Current</span> <span class="pre">LOD</span></code>变为1。</p>
-</div>
-<div class="section" id="id3">
-<h2>设置粒子节点<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="id3">
+<h2>设置粒子节点<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
 <img alt="../../_images/lods_NodeTreeSelectors.png" class="align-center" src="../../_images/lods_NodeTreeSelectors.png" />
 <p>你会注意到，在启用第二个层级后，节点层级结构中的每个颜色按钮都显示为两行，每个层级一行。它显示了每个特效节点启用的层级。点击这个按钮可以更改每个节点选择的层级。</p>
 <p>点击<code class="docutils literal notranslate"><span class="pre">Particle</span></code>节点附近的这个按钮。</p>
@@ -140,9 +145,9 @@
 </ul>
 <p>默认选项是<code class="docutils literal notranslate"><span class="pre">隐藏粒子</span></code>。
 我们选择<code class="docutils literal notranslate"><span class="pre">停止生成新粒子并隐藏现存的粒子</span></code>，它适合这个例子。</p>
-</div>
-<div class="section" id="id4">
-<h2>检查结果<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="id4">
+<h2>检查结果<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h2>
 <p>查看视窗右下角的统计数据以检查设置。</p>
 <ul class="simple">
 <li><p>Current LOD: 当前有效的细节层级</p></li>
@@ -151,13 +156,13 @@
 <li><p>P：当前渲染中的粒子数。</p></li>
 </ul>
 <p>如果一切操作正确，那么在层级0时，你应该看到大约115个粒子。然后，如果你让摄像机远离特效，到层级1的距离，你会看到粒子的数量逐渐减少到大约15个。</p>
-</div>
-<div class="section" id="id5">
-<h2>总结<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="id5">
+<h2>总结<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h2>
 <p>本章介绍了如何设置细节层级，以及如何配置特效节点，使其根据当前的细节层级改变行为。建议在特效制作过程的最后一步设置细节层级。</p>
 <p>细节层级是非常通用的，可以用许多不同的方式来设置。通过为每个层级创建一个单独的根节点，你甚至可以完全替换一定距离下的特效。优化特效的过程可能很棘手，但有时它就是勉强运行在30帧的游戏与稳定运行在60帧的游戏的区别。</p>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>

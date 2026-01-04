@@ -1,26 +1,27 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../../">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>15.Let&#39;s Send triggers to change effects! &mdash; Effekseer Help  ドキュメント</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=77cdefee" />
+
+  
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/js/three.min.js"></script>
-        <script src="../../_static/js/effekseer.min.js"></script>
-        <script src="../../_static/js/iframe.js"></script>
-        <script src="../../_static/js/OrbitControls.js"></script>
-        <script src="../../_static/translations.js"></script>
+        <script src="../../_static/documentation_options.js?v=c033477b"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/js/three.min.js?v=1b2a738c"></script>
+        <script src="../../_static/js/effekseer.min.js?v=02ca8712"></script>
+        <script src="../../_static/js/iframe.js?v=0460a6df"></script>
+        <script src="../../_static/js/OrbitControls.js?v=366c62db"></script>
+        <script src="../../_static/translations.js?v=4dbe4bdc"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="検索" href="../../search.html" />
@@ -33,11 +34,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../index.html" class="icon icon-home"> Effekseer Help
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Effekseer Help
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -92,10 +97,10 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../index.html">Effekseer Help (English)</a> &raquo;</li>
-          <li><a href="index.html">Tutorial</a> &raquo;</li>
-      <li>15.Let's Send triggers to change effects!</li>
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Effekseer Help (English)</a></li>
+          <li class="breadcrumb-item"><a href="index.html">Tutorial</a></li>
+      <li class="breadcrumb-item active">15.Let's Send triggers to change effects!</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -104,40 +109,40 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="let-s-send-triggers-to-change-effects">
-<h1>15.Let's Send triggers to change effects!<a class="headerlink" href="#let-s-send-triggers-to-change-effects" title="Permalink to this heading">¶</a></h1>
-<div class="main"><div class="section" id="id1">
-<h2>概要<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h2>
+  <section id="let-s-send-triggers-to-change-effects">
+<h1>15.Let's Send triggers to change effects!<a class="headerlink" href="#let-s-send-triggers-to-change-effects" title="Link to this heading">¶</a></h1>
+<div class="main"><section id="id1">
+<h2>概要<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h2>
 <p>This chapter explains the trigger function of Effekseer.
 The trigger function can change effects during playback.</p>
 <p>For example, as shown in the following example, a weapon that is being charged with energy can be triggered to fire.</p>
 <iframe src='../../Sample/viewer_en.html#15_Sample/TriggerLaser.efkefc'></iframe><p>Double-click to send the trigger.</p>
-</div>
-<div class="section" id="trigger-function">
-<h2>Trigger function<a class="headerlink" href="#trigger-function" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="trigger-function">
+<h2>Trigger function<a class="headerlink" href="#trigger-function" title="Link to this heading">¶</a></h2>
 <p>Trigger is a mechanism that allows up to four triggers to be sent to the effect currently playing.
 The triggered effect can change its behavior according to the parameters set in the node.</p>
-<div class="section" id="trigger-settings">
-<h3>Trigger settings<a class="headerlink" href="#trigger-settings" title="Permalink to this heading">¶</a></h3>
+<section id="trigger-settings">
+<h3>Trigger settings<a class="headerlink" href="#trigger-settings" title="Link to this heading">¶</a></h3>
 <p>The behavior change by the trigger is set in <a class="reference internal" href="../ToolReference/common.html"><span class="doc">Common</span></a>.</p>
 <div align="center">
 <img src="../../img/Tutorial/15/start_by_trigger_en.png">
 <p>Common panel trigger settings</p>
-</div></div>
-<div class="section" id="sending-triggers-from-the-editor">
-<h3>Sending triggers from the editor<a class="headerlink" href="#sending-triggers-from-the-editor" title="Permalink to this heading">¶</a></h3>
+</div></section>
+<section id="sending-triggers-from-the-editor">
+<h3>Sending triggers from the editor<a class="headerlink" href="#sending-triggers-from-the-editor" title="Link to this heading">¶</a></h3>
 <p>Triggers can be sent from the controller panel.</p>
 <div align="center">
 <img src="../../img/Tutorial/15/trigger_controller.png">
 <p>0,1,2,3 button to send triggers</p>
-</div></div>
-<div class="section" id="send-triggers-from-the-game">
-<h3>Send triggers from the game<a class="headerlink" href="#send-triggers-from-the-game" title="Permalink to this heading">¶</a></h3>
+</div></section>
+<section id="send-triggers-from-the-game">
+<h3>Send triggers from the game<a class="headerlink" href="#send-triggers-from-the-game" title="Link to this heading">¶</a></h3>
 <p>There are APIs to send triggers to SDKs and plug-ins for each game engine.</p>
-</div>
-</div>
-<div class="section" id="sample-effect">
-<h2>sample effect<a class="headerlink" href="#sample-effect" title="Permalink to this heading">¶</a></h2>
+</section>
+</section>
+<section id="sample-effect">
+<h2>sample effect<a class="headerlink" href="#sample-effect" title="Link to this heading">¶</a></h2>
 <p>This chapter explains using the sample file <code class="docutils literal notranslate"><span class="pre">TriggerLaser.efkefc</span></code>.</p>
 <div align="center">
 <p><a href = "../../Sample/15_Sample.zip">Download</a></p>
@@ -154,21 +159,21 @@ The triggered effect can change its behavior according to the parameters set in 
 <li><p><code class="docutils literal notranslate"><span class="pre">Charge</span></code> node particles are deleted and particle generation in child nodes stops</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Laser</span></code> node particles start generating and child node particles are also generated</p></li>
 </ul>
-<div class="section" id="node-to-delete-particles-when-triggered">
-<h3>Node to delete particles when triggered<a class="headerlink" href="#node-to-delete-particles-when-triggered" title="Permalink to this heading">¶</a></h3>
+<section id="node-to-delete-particles-when-triggered">
+<h3>Node to delete particles when triggered<a class="headerlink" href="#node-to-delete-particles-when-triggered" title="Link to this heading">¶</a></h3>
 <div align="center">
 <img src="../../img/Tutorial/15/remove_by_trigger_en.png">
 <p>Trigger settings for Charge node</p>
-</div></div>
-<div class="section" id="node-that-starts-particle-generation-when-a-trigger-is-sent">
-<h3>Node that starts particle generation when a trigger is sent<a class="headerlink" href="#node-that-starts-particle-generation-when-a-trigger-is-sent" title="Permalink to this heading">¶</a></h3>
+</div></section>
+<section id="node-that-starts-particle-generation-when-a-trigger-is-sent">
+<h3>Node that starts particle generation when a trigger is sent<a class="headerlink" href="#node-that-starts-particle-generation-when-a-trigger-is-sent" title="Link to this heading">¶</a></h3>
 <div align="center">
 <img src="../../img/Tutorial/15/start_by_trigger_en.png">
 <p>Trigger settings for Laser node</p>
-</div></div>
-</div>
-<div class="section" id="tips">
-<h2>Tips<a class="headerlink" href="#tips" title="Permalink to this heading">¶</a></h2>
+</div></section>
+</section>
+<section id="tips">
+<h2>Tips<a class="headerlink" href="#tips" title="Link to this heading">¶</a></h2>
 <p>Particles deleted by a trigger may disappear instantly, which may be unnatural.
 In this case, you can set <code class="docutils literal notranslate"><span class="pre">Fade</span> <span class="pre">out</span> <span class="pre">after</span> <span class="pre">delete</span></code> to make them disappear naturally by fading out.</p>
 <div align="center">
@@ -191,12 +196,12 @@ In both of the following examples, the particles are deleted by the trigger, but
 </div>
 </td></tr>
 </table>
-</div></div>
-<div class="section" id="summary">
-<h2>Summary<a class="headerlink" href="#summary" title="Permalink to this heading">¶</a></h2>
+</div></section>
+<section id="summary">
+<h2>Summary<a class="headerlink" href="#summary" title="Link to this heading">¶</a></h2>
 <p>This chapter explained how to use triggers. Take advantage of triggers to create interactive effects.</p>
-</div></div>
-</div>
+</div></section>
+</section>
 
 
            </div>

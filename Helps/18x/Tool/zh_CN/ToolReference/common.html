@@ -1,26 +1,27 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh-CN" data-content_root="../../">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>基础设置 &mdash; Effekseer Help  ドキュメント</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=77cdefee" />
+
+  
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/js/three.min.js"></script>
-        <script src="../../_static/js/effekseer.min.js"></script>
-        <script src="../../_static/js/iframe.js"></script>
-        <script src="../../_static/js/OrbitControls.js"></script>
-        <script src="../../_static/translations.js"></script>
+        <script src="../../_static/documentation_options.js?v=c033477b"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/js/three.min.js?v=1b2a738c"></script>
+        <script src="../../_static/js/effekseer.min.js?v=02ca8712"></script>
+        <script src="../../_static/js/iframe.js?v=0460a6df"></script>
+        <script src="../../_static/js/OrbitControls.js?v=366c62db"></script>
+        <script src="../../_static/translations.js?v=4dbe4bdc"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="検索" href="../../search.html" />
@@ -33,11 +34,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../index.html" class="icon icon-home"> Effekseer Help
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Effekseer Help
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -56,6 +61,7 @@
 <li class="toctree-l4"><a class="reference internal" href="location.html">位置</a></li>
 <li class="toctree-l4"><a class="reference internal" href="locationAbs.html">力场（Local）</a></li>
 <li class="toctree-l4"><a class="reference internal" href="locationGene.html">生成方法</a></li>
+<li class="toctree-l4"><a class="reference internal" href="collisions.html">碰撞</a></li>
 <li class="toctree-l4"><a class="reference internal" href="killRules.html">销毁规则</a></li>
 <li class="toctree-l4"><a class="reference internal" href="rotation.html">旋转</a></li>
 <li class="toctree-l4"><a class="reference internal" href="scale.html">缩放</a></li>
@@ -102,10 +108,10 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../index.html">Effekseer Help (中文)</a> &raquo;</li>
-          <li><a href="index.html">工具参考</a> &raquo;</li>
-      <li>基础设置</li>
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Effekseer Help (中文)</a></li>
+          <li class="breadcrumb-item"><a href="index.html">工具参考</a></li>
+      <li class="breadcrumb-item active">基础设置</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -114,112 +120,131 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="id1">
-<h1>基础设置<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h1>
-<div class="section" id="id2">
-<h2>概述<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
+  <section id="id1">
+<h1>基础设置<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h1>
+<section id="id2">
+<h2>概述<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
 <p>在此，你可以为粒子节点设置一些全局参数，例如名字、生成粒子的数量和一些其他设置。</p>
-</div>
-<div class="section" id="id3">
-<h2>参数<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="id3">
+<h2>参数<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
 <div align="center">
 <img src="../../img/Reference/common_parameters_en.png">
 <p>“基础设置”窗口</p>
-</div><div class="section" id="id4">
-<h3>可见性<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h3>
+</div><section id="id4">
+<h3>可见性<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h3>
 <p>控制这个节点生成的粒子是否要被渲染到窗口中。如果勾选它，粒子将会可见。注意，如果没有勾选，即便输出到游戏中，粒子也不会被渲染。（译注：和游戏内的说明相矛盾）</p>
-</div>
-<div class="section" id="id5">
-<h3>名称<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="id5">
+<h3>名称<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h3>
 <p>设置显示在节点树中的名字。它的作用仅仅是，当你的节点数中有许多节点时，便于管理节点。它完全不影响粒子的行为。</p>
-</div>
-<div class="section" id="id6">
-<h3>生成数量<a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="id6">
+<h3>生成数量<a class="headerlink" href="#id6" title="Link to this heading">¶</a></h3>
 <p>设置这个节点生成的粒子的最大数量。你可以选择正无穷以无限生成粒子（或者直到其他条件设置停止了粒子的生成）。然而，当在另一个内嵌了Effekseer的程序中播放特效时，注意除非触发了停止特效的函数，否则“正无穷”的特效将不会结束。</p>
-</div>
-<div class="section" id="id7">
-<h3>继承位置<a class="headerlink" href="#id7" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="id7">
+<h3>生成启用<a class="headerlink" href="#id7" title="Link to this heading">¶</a></h3>
+<p>指定开始播放时是否启用生成。</p>
+</section>
+<section id="id8">
+<h3>继承位置<a class="headerlink" href="#id8" title="Link to this heading">¶</a></h3>
 <p>设置父粒子的位置如何影响这个节点生成的粒子。请参照接下来的小节以获得关于继承的信息。</p>
-<div class="section" id="id8">
-<h4>仅生成时 - 跟随父节点<a class="headerlink" href="#id8" title="Permalink to this heading">¶</a></h4>
+<section id="id9">
+<h4>仅生成时 - 跟随父节点<a class="headerlink" href="#id9" title="Link to this heading">¶</a></h4>
 <p>子粒子移动以跟随父粒子。
 可以控制这个行为的速度和转向。</p>
-<div class="video_center"><video autoplay loop="true" muted="true" src="../../movies/Reference/BasicSettings/FollowParent.mp4"/></div></div>
-</div>
-<div class="section" id="id9">
-<h3>继承旋转<a class="headerlink" href="#id9" title="Permalink to this heading">¶</a></h3>
+<div class="video_center"><video autoplay loop="true" muted="true" src="../../movies/Reference/BasicSettings/FollowParent.mp4"/></div></section>
+</section>
+<section id="id10">
+<h3>继承旋转<a class="headerlink" href="#id10" title="Link to this heading">¶</a></h3>
 <p>设置父粒子的旋转如何影响这个节点生成的粒子。请参照接下来的小节以获得关于继承的信息。</p>
-</div>
-<div class="section" id="id10">
-<h3>继承缩放<a class="headerlink" href="#id10" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="id11">
+<h3>继承缩放<a class="headerlink" href="#id11" title="Link to this heading">¶</a></h3>
 <p>设置父粒子的缩放如何影响这个节点生成的粒子。请参照接下来的小节以获得关于继承的信息。</p>
-</div>
-<div class="section" id="id11">
-<h3>继承**<a class="headerlink" href="#id11" title="Permalink to this heading">¶</a></h3>
-<div class="section" id="id12">
-<h4>始终<a class="headerlink" href="#id12" title="Permalink to this heading">¶</a></h4>
+</section>
+<section id="id12">
+<h3>继承**<a class="headerlink" href="#id12" title="Link to this heading">¶</a></h3>
+<section id="id13">
+<h4>始终<a class="headerlink" href="#id13" title="Link to this heading">¶</a></h4>
 <p>它表示持续的继承，每当父粒子的位置变化时，子粒子也立刻更新变化。如果父粒子被移除，父粒子消失时的值将成为之后被子节点继承的值。</p>
-</div>
-<div class="section" id="id13">
-<h4>仅生成时<a class="headerlink" href="#id13" title="Permalink to this heading">¶</a></h4>
+</section>
+<section id="id14">
+<h4>仅生成时<a class="headerlink" href="#id14" title="Link to this heading">¶</a></h4>
 <p>仅在子粒子生成时一次性地用继承的值初始化子粒子的值。</p>
-</div>
-<div class="section" id="id14">
-<h4>从不<a class="headerlink" href="#id14" title="Permalink to this heading">¶</a></h4>
+</section>
+<section id="id15">
+<h4>从不<a class="headerlink" href="#id15" title="Link to this heading">¶</a></h4>
 <p>该值不会被继承。无论父粒子的值是什么，子粒子的行为仅取决于子节点的参数。</p>
-</div>
-</div>
-<div class="section" id="id15">
-<h3>生命周期结束后销毁<a class="headerlink" href="#id15" title="Permalink to this heading">¶</a></h3>
+</section>
+</section>
+<section id="id16">
+<h3>生命周期结束后销毁<a class="headerlink" href="#id16" title="Link to this heading">¶</a></h3>
 <p>当“生命周期”中设置的帧数结束时，粒子将被移除。如果不被勾选，粒子将不会在生命周期结束后被移除。</p>
-</div>
-<div class="section" id="id16">
-<h3>跟随父节点销毁<a class="headerlink" href="#id16" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="id17">
+<h3>跟随父节点销毁<a class="headerlink" href="#id17" title="Link to this heading">¶</a></h3>
 <p>当父粒子移除时，子粒子也会被移除。</p>
-</div>
-<div class="section" id="id17">
-<h3>子节点全部销毁时销毁<a class="headerlink" href="#id17" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="id18">
+<h3>子节点全部销毁时销毁<a class="headerlink" href="#id18" title="Link to this heading">¶</a></h3>
 <p>如果一个父粒子不存在子粒子，而且未来也不可能生成子粒子，则删除父粒子。</p>
-</div>
-<div class="section" id="id18">
-<h3>生命周期<a class="headerlink" href="#id18" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="id19">
+<h3>生命周期<a class="headerlink" href="#id19" title="Link to this heading">¶</a></h3>
 <p>设置粒子从生成到移除之间经过的帧数。然而，如果未选择“生命周期结束后销毁”，这个参数就没有作用。</p>
-</div>
-<div class="section" id="id19">
-<h3>生成速率<a class="headerlink" href="#id19" title="Permalink to this heading">¶</a></h3>
-<p>设置粒子生成的速率。表示一个粒子生成后，再生成下一个粒子时需要经过的帧数。你可以设置一个小于1的值，在这种情况下每帧就会生成多个粒子。</p>
-</div>
-<div class="section" id="id20">
-<h3>生成开始时间<a class="headerlink" href="#id20" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="id20">
+<h3>生成模式<a class="headerlink" href="#id20" title="Link to this heading">¶</a></h3>
+<p>选择“连续”或“触发器”生成。
+“连续”使用生成速率，“触发器”使用生成触发器和每次触发生成数量。</p>
+</section>
+<section id="id21">
+<h3>生成速率<a class="headerlink" href="#id21" title="Link to this heading">¶</a></h3>
+<p>设置粒子生成的速率。表示一个粒子生成后，再生成下一个粒子时需要经过的帧数。你可以设置一个小于1的值，在这种情况下每帧就会生成多个粒子。
+仅在“连续”模式下使用。</p>
+</section>
+<section id="id22">
+<h3>生成开始时间<a class="headerlink" href="#id22" title="Link to this heading">¶</a></h3>
 <p>设置从父粒子生成到子粒子第一次生成时需要经过的帧数。</p>
 <p>生成开始时间也可以设置为负数值。但应该在负数时间生成的粒子事实上会在第0帧生成。</p>
 <p>下面的图表显示了生成速率、生成开始时间和时间的关系。(1)是生成速率，(2)是生成开始时间，(3)是时间（以帧为单位）。当经过了生成开始时间后，粒子开始生成。但是所有在负数时间内生成的粒子事实上在第0帧才被生成。</p>
 <p><img alt="../../_images/common_generatedTime.png" src="../../_images/common_generatedTime.png" /></p>
-</div>
-<div class="section" id="id21">
-<h3>开始生成的触发器<a class="headerlink" href="#id21" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="id23">
+<h3>开始生成的触发器<a class="headerlink" href="#id23" title="Link to this heading">¶</a></h3>
 <p>设置触发粒子生成的触发器。</p>
 <p>如果设置了一个触发器，那么在触发器信号发送前，粒子不会生成。</p>
 <p>如果设置为默认的“无”，那么无需触发器信号，粒子也会开始生成。</p>
 <p>参阅：<a class="reference internal" href="../ToolTutorial/15.html"><span class="doc">15.通过触发器改变特效！</span></a></p>
-</div>
-<div class="section" id="id22">
-<h3>停止生成的触发器<a class="headerlink" href="#id22" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="id24">
+<h3>停止生成的触发器<a class="headerlink" href="#id24" title="Link to this heading">¶</a></h3>
 <p>设置停止粒子生成的触发器。</p>
 <p>如果设置了一个触发器，那么在触发器信号发送时，粒子会停止生成。</p>
 <p>如果设置为默认的“无”，那么触发器信号不会停止粒子的生成。</p>
 <p>参阅：<a class="reference internal" href="../ToolTutorial/15.html"><span class="doc">15.通过触发器改变特效！</span></a></p>
-</div>
-<div class="section" id="id23">
-<h3>销毁的触发器<a class="headerlink" href="#id23" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="id25">
+<h3>生成触发器<a class="headerlink" href="#id25" title="Link to this heading">¶</a></h3>
+<p>当生成模式为“触发器”时，指定用于生成粒子的触发器编号。</p>
+</section>
+<section id="id26">
+<h3>每次触发生成数量<a class="headerlink" href="#id26" title="Link to this heading">¶</a></h3>
+<p>当生成模式为“触发器”时，指定触发一次生成的粒子数量。</p>
+</section>
+<section id="id27">
+<h3>触发器删除<a class="headerlink" href="#id27" title="Link to this heading">¶</a></h3>
 <p>设置删除粒子的触发器。</p>
 <p>如果设置了一个触发器，那么在触发器信号发送时，现存的粒子会被删除。</p>
 <p>如果设置为默认的“无”，那么触发器信号不会删除粒子。</p>
 <p>而且，如果你将<code class="docutils literal notranslate"><span class="pre">基础渲染设置</span></code>中的<code class="docutils literal notranslate"><span class="pre">淡出</span></code>设置为<code class="docutils literal notranslate"><span class="pre">在销毁后淡出</span></code>，那么在触发器信号发送时，粒子会被淡出。</p>
 <p>参阅：<a class="reference internal" href="../ToolTutorial/15.html"><span class="doc">15.通过触发器改变特效！</span></a></p>
-</div>
-</div>
-</div>
+<p>触发器类型除了触发器0-3外，还可以选择“父节点消失时”和“父节点碰撞时”。</p>
+</section>
+</section>
+</section>
 
 
            </div>

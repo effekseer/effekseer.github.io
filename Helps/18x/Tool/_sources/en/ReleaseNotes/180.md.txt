@@ -5,6 +5,7 @@
 ### Collisions
 
 Added the feature to make particles and surfaces collide.
+Added external collision settings, bounce/friction, lifetime reduction, and coordinate system options.
 
 ### Track, Ribbon
 
@@ -14,6 +15,29 @@ Added the feature to set UVs that repeat every specified length.
 
 Added the feature to rotate particles in the direction of movement.
 
+### Triggers / Spawning
+
+Added trigger-based spawning (continuous or trigger mode).
+Added triggers for parent removed/parent collision, plus per-trigger spawn counts.
+
+### External Models
+
+Added external models as emission sources.
+Model spawning/rendering can reference external model indices and local/world coordinates.
+
+### Rendering
+
+Added directional billboard.
+Added UV horizontal flip probability, mirror wrap, and tile length / per-particle tiling.
+
+### Models
+
+Updated the model converter and added support for gltf/glb/obj/geo/bgeo.
+
+### Materials
+
+Material editor: added SmoothStep, logic (Branch/Compare/AND/OR/NOT), IsFrontFace, ParticleTime, white/cellular noise, and RGB/HSV conversion nodes.
+
 ### GPU Particles
 
 Added the feature to compute particles processing using GPU.
@@ -21,5 +45,19 @@ This is currently a preview feature and may not be available in all targets.
 
 ### Profiler
 
-Added the function to measure and display GPU load.
+Added the function to measure and display CPU/GPU load.
 This is currently a preview feature and may not be available in all targets.
+
+## Tools
+
+### Viewer
+
+Added an option to enable ground collisions in the viewer.
+
+## Unity
+
+- Updated EffekseerForUnity to the 1.8 series.
+- Added a menu to import .efk files with dependent resources.
+- Added a trigger API to EffekseerHandle.
+- URP/HDRP custom render passes now support layer masks.
+- Added URP RenderGraph (Unity 6) and WebGL 3.1.8/2023.2 support.

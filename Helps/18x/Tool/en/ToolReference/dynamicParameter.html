@@ -1,26 +1,27 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../../">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>DynamicParameter &mdash; Effekseer Help  ドキュメント</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=77cdefee" />
+
+  
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/js/three.min.js"></script>
-        <script src="../../_static/js/effekseer.min.js"></script>
-        <script src="../../_static/js/iframe.js"></script>
-        <script src="../../_static/js/OrbitControls.js"></script>
-        <script src="../../_static/translations.js"></script>
+        <script src="../../_static/documentation_options.js?v=c033477b"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/js/three.min.js?v=1b2a738c"></script>
+        <script src="../../_static/js/effekseer.min.js?v=02ca8712"></script>
+        <script src="../../_static/js/iframe.js?v=0460a6df"></script>
+        <script src="../../_static/js/OrbitControls.js?v=366c62db"></script>
+        <script src="../../_static/translations.js?v=4dbe4bdc"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="検索" href="../../search.html" />
@@ -33,11 +34,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../index.html" class="icon icon-home"> Effekseer Help
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Effekseer Help
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -74,6 +79,7 @@
 <li class="toctree-l4 current"><a class="current reference internal" href="#">DynamicParameter</a></li>
 <li class="toctree-l4"><a class="reference internal" href="proceduralModel.html">Procedural Model</a></li>
 <li class="toctree-l4"><a class="reference internal" href="collisions.html">Collision</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gpuParticles.html">GPU Particles</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="index.html#effect-features">Effect features</a></li>
@@ -103,10 +109,10 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../index.html">Effekseer Help (English)</a> &raquo;</li>
-          <li><a href="index.html">Tool-Reference</a> &raquo;</li>
-      <li>DynamicParameter</li>
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Effekseer Help (English)</a></li>
+          <li class="breadcrumb-item"><a href="index.html">Tool-Reference</a></li>
+      <li class="breadcrumb-item active">DynamicParameter</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -115,30 +121,30 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="dynamicparameter">
-<h1>DynamicParameter<a class="headerlink" href="#dynamicparameter" title="Permalink to this heading">¶</a></h1>
-<div class="section" id="overview">
-<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this heading">¶</a></h2>
+  <section id="dynamicparameter">
+<h1>DynamicParameter<a class="headerlink" href="#dynamicparameter" title="Link to this heading">¶</a></h1>
+<section id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Link to this heading">¶</a></h2>
 <p>DynamicParameter specifies a parameter to rewrite refresh (during game) effect parameters during effect playback.
 It controls parameters with simple code. Parameters can be given externally.</p>
-</div>
-<div class="section" id="how-to-use">
-<h2>How to use<a class="headerlink" href="#how-to-use" title="Permalink to this heading">¶</a></h2>
-<div class="section" id="basic">
-<h3>Basic<a class="headerlink" href="#basic" title="Permalink to this heading">¶</a></h3>
-<div class="section" id="panel">
-<h4>Panel<a class="headerlink" href="#panel" title="Permalink to this heading">¶</a></h4>
+</section>
+<section id="how-to-use">
+<h2>How to use<a class="headerlink" href="#how-to-use" title="Link to this heading">¶</a></h2>
+<section id="basic">
+<h3>Basic<a class="headerlink" href="#basic" title="Link to this heading">¶</a></h3>
+<section id="panel">
+<h4>Panel<a class="headerlink" href="#panel" title="Link to this heading">¶</a></h4>
 <p>Open the dynamic parameter panel.</p>
 <img alt="../../_images/menu_en.png" class="align-center" src="../../_images/menu_en.png" />
-</div>
-<div class="section" id="add-an-expression">
-<h4>Add an expression<a class="headerlink" href="#add-an-expression" title="Permalink to this heading">¶</a></h4>
+</section>
+<section id="add-an-expression">
+<h4>Add an expression<a class="headerlink" href="#add-an-expression" title="Link to this heading">¶</a></h4>
 <p>You can add an expression with the add button.
 You can specify the name of the expression and the content of the expression.</p>
 <img alt="../../_images/add_en.png" class="align-center" src="../../_images/add_en.png" />
-</div>
-<div class="section" id="write-an-expression">
-<h4>Write an expression<a class="headerlink" href="#write-an-expression" title="Permalink to this heading">¶</a></h4>
+</section>
+<section id="write-an-expression">
+<h4>Write an expression<a class="headerlink" href="#write-an-expression" title="Link to this heading">¶</a></h4>
 <p>For example, to rewrite the first parameter to 2.0, write as follows.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nd">@O</span><span class="o">.</span><span class="n">x</span> <span class="o">=</span> <span class="mf">2.0</span>
 </pre></div>
@@ -147,9 +153,9 @@ You can specify the name of the expression and the content of the expression.</p
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nd">@O</span><span class="o">.</span><span class="n">x</span> <span class="o">=</span> <span class="mf">2.0</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="apply-the-expression">
-<h4>Apply the expression<a class="headerlink" href="#apply-the-expression" title="Permalink to this heading">¶</a></h4>
+</section>
+<section id="apply-the-expression">
+<h4>Apply the expression<a class="headerlink" href="#apply-the-expression" title="Link to this heading">¶</a></h4>
 <p>Right-click on the parameter to which it applies and select Dynamic.
 Then, a field for selecting the expression is displayed.</p>
 <img alt="../../_images/select_dynamic_en.png" class="align-center" src="../../_images/select_dynamic_en.png" />
@@ -157,12 +163,12 @@ Then, a field for selecting the expression is displayed.</p>
 <img alt="../../_images/apply_dynamic_en.png" class="align-center" src="../../_images/apply_dynamic_en.png" />
 <p>The parameter of the position is (0, 0, 0). But a particle is shown on 2 because the expression changes positions into 2</p>
 <img alt="../../_images/move2.png" class="align-center" src="../../_images/move2.png" />
-</div>
-</div>
-<div class="section" id="functions-of-an-expression">
-<h3>Functions of an expression<a class="headerlink" href="#functions-of-an-expression" title="Permalink to this heading">¶</a></h3>
-<div class="section" id="change-multiple-parameters">
-<h4>Change multiple parameters<a class="headerlink" href="#change-multiple-parameters" title="Permalink to this heading">¶</a></h4>
+</section>
+</section>
+<section id="functions-of-an-expression">
+<h3>Functions of an expression<a class="headerlink" href="#functions-of-an-expression" title="Link to this heading">¶</a></h3>
+<section id="change-multiple-parameters">
+<h4>Change multiple parameters<a class="headerlink" href="#change-multiple-parameters" title="Link to this heading">¶</a></h4>
 <p>x, y, z, w, each parameter can be changed.
 Entering the following changes the values ​​to 2, 3, 4, and 5, respectively.
 If the destination is a color, x, y, z, w correspond to RGBA.</p>
@@ -172,78 +178,78 @@ If the destination is a color, x, y, z, w correspond to RGBA.</p>
 <span class="nd">@O</span><span class="o">.</span><span class="n">w</span> <span class="o">=</span> <span class="mf">5.0</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="four-arithmetic-operations">
-<h4>Four arithmetic operations<a class="headerlink" href="#four-arithmetic-operations" title="Permalink to this heading">¶</a></h4>
+</section>
+<section id="four-arithmetic-operations">
+<h4>Four arithmetic operations<a class="headerlink" href="#four-arithmetic-operations" title="Link to this heading">¶</a></h4>
 <p>Expressions can use arithmetic operations. You can change the priority of the operation with ().</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nd">@O</span><span class="o">.</span><span class="n">x</span> <span class="o">=</span> <span class="p">(</span><span class="mf">2.0</span> <span class="o">+</span> <span class="mf">3.0</span> <span class="o">*</span> <span class="mf">2.0</span> <span class="o">/</span> <span class="mf">3.0</span><span class="p">)</span> <span class="o">-</span> <span class="mf">2.0</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="parameter">
-<h4>Parameter<a class="headerlink" href="#parameter" title="Permalink to this heading">¶</a></h4>
+</section>
+<section id="parameter">
+<h4>Parameter<a class="headerlink" href="#parameter" title="Link to this heading">¶</a></h4>
 <p>Parameters input from the external can be specified from the numeric field on the panel and runtime.</p>
 <table border="1" class="docutils">
 <thead>
 <tr>
-<th align="left">Parameter</th>
-<th align="left">Description</th>
+<th style="text-align: left;">Parameter</th>
+<th style="text-align: left;">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left">@P.x @P.y @P.z @P.w</td>
-<td align="left">Parameters before dynamic parameter is applied</td>
+<td style="text-align: left;">@P.x @P.y @P.z @P.w</td>
+<td style="text-align: left;">Parameters before dynamic parameter is applied</td>
 </tr>
 <tr>
-<td align="left">@In0 @In1 @In2 @In3</td>
-<td align="left">Parameters input from the external</td>
+<td style="text-align: left;">@In0 @In1 @In2 @In3</td>
+<td style="text-align: left;">Parameters input from the external</td>
 </tr>
 <tr>
-<td align="left">@GTime</td>
-<td align="left">Current time(s)</td>
+<td style="text-align: left;">@GTime</td>
+<td style="text-align: left;">Current time(s)</td>
 </tr>
 <tr>
-<td align="left">@PTime</td>
-<td align="left">A time since parent particle is generated (s)</td>
+<td style="text-align: left;">@PTime</td>
+<td style="text-align: left;">A time since parent particle is generated (s)</td>
 </tr>
 </tbody>
-</table></div>
-<div class="section" id="function">
-<h4>Function<a class="headerlink" href="#function" title="Permalink to this heading">¶</a></h4>
+</table></section>
+<section id="function">
+<h4>Function<a class="headerlink" href="#function" title="Link to this heading">¶</a></h4>
 <p>The following functions can be used.</p>
 <table border="1" class="docutils">
 <thead>
 <tr>
-<th align="left">Parameter</th>
-<th align="left">Description</th>
+<th style="text-align: left;">Parameter</th>
+<th style="text-align: left;">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left">sin(x)</td>
-<td align="left">Return the result of Sine. x is in radians.</td>
+<td style="text-align: left;">sin(x)</td>
+<td style="text-align: left;">Return the result of Sine. x is in radians.</td>
 </tr>
 <tr>
-<td align="left">cos(x)</td>
-<td align="left">Return the result of Cosine. x is in radians.</td>
+<td style="text-align: left;">cos(x)</td>
+<td style="text-align: left;">Return the result of Cosine. x is in radians.</td>
 </tr>
 <tr>
-<td align="left">rand()</td>
-<td align="left">Return the random value</td>
+<td style="text-align: left;">rand()</td>
+<td style="text-align: left;">Return the random value</td>
 </tr>
 <tr>
-<td align="left">rand(x)</td>
-<td align="left">Return the random value corresponding with x. If x is same, returned value is same</td>
+<td style="text-align: left;">rand(x)</td>
+<td style="text-align: left;">Return the random value corresponding with x. If x is same, returned value is same</td>
 </tr>
 <tr>
-<td align="left">step(edge,x)</td>
-<td align="left">Return 1.0 if x is larger than edge. Otherwise return 0.</td>
+<td style="text-align: left;">step(edge,x)</td>
+<td style="text-align: left;">Return 1.0 if x is larger than edge. Otherwise return 0.</td>
 </tr>
 </tbody>
-</table></div>
-<div class="section" id="target">
-<h4>Target<a class="headerlink" href="#target" title="Permalink to this heading">¶</a></h4>
+</table></section>
+<section id="target">
+<h4>Target<a class="headerlink" href="#target" title="Link to this heading">¶</a></h4>
 <p>Dynamic parameter can applies to following parameters.</p>
 <ul class="simple">
 <li><p>Spawn Count</p></li>
@@ -254,36 +260,36 @@ If the destination is a color, x, y, z, w correspond to RGBA.</p>
 <li><p>Rotation - Fixed, PVA, Easing</p></li>
 <li><p>Scaling - Fixed, PVA, Easing</p></li>
 </ul>
-</div>
-</div>
-</div>
-<div class="section" id="examples">
-<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this heading">¶</a></h2>
-<div class="section" id="lod">
-<h3>LOD<a class="headerlink" href="#lod" title="Permalink to this heading">¶</a></h3>
+</section>
+</section>
+</section>
+<section id="examples">
+<h2>Examples<a class="headerlink" href="#examples" title="Link to this heading">¶</a></h2>
+<section id="lod">
+<h3>LOD<a class="headerlink" href="#lod" title="Link to this heading">¶</a></h3>
 <p>The number of generations can be changed externally.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nd">@O</span><span class="o">.</span><span class="n">x</span> <span class="o">=</span> <span class="nd">@In0</span> <span class="o">*</span> <span class="nd">@P</span><span class="o">.</span><span class="n">x</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="laser">
-<h3>Laser<a class="headerlink" href="#laser" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="laser">
+<h3>Laser<a class="headerlink" href="#laser" title="Link to this heading">¶</a></h3>
 <p>The length of the laser can be changed externally.
 The size of Z is controlled externally.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nd">@O</span><span class="o">.</span><span class="n">z</span> <span class="o">=</span> <span class="nd">@In0</span> <span class="o">*</span> <span class="nd">@P</span><span class="o">.</span><span class="n">z</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="sine-wave">
-<h3>Sine Wave<a class="headerlink" href="#sine-wave" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="sine-wave">
+<h3>Sine Wave<a class="headerlink" href="#sine-wave" title="Link to this heading">¶</a></h3>
 <p>Move like a sine wave.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nd">@O</span><span class="o">.</span><span class="n">x</span> <span class="o">=</span> <span class="n">sin</span><span class="p">(</span><span class="nd">@GTime</span><span class="p">)</span>
 <span class="nd">@O</span><span class="o">.</span><span class="n">y</span> <span class="o">=</span> <span class="nd">@GTime</span>
 </pre></div>
 </div>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
 
            </div>

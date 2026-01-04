@@ -1,26 +1,27 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh-CN" data-content_root="../../">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>15.通过触发器改变特效！ &mdash; Effekseer Help  ドキュメント</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=77cdefee" />
+
+  
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/js/three.min.js"></script>
-        <script src="../../_static/js/effekseer.min.js"></script>
-        <script src="../../_static/js/iframe.js"></script>
-        <script src="../../_static/js/OrbitControls.js"></script>
-        <script src="../../_static/translations.js"></script>
+        <script src="../../_static/documentation_options.js?v=c033477b"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/js/three.min.js?v=1b2a738c"></script>
+        <script src="../../_static/js/effekseer.min.js?v=02ca8712"></script>
+        <script src="../../_static/js/iframe.js?v=0460a6df"></script>
+        <script src="../../_static/js/OrbitControls.js?v=366c62db"></script>
+        <script src="../../_static/translations.js?v=4dbe4bdc"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="検索" href="../../search.html" />
@@ -33,11 +34,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../index.html" class="icon icon-home"> Effekseer Help
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Effekseer Help
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -92,10 +97,10 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../index.html">Effekseer Help (中文)</a> &raquo;</li>
-          <li><a href="index.html">教程</a> &raquo;</li>
-      <li>15.通过触发器改变特效！</li>
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Effekseer Help (中文)</a></li>
+          <li class="breadcrumb-item"><a href="index.html">教程</a></li>
+      <li class="breadcrumb-item active">15.通过触发器改变特效！</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -104,38 +109,38 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="id1">
-<h1>15.通过触发器改变特效！<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h1>
-<div class="section" id="id2">
-<h2>概要<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
+  <section id="id1">
+<h1>15.通过触发器改变特效！<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h1>
+<section id="id2">
+<h2>概要<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
 <p>本章介绍Effekseer中的触发器功能。触发器允许你在播放过程中改变特效。</p>
 <p>如下例所示，你可以触发一个充能的武器的发射特效。</p>
 <iframe src='../../Sample/viewer_zh_CN.html#15_Sample/TriggerLaser.efkefc'></iframe><p>双击发送触发器信号。</p>
-</div>
-<div class="section" id="id3">
-<h2>触发器功能<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="id3">
+<h2>触发器功能<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
 <p>触发器是一种机制，允许向当前播放的特效发送多达四种触发信号。被触发的特效可以根据节点中设置的参数改变其行为。</p>
-<div class="section" id="id4">
-<h3>触发器设置<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h3>
+<section id="id4">
+<h3>触发器设置<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h3>
 <p>触发器引起的行为变化在<a class="reference internal" href="../ToolReference/common.html"><span class="doc">基础设置</span></a>中设置。</p>
 <div align="center">
 <img src="../../img/Tutorial/15/start_by_trigger_en.png">
 <p>基础设置面板中的触发器设置</p>
-</div></div>
-<div class="section" id="id5">
-<h3>在编辑器中发送触发信号<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h3>
+</div></section>
+<section id="id5">
+<h3>在编辑器中发送触发信号<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h3>
 <p>触发信号可以在控制面板发送。</p>
 <div align="center">
 <img src="../../img/Tutorial/15/trigger_controller.png">
 <p>用于发送触发信号的按钮</p>
-</div></div>
-<div class="section" id="id6">
-<h3>在游戏中发送触发信号<a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h3>
+</div></section>
+<section id="id6">
+<h3>在游戏中发送触发信号<a class="headerlink" href="#id6" title="Link to this heading">¶</a></h3>
 <p>SDK和游戏引擎的插件中有发送触发信号的API。</p>
-</div>
-</div>
-<div class="section" id="id7">
-<h2>示例特效<a class="headerlink" href="#id7" title="Permalink to this heading">¶</a></h2>
+</section>
+</section>
+<section id="id7">
+<h2>示例特效<a class="headerlink" href="#id7" title="Link to this heading">¶</a></h2>
 <p>本章使用示例文件<code class="docutils literal notranslate"><span class="pre">TriggerLaser.efkefc</span></code>进行讲解。</p>
 <div align="center">
 <p><a href = "../../Sample/15_Sample.zip">下载</a></p>
@@ -152,21 +157,21 @@
 <li><p><code class="docutils literal notranslate"><span class="pre">Charge</span></code>节点的粒子被删除，子节点的粒子随之停止生成</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Laser</span></code>节点的粒子开始生成，子节点的粒子随之生成</p></li>
 </ul>
-<div class="section" id="id8">
-<h3>触发时删除粒子的节点<a class="headerlink" href="#id8" title="Permalink to this heading">¶</a></h3>
+<section id="id8">
+<h3>触发时删除粒子的节点<a class="headerlink" href="#id8" title="Link to this heading">¶</a></h3>
 <div align="center">
 <img src="../../img/Tutorial/15/remove_by_trigger_en.png">
 <p>Charge节点的触发器设置</p>
-</div></div>
-<div class="section" id="id9">
-<h3>触发时开始生成粒子的节点<a class="headerlink" href="#id9" title="Permalink to this heading">¶</a></h3>
+</div></section>
+<section id="id9">
+<h3>触发时开始生成粒子的节点<a class="headerlink" href="#id9" title="Link to this heading">¶</a></h3>
 <div align="center">
 <img src="../../img/Tutorial/15/start_by_trigger_en.png">
 <p>Laser节点的触发器设置</p>
-</div></div>
-</div>
-<div class="section" id="id10">
-<h2>提示<a class="headerlink" href="#id10" title="Permalink to this heading">¶</a></h2>
+</div></section>
+</section>
+<section id="id10">
+<h2>提示<a class="headerlink" href="#id10" title="Link to this heading">¶</a></h2>
 <p>被触发器删除的粒子可能会瞬间消失，这可能是不自然的。在这种情况下，你可以设置<code class="docutils literal notranslate"><span class="pre">删除后淡出</span></code>，使它们通过淡出而自然消失。</p>
 <div align="center">
 <img src="../../img/Tutorial/15/fadeout_after_destroyed_en.png">
@@ -187,12 +192,12 @@
 </div>
 </td></tr>
 </table>
-</div></div>
-<div class="section" id="id11">
-<h2>总结<a class="headerlink" href="#id11" title="Permalink to this heading">¶</a></h2>
+</div></section>
+<section id="id11">
+<h2>总结<a class="headerlink" href="#id11" title="Link to this heading">¶</a></h2>
 <p>本章解释了如何使用触发器。利用触发器可以制作可交互的特效。</p>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>

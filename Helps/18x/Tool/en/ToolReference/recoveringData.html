@@ -1,26 +1,27 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../../">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Recovering Data &mdash; Effekseer Help  ドキュメント</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=77cdefee" />
+
+  
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/js/three.min.js"></script>
-        <script src="../../_static/js/effekseer.min.js"></script>
-        <script src="../../_static/js/iframe.js"></script>
-        <script src="../../_static/js/OrbitControls.js"></script>
-        <script src="../../_static/translations.js"></script>
+        <script src="../../_static/documentation_options.js?v=c033477b"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/js/three.min.js?v=1b2a738c"></script>
+        <script src="../../_static/js/effekseer.min.js?v=02ca8712"></script>
+        <script src="../../_static/js/iframe.js?v=0460a6df"></script>
+        <script src="../../_static/js/OrbitControls.js?v=366c62db"></script>
+        <script src="../../_static/translations.js?v=4dbe4bdc"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="検索" href="../../search.html" />
@@ -33,11 +34,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../index.html" class="icon icon-home"> Effekseer Help
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Effekseer Help
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -63,6 +68,7 @@
 <li class="toctree-l4"><a class="reference internal" href="fileExport.html">File - Export</a></li>
 <li class="toctree-l4 current"><a class="current reference internal" href="#">Recovering Data</a></li>
 <li class="toctree-l4"><a class="reference internal" href="drawMode.html">Draw Modes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="profiler.html">Profiler</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="index.html#command-line">Command Line</a></li>
@@ -90,10 +96,10 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../index.html">Effekseer Help (English)</a> &raquo;</li>
-          <li><a href="index.html">Tool-Reference</a> &raquo;</li>
-      <li>Recovering Data</li>
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Effekseer Help (English)</a></li>
+          <li class="breadcrumb-item"><a href="index.html">Tool-Reference</a></li>
+      <li class="breadcrumb-item active">Recovering Data</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -102,8 +108,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="recovering-data">
-<h1>Recovering Data<a class="headerlink" href="#recovering-data" title="Permalink to this heading">¶</a></h1>
+  <section id="recovering-data">
+<h1>Recovering Data<a class="headerlink" href="#recovering-data" title="Link to this heading">¶</a></h1>
 <p>There are various reasons why you may accidentally lose your work.
 The editor might crash, a power outage may happen, or simply clicking
 the wrong button may result in corruption of the effect you've been
@@ -113,27 +119,27 @@ projects.</p>
 <p>Auto saves are performed at a fixed interval over time, as well as
 every time you close the editor. Auto saves are enabled by default,
 and you can't disable auto save on editor exit.</p>
-<div class="section" id="recovering-auto-saves">
-<h2>Recovering Auto Saves<a class="headerlink" href="#recovering-auto-saves" title="Permalink to this heading">¶</a></h2>
-<div class="section" id="last-session">
-<h3>Last Session<a class="headerlink" href="#last-session" title="Permalink to this heading">¶</a></h3>
+<section id="recovering-auto-saves">
+<h2>Recovering Auto Saves<a class="headerlink" href="#recovering-auto-saves" title="Link to this heading">¶</a></h2>
+<section id="last-session">
+<h3>Last Session<a class="headerlink" href="#last-session" title="Link to this heading">¶</a></h3>
 <p><code class="docutils literal notranslate"><span class="pre">Menu:</span> <span class="pre">File</span> <span class="pre">&gt;</span> <span class="pre">Recover</span> <span class="pre">&gt;</span> <span class="pre">Last</span> <span class="pre">Session</span></code></p>
 <p>Opens the <code class="docutils literal notranslate"><span class="pre">efk_quit.efkbac</span></code> file which is saved in Temporary directory when the editor
 is closed under normal operation. This option allows to recover project
 which was lost when you accidentally closed the editor and didn't save changes.
 If such a file is not found an error will be shown.</p>
-</div>
-<div class="section" id="auto-save">
-<h3>Auto Save<a class="headerlink" href="#auto-save" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="auto-save">
+<h3>Auto Save<a class="headerlink" href="#auto-save" title="Link to this heading">¶</a></h3>
 <p><code class="docutils literal notranslate"><span class="pre">Menu:</span> <span class="pre">File</span> <span class="pre">&gt;</span> <span class="pre">Recover</span> <span class="pre">&gt;</span> <span class="pre">Auto</span> <span class="pre">Save...</span></code></p>
 <p>Allows you to choose an auto saved file from Temporary directory.
 Auto saved files will have <code class="docutils literal notranslate"><span class="pre">efk_autosave</span></code> prefix and <code class="docutils literal notranslate"><span class="pre">efkbac</span></code> extension.
 These files are saved automatically with interval configured in options menu
 (2 minutes by default). If auto save interval is set to 0 auto saves wont
 be performed.</p>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
 
            </div>

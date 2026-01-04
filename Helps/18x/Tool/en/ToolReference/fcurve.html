@@ -1,26 +1,27 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../../">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>F-Curve &mdash; Effekseer Help  ドキュメント</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=77cdefee" />
+
+  
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/js/three.min.js"></script>
-        <script src="../../_static/js/effekseer.min.js"></script>
-        <script src="../../_static/js/iframe.js"></script>
-        <script src="../../_static/js/OrbitControls.js"></script>
-        <script src="../../_static/translations.js"></script>
+        <script src="../../_static/documentation_options.js?v=c033477b"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/js/three.min.js?v=1b2a738c"></script>
+        <script src="../../_static/js/effekseer.min.js?v=02ca8712"></script>
+        <script src="../../_static/js/iframe.js?v=0460a6df"></script>
+        <script src="../../_static/js/OrbitControls.js?v=366c62db"></script>
+        <script src="../../_static/translations.js?v=4dbe4bdc"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="検索" href="../../search.html" />
@@ -33,11 +34,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../index.html" class="icon icon-home"> Effekseer Help
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Effekseer Help
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -74,6 +79,7 @@
 <li class="toctree-l4"><a class="reference internal" href="dynamicParameter.html">DynamicParameter</a></li>
 <li class="toctree-l4"><a class="reference internal" href="proceduralModel.html">Procedural Model</a></li>
 <li class="toctree-l4"><a class="reference internal" href="collisions.html">Collision</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gpuParticles.html">GPU Particles</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="index.html#effect-features">Effect features</a></li>
@@ -103,10 +109,10 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../index.html">Effekseer Help (English)</a> &raquo;</li>
-          <li><a href="index.html">Tool-Reference</a> &raquo;</li>
-      <li>F-Curve</li>
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Effekseer Help (English)</a></li>
+          <li class="breadcrumb-item"><a href="index.html">Tool-Reference</a></li>
+      <li class="breadcrumb-item active">F-Curve</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -115,105 +121,105 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="f-curve">
-<h1>F-Curve<a class="headerlink" href="#f-curve" title="Permalink to this heading">¶</a></h1>
-<div class="section" id="overview">
-<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this heading">¶</a></h2>
+  <section id="f-curve">
+<h1>F-Curve<a class="headerlink" href="#f-curve" title="Link to this heading">¶</a></h1>
+<section id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Link to this heading">¶</a></h2>
 <p>This is a feature that lets you automate frame-by-frame values over time by defining curves in a graph.</p>
 <p><img alt="../../_images/fcurve_en.png" src="../../_images/fcurve_en.png" /></p>
-</div>
-<div class="section" id="how-to-use">
-<h2>How to use<a class="headerlink" href="#how-to-use" title="Permalink to this heading">¶</a></h2>
-<div class="section" id="display-graph">
-<h3>Display Graph<a class="headerlink" href="#display-graph" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="how-to-use">
+<h2>How to use<a class="headerlink" href="#how-to-use" title="Link to this heading">¶</a></h2>
+<section id="display-graph">
+<h3>Display Graph<a class="headerlink" href="#display-graph" title="Link to this heading">¶</a></h3>
 <p>When you specify the F-curve for each item (position, rotation, etc.), their graphs will be displayed in the F-curve window.</p>
 <p><img alt="../../_images/fcurve_select_en.png" src="../../_images/fcurve_select_en.png" /></p>
 <p>When you select an item in the tree on the left side of the screen, the F-Curve is displayed. You can also select multiple items at the same time by holding down Shift and selecting items.</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/kTTrY7wjosg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe></div>
-<div class="section" id="about-timeline">
-<h3>About Timeline<a class="headerlink" href="#about-timeline" title="Permalink to this heading">¶</a></h3>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kTTrY7wjosg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe></section>
+<section id="about-timeline">
+<h3>About Timeline<a class="headerlink" href="#about-timeline" title="Link to this heading">¶</a></h3>
 <p>There are two timelines for the F-curve.</p>
 <p>The first is a timeline represented by a number between 0 and 100, where 0 represents the time when the particle was created, and 100 represents the time the particle was discarded.
 It will still play back to 100 even if the life of the particle changes.</p>
 <p>The second is a timeline that directly specifies the time of the frame. The time number directly represents the time.</p>
 <p>These can be toggled by the timeline mode parameter.</p>
-</div>
-<div class="section" id="movement-scaling-of-graphs">
-<h3>Movement / Scaling of Graphs<a class="headerlink" href="#movement-scaling-of-graphs" title="Permalink to this heading">¶</a></h3>
-<table><tbody><tr><td>Move graph</td><td>On the graph, move the mouse while right clicking.</td></tr><tr><td>Horizontal scaling</td><td>On the graph, hold down Ctrl and scroll the mouse wheel.</td></tr><tr><td>Vertical scaling</td><td>On the graph, hold down Alt and scroll the mouse wheel.</td></tr></tbody></table></div>
-<div class="section" id="add-key-frame">
-<h3>Add key frame<a class="headerlink" href="#add-key-frame" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="movement-scaling-of-graphs">
+<h3>Movement / Scaling of Graphs<a class="headerlink" href="#movement-scaling-of-graphs" title="Link to this heading">¶</a></h3>
+<table><tbody><tr><td>Move graph</td><td>On the graph, move the mouse while right clicking.</td></tr><tr><td>Horizontal scaling</td><td>On the graph, hold down Ctrl and scroll the mouse wheel.</td></tr><tr><td>Vertical scaling</td><td>On the graph, hold down Alt and scroll the mouse wheel.</td></tr></tbody></table></section>
+<section id="add-key-frame">
+<h3>Add key frame<a class="headerlink" href="#add-key-frame" title="Link to this heading">¶</a></h3>
 <p>You can add a key by left double clicking the mouse on a line.</p>
 <p>You can also add it from the menu by right-clicking the mouse on the line.</p>
-</div>
-<div class="section" id="delete-key-frame">
-<h3>Delete key frame<a class="headerlink" href="#delete-key-frame" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="delete-key-frame">
+<h3>Delete key frame<a class="headerlink" href="#delete-key-frame" title="Link to this heading">¶</a></h3>
 <p>You can remove a key by left double clicking the mouse on the key or delete button.</p>
 <p>You can also delete it from the menu by right-clicking the mouse on the key.</p>
-</div>
-<div class="section" id="select-key-frame">
-<h3>Select key frame<a class="headerlink" href="#select-key-frame" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="select-key-frame">
+<h3>Select key frame<a class="headerlink" href="#select-key-frame" title="Link to this heading">¶</a></h3>
 <p>You can select by left clicking the mouse.</p>
-</div>
-<div class="section" id="move-key-frame">
-<h3>Move key frame<a class="headerlink" href="#move-key-frame" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="move-key-frame">
+<h3>Move key frame<a class="headerlink" href="#move-key-frame" title="Link to this heading">¶</a></h3>
 <p>After selecting the key, you can move it by moving the mouse while holding down the left mouse button. In the same way, you can also move the handles that control the curves.</p>
 <p>You can also move multiple keys holding Alt.</p>
-</div>
-<div class="section" id="enlarge-shrink-anchor">
-<h3>Enlarge, shrink anchor<a class="headerlink" href="#enlarge-shrink-anchor" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="enlarge-shrink-anchor">
+<h3>Enlarge, shrink anchor<a class="headerlink" href="#enlarge-shrink-anchor" title="Link to this heading">¶</a></h3>
 <p>You can specify a position of an anchor automatically by selecting the key and pressing enlarge anchor or chrink anchor buttons. Pressing enlarge anchor expands the anchor and smoothes the line. Pressing shrink anchor merges positions between key and anchors and makes a F-Curve sharp.</p>
-</div>
-<div class="section" id="show-entire-graph">
-<h3>Show entire graph<a class="headerlink" href="#show-entire-graph" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="show-entire-graph">
+<h3>Show entire graph<a class="headerlink" href="#show-entire-graph" title="Link to this heading">¶</a></h3>
 <p>You can show entire graph by left double clicking a corresponding graph's label.</p>
 <p><img alt="../../_images/fcurve_show_entire.png" src="../../_images/fcurve_show_entire.png" /></p>
-</div>
-</div>
-<div class="section" id="parameter">
-<h2>Parameter<a class="headerlink" href="#parameter" title="Permalink to this heading">¶</a></h2>
-<div class="section" id="frame">
-<h3>Frame<a class="headerlink" href="#frame" title="Permalink to this heading">¶</a></h3>
+</section>
+</section>
+<section id="parameter">
+<h2>Parameter<a class="headerlink" href="#parameter" title="Link to this heading">¶</a></h2>
+<section id="frame">
+<h3>Frame<a class="headerlink" href="#frame" title="Link to this heading">¶</a></h3>
 <p>Set for each key. Specify the frame of the key.</p>
-</div>
-<div class="section" id="value">
-<h3>Value<a class="headerlink" href="#value" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="value">
+<h3>Value<a class="headerlink" href="#value" title="Link to this heading">¶</a></h3>
 <p>Set for each key. Specify the value of the key.</p>
-</div>
-<div class="section" id="type">
-<h3>Type<a class="headerlink" href="#type" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="type">
+<h3>Type<a class="headerlink" href="#type" title="Link to this heading">¶</a></h3>
 <p>Set for each key. Specify the interpolation method between this key and its neighboring keys.</p>
-</div>
-<div class="section" id="start">
-<h3>Start<a class="headerlink" href="#start" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="start">
+<h3>Start<a class="headerlink" href="#start" title="Link to this heading">¶</a></h3>
 <p>Set for each graph. Specify how values before the left edge of the graph should be generated.</p>
-</div>
-<div class="section" id="end">
-<h3>End<a class="headerlink" href="#end" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="end">
+<h3>End<a class="headerlink" href="#end" title="Link to this heading">¶</a></h3>
 <p>Set for each graph. Specify how values after the right edge of the graph should be generated.</p>
-</div>
-<div class="section" id="sampling">
-<h3>Sampling<a class="headerlink" href="#sampling" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="sampling">
+<h3>Sampling<a class="headerlink" href="#sampling" title="Link to this heading">¶</a></h3>
 <p>Set for each graph. When actually playing back, specify how many frames to use as the resolution for interpolation. The smaller the value, the more accurate the result will be to the actual shape of the graph.</p>
-</div>
-<div class="section" id="left-x-y">
-<h3>Left X/Y<a class="headerlink" href="#left-x-y" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="left-x-y">
+<h3>Left X/Y<a class="headerlink" href="#left-x-y" title="Link to this heading">¶</a></h3>
 <p>Set for each key. Specify the position of the left handle of the key's curve control.</p>
-</div>
-<div class="section" id="right-x-y">
-<h3>Right X/Y<a class="headerlink" href="#right-x-y" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="right-x-y">
+<h3>Right X/Y<a class="headerlink" href="#right-x-y" title="Link to this heading">¶</a></h3>
 <p>Set for each key. Specify the position of the right handle of the key's curve control.</p>
-</div>
-<div class="section" id="max-min-offset">
-<h3>Max/Min Offset<a class="headerlink" href="#max-min-offset" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="max-min-offset">
+<h3>Max/Min Offset<a class="headerlink" href="#max-min-offset" title="Link to this heading">¶</a></h3>
 <p>Set for each graph. When using values, offset the range, randomly shift the value up or down the graph.</p>
-</div>
-<div class="section" id="timeline-mode">
-<h3>Timeline Mode<a class="headerlink" href="#timeline-mode" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="timeline-mode">
+<h3>Timeline Mode<a class="headerlink" href="#timeline-mode" title="Link to this heading">¶</a></h3>
 <p>You can toggle Timeline Mode.</p>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
 
            </div>

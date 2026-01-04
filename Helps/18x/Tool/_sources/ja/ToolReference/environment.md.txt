@@ -29,6 +29,7 @@
 
 地面を表示します。
 ソフトパーティクルや深度の確認に役立ちます。
+地面との衝突を有効にすることもできます。
 
 ```eval_rst
 .. image:: ../../img/Reference/Environment/ground.png

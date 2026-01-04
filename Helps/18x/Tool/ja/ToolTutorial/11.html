@@ -1,26 +1,27 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="ja" >
+<html class="writer-html5" lang="ja" data-content_root="../../">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>11. 3Dモデルを使おう！ &mdash; Effekseer Help  ドキュメント</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=77cdefee" />
+
+  
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/js/three.min.js"></script>
-        <script src="../../_static/js/effekseer.min.js"></script>
-        <script src="../../_static/js/iframe.js"></script>
-        <script src="../../_static/js/OrbitControls.js"></script>
-        <script src="../../_static/translations.js"></script>
+        <script src="../../_static/documentation_options.js?v=c033477b"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/js/three.min.js?v=1b2a738c"></script>
+        <script src="../../_static/js/effekseer.min.js?v=02ca8712"></script>
+        <script src="../../_static/js/iframe.js?v=0460a6df"></script>
+        <script src="../../_static/js/OrbitControls.js?v=366c62db"></script>
+        <script src="../../_static/translations.js?v=4dbe4bdc"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="検索" href="../../search.html" />
@@ -33,11 +34,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../index.html" class="icon icon-home"> Effekseer Help
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Effekseer Help
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -92,10 +97,10 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../index.html">Effekseer Help 日本語</a> &raquo;</li>
-          <li><a href="index.html">チュートリアル</a> &raquo;</li>
-      <li>11. 3Dモデルを使おう！</li>
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Effekseer Help 日本語</a></li>
+          <li class="breadcrumb-item"><a href="index.html">チュートリアル</a></li>
+      <li class="breadcrumb-item active">11. 3Dモデルを使おう！</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -104,10 +109,10 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="d">
-<h1>11. 3Dモデルを使おう！<a class="headerlink" href="#d" title="Permalink to this heading">¶</a></h1>
-<div class="main"><div class="section" id="id1">
-<h2>概要<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h2>
+  <section id="d">
+<h1>11. 3Dモデルを使おう！<a class="headerlink" href="#d" title="Link to this heading">¶</a></h1>
+<div class="main"><section id="id1">
+<h2>概要<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h2>
 <p>本章では、3Dモデルを使用したエフェクトを作成します。
 Effekseerでは、3Dモデルをパーティクルとして表示したり、生成方法の生成位置として使用できます。
 それらの機能を使用してエフェクトを作成します。</p>
@@ -117,9 +122,9 @@ Effekseerでは、3Dモデルをパーティクルとして表示したり、生
 </div><div align="center" class='col-md-6'>
 <iframe src='../../Sample/viewer_ja.html#11_02_Sample/effect2.efk'></iframe>
 <p>本章で作成するエフェクト2</p>
-</div></div>
-<div class="section" id="id2">
-<h2>3Dモデル<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
+</div></section>
+<section id="id2">
+<h2>3Dモデル<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
 <p>Effekseerでは、fbxかmqoの3Dモデルを読み込めます。
 fbxはBlender、Maya、3ds Max等、様々な3D編集ソフトから出力できる形式です。
 mqoはMetasequoiaから出力できる形式です。</p>
@@ -137,9 +142,9 @@ mqoはMetasequoiaから出力できる形式です。</p>
 <p>あらかじめ作成途中のエフェクトを下記のリンクからダウンロードできるようにしました。</p>
 <div align="center">
 <p><a href = "../../Sample/11_01_Sample.zip">ダウンロード</a></p>
-</div></div>
-<div class="section" id="id3">
-<h2>パーティクルとして表示<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h2>
+</div></section>
+<section id="id3">
+<h2>パーティクルとして表示<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
 <p>モデルをパーティクルとして表示します。</p>
 <p>effect1.efkefcを開いてください。</p>
 <p>スプライトと同じように、「描画」パネルから描画方法としてモデルを選択します。</p>
@@ -150,31 +155,31 @@ mqoはMetasequoiaから出力できる形式です。</p>
 <table border="1" class="docutils">
 <thead>
 <tr>
-<th align="left">ウインドウ</th>
-<th align="left">値の名称</th>
-<th align="left">値</th>
+<th style="text-align: left;">ウインドウ</th>
+<th style="text-align: left;">値の名称</th>
+<th style="text-align: left;">値</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left">描画</td>
-<td align="left">描画方法</td>
-<td align="left">モデル</td>
+<td style="text-align: left;">描画</td>
+<td style="text-align: left;">描画方法</td>
+<td style="text-align: left;">モデル</td>
 </tr>
 <tr>
-<td align="left">描画</td>
-<td align="left"></td>
-<td align="left">Model/Sphere.mqo</td>
+<td style="text-align: left;">描画</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Model/Sphere.mqo</td>
 </tr>
 <tr>
-<td align="left">描画</td>
-<td align="left">カリング</td>
-<td align="left">両面表示</td>
+<td style="text-align: left;">描画</td>
+<td style="text-align: left;">カリング</td>
+<td style="text-align: left;">両面表示</td>
 </tr>
 <tr>
-<td align="left">描画共通</td>
-<td align="left">マテリアル</td>
-<td align="left">ライティング</td>
+<td style="text-align: left;">描画共通</td>
+<td style="text-align: left;">マテリアル</td>
+<td style="text-align: left;">ライティング</td>
 </tr>
 </tbody>
 </table><div align="center">
@@ -186,56 +191,56 @@ mqoはMetasequoiaから出力できる形式です。</p>
 <table border="1" class="docutils">
 <thead>
 <tr>
-<th align="left">ウインドウ</th>
-<th align="left">値の名称</th>
-<th align="left">値</th>
+<th style="text-align: left;">ウインドウ</th>
+<th style="text-align: left;">値の名称</th>
+<th style="text-align: left;">値</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left">描画</td>
-<td align="left">描画方法</td>
-<td align="left">モデル</td>
+<td style="text-align: left;">描画</td>
+<td style="text-align: left;">描画方法</td>
+<td style="text-align: left;">モデル</td>
 </tr>
 <tr>
-<td align="left">描画</td>
-<td align="left"></td>
-<td align="left">Model/Sphere.mqo</td>
+<td style="text-align: left;">描画</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Model/Sphere.mqo</td>
 </tr>
 <tr>
-<td align="left">描画</td>
-<td align="left">カリング</td>
-<td align="left">両面表示</td>
+<td style="text-align: left;">描画</td>
+<td style="text-align: left;">カリング</td>
+<td style="text-align: left;">両面表示</td>
 </tr>
 <tr>
-<td align="left">描画共通</td>
-<td align="left">マテリアル</td>
-<td align="left">ライティング</td>
+<td style="text-align: left;">描画共通</td>
+<td style="text-align: left;">マテリアル</td>
+<td style="text-align: left;">ライティング</td>
 </tr>
 <tr>
-<td align="left">描画共通</td>
-<td align="left">ブレンド</td>
-<td align="left">加算</td>
+<td style="text-align: left;">描画共通</td>
+<td style="text-align: left;">ブレンド</td>
+<td style="text-align: left;">加算</td>
 </tr>
 <tr>
-<td align="left">描画共通</td>
-<td align="left">色/歪み画像</td>
-<td align="left">Texture/Aurora.png</td>
+<td style="text-align: left;">描画共通</td>
+<td style="text-align: left;">色/歪み画像</td>
+<td style="text-align: left;">Texture/Aurora.png</td>
 </tr>
 <tr>
-<td align="left">描画共通</td>
-<td align="left">UV</td>
-<td align="left">スクロール</td>
+<td style="text-align: left;">描画共通</td>
+<td style="text-align: left;">UV</td>
+<td style="text-align: left;">スクロール</td>
 </tr>
 <tr>
-<td align="left">描画共通</td>
-<td align="left">大きさ(中心)</td>
-<td align="left">1024,1024</td>
+<td style="text-align: left;">描画共通</td>
+<td style="text-align: left;">大きさ(中心)</td>
+<td style="text-align: left;">1024,1024</td>
 </tr>
 <tr>
-<td align="left">描画共通</td>
-<td align="left">移動速度(中心)</td>
-<td align="left">0,-8</td>
+<td style="text-align: left;">描画共通</td>
+<td style="text-align: left;">移動速度(中心)</td>
+<td style="text-align: left;">0,-8</td>
 </tr>
 </tbody>
 </table><p>そうするとモデルの形に沿ってエフェクトが流れることがわかります。</p>
@@ -262,9 +267,9 @@ Z書き込みがオフだと、3Dモデルが描画されなかったものと�
 </div>
 </td></tr>
 </table>
-</div></div>
-<div class="section" id="id4">
-<h2>生成方法の位置として使用<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h2>
+</div></section>
+<section id="id4">
+<h2>生成方法の位置として使用<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h2>
 <p>モデルを表示する以外にも生成方法の位置として使用できます。</p>
 <p>モデルの頂点や面の位置にパーティクルを生成できます。</p>
 <p>試してみましょう。</p>
@@ -277,31 +282,31 @@ Z書き込みがオフだと、3Dモデルが描画されなかったものと�
 <table border="1" class="docutils">
 <thead>
 <tr>
-<th align="left">ウインドウ</th>
-<th align="left">値の名称</th>
-<th align="left">値</th>
+<th style="text-align: left;">ウインドウ</th>
+<th style="text-align: left;">値の名称</th>
+<th style="text-align: left;">値</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left">共通</td>
-<td align="left">生成数</td>
-<td align="left">90</td>
+<td style="text-align: left;">共通</td>
+<td style="text-align: left;">生成数</td>
+<td style="text-align: left;">90</td>
 </tr>
 <tr>
-<td align="left">生成方法</td>
-<td align="left">生成方法</td>
-<td align="left">モデル</td>
+<td style="text-align: left;">生成方法</td>
+<td style="text-align: left;">生成方法</td>
+<td style="text-align: left;">モデル</td>
 </tr>
 <tr>
-<td align="left">生成方法</td>
-<td align="left"></td>
-<td align="left">Model/Sphere.mqo</td>
+<td style="text-align: left;">生成方法</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Model/Sphere.mqo</td>
 </tr>
 <tr>
-<td align="left">生成方法</td>
-<td align="left">生成位置種類</td>
-<td align="left">頂点</td>
+<td style="text-align: left;">生成方法</td>
+<td style="text-align: left;">生成位置種類</td>
+<td style="text-align: left;">頂点</td>
 </tr>
 </tbody>
 </table><p>モデルに沿ってパーティクルが配置されることがわかります。</p>
@@ -314,13 +319,13 @@ Z書き込みがオフだと、3Dモデルが描画されなかったものと�
 </div><p>最後に、本章で作成されたエフェクトをダウンロードできるようにしてみました。</p>
 <div align="center">
 <a href = "../../Sample/11_02_Sample.zip">ダウンロード</a>
-</div></div>
-<div class="section" id="id5">
-<h2>まとめ<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h2>
+</div></section>
+<section id="id5">
+<h2>まとめ<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h2>
 <p>本章では、3Dモデルを使用してエフェクトを作成しました。
 次章では、Fカーブを使用して複雑な動きを再現します。</p>
-</div></div>
-</div>
+</div></section>
+</section>
 
 
            </div>

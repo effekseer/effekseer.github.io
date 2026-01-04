@@ -1,30 +1,31 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../../">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Collision &mdash; Effekseer Help  ドキュメント</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=77cdefee" />
+
+  
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/js/three.min.js"></script>
-        <script src="../../_static/js/effekseer.min.js"></script>
-        <script src="../../_static/js/iframe.js"></script>
-        <script src="../../_static/js/OrbitControls.js"></script>
-        <script src="../../_static/translations.js"></script>
+        <script src="../../_static/documentation_options.js?v=c033477b"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/js/three.min.js?v=1b2a738c"></script>
+        <script src="../../_static/js/effekseer.min.js?v=02ca8712"></script>
+        <script src="../../_static/js/iframe.js?v=0460a6df"></script>
+        <script src="../../_static/js/OrbitControls.js?v=366c62db"></script>
+        <script src="../../_static/translations.js?v=4dbe4bdc"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="検索" href="../../search.html" />
-    <link rel="next" title="About images" href="image.html" />
+    <link rel="next" title="GPU Particles" href="gpuParticles.html" />
     <link rel="prev" title="Procedural Model" href="proceduralModel.html" /> 
 </head>
 
@@ -33,11 +34,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../index.html" class="icon icon-home"> Effekseer Help
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Effekseer Help
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -74,6 +79,7 @@
 <li class="toctree-l4"><a class="reference internal" href="dynamicParameter.html">DynamicParameter</a></li>
 <li class="toctree-l4"><a class="reference internal" href="proceduralModel.html">Procedural Model</a></li>
 <li class="toctree-l4 current"><a class="current reference internal" href="#">Collision</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gpuParticles.html">GPU Particles</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="index.html#effect-features">Effect features</a></li>
@@ -103,10 +109,10 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../index.html">Effekseer Help (English)</a> &raquo;</li>
-          <li><a href="index.html">Tool-Reference</a> &raquo;</li>
-      <li>Collision</li>
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Effekseer Help (English)</a></li>
+          <li class="breadcrumb-item"><a href="index.html">Tool-Reference</a></li>
+      <li class="breadcrumb-item active">Collision</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -115,40 +121,56 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="collision">
-<h1>Collision<a class="headerlink" href="#collision" title="Permalink to this heading">¶</a></h1>
-<div class="section" id="overview">
-<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this heading">¶</a></h2>
+  <section id="collision">
+<h1>Collision<a class="headerlink" href="#collision" title="Link to this heading">¶</a></h1>
+<section id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Link to this heading">¶</a></h2>
 <p>Specify parameters for collision. Enabling collision causes particles that collide with the specified surface to bounce back.</p>
 <p><img alt="../../_images/collisions.gif" src="../../_images/collisions.gif" /></p>
-</div>
-<div class="section" id="parameters">
-<h2>Parameters<a class="headerlink" href="#parameters" title="Permalink to this heading">¶</a></h2>
-<div class="section" id="enable">
-<h3>enable<a class="headerlink" href="#enable" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="parameters">
+<h2>Parameters<a class="headerlink" href="#parameters" title="Link to this heading">¶</a></h2>
+<section id="enable">
+<h3>enable<a class="headerlink" href="#enable" title="Link to this heading">¶</a></h3>
 <p>Enables collision.</p>
-</div>
-<div class="section" id="bounce">
-<h3>Bounce<a class="headerlink" href="#bounce" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="collide-with-ground">
+<h3>Collide With Ground<a class="headerlink" href="#collide-with-ground" title="Link to this heading">¶</a></h3>
+<p>Enables collision against the ground plane.</p>
+</section>
+<section id="external-collision">
+<h3>External Collision<a class="headerlink" href="#external-collision" title="Link to this heading">¶</a></h3>
+<p>Enables collision against externally provided collision shapes.</p>
+</section>
+<section id="bounce">
+<h3>Bounce<a class="headerlink" href="#bounce" title="Link to this heading">¶</a></h3>
 <p>Sets the strength of the rebound upon collision.</p>
-</div>
-<div class="section" id="height">
-<h3>Height<a class="headerlink" href="#height" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="friction">
+<h3>Friction<a class="headerlink" href="#friction" title="Link to this heading">¶</a></h3>
+<p>Sets the amount of slowdown when a collision occurs.</p>
+</section>
+<section id="height">
+<h3>Height<a class="headerlink" href="#height" title="Link to this heading">¶</a></h3>
 <p>Sets the height of the colliding plane.</p>
-</div>
-<div class="section" id="coordinate-system">
-<h3>Coordinate System<a class="headerlink" href="#coordinate-system" title="Permalink to this heading">¶</a></h3>
-<p>Sets the coordinate system of the colliding plane.</p>
-</div>
-</div>
-</div>
+</section>
+<section id="lifetime-reduction">
+<h3>Lifetime Reduction<a class="headerlink" href="#lifetime-reduction" title="Link to this heading">¶</a></h3>
+<p>Specifies how much lifetime is reduced on collision.</p>
+</section>
+<section id="coordinate-system">
+<h3>Coordinate System<a class="headerlink" href="#coordinate-system" title="Link to this heading">¶</a></h3>
+<p>Sets the coordinate system of the colliding plane (local/world).</p>
+</section>
+</section>
+</section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="proceduralModel.html" class="btn btn-neutral float-left" title="Procedural Model" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="image.html" class="btn btn-neutral float-right" title="About images" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="gpuParticles.html" class="btn btn-neutral float-right" title="GPU Particles" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

@@ -1,5 +1,23 @@
 ﻿# 1.7x Change Logs
 
+## 1.7.1.1
+
+### Unity (Feb. 11, 2025)
+
+Supported the latest environement.
+
+## 1.7.1.0
+
+### Unity (June. 22, 2024)
+
+Supported the latest environement.
+
+### UnrealEngine (June. 16, 2024)
+
+Supported UnrealEngine 5.4.
+
+Supported Translucency Sort Priority.
+
 ## 1.70f (Jul. 15, 2023)
 
 ### UnrealEngine

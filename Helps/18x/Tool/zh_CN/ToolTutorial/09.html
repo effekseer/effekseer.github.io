@@ -1,26 +1,27 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh-CN" data-content_root="../../">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>09.制作枪口焰！ &mdash; Effekseer Help  ドキュメント</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=77cdefee" />
+
+  
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/js/three.min.js"></script>
-        <script src="../../_static/js/effekseer.min.js"></script>
-        <script src="../../_static/js/iframe.js"></script>
-        <script src="../../_static/js/OrbitControls.js"></script>
-        <script src="../../_static/translations.js"></script>
+        <script src="../../_static/documentation_options.js?v=c033477b"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/js/three.min.js?v=1b2a738c"></script>
+        <script src="../../_static/js/effekseer.min.js?v=02ca8712"></script>
+        <script src="../../_static/js/iframe.js?v=0460a6df"></script>
+        <script src="../../_static/js/OrbitControls.js?v=366c62db"></script>
+        <script src="../../_static/translations.js?v=4dbe4bdc"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="検索" href="../../search.html" />
@@ -33,11 +34,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../index.html" class="icon icon-home"> Effekseer Help
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Effekseer Help
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -92,10 +97,10 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../index.html">Effekseer Help (中文)</a> &raquo;</li>
-          <li><a href="index.html">教程</a> &raquo;</li>
-      <li>09.制作枪口焰！</li>
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Effekseer Help (中文)</a></li>
+          <li class="breadcrumb-item"><a href="index.html">教程</a></li>
+      <li class="breadcrumb-item active">09.制作枪口焰！</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -104,17 +109,17 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="id1">
-<h1>09.制作枪口焰！<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h1>
-<div class="section" id="id2">
-<h2>概要<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
+  <section id="id1">
+<h1>09.制作枪口焰！<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h1>
+<section id="id2">
+<h2>概要<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
 <p>在这一章中，你将使用到目前为止学到的知识来制作枪口焰特效。枪口焰是指开枪时在枪口处出现的火光。在有射击要素的游戏中，枪口焰是必不可少的。</p>
 <div align="center">
 <iframe src='../../Sample/viewer_zh_CN.html#09_02_Sample/09.efk'></iframe>
 <p>枪口焰</p>
-</div></div>
-<div class="section" id="id3">
-<h2>枪口焰<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h2>
+</div></section>
+<section id="id3">
+<h2>枪口焰<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
 <p>分析一下枪口焰的结构。本章中制作的枪口焰由三个主要部分组成。分布是闪光、火花和烟雾。</p>
 <div align="center">
 <table>
@@ -139,8 +144,8 @@
 <p>你可以通过下面的链接下载为本章内容预制的特效素材。</p>
 <div align="center">
 <a href = "../../Sample/09_01_Sample.zip">下载</a>
-</div><div class="section" id="id4">
-<h3>闪光<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h3>
+</div><section id="id4">
+<h3>闪光<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h3>
 <p>闪光由三种不同的精灵表示。在本章中，Z是子弹移动的方向。两种闪光在XY方向传播，一种在所有方向传播。</p>
 <p>在XY方向传播的闪光由<code class="docutils literal notranslate"><span class="pre">放置方法</span></code>设置为<code class="docutils literal notranslate"><span class="pre">固定</span></code>的精灵表示。为了丰富表现效果，我们准备了两种类型的精灵：一种是扩大并消失的，一种是缩小并消失的。两者都只显示一瞬间，所以它们应该在大约20帧后消失。</p>
 <p>还有一个向各个方向扩散的精灵，它应该膨胀并消失。</p>
@@ -189,9 +194,9 @@
 <div align="center">
 <img src="../../img/Tutorial/09/flash.gif">
 <p>闪光</p>
-</div></div>
-<div class="section" id="id5">
-<h3>火花<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h3>
+</div></section>
+<section id="id5">
+<h3>火花<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h3>
 <p>火花是用多个圆形图像的精灵表示的。然而，火花的飞行方向是用父子关系设置的。</p>
 <p>火花是沿着以Z方向为轴线的圆形排列的。为了将其排列为圆形，设置<code class="docutils literal notranslate"><span class="pre">圆</span></code>作为父节点的<code class="docutils literal notranslate"><span class="pre">生成方法</span></code>。勾选<code class="docutils literal notranslate"><span class="pre">影响生成角度</span></code>，使火花指向圆的外侧。</p>
 <p>这样，当子粒子沿相对于父节点的Y轴方向移动时，它们实际会向圆的外侧移动。</p>
@@ -208,80 +213,80 @@
 <table border="1" class="docutils">
 <thead>
 <tr>
-<th align="left">窗口</th>
-<th align="left">参数</th>
-<th align="left">值</th>
+<th style="text-align: left;">窗口</th>
+<th style="text-align: left;">参数</th>
+<th style="text-align: left;">值</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left">基础设置</td>
-<td align="left">名称</td>
-<td align="left">SparkEmitter</td>
+<td style="text-align: left;">基础设置</td>
+<td style="text-align: left;">名称</td>
+<td style="text-align: left;">SparkEmitter</td>
 </tr>
 <tr>
-<td align="left">基础设置</td>
-<td align="left">生成数量</td>
-<td align="left">16</td>
+<td style="text-align: left;">基础设置</td>
+<td style="text-align: left;">生成数量</td>
+<td style="text-align: left;">16</td>
 </tr>
 <tr>
-<td align="left">基础设置</td>
-<td align="left">生命周期</td>
-<td align="left">30</td>
+<td style="text-align: left;">基础设置</td>
+<td style="text-align: left;">生命周期</td>
+<td style="text-align: left;">30</td>
 </tr>
 <tr>
-<td align="left">基础设置</td>
-<td align="left">生成速率</td>
-<td align="left">0.01</td>
+<td style="text-align: left;">基础设置</td>
+<td style="text-align: left;">生成速率</td>
+<td style="text-align: left;">0.01</td>
 </tr>
 <tr>
-<td align="left">旋转</td>
-<td align="left">旋转方法</td>
-<td align="left">角度・速度・加速度</td>
+<td style="text-align: left;">旋转</td>
+<td style="text-align: left;">旋转方法</td>
+<td style="text-align: left;">角度・速度・加速度</td>
 </tr>
 <tr>
-<td align="left">旋转</td>
-<td align="left">角度（平均）</td>
-<td align="left">x=55, y=0, z=0</td>
+<td style="text-align: left;">旋转</td>
+<td style="text-align: left;">角度（平均）</td>
+<td style="text-align: left;">x=55, y=0, z=0</td>
 </tr>
 <tr>
-<td align="left">旋转</td>
-<td align="left">角度（振幅）</td>
-<td align="left">x=10, y=0, z=0</td>
+<td style="text-align: left;">旋转</td>
+<td style="text-align: left;">角度（振幅）</td>
+<td style="text-align: left;">x=10, y=0, z=0</td>
 </tr>
 <tr>
-<td align="left">生成方法</td>
-<td align="left">影响生成角度</td>
-<td align="left">勾选</td>
+<td style="text-align: left;">生成方法</td>
+<td style="text-align: left;">影响生成角度</td>
+<td style="text-align: left;">勾选</td>
 </tr>
 <tr>
-<td align="left">生成方法</td>
-<td align="left">生成方法</td>
-<td align="left">圆</td>
+<td style="text-align: left;">生成方法</td>
+<td style="text-align: left;">生成方法</td>
+<td style="text-align: left;">圆</td>
 </tr>
 <tr>
-<td align="left">生成方法</td>
-<td align="left">顶点数</td>
-<td align="left">32</td>
+<td style="text-align: left;">生成方法</td>
+<td style="text-align: left;">顶点数</td>
+<td style="text-align: left;">32</td>
 </tr>
 <tr>
-<td align="left">生成方法</td>
-<td align="left">半径（平均）</td>
-<td align="left">0.5</td>
+<td style="text-align: left;">生成方法</td>
+<td style="text-align: left;">半径（平均）</td>
+<td style="text-align: left;">0.5</td>
 </tr>
 <tr>
-<td align="left">渲染设置</td>
-<td align="left"></td>
-<td align="left">无</td>
+<td style="text-align: left;">渲染设置</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">无</td>
 </tr>
 </tbody>
 </table><p>火花特效如下所示。</p>
 <div align="center">
 <img src="../../img/Tutorial/09/spark.gif">
 <p>火花</p>
-</div></div>
-<div class="section" id="id6">
-<h3>烟雾<a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h3>
+</div></section>
+<section id="id6">
+<h3>烟雾<a class="headerlink" href="#id6" title="Link to this heading">¶</a></h3>
 <p>烟雾是用多个显示烟雾图像的精灵表示的。</p>
 <p>烟雾应该沿Z轴方向移动，但略微向上。</p>
 <p>烟雾图像由四个动画图像组成。通过按照一定时间间隔切换图像，使烟雾看起来像在变化。为了使图像切换，将<code class="docutils literal notranslate"><span class="pre">UV</span></code>设置为<code class="docutils literal notranslate"><span class="pre">动画</span></code>。</p>
@@ -292,45 +297,45 @@
 <table border="1" class="docutils">
 <thead>
 <tr>
-<th align="left">窗口</th>
-<th align="left">参数</th>
-<th align="left">值</th>
+<th style="text-align: left;">窗口</th>
+<th style="text-align: left;">参数</th>
+<th style="text-align: left;">值</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left">基础渲染设置</td>
-<td align="left">UV</td>
-<td align="left">动画</td>
+<td style="text-align: left;">基础渲染设置</td>
+<td style="text-align: left;">UV</td>
+<td style="text-align: left;">动画</td>
 </tr>
 <tr>
-<td align="left">基础渲染设置</td>
-<td align="left">尺寸</td>
-<td align="left">256,256</td>
+<td style="text-align: left;">基础渲染设置</td>
+<td style="text-align: left;">尺寸</td>
+<td style="text-align: left;">256,256</td>
 </tr>
 <tr>
-<td align="left">基础渲染设置</td>
-<td align="left">一张图持续的时间</td>
-<td align="left">10</td>
+<td style="text-align: left;">基础渲染设置</td>
+<td style="text-align: left;">一张图持续的时间</td>
+<td style="text-align: left;">10</td>
 </tr>
 <tr>
-<td align="left">基础渲染设置</td>
-<td align="left">X方向图像数量</td>
-<td align="left">2</td>
+<td style="text-align: left;">基础渲染设置</td>
+<td style="text-align: left;">X方向图像数量</td>
+<td style="text-align: left;">2</td>
 </tr>
 <tr>
-<td align="left">基础渲染设置</td>
-<td align="left">Y方向图像数量</td>
-<td align="left">2</td>
+<td style="text-align: left;">基础渲染设置</td>
+<td style="text-align: left;">Y方向图像数量</td>
+<td style="text-align: left;">2</td>
 </tr>
 </tbody>
 </table><p>烟雾特效如下所示。</p>
 <div align="center">
 <img src="../../img/Tutorial/09/smoke.gif">
 <p>烟雾</p>
-</div></div>
-<div class="section" id="id7">
-<h3>整合<a class="headerlink" href="#id7" title="Permalink to this heading">¶</a></h3>
+</div></section>
+<section id="id7">
+<h3>整合<a class="headerlink" href="#id7" title="Link to this heading">¶</a></h3>
 <p>同时显示三个部分。一个枪口焰的特效就制作完成了。</p>
 <div align="center">
 <img src="../../img/Tutorial/09/completed.gif">
@@ -338,13 +343,13 @@
 </div><p>最后，你可以通过下面的链接下载本章中制作的特效。</p>
 <div align="center">
 <a href = "../../Sample/09_02_Sample.zip">下载</a>
-</div></div>
-</div>
-<div class="section" id="id8">
-<h2>总结<a class="headerlink" href="#id8" title="Permalink to this heading">¶</a></h2>
+</div></section>
+</section>
+<section id="id8">
+<h2>总结<a class="headerlink" href="#id8" title="Link to this heading">¶</a></h2>
 <p>在这一章中，我们制作了可以在游戏中实际使用的特效。</p>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>

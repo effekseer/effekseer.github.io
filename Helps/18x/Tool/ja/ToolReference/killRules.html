@@ -1,26 +1,27 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="ja" >
+<html class="writer-html5" lang="ja" data-content_root="../../">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>破棄ルール &mdash; Effekseer Help  ドキュメント</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=77cdefee" />
+
+  
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/js/three.min.js"></script>
-        <script src="../../_static/js/effekseer.min.js"></script>
-        <script src="../../_static/js/iframe.js"></script>
-        <script src="../../_static/js/OrbitControls.js"></script>
-        <script src="../../_static/translations.js"></script>
+        <script src="../../_static/documentation_options.js?v=c033477b"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/js/three.min.js?v=1b2a738c"></script>
+        <script src="../../_static/js/effekseer.min.js?v=02ca8712"></script>
+        <script src="../../_static/js/iframe.js?v=0460a6df"></script>
+        <script src="../../_static/js/OrbitControls.js?v=366c62db"></script>
+        <script src="../../_static/translations.js?v=4dbe4bdc"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="検索" href="../../search.html" />
@@ -33,11 +34,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../index.html" class="icon icon-home"> Effekseer Help
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Effekseer Help
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -104,10 +109,10 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../index.html">Effekseer Help 日本語</a> &raquo;</li>
-          <li><a href="index.html">ツール・リファレンス</a> &raquo;</li>
-      <li>破棄ルール</li>
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Effekseer Help 日本語</a></li>
+          <li class="breadcrumb-item"><a href="index.html">ツール・リファレンス</a></li>
+      <li class="breadcrumb-item active">破棄ルール</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -116,84 +121,84 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="id1">
-<h1>破棄ルール<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h1>
-<div class="section" id="id2">
-<h2>概要<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
+  <section id="id1">
+<h1>破棄ルール<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h1>
+<section id="id2">
+<h2>概要<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
 <p>破棄ルールでは、パーティクルが破棄される領域を設定することができます。
 もし、パーティクルにフェードアウトが設定されていた場合、それは破棄される前に適用されます。</p>
 <p>エディタでは、ノードツリー内のノードを選択すると、設定された破棄ルールの形状を見ることができます。</p>
-</div>
-<div class="section" id="id3">
-<h2>箱<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="id3">
+<h2>箱<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
 <p>箱の内側、もしくは外側のパーティクルを破棄するために設定します。</p>
 <img alt="../../_images/killRules_Box.png" class="align-center" src="../../_images/killRules_Box.png" />
-<div class="section" id="id4">
-<h3>中央<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h3>
+<section id="id4">
+<h3>中央<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h3>
 <p>効果のある箱の空間の中央の位置です。</p>
-</div>
-<div class="section" id="id5">
-<h3>大きさ<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="id5">
+<h3>大きさ<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h3>
 <p>中央からの箱の大きさです。
 例えば、(0.5,0.5,0.5)が設定されていた場合、横幅、縦幅、高さは1になります。</p>
-</div>
-<div class="section" id="id6">
-<h3>内部を破棄<a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="id6">
+<h3>内部を破棄<a class="headerlink" href="#id6" title="Link to this heading">¶</a></h3>
 <p>これが有効の場合、箱の内部にパーティクルが入った時、パーティクルが破棄されます。
 これが無効の場合(デフォルト)、箱の外側にパーティクルが出た時、パーティクルが破棄されます。</p>
-</div>
-<div class="section" id="id7">
-<h3>回転拡大の適用<a class="headerlink" href="#id7" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="id7">
+<h3>回転拡大の適用<a class="headerlink" href="#id7" title="Link to this heading">¶</a></h3>
 <p>これが有効の場合(デフォルト)、エフェクトの回転拡大が箱に適用されます。
 これが無効の場合、固定された大きさで軸に沿った箱になります。</p>
-</div>
-</div>
-<div class="section" id="id8">
-<h2>平面<a class="headerlink" href="#id8" title="Permalink to this heading">¶</a></h2>
+</section>
+</section>
+<section id="id8">
+<h2>平面<a class="headerlink" href="#id8" title="Link to this heading">¶</a></h2>
 <p>特定の場所の指定した方向にある平面を超えたパーティクルを破棄します。</p>
 <img alt="../../_images/killRules_Plane.png" class="align-center" src="../../_images/killRules_Plane.png" />
-<div class="section" id="id9">
-<h3>平面の軸<a class="headerlink" href="#id9" title="Permalink to this heading">¶</a></h3>
+<section id="id9">
+<h3>平面の軸<a class="headerlink" href="#id9" title="Link to this heading">¶</a></h3>
 <p>平面の法線が沿う軸を定義します。
 逆方向の軸はパーティクルが破棄される側を変更することができます。</p>
 <p>例えば、軸に+Yが設定されていた場合、平面の上にパーティクルがあるとき破棄されます。一方、軸に-Yが指定されていた場合、平面の下にパーティクルがあるとき破棄されます。</p>
-</div>
-<div class="section" id="id10">
-<h3>平面の位置オフセット<a class="headerlink" href="#id10" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="id10">
+<h3>平面の位置オフセット<a class="headerlink" href="#id10" title="Link to this heading">¶</a></h3>
 <p>軸に沿って平面がどの程度平面が移動しているか指定します・
 例えば、オフセットに1.0と+Yが指定されている場合、Y座標が1.0より大きいパーティクルが削除されます。
 一方、オフセットに1.0と-Yが指定されている場合、Y座標が-1.0より小さいパーティクルが削除されます。</p>
-</div>
-<div class="section" id="id11">
-<h3>回転拡大の適用<a class="headerlink" href="#id11" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="id11">
+<h3>回転拡大の適用<a class="headerlink" href="#id11" title="Link to this heading">¶</a></h3>
 <p>このパラメーターが有効の場合(デフォルト)、エフェクトの方向が変わった時、面の方向が変わり、エフェクトの拡大とともにオフセットが拡大されます。
 このパラメーターが無効の場合、面の方向は固定され、エフェクトが拡大してもオフセットは変化しません。</p>
-</div>
-</div>
-<div class="section" id="id12">
-<h2>球<a class="headerlink" href="#id12" title="Permalink to this heading">¶</a></h2>
+</section>
+</section>
+<section id="id12">
+<h2>球<a class="headerlink" href="#id12" title="Link to this heading">¶</a></h2>
 <p>指定した球の内側、もしくは外側に移動したパーティクルを破棄します。</p>
 <img alt="../../_images/killRules_Sphere.png" class="align-center" src="../../_images/killRules_Sphere.png" />
-<div class="section" id="id13">
-<h3>中央<a class="headerlink" href="#id13" title="Permalink to this heading">¶</a></h3>
+<section id="id13">
+<h3>中央<a class="headerlink" href="#id13" title="Link to this heading">¶</a></h3>
 <p>エフェクト空間での球の中央の位置です。</p>
-</div>
-<div class="section" id="id14">
-<h3>半径<a class="headerlink" href="#id14" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="id14">
+<h3>半径<a class="headerlink" href="#id14" title="Link to this heading">¶</a></h3>
 <p>球の半径です。</p>
-</div>
-<div class="section" id="id15">
-<h3>内部を破棄<a class="headerlink" href="#id15" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="id15">
+<h3>内部を破棄<a class="headerlink" href="#id15" title="Link to this heading">¶</a></h3>
 <p>これが有効の場合、球の内部にパーティクルが入った時、パーティクルが破棄されます。
 これが無効の場合(デフォルト)、球の外側にパーティクルが出た時、パーティクルが破棄されます。</p>
-</div>
-<div class="section" id="id16">
-<h3>回転拡大の適用<a class="headerlink" href="#id16" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="id16">
+<h3>回転拡大の適用<a class="headerlink" href="#id16" title="Link to this heading">¶</a></h3>
 <p>このパラメーターが有効の場合(デフォルト)、球の中央はエフェクト空間の原点から見て回転し、、エフェクトの拡大とともに半径が拡大されます。
 このパラメーターが無効の場合、球の中央はエフェクト空間の中央にあり、半径も固定されます。</p>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
 
            </div>

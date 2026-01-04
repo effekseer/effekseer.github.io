@@ -1,26 +1,27 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh-CN" data-content_root="../../">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>01. 材质入门 &mdash; Effekseer Help  ドキュメント</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=77cdefee" />
+
+  
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/js/three.min.js"></script>
-        <script src="../../_static/js/effekseer.min.js"></script>
-        <script src="../../_static/js/iframe.js"></script>
-        <script src="../../_static/js/OrbitControls.js"></script>
-        <script src="../../_static/translations.js"></script>
+        <script src="../../_static/documentation_options.js?v=c033477b"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/js/three.min.js?v=1b2a738c"></script>
+        <script src="../../_static/js/effekseer.min.js?v=02ca8712"></script>
+        <script src="../../_static/js/iframe.js?v=0460a6df"></script>
+        <script src="../../_static/js/OrbitControls.js?v=366c62db"></script>
+        <script src="../../_static/translations.js?v=4dbe4bdc"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="検索" href="../../search.html" />
@@ -33,11 +34,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../index.html" class="icon icon-home"> Effekseer Help
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Effekseer Help
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -80,10 +85,10 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../index.html">Effekseer Help (中文)</a> &raquo;</li>
-          <li><a href="index.html">教程</a> &raquo;</li>
-      <li>01. 材质入门</li>
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Effekseer Help (中文)</a></li>
+          <li class="breadcrumb-item"><a href="index.html">教程</a></li>
+      <li class="breadcrumb-item active">01. 材质入门</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -92,10 +97,10 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="id1">
-<h1>01. 材质入门<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h1>
-<div class="section" id="id2">
-<h2>概要<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
+  <section id="id1">
+<h1>01. 材质入门<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h1>
+<section id="id2">
+<h2>概要<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
 <p>迄今为止，只能通过设置图像和参数进行简单的渲染。然而，这无法实现复杂的渲染，例如扭曲图像本身或添加某些区域。</p>
 <p>为了实现这些复杂的渲染任务，Effekseer可以使用材质。材质可以用来设置粒子的绘制方式。材质可以在材质编辑器中制作。</p>
 <p>让我们创建一个材质，实现复杂的渲染。</p>
@@ -130,9 +135,9 @@
 <img src="../../img/Tutorial/Mat_01/state2.png">
 </div><p>在添加<code class="docutils literal notranslate"><span class="pre">常量</span></code>3的节点时，你是否看到有<code class="docutils literal notranslate"><span class="pre">常量1-4</span></code>的节点？有几种类型的值可以在节点之间传输。</p>
 <p>通常是一种由1到4个数组成的值，如数值1到数值4。也可以是图像。</p>
-</div>
-<div class="section" id="id3">
-<h2>绘制一张图片<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="id3">
+<h2>绘制一张图片<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
 <p>可以使用<code class="docutils literal notranslate"><span class="pre">采样图像</span></code>绘制图像。</p>
 <p>右键添加一个<code class="docutils literal notranslate"><span class="pre">采样图像</span></code>节点。</p>
 <div align="center">
@@ -151,9 +156,9 @@
 </div><p>然后，图像就被绘制出来了。</p>
 <div align="center">
 <img src="../../img/Tutorial/Mat_01/state3.png">
-</div></div>
-<div class="section" id="id4">
-<h2>改变图像的显示区域<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h2>
+</div></section>
+<section id="id4">
+<h2>改变图像的显示区域<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h2>
 <p>到目前为止，这种行为与简单地在模型上显示图像是一样的。然而，材质可以用来创建各种表现方式。作为准备，改变UV坐标的位置。</p>
 <p><code class="docutils literal notranslate"><span class="pre">采样图像</span></code>节点的UV是一个用于设置像素在图像中的位置的值。现在让我们来替换这个UV。</p>
 <p>添加一个<code class="docutils literal notranslate"><span class="pre">UV</span></code>节点。</p>
@@ -172,9 +177,9 @@
 <img src="../../img/Tutorial/Mat_01/change_constant2_en.png">
 </div><div align="center">
 <img src="../../img/Tutorial/Mat_01/state4.png">
-</div></div>
-<div class="section" id="id5">
-<h2>扭曲图像<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h2>
+</div></section>
+<section id="id5">
+<h2>扭曲图像<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h2>
 <p>前面我们只是移动了图像的显示区域，现在让我们来扭曲图像。</p>
 <p>我们将用一个图像取代我们先前使用的<code class="docutils literal notranslate"><span class="pre">常量2</span></code>节点。图像选择预先准备好的<code class="docutils literal notranslate"><span class="pre">Textures/Distortion01.png</span></code>。</p>
 <p>添加一个<code class="docutils literal notranslate"><span class="pre">采样图像</span></code>节点并设置图像。</p>
@@ -195,16 +200,16 @@
 <div align="center">
 <img src="../../img/Tutorial/Mat_01/add_multiply_en.png">
 </div><p>这样扭曲的程度就很合适了。</p>
-<iframe src='../../Effects/viewer_zh_CN.html#Tutorials/Mat_01/Sample05.efkefc'></iframe></div>
-<div class="section" id="id6">
-<h2>移动扭曲<a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h2>
+<iframe src='../../Effects/viewer_zh_CN.html#Tutorials/Mat_01/Sample05.efkefc'></iframe></section>
+<section id="id6">
+<h2>移动扭曲<a class="headerlink" href="#id6" title="Link to this heading">¶</a></h2>
 <p>因为静止下来很无趣，让我们移动变形。添加一个<code class="docutils literal notranslate"><span class="pre">移动UV</span></code>节点。<code class="docutils literal notranslate"><span class="pre">移动UV</span></code>节点输出随时间移动的UV值。把它连接到<code class="docutils literal notranslate"><span class="pre">采样图像</span></code>节点上。稍微改变一下参数。</p>
 <div align="center">
 <img src="../../img/Tutorial/Mat_01/connect_movinguv_en.png">
 </div><p>可以看到扭曲在移动。</p>
-<iframe src='../../Effects/viewer_zh_CN.html#Tutorials/Mat_01/Sample06.efkefc'></iframe></div>
-<div class="section" id="id7">
-<h2>颜色<a class="headerlink" href="#id7" title="Permalink to this heading">¶</a></h2>
+<iframe src='../../Effects/viewer_zh_CN.html#Tutorials/Mat_01/Sample06.efkefc'></iframe></section>
+<section id="id7">
+<h2>颜色<a class="headerlink" href="#id7" title="Link to this heading">¶</a></h2>
 <p>最后，给它上色。</p>
 <p>添加一个<code class="docutils literal notranslate"><span class="pre">乘</span></code>节点。</p>
 <p>将输出图像的<code class="docutils literal notranslate"><span class="pre">采样图像</span></code>和你添加的第一个<code class="docutils literal notranslate"><span class="pre">常量3</span></code>节点连接到<code class="docutils literal notranslate"><span class="pre">乘</span></code>节点。</p>
@@ -214,16 +219,16 @@
 </div><p>颜色乘到一起，所以图像被上色了。</p>
 <iframe src='../../Effects/viewer_zh_CN.html#Tutorials/Mat_01/Sample07.efkefc'></iframe><p>最后，你可以通过下面的链接下载本章中制作的特效。</p>
 <p><a href="../../Effects/Tutorials/Mat_01_02.zip">下载</a></p>
-</div>
-<div class="section" id="id8">
-<h2>例子<a class="headerlink" href="#id8" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="id8">
+<h2>例子<a class="headerlink" href="#id8" title="Link to this heading">¶</a></h2>
 <p>我们已经向你展示了材质的例子，但我们可以制作不同的材质。在Effeksseer的示例中有许多材质，你可以看一下它们。</p>
-</div>
-<div class="section" id="id9">
-<h2>总结<a class="headerlink" href="#id9" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="id9">
+<h2>总结<a class="headerlink" href="#id9" title="Link to this heading">¶</a></h2>
 <p>本章介绍了材质基础。材质的使用极大地扩展了表现的范围。</p>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>

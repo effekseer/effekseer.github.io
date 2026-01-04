@@ -119,7 +119,7 @@
 | png      | 纹理图片文件 |
 | wav      | 音频文件 |
 | efkmat   | 材质文件（使用材质编辑器生成） |
-| efkmodel | 3D模型文件（从fbx、mqo转换） |
+| efkmodel | 3D模型文件（从fbx、mqo、gltf、glb、obj、geo、bgeo转换） |
 | efkcurve | 曲线参数文件（从fbx转换） |
 
 #### 打包文件（efkpkg）
@@ -142,6 +142,7 @@ efkpkg文件是包含一个或多个efkefc文件和各种资源文件的包文�
     location
     locationAbs
     locationGene
+    collisions
     killRules
     rotation
     scale

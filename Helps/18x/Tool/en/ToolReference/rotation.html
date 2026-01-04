@@ -1,26 +1,27 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../../">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Rotation &mdash; Effekseer Help  ドキュメント</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=77cdefee" />
+
+  
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/js/three.min.js"></script>
-        <script src="../../_static/js/effekseer.min.js"></script>
-        <script src="../../_static/js/iframe.js"></script>
-        <script src="../../_static/js/OrbitControls.js"></script>
-        <script src="../../_static/translations.js"></script>
+        <script src="../../_static/documentation_options.js?v=c033477b"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/js/three.min.js?v=1b2a738c"></script>
+        <script src="../../_static/js/effekseer.min.js?v=02ca8712"></script>
+        <script src="../../_static/js/iframe.js?v=0460a6df"></script>
+        <script src="../../_static/js/OrbitControls.js?v=366c62db"></script>
+        <script src="../../_static/translations.js?v=4dbe4bdc"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="検索" href="../../search.html" />
@@ -33,11 +34,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../index.html" class="icon icon-home"> Effekseer Help
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Effekseer Help
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -74,6 +79,7 @@
 <li class="toctree-l4"><a class="reference internal" href="dynamicParameter.html">DynamicParameter</a></li>
 <li class="toctree-l4"><a class="reference internal" href="proceduralModel.html">Procedural Model</a></li>
 <li class="toctree-l4"><a class="reference internal" href="collisions.html">Collision</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gpuParticles.html">GPU Particles</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="index.html#effect-features">Effect features</a></li>
@@ -103,10 +109,10 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../index.html">Effekseer Help (English)</a> &raquo;</li>
-          <li><a href="index.html">Tool-Reference</a> &raquo;</li>
-      <li>Rotation</li>
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Effekseer Help (English)</a></li>
+          <li class="breadcrumb-item"><a href="index.html">Tool-Reference</a></li>
+      <li class="breadcrumb-item active">Rotation</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -115,48 +121,48 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="rotation">
-<h1>Rotation<a class="headerlink" href="#rotation" title="Permalink to this heading">¶</a></h1>
-<div class="section" id="overview">
-<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this heading">¶</a></h2>
+  <section id="rotation">
+<h1>Rotation<a class="headerlink" href="#rotation" title="Link to this heading">¶</a></h1>
+<section id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Link to this heading">¶</a></h2>
 <p>Set parameters related to the rotation of the node.</p>
-</div>
-<div class="section" id="parameters">
-<h2>Parameters<a class="headerlink" href="#parameters" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="parameters">
+<h2>Parameters<a class="headerlink" href="#parameters" title="Link to this heading">¶</a></h2>
 <div align="center">
 <img src="../../img/Tutorial/04_rotation_en.png">
 <p>"Rotation" window</p>
-</div><div class="section" id="id1">
-<h3>Rotation<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h3>
+</div><section id="id1">
+<h3>Rotation<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h3>
 <p>Specifies the spawn angle of the particle. This will influence the angle of the particle relative to its parent particle. If there is no parent particle, or angle is set to not inherit in the Basic Settings window, this will specify the absolute angle instead.</p>
-<div class="section" id="fixed-angle">
-<h4>Fixed Angle<a class="headerlink" href="#fixed-angle" title="Permalink to this heading">¶</a></h4>
+<section id="fixed-angle">
+<h4>Fixed Angle<a class="headerlink" href="#fixed-angle" title="Link to this heading">¶</a></h4>
 <p>Specify the angle of the particle.</p>
-<iframe src='../../Effects/viewer_en.html#References/Rotation/rotation.efkefc' class='effect'></iframe></div>
-<div class="section" id="position-velocity-acceleration-pva">
-<h4>Position, Velocity, Acceleration (PVA)<a class="headerlink" href="#position-velocity-acceleration-pva" title="Permalink to this heading">¶</a></h4>
+<iframe src='../../Effects/viewer_en.html#References/Rotation/rotation.efkefc' class='effect'></iframe></section>
+<section id="position-velocity-acceleration-pva">
+<h4>Position, Velocity, Acceleration (PVA)<a class="headerlink" href="#position-velocity-acceleration-pva" title="Link to this heading">¶</a></h4>
 <p>Specify the initial angle, rotational speed, and angular acceleration of the particle.</p>
-<iframe src='../../Effects/viewer_en.html#References/Rotation/rotation_pva.efkefc' class='effect'></iframe></div>
-<div class="section" id="easing">
-<h4>Easing<a class="headerlink" href="#easing" title="Permalink to this heading">¶</a></h4>
+<iframe src='../../Effects/viewer_en.html#References/Rotation/rotation_pva.efkefc' class='effect'></iframe></section>
+<section id="easing">
+<h4>Easing<a class="headerlink" href="#easing" title="Link to this heading">¶</a></h4>
 <p>Specify the initial angle for the particle, as well as the final angle for the particle at the end of its lifetime, and how to transition between the two.</p>
-<iframe src='../../Effects/viewer_en.html#References/Rotation/rotation_easing.efkefc' class='effect'></iframe></div>
-<div class="section" id="f-curve">
-<h4>F-Curve<a class="headerlink" href="#f-curve" title="Permalink to this heading">¶</a></h4>
+<iframe src='../../Effects/viewer_en.html#References/Rotation/rotation_easing.efkefc' class='effect'></iframe></section>
+<section id="f-curve">
+<h4>F-Curve<a class="headerlink" href="#f-curve" title="Link to this heading">¶</a></h4>
 <p>Use an F-curve to modify the rotational value over the lifetime of the particle.</p>
-<iframe src='../../Effects/viewer_en.html#References/Rotation/rotation_f_curve.efkefc' class='effect'></iframe></div>
-<div class="section" id="rotate-in-the-viewpoint-direction">
-<h4>Rotate in the viewpoint direction<a class="headerlink" href="#rotate-in-the-viewpoint-direction" title="Permalink to this heading">¶</a></h4>
+<iframe src='../../Effects/viewer_en.html#References/Rotation/rotation_f_curve.efkefc' class='effect'></iframe></section>
+<section id="rotate-in-the-viewpoint-direction">
+<h4>Rotate in the viewpoint direction<a class="headerlink" href="#rotate-in-the-viewpoint-direction" title="Link to this heading">¶</a></h4>
 <p>Rotates so that the Z-axis points toward the camera.
 Since it uses the position of the camera, it will not work correctly if multiple cameras are present.</p>
-</div>
-<div class="section" id="rotate-in-the-direction-of-movement">
-<h4>Rotate in the direction of movement<a class="headerlink" href="#rotate-in-the-direction-of-movement" title="Permalink to this heading">¶</a></h4>
+</section>
+<section id="rotate-in-the-direction-of-movement">
+<h4>Rotate in the direction of movement<a class="headerlink" href="#rotate-in-the-direction-of-movement" title="Link to this heading">¶</a></h4>
 <p>Rotates the particle so that the specified axis points in the direction of movement.</p>
-</div>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
+</section>
 
 
            </div>

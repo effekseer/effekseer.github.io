@@ -1,26 +1,27 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../../">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>TIPS &mdash; Effekseer Help  ドキュメント</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=77cdefee" />
+
+  
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/js/three.min.js"></script>
-        <script src="../../_static/js/effekseer.min.js"></script>
-        <script src="../../_static/js/iframe.js"></script>
-        <script src="../../_static/js/OrbitControls.js"></script>
-        <script src="../../_static/translations.js"></script>
+        <script src="../../_static/documentation_options.js?v=c033477b"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/js/three.min.js?v=1b2a738c"></script>
+        <script src="../../_static/js/effekseer.min.js?v=02ca8712"></script>
+        <script src="../../_static/js/iframe.js?v=0460a6df"></script>
+        <script src="../../_static/js/OrbitControls.js?v=366c62db"></script>
+        <script src="../../_static/translations.js?v=4dbe4bdc"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="検索" href="../../search.html" />
@@ -33,11 +34,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../index.html" class="icon icon-home"> Effekseer Help
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Effekseer Help
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -97,9 +102,9 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../index.html">Effekseer Help (English)</a> &raquo;</li>
-      <li>TIPS</li>
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Effekseer Help (English)</a></li>
+      <li class="breadcrumb-item active">TIPS</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -108,56 +113,56 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="tips">
-<h1>TIPS<a class="headerlink" href="#tips" title="Permalink to this heading">¶</a></h1>
+  <section id="tips">
+<h1>TIPS<a class="headerlink" href="#tips" title="Link to this heading">¶</a></h1>
 <p>It explains the parameter setting for each purpose and the operation method convenient if you know it in this chapter.
 It explains with the premise that You read through the tutorial, so I recommend you to read the tutorial first.
 Depending on the item the item is linked to other pages.</p>
-<div class="section" id="infinite-the-lifetime-of-particles">
-<h2>Infinite the lifetime of particles.<a class="headerlink" href="#infinite-the-lifetime-of-particles" title="Permalink to this heading">¶</a></h2>
+<section id="infinite-the-lifetime-of-particles">
+<h2>Infinite the lifetime of particles.<a class="headerlink" href="#infinite-the-lifetime-of-particles" title="Link to this heading">¶</a></h2>
 <p>Depending on the type of effect, you may want the effect to exist until the end of the game.
 There are several ways to achieve it.
 Note that you need to stop an effect manually because the effect does not disappear until the end of the game.</p>
-<div class="section" id="time-to-live">
-<h3>Time to live<a class="headerlink" href="#time-to-live" title="Permalink to this heading">¶</a></h3>
+<section id="time-to-live">
+<h3>Time to live<a class="headerlink" href="#time-to-live" title="Link to this heading">¶</a></h3>
 <p>If <code class="docutils literal notranslate"><span class="pre">Time</span> <span class="pre">to</span> <span class="pre">live</span></code> is made longer than the game play time, the particles remain until the game is over.</p>
-</div>
-<div class="section" id="destroy-after-time">
-<h3>Destroy after time<a class="headerlink" href="#destroy-after-time" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="destroy-after-time">
+<h3>Destroy after time<a class="headerlink" href="#destroy-after-time" title="Link to this heading">¶</a></h3>
 <p>It is to uncheck <code class="docutils literal notranslate"><span class="pre">Destroy</span> <span class="pre">after</span> <span class="pre">time</span></code> in <code class="docutils literal notranslate"><span class="pre">Basic</span> <span class="pre">Settings</span></code> window.</p>
-</div>
-<div class="section" id="spawn-count">
-<h3>Spawn Count<a class="headerlink" href="#spawn-count" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="spawn-count">
+<h3>Spawn Count<a class="headerlink" href="#spawn-count" title="Link to this heading">¶</a></h3>
 <p>If <code class="docutils literal notranslate"><span class="pre">Spawn</span> <span class="pre">Count</span></code> is infinite, the whole effect will continue to exist even if each particle disappears.</p>
-</div>
-</div>
-<div class="section" id="generating-multiple-particles-at-the-0th-frame-simultaneously">
-<h2>Generating multiple particles at the 0th frame simultaneously.<a class="headerlink" href="#generating-multiple-particles-at-the-0th-frame-simultaneously" title="Permalink to this heading">¶</a></h2>
+</section>
+</section>
+<section id="generating-multiple-particles-at-the-0th-frame-simultaneously">
+<h2>Generating multiple particles at the 0th frame simultaneously.<a class="headerlink" href="#generating-multiple-particles-at-the-0th-frame-simultaneously" title="Link to this heading">¶</a></h2>
 <p>Set <code class="docutils literal notranslate"><span class="pre">Spawn</span> <span class="pre">Rate</span></code> to a very small value such as 0.0001.
 In addition, <code class="docutils literal notranslate"><span class="pre">Initial</span> <span class="pre">Delay</span></code> is made negative.</p>
 <p>If <code class="docutils literal notranslate"><span class="pre">Spawn</span> <span class="pre">Rate</span></code> is less than 1, multiple particles are generated during one frame.
 If <code class="docutils literal notranslate"><span class="pre">Initial</span> <span class="pre">Delay</span></code> is a minus time, particles are generated in 0 frame.
 With these two, multiple particles is generated in the 0th frame.</p>
-</div>
-<div class="section" id="place-particles-radially">
-<h2>Place particles radially<a class="headerlink" href="#place-particles-radially" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="place-particles-radially">
+<h2>Place particles radially<a class="headerlink" href="#place-particles-radially" title="Link to this heading">¶</a></h2>
 <p>Place particles radially so that particles move from the center towards the outside.</p>
-<div class="section" id="spawning-method">
-<h3>Spawning Method<a class="headerlink" href="#spawning-method" title="Permalink to this heading">¶</a></h3>
+<section id="spawning-method">
+<h3>Spawning Method<a class="headerlink" href="#spawning-method" title="Link to this heading">¶</a></h3>
 <p>Please refer to chapter 8 of the tutorial.</p>
 <p><a class="reference internal" href="../ToolTutorial/08.html"><span class="doc">Chapter8</span></a></p>
-</div>
-<div class="section" id="parent-child-relationship">
-<h3>parent-child relationship<a class="headerlink" href="#parent-child-relationship" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="parent-child-relationship">
+<h3>parent-child relationship<a class="headerlink" href="#parent-child-relationship" title="Link to this heading">¶</a></h3>
 <p>Set the parent particles to rotate randomly in 360 degrees direction.
 If the child is placed away from the center, the particles are arranged radially.</p>
-</div>
-</div>
-<div class="section" id="generate-crescent-shaped-particles">
-<h2>Generate crescent-shaped particles<a class="headerlink" href="#generate-crescent-shaped-particles" title="Permalink to this heading">¶</a></h2>
+</section>
+</section>
+<section id="generate-crescent-shaped-particles">
+<h2>Generate crescent-shaped particles<a class="headerlink" href="#generate-crescent-shaped-particles" title="Link to this heading">¶</a></h2>
 <p>It generates crescent shaped particles.</p>
-<div class="section" id="ring">
-<h3>Ring<a class="headerlink" href="#ring" title="Permalink to this heading">¶</a></h3>
+<section id="ring">
+<h3>Ring<a class="headerlink" href="#ring" title="Link to this heading">¶</a></h3>
 <p>Set the image whose parts are not connected in the ring. Then you can generate crescent shaped particles.
 Just rotating these with random axes will make it look nice.</p>
 <table>
@@ -169,10 +174,10 @@ Just rotating these with random axes will make it look nice.</p>
 			<img src="../../img/Tips/Crescent_WO_Texture.png" width="200" height="200">
 		</td>
 	</tr>
-</table></div>
-</div>
-<div class="section" id="ensure-that-effects-do-not-collide-in-the-character-when-playing-effects-during-the-game">
-<h2>Ensure that effects do not collide in the character when playing effects during the game<a class="headerlink" href="#ensure-that-effects-do-not-collide-in-the-character-when-playing-effects-during-the-game" title="Permalink to this heading">¶</a></h2>
+</table></section>
+</section>
+<section id="ensure-that-effects-do-not-collide-in-the-character-when-playing-effects-during-the-game">
+<h2>Ensure that effects do not collide in the character when playing effects during the game<a class="headerlink" href="#ensure-that-effects-do-not-collide-in-the-character-when-playing-effects-during-the-game" title="Link to this heading">¶</a></h2>
 <table>
 	<tr>
 		<td>
@@ -185,19 +190,19 @@ Just rotating these with random axes will make it look nice.</p>
 </table><p>Effects such as a hit effect may be placed at the same position as the character.
 Placing the effect and character at the same position causes the character to collide into the effect.
 If you shift the position of the effect with the program of the game, objects areno collied. But this method is troublesome.</p>
-<div class="section" id="z-offset">
-<h3>Z offset<a class="headerlink" href="#z-offset" title="Permalink to this heading">¶</a></h3>
+<section id="z-offset">
+<h3>Z offset<a class="headerlink" href="#z-offset" title="Link to this heading">¶</a></h3>
 <p>When Z offset is specified, the effect position is moved in the depth direction when drawing.
 Effect doesn't be collided in the character as effects move.</p>
-</div>
-<div class="section" id="z-test">
-<h3>Z test<a class="headerlink" href="#z-test" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="z-test">
+<h3>Z test<a class="headerlink" href="#z-test" title="Link to this heading">¶</a></h3>
 <p>When Z test is turned off, effects will be drawn even if other objects are shown.
 However, even if there is an obstacles in front, effects are drawn. So care must be taken when there are obstacles.</p>
-</div>
-</div>
-<div class="section" id="generate-sword-trajectory">
-<h2>Generate sword trajectory.<a class="headerlink" href="#generate-sword-trajectory" title="Permalink to this heading">¶</a></h2>
+</section>
+</section>
+<section id="generate-sword-trajectory">
+<h2>Generate sword trajectory.<a class="headerlink" href="#generate-sword-trajectory" title="Link to this heading">¶</a></h2>
 <div align="center">
 <img src="../../img/Tips/SwordLineInEffekseer1.gif">
 </div><p>I prepared a sample because it is a bit complicated.</p>
@@ -215,9 +220,9 @@ However, even if there is an obstacles in front, effects are drawn. So care must
 <p>When the sword move, you can see that the trajectory is displayed according to the position of the sword.</p>
 <p>The sword changed its angle with the F-curve and moved it.</p>
 <p>In this TIPS I move the sword with Effekseer, but it is okay to move the effect in the game according to the sword in the game.</p>
-</div>
-<div class="section" id="thin-and-narrow-particle-s-image">
-<h2>Thin and narrow particle's image<a class="headerlink" href="#thin-and-narrow-particle-s-image" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="thin-and-narrow-particle-s-image">
+<h2>Thin and narrow particle's image<a class="headerlink" href="#thin-and-narrow-particle-s-image" title="Link to this heading">¶</a></h2>
 <p>When you set a square image on thin and narrow particle, the shape may be incorrect when you look from a place away from the particle.</p>
 <p>The mipmap reduces the resolution of the image, which make a renderer refers same pixels on the edge pixel and the center pixel.</p>
 <p>To prevent this, use a thin and narrow image for the image.</p>
@@ -231,14 +236,14 @@ However, even if there is an obstacles in front, effects are drawn. So care must
 			<img src="../../img/Tips/Long_and_narrow_2.png">
 		</td>
 	</tr>
-</table></div></div>
-<div class="section" id="enable-inherit-color-without-showing-the-parent">
-<h2>Enable Inherit Color without showing the parent.<a class="headerlink" href="#enable-inherit-color-without-showing-the-parent" title="Permalink to this heading">¶</a></h2>
+</table></div></section>
+<section id="enable-inherit-color-without-showing-the-parent">
+<h2>Enable Inherit Color without showing the parent.<a class="headerlink" href="#enable-inherit-color-without-showing-the-parent" title="Link to this heading">¶</a></h2>
 <p>Specify the render method as Sprite.
 In the Common panel, set Visibility On to Off.</p>
 <p>In this way, you can enable Inherit Color while the sprite is not shown.</p>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>

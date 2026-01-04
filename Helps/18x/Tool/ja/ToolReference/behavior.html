@@ -1,26 +1,27 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="ja" >
+<html class="writer-html5" lang="ja" data-content_root="../../">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>振る舞い &mdash; Effekseer Help  ドキュメント</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=77cdefee" />
+
+  
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/js/three.min.js"></script>
-        <script src="../../_static/js/effekseer.min.js"></script>
-        <script src="../../_static/js/iframe.js"></script>
-        <script src="../../_static/js/OrbitControls.js"></script>
-        <script src="../../_static/translations.js"></script>
+        <script src="../../_static/documentation_options.js?v=c033477b"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/js/three.min.js?v=1b2a738c"></script>
+        <script src="../../_static/js/effekseer.min.js?v=02ca8712"></script>
+        <script src="../../_static/js/iframe.js?v=0460a6df"></script>
+        <script src="../../_static/js/OrbitControls.js?v=366c62db"></script>
+        <script src="../../_static/translations.js?v=4dbe4bdc"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="検索" href="../../search.html" />
@@ -33,11 +34,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../index.html" class="icon icon-home"> Effekseer Help
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Effekseer Help
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -62,6 +67,7 @@
 <li class="toctree-l4"><a class="reference internal" href="fileExport.html">ファイル - エクスポート</a></li>
 <li class="toctree-l4"><a class="reference internal" href="recoveringData.html">データの復元</a></li>
 <li class="toctree-l4"><a class="reference internal" href="drawMode.html">描画モード</a></li>
+<li class="toctree-l4"><a class="reference internal" href="profiler.html">プロファイラ</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="index.html#id16">コマンドライン</a></li>
@@ -90,10 +96,10 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../index.html">Effekseer Help 日本語</a> &raquo;</li>
-          <li><a href="index.html">ツール・リファレンス</a> &raquo;</li>
-      <li>振る舞い</li>
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Effekseer Help 日本語</a></li>
+          <li class="breadcrumb-item"><a href="index.html">ツール・リファレンス</a></li>
+      <li class="breadcrumb-item active">振る舞い</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -102,68 +108,74 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="id1">
-<h1>振る舞い<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h1>
-<div class="section" id="id2">
-<h2>概要<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
+  <section id="id1">
+<h1>振る舞い<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h1>
+<section id="id2">
+<h2>概要<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
 <p>エディタ上でのエフェクトの表示方法を設定します。複数表示させるなど、ゲーム中に近い表現を再現できます。</p>
-<iframe src='../../Effects/viewer_ja.html#References/Behavior/Original.efk'></iframe></div>
-<div class="section" id="id3">
-<h2>パラメーター<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h2>
-<div class="section" id="id4">
-<h3>初期位置<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h3>
+<iframe src='../../Effects/viewer_ja.html#References/Behavior/Original.efk'></iframe></section>
+<section id="id3">
+<h2>パラメーター<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
+<section id="id4">
+<h3>初期位置<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h3>
 <p>1フレーム目のエフェクトのルートのパーティクルの位置を指定します。</p>
-<iframe src='../../Effects/viewer_ja.html#References/Behavior/InitialPosition.efk'></iframe></div>
-<div class="section" id="id5">
-<h3>移動速度<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h3>
+<iframe src='../../Effects/viewer_ja.html#References/Behavior/InitialPosition.efk'></iframe></section>
+<section id="id5">
+<h3>移動速度<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h3>
 <p>エフェクトのルートのパーティクルの移動速度を指定します。</p>
-<iframe src='../../Effects/viewer_ja.html#References/Behavior/speed.efkefc'></iframe></div>
-<div class="section" id="id6">
-<h3>初期角度<a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h3>
+<iframe src='../../Effects/viewer_ja.html#References/Behavior/speed.efkefc'></iframe></section>
+<section id="id6">
+<h3>初期角度<a class="headerlink" href="#id6" title="Link to this heading">¶</a></h3>
 <p>1フレーム目のエフェクトのルートのパーティクルの角度を指定します。</p>
-<iframe src='../../Effects/viewer_ja.html#References/Behavior/angle.efkefc'></iframe></div>
-<div class="section" id="id7">
-<h3>回転速度<a class="headerlink" href="#id7" title="Permalink to this heading">¶</a></h3>
+<iframe src='../../Effects/viewer_ja.html#References/Behavior/angle.efkefc'></iframe></section>
+<section id="id7">
+<h3>回転速度<a class="headerlink" href="#id7" title="Link to this heading">¶</a></h3>
 <p>エフェクトのルートのパーティクルの回転速度を指定します。</p>
-<iframe src='../../Effects/viewer_ja.html#References/Behavior/angular_speed.efkefc'></iframe></div>
-<div class="section" id="id8">
-<h3>初期拡大率<a class="headerlink" href="#id8" title="Permalink to this heading">¶</a></h3>
+<iframe src='../../Effects/viewer_ja.html#References/Behavior/angular_speed.efkefc'></iframe></section>
+<section id="id8">
+<h3>初期拡大率<a class="headerlink" href="#id8" title="Link to this heading">¶</a></h3>
 <p>1フレーム目のエフェクトのルートのパーティクルの初期の拡大率を指定します。</p>
-<iframe src='../../Effects/viewer_ja.html#References/Behavior/behavior_scale.efkefc'></iframe></div>
-<div class="section" id="id9">
-<h3>拡大速度<a class="headerlink" href="#id9" title="Permalink to this heading">¶</a></h3>
+<iframe src='../../Effects/viewer_ja.html#References/Behavior/behavior_scale.efkefc'></iframe></section>
+<section id="id9">
+<h3>拡大速度<a class="headerlink" href="#id9" title="Link to this heading">¶</a></h3>
 <p>エフェクトのルートのパーティクルの拡大速度を指定します。</p>
-</div>
-<div class="section" id="id10">
-<h3>破棄フレーム<a class="headerlink" href="#id10" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="id10">
+<h3>破棄フレーム<a class="headerlink" href="#id10" title="Link to this heading">¶</a></h3>
 <p>エフェクトの表示中にルートのパーティクルの削除する時間(フレーム単位)を指定します。</p>
-</div>
-<div class="section" id="x">
-<h3>個数(X方向)<a class="headerlink" href="#x" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="x">
+<h3>個数(X方向)<a class="headerlink" href="#x" title="Link to this heading">¶</a></h3>
 <p>エフェクトをX方向に並べて表示する時の個数を指定します。</p>
-</div>
-<div class="section" id="y">
-<h3>個数(Y方向)<a class="headerlink" href="#y" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="y">
+<h3>個数(Y方向)<a class="headerlink" href="#y" title="Link to this heading">¶</a></h3>
 <p>エフェクトをY方向に並べて表示する時の個数を指定します。</p>
-</div>
-<div class="section" id="z">
-<h3>個数(Z方向)<a class="headerlink" href="#z" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="z">
+<h3>個数(Z方向)<a class="headerlink" href="#z" title="Link to this heading">¶</a></h3>
 <p>エフェクトをZ方向に並べて表示する時の個数を指定します。</p>
-</div>
-<div class="section" id="id11">
-<h3>距離<a class="headerlink" href="#id11" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="id11">
+<h3>距離<a class="headerlink" href="#id11" title="Link to this heading">¶</a></h3>
 <p>エフェクトを複数表示する時のエフェクト間の距離を指定します。</p>
-<iframe src='../../Effects/viewer_ja.html#References/Behavior/count_set.efkefc'></iframe></div>
-<div class="section" id="id12">
-<h3>再生速度<a class="headerlink" href="#id12" title="Permalink to this heading">¶</a></h3>
+<iframe src='../../Effects/viewer_ja.html#References/Behavior/count_set.efkefc'></iframe></section>
+<section id="id12">
+<h3>再生速度<a class="headerlink" href="#id12" title="Link to this heading">¶</a></h3>
 <p>エフェクトの再生速度を指定します。</p>
-</div>
-<div class="section" id="id13">
-<h3>ターゲット位置<a class="headerlink" href="#id13" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="id13">
+<h3>ターゲット位置<a class="headerlink" href="#id13" title="Link to this heading">¶</a></h3>
 <p>エフェクトがターゲットに集合する時のターゲットの座標を指定します。</p>
-</div>
-</div>
-</div>
+</section>
+<section id="id14">
+<h3>外部モデル<a class="headerlink" href="#id14" title="Link to this heading">¶</a></h3>
+<p>生成元として使用する外部モデルを登録します。
+各モデルはファイルと、位置/回転/拡大のオフセットを指定できます。
+ツールで再生する場合はここで登録したモデルが使用されますが、実行環境では再生時に外部モデルを指定します。</p>
+</section>
+</section>
+</section>
 
 
            </div>

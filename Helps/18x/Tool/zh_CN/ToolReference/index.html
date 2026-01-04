@@ -1,26 +1,27 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh-CN" data-content_root="../../">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>工具参考 &mdash; Effekseer Help  ドキュメント</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=77cdefee" />
+
+  
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/js/three.min.js"></script>
-        <script src="../../_static/js/effekseer.min.js"></script>
-        <script src="../../_static/js/iframe.js"></script>
-        <script src="../../_static/js/OrbitControls.js"></script>
-        <script src="../../_static/translations.js"></script>
+        <script src="../../_static/documentation_options.js?v=c033477b"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/js/three.min.js?v=1b2a738c"></script>
+        <script src="../../_static/js/effekseer.min.js?v=02ca8712"></script>
+        <script src="../../_static/js/iframe.js?v=0460a6df"></script>
+        <script src="../../_static/js/OrbitControls.js?v=366c62db"></script>
+        <script src="../../_static/translations.js?v=4dbe4bdc"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="検索" href="../../search.html" />
@@ -33,11 +34,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../index.html" class="icon icon-home"> Effekseer Help
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Effekseer Help
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -62,6 +67,7 @@
 <li class="toctree-l4"><a class="reference internal" href="location.html">位置</a></li>
 <li class="toctree-l4"><a class="reference internal" href="locationAbs.html">力场（Local）</a></li>
 <li class="toctree-l4"><a class="reference internal" href="locationGene.html">生成方法</a></li>
+<li class="toctree-l4"><a class="reference internal" href="collisions.html">碰撞</a></li>
 <li class="toctree-l4"><a class="reference internal" href="killRules.html">销毁规则</a></li>
 <li class="toctree-l4"><a class="reference internal" href="rotation.html">旋转</a></li>
 <li class="toctree-l4"><a class="reference internal" href="scale.html">缩放</a></li>
@@ -124,9 +130,9 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../index.html">Effekseer Help (中文)</a> &raquo;</li>
-      <li>工具参考</li>
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Effekseer Help (中文)</a></li>
+      <li class="breadcrumb-item active">工具参考</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -135,24 +141,24 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="id1">
-<h1>工具参考<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h1>
-<div class="section" id="id2">
-<h2>概述<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
-<div class="section" id="id3">
-<h3>工具<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h3>
+  <section id="id1">
+<h1>工具参考<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h1>
+<section id="id2">
+<h2>概述<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
+<section id="id3">
+<h3>工具<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h3>
 <p>这个工具包含一个用来预览特效的视窗和一系列用来编辑特效参数的窗口。通过编辑窗口中的参数，你可以制作特效，修改它的外观和行为。通过拖拽，你可以随心所欲地重新布局这些窗口，或者将它们折叠进选项卡。通过在菜单栏中选择“窗口”，你可以找到不在默认视图中的窗口。而且，你可以将所有窗口恢复到默认位置。</p>
-</div>
-<div class="section" id="id4">
-<h3>特效<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="id4">
+<h3>特效<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h3>
 <p>在这个工具中，你可以通过编辑节点制作特效。节点具有父子关系，子节点会受到父节点的影响。通过父子关系，得以制作复杂的特效。</p>
 <p>我将通过一个例子解释父子关系。在这个例子中，节点2是节点1的子节点，节点3是节点2的子节点。节点1会生成粒子effect 1。几帧后，节点2会在相对于effect 1的位置处会生成一些effect 2粒子。再过几帧后，节点3会在相对于节点2生成的每个粒子的相对位置处生成一些effect 3粒子。下面的图表展示了这种关系。通过使用父子关系描述特效的行为，可以表现出极为丰富的效果。在这个工具中，一个“节点”生成的基于参数的特效被称作一个“粒子”。</p>
 <img alt="../../_images/overview_en.png" class="align-center" src="../../_images/overview_en.png" />
-</div>
-<div class="section" id="id5">
-<h3>如何操作<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h3>
-<div class="section" id="id6">
-<h4>预览<a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h4>
+</section>
+<section id="id5">
+<h3>如何操作<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h3>
+<section id="id6">
+<h4>预览<a class="headerlink" href="#id6" title="Link to this heading">¶</a></h4>
 <div align="center">
 <table border="1">
 <tr>
@@ -168,50 +174,50 @@
 <td>滑动鼠标滚轮，或按住鼠标右键+Ctrl并拖拽鼠标。</td>
 </tr>
 </table>
-</div></div>
-<div class="section" id="id7">
-<h4>如何输入值<a class="headerlink" href="#id7" title="Permalink to this heading">¶</a></h4>
+</div></section>
+<section id="id7">
+<h4>如何输入值<a class="headerlink" href="#id7" title="Link to this heading">¶</a></h4>
 <p>鼠标左键文本输入框，可以输入值。</p>
 <p>左键并拖拽文本输入框，可以逐渐改变值。</p>
 <img alt="../../_images/input_value.png" class="align-center" src="../../_images/input_value.png" />
-</div>
-<div class="section" id="id8">
-<h4>如何输入颜色<a class="headerlink" href="#id8" title="Permalink to this heading">¶</a></h4>
+</section>
+<section id="id8">
+<h4>如何输入颜色<a class="headerlink" href="#id8" title="Link to this heading">¶</a></h4>
 <p>除了文本框之外，可以用鼠标左键颜色区域来输入颜色。</p>
 <img alt="../../_images/input_color_basic.png" class="align-center" src="../../_images/input_color_basic.png" />
 <p>左键并拖拽一个颜色区域可以将值复制到另一个颜色区域。</p>
 <img alt="../../_images/input_color.png" class="align-center" src="../../_images/input_color.png" />
-</div>
-<div class="section" id="id9">
-<h4>节点树<a class="headerlink" href="#id9" title="Permalink to this heading">¶</a></h4>
+</section>
+<section id="id9">
+<h4>节点树<a class="headerlink" href="#id9" title="Link to this heading">¶</a></h4>
 <p>在节点树中，你可以编辑构成特效的节点。
 你可以右键添加或删除节点。</p>
 <p>你可以拖拽节点来重新布局它们。</p>
 <p>你可以点击眼睛图标来切换节点的显示。
 你可以按住Shift并单击来切换显示，包括子节点。</p>
 <img alt="../../_images/node_tree.png" class="align-center" src="../../_images/node_tree.png" />
-</div>
-<div class="section" id="id10">
-<h4>面板（窗口）<a class="headerlink" href="#id10" title="Permalink to this heading">¶</a></h4>
+</section>
+<section id="id10">
+<h4>面板（窗口）<a class="headerlink" href="#id10" title="Link to this heading">¶</a></h4>
 <p>有许多用于编辑特效的参数的面板（窗口）。如果在菜单栏中选择“窗口”，会列出所有可用的窗口。选择其中的一个，会打开相应的窗口。</p>
 <p>你可以左键窗口的菜单栏并拖拽窗口来移动它的位置。</p>
 <p>你可以将窗口拖放到出现的方块上，将其添加到另一个面板。</p>
 <img alt="../../_images/DockPanel_Panel.png" class="align-center" src="../../_images/DockPanel_Panel.png" />
 <p>你还可以在选项卡之间进行拖放。</p>
 <img alt="../../_images/DockPanel_Tab.png" class="align-center" src="../../_images/DockPanel_Tab.png" />
-</div>
-</div>
-<div class="section" id="id11">
-<h3>文件格式<a class="headerlink" href="#id11" title="Permalink to this heading">¶</a></h3>
-<div class="section" id="efkefc">
-<h4>特效文件（efkefc）<a class="headerlink" href="#efkefc" title="Permalink to this heading">¶</a></h4>
+</section>
+</section>
+<section id="id11">
+<h3>文件格式<a class="headerlink" href="#id11" title="Link to this heading">¶</a></h3>
+<section id="efkefc">
+<h4>特效文件（efkefc）<a class="headerlink" href="#efkefc" title="Link to this heading">¶</a></h4>
 <p>特效以“efkefc”格式保存在文件中。
 这个文件既可以被编辑，也可以在游戏运行时播放。</p>
 <p>直到1.4版本，这个功能还是分成两个功能实现，efkproj文件用于在工具中编辑，efk用于在游戏中播放。
 为了兼容性，当前版本可以读取efkproj和efk文件。</p>
-</div>
-<div class="section" id="id12">
-<h4>资源文件<a class="headerlink" href="#id12" title="Permalink to this heading">¶</a></h4>
+</section>
+<section id="id12">
+<h4>资源文件<a class="headerlink" href="#id12" title="Link to this heading">¶</a></h4>
 <p>特效可引用的资源文件。包括通用文件格式和Effekseer自己的文件格式。</p>
 <table border="1" class="docutils">
 <thead>
@@ -235,33 +241,34 @@
 </tr>
 <tr>
 <td>efkmodel</td>
-<td>3D模型文件（从fbx、mqo转换）</td>
+<td>3D模型文件（从fbx、mqo、gltf、glb、obj、geo、bgeo转换）</td>
 </tr>
 <tr>
 <td>efkcurve</td>
 <td>曲线参数文件（从fbx转换）</td>
 </tr>
 </tbody>
-</table></div>
-<div class="section" id="efkpkg">
-<h4>打包文件（efkpkg）<a class="headerlink" href="#efkpkg" title="Permalink to this heading">¶</a></h4>
+</table></section>
+<section id="efkpkg">
+<h4>打包文件（efkpkg）<a class="headerlink" href="#efkpkg" title="Link to this heading">¶</a></h4>
 <p>efkpkg文件是包含一个或多个efkefc文件和各种资源文件的包文件。</p>
 <p>导出时，特效引用的资源文件会被自动打包进去。它可被导入到其他项目中进行使用。</p>
 <ul class="simple">
 <li><p><a href="fileImport.html">导入</a></p></li>
 <li><p><a href="fileExport.html">导出</a></p></li>
 </ul>
-</div>
-</div>
-</div>
-<div class="section" id="id13">
-<h2>特效参数<a class="headerlink" href="#id13" title="Permalink to this heading">¶</a></h2>
+</section>
+</section>
+</section>
+<section id="id13">
+<h2>特效参数<a class="headerlink" href="#id13" title="Link to this heading">¶</a></h2>
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="common.html">基础设置</a></li>
 <li class="toctree-l1"><a class="reference internal" href="location.html">位置</a></li>
 <li class="toctree-l1"><a class="reference internal" href="locationAbs.html">力场（Local）</a></li>
 <li class="toctree-l1"><a class="reference internal" href="locationGene.html">生成方法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="collisions.html">碰撞</a></li>
 <li class="toctree-l1"><a class="reference internal" href="killRules.html">销毁规则</a></li>
 <li class="toctree-l1"><a class="reference internal" href="rotation.html">旋转</a></li>
 <li class="toctree-l1"><a class="reference internal" href="scale.html">缩放</a></li>
@@ -282,18 +289,18 @@
 <li class="toctree-l1"><a class="reference internal" href="proceduralModel.html">程序化模型</a></li>
 </ul>
 </div>
-</div>
-<div class="section" id="id14">
-<h2>特效特性<a class="headerlink" href="#id14" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="id14">
+<h2>特效特性<a class="headerlink" href="#id14" title="Link to this heading">¶</a></h2>
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="image.html">关于图像</a></li>
 <li class="toctree-l1"><a class="reference internal" href="easing.html">缓动</a></li>
 </ul>
 </div>
-</div>
-<div class="section" id="id15">
-<h2>工具方法<a class="headerlink" href="#id15" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="id15">
+<h2>工具方法<a class="headerlink" href="#id15" title="Link to this heading">¶</a></h2>
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="behavior.html">行为</a></li>
@@ -308,15 +315,15 @@
 <li class="toctree-l1"><a class="reference internal" href="drawMode.html">渲染模式</a></li>
 </ul>
 </div>
-</div>
-<div class="section" id="id16">
-<h2>命令行<a class="headerlink" href="#id16" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="id16">
+<h2>命令行<a class="headerlink" href="#id16" title="Link to this heading">¶</a></h2>
 <p>通过命令行启动Effekseer时，可以通过参数改变Effekseer的行为。例如，你可以在无需打开Effekseer界面的情况下将“.efkproj”文件转换为“.efk”文件。通过与脚本结合，你可以批量转换文件夹下的特效文件。</p>
-<table class="colwidths-given docutils align-default" id="id17">
-<caption><span class="caption-text">命令行</span><a class="headerlink" href="#id17" title="このテーブルへのパーマリンク">¶</a></caption>
+<table class="docutils align-default" id="id17">
+<caption><span class="caption-text">命令行</span><a class="headerlink" href="#id17" title="Link to this table">¶</a></caption>
 <colgroup>
-<col style="width: 22%" />
-<col style="width: 78%" />
+<col style="width: 22.2%" />
+<col style="width: 77.8%" />
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p>-cui</p></td>
@@ -339,8 +346,8 @@
 </tr>
 </tbody>
 </table>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>

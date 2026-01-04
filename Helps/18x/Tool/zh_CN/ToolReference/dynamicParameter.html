@@ -1,26 +1,27 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh-CN" data-content_root="../../">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>动态参数 &mdash; Effekseer Help  ドキュメント</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=77cdefee" />
+
+  
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/js/three.min.js"></script>
-        <script src="../../_static/js/effekseer.min.js"></script>
-        <script src="../../_static/js/iframe.js"></script>
-        <script src="../../_static/js/OrbitControls.js"></script>
-        <script src="../../_static/translations.js"></script>
+        <script src="../../_static/documentation_options.js?v=c033477b"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/js/three.min.js?v=1b2a738c"></script>
+        <script src="../../_static/js/effekseer.min.js?v=02ca8712"></script>
+        <script src="../../_static/js/iframe.js?v=0460a6df"></script>
+        <script src="../../_static/js/OrbitControls.js?v=366c62db"></script>
+        <script src="../../_static/translations.js?v=4dbe4bdc"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="検索" href="../../search.html" />
@@ -33,11 +34,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../index.html" class="icon icon-home"> Effekseer Help
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Effekseer Help
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -56,6 +61,7 @@
 <li class="toctree-l4"><a class="reference internal" href="location.html">位置</a></li>
 <li class="toctree-l4"><a class="reference internal" href="locationAbs.html">力场（Local）</a></li>
 <li class="toctree-l4"><a class="reference internal" href="locationGene.html">生成方法</a></li>
+<li class="toctree-l4"><a class="reference internal" href="collisions.html">碰撞</a></li>
 <li class="toctree-l4"><a class="reference internal" href="killRules.html">销毁规则</a></li>
 <li class="toctree-l4"><a class="reference internal" href="rotation.html">旋转</a></li>
 <li class="toctree-l4"><a class="reference internal" href="scale.html">缩放</a></li>
@@ -102,10 +108,10 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../index.html">Effekseer Help (中文)</a> &raquo;</li>
-          <li><a href="index.html">工具参考</a> &raquo;</li>
-      <li>动态参数</li>
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Effekseer Help (中文)</a></li>
+          <li class="breadcrumb-item"><a href="index.html">工具参考</a></li>
+      <li class="breadcrumb-item active">动态参数</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -114,30 +120,30 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="id1">
-<h1>动态参数<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h1>
-<div class="section" id="id2">
-<h2>概述<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
+  <section id="id1">
+<h1>动态参数<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h1>
+<section id="id2">
+<h2>概述<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
 <p>动态参数可以实现在特效在游戏中播放时动态地修改参数的值。
 通过简单的代码控制参数。参数可以通过外部程序设置。</p>
-</div>
-<div class="section" id="id3">
-<h2>使用方法<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h2>
-<div class="section" id="id4">
-<h3>基础<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h3>
-<div class="section" id="id5">
-<h4>面板<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h4>
+</section>
+<section id="id3">
+<h2>使用方法<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
+<section id="id4">
+<h3>基础<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h3>
+<section id="id5">
+<h4>面板<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h4>
 <p>打开动态参数面板。</p>
 <img alt="../../_images/menu_en.png" class="align-center" src="../../_images/menu_en.png" />
-</div>
-<div class="section" id="id6">
-<h4>添加表达式<a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h4>
+</section>
+<section id="id6">
+<h4>添加表达式<a class="headerlink" href="#id6" title="Link to this heading">¶</a></h4>
 <p>你可以单击“添加”按钮添加一个表达式。
 你可以编辑表达式的名称和内容。</p>
 <img alt="../../_images/add_en.png" class="align-center" src="../../_images/add_en.png" />
-</div>
-<div class="section" id="id7">
-<h4>编写表达式<a class="headerlink" href="#id7" title="Permalink to this heading">¶</a></h4>
+</section>
+<section id="id7">
+<h4>编写表达式<a class="headerlink" href="#id7" title="Link to this heading">¶</a></h4>
 <p>例如，要将第一个参数修改为2.0，可写为如下形式。</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nd">@O</span><span class="o">.</span><span class="n">x</span> <span class="o">=</span> <span class="mf">2.0</span>
 </pre></div>
@@ -146,9 +152,9 @@
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nd">@O</span><span class="o">.</span><span class="n">x</span> <span class="o">=</span> <span class="mf">2.0</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="id8">
-<h4>使用表达式<a class="headerlink" href="#id8" title="Permalink to this heading">¶</a></h4>
+</section>
+<section id="id8">
+<h4>使用表达式<a class="headerlink" href="#id8" title="Link to this heading">¶</a></h4>
 <p>右键要使用表达式的参数并选择动态。
 然后会显示一个选择表达式的文本框。</p>
 <img alt="../../_images/select_dynamic_en.png" class="align-center" src="../../_images/select_dynamic_en.png" />
@@ -156,12 +162,12 @@
 <img alt="../../_images/apply_dynamic_en.png" class="align-center" src="../../_images/apply_dynamic_en.png" />
 <p>位置的参数是(0,0,0)。但是粒子出现在(2,0,0)，因为表达式改变了位置参数。</p>
 <img alt="../../_images/move2.png" class="align-center" src="../../_images/move2.png" />
-</div>
-</div>
-<div class="section" id="id9">
-<h3>表达式中的函数<a class="headerlink" href="#id9" title="Permalink to this heading">¶</a></h3>
-<div class="section" id="id10">
-<h4>修改多个参数<a class="headerlink" href="#id10" title="Permalink to this heading">¶</a></h4>
+</section>
+</section>
+<section id="id9">
+<h3>表达式中的函数<a class="headerlink" href="#id9" title="Link to this heading">¶</a></h3>
+<section id="id10">
+<h4>修改多个参数<a class="headerlink" href="#id10" title="Link to this heading">¶</a></h4>
 <p>x, y, z, w, 每个参数都是可修改的。
 下面的输入将值分别修改为2, 3, 4, 5。
 如果目标是颜色，x, y, z, w 对应RGBA。</p>
@@ -171,78 +177,78 @@
 <span class="nd">@O</span><span class="o">.</span><span class="n">w</span> <span class="o">=</span> <span class="mf">5.0</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="id11">
-<h4>四则运算<a class="headerlink" href="#id11" title="Permalink to this heading">¶</a></h4>
+</section>
+<section id="id11">
+<h4>四则运算<a class="headerlink" href="#id11" title="Link to this heading">¶</a></h4>
 <p>表达式可以使用算术运算。可以用()修改运算优先级。</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nd">@O</span><span class="o">.</span><span class="n">x</span> <span class="o">=</span> <span class="p">(</span><span class="mf">2.0</span> <span class="o">+</span> <span class="mf">3.0</span> <span class="o">*</span> <span class="mf">2.0</span> <span class="o">/</span> <span class="mf">3.0</span><span class="p">)</span> <span class="o">-</span> <span class="mf">2.0</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="id12">
-<h4>参数<a class="headerlink" href="#id12" title="Permalink to this heading">¶</a></h4>
+</section>
+<section id="id12">
+<h4>参数<a class="headerlink" href="#id12" title="Link to this heading">¶</a></h4>
 <p>外部程序输入的参数可以通过面板中的数字输入框或运行时设置。</p>
 <table border="1" class="docutils">
 <thead>
 <tr>
-<th align="left">参数</th>
-<th align="left">说明</th>
+<th style="text-align: left;">参数</th>
+<th style="text-align: left;">说明</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left">@P.x @P.y @P.z @P.w</td>
-<td align="left">动态参数应用之前的参数</td>
+<td style="text-align: left;">@P.x @P.y @P.z @P.w</td>
+<td style="text-align: left;">动态参数应用之前的参数</td>
 </tr>
 <tr>
-<td align="left">@In0 @In1 @In2 @In3</td>
-<td align="left">外部程序输入的值</td>
+<td style="text-align: left;">@In0 @In1 @In2 @In3</td>
+<td style="text-align: left;">外部程序输入的值</td>
 </tr>
 <tr>
-<td align="left">@GTime</td>
-<td align="left">当前时间（秒）</td>
+<td style="text-align: left;">@GTime</td>
+<td style="text-align: left;">当前时间（秒）</td>
 </tr>
 <tr>
-<td align="left">@PTime</td>
-<td align="left">父粒子生成至今的时间（s）</td>
+<td style="text-align: left;">@PTime</td>
+<td style="text-align: left;">父粒子生成至今的时间（s）</td>
 </tr>
 </tbody>
-</table></div>
-<div class="section" id="id13">
-<h4>函数<a class="headerlink" href="#id13" title="Permalink to this heading">¶</a></h4>
+</table></section>
+<section id="id13">
+<h4>函数<a class="headerlink" href="#id13" title="Link to this heading">¶</a></h4>
 <p>可以使用以下函数。</p>
 <table border="1" class="docutils">
 <thead>
 <tr>
-<th align="left">函数</th>
-<th align="left">说明</th>
+<th style="text-align: left;">函数</th>
+<th style="text-align: left;">说明</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left">sin(x)</td>
-<td align="left">返回正弦值，x使用弧度制。</td>
+<td style="text-align: left;">sin(x)</td>
+<td style="text-align: left;">返回正弦值，x使用弧度制。</td>
 </tr>
 <tr>
-<td align="left">cos(x)</td>
-<td align="left">返回余弦值，x使用弧度制。</td>
+<td style="text-align: left;">cos(x)</td>
+<td style="text-align: left;">返回余弦值，x使用弧度制。</td>
 </tr>
 <tr>
-<td align="left">rand()</td>
-<td align="left">返回随机值</td>
+<td style="text-align: left;">rand()</td>
+<td style="text-align: left;">返回随机值</td>
 </tr>
 <tr>
-<td align="left">rand(x)</td>
-<td align="left">返回与x相关的随机值。如果x相同，则返回值也相同。</td>
+<td style="text-align: left;">rand(x)</td>
+<td style="text-align: left;">返回与x相关的随机值。如果x相同，则返回值也相同。</td>
 </tr>
 <tr>
-<td align="left">step(edge,x)</td>
-<td align="left">如果x大于edge，返回1.0。否则返回0。</td>
+<td style="text-align: left;">step(edge,x)</td>
+<td style="text-align: left;">如果x大于edge，返回1.0。否则返回0。</td>
 </tr>
 </tbody>
-</table></div>
-<div class="section" id="id14">
-<h4>目标<a class="headerlink" href="#id14" title="Permalink to this heading">¶</a></h4>
+</table></section>
+<section id="id14">
+<h4>目标<a class="headerlink" href="#id14" title="Link to this heading">¶</a></h4>
 <p>动态参数可应用于以下参数。</p>
 <ul class="simple">
 <li><p>生成数量</p></li>
@@ -253,35 +259,35 @@
 <li><p>旋转 - 固定，角度・速度・加速度，缓动</p></li>
 <li><p>缩放 - 固定，缩放・速度・加速度，缓动</p></li>
 </ul>
-</div>
-</div>
-</div>
-<div class="section" id="id15">
-<h2>示例<a class="headerlink" href="#id15" title="Permalink to this heading">¶</a></h2>
-<div class="section" id="lod">
-<h3>LOD<a class="headerlink" href="#lod" title="Permalink to this heading">¶</a></h3>
+</section>
+</section>
+</section>
+<section id="id15">
+<h2>示例<a class="headerlink" href="#id15" title="Link to this heading">¶</a></h2>
+<section id="lod">
+<h3>LOD<a class="headerlink" href="#lod" title="Link to this heading">¶</a></h3>
 <p>生成的数量可以通过外部设置。</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nd">@O</span><span class="o">.</span><span class="n">x</span> <span class="o">=</span> <span class="nd">@In0</span> <span class="o">*</span> <span class="nd">@P</span><span class="o">.</span><span class="n">x</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="id16">
-<h3>激光<a class="headerlink" href="#id16" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="id16">
+<h3>激光<a class="headerlink" href="#id16" title="Link to this heading">¶</a></h3>
 <p>可以从外部设置激光的Z轴的长度。</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nd">@O</span><span class="o">.</span><span class="n">z</span> <span class="o">=</span> <span class="nd">@In0</span> <span class="o">*</span> <span class="nd">@P</span><span class="o">.</span><span class="n">z</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="id17">
-<h3>正弦波<a class="headerlink" href="#id17" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="id17">
+<h3>正弦波<a class="headerlink" href="#id17" title="Link to this heading">¶</a></h3>
 <p>像正弦波一样移动。</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nd">@O</span><span class="o">.</span><span class="n">x</span> <span class="o">=</span> <span class="n">sin</span><span class="p">(</span><span class="nd">@GTime</span><span class="p">)</span>
 <span class="nd">@O</span><span class="o">.</span><span class="n">y</span> <span class="o">=</span> <span class="nd">@GTime</span>
 </pre></div>
 </div>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
 
            </div>

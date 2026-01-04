@@ -1,26 +1,27 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
+<html class="writer-html5" lang="zh-CN" data-content_root="../../">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>位置 &mdash; Effekseer Help  ドキュメント</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=77cdefee" />
+
+  
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/js/three.min.js"></script>
-        <script src="../../_static/js/effekseer.min.js"></script>
-        <script src="../../_static/js/iframe.js"></script>
-        <script src="../../_static/js/OrbitControls.js"></script>
-        <script src="../../_static/translations.js"></script>
+        <script src="../../_static/documentation_options.js?v=c033477b"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/js/three.min.js?v=1b2a738c"></script>
+        <script src="../../_static/js/effekseer.min.js?v=02ca8712"></script>
+        <script src="../../_static/js/iframe.js?v=0460a6df"></script>
+        <script src="../../_static/js/OrbitControls.js?v=366c62db"></script>
+        <script src="../../_static/translations.js?v=4dbe4bdc"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="検索" href="../../search.html" />
@@ -33,11 +34,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../index.html" class="icon icon-home"> Effekseer Help
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Effekseer Help
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -56,6 +61,7 @@
 <li class="toctree-l4 current"><a class="current reference internal" href="#">位置</a></li>
 <li class="toctree-l4"><a class="reference internal" href="locationAbs.html">力场（Local）</a></li>
 <li class="toctree-l4"><a class="reference internal" href="locationGene.html">生成方法</a></li>
+<li class="toctree-l4"><a class="reference internal" href="collisions.html">碰撞</a></li>
 <li class="toctree-l4"><a class="reference internal" href="killRules.html">销毁规则</a></li>
 <li class="toctree-l4"><a class="reference internal" href="rotation.html">旋转</a></li>
 <li class="toctree-l4"><a class="reference internal" href="scale.html">缩放</a></li>
@@ -102,10 +108,10 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../index.html">Effekseer Help (中文)</a> &raquo;</li>
-          <li><a href="index.html">工具参考</a> &raquo;</li>
-      <li>位置</li>
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Effekseer Help (中文)</a></li>
+          <li class="breadcrumb-item"><a href="index.html">工具参考</a></li>
+      <li class="breadcrumb-item active">位置</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -114,49 +120,49 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="id1">
-<h1>位置<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h1>
-<div class="section" id="id2">
-<h2>概述<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
+  <section id="id1">
+<h1>位置<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h1>
+<section id="id2">
+<h2>概述<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
 <p>提供控制节点的位置的参数，特别是相对于父节点的位置。</p>
-</div>
-<div class="section" id="id3">
-<h2>参数<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h2>
-<div class="section" id="id4">
-<h3>位置<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="id3">
+<h2>参数<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
+<section id="id4">
+<h3>位置<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h3>
 <p>设置粒子的生成位置。它将影响粒子相对于其父节点的位置。如果没有父粒子，或者基础设置窗口中设置了不继承位置，它将表示绝对位置。</p>
 <div align="center">
 <img src="../../img/Tutorial/02_position_en.png">
 <p>“位置”窗口</p>
-</div><div class="section" id="id5">
-<h4>固定位置<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h4>
+</div><section id="id5">
+<h4>固定位置<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h4>
 <p>将粒子置于一个固定的位置。</p>
-<iframe src='../../Effects/viewer_zh_CN.html#References/Position/setposition.efkefc' class='effect'></iframe></div>
-<div class="section" id="id6">
-<h4>位置・速度・加速度<a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h4>
+<iframe src='../../Effects/viewer_zh_CN.html#References/Position/setposition.efkefc' class='effect'></iframe></section>
+<section id="id6">
+<h4>位置・速度・加速度<a class="headerlink" href="#id6" title="Link to this heading">¶</a></h4>
 <p>设置粒子的位置、速度和加速度。</p>
-<iframe src='../../Effects/viewer_zh_CN.html#References/Position/movingposition.efkefc' class='effect'></iframe></div>
-<div class="section" id="id7">
-<h4>缓动<a class="headerlink" href="#id7" title="Permalink to this heading">¶</a></h4>
+<iframe src='../../Effects/viewer_zh_CN.html#References/Position/movingposition.efkefc' class='effect'></iframe></section>
+<section id="id7">
+<h4>缓动<a class="headerlink" href="#id7" title="Link to this heading">¶</a></h4>
 <p>设置生成和移除的位置，以及粒子的生命周期中在这两个位置之间插值的方法。</p>
-<iframe src='../../Effects/viewer_zh_CN.html#References/Position/easing.efkefc' class='effect'></iframe></div>
-<div class="section" id="f">
-<h4>F曲线<a class="headerlink" href="#f" title="Permalink to this heading">¶</a></h4>
+<iframe src='../../Effects/viewer_zh_CN.html#References/Position/easing.efkefc' class='effect'></iframe></section>
+<section id="f">
+<h4>F曲线<a class="headerlink" href="#f" title="Link to this heading">¶</a></h4>
 <p>在F曲线窗口中，通过定义自动化曲线来控制位置。</p>
-<iframe src='../../Effects/viewer_zh_CN.html#References/Position/f_curve.efkefc' class='effect'></iframe></div>
-<div class="section" id="nurbs">
-<h4>NURBS曲线<a class="headerlink" href="#nurbs" title="Permalink to this heading">¶</a></h4>
+<iframe src='../../Effects/viewer_zh_CN.html#References/Position/f_curve.efkefc' class='effect'></iframe></section>
+<section id="nurbs">
+<h4>NURBS曲线<a class="headerlink" href="#nurbs" title="Link to this heading">¶</a></h4>
 <p>导入其他软件（如Maya）制作的曲线的3D数据，让粒子沿着它移动。</p>
-<div class="video_center"><video autoplay loop="true" muted="true" src="../../movies/Reference/Location/NURBS-Curve.mp4"/></div></div>
-<div class="section" id="id8">
-<h4>相对于摄像机偏移<a class="headerlink" href="#id8" title="Permalink to this heading">¶</a></h4>
+<div class="video_center"><video autoplay loop="true" muted="true" src="../../movies/Reference/Location/NURBS-Curve.mp4"/></div></section>
+<section id="id8">
+<h4>相对于摄像机偏移<a class="headerlink" href="#id8" title="Link to this heading">¶</a></h4>
 <p>永远在摄像机的中心显示粒子。
 仅对精灵和模型有效。
 特效的位置不影响子节点。</p>
-</div>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
+</section>
 
 
            </div>

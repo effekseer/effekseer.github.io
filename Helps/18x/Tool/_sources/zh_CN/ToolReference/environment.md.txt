@@ -28,6 +28,7 @@
 
 显示地面。
 可用于检查软粒子或深度。
+也可以在此启用地面碰撞。
 
 ```eval_rst
 .. image:: ../../img/Reference/Environment/ground.png
