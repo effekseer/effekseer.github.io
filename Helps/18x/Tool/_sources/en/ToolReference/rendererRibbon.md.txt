@@ -1,4 +1,4 @@
-﻿# Render - Ribbon
+# Render - Ribbon
 
 ## Overview
 
@@ -24,7 +24,7 @@ Specify the order in which particles are drawn among particles generated from th
 
 ### UV Type
 
-It sets the UV repeat pattern.
+Specifies how UVs are arranged and repeated.
 
 #### Strech
 
@@ -34,13 +34,13 @@ It uses one image for the entire ribbon. It is suitable for particles with a lon
 
 #### Tile
 
-It repeats a single image within one ribbon. This is suitable for expressions with repeating patterns, such as chains.
-You can specify the repetition interval with Tile Length.
+Repeats the image based on the ribbon length. This is suitable for expressions with repeating patterns, such as chains.
+You can specify the repetition interval with `Tile Length`.
 
 #### Tile (By Particle)
 
-It repeats one image within one ribbon. It is suitable for particles with repeating patterns, such as chains.
-It can also specify not to repeat only the edges.
+Repeats the image for each particle segment. This is suitable for expressions with repeating patterns, such as chains.
+You can also configure it so that the edges are not repeated, or so that only the specified loop region is repeated.
 
 <iframe src='../../Effects/viewer_en.html#References/Render/ribbon_uvtype_tile.efkefc' class='effect'></iframe>
 

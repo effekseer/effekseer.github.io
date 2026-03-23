@@ -14,6 +14,8 @@
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
         <script src="../../_static/documentation_options.js?v=c033477b"></script>
         <script src="../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
@@ -110,16 +112,16 @@
            <div itemprop="articleBody">
              
   <section id="id1">
-<h1>09.制作枪口焰！<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h1>
+<h1>09.制作枪口焰！<a class="headerlink" href="#id1" title="Link to this heading"></a></h1>
 <section id="id2">
-<h2>概要<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
+<h2>概要<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
 <p>在这一章中，你将使用到目前为止学到的知识来制作枪口焰特效。枪口焰是指开枪时在枪口处出现的火光。在有射击要素的游戏中，枪口焰是必不可少的。</p>
 <div align="center">
 <iframe src='../../Sample/viewer_zh_CN.html#09_02_Sample/09.efk'></iframe>
 <p>枪口焰</p>
 </div></section>
 <section id="id3">
-<h2>枪口焰<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
+<h2>枪口焰<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
 <p>分析一下枪口焰的结构。本章中制作的枪口焰由三个主要部分组成。分布是闪光、火花和烟雾。</p>
 <div align="center">
 <table>
@@ -145,7 +147,7 @@
 <div align="center">
 <a href = "../../Sample/09_01_Sample.zip">下载</a>
 </div><section id="id4">
-<h3>闪光<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h3>
+<h3>闪光<a class="headerlink" href="#id4" title="Link to this heading"></a></h3>
 <p>闪光由三种不同的精灵表示。在本章中，Z是子弹移动的方向。两种闪光在XY方向传播，一种在所有方向传播。</p>
 <p>在XY方向传播的闪光由<code class="docutils literal notranslate"><span class="pre">放置方法</span></code>设置为<code class="docutils literal notranslate"><span class="pre">固定</span></code>的精灵表示。为了丰富表现效果，我们准备了两种类型的精灵：一种是扩大并消失的，一种是缩小并消失的。两者都只显示一瞬间，所以它们应该在大约20帧后消失。</p>
 <p>还有一个向各个方向扩散的精灵，它应该膨胀并消失。</p>
@@ -196,7 +198,7 @@
 <p>闪光</p>
 </div></section>
 <section id="id5">
-<h3>火花<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h3>
+<h3>火花<a class="headerlink" href="#id5" title="Link to this heading"></a></h3>
 <p>火花是用多个圆形图像的精灵表示的。然而，火花的飞行方向是用父子关系设置的。</p>
 <p>火花是沿着以Z方向为轴线的圆形排列的。为了将其排列为圆形，设置<code class="docutils literal notranslate"><span class="pre">圆</span></code>作为父节点的<code class="docutils literal notranslate"><span class="pre">生成方法</span></code>。勾选<code class="docutils literal notranslate"><span class="pre">影响生成角度</span></code>，使火花指向圆的外侧。</p>
 <p>这样，当子粒子沿相对于父节点的Y轴方向移动时，它们实际会向圆的外侧移动。</p>
@@ -286,7 +288,7 @@
 <p>火花</p>
 </div></section>
 <section id="id6">
-<h3>烟雾<a class="headerlink" href="#id6" title="Link to this heading">¶</a></h3>
+<h3>烟雾<a class="headerlink" href="#id6" title="Link to this heading"></a></h3>
 <p>烟雾是用多个显示烟雾图像的精灵表示的。</p>
 <p>烟雾应该沿Z轴方向移动，但略微向上。</p>
 <p>烟雾图像由四个动画图像组成。通过按照一定时间间隔切换图像，使烟雾看起来像在变化。为了使图像切换，将<code class="docutils literal notranslate"><span class="pre">UV</span></code>设置为<code class="docutils literal notranslate"><span class="pre">动画</span></code>。</p>
@@ -335,7 +337,7 @@
 <p>烟雾</p>
 </div></section>
 <section id="id7">
-<h3>整合<a class="headerlink" href="#id7" title="Link to this heading">¶</a></h3>
+<h3>整合<a class="headerlink" href="#id7" title="Link to this heading"></a></h3>
 <p>同时显示三个部分。一个枪口焰的特效就制作完成了。</p>
 <div align="center">
 <img src="../../img/Tutorial/09/completed.gif">
@@ -346,7 +348,7 @@
 </div></section>
 </section>
 <section id="id8">
-<h2>总结<a class="headerlink" href="#id8" title="Link to this heading">¶</a></h2>
+<h2>总结<a class="headerlink" href="#id8" title="Link to this heading"></a></h2>
 <p>在这一章中，我们制作了可以在游戏中实际使用的特效。</p>
 </section>
 </section>

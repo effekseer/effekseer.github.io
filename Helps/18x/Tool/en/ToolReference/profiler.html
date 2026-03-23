@@ -14,6 +14,8 @@
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
         <script src="../../_static/documentation_options.js?v=c033477b"></script>
         <script src="../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
@@ -109,30 +111,30 @@
            <div itemprop="articleBody">
              
   <section id="profiler">
-<h1>Profiler<a class="headerlink" href="#profiler" title="Link to this heading">¶</a></h1>
+<h1>Profiler<a class="headerlink" href="#profiler" title="Link to this heading"></a></h1>
 <section id="overview">
-<h2>Overview<a class="headerlink" href="#overview" title="Link to this heading">¶</a></h2>
-<p>The Profiler is a tool to monitor how effects created with Effekseer are working.
-It allows you to visualize the CPU load and GPU load for the entire system, as well as the number of playbacks and GPU load per effect.</p>
+<h2>Overview<a class="headerlink" href="#overview" title="Link to this heading"></a></h2>
+<p>The Profiler is a tool for checking the load of effects being played in Effekseer.
+It visualizes total CPU and GPU load for the system, as well as playback counts and GPU load for each effect.</p>
 <p><img alt="Overview" src="../../_images/Profiler_Overview_En.png" /></p>
 </section>
 <section id="how-to-use">
-<h2>How to use<a class="headerlink" href="#how-to-use" title="Link to this heading">¶</a></h2>
+<h2>How to use<a class="headerlink" href="#how-to-use" title="Link to this heading"></a></h2>
 <section id="editor-tab">
-<h3>Editor tab<a class="headerlink" href="#editor-tab" title="Link to this heading">¶</a></h3>
-<p>The CPU load and GPU load for effects working in the Editor are drawn in real time as a charts.</p>
+<h3>Editor tab<a class="headerlink" href="#editor-tab" title="Link to this heading"></a></h3>
+<p>Displays CPU and GPU load for effects running in the Editor in real time as line graphs.</p>
 <ul class="simple">
 <li><p>Press the <code class="docutils literal notranslate"><span class="pre">Clear</span> <span class="pre">Data</span></code> button to clear the recorded data.</p></li>
 </ul>
 </section>
 <section id="target-tab">
-<h3>Target tab<a class="headerlink" href="#target-tab" title="Link to this heading">¶</a></h3>
+<h3>Target tab<a class="headerlink" href="#target-tab" title="Link to this heading"></a></h3>
 <p><img alt="Target Profiler" src="../../_images/Profiler_Target_En.png" /></p>
-<p>The CPU load and GPU load for effects running on games and applications, as well as the number of playback units and GPU load per effect, are drawn in real time as line graphs.</p>
-<p>The procedure for using this function is as follows</p>
+<p>Displays CPU and GPU load for effects running in games or applications, as well as playback counts and GPU load for each effect, in real time as line graphs.</p>
+<p>Use this function as follows:</p>
 <ol class="simple">
-<li><p>Settings in the <a class="reference external" href="network.html">Network</a> panel and connect to the target.</p></li>
-<li><p>Return to the Profiler panel and check that the status is &quot;Connected&quot;.</p></li>
+<li><p>Configure the <a class="reference internal" href="network.html"><span class="doc">Network</span></a> panel and connect to the target.</p></li>
+<li><p>Return to the Profiler panel and confirm that the status is <code class="docutils literal notranslate"><span class="pre">Connected</span></code>.</p></li>
 <li><p>Press the <code class="docutils literal notranslate"><span class="pre">Start</span> <span class="pre">Profile</span></code> button.</p></li>
 </ol>
 </section>

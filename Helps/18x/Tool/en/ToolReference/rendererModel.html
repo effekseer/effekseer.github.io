@@ -14,6 +14,8 @@
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
         <script src="../../_static/documentation_options.js?v=c033477b"></script>
         <script src="../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
@@ -122,30 +124,31 @@
            <div itemprop="articleBody">
              
   <section id="render-model">
-<h1>Render - Model<a class="headerlink" href="#render-model" title="Link to this heading">¶</a></h1>
+<h1>Render - Model<a class="headerlink" href="#render-model" title="Link to this heading"></a></h1>
 <section id="overview">
-<h2>Overview<a class="headerlink" href="#overview" title="Link to this heading">¶</a></h2>
+<h2>Overview<a class="headerlink" href="#overview" title="Link to this heading"></a></h2>
 <p>Here we explain the parameters that affect the drawing when &quot;Model&quot; is selected in the Render window.</p>
 <p>When &quot;Model&quot; is selected, an external 3D model can be imported and displayed.</p>
 <p>The color / distortion image set in the Basic Render Settings window will be used to texture the model. Depending on the model, it may be displayed incorrectly unless depth writing and depth test are enabled.</p>
 <p><img alt="../../_images/renderModel.png" src="../../_images/renderModel.png" /></p>
 </section>
 <section id="parameters">
-<h2>Parameters<a class="headerlink" href="#parameters" title="Link to this heading">¶</a></h2>
+<h2>Parameters<a class="headerlink" href="#parameters" title="Link to this heading"></a></h2>
 <div align="center">
 <img src="../../img/Reference/Render/panel_model_en.png">
 <p>"Render Settings" window</p>
 </div><section id="model">
-<h3>Model<a class="headerlink" href="#model" title="Link to this heading">¶</a></h3>
-<p>There are three types of models: file, procedural, and external models.</p>
-<p>If models are loaded from file, specify FBX (.fbx), metasequoia (.mqo), gltf (.gltf/.glb), obj (.obj), geo (.geo/.bgeo), or Effekseer model files (.efkmodel). If a source format is specified, an .efkmodel is generated in the same directory as the specified file. When playing effects with other applications, this generated file is necessary.</p>
-<p>You can also load FBX (.fbx) with animation. The first animation in the FBX file is played.</p>
+<h3>Model<a class="headerlink" href="#model" title="Link to this heading"></a></h3>
+<p>There are three types of models: <code class="docutils literal notranslate"><span class="pre">File</span></code>, <code class="docutils literal notranslate"><span class="pre">Procedural</span></code>, and <code class="docutils literal notranslate"><span class="pre">External</span></code>.</p>
+<p>If you load from file, specify FBX (<code class="docutils literal notranslate"><span class="pre">.fbx</span></code>), Metasequoia (<code class="docutils literal notranslate"><span class="pre">.mqo</span></code>), glTF (<code class="docutils literal notranslate"><span class="pre">.gltf</span></code>/<code class="docutils literal notranslate"><span class="pre">.glb</span></code>), OBJ (<code class="docutils literal notranslate"><span class="pre">.obj</span></code>), GEO (<code class="docutils literal notranslate"><span class="pre">.geo</span></code>/<code class="docutils literal notranslate"><span class="pre">.bgeo</span></code>), or Effekseer model files (<code class="docutils literal notranslate"><span class="pre">.efkmodel</span></code>). If you specify a source format other than <code class="docutils literal notranslate"><span class="pre">.efkmodel</span></code>, an <code class="docutils literal notranslate"><span class="pre">.efkmodel</span></code> file is generated in the same directory. That generated file is required when the effect is played in other applications.</p>
+<p>You can also load animated FBX (<code class="docutils literal notranslate"><span class="pre">.fbx</span></code>) files. The first animation in the FBX file is played.</p>
 <p>If you want to use a procedural model, create a model in the Procedural Model panel and specify it.</p>
-<p>In the editor, external models reference entries registered in <a class="reference external" href="behavior.html">Behavior</a>.
-At runtime, provide external models when playing the effect, and specify the external model index on the rendering side.</p>
+<p>In the editor, external models reference entries registered in <a class="reference internal" href="behavior.html"><span class="doc">Behavior</span></a>.
+At runtime, provide external models when playing the effect, and specify the external model index on the rendering side.
+Also specify local or world coordinate space as needed.</p>
 </section>
 <section id="configuration">
-<h3>Configuration<a class="headerlink" href="#configuration" title="Link to this heading">¶</a></h3>
+<h3>Configuration<a class="headerlink" href="#configuration" title="Link to this heading"></a></h3>
 <p>Specify how to draw the particle's model.</p>
 <table border="1" class="docutils">
 <thead>
@@ -165,7 +168,7 @@ At runtime, provide external models when playing the effect, and specify the ext
 </tr>
 <tr>
 <td>Directional Billboard</td>
-<td>The model rotates to face the camera while the Y+ direction toward the direction of movement.</td>
+<td>The model faces the camera while rotating so that its Y+ direction points along the direction of movement.</td>
 </tr>
 <tr>
 <td>Fixed Y-axis</td>
@@ -178,11 +181,11 @@ At runtime, provide external models when playing the effect, and specify the ext
 </tbody>
 </table><iframe src='../../Effects/viewer_en.html#References/Render/model_configuration.efkefc'></iframe></section>
 <section id="culling">
-<h3>Culling<a class="headerlink" href="#culling" title="Link to this heading">¶</a></h3>
+<h3>Culling<a class="headerlink" href="#culling" title="Link to this heading"></a></h3>
 <p>Specify which side(s) of the model's faces should be displayed.</p>
 </section>
 <section id="overall-color">
-<h3>Overall Color<a class="headerlink" href="#overall-color" title="Link to this heading">¶</a></h3>
+<h3>Overall Color<a class="headerlink" href="#overall-color" title="Link to this heading"></a></h3>
 <p>Specify the color tone of the whole model.</p>
 </section>
 </section>

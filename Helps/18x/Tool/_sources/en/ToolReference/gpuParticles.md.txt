@@ -1,15 +1,16 @@
-﻿# GPU Particles
+# GPU Particles
 
 ## Overview
 
-Sets parameters related to GPU particles.
-The particles of the node set here will be emitters, and GPU particles will be spawned.
+Configures settings related to GPU particles.
+When enabled on a node, that node works as an emitter and spawns GPU particles.
 
-While normal particles are processed by the CPU, GPU particles are processed by the GPU, so you can use a large number of particles (MaMore than 1 million particles).
+Unlike regular particles, which are simulated on the CPU, GPU particles are simulated on the GPU.
+This allows much larger particle counts to be handled efficiently.
 
 ![](../../img/Reference/GpuParticles/gpu_particles.png)
 
-GPU particles are only supported by modern graphics APIs.
+GPU particles are available only on modern graphics APIs.
 
 | Target | Support | Notes |
 |:-----------|:---:|--------|
@@ -29,7 +30,7 @@ GPU particles are only supported by modern graphics APIs.
 
 ## Parameters
 
-GPU particles are calculated on the GPU, so the functionality is simplified.
+Because GPU particles are simulated on the GPU, the available functionality is more limited than with regular particles.
 
 ### Enabled
 
@@ -37,34 +38,34 @@ Enable GPU particles if checked.
 
 ### Basic
 
-Settings related to GPU particle spawn.
-When GPU particles are started, memory is allocated from the particle buffer for *Spawn Amount * Time to live*.
+Basic settings for GPU particle spawning.
+When GPU particles start, memory is allocated from the particle buffer according to `Spawn Amount x Time to live`.
 
 #### Spawn count
-The total number of particles to be spawned.The program will stop after this number of particles have been created.
+The total number of particles to spawn.
+Spawning stops when this count is reached.
 
 If `Infinity` is enabled, it will keep spawning particles indefinitely.
 It will stop spawning particles when the parent particle is destroyed or when an external request to stop is made.
 
 #### Spawn Amount
-The amount of particles spawned per frame.
-You can increase the density of particles by increasing this value.
+The number of particles spawned per frame.
+Increase this value to make the particles denser.
 
 #### Initial Delay
-This is the time to start emitting particles.
-Particle emission can be delayed.
+The delay before particle emission starts.
 
 #### Time to live
-Lifetime of particles.
-It affects how fast the various parameters change.
+The lifetime of each particle.
+This also affects how quickly various parameters change.
 
 ### Emission
 
-Sets parameters related to the shape of the particle emission source.
-The actual shape is affected by the transform (Position, Rotation and Scaling) of the parent particle.
+Sets the shape of the particle emission source.
+The final shape is affected by the parent particle's transform (position, rotation, and scale).
 
 #### Emission Shape
-Sets the type of shape of the particle emitter.
+Sets the type of emitter shape.
 Supports `Point`, `Line`, `Circle`, `Sphere`, and `Model`.
 
 <table border="1" class="docutils">
@@ -89,30 +90,30 @@ Supports `Point`, `Line`, `Circle`, `Sphere`, and `Model`.
 </table>
 
 #### Parameters for Point shape
-There are no parameters for point shapes.
+There are no additional parameters for point shapes.
 
 #### Parameters for Line shape
-In the case of a line shape, particles are spawned from a line segment connecting two points at the `Start Point` and `End Point`.
-If you increase the `Line Tickness` of the line, it becomes a cone-like shape.
+Particles are spawned from the line segment between `Start Point` and `End Point`.
+Increasing `Line Thickness` gives the shape a cone-like spread.
 
 #### Parameters for Circle shape
-For a circular shape, particles are spawned from a circle with the `Circle Axis` as its central axis.
-The radius of the circle is determined by the `Inner Radius` and `Outer Radius` of the circle.
+Particles are spawned from a circle whose central axis is `Circle Axis`.
+The radius is determined by `Inner Radius` and `Outer Radius`.
 
 #### Parameters for Sphere shapes
-For spherical shapes, particles are spawned from the surface of a sphere determined by the `Sphere radius`.
+Particles are spawned from the surface of a sphere defined by `Sphere Radius`.
 
 #### parameters for Model shape
-For model shapes, the `Mesh` to use will generate particles from the surface of the model's mesh.
-You can specify the `Size` separately.
+For model shapes, particles are spawned from the surface of the specified model mesh.
+You can also specify `Size` separately.
 
 ### Position
 
-Set the parameters for the position and movement of the particles.
-The particle position is also affected by the `Force` based on the parameters set here.
+Sets particle position and movement.
+Particle positions are also affected by `Force` in addition to the values set here.
 
 #### Direction
-This is the direction vector for particle spawn.
+The movement direction vector used when particles are spawned.
 
 #### Spread
 The angle to randomly spread particles in the direction of movement when spawning particles.
@@ -120,33 +121,34 @@ The range is from 0 to 180 degrees; 0 degrees has no randomness, 90 degrees diff
 
 #### Initial Speed
 The speed at which particles are spawned.
-This parameter affects the initial velocity.
+This affects the initial velocity.
 A random range can be set.
 
 #### Damping
-Damping force during particle motion.Increasing this parameter will slow down the particles as they move.
+Damping applied during particle motion.
+Increasing this value makes particles slow down as they move.
 A random range can be set.
 
 ### Rotation
 
-Sets parameters for particle tilt and rotation.
-The appearance depends on the billboard settings of the drawing shape.
-Fixed affects the `XYZ` parameters, while Z-axis rotation billboards affect the `Z` parameters.
+Sets particle orientation and rotation.
+The visual result depends on the billboard settings of the drawing shape.
+`Fixed` mainly uses the `XYZ` parameters, while Z-axis rotation billboards mainly use the `Z` parameters.
 
 #### Initial Angle
-Angle (Euler) at particle spawn.
+The angle (Euler) at spawn time.
 A random range can be set.
 
 #### Angular Velocity
-The speed at which the particles rotation (Euler).
+The rotation speed (Euler) applied over time.
 A random range can be set.
 
 ### Scale
 
-Sets the size of the particles and the parameters for scaling them up and down.
-The behavior changes depending on the mode you set.
-- In `Fixed` mode, the particles are fixed at the zoom factor you set.
-- In `Easing` mode, the scale changes from the start point to the end point.
+Sets the particle size.
+Behavior changes depending on the selected mode.
+- In `Fixed` mode, the scale stays at the specified value.
+- In `Easing` mode, the scale changes smoothly from the start value to the end value over the particle lifetime.
 
 #### Single Scale
 Fixed scale, independent of the axis.
@@ -165,7 +167,7 @@ Scale of the start and end points of easing applied to each of the XYZ axes.
 A random range can be set.
 
 ### Force
-This parameter specifies the effect of externally exerting a force on the particles.
+Configures forces applied externally to particles.
 
 <table border="1" class="docutils">
 <thead>
@@ -185,15 +187,16 @@ This parameter specifies the effect of externally exerting a force on the partic
 </table>
 
 #### Gravity
-Applies acceleration in the specified direction.It can be applied to the top or right, not necessarily the bottom.This direction is not affected by the attitude of the parent particle.
+Applies acceleration in the specified direction.
+It does not have to point downward, and it is not affected by the parent particle's orientation.
 
 #### Vortex
-Applies a force that rotates around a specified `Center Point` and `Axis`.
-You can also adjust the force given to the particle from the tornado by changing the `Rotational Force` and `Attraction Force`.
+Applies a rotating force around the specified `Center Point` and `Axis`.
+You can adjust the strength of this motion using `Rotational Force` and `Attraction Force`.
 
 #### Turbulence
-Vector fields spawned by the `Random Seed`, `Field Scale` and `Complexity` allow particles to make noisy motions.
-You can also adjust the force exerted on the particles from turbulence by changing the `Power`.
+Applies noisy motion using a vector field generated from `Random Seed`, `Field Scale`, and `Complexity`.
+You can adjust the strength of the turbulence using `Power`.
 
 ### Rendering
 
@@ -227,27 +230,27 @@ Specify how the sprite is placed in relation to the particle.
 | Billboard Type | Description |
 |-----------------|-----------------------------------|
 | Rotated Billboard | Sprite rotates along the Z-axis while facing the viewpoint. |
-| Directional Billboard | Sprite rotates along Y+ direction to the moving direction while facing the viewpoint side. |
+| Directional Billboard | Sprite faces the camera while rotating so that its Y+ direction points along the direction of movement. |
 | Fixed Y-Axis | Sprite faces viewpoint side while fixed to Y-axis. |
 | Fixed | Sprite orientation follows particle rotation. |
 
 #### Model
-Specifies the user model to be drawn.
+Specifies the user model to draw.
 
 #### Trail Length
 Specifies the length of the trajectory.
-Increasing this parameter will increase the length of the trajectory and the memory size allocated from the trajectory buffer.
+Increasing this value increases the trajectory length and also the memory allocated from the trail buffer.
 
 #### Shape Size
-Specifies the size of the particle's drawn shape.
-This is multiplied by the Scale factor parameter.
-If the shape is a locus, it will affect the thickness.
+Specifies the base size of the rendered shape.
+This is multiplied by the Scale parameter.
+If the shape is a trail, it affects the thickness.
 
 ### Color
 Sets parameters for particle color.
 
 #### Color inheritance
-Color Inheritance allows you to influence the color of the parent particle.
+When enabled, the particle is affected by the color of its parent particle.
 
 #### Color All
 Sets the particle's color.
@@ -261,29 +264,28 @@ Sets the particle's color.
 | Gradient | Sets the gradient depicting a RGBA change. |
 
 #### Emissive Scaling
-Multiplier for particle luminance.
-This parameter is multiplied by the RGB of the Color All.
+Multiplier applied to particle brightness.
+This value is multiplied by the RGB of `Color All`.
 
 #### Fade-In
-Makes the particles fade in when they spawned.
+Makes particles fade in when they appear.
 
 #### Fade-Out
-Makes the particles fade out when they disappear.
+Makes particles fade out when they disappear.
 
 ### Material
-
-Sets the material used to draw the particles.
+Sets the material used to draw particles.
 
 #### Material Type
 
 | Type | Description |
 |------|-------|
-| Unlit | Not shaded by the light source |
+| Unlit | Displays particle colors directly, without lighting |
 | Lighting | Shaded by the light source |
 
 #### Color Texture
-Color textures are used to render particles.
+Specifies the color texture used for rendering particles.
 
 #### Normal Texture
-Can be set when the material type is `Lighting`.
-Normal texture used to draw particles.
+Available when the material type is `Lighting`.
+Specifies the normal texture used to render particles.

@@ -1,4 +1,4 @@
-﻿# Render - Sprite
+# Render - Sprite
 
 ## Overview
 
@@ -26,7 +26,7 @@ Specify how to draw the particle's sprite.
 |-----------------------|-----------------------------------|
 | Billboard             | The sprite always rotates to face the camera. |
 | Rotated Billboard     | The sprite rotates to face the camera while keeping the Z axis fixed. |
-| Directional Billboard | The sprite rotates to face the camera while the Y+ direction toward the direction of movement. |
+| Directional Billboard | The sprite faces the camera while rotating so that its Y+ direction points along the direction of movement. |
 | Fixed Y-axis          | The sprite rotates to face the camera while keeping the Y axis fixed. |
 | Fixed                 | The sprite will match the rotation setting of the particle. |
 
@@ -43,4 +43,3 @@ Specify the color of each vertex (corner) of the sprite.
 ### Vertex Coords
 
 Specify the coordinates of each vertex of the sprite.
-

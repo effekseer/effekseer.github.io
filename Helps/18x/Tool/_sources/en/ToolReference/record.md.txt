@@ -1,4 +1,4 @@
-﻿# Recorder
+# Recorder
 
 ## Overview
 

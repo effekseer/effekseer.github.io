@@ -14,6 +14,8 @@
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
         <script src="../../_static/documentation_options.js?v=c033477b"></script>
         <script src="../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
@@ -122,14 +124,15 @@
            <div itemprop="articleBody">
              
   <section id="gpu-particles">
-<h1>GPU Particles<a class="headerlink" href="#gpu-particles" title="Link to this heading">¶</a></h1>
+<h1>GPU Particles<a class="headerlink" href="#gpu-particles" title="Link to this heading"></a></h1>
 <section id="overview">
-<h2>Overview<a class="headerlink" href="#overview" title="Link to this heading">¶</a></h2>
-<p>Sets parameters related to GPU particles.
-The particles of the node set here will be emitters, and GPU particles will be spawned.</p>
-<p>While normal particles are processed by the CPU, GPU particles are processed by the GPU, so you can use a large number of particles (MaMore than 1 million particles).</p>
+<h2>Overview<a class="headerlink" href="#overview" title="Link to this heading"></a></h2>
+<p>Configures settings related to GPU particles.
+When enabled on a node, that node works as an emitter and spawns GPU particles.</p>
+<p>Unlike regular particles, which are simulated on the CPU, GPU particles are simulated on the GPU.
+This allows much larger particle counts to be handled efficiently.</p>
 <p><img alt="../../_images/gpu_particles.png" src="../../_images/gpu_particles.png" /></p>
-<p>GPU particles are only supported by modern graphics APIs.</p>
+<p>GPU particles are available only on modern graphics APIs.</p>
 <table border="1" class="docutils">
 <thead>
 <tr>
@@ -202,45 +205,45 @@ The particles of the node set here will be emitters, and GPU particles will be s
 </tbody>
 </table></section>
 <section id="parameters">
-<h2>Parameters<a class="headerlink" href="#parameters" title="Link to this heading">¶</a></h2>
-<p>GPU particles are calculated on the GPU, so the functionality is simplified.</p>
+<h2>Parameters<a class="headerlink" href="#parameters" title="Link to this heading"></a></h2>
+<p>Because GPU particles are simulated on the GPU, the available functionality is more limited than with regular particles.</p>
 <section id="enabled">
-<h3>Enabled<a class="headerlink" href="#enabled" title="Link to this heading">¶</a></h3>
+<h3>Enabled<a class="headerlink" href="#enabled" title="Link to this heading"></a></h3>
 <p>Enable GPU particles if checked.</p>
 </section>
 <section id="basic">
-<h3>Basic<a class="headerlink" href="#basic" title="Link to this heading">¶</a></h3>
-<p>Settings related to GPU particle spawn.
-When GPU particles are started, memory is allocated from the particle buffer for <em>Spawn Amount * Time to live</em>.</p>
+<h3>Basic<a class="headerlink" href="#basic" title="Link to this heading"></a></h3>
+<p>Basic settings for GPU particle spawning.
+When GPU particles start, memory is allocated from the particle buffer according to <code class="docutils literal notranslate"><span class="pre">Spawn</span> <span class="pre">Amount</span> <span class="pre">x</span> <span class="pre">Time</span> <span class="pre">to</span> <span class="pre">live</span></code>.</p>
 <section id="spawn-count">
-<h4>Spawn count<a class="headerlink" href="#spawn-count" title="Link to this heading">¶</a></h4>
-<p>The total number of particles to be spawned.The program will stop after this number of particles have been created.</p>
+<h4>Spawn count<a class="headerlink" href="#spawn-count" title="Link to this heading"></a></h4>
+<p>The total number of particles to spawn.
+Spawning stops when this count is reached.</p>
 <p>If <code class="docutils literal notranslate"><span class="pre">Infinity</span></code> is enabled, it will keep spawning particles indefinitely.
 It will stop spawning particles when the parent particle is destroyed or when an external request to stop is made.</p>
 </section>
 <section id="spawn-amount">
-<h4>Spawn Amount<a class="headerlink" href="#spawn-amount" title="Link to this heading">¶</a></h4>
-<p>The amount of particles spawned per frame.
-You can increase the density of particles by increasing this value.</p>
+<h4>Spawn Amount<a class="headerlink" href="#spawn-amount" title="Link to this heading"></a></h4>
+<p>The number of particles spawned per frame.
+Increase this value to make the particles denser.</p>
 </section>
 <section id="initial-delay">
-<h4>Initial Delay<a class="headerlink" href="#initial-delay" title="Link to this heading">¶</a></h4>
-<p>This is the time to start emitting particles.
-Particle emission can be delayed.</p>
+<h4>Initial Delay<a class="headerlink" href="#initial-delay" title="Link to this heading"></a></h4>
+<p>The delay before particle emission starts.</p>
 </section>
 <section id="time-to-live">
-<h4>Time to live<a class="headerlink" href="#time-to-live" title="Link to this heading">¶</a></h4>
-<p>Lifetime of particles.
-It affects how fast the various parameters change.</p>
+<h4>Time to live<a class="headerlink" href="#time-to-live" title="Link to this heading"></a></h4>
+<p>The lifetime of each particle.
+This also affects how quickly various parameters change.</p>
 </section>
 </section>
 <section id="emission">
-<h3>Emission<a class="headerlink" href="#emission" title="Link to this heading">¶</a></h3>
-<p>Sets parameters related to the shape of the particle emission source.
-The actual shape is affected by the transform (Position, Rotation and Scaling) of the parent particle.</p>
+<h3>Emission<a class="headerlink" href="#emission" title="Link to this heading"></a></h3>
+<p>Sets the shape of the particle emission source.
+The final shape is affected by the parent particle's transform (position, rotation, and scale).</p>
 <section id="emission-shape">
-<h4>Emission Shape<a class="headerlink" href="#emission-shape" title="Link to this heading">¶</a></h4>
-<p>Sets the type of shape of the particle emitter.
+<h4>Emission Shape<a class="headerlink" href="#emission-shape" title="Link to this heading"></a></h4>
+<p>Sets the type of emitter shape.
 Supports <code class="docutils literal notranslate"><span class="pre">Point</span></code>, <code class="docutils literal notranslate"><span class="pre">Line</span></code>, <code class="docutils literal notranslate"><span class="pre">Circle</span></code>, <code class="docutils literal notranslate"><span class="pre">Sphere</span></code>, and <code class="docutils literal notranslate"><span class="pre">Model</span></code>.</p>
 <table border="1" class="docutils">
 <thead>
@@ -263,102 +266,103 @@ Supports <code class="docutils literal notranslate"><span class="pre">Point</spa
 </tbody>
 </table></section>
 <section id="parameters-for-point-shape">
-<h4>Parameters for Point shape<a class="headerlink" href="#parameters-for-point-shape" title="Link to this heading">¶</a></h4>
-<p>There are no parameters for point shapes.</p>
+<h4>Parameters for Point shape<a class="headerlink" href="#parameters-for-point-shape" title="Link to this heading"></a></h4>
+<p>There are no additional parameters for point shapes.</p>
 </section>
 <section id="parameters-for-line-shape">
-<h4>Parameters for Line shape<a class="headerlink" href="#parameters-for-line-shape" title="Link to this heading">¶</a></h4>
-<p>In the case of a line shape, particles are spawned from a line segment connecting two points at the <code class="docutils literal notranslate"><span class="pre">Start</span> <span class="pre">Point</span></code> and <code class="docutils literal notranslate"><span class="pre">End</span> <span class="pre">Point</span></code>.
-If you increase the <code class="docutils literal notranslate"><span class="pre">Line</span> <span class="pre">Tickness</span></code> of the line, it becomes a cone-like shape.</p>
+<h4>Parameters for Line shape<a class="headerlink" href="#parameters-for-line-shape" title="Link to this heading"></a></h4>
+<p>Particles are spawned from the line segment between <code class="docutils literal notranslate"><span class="pre">Start</span> <span class="pre">Point</span></code> and <code class="docutils literal notranslate"><span class="pre">End</span> <span class="pre">Point</span></code>.
+Increasing <code class="docutils literal notranslate"><span class="pre">Line</span> <span class="pre">Thickness</span></code> gives the shape a cone-like spread.</p>
 </section>
 <section id="parameters-for-circle-shape">
-<h4>Parameters for Circle shape<a class="headerlink" href="#parameters-for-circle-shape" title="Link to this heading">¶</a></h4>
-<p>For a circular shape, particles are spawned from a circle with the <code class="docutils literal notranslate"><span class="pre">Circle</span> <span class="pre">Axis</span></code> as its central axis.
-The radius of the circle is determined by the <code class="docutils literal notranslate"><span class="pre">Inner</span> <span class="pre">Radius</span></code> and <code class="docutils literal notranslate"><span class="pre">Outer</span> <span class="pre">Radius</span></code> of the circle.</p>
+<h4>Parameters for Circle shape<a class="headerlink" href="#parameters-for-circle-shape" title="Link to this heading"></a></h4>
+<p>Particles are spawned from a circle whose central axis is <code class="docutils literal notranslate"><span class="pre">Circle</span> <span class="pre">Axis</span></code>.
+The radius is determined by <code class="docutils literal notranslate"><span class="pre">Inner</span> <span class="pre">Radius</span></code> and <code class="docutils literal notranslate"><span class="pre">Outer</span> <span class="pre">Radius</span></code>.</p>
 </section>
 <section id="parameters-for-sphere-shapes">
-<h4>Parameters for Sphere shapes<a class="headerlink" href="#parameters-for-sphere-shapes" title="Link to this heading">¶</a></h4>
-<p>For spherical shapes, particles are spawned from the surface of a sphere determined by the <code class="docutils literal notranslate"><span class="pre">Sphere</span> <span class="pre">radius</span></code>.</p>
+<h4>Parameters for Sphere shapes<a class="headerlink" href="#parameters-for-sphere-shapes" title="Link to this heading"></a></h4>
+<p>Particles are spawned from the surface of a sphere defined by <code class="docutils literal notranslate"><span class="pre">Sphere</span> <span class="pre">Radius</span></code>.</p>
 </section>
 <section id="parameters-for-model-shape">
-<h4>parameters for Model shape<a class="headerlink" href="#parameters-for-model-shape" title="Link to this heading">¶</a></h4>
-<p>For model shapes, the <code class="docutils literal notranslate"><span class="pre">Mesh</span></code> to use will generate particles from the surface of the model's mesh.
-You can specify the <code class="docutils literal notranslate"><span class="pre">Size</span></code> separately.</p>
+<h4>parameters for Model shape<a class="headerlink" href="#parameters-for-model-shape" title="Link to this heading"></a></h4>
+<p>For model shapes, particles are spawned from the surface of the specified model mesh.
+You can also specify <code class="docutils literal notranslate"><span class="pre">Size</span></code> separately.</p>
 </section>
 </section>
 <section id="position">
-<h3>Position<a class="headerlink" href="#position" title="Link to this heading">¶</a></h3>
-<p>Set the parameters for the position and movement of the particles.
-The particle position is also affected by the <code class="docutils literal notranslate"><span class="pre">Force</span></code> based on the parameters set here.</p>
+<h3>Position<a class="headerlink" href="#position" title="Link to this heading"></a></h3>
+<p>Sets particle position and movement.
+Particle positions are also affected by <code class="docutils literal notranslate"><span class="pre">Force</span></code> in addition to the values set here.</p>
 <section id="direction">
-<h4>Direction<a class="headerlink" href="#direction" title="Link to this heading">¶</a></h4>
-<p>This is the direction vector for particle spawn.</p>
+<h4>Direction<a class="headerlink" href="#direction" title="Link to this heading"></a></h4>
+<p>The movement direction vector used when particles are spawned.</p>
 </section>
 <section id="spread">
-<h4>Spread<a class="headerlink" href="#spread" title="Link to this heading">¶</a></h4>
+<h4>Spread<a class="headerlink" href="#spread" title="Link to this heading"></a></h4>
 <p>The angle to randomly spread particles in the direction of movement when spawning particles.
 The range is from 0 to 180 degrees; 0 degrees has no randomness, 90 degrees diffuses in a hemispherical shape, and 180 degrees diffuses in all directions.</p>
 </section>
 <section id="initial-speed">
-<h4>Initial Speed<a class="headerlink" href="#initial-speed" title="Link to this heading">¶</a></h4>
+<h4>Initial Speed<a class="headerlink" href="#initial-speed" title="Link to this heading"></a></h4>
 <p>The speed at which particles are spawned.
-This parameter affects the initial velocity.
+This affects the initial velocity.
 A random range can be set.</p>
 </section>
 <section id="damping">
-<h4>Damping<a class="headerlink" href="#damping" title="Link to this heading">¶</a></h4>
-<p>Damping force during particle motion.Increasing this parameter will slow down the particles as they move.
+<h4>Damping<a class="headerlink" href="#damping" title="Link to this heading"></a></h4>
+<p>Damping applied during particle motion.
+Increasing this value makes particles slow down as they move.
 A random range can be set.</p>
 </section>
 </section>
 <section id="rotation">
-<h3>Rotation<a class="headerlink" href="#rotation" title="Link to this heading">¶</a></h3>
-<p>Sets parameters for particle tilt and rotation.
-The appearance depends on the billboard settings of the drawing shape.
-Fixed affects the <code class="docutils literal notranslate"><span class="pre">XYZ</span></code> parameters, while Z-axis rotation billboards affect the <code class="docutils literal notranslate"><span class="pre">Z</span></code> parameters.</p>
+<h3>Rotation<a class="headerlink" href="#rotation" title="Link to this heading"></a></h3>
+<p>Sets particle orientation and rotation.
+The visual result depends on the billboard settings of the drawing shape.
+<code class="docutils literal notranslate"><span class="pre">Fixed</span></code> mainly uses the <code class="docutils literal notranslate"><span class="pre">XYZ</span></code> parameters, while Z-axis rotation billboards mainly use the <code class="docutils literal notranslate"><span class="pre">Z</span></code> parameters.</p>
 <section id="initial-angle">
-<h4>Initial Angle<a class="headerlink" href="#initial-angle" title="Link to this heading">¶</a></h4>
-<p>Angle (Euler) at particle spawn.
+<h4>Initial Angle<a class="headerlink" href="#initial-angle" title="Link to this heading"></a></h4>
+<p>The angle (Euler) at spawn time.
 A random range can be set.</p>
 </section>
 <section id="angular-velocity">
-<h4>Angular Velocity<a class="headerlink" href="#angular-velocity" title="Link to this heading">¶</a></h4>
-<p>The speed at which the particles rotation (Euler).
+<h4>Angular Velocity<a class="headerlink" href="#angular-velocity" title="Link to this heading"></a></h4>
+<p>The rotation speed (Euler) applied over time.
 A random range can be set.</p>
 </section>
 </section>
 <section id="scale">
-<h3>Scale<a class="headerlink" href="#scale" title="Link to this heading">¶</a></h3>
-<p>Sets the size of the particles and the parameters for scaling them up and down.
-The behavior changes depending on the mode you set.</p>
+<h3>Scale<a class="headerlink" href="#scale" title="Link to this heading"></a></h3>
+<p>Sets the particle size.
+Behavior changes depending on the selected mode.</p>
 <ul class="simple">
-<li><p>In <code class="docutils literal notranslate"><span class="pre">Fixed</span></code> mode, the particles are fixed at the zoom factor you set.</p></li>
-<li><p>In <code class="docutils literal notranslate"><span class="pre">Easing</span></code> mode, the scale changes from the start point to the end point.</p></li>
+<li><p>In <code class="docutils literal notranslate"><span class="pre">Fixed</span></code> mode, the scale stays at the specified value.</p></li>
+<li><p>In <code class="docutils literal notranslate"><span class="pre">Easing</span></code> mode, the scale changes smoothly from the start value to the end value over the particle lifetime.</p></li>
 </ul>
 <section id="single-scale">
-<h4>Single Scale<a class="headerlink" href="#single-scale" title="Link to this heading">¶</a></h4>
+<h4>Single Scale<a class="headerlink" href="#single-scale" title="Link to this heading"></a></h4>
 <p>Fixed scale, independent of the axis.
 A random range can be set.</p>
 </section>
 <section id="xyz-scale">
-<h4>XYZ Scale<a class="headerlink" href="#xyz-scale" title="Link to this heading">¶</a></h4>
+<h4>XYZ Scale<a class="headerlink" href="#xyz-scale" title="Link to this heading"></a></h4>
 <p>Fixed scale for each of the XYZ axes.
 A random range can be set.</p>
 </section>
 <section id="start-and-end-single">
-<h4>Start and End (Single)<a class="headerlink" href="#start-and-end-single" title="Link to this heading">¶</a></h4>
+<h4>Start and End (Single)<a class="headerlink" href="#start-and-end-single" title="Link to this heading"></a></h4>
 <p>The start and end scale for axis-independent easing.
 A random range can be set.</p>
 </section>
 <section id="start-and-end-xyz">
-<h4>Start and End (XYZ)<a class="headerlink" href="#start-and-end-xyz" title="Link to this heading">¶</a></h4>
+<h4>Start and End (XYZ)<a class="headerlink" href="#start-and-end-xyz" title="Link to this heading"></a></h4>
 <p>Scale of the start and end points of easing applied to each of the XYZ axes.
 A random range can be set.</p>
 </section>
 </section>
 <section id="force">
-<h3>Force<a class="headerlink" href="#force" title="Link to this heading">¶</a></h3>
-<p>This parameter specifies the effect of externally exerting a force on the particles.</p>
+<h3>Force<a class="headerlink" href="#force" title="Link to this heading"></a></h3>
+<p>Configures forces applied externally to particles.</p>
 <table border="1" class="docutils">
 <thead>
 <tr>
@@ -375,41 +379,42 @@ A random range can be set.</p>
 </tr>
 </tbody>
 </table><section id="gravity">
-<h4>Gravity<a class="headerlink" href="#gravity" title="Link to this heading">¶</a></h4>
-<p>Applies acceleration in the specified direction.It can be applied to the top or right, not necessarily the bottom.This direction is not affected by the attitude of the parent particle.</p>
+<h4>Gravity<a class="headerlink" href="#gravity" title="Link to this heading"></a></h4>
+<p>Applies acceleration in the specified direction.
+It does not have to point downward, and it is not affected by the parent particle's orientation.</p>
 </section>
 <section id="vortex">
-<h4>Vortex<a class="headerlink" href="#vortex" title="Link to this heading">¶</a></h4>
-<p>Applies a force that rotates around a specified <code class="docutils literal notranslate"><span class="pre">Center</span> <span class="pre">Point</span></code> and <code class="docutils literal notranslate"><span class="pre">Axis</span></code>.
-You can also adjust the force given to the particle from the tornado by changing the <code class="docutils literal notranslate"><span class="pre">Rotational</span> <span class="pre">Force</span></code> and <code class="docutils literal notranslate"><span class="pre">Attraction</span> <span class="pre">Force</span></code>.</p>
+<h4>Vortex<a class="headerlink" href="#vortex" title="Link to this heading"></a></h4>
+<p>Applies a rotating force around the specified <code class="docutils literal notranslate"><span class="pre">Center</span> <span class="pre">Point</span></code> and <code class="docutils literal notranslate"><span class="pre">Axis</span></code>.
+You can adjust the strength of this motion using <code class="docutils literal notranslate"><span class="pre">Rotational</span> <span class="pre">Force</span></code> and <code class="docutils literal notranslate"><span class="pre">Attraction</span> <span class="pre">Force</span></code>.</p>
 </section>
 <section id="turbulence">
-<h4>Turbulence<a class="headerlink" href="#turbulence" title="Link to this heading">¶</a></h4>
-<p>Vector fields spawned by the <code class="docutils literal notranslate"><span class="pre">Random</span> <span class="pre">Seed</span></code>, <code class="docutils literal notranslate"><span class="pre">Field</span> <span class="pre">Scale</span></code> and <code class="docutils literal notranslate"><span class="pre">Complexity</span></code> allow particles to make noisy motions.
-You can also adjust the force exerted on the particles from turbulence by changing the <code class="docutils literal notranslate"><span class="pre">Power</span></code>.</p>
+<h4>Turbulence<a class="headerlink" href="#turbulence" title="Link to this heading"></a></h4>
+<p>Applies noisy motion using a vector field generated from <code class="docutils literal notranslate"><span class="pre">Random</span> <span class="pre">Seed</span></code>, <code class="docutils literal notranslate"><span class="pre">Field</span> <span class="pre">Scale</span></code>, and <code class="docutils literal notranslate"><span class="pre">Complexity</span></code>.
+You can adjust the strength of the turbulence using <code class="docutils literal notranslate"><span class="pre">Power</span></code>.</p>
 </section>
 </section>
 <section id="rendering">
-<h3>Rendering<a class="headerlink" href="#rendering" title="Link to this heading">¶</a></h3>
+<h3>Rendering<a class="headerlink" href="#rendering" title="Link to this heading"></a></h3>
 <p>General settings for rendering particles.</p>
 <section id="blend">
-<h4>Blend<a class="headerlink" href="#blend" title="Link to this heading">¶</a></h4>
+<h4>Blend<a class="headerlink" href="#blend" title="Link to this heading"></a></h4>
 <p>Blending settings when drawing.</p>
 </section>
 <section id="depth-write">
-<h4>Depth Write<a class="headerlink" href="#depth-write" title="Link to this heading">¶</a></h4>
+<h4>Depth Write<a class="headerlink" href="#depth-write" title="Link to this heading"></a></h4>
 <p>Turn ON to write depth.</p>
 </section>
 <section id="depth-test">
-<h4>Depth Test<a class="headerlink" href="#depth-test" title="Link to this heading">¶</a></h4>
+<h4>Depth Test<a class="headerlink" href="#depth-test" title="Link to this heading"></a></h4>
 <p>Turn ON to perform depth test.</p>
 </section>
 </section>
 <section id="shape">
-<h3>Shape<a class="headerlink" href="#shape" title="Link to this heading">¶</a></h3>
+<h3>Shape<a class="headerlink" href="#shape" title="Link to this heading"></a></h3>
 <p>Sets the shape of particles when they are drawn.</p>
 <section id="id1">
-<h4>Shape<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h4>
+<h4>Shape<a class="headerlink" href="#id1" title="Link to this heading"></a></h4>
 <p>Select a shape from the following three types.</p>
 <table border="1" class="docutils">
 <thead>
@@ -434,7 +439,7 @@ You can also adjust the force exerted on the particles from turbulence by changi
 </tbody>
 </table></section>
 <section id="billboard">
-<h4>Billboard<a class="headerlink" href="#billboard" title="Link to this heading">¶</a></h4>
+<h4>Billboard<a class="headerlink" href="#billboard" title="Link to this heading"></a></h4>
 <p>Specify how the sprite is placed in relation to the particle.</p>
 <table border="1" class="docutils">
 <thead>
@@ -450,7 +455,7 @@ You can also adjust the force exerted on the particles from turbulence by changi
 </tr>
 <tr>
 <td>Directional Billboard</td>
-<td>Sprite rotates along Y+ direction to the moving direction while facing the viewpoint side.</td>
+<td>Sprite faces the camera while rotating so that its Y+ direction points along the direction of movement.</td>
 </tr>
 <tr>
 <td>Fixed Y-Axis</td>
@@ -463,30 +468,30 @@ You can also adjust the force exerted on the particles from turbulence by changi
 </tbody>
 </table></section>
 <section id="model">
-<h4>Model<a class="headerlink" href="#model" title="Link to this heading">¶</a></h4>
-<p>Specifies the user model to be drawn.</p>
+<h4>Model<a class="headerlink" href="#model" title="Link to this heading"></a></h4>
+<p>Specifies the user model to draw.</p>
 </section>
 <section id="trail-length">
-<h4>Trail Length<a class="headerlink" href="#trail-length" title="Link to this heading">¶</a></h4>
+<h4>Trail Length<a class="headerlink" href="#trail-length" title="Link to this heading"></a></h4>
 <p>Specifies the length of the trajectory.
-Increasing this parameter will increase the length of the trajectory and the memory size allocated from the trajectory buffer.</p>
+Increasing this value increases the trajectory length and also the memory allocated from the trail buffer.</p>
 </section>
 <section id="shape-size">
-<h4>Shape Size<a class="headerlink" href="#shape-size" title="Link to this heading">¶</a></h4>
-<p>Specifies the size of the particle's drawn shape.
-This is multiplied by the Scale factor parameter.
-If the shape is a locus, it will affect the thickness.</p>
+<h4>Shape Size<a class="headerlink" href="#shape-size" title="Link to this heading"></a></h4>
+<p>Specifies the base size of the rendered shape.
+This is multiplied by the Scale parameter.
+If the shape is a trail, it affects the thickness.</p>
 </section>
 </section>
 <section id="color">
-<h3>Color<a class="headerlink" href="#color" title="Link to this heading">¶</a></h3>
+<h3>Color<a class="headerlink" href="#color" title="Link to this heading"></a></h3>
 <p>Sets parameters for particle color.</p>
 <section id="color-inheritance">
-<h4>Color inheritance<a class="headerlink" href="#color-inheritance" title="Link to this heading">¶</a></h4>
-<p>Color Inheritance allows you to influence the color of the parent particle.</p>
+<h4>Color inheritance<a class="headerlink" href="#color-inheritance" title="Link to this heading"></a></h4>
+<p>When enabled, the particle is affected by the color of its parent particle.</p>
 </section>
 <section id="color-all">
-<h4>Color All<a class="headerlink" href="#color-all" title="Link to this heading">¶</a></h4>
+<h4>Color All<a class="headerlink" href="#color-all" title="Link to this heading"></a></h4>
 <p>Sets the particle's color.</p>
 <table border="1" class="docutils">
 <thead>
@@ -519,24 +524,24 @@ If the shape is a locus, it will affect the thickness.</p>
 </tbody>
 </table></section>
 <section id="emissive-scaling">
-<h4>Emissive Scaling<a class="headerlink" href="#emissive-scaling" title="Link to this heading">¶</a></h4>
-<p>Multiplier for particle luminance.
-This parameter is multiplied by the RGB of the Color All.</p>
+<h4>Emissive Scaling<a class="headerlink" href="#emissive-scaling" title="Link to this heading"></a></h4>
+<p>Multiplier applied to particle brightness.
+This value is multiplied by the RGB of <code class="docutils literal notranslate"><span class="pre">Color</span> <span class="pre">All</span></code>.</p>
 </section>
 <section id="fade-in">
-<h4>Fade-In<a class="headerlink" href="#fade-in" title="Link to this heading">¶</a></h4>
-<p>Makes the particles fade in when they spawned.</p>
+<h4>Fade-In<a class="headerlink" href="#fade-in" title="Link to this heading"></a></h4>
+<p>Makes particles fade in when they appear.</p>
 </section>
 <section id="fade-out">
-<h4>Fade-Out<a class="headerlink" href="#fade-out" title="Link to this heading">¶</a></h4>
-<p>Makes the particles fade out when they disappear.</p>
+<h4>Fade-Out<a class="headerlink" href="#fade-out" title="Link to this heading"></a></h4>
+<p>Makes particles fade out when they disappear.</p>
 </section>
 </section>
 <section id="material">
-<h3>Material<a class="headerlink" href="#material" title="Link to this heading">¶</a></h3>
-<p>Sets the material used to draw the particles.</p>
+<h3>Material<a class="headerlink" href="#material" title="Link to this heading"></a></h3>
+<p>Sets the material used to draw particles.</p>
 <section id="material-type">
-<h4>Material Type<a class="headerlink" href="#material-type" title="Link to this heading">¶</a></h4>
+<h4>Material Type<a class="headerlink" href="#material-type" title="Link to this heading"></a></h4>
 <table border="1" class="docutils">
 <thead>
 <tr>
@@ -547,7 +552,7 @@ This parameter is multiplied by the RGB of the Color All.</p>
 <tbody>
 <tr>
 <td>Unlit</td>
-<td>Not shaded by the light source</td>
+<td>Displays particle colors directly, without lighting</td>
 </tr>
 <tr>
 <td>Lighting</td>
@@ -556,13 +561,13 @@ This parameter is multiplied by the RGB of the Color All.</p>
 </tbody>
 </table></section>
 <section id="color-texture">
-<h4>Color Texture<a class="headerlink" href="#color-texture" title="Link to this heading">¶</a></h4>
-<p>Color textures are used to render particles.</p>
+<h4>Color Texture<a class="headerlink" href="#color-texture" title="Link to this heading"></a></h4>
+<p>Specifies the color texture used for rendering particles.</p>
 </section>
 <section id="normal-texture">
-<h4>Normal Texture<a class="headerlink" href="#normal-texture" title="Link to this heading">¶</a></h4>
-<p>Can be set when the material type is <code class="docutils literal notranslate"><span class="pre">Lighting</span></code>.
-Normal texture used to draw particles.</p>
+<h4>Normal Texture<a class="headerlink" href="#normal-texture" title="Link to this heading"></a></h4>
+<p>Available when the material type is <code class="docutils literal notranslate"><span class="pre">Lighting</span></code>.
+Specifies the normal texture used to render particles.</p>
 </section>
 </section>
 </section>

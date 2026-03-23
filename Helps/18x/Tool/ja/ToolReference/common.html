@@ -14,6 +14,8 @@
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
         <script src="../../_static/documentation_options.js?v=c033477b"></script>
         <script src="../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
@@ -122,129 +124,129 @@
            <div itemprop="articleBody">
              
   <section id="id1">
-<h1>共通<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h1>
+<h1>共通<a class="headerlink" href="#id1" title="Link to this heading"></a></h1>
 <section id="id2">
-<h2>概要<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
+<h2>概要<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
 <p>ノードの名称、生成数等、他のパーティクルの設定に関係がなく、常に使用されるパラメーターを設定できます。</p>
 </section>
 <section id="id3">
-<h2>パラメーター<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
+<h2>パラメーター<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
 <div align="center">
 <img src="../../img/Reference/common_parameters_ja.png">
 <p>「共通」ウインドウ</p>
 </div><section id="id4">
-<h3>描画<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h3>
+<h3>描画<a class="headerlink" href="#id4" title="Link to this heading"></a></h3>
 <p>このノードから発生するパーティクルを画面に描画するかどうか、を設定します。これをチェックすると、パーティクルが画面に描画されます。 ゲーム向けに出力する時、これをチェックしていないとパーティクルは描画されません。</p>
 </section>
 <section id="id5">
-<h3>名称<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h3>
+<h3>名称<a class="headerlink" href="#id5" title="Link to this heading"></a></h3>
 <p>ノードツリーに表示される名称を設定します。エフェクトの動作には影響しません。 ノードが多くなった場合にノードの整理のために設定します。</p>
 </section>
 <section id="id6">
-<h3>生成数<a class="headerlink" href="#id6" title="Link to this heading">¶</a></h3>
+<h3>生成数<a class="headerlink" href="#id6" title="Link to this heading"></a></h3>
 <p>このノードから生成されるパーティクルの数の最大個数を設定します。 後述される条件の設定で、パーティクルを生成できなくなるまで無限にパーティクルを生成する無限を選択することもできます。 ただし、Effekseerが組み込まれた他のアプリケーションからエフェクトを再生する場合、 関数を呼び出してユーザーがエフェクトを削除しない限り、消えなくなるのでご注意ください。</p>
 </section>
 <section id="id7">
-<h3>生成が有効<a class="headerlink" href="#id7" title="Link to this heading">¶</a></h3>
+<h3>生成が有効<a class="headerlink" href="#id7" title="Link to this heading"></a></h3>
 <p>再生開始時に生成が有効かどうかを指定します。</p>
 </section>
 <section id="id8">
-<h3>位置への影響<a class="headerlink" href="#id8" title="Link to this heading">¶</a></h3>
+<h3>位置への影響<a class="headerlink" href="#id8" title="Link to this heading"></a></h3>
 <p>このノードから生成されるパーティクルに対して親のパーティクルの位置が、どのように影響するかを設定します。 パラメーターの内容に関しては下記の情報を参照してください。</p>
 <p>位置のみ、生成時 - 親への追従　があります。</p>
 <section id="id9">
-<h4>生成時 - 親への追従<a class="headerlink" href="#id9" title="Link to this heading">¶</a></h4>
+<h4>生成時 - 親への追従<a class="headerlink" href="#id9" title="Link to this heading"></a></h4>
 <p>親のパーティクルを追いかけるように子のパーティクルが移動します。
 追跡する速度とステアリングで挙動を制御できます。</p>
 <div class="video_center"><video autoplay loop="true" muted="true" src="../../movies/Reference/BasicRenderSettings/FollowParent.mp4"/></div></section>
 </section>
 <section id="id10">
-<h3>回転への影響<a class="headerlink" href="#id10" title="Link to this heading">¶</a></h3>
+<h3>回転への影響<a class="headerlink" href="#id10" title="Link to this heading"></a></h3>
 <p>このノードから生成されるパーティクルに対して親のパーティクルの回転が、どのように影響するかを設定します。 パラメーターの内容に関しては下記の情報を参照してください。</p>
 </section>
 <section id="id11">
-<h3>拡大への影響<a class="headerlink" href="#id11" title="Link to this heading">¶</a></h3>
+<h3>拡大への影響<a class="headerlink" href="#id11" title="Link to this heading"></a></h3>
 <p>このノードから生成されるパーティクルに対して親のパーティクルの拡大が、どのように影響するかを設定します。 パラメーターの内容に関しては下記の情報を参照してください。</p>
 </section>
 <section id="id12">
-<h3>**への影響<a class="headerlink" href="#id12" title="Link to this heading">¶</a></h3>
+<h3>**への影響<a class="headerlink" href="#id12" title="Link to this heading"></a></h3>
 <section id="id13">
-<h4>常時<a class="headerlink" href="#id13" title="Link to this heading">¶</a></h4>
+<h4>常時<a class="headerlink" href="#id13" title="Link to this heading"></a></h4>
 <p>常に影響を受けます。親のパーティクルの値が変更された場合、即座に子のパーティクルも影響を受けます。 親のパーティクルが消滅した場合、消滅した時の値が消滅後も変更されず使用されます。</p>
 </section>
 <section id="id14">
-<h4>生成時のみ<a class="headerlink" href="#id14" title="Link to this heading">¶</a></h4>
+<h4>生成時のみ<a class="headerlink" href="#id14" title="Link to this heading"></a></h4>
 <p>子のパーティクルが生成された時の値を使用します。</p>
 </section>
 <section id="id15">
-<h4>なし<a class="headerlink" href="#id15" title="Link to this heading">¶</a></h4>
+<h4>なし<a class="headerlink" href="#id15" title="Link to this heading"></a></h4>
 <p>影響を受けません。親のパーティクルがどのような値になろうとも、子のノードのパラメーターのみでパーティクルの動作が決定します。</p>
 </section>
 </section>
 <section id="id16">
-<h3>寿命により削除<a class="headerlink" href="#id16" title="Link to this heading">¶</a></h3>
+<h3>寿命により削除<a class="headerlink" href="#id16" title="Link to this heading"></a></h3>
 <p>生存時間が過ぎた時、パーティクルを削除します。これをチェックしていない場合、生存時間を過ぎてもパーティクルは削除されません。</p>
 </section>
 <section id="id17">
-<h3>親削除時削除<a class="headerlink" href="#id17" title="Link to this heading">¶</a></h3>
+<h3>親削除時削除<a class="headerlink" href="#id17" title="Link to this heading"></a></h3>
 <p>親のパーティクルが削除された時に、子のパーティクルも削除します。</p>
 </section>
 <section id="id18">
-<h3>子が全て消滅時削除<a class="headerlink" href="#id18" title="Link to this heading">¶</a></h3>
+<h3>子が全て消滅時削除<a class="headerlink" href="#id18" title="Link to this heading"></a></h3>
 <p>パーティクルの子のパーティクルが存在しておらず、また、これから先も子のパーティクルを生成する見込みがない場合、パーティクルを削除します。</p>
 </section>
 <section id="id19">
-<h3>生存時間<a class="headerlink" href="#id19" title="Link to this heading">¶</a></h3>
+<h3>生存時間<a class="headerlink" href="#id19" title="Link to this heading"></a></h3>
 <p>パーティクルが存在するフレーム数を設定します。寿命により削除にチェックが入っていない場合、このパラメーターはパーティクルの挙動に影響を与えません。</p>
 </section>
 <section id="id20">
-<h3>生成モード<a class="headerlink" href="#id20" title="Link to this heading">¶</a></h3>
+<h3>生成モード<a class="headerlink" href="#id20" title="Link to this heading"></a></h3>
 <p>生成方法を<code class="docutils literal notranslate"><span class="pre">連続</span></code>または<code class="docutils literal notranslate"><span class="pre">トリガー</span></code>から選択します。
-<code class="docutils literal notranslate"><span class="pre">連続</span></code>の場合は生成時間を使用し、<code class="docutils literal notranslate"><span class="pre">トリガー</span></code>の場合は生成トリガーと生成数を使用します。</p>
+<code class="docutils literal notranslate"><span class="pre">連続</span></code>では一定の周期で継続的に生成し、<code class="docutils literal notranslate"><span class="pre">トリガー</span></code>では指定したトリガーが発火したときだけ生成します。</p>
 </section>
 <section id="id21">
-<h3>生成時間<a class="headerlink" href="#id21" title="Link to this heading">¶</a></h3>
-<p>パーティクルを生成する周期を設定します。パーティクルが生成されてから、次のパーティクルを生成するまでに指定されたフレーム数を要するようになります。 この生成時間には1未満を指定することができ、1フレームに複数のパーティクルを生成することができます。
+<h3>生成時間<a class="headerlink" href="#id21" title="Link to this heading"></a></h3>
+<p>パーティクルを生成する周期を設定します。1つ生成されてから次を生成するまでに、指定したフレーム数だけ待機します。この値には1未満も指定できるため、1フレーム中に複数のパーティクルを生成することもできます。
 生成モードが<code class="docutils literal notranslate"><span class="pre">連続</span></code>の場合に使用されます。</p>
 </section>
 <section id="id22">
-<h3>生成開始時間<a class="headerlink" href="#id22" title="Link to this heading">¶</a></h3>
-<p>親のパーティクルが生成されてから子のパーティクルが初めて生成されるまでの時間を指定します。</p>
-<p>後述の&quot;生成開始トリガー&quot;が指定されている場合、トリガーが送信されてからパーティクルが初めて生成されるまでの時間になります。</p>
-<p>生成開始時間にはマイナスの数値も指定できます。 マイナスの時間に生成される予定のパーティクルは、実際には0フレーム目に生成されます。</p>
-<p>下の図に生成時間、生成開始時間と生成される時間の関係性を示します。(1)は生成時間、(2)は生成開始時間、(3)は時間(フレーム単位)です。 生成開始時間の値の分だけ、開始時間がずれます。 ずれた開始時間から生成時間の値の分、時間が経過するとパーティクルが生成されます。 ただし、マイナスの時間に生成されたパーティクルは全て0フレーム目に生成されます。</p>
+<h3>生成開始時間<a class="headerlink" href="#id22" title="Link to this heading"></a></h3>
+<p>親パーティクルが生成されてから、このノードが最初のパーティクルを生成するまでの待ち時間を指定します。</p>
+<p>後述の<code class="docutils literal notranslate"><span class="pre">生成開始トリガー</span></code>を指定している場合は、トリガーが送信されてから最初のパーティクルが生成されるまでの時間になります。</p>
+<p>生成開始時間にはマイナスの値も指定できます。マイナスの時間に生成される予定だったパーティクルは、実際には0フレーム目に生成されます。</p>
+<p>下の図は、生成時間、生成開始時間、実際に生成されるタイミングの関係を示したものです。(1)は生成時間、(2)は生成開始時間、(3)は時間（フレーム単位）です。生成開始時間の分だけ開始位置がずれ、そこから生成時間ごとにパーティクルが生成されます。ただし、マイナスの時間に相当するパーティクルはすべて0フレーム目にまとめて生成されます。</p>
 <p><img alt="../../_images/common_generatedTime.png" src="../../_images/common_generatedTime.png" /></p>
 </section>
 <section id="id23">
-<h3>生成開始トリガー<a class="headerlink" href="#id23" title="Link to this heading">¶</a></h3>
+<h3>生成開始トリガー<a class="headerlink" href="#id23" title="Link to this heading"></a></h3>
 <p>パーティクル生成を開始するためのトリガー番号を指定します。</p>
-<p>トリガー番号が指定されている場合、トリガーを送信するまでパーティクルは生成されません。</p>
-<p>デフォルト&quot;無し&quot;が指定されている場合は、トリガーを送信しなくてもパーティクルの生成が開始されます。</p>
+<p>トリガー番号を指定した場合、そのトリガーを送信するまでパーティクルは生成されません。</p>
+<p>デフォルトの<code class="docutils literal notranslate"><span class="pre">無し</span></code>では、トリガーを送信しなくても生成が開始されます。</p>
 <p>参照: <a class="reference internal" href="../ToolTutorial/15.html"><span class="doc">15.トリガーを送信してエフェクトを変化させよう</span></a></p>
 </section>
 <section id="id24">
-<h3>生成停止トリガー<a class="headerlink" href="#id24" title="Link to this heading">¶</a></h3>
+<h3>生成停止トリガー<a class="headerlink" href="#id24" title="Link to this heading"></a></h3>
 <p>パーティクル生成を停止するためのトリガー番号を指定します。</p>
-<p>トリガー番号が指定されている場合、トリガーを送信するとパーティクル生成を停止します。</p>
-<p>デフォルト&quot;無し&quot;が指定されている場合は、トリガーによるパーティクル生成停止は行われません。</p>
+<p>トリガー番号を指定した場合、そのトリガーを送信した時点でパーティクル生成を停止します。</p>
+<p>デフォルトの<code class="docutils literal notranslate"><span class="pre">無し</span></code>では、トリガーによる生成停止は行われません。</p>
 <p>参照: <a class="reference internal" href="../ToolTutorial/15.html"><span class="doc">15.トリガーを送信してエフェクトを変化させよう</span></a></p>
 </section>
 <section id="id25">
-<h3>生成トリガー<a class="headerlink" href="#id25" title="Link to this heading">¶</a></h3>
-<p>生成モードが<code class="docutils literal notranslate"><span class="pre">トリガー</span></code>の場合に、生成を行うためのトリガー番号を指定します。</p>
+<h3>生成トリガー<a class="headerlink" href="#id25" title="Link to this heading"></a></h3>
+<p>生成モードが<code class="docutils literal notranslate"><span class="pre">トリガー</span></code>の場合に、1回の生成を発生させるトリガー番号を指定します。</p>
 </section>
 <section id="id26">
-<h3>トリガーあたり生成数<a class="headerlink" href="#id26" title="Link to this heading">¶</a></h3>
-<p>生成モードが<code class="docutils literal notranslate"><span class="pre">トリガー</span></code>の場合に、トリガーが発火するたびに生成する数を指定します。</p>
+<h3>トリガーあたり生成数<a class="headerlink" href="#id26" title="Link to this heading"></a></h3>
+<p>生成モードが<code class="docutils literal notranslate"><span class="pre">トリガー</span></code>の場合に、1回のトリガーで生成するパーティクル数を指定します。</p>
 </section>
 <section id="id27">
-<h3>トリガーで削除<a class="headerlink" href="#id27" title="Link to this heading">¶</a></h3>
+<h3>トリガーで削除<a class="headerlink" href="#id27" title="Link to this heading"></a></h3>
 <p>パーティクルを削除するためのトリガー番号を指定します。</p>
-<p>トリガー番号が指定されている場合、トリガーを送信するとその瞬間に存在するパーティクルを削除します。</p>
-<p>デフォルト&quot;無し&quot;が指定されている場合は、トリガーによるパーティクル削除は行われません。</p>
+<p>トリガー番号を指定した場合、そのトリガーを送信すると、その時点で存在しているパーティクルを削除します。</p>
+<p>デフォルトの<code class="docutils literal notranslate"><span class="pre">無し</span></code>では、トリガーによるパーティクル削除は行われません。</p>
 <p>また、<code class="docutils literal notranslate"><span class="pre">描画共通パネル</span></code>の<code class="docutils literal notranslate"><span class="pre">フェードアウト</span></code>を<code class="docutils literal notranslate"><span class="pre">削除後にフェードアウト</span></code>に設定すると、トリガー送信後にフェードアウトが行われます。</p>
 <p>参照: <a class="reference internal" href="../ToolTutorial/15.html"><span class="doc">15.トリガーを送信してエフェクトを変化させよう</span></a></p>
-<p>トリガー種別は<code class="docutils literal notranslate"><span class="pre">トリガー0-3</span></code>に加え、<code class="docutils literal notranslate"><span class="pre">親消滅時</span></code>や<code class="docutils literal notranslate"><span class="pre">親衝突時</span></code>を選択できます。</p>
+<p>利用できるトリガー種別は、<code class="docutils literal notranslate"><span class="pre">トリガー0-3</span></code>に加えて<code class="docutils literal notranslate"><span class="pre">親消滅時</span></code>と<code class="docutils literal notranslate"><span class="pre">親衝突時</span></code>です。</p>
 </section>
 </section>
 </section>

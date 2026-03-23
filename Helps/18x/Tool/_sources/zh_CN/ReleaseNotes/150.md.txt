@@ -1,4 +1,4 @@
-﻿# 1.50 New Features
+# 1.50 New Features
 
 ## Material
 

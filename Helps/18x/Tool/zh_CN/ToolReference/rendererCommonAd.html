@@ -14,6 +14,8 @@
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
         <script src="../../_static/documentation_options.js?v=c033477b"></script>
         <script src="../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
@@ -121,15 +123,15 @@
            <div itemprop="articleBody">
              
   <section id="id1">
-<h1>高级渲染设置<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h1>
+<h1>高级渲染设置<a class="headerlink" href="#id1" title="Link to this heading"></a></h1>
 <section id="id2">
-<h2>概述<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
+<h2>概述<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
 <p>设置比基础渲染设置更加复杂的参数。</p>
 </section>
 <section id="id3">
-<h2>参数<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
+<h2>参数<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
 <section id="alpha">
-<h3>Alpha纹理<a class="headerlink" href="#alpha" title="Link to this heading">¶</a></h3>
+<h3>Alpha纹理<a class="headerlink" href="#alpha" title="Link to this heading"></a></h3>
 <p>将Alpha纹理的红色区域作为遮罩，显示颜色贴图（漫反射贴图）。
 例如，如果你将一张星形的图片设置为Alpha纹理，会显示颜色贴图的星形区域。
 这个贴图可以单独设置UV。
@@ -137,7 +139,7 @@
 <img alt="../../_images/alpha.png" class="align-center" src="../../_images/alpha.png" />
 </section>
 <section id="uv">
-<h3>UV扭曲纹理<a class="headerlink" href="#uv" title="Link to this heading">¶</a></h3>
+<h3>UV扭曲纹理<a class="headerlink" href="#uv" title="Link to this heading"></a></h3>
 <p>使用设置的贴图扭曲颜色贴图。
 如果扭曲贴图的颜色是(127,127,255)，则它不会产生效果，远离这个颜色时，扭曲将会增强。
 这个贴图可以单独设置UV。
@@ -145,7 +147,7 @@
 <img alt="../../_images/dist.png" class="align-center" src="../../_images/dist.png" />
 </section>
 <section id="id4">
-<h3>Alpha衰减<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h3>
+<h3>Alpha衰减<a class="headerlink" href="#id4" title="Link to this heading"></a></h3>
 <p>Alpha值低于指定值的部分将不会被绘制。
 可用于表现卡通风格化渲染效果。</p>
 <p><a class="reference internal" href="../../_images/alphacutoff_none.png"><img alt="pic_alphacutoff_none" src="../../_images/alphacutoff_none.png" style="width: 240.0px; height: 240.0px;" /></a> <a class="reference internal" href="../../_images/alphacutoff.png"><img alt="pic_alphacutoff" src="../../_images/alphacutoff.png" style="width: 240.0px; height: 240.0px;" /></a></p>
@@ -154,7 +156,7 @@
 <img alt="../../_images/alphacutoff_edge.png" class="align-center" src="../../_images/alphacutoff_edge.png" />
 </section>
 <section id="id5">
-<h3>衰减<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h3>
+<h3>衰减<a class="headerlink" href="#id5" title="Link to this heading"></a></h3>
 <p>设置模型的颜色沿着视线方向衰减。
 可实现模型的正面透明，边缘不透明。</p>
 <p><a class="reference internal" href="../../_images/falloff_none.png"><img alt="pic_falloff_none" src="../../_images/falloff_none.png" style="width: 240.0px; height: 240.0px;" /></a> <a class="reference internal" href="../../_images/falloff_add.png"><img alt="pic_falloff" src="../../_images/falloff_add.png" style="width: 240.0px; height: 240.0px;" /></a></p>
@@ -163,7 +165,7 @@
 <img alt="../../_images/falloff_mul.png" class="align-center" src="../../_images/falloff_mul.png" />
 </section>
 <section id="id6">
-<h3>软粒子<a class="headerlink" href="#id6" title="Link to this heading">¶</a></h3>
+<h3>软粒子<a class="headerlink" href="#id6" title="Link to this heading"></a></h3>
 <p>降低靠近背景区域的透明度。（这个透明度指Alpha值，Alpha值越低越透明）
 可以缓和背景和粒子之间不自然的边界。
 需要Effekseer的运行环境支持软粒子。</p>
@@ -172,7 +174,7 @@
 <p><a class="reference internal" href="../../_images/softparticle_far_none.png"><img alt="pic_softparticle_near_none" src="../../_images/softparticle_far_none.png" style="width: 240.0px; height: 240.0px;" /></a> <a class="reference internal" href="../../_images/softparticle_near.png"><img alt="pic_softparticle_near" src="../../_images/softparticle_near.png" style="width: 240.0px; height: 240.0px;" /></a></p>
 </section>
 <section id="id7">
-<h3>混合纹理<a class="headerlink" href="#id7" title="Link to this heading">¶</a></h3>
+<h3>混合纹理<a class="headerlink" href="#id7" title="Link to this heading"></a></h3>
 <p>将颜色贴图与指定的贴图混合。
 不同于混合两个粒子，贴图的混合结果用于粒子的贴图。</p>
 <img alt="../../_images/blend.png" class="align-center" src="../../_images/blend.png" />
@@ -182,14 +184,14 @@
 <img alt="../../_images/blend_mul.png" class="align-center" src="../../_images/blend_mul.png" />
 </section>
 <section id="id8">
-<h3>混合Alpha纹理<a class="headerlink" href="#id8" title="Link to this heading">¶</a></h3>
+<h3>混合Alpha纹理<a class="headerlink" href="#id8" title="Link to this heading"></a></h3>
 <p>用作混合贴图的一部分的Alpha贴图。
 行为与用于颜色贴图的混合贴图一致。
 唯一的区别是目标贴图。</p>
 <img alt="../../_images/blend_alpha.png" class="align-center" src="../../_images/blend_alpha.png" />
 </section>
 <section id="id9">
-<h3>混合UV扭曲纹理<a class="headerlink" href="#id9" title="Link to this heading">¶</a></h3>
+<h3>混合UV扭曲纹理<a class="headerlink" href="#id9" title="Link to this heading"></a></h3>
 <p>用于扭曲混合贴图的贴图。
 行为与用于颜色贴图的扭曲贴图一致。
 唯一的区别是目标贴图。</p>

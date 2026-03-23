@@ -1,4 +1,4 @@
-﻿# 01.Sample and Use！
+# 01.Sample and Use！
 
 <div class="main">
 
@@ -28,7 +28,9 @@ Effekseer Icon
 
 #### OS is too old.
 
-Effekseer can run on Windows 7 SP1 or later.
+Effekseer can run on Windows 10 or later.
+
+DirectX 11 is required.
 
 #### Verify D3DCompiler_47.dll is installed
 

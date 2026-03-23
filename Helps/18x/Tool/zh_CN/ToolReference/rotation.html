@@ -14,6 +14,8 @@
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
         <script src="../../_static/documentation_options.js?v=c033477b"></script>
         <script src="../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
@@ -121,39 +123,44 @@
            <div itemprop="articleBody">
              
   <section id="id1">
-<h1>旋转<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h1>
+<h1>旋转<a class="headerlink" href="#id1" title="Link to this heading"></a></h1>
 <section id="id2">
-<h2>概述<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
+<h2>概述<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
 <p>设置与节点的旋转相关的参数。</p>
 </section>
 <section id="parameters">
-<h2>Parameters<a class="headerlink" href="#parameters" title="Link to this heading">¶</a></h2>
+<h2>Parameters<a class="headerlink" href="#parameters" title="Link to this heading"></a></h2>
 <div align="center">
 <img src="../../img/Tutorial/04_rotation_en.png">
 <p>“旋转”窗口</p>
 </div><section id="id3">
-<h3>旋转<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h3>
+<h3>旋转<a class="headerlink" href="#id3" title="Link to this heading"></a></h3>
 <p>设置粒子的旋转角度。这将影响粒子相对于其父粒子的角度。如果没有父粒子，或者基础设置窗口中设置了不继承角度，它将表示绝对角度。</p>
 <section id="id4">
-<h4>固定角度<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h4>
+<h4>固定角度<a class="headerlink" href="#id4" title="Link to this heading"></a></h4>
 <p>设置粒子的角度。</p>
 <iframe src='../../Effects/viewer_zh_CN.html#References/Rotation/rotation.efkefc' class='effect'></iframe></section>
 <section id="id5">
-<h4>角度・速度・加速度<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h4>
+<h4>角度・速度・加速度<a class="headerlink" href="#id5" title="Link to this heading"></a></h4>
 <p>设置粒子的初始角度、角速度和角加速度。</p>
 <iframe src='../../Effects/viewer_zh_CN.html#References/Rotation/rotation_pva.efkefc' class='effect'></iframe></section>
 <section id="id6">
-<h4>缓动<a class="headerlink" href="#id6" title="Link to this heading">¶</a></h4>
+<h4>缓动<a class="headerlink" href="#id6" title="Link to this heading"></a></h4>
 <p>设置粒子的初始角度和粒子生命周期结束时的最终角度，以及之间的过渡。</p>
 <iframe src='../../Effects/viewer_zh_CN.html#References/Rotation/rotation_easing.efkefc' class='effect'></iframe></section>
 <section id="f">
-<h4>F曲线<a class="headerlink" href="#f" title="Link to this heading">¶</a></h4>
+<h4>F曲线<a class="headerlink" href="#f" title="Link to this heading"></a></h4>
 <p>使用F曲线设置粒子整个生命周期内旋转角度。</p>
 <iframe src='../../Effects/viewer_zh_CN.html#References/Rotation/rotation_f_curve.efkefc' class='effect'></iframe></section>
 <section id="id7">
-<h4>旋转至摄像机方向<a class="headerlink" href="#id7" title="Link to this heading">¶</a></h4>
+<h4>旋转至摄像机方向<a class="headerlink" href="#id7" title="Link to this heading"></a></h4>
 <p>旋转使Z轴指向摄像机。
 因为它使用的相机的位置，所以有多个相机时，它将无法正常工作。</p>
+</section>
+<section id="id8">
+<h4>朝向移动方向旋转<a class="headerlink" href="#id8" title="Link to this heading"></a></h4>
+<p>旋转粒子，使指定轴朝向粒子的移动方向。
+适合用于飞行物或具有明显流动方向的特效。</p>
 </section>
 </section>
 </section>

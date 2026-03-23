@@ -14,6 +14,8 @@
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
         <script src="../../_static/documentation_options.js?v=c033477b"></script>
         <script src="../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
@@ -109,30 +111,30 @@
            <div itemprop="articleBody">
              
   <section id="id1">
-<h1>プロファイラ<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h1>
+<h1>プロファイラ<a class="headerlink" href="#id1" title="Link to this heading"></a></h1>
 <section id="id2">
-<h2>概要<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
-<p>プロファイラはEffekseerで作成したエフェクトが動作する様子を監視するツールです。
-システム全体のCPU負荷とGPU負荷、エフェクト単位の再生本数とGPU負荷を可視化することができます。</p>
+<h2>概要<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
+<p>プロファイラは、Effekseerで再生しているエフェクトの負荷状況を確認するためのツールです。
+システム全体のCPU負荷とGPU負荷に加え、エフェクトごとの再生数やGPU負荷も可視化できます。</p>
 <p><img alt="Overview" src="../../_images/Profiler_Overview_Ja.png" /></p>
 </section>
 <section id="id3">
-<h2>操作方法<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
+<h2>操作方法<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
 <section id="editor">
-<h3>Editorタブ<a class="headerlink" href="#editor" title="Link to this heading">¶</a></h3>
-<p>Editor内で動作しているエフェクトのCPU負荷とGPU負荷が、折れ線グラフとしてリアルタイムに描画されます。</p>
+<h3>Editorタブ<a class="headerlink" href="#editor" title="Link to this heading"></a></h3>
+<p>Editor内で動作しているエフェクトのCPU負荷とGPU負荷を、折れ線グラフでリアルタイムに表示します。</p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">記録クリア</span></code>ボタンを押すと記録したデータをクリアします。</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">記録クリア</span></code>を押すと、記録したデータを消去します。</p></li>
 </ul>
 </section>
 <section id="target">
-<h3>Targetタブ<a class="headerlink" href="#target" title="Link to this heading">¶</a></h3>
+<h3>Targetタブ<a class="headerlink" href="#target" title="Link to this heading"></a></h3>
 <p><img alt="Target Profiler" src="../../_images/Profiler_Target_Ja.png" /></p>
-<p>ゲームやアプリ上で動作しているエフェクトのCPU負荷とGPU負荷、エフェクト単位の再生本数とGPU負荷が、折れ線グラフとしてリアルタイムに描画されます。</p>
+<p>ゲームやアプリケーション上で動作しているエフェクトのCPU負荷とGPU負荷、エフェクトごとの再生数とGPU負荷を、折れ線グラフでリアルタイムに表示します。</p>
 <p>使用するための手順は以下の通りです。</p>
 <ol class="simple">
-<li><p><a class="reference external" href="network.html">ネットワーク</a>パネルで設定を行い、ターゲットへ接続します。</p></li>
-<li><p>プロファイラパネルに戻り、状態が&quot;接続済&quot;になっていることを確認します。</p></li>
+<li><p><a class="reference internal" href="network.html"><span class="doc">ネットワーク</span></a>パネルで設定を行い、ターゲットへ接続します。</p></li>
+<li><p>プロファイラパネルに戻り、状態が<code class="docutils literal notranslate"><span class="pre">接続済</span></code>になっていることを確認します。</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">プロファイル開始</span></code>ボタンを押します。</p></li>
 </ol>
 </section>

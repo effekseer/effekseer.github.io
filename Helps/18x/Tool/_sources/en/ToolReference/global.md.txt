@@ -1,4 +1,4 @@
-﻿# Global Settings
+# Global Settings
 
 ## Overview
 

@@ -1,63 +1,76 @@
-## 1.80 New Features
+# 1.80 New Features
 
 ## Common
 
 ### Collisions
 
-Added the feature to make particles and surfaces collide.
-Added external collision settings, bounce/friction, lifetime reduction, and coordinate system options.
+Added collision settings for particles.
+You can combine ground or external collisions with bounce, friction, lifetime reduction, and coordinate space settings to control the resulting behavior.
 
 ### Track, Ribbon
 
-Added the feature to set UVs that repeat every specified length.
+Added settings for repeating UVs at a specified length on tracks and ribbons.
 
 ### Rotation
 
-Added the feature to rotate particles in the direction of movement.
+Particles can now rotate to align with their direction of movement.
 
 ### Triggers / Spawning
 
-Added trigger-based spawning (continuous or trigger mode).
-Added triggers for parent removed/parent collision, plus per-trigger spawn counts.
+Expanded spawning with two modes: `Continuous` and `Trigger`.
+Also supports parent-removed and parent-collision triggers, as well as spawn counts per trigger.
 
 ### External Models
 
-Added external models as emission sources.
-Model spawning/rendering can reference external model indices and local/world coordinates.
+External models can now be registered as emission sources.
+During both spawning and rendering, you can specify the external model index and coordinate system (local/world).
 
 ### Rendering
 
-Added directional billboard.
-Added UV horizontal flip probability, mirror wrap, and tile length / per-particle tiling.
+Expanded rendering settings with directional billboarding.
+Also supports UV horizontal flip probability, mirror wrap, tile length, and per-particle tiling.
 
 ### Models
 
-Updated the model converter and added support for gltf/glb/obj/geo/bgeo.
+Updated the model converter and supported formats so that `gltf / glb / obj / geo / bgeo` can be loaded directly.
 
 ### Materials
 
-Material editor: added SmoothStep, logic (Branch/Compare/AND/OR/NOT), IsFrontFace, ParticleTime, white/cellular noise, and RGB/HSV conversion nodes.
+Added the following nodes to the material editor.
+- Smooth Step
+- Branch
+- Compare
+- Logical AND / Logical OR / Logical NOT
+- `IsFrontFace`
+- ParticleTime
+- White Noise / Cellular Noise
+- RGB to HSV / HSV to RGB
 
 ### GPU Particles
 
-Added the feature to compute particles processing using GPU.
-This is currently a preview feature and may not be available in all targets.
+Added GPU-based particle simulation.
+This allows much larger particle counts to be handled efficiently.
+Note: This is currently a preview feature and may not be available in all environments.
 
 ### Profiler
 
-Added the function to measure and display CPU/GPU load.
-This is currently a preview feature and may not be available in all targets.
+Added a profiler for measuring and displaying CPU and GPU load.
+Note: This is currently a preview feature and may not be available in all environments.
 
 ## Tools
 
 ### Viewer
 
-Added an option to enable ground collisions in the viewer.
+Ground collision can now be enabled for the viewer ground surface.
 
 ## Unity
 
 - Updated EffekseerForUnity to the 1.8 series.
-- Added a menu to import .efk files with dependent resources.
-- Added a trigger API to EffekseerHandle.
-- URP/HDRP custom render passes now support layer masks.
-- Added URP RenderGraph (Unity 6) and WebGL 3.1.8/2023.2 support.
+- Added an import menu for `.efk` files together with their dependent resources.
+- Added trigger APIs to `EffekseerHandle` and `EffekseerEmitter`.
+- Added layer mask support in URP/HDRP custom render passes.
+- Added URP RenderGraph support for Unity 6.
+- The WebGL plugin is selected according to the Unity version:
+  - Unity 2021.2 or later: `2.0.19`
+  - Unity 2022.2 or later: `3.1.8`
+  - Unity 2023.2 or later: `3.1.38`

@@ -14,6 +14,8 @@
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
         <script src="../../_static/documentation_options.js?v=c033477b"></script>
         <script src="../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
@@ -110,20 +112,20 @@
            <div itemprop="articleBody">
              
   <section id="id1">
-<h1>05. 制作一个斩击命中特效！<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h1>
+<h1>05. 制作一个斩击命中特效！<a class="headerlink" href="#id1" title="Link to this heading"></a></h1>
 <section id="id2">
-<h2>概要<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
+<h2>概要<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
 <p>在这一章中，你将创建一个像真实游戏中使用的斩击命中特效。这个特效中间有一条较长的光效表示刀光，周围迸出较短的光效表示冲击力。在此过程中，你将学到复制和添加节点，以及缓动粒子。</p>
 <iframe src='../../Sample/viewer_zh_CN.html#05_02_Sample/effect.efk'></iframe></section>
 <section id="id3">
-<h2>准备<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
+<h2>准备<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
 <p>可以从下面的链接下载预制的特效素材。</p>
 <div align="center">
 <a href = "../../Sample/05_01_Sample.zip">下载</a>
 </div><p>这次制作的特效大约时长0.5秒，所以我们将<code class="docutils literal notranslate"><span class="pre">显示控制</span></code>窗口中的结束时间设置为30帧。</p>
 </section>
 <section id="id4">
-<h2>缓动<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h2>
+<h2>缓动<a class="headerlink" href="#id4" title="Link to this heading"></a></h2>
 <p>在这个例子中，有多个参数用到了缓动。</p>
 <p>缓动是一种设置初始值和结束值，自动完成中间的值的方法。</p>
 <p>如下图所示，目前，位置、旋转和缩放都是由速度（1）和加速度来设置的。然而，用这种方法的话，粒子的生命周期越长，这些数值就越大。</p>
@@ -147,7 +149,7 @@
 <p>插值方法</p>
 </div></section>
 <section id="id5">
-<h2>制作特效<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h2>
+<h2>制作特效<a class="headerlink" href="#id5" title="Link to this heading"></a></h2>
 <p>特效往往不止由一种粒子，而是几种外观完全不同的粒子组成。Effekseer中也可以存在多个节点。可以赋予每个节点完全不同的参数。命中特效也必须由几个节点组成。在这个例子中，我们将按顺序创建节点。</p>
 <p>特效的大致方向如下。</p>
 <ul class="simple">
@@ -155,7 +157,7 @@
 <li><p>颜色是紫色(255, 32, 255)~粉色(255, 128, 255)</p></li>
 </ul>
 <section id="id6">
-<h3>刀光节点<a class="headerlink" href="#id6" title="Link to this heading">¶</a></h3>
+<h3>刀光节点<a class="headerlink" href="#id6" title="Link to this heading"></a></h3>
 <p>创建一个代表刀光的节点，以45度的角度拉长。</p>
 <p>剑气应该在0.33秒（20帧）的时间内向45度方向拉长。我们想让粒子倾斜，所以设置为<code class="docutils literal notranslate"><span class="pre">Z轴旋转告示牌</span></code>。</p>
 <p>按如下方式改变数值。</p>
@@ -256,7 +258,7 @@
 <p>刀光节点</p>
 </div></section>
 <section id="id7">
-<h3>冲击节点<a class="headerlink" href="#id7" title="Link to this heading">¶</a></h3>
+<h3>冲击节点<a class="headerlink" href="#id7" title="Link to this heading"></a></h3>
 <p>当攻击击中时，除了刀光之外，还会产生冲击。它的创建方式与刀光相同。</p>
 <p>刀光节点和冲击节点有不同的参数，所以你需要添加节点。首先，选择“Root”。然后，右击Root，会出现一个菜单。从菜单中，选择添加节点。</p>
 <div align="center">
@@ -370,7 +372,7 @@
 <p>冲击节点</p>
 </div></section>
 <section id="id8">
-<h3>发光节点1<a class="headerlink" href="#id8" title="Link to this heading">¶</a></h3>
+<h3>发光节点1<a class="headerlink" href="#id8" title="Link to this heading"></a></h3>
 <p>如果击中的瞬间发出闪光，看起来会更好。以与刀光节点相同的方式设置这个节点。</p>
 <p>更改数值如下。</p>
 <table border="1" class="docutils">
@@ -444,7 +446,7 @@
 <p>发光节点1</p>
 </div></section>
 <section id="id9">
-<h3>发光节点2<a class="headerlink" href="#id9" title="Link to this heading">¶</a></h3>
+<h3>发光节点2<a class="headerlink" href="#id9" title="Link to this heading"></a></h3>
 <p>但现在的发光效果看起来很土，所以再添加一个发光节点。而这个发光节点与我们刚刚创建的发光节点几乎是一样的。在Effekseer中，你可以复制节点。</p>
 <p>选择发光节点，按右键选择复制节点。</p>
 <div align="center">
@@ -486,7 +488,7 @@
 </div></section>
 </section>
 <section id="id10">
-<h2>总结<a class="headerlink" href="#id10" title="Link to this heading">¶</a></h2>
+<h2>总结<a class="headerlink" href="#id10" title="Link to this heading"></a></h2>
 <p>在这一章中，我们已经制作了可以在游戏中实际使用的特效。在下一章中，我们将制作更复杂的特效。</p>
 </section>
 </section>

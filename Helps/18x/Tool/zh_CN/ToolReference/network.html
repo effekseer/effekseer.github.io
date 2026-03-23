@@ -14,6 +14,8 @@
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
         <script src="../../_static/documentation_options.js?v=c033477b"></script>
         <script src="../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
@@ -108,66 +110,66 @@
            <div itemprop="articleBody">
              
   <section id="id1">
-<h1>网络<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h1>
+<h1>网络<a class="headerlink" href="#id1" title="Link to this heading"></a></h1>
 <section id="id2">
-<h2>概述<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
+<h2>概述<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
 <p>设置与网络有关的参数。你可以通过网络在集成了Effekseer运行时的外部应用程序中编辑特效。Unity、虚幻引擎4和其他使用Effekseer官方提供的插件的程序都可作为编辑环境。对于其他环境，咨询向该环境中集成Effekseer运行时的人。</p>
 <p><img alt="../../_images/network.png" src="../../_images/network.png" /></p>
 </section>
 <section id="id3">
-<h2>如何使用<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
+<h2>如何使用<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
 <section id="id4">
-<h3>编辑特效的一侧（应用程序、游戏等）<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h3>
+<h3>编辑特效的一侧（应用程序、游戏等）<a class="headerlink" href="#id4" title="Link to this heading"></a></h3>
 <p>这取决于插件或者库。为了通过网络编辑特效，设置用于通信的端口。
 执行一个函数以启动服务器的通信，或者让函数自动执行。然后播放你要编辑的特效。</p>
 <p><img alt="../../_images/network_app.png" src="../../_images/network_app.png" /></p>
 </section>
 <section id="effekseer">
-<h3>Effekseer<a class="headerlink" href="#effekseer" title="Link to this heading">¶</a></h3>
+<h3>Effekseer<a class="headerlink" href="#effekseer" title="Link to this heading"></a></h3>
 <p>在Effekseer中，打开你想编辑的特效的原始文件。在网络面板上设置连接目标并连接。编辑特效并按下“发送数据”按钮。这样程序中的特效就被编辑了。</p>
 <p><img alt="../../_images/network_tool_en.png" src="../../_images/network_tool_en.png" /></p>
 </section>
 <section id="id5">
-<h3>限制<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h3>
+<h3>限制<a class="headerlink" href="#id5" title="Link to this heading"></a></h3>
 <p>由程序读取的efk文件的名字必须和编辑的文件的名字相同。例如，如果应用程序中播放“Laser.efk”，则工具中必须编辑“Laser.efkproj”。此外，编辑将不会影响程序中不存在的图像、模型和声音。</p>
 </section>
 <section id="id6">
-<h3>提示<a class="headerlink" href="#id6" title="Link to this heading">¶</a></h3>
+<h3>提示<a class="headerlink" href="#id6" title="Link to this heading"></a></h3>
 <p>当在同一台计算机上运行应用程序时，地址设置为127.0.0.1。</p>
 </section>
 </section>
 <section id="id7">
-<h2>参数<a class="headerlink" href="#id7" title="Link to this heading">¶</a></h2>
+<h2>参数<a class="headerlink" href="#id7" title="Link to this heading"></a></h2>
 <section id="id8">
-<h3>地址<a class="headerlink" href="#id8" title="Link to this heading">¶</a></h3>
+<h3>地址<a class="headerlink" href="#id8" title="Link to this heading"></a></h3>
 <p>输入运行应用程序的计算机/服务器的IP地址或DNS。</p>
 </section>
 <section id="id9">
-<h3>端口<a class="headerlink" href="#id9" title="Link to this heading">¶</a></h3>
+<h3>端口<a class="headerlink" href="#id9" title="Link to this heading"></a></h3>
 <p>输入运行应用程序的计算机/服务器的端口。</p>
 </section>
 <section id="id10">
-<h3>自动连接<a class="headerlink" href="#id10" title="Link to this heading">¶</a></h3>
+<h3>自动连接<a class="headerlink" href="#id10" title="Link to this heading"></a></h3>
 <p>如果尚未建立连接，将会每隔一段固定的时间间隔尝试连接到远程应用程序。</p>
 </section>
 <section id="id11">
-<h3>载入时发送数据<a class="headerlink" href="#id11" title="Link to this heading">¶</a></h3>
+<h3>载入时发送数据<a class="headerlink" href="#id11" title="Link to this heading"></a></h3>
 <p>当读取特效文件时，如果连接已建立，将特效数据发送给应用程序。</p>
 </section>
 <section id="id12">
-<h3>编辑时发送数据<a class="headerlink" href="#id12" title="Link to this heading">¶</a></h3>
+<h3>编辑时发送数据<a class="headerlink" href="#id12" title="Link to this heading"></a></h3>
 <p>当编辑特效文件时，如果连接已建立，将特效数据发送给应用程序。</p>
 </section>
 <section id="id13">
-<h3>保存时发送数据<a class="headerlink" href="#id13" title="Link to this heading">¶</a></h3>
+<h3>保存时发送数据<a class="headerlink" href="#id13" title="Link to this heading"></a></h3>
 <p>当保存特效文件时，如果连接已建立，将特效数据发送给应用程序。</p>
 </section>
 <section id="id14">
-<h3>发送数据<a class="headerlink" href="#id14" title="Link to this heading">¶</a></h3>
+<h3>发送数据<a class="headerlink" href="#id14" title="Link to this heading"></a></h3>
 <p>强制发送数据给应用程序。</p>
 </section>
 <section id="id15">
-<h3>连接<a class="headerlink" href="#id15" title="Link to this heading">¶</a></h3>
+<h3>连接<a class="headerlink" href="#id15" title="Link to this heading"></a></h3>
 <p>连接到设置远程应用程序。</p>
 </section>
 </section>

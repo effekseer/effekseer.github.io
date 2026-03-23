@@ -14,6 +14,8 @@
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
         <script src="../../_static/documentation_options.js?v=c033477b"></script>
         <script src="../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
@@ -98,9 +100,9 @@
            <div itemprop="articleBody">
              
   <section id="id1">
-<h1>03. 続・マテリアルでトゥーン風の炎を表現する。<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h1>
+<h1>03. 続・マテリアルでトゥーン風の炎を表現する。<a class="headerlink" href="#id1" title="Link to this heading"></a></h1>
 <section id="id2">
-<h2>概要<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
+<h2>概要<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
 <p>前章では、トゥーン風の炎を作成しました。
 しかし、パラメーターは全てマテリアルに含まれており使いまわせません。
 また、連続で再生されていて、途中で消えることがありません。
@@ -110,12 +112,12 @@
 <p>本章で作成するエフェクト</p>
 </div></section>
 <section id="id3">
-<h2>作成<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
+<h2>作成<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
 <p>本章では、前章で作成したエフェクトを元に変更します。
 わかりやすくするために、パーティクルの寿命を変更しています。</p>
 <p><a href="../../Effects/Tutorials/Mat_03_01.zip">ダウンロード</a></p>
 <section id="id4">
-<h3>パラメーター<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h3>
+<h3>パラメーター<a class="headerlink" href="#id4" title="Link to this heading"></a></h3>
 <p>Effekseerのマテリアルにはパラメーターというノードがあります。
 この、パラメーターというノードを使用するとEffekseerからマテリアルのパラメーターを変更できるようになります。</p>
 <p>まずは外部からエフェクトの色を編集できるようにするために、グラデーションの画像をパラメーターに置き換えます。</p>
@@ -146,7 +148,7 @@
 <p>これらを設定していくとマテリアルにパラメーターを埋め込むことなく、外部から設定できるようになります。</p>
 </section>
 <section id="id5">
-<h3>カスタムデータ<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h3>
+<h3>カスタムデータ<a class="headerlink" href="#id5" title="Link to this heading"></a></h3>
 <p>このままでは、パラメーターを外部にしただけであって、炎は連続的に流れたままです。
 カスタムデータを用いて、始まりと終わりを設定できるようにします。</p>
 <p>ここではカスタムデータ、というノードを指定します。
@@ -173,7 +175,7 @@
 </section>
 </section>
 <section id="id6">
-<h2>まとめ<a class="headerlink" href="#id6" title="Link to this heading">¶</a></h2>
+<h2>まとめ<a class="headerlink" href="#id6" title="Link to this heading"></a></h2>
 <p>今回は炎のバリエーションを作成しました。
 マテリアルをエフェクトごとに作成するのは大変なので使いまわせるように汎用的に作ることは重要です。</p>
 </section>

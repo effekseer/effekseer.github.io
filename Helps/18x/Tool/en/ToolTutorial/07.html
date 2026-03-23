@@ -14,6 +14,8 @@
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
         <script src="../../_static/documentation_options.js?v=c033477b"></script>
         <script src="../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
@@ -110,9 +112,9 @@
            <div itemprop="articleBody">
              
   <section id="let-s-move-complicated-with-parent-child-relationships">
-<h1>07. Let's move complicated with parent-child relationships!<a class="headerlink" href="#let-s-move-complicated-with-parent-child-relationships" title="Link to this heading">¶</a></h1>
+<h1>07. Let's move complicated with parent-child relationships!<a class="headerlink" href="#let-s-move-complicated-with-parent-child-relationships" title="Link to this heading"></a></h1>
 <div class="main"><section id="overview">
-<h2>Overview<a class="headerlink" href="#overview" title="Link to this heading">¶</a></h2>
+<h2>Overview<a class="headerlink" href="#overview" title="Link to this heading"></a></h2>
 <p>In this chapter, you will create complicated effects using the parent-child relationships of nodes.
 Somewhat, this chapter is difficult. Let's understand firmly.</p>
 <div align="center" class='col-md-6'>
@@ -123,7 +125,7 @@ Somewhat, this chapter is difficult. Let's understand firmly.</p>
 <p>Effect No.2 created in this chapter</p>
 </div></section>
 <section id="parent-child-relationships">
-<h2>Parent-child relationships<a class="headerlink" href="#parent-child-relationships" title="Link to this heading">¶</a></h2>
+<h2>Parent-child relationships<a class="headerlink" href="#parent-child-relationships" title="Link to this heading"></a></h2>
 <p>In Effekseer, nodes have parent-child relationships.
 With parent-child relationships, parent nodes have various influences on child nodes.</p>
 <p>For example, you suppose that Node A and Node B exists. Node A is the parent of Node B.
@@ -145,20 +147,20 @@ In the sample, the parent elongated particles move while generating a large amou
 <p><a href = "../../Sample/07_01_Sample.zip">Download</a></p>
 </div></section>
 <section id="tornado-effect">
-<h2>Tornado effect<a class="headerlink" href="#tornado-effect" title="Link to this heading">¶</a></h2>
+<h2>Tornado effect<a class="headerlink" href="#tornado-effect" title="Link to this heading"></a></h2>
 <p>Using the parent-child relationships, you create a tornado effect.</p>
 <p>Please open effect1.efkefc.</p>
 <p>This effect consists of parent particles that control rotation and child particles that draw images.
 You create in order of parent node and child node.</p>
 <section id="parent-node">
-<h3>Parent node<a class="headerlink" href="#parent-node" title="Link to this heading">¶</a></h3>
+<h3>Parent node<a class="headerlink" href="#parent-node" title="Link to this heading"></a></h3>
 <p>The parent node only rotates. Parameters have also been set.</p>
 <div align="center">
 <img src="../../img/Tutorial/07_effect1_rotate1.gif">
 <p>Rotation</p>
 </div></section>
 <section id="child-node">
-<h3>Child node<a class="headerlink" href="#child-node" title="Link to this heading">¶</a></h3>
+<h3>Child node<a class="headerlink" href="#child-node" title="Link to this heading"></a></h3>
 <p>You add a child node.
 You left click on the parent node to select it.
 Then right click and display the menu.
@@ -260,7 +262,7 @@ For a child node, specify the parameters so that the particles move upward.</p>
 </div></section>
 </section>
 <section id="meteor-effect">
-<h2>Meteor effect<a class="headerlink" href="#meteor-effect" title="Link to this heading">¶</a></h2>
+<h2>Meteor effect<a class="headerlink" href="#meteor-effect" title="Link to this heading"></a></h2>
 <p>Using the parent-child relationships, you create a meteor effect.</p>
 <p>Please open effect2.efkefc.</p>
 <p>In Effekseer, parent-child relationships can be cut off at the moment when child particles are generated.
@@ -268,11 +270,11 @@ Child particles are generated around the parent particle when the child particle
 After that, even if the parent particles move or rotate, it will not affect child particles.</p>
 <p>You will create a meteor effect using this function.</p>
 <section id="id1">
-<h3>Parent node<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h3>
+<h3>Parent node<a class="headerlink" href="#id1" title="Link to this heading"></a></h3>
 <p>The parent node only moves. Parameters have also been set.</p>
 </section>
 <section id="id2">
-<h3>Child node<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h3>
+<h3>Child node<a class="headerlink" href="#id2" title="Link to this heading"></a></h3>
 <p>You spread the particles around. Parameters have already been set.</p>
 <p>However, &quot;Inherit Position&quot;, &quot;Inherit Rotation&quot;, and &quot;Inherit Scale&quot; are &quot;Always&quot;.
 With &quot;Always&quot;, even after child particles are generated, child particles continue to be affected by parent particles.
@@ -291,7 +293,7 @@ Then you can see that even if the parent particles move, the child particles do 
 </div></section>
 </section>
 <section id="summary">
-<h2>Summary<a class="headerlink" href="#summary" title="Link to this heading">¶</a></h2>
+<h2>Summary<a class="headerlink" href="#summary" title="Link to this heading"></a></h2>
 <p>In this chapter, you created complex effects using parent-child relationships.
 In the next chapter, you change the spawn method and arrange the particles circularly or linearly.</p>
 </div></section>

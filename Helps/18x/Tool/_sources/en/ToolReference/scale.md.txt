@@ -1,4 +1,4 @@
-﻿# Scale
+# Scale
 
 ## Overview
 

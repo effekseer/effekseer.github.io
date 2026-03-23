@@ -1,4 +1,4 @@
-﻿# 1.7x Change Logs
+# 1.7x Change Logs
 
 ## 1.70f (Jul. 15, 2023)
 

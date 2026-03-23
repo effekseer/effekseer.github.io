@@ -14,6 +14,8 @@
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
         <script src="../../_static/documentation_options.js?v=c033477b"></script>
         <script src="../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
@@ -110,20 +112,30 @@
            <div itemprop="articleBody">
              
   <section id="material-node-noise">
-<h1>Material Node(Noise)<a class="headerlink" href="#material-node-noise" title="Link to this heading">¶</a></h1>
+<h1>Material Node(Noise)<a class="headerlink" href="#material-node-noise" title="Link to this heading"></a></h1>
 <section id="overview">
-<h2>Overview<a class="headerlink" href="#overview" title="Link to this heading">¶</a></h2>
+<h2>Overview<a class="headerlink" href="#overview" title="Link to this heading"></a></h2>
 </section>
 <section id="node-list">
-<h2>Node list<a class="headerlink" href="#node-list" title="Link to this heading">¶</a></h2>
+<h2>Node list<a class="headerlink" href="#node-list" title="Link to this heading"></a></h2>
 <section id="simple-noise">
-<h3>Simple Noise<a class="headerlink" href="#simple-noise" title="Link to this heading">¶</a></h3>
+<h3>Simple Noise<a class="headerlink" href="#simple-noise" title="Link to this heading"></a></h3>
 <p>Outputs noise.
 When a value is entered for UV, noise is output according to that value.
 Changing the Scale value changes the size of the noise.</p>
 <p>This is a very heavy processing node. Basically, this node should be used only
 when calculating the value of WorldOffset.</p>
 <img alt="../../_images/node_SimpleNoise.png" class="align-center" src="../../_images/node_SimpleNoise.png" />
+</section>
+<section id="white-noise">
+<h3>White Noise<a class="headerlink" href="#white-noise" title="Link to this heading"></a></h3>
+<p>Outputs random noise values.
+Useful for subtle jitter or random intensity variation.</p>
+</section>
+<section id="cellular-noise">
+<h3>Cellular Noise<a class="headerlink" href="#cellular-noise" title="Link to this heading"></a></h3>
+<p>Outputs noise with a cell-like pattern.
+Useful for organic patterns such as cracks, bubbles, or spots.</p>
 </section>
 </section>
 </section>

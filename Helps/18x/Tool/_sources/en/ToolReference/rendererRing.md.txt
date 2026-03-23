@@ -1,4 +1,4 @@
-﻿# Render - Ring
+# Render - Ring
 
 ## Overview
 
@@ -28,7 +28,7 @@ Specify how to draw the particle's ring.
 |-----------------------|-----------------------------------|
 | Billboard             | The ring always rotates to face the camera. |
 | Rotated Billboard     | The ring rotates to face the camera while keeping the Z axis fixed. |
-| Directional Billboard | The ring rotates to face the camera while the Y+ direction toward the direction of movement. |
+| Directional Billboard | The ring faces the camera while rotating so that its Y+ direction points along the direction of movement. |
 | Fixed Y-axis          | The ring rotates to face the camera while keeping the Y axis fixed. |
 | Fixed                 | The ring will match the rotation setting of the particle. |
 

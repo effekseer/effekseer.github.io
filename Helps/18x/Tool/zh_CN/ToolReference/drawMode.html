@@ -14,6 +14,8 @@
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
         <script src="../../_static/documentation_options.js?v=c033477b"></script>
         <script src="../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
@@ -108,25 +110,25 @@
            <div itemprop="articleBody">
              
   <section id="id1">
-<h1>渲染模式<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h1>
+<h1>渲染模式<a class="headerlink" href="#id1" title="Link to this heading"></a></h1>
 <p>在编辑器中，粒子可以以几种渲染模式显示，这对于调试所编辑的特效的不同方面很有用。</p>
 <section id="id2">
-<h2>普通<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
+<h2>普通<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
 <img alt="../../_images/DrawMode_Normal.png" class="align-center" src="../../_images/DrawMode_Normal.png" />
 <p>这是默认的渲染模式。粒子的显示方式与引擎的渲染方式相同。</p>
 </section>
 <section id="id3">
-<h2>线框<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
+<h2>线框<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
 <img alt="../../_images/DrawMode_Wireframe.png" class="align-center" src="../../_images/DrawMode_Wireframe.png" />
 <p>显示粒子的线框。</p>
 </section>
 <section id="id4">
-<h2>普通 + 线框<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h2>
+<h2>普通 + 线框<a class="headerlink" href="#id4" title="Link to this heading"></a></h2>
 <img alt="../../_images/DrawMode_WireframeNormal.png" class="align-center" src="../../_images/DrawMode_WireframeNormal.png" />
 <p>显示带有纹理的粒子和线框的叠加。</p>
 </section>
 <section id="id5">
-<h2>过度绘制<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h2>
+<h2>过度绘制<a class="headerlink" href="#id5" title="Link to this heading"></a></h2>
 <img alt="../../_images/DrawMode_Overdraw.png" class="align-center" src="../../_images/DrawMode_Overdraw.png" />
 <p>这种模式在优化时很有用。它渲染了粒子的透明“剪影”。这些透明的颜色互相叠加，使之易于定位多个粒子重叠的地方。</p>
 <p>过度绘制粒子通常是导致性能问题的主要原因。你会希望通过尽可能减少重叠粒子的数量来减少过度绘制。</p>

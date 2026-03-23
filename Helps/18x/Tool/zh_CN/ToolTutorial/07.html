@@ -14,6 +14,8 @@
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
         <script src="../../_static/documentation_options.js?v=c033477b"></script>
         <script src="../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
@@ -110,9 +112,9 @@
            <div itemprop="articleBody">
              
   <section id="id1">
-<h1>07. 使用父子关系实现复杂移动！<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h1>
+<h1>07. 使用父子关系实现复杂移动！<a class="headerlink" href="#id1" title="Link to this heading"></a></h1>
 <section id="id2">
-<h2>概要<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
+<h2>概要<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
 <p>在本章中，你将使用节点的父子关系创建复杂的特效。这一章多少有些难度。请确保你能很好地理解它。</p>
 <div align="center" class='col-md-6'>
 <iframe src='../../Sample/viewer_zh_CN.html#07_02_Sample/effect1.efk'></iframe>
@@ -123,7 +125,7 @@
 </div>
 &nbsp;</section>
 <section id="id3">
-<h2>父子关系<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
+<h2>父子关系<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
 <p>在Effekseer中，节点有父子关系。父子关系让父节点以某些方式影响子节点。</p>
 <p>例如，假设你有节点A和节点B。 节点A是节点B的父节点。在这个例子中，节点B产生的粒子会围绕节点A的粒子生成、移动、旋转和缩放。这很难用语言来理解，所以下面播放了一段视频。</p>
 <p>节点A的粒子为红色，节点B的粒子为绿色。你可以看到，粒子B围绕着粒子A旋转，而粒子A自身在移动和旋转。</p>
@@ -139,19 +141,19 @@
 <p><a href = "../../Sample/07_01_Sample.zip">下载</a></p>
 </div></section>
 <section id="id4">
-<h2>龙卷风特效<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h2>
+<h2>龙卷风特效<a class="headerlink" href="#id4" title="Link to this heading"></a></h2>
 <p>使用父子关系制作一个龙卷风特效。</p>
 <p>打开文件effect1.efkefc。</p>
 <p>这个特效由控制旋转的父粒子和绘制图像的子粒子组成。按顺序创建父节点和子节点。</p>
 <section id="id5">
-<h3>父节点<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h3>
+<h3>父节点<a class="headerlink" href="#id5" title="Link to this heading"></a></h3>
 <p>父节点只需要旋转。参数已经提前设置好了。</p>
 <div align="center">
 <img src="../../img/Tutorial/07_effect1_rotate1.gif">
 <p>旋转</p>
 </div></section>
 <section id="id6">
-<h3>子节点<a class="headerlink" href="#id6" title="Link to this heading">¶</a></h3>
+<h3>子节点<a class="headerlink" href="#id6" title="Link to this heading"></a></h3>
 <p>添加一个子节点。左键单击选中父节点。然后右键单击以显示菜单。从菜单中，选择添加节点。</p>
 <div align="center">
 <img src="../../img/Tutorial/07_addnode_en.png">
@@ -249,17 +251,17 @@
 </div></section>
 </section>
 <section id="id7">
-<h2>流星特效<a class="headerlink" href="#id7" title="Link to this heading">¶</a></h2>
+<h2>流星特效<a class="headerlink" href="#id7" title="Link to this heading"></a></h2>
 <p>使用父子关系制作一个流星特效。</p>
 <p>打开effect2.efkefc。</p>
 <p>在Effekseer中，父子关系可以在子粒子生成的瞬间切断。这意味着虽然子粒子是围绕着父粒子创建的，但父粒子之后的移动或旋转不会影响到子粒子。</p>
 <p>你可以用这个功能制作流星特效。</p>
 <section id="id8">
-<h3>父节点<a class="headerlink" href="#id8" title="Link to this heading">¶</a></h3>
+<h3>父节点<a class="headerlink" href="#id8" title="Link to this heading"></a></h3>
 <p>父节点只需要移动。参数已经提前设置好了。</p>
 </section>
 <section id="id9">
-<h3>子节点<a class="headerlink" href="#id9" title="Link to this heading">¶</a></h3>
+<h3>子节点<a class="headerlink" href="#id9" title="Link to this heading"></a></h3>
 <p>周围散射的粒子的参数已经提前设置好了。</p>
 <p>但是，参数“继承位置”、“继承旋转”和“继承缩放”被设置为“始终”。“始终”表示子粒子在被创建之后将继续受到父粒子的影响。换句话说，子粒子会随着父粒子的移动而移动。</p>
 <div align="center">
@@ -275,7 +277,7 @@
 </div></section>
 </section>
 <section id="id10">
-<h2>总结<a class="headerlink" href="#id10" title="Link to this heading">¶</a></h2>
+<h2>总结<a class="headerlink" href="#id10" title="Link to this heading"></a></h2>
 <p>在本章中，你使用父子关系创建了复杂的效果。在下一章中，你将更改生成方法，把粒子放在圆形或直线上。</p>
 </section>
 </section>

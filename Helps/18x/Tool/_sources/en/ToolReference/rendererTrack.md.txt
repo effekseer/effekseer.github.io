@@ -1,4 +1,4 @@
-﻿# Render - Track
+# Render - Track
 
 ## Overview
 
@@ -18,7 +18,7 @@ The track is drawn by connecting a thick line between all the children of a cert
 
 ### UV Type
 
-It sets the UV repeat pattern.
+Specifies how UVs are arranged and repeated.
 
 #### Strech
 
@@ -28,13 +28,13 @@ It uses one image for the entire track. It is suitable for particles with a long
 
 #### Tile
 
-It repeats a single image within one track. This is suitable for expressions with repeating patterns, such as chains.
-You can specify the repetition interval with Tile Length.
+Repeats the image based on the track length. This is suitable for expressions with repeating patterns, such as chains.
+You can specify the repetition interval with `Tile Length`.
 
 #### Tile (By Particle)
 
-It repeats one image within one track. It is suitable for particles with repeating patterns, such as chains.
-It can also specify not to repeat only the edges.
+Repeats the image for each particle segment. This is suitable for expressions with repeating patterns, such as chains.
+You can also configure it so that the edges are not repeated, or so that only the specified loop region is repeated.
 
 <iframe src='../../Effects/viewer_en.html#References/Render/track_uvtype_tile.efkefc' class='effect'></iframe>
 

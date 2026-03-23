@@ -1,4 +1,4 @@
-﻿# 1.4x or older Change Logs
+# 1.4x or older Change Logs
 
 ## 1.43f（19/11/20）
 

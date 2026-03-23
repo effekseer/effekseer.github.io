@@ -1,4 +1,4 @@
-﻿================================
+================================
 Material Node (Math)
 ================================
 
@@ -42,6 +42,33 @@ Step
 ------------------------
 Outputs 1 if the value input to V is larger than Edge, 
 and outputs 0 if it is smaller.
+
+Smooth Step
+------------------------
+Outputs a smooth interpolation value from 0 to 1 when V is between Edge0 and Edge1.
+Compared to Step, the boundary changes more smoothly.
+
+Branch
+------------------------
+Switches output between two inputs based on a condition.
+If the condition is true, outputs the True input; otherwise outputs the False input.
+
+Compare
+------------------------
+Compares input values and outputs 0 or 1 as the result.
+You can choose comparison modes such as equal, greater than, and less than.
+
+Logical AND
+------------------------
+Takes two boolean inputs and outputs 1 only when both are true.
+
+Logical OR
+------------------------
+Takes two boolean inputs and outputs 1 when either input is true.
+
+Logical NOT
+------------------------
+Inverts a boolean input. Outputs 0 for 1, and 1 for 0.
 
 Round up
 ------------------------
@@ -130,6 +157,16 @@ Arctangent2
 
 Outputs X / Y Arctangent.
 If the input is not connected, use the value of the property.
+
+RGB to HSV
+--------------------------------
+Converts an RGB color value to HSV.
+Use this when you want to adjust hue, saturation, and value independently.
+
+HSV to RGB
+--------------------------------
+Converts an HSV color value to RGB.
+Use this when your color adjustments are done in HSV space.
 
 MaskElements
 --------------------------------

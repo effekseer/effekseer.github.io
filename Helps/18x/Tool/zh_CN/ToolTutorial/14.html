@@ -14,6 +14,8 @@
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
         <script src="../../_static/documentation_options.js?v=c033477b"></script>
         <script src="../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
@@ -110,9 +112,9 @@
            <div itemprop="articleBody">
              
   <section id="lod">
-<h1>14. 设置细节层级（LOD）<a class="headerlink" href="#lod" title="Link to this heading">¶</a></h1>
+<h1>14. 设置细节层级（LOD）<a class="headerlink" href="#lod" title="Link to this heading"></a></h1>
 <section id="id1">
-<h2>概要<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h2>
+<h2>概要<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
 <p>细节层级（LOD）使艺术家们能够根据到相机的距离有效利用系统资源和屏幕空间。</p>
 <img alt="../../_images/lods_Effect.png" class="align-center" src="../../_images/lods_Effect.png" />
 <p>本章我们将验证示例文件<code class="docutils literal notranslate"><span class="pre">Aura01.efkefc</span></code>。<a href = "../../Sample/14_Sample.zip">可以在此处下载。</a></p>
@@ -122,7 +124,7 @@
 <p>然而，如果摄像机离得很远，它们就会很小，几乎看不到，但仍然需要在每一帧中进行计算和处理。这是细节层级（LOD）的一个很好的例子，因为可以根据距离来简化特效。如果一个特效节点离视窗很远，它可以被隐藏或完全关闭。</p>
 </section>
 <section id="id2">
-<h2>层级设置<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
+<h2>层级设置<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
 <p>让我们设置要使用的层级。打开<code class="docutils literal notranslate"><span class="pre">窗口</span> <span class="pre">&gt;</span> <span class="pre">细节层级（LOD）</span></code>。</p>
 <img alt="../../_images/lods_Panel.png" class="align-center" src="../../_images/lods_Panel.png" />
 <p>这个面板设置了有效的细节层级和每个层级的距离。0级是基本层级，它总是从距离0开始，当没有其他级别可供选择时就会使用。一个特效中最多可以使用四个层级。</p>
@@ -131,7 +133,7 @@
 <p>在编辑器中使用鼠标滚轮来改变摄像机的位置。如果与特效的距离大于16，你会看到播放器右下角的<code class="docutils literal notranslate"><span class="pre">Current</span> <span class="pre">LOD</span></code>变为1。</p>
 </section>
 <section id="id3">
-<h2>设置粒子节点<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
+<h2>设置粒子节点<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
 <img alt="../../_images/lods_NodeTreeSelectors.png" class="align-center" src="../../_images/lods_NodeTreeSelectors.png" />
 <p>你会注意到，在启用第二个层级后，节点层级结构中的每个颜色按钮都显示为两行，每个层级一行。它显示了每个特效节点启用的层级。点击这个按钮可以更改每个节点选择的层级。</p>
 <p>点击<code class="docutils literal notranslate"><span class="pre">Particle</span></code>节点附近的这个按钮。</p>
@@ -147,7 +149,7 @@
 我们选择<code class="docutils literal notranslate"><span class="pre">停止生成新粒子并隐藏现存的粒子</span></code>，它适合这个例子。</p>
 </section>
 <section id="id4">
-<h2>检查结果<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h2>
+<h2>检查结果<a class="headerlink" href="#id4" title="Link to this heading"></a></h2>
 <p>查看视窗右下角的统计数据以检查设置。</p>
 <ul class="simple">
 <li><p>Current LOD: 当前有效的细节层级</p></li>
@@ -158,7 +160,7 @@
 <p>如果一切操作正确，那么在层级0时，你应该看到大约115个粒子。然后，如果你让摄像机远离特效，到层级1的距离，你会看到粒子的数量逐渐减少到大约15个。</p>
 </section>
 <section id="id5">
-<h2>总结<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h2>
+<h2>总结<a class="headerlink" href="#id5" title="Link to this heading"></a></h2>
 <p>本章介绍了如何设置细节层级，以及如何配置特效节点，使其根据当前的细节层级改变行为。建议在特效制作过程的最后一步设置细节层级。</p>
 <p>细节层级是非常通用的，可以用许多不同的方式来设置。通过为每个层级创建一个单独的根节点，你甚至可以完全替换一定距离下的特效。优化特效的过程可能很棘手，但有时它就是勉强运行在30帧的游戏与稳定运行在60帧的游戏的区别。</p>
 </section>

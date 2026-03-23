@@ -2,7 +2,8 @@
 
 ## Overview
 
-Specify parameters for collision. Enabling collision causes particles that collide with the specified surface to bounce back.
+Configure particle collision settings.
+When collision is enabled, particles can react to the specified plane or external collision shapes with effects such as bounce and slowdown.
 
 ![](../../img/Reference/Collisions/collisions.gif)
 
@@ -14,7 +15,7 @@ Enables collision.
 
 ### Collide With Ground
 
-Enables collision against the ground plane.
+Enables collision against the ground shown in the Environment panel.
 
 ### External Collision
 
@@ -22,20 +23,20 @@ Enables collision against externally provided collision shapes.
 
 ### Bounce
 
-Sets the strength of the rebound upon collision.
+Sets how strongly particles bounce on collision.
 
 ### Friction
 
-Sets the amount of slowdown when a collision occurs.
+Sets how much particles slow down on collision.
 
 ### Height
 
-Sets the height of the colliding plane.
+Sets the height of the collision plane.
 
 ### Lifetime Reduction
 
-Specifies how much lifetime is reduced on collision.
+Specifies how much lifetime is reduced when a collision occurs.
 
 ### Coordinate System
 
-Sets the coordinate system of the colliding plane (local/world).
+Sets the coordinate system used for the collision plane height (local/world).

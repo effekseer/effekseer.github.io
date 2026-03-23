@@ -1,4 +1,4 @@
-﻿# 01. The Introduction of Material
+# 01. The Introduction of Material
 
 ## Overview
 

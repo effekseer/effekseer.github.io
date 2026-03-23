@@ -14,6 +14,8 @@
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
         <script src="../../_static/documentation_options.js?v=c033477b"></script>
         <script src="../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
@@ -110,9 +112,9 @@
            <div itemprop="articleBody">
              
   <section id="id1">
-<h1>10.丝带和轨迹<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h1>
+<h1>10.丝带和轨迹<a class="headerlink" href="#id1" title="Link to this heading"></a></h1>
 <section id="id2">
-<h2>概要<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
+<h2>概要<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
 <p>本章将介绍丝带和轨迹。丝带和轨迹是狭长的粒子。它们可以表现精灵无法表现的余辉效果。</p>
 <div align="center" class='col-md-6'>
 <img src="../../img/Tutorial/10/diff_track.png">
@@ -135,7 +137,7 @@
 <a href = "../../Sample/10_01_Sample.zip">下载</a>
 </div></section>
 <section id="id3">
-<h2>使用方法<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
+<h2>使用方法<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
 <p>丝带和轨迹连接了从同一父节点生成的粒子。通过互相连接来表示狭长的形状。</p>
 <div align="center">
 <img src="../../img/Tutorial/10/track.png">
@@ -143,7 +145,7 @@
 </div><p>在正常的精灵中，粒子是相互独立的。</p>
 <p>只要粒子之间有距离，就可以使用丝带和轨迹，但必须与父子关系或生成方法相结合才有效。</p>
 <section id="id4">
-<h3>父子关系<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h3>
+<h3>父子关系<a class="headerlink" href="#id4" title="Link to this heading"></a></h3>
 <p>设置参数使父粒子移动。设置子粒子以固定的时间间隔从父粒子中生成。设置子粒子保持在它们生成的位置。</p>
 <p>这将沿着父粒子产生一个粒子带。</p>
 <p>让我们试试吧。</p>
@@ -204,7 +206,7 @@
 <p>特效</p>
 </div></section>
 <section id="id5">
-<h3>生成方法<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h3>
+<h3>生成方法<a class="headerlink" href="#id5" title="Link to this heading"></a></h3>
 <p>通过<code class="docutils literal notranslate"><span class="pre">生成方法</span></code>，无需使用父子关系就可以生成漂亮的轨迹和丝带粒子。生成方法允许你按顺序放置粒子，所以轨迹和丝带是按照生成方法中设置的顺序生成的。</p>
 <p>让我们来试试。</p>
 <p>制作一个同样是螺旋移动的特效。</p>
@@ -289,7 +291,7 @@
 </section>
 </section>
 <section id="id6">
-<h2>丝带与轨迹的区别<a class="headerlink" href="#id6" title="Link to this heading">¶</a></h2>
+<h2>丝带与轨迹的区别<a class="headerlink" href="#id6" title="Link to this heading"></a></h2>
 <p>为了观察丝带和轨迹的区别，可以用相同的参数设置丝带和轨迹。</p>
 <div align="center"><table>
 <tr><td>
@@ -307,7 +309,7 @@
 <p>总的来说，轨迹更方便，但需要旋转时，例如在剑的轨迹中，就需要使用丝带。</p>
 </section>
 <section id="id7">
-<h2>剑的特效<a class="headerlink" href="#id7" title="Link to this heading">¶</a></h2>
+<h2>剑的特效<a class="headerlink" href="#id7" title="Link to this heading"></a></h2>
 <p>武器的轨迹之类的效果不能用轨迹表示。接下来我们会用丝带制作一个表示剑的轨迹的特效。</p>
 <p>打开文件effect2.efkefc。</p>
 <p>它由一个父节点、一个子节点和一个击中效果节点组成。</p>
@@ -315,7 +317,7 @@
 <div align="center">
 <img src="../../img/Tutorial/10/parent_child.gif">
 </div><section id="id8">
-<h3>父节点<a class="headerlink" href="#id8" title="Link to this heading">¶</a></h3>
+<h3>父节点<a class="headerlink" href="#id8" title="Link to this heading"></a></h3>
 <p>父节点的参数已经预先设置好了。</p>
 <p>父节点进行旋转。剑的移动有一个短暂的时间，所以将<code class="docutils literal notranslate"><span class="pre">生命周期</span></code>设置为30。</p>
 <p>剑在生成时角度为0度，结束时旋转到180度。因此，在旋转窗口中，将旋转方法设置为0度到180度的缓动。</p>
@@ -323,7 +325,7 @@
 <img src="../../img/Tutorial/10/parent_en.png">
 </div></section>
 <section id="id9">
-<h3>子节点<a class="headerlink" href="#id9" title="Link to this heading">¶</a></h3>
+<h3>子节点<a class="headerlink" href="#id9" title="Link to this heading"></a></h3>
 <p>设置子节点的参数。</p>
 <p>像之前一样，将继承位置、继承旋转和继承缩放设置为<code class="docutils literal notranslate"><span class="pre">仅生成时</span></code>。设置绘图方法为丝带。设置位置为（4,0,0），生成数量为30。</p>
 <p>图像和颜色已经预先设置好了。</p>
@@ -382,7 +384,7 @@
 </div></section>
 </section>
 <section id="id10">
-<h2>总结<a class="headerlink" href="#id10" title="Link to this heading">¶</a></h2>
+<h2>总结<a class="headerlink" href="#id10" title="Link to this heading"></a></h2>
 <p>这一章介绍了轨迹和丝带。</p>
 </section>
 </section>

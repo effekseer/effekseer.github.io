@@ -1,4 +1,4 @@
-﻿# Behavior
+# Behavior
 
 ## Overview
 
@@ -71,5 +71,6 @@ Specify the coordinates of the target point that will be used when Attraction is
 ### External Models
 
 Registers external models used as emission sources.
-Each entry specifies a model file and translation/rotation/scale offsets.
-In the editor, these are used for preview, but at runtime you provide external models when playing the effect.
+Each entry can specify a model file together with translation, rotation, and scale offsets.
+The models registered here are used when previewing in the editor.
+At runtime, external models are provided when the effect is played.

@@ -1,4 +1,4 @@
-﻿# 1.6x Change Logs
+# 1.6x Change Logs
 
 ## 1.62f (Aug. 05, 2022)
 

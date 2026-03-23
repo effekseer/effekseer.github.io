@@ -14,6 +14,8 @@
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
         <script src="../../_static/documentation_options.js?v=c033477b"></script>
         <script src="../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
@@ -122,45 +124,46 @@
            <div itemprop="articleBody">
              
   <section id="id1">
-<h1>衝突<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h1>
+<h1>衝突<a class="headerlink" href="#id1" title="Link to this heading"></a></h1>
 <section id="id2">
-<h2>概要<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
-<p>衝突に関するパラメーターを設定します。衝突を有効にすると指定した面に衝突したパーティクルが跳ね返るようになります。</p>
+<h2>概要<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
+<p>パーティクルの衝突に関する設定を行います。
+衝突を有効にすると、指定した平面や外部衝突形状に当たったパーティクルに対して、反発や減速などの挙動を適用できます。</p>
 <p><img alt="../../_images/collisions.gif" src="../../_images/collisions.gif" /></p>
 </section>
 <section id="id3">
-<h2>パラメーター<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
+<h2>パラメーター<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
 <section id="id4">
-<h3>有効<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h3>
-<p>衝突を有効にします。</p>
+<h3>有効<a class="headerlink" href="#id4" title="Link to this heading"></a></h3>
+<p>衝突設定を有効にします。</p>
 </section>
 <section id="id5">
-<h3>地面との衝突<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h3>
-<p>地面との衝突を有効にします。</p>
+<h3>地面との衝突<a class="headerlink" href="#id5" title="Link to this heading"></a></h3>
+<p>環境パネルで表示している地面との衝突を有効にします。</p>
 </section>
 <section id="id6">
-<h3>外部衝突<a class="headerlink" href="#id6" title="Link to this heading">¶</a></h3>
-<p>外部から設定された衝突形状との衝突を有効にします。</p>
+<h3>外部衝突<a class="headerlink" href="#id6" title="Link to this heading"></a></h3>
+<p>外部から指定された衝突形状との衝突を有効にします。</p>
 </section>
 <section id="id7">
-<h3>バウンス<a class="headerlink" href="#id7" title="Link to this heading">¶</a></h3>
-<p>衝突した時に反発する強さを設定します。</p>
+<h3>バウンス<a class="headerlink" href="#id7" title="Link to this heading"></a></h3>
+<p>衝突したときの跳ね返りの強さを設定します。</p>
 </section>
 <section id="id8">
-<h3>摩擦<a class="headerlink" href="#id8" title="Link to this heading">¶</a></h3>
-<p>衝突した時に減速する強さを設定します。</p>
+<h3>摩擦<a class="headerlink" href="#id8" title="Link to this heading"></a></h3>
+<p>衝突したときにどれだけ減速するかを設定します。</p>
 </section>
 <section id="id9">
-<h3>高さ<a class="headerlink" href="#id9" title="Link to this heading">¶</a></h3>
-<p>衝突する平面の高さを設定します。</p>
+<h3>高さ<a class="headerlink" href="#id9" title="Link to this heading"></a></h3>
+<p>衝突判定に使用する平面の高さを設定します。</p>
 </section>
 <section id="id10">
-<h3>寿命の減衰<a class="headerlink" href="#id10" title="Link to this heading">¶</a></h3>
-<p>衝突時に寿命を減らす割合を指定します。</p>
+<h3>寿命の減衰<a class="headerlink" href="#id10" title="Link to this heading"></a></h3>
+<p>衝突したときに寿命を減らす割合を指定します。</p>
 </section>
 <section id="id11">
-<h3>座標系<a class="headerlink" href="#id11" title="Link to this heading">¶</a></h3>
-<p>衝突する平面の座標系を設定します。(ローカル/ワールド)</p>
+<h3>座標系<a class="headerlink" href="#id11" title="Link to this heading"></a></h3>
+<p>平面の高さを解釈する座標系を設定します。（ローカル/ワールド）</p>
 </section>
 </section>
 </section>

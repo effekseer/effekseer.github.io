@@ -1,4 +1,4 @@
-﻿# Tool-Reference
+# Tool-Reference
 
 ## Overview
 

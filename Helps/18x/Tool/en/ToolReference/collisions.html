@@ -14,6 +14,8 @@
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
         <script src="../../_static/documentation_options.js?v=c033477b"></script>
         <script src="../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
@@ -122,45 +124,46 @@
            <div itemprop="articleBody">
              
   <section id="collision">
-<h1>Collision<a class="headerlink" href="#collision" title="Link to this heading">¶</a></h1>
+<h1>Collision<a class="headerlink" href="#collision" title="Link to this heading"></a></h1>
 <section id="overview">
-<h2>Overview<a class="headerlink" href="#overview" title="Link to this heading">¶</a></h2>
-<p>Specify parameters for collision. Enabling collision causes particles that collide with the specified surface to bounce back.</p>
+<h2>Overview<a class="headerlink" href="#overview" title="Link to this heading"></a></h2>
+<p>Configure particle collision settings.
+When collision is enabled, particles can react to the specified plane or external collision shapes with effects such as bounce and slowdown.</p>
 <p><img alt="../../_images/collisions.gif" src="../../_images/collisions.gif" /></p>
 </section>
 <section id="parameters">
-<h2>Parameters<a class="headerlink" href="#parameters" title="Link to this heading">¶</a></h2>
+<h2>Parameters<a class="headerlink" href="#parameters" title="Link to this heading"></a></h2>
 <section id="enable">
-<h3>enable<a class="headerlink" href="#enable" title="Link to this heading">¶</a></h3>
+<h3>enable<a class="headerlink" href="#enable" title="Link to this heading"></a></h3>
 <p>Enables collision.</p>
 </section>
 <section id="collide-with-ground">
-<h3>Collide With Ground<a class="headerlink" href="#collide-with-ground" title="Link to this heading">¶</a></h3>
-<p>Enables collision against the ground plane.</p>
+<h3>Collide With Ground<a class="headerlink" href="#collide-with-ground" title="Link to this heading"></a></h3>
+<p>Enables collision against the ground shown in the Environment panel.</p>
 </section>
 <section id="external-collision">
-<h3>External Collision<a class="headerlink" href="#external-collision" title="Link to this heading">¶</a></h3>
+<h3>External Collision<a class="headerlink" href="#external-collision" title="Link to this heading"></a></h3>
 <p>Enables collision against externally provided collision shapes.</p>
 </section>
 <section id="bounce">
-<h3>Bounce<a class="headerlink" href="#bounce" title="Link to this heading">¶</a></h3>
-<p>Sets the strength of the rebound upon collision.</p>
+<h3>Bounce<a class="headerlink" href="#bounce" title="Link to this heading"></a></h3>
+<p>Sets how strongly particles bounce on collision.</p>
 </section>
 <section id="friction">
-<h3>Friction<a class="headerlink" href="#friction" title="Link to this heading">¶</a></h3>
-<p>Sets the amount of slowdown when a collision occurs.</p>
+<h3>Friction<a class="headerlink" href="#friction" title="Link to this heading"></a></h3>
+<p>Sets how much particles slow down on collision.</p>
 </section>
 <section id="height">
-<h3>Height<a class="headerlink" href="#height" title="Link to this heading">¶</a></h3>
-<p>Sets the height of the colliding plane.</p>
+<h3>Height<a class="headerlink" href="#height" title="Link to this heading"></a></h3>
+<p>Sets the height of the collision plane.</p>
 </section>
 <section id="lifetime-reduction">
-<h3>Lifetime Reduction<a class="headerlink" href="#lifetime-reduction" title="Link to this heading">¶</a></h3>
-<p>Specifies how much lifetime is reduced on collision.</p>
+<h3>Lifetime Reduction<a class="headerlink" href="#lifetime-reduction" title="Link to this heading"></a></h3>
+<p>Specifies how much lifetime is reduced when a collision occurs.</p>
 </section>
 <section id="coordinate-system">
-<h3>Coordinate System<a class="headerlink" href="#coordinate-system" title="Link to this heading">¶</a></h3>
-<p>Sets the coordinate system of the colliding plane (local/world).</p>
+<h3>Coordinate System<a class="headerlink" href="#coordinate-system" title="Link to this heading"></a></h3>
+<p>Sets the coordinate system used for the collision plane height (local/world).</p>
 </section>
 </section>
 </section>

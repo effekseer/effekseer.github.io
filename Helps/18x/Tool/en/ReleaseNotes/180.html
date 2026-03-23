@@ -14,6 +14,8 @@
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
         <script src="../../_static/documentation_options.js?v=c033477b"></script>
         <script src="../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
@@ -60,9 +62,6 @@
 <li class="toctree-l2 current"><a class="reference internal" href="index.html">Release Notes</a><ul class="current">
 <li class="toctree-l3 current"><a class="reference internal" href="index.html#new-features">New Features</a><ul class="current">
 <li class="toctree-l4 current"><a class="current reference internal" href="#">1.80 New Features</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#common">Common</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#tools">Tools</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#unity">Unity</a></li>
 <li class="toctree-l4"><a class="reference internal" href="170.html">1.70 New Features</a></li>
 <li class="toctree-l4"><a class="reference internal" href="160.html">1.60 New Features</a></li>
 <li class="toctree-l4"><a class="reference internal" href="150.html">1.50 New Features</a></li>
@@ -102,73 +101,91 @@
            <div itemprop="articleBody">
              
   <section id="new-features">
-<h1>1.80 New Features<a class="headerlink" href="#new-features" title="Link to this heading">¶</a></h1>
-</section>
+<h1>1.80 New Features<a class="headerlink" href="#new-features" title="Link to this heading"></a></h1>
 <section id="common">
-<h1>Common<a class="headerlink" href="#common" title="Link to this heading">¶</a></h1>
+<h2>Common<a class="headerlink" href="#common" title="Link to this heading"></a></h2>
 <section id="collisions">
-<h2>Collisions<a class="headerlink" href="#collisions" title="Link to this heading">¶</a></h2>
-<p>Added the feature to make particles and surfaces collide.
-Added external collision settings, bounce/friction, lifetime reduction, and coordinate system options.</p>
+<h3>Collisions<a class="headerlink" href="#collisions" title="Link to this heading"></a></h3>
+<p>Added collision settings for particles.
+You can combine ground or external collisions with bounce, friction, lifetime reduction, and coordinate space settings to control the resulting behavior.</p>
 </section>
 <section id="track-ribbon">
-<h2>Track, Ribbon<a class="headerlink" href="#track-ribbon" title="Link to this heading">¶</a></h2>
-<p>Added the feature to set UVs that repeat every specified length.</p>
+<h3>Track, Ribbon<a class="headerlink" href="#track-ribbon" title="Link to this heading"></a></h3>
+<p>Added settings for repeating UVs at a specified length on tracks and ribbons.</p>
 </section>
 <section id="rotation">
-<h2>Rotation<a class="headerlink" href="#rotation" title="Link to this heading">¶</a></h2>
-<p>Added the feature to rotate particles in the direction of movement.</p>
+<h3>Rotation<a class="headerlink" href="#rotation" title="Link to this heading"></a></h3>
+<p>Particles can now rotate to align with their direction of movement.</p>
 </section>
 <section id="triggers-spawning">
-<h2>Triggers / Spawning<a class="headerlink" href="#triggers-spawning" title="Link to this heading">¶</a></h2>
-<p>Added trigger-based spawning (continuous or trigger mode).
-Added triggers for parent removed/parent collision, plus per-trigger spawn counts.</p>
+<h3>Triggers / Spawning<a class="headerlink" href="#triggers-spawning" title="Link to this heading"></a></h3>
+<p>Expanded spawning with two modes: <code class="docutils literal notranslate"><span class="pre">Continuous</span></code> and <code class="docutils literal notranslate"><span class="pre">Trigger</span></code>.
+Also supports parent-removed and parent-collision triggers, as well as spawn counts per trigger.</p>
 </section>
 <section id="external-models">
-<h2>External Models<a class="headerlink" href="#external-models" title="Link to this heading">¶</a></h2>
-<p>Added external models as emission sources.
-Model spawning/rendering can reference external model indices and local/world coordinates.</p>
+<h3>External Models<a class="headerlink" href="#external-models" title="Link to this heading"></a></h3>
+<p>External models can now be registered as emission sources.
+During both spawning and rendering, you can specify the external model index and coordinate system (local/world).</p>
 </section>
 <section id="rendering">
-<h2>Rendering<a class="headerlink" href="#rendering" title="Link to this heading">¶</a></h2>
-<p>Added directional billboard.
-Added UV horizontal flip probability, mirror wrap, and tile length / per-particle tiling.</p>
+<h3>Rendering<a class="headerlink" href="#rendering" title="Link to this heading"></a></h3>
+<p>Expanded rendering settings with directional billboarding.
+Also supports UV horizontal flip probability, mirror wrap, tile length, and per-particle tiling.</p>
 </section>
 <section id="models">
-<h2>Models<a class="headerlink" href="#models" title="Link to this heading">¶</a></h2>
-<p>Updated the model converter and added support for gltf/glb/obj/geo/bgeo.</p>
+<h3>Models<a class="headerlink" href="#models" title="Link to this heading"></a></h3>
+<p>Updated the model converter and supported formats so that <code class="docutils literal notranslate"><span class="pre">gltf</span> <span class="pre">/</span> <span class="pre">glb</span> <span class="pre">/</span> <span class="pre">obj</span> <span class="pre">/</span> <span class="pre">geo</span> <span class="pre">/</span> <span class="pre">bgeo</span></code> can be loaded directly.</p>
 </section>
 <section id="materials">
-<h2>Materials<a class="headerlink" href="#materials" title="Link to this heading">¶</a></h2>
-<p>Material editor: added SmoothStep, logic (Branch/Compare/AND/OR/NOT), IsFrontFace, ParticleTime, white/cellular noise, and RGB/HSV conversion nodes.</p>
+<h3>Materials<a class="headerlink" href="#materials" title="Link to this heading"></a></h3>
+<p>Added the following nodes to the material editor.</p>
+<ul class="simple">
+<li><p>Smooth Step</p></li>
+<li><p>Branch</p></li>
+<li><p>Compare</p></li>
+<li><p>Logical AND / Logical OR / Logical NOT</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">IsFrontFace</span></code></p></li>
+<li><p>ParticleTime</p></li>
+<li><p>White Noise / Cellular Noise</p></li>
+<li><p>RGB to HSV / HSV to RGB</p></li>
+</ul>
 </section>
 <section id="gpu-particles">
-<h2>GPU Particles<a class="headerlink" href="#gpu-particles" title="Link to this heading">¶</a></h2>
-<p>Added the feature to compute particles processing using GPU.
-This is currently a preview feature and may not be available in all targets.</p>
+<h3>GPU Particles<a class="headerlink" href="#gpu-particles" title="Link to this heading"></a></h3>
+<p>Added GPU-based particle simulation.
+This allows much larger particle counts to be handled efficiently.
+Note: This is currently a preview feature and may not be available in all environments.</p>
 </section>
 <section id="profiler">
-<h2>Profiler<a class="headerlink" href="#profiler" title="Link to this heading">¶</a></h2>
-<p>Added the function to measure and display CPU/GPU load.
-This is currently a preview feature and may not be available in all targets.</p>
+<h3>Profiler<a class="headerlink" href="#profiler" title="Link to this heading"></a></h3>
+<p>Added a profiler for measuring and displaying CPU and GPU load.
+Note: This is currently a preview feature and may not be available in all environments.</p>
 </section>
 </section>
 <section id="tools">
-<h1>Tools<a class="headerlink" href="#tools" title="Link to this heading">¶</a></h1>
+<h2>Tools<a class="headerlink" href="#tools" title="Link to this heading"></a></h2>
 <section id="viewer">
-<h2>Viewer<a class="headerlink" href="#viewer" title="Link to this heading">¶</a></h2>
-<p>Added an option to enable ground collisions in the viewer.</p>
+<h3>Viewer<a class="headerlink" href="#viewer" title="Link to this heading"></a></h3>
+<p>Ground collision can now be enabled for the viewer ground surface.</p>
 </section>
 </section>
 <section id="unity">
-<h1>Unity<a class="headerlink" href="#unity" title="Link to this heading">¶</a></h1>
+<h2>Unity<a class="headerlink" href="#unity" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p>Updated EffekseerForUnity to the 1.8 series.</p></li>
-<li><p>Added a menu to import .efk files with dependent resources.</p></li>
-<li><p>Added a trigger API to EffekseerHandle.</p></li>
-<li><p>URP/HDRP custom render passes now support layer masks.</p></li>
-<li><p>Added URP RenderGraph (Unity 6) and WebGL 3.1.8/2023.2 support.</p></li>
+<li><p>Added an import menu for <code class="docutils literal notranslate"><span class="pre">.efk</span></code> files together with their dependent resources.</p></li>
+<li><p>Added trigger APIs to <code class="docutils literal notranslate"><span class="pre">EffekseerHandle</span></code> and <code class="docutils literal notranslate"><span class="pre">EffekseerEmitter</span></code>.</p></li>
+<li><p>Added layer mask support in URP/HDRP custom render passes.</p></li>
+<li><p>Added URP RenderGraph support for Unity 6.</p></li>
+<li><p>The WebGL plugin is selected according to the Unity version:</p>
+<ul>
+<li><p>Unity 2021.2 or later: <code class="docutils literal notranslate"><span class="pre">2.0.19</span></code></p></li>
+<li><p>Unity 2022.2 or later: <code class="docutils literal notranslate"><span class="pre">3.1.8</span></code></p></li>
+<li><p>Unity 2023.2 or later: <code class="docutils literal notranslate"><span class="pre">3.1.38</span></code></p></li>
 </ul>
+</li>
+</ul>
+</section>
 </section>
 
 

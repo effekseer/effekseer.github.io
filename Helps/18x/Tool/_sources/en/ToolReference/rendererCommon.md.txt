@@ -1,4 +1,4 @@
-﻿# Basic Render Settings
+# Basic Render Settings
 
 ## Overview
 
@@ -120,8 +120,8 @@ Specify the filtering method to be applied when displaying the particle.
 
 ### Wrap
 
-Specifies how to calculate the position to reference the image if the UV is below 0.0 or above 1.0.
-You can choose Repeat, Clamp, or Mirror.
+Specifies how the texture is sampled when the UV goes below 0.0 or above 1.0.
+You can choose `Repeat`, `Clamp`, or `Mirror`.
 
 ### Depth Set
 
@@ -183,7 +183,8 @@ Use the F-Curve window to control the UV by defining automation curves.
 
 #### UV Horizontal Flip Probability
 
-Specifies the probability of flipping the UV horizontally.
+Specifies the probability of flipping the UV horizontally for each particle.
+This is useful for adding variation to the appearance.
 
 ### Referenced(UV)
 
@@ -238,4 +239,3 @@ Always
 </tbody>
 
 </table>
-

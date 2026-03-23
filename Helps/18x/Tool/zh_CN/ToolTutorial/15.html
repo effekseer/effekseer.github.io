@@ -14,6 +14,8 @@
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
         <script src="../../_static/documentation_options.js?v=c033477b"></script>
         <script src="../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
@@ -110,37 +112,37 @@
            <div itemprop="articleBody">
              
   <section id="id1">
-<h1>15.通过触发器改变特效！<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h1>
+<h1>15.通过触发器改变特效！<a class="headerlink" href="#id1" title="Link to this heading"></a></h1>
 <section id="id2">
-<h2>概要<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
+<h2>概要<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
 <p>本章介绍Effekseer中的触发器功能。触发器允许你在播放过程中改变特效。</p>
 <p>如下例所示，你可以触发一个充能的武器的发射特效。</p>
 <iframe src='../../Sample/viewer_zh_CN.html#15_Sample/TriggerLaser.efkefc'></iframe><p>双击发送触发器信号。</p>
 </section>
 <section id="id3">
-<h2>触发器功能<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
+<h2>触发器功能<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
 <p>触发器是一种机制，允许向当前播放的特效发送多达四种触发信号。被触发的特效可以根据节点中设置的参数改变其行为。</p>
 <section id="id4">
-<h3>触发器设置<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h3>
+<h3>触发器设置<a class="headerlink" href="#id4" title="Link to this heading"></a></h3>
 <p>触发器引起的行为变化在<a class="reference internal" href="../ToolReference/common.html"><span class="doc">基础设置</span></a>中设置。</p>
 <div align="center">
 <img src="../../img/Tutorial/15/start_by_trigger_en.png">
 <p>基础设置面板中的触发器设置</p>
 </div></section>
 <section id="id5">
-<h3>在编辑器中发送触发信号<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h3>
+<h3>在编辑器中发送触发信号<a class="headerlink" href="#id5" title="Link to this heading"></a></h3>
 <p>触发信号可以在控制面板发送。</p>
 <div align="center">
 <img src="../../img/Tutorial/15/trigger_controller.png">
 <p>用于发送触发信号的按钮</p>
 </div></section>
 <section id="id6">
-<h3>在游戏中发送触发信号<a class="headerlink" href="#id6" title="Link to this heading">¶</a></h3>
+<h3>在游戏中发送触发信号<a class="headerlink" href="#id6" title="Link to this heading"></a></h3>
 <p>SDK和游戏引擎的插件中有发送触发信号的API。</p>
 </section>
 </section>
 <section id="id7">
-<h2>示例特效<a class="headerlink" href="#id7" title="Link to this heading">¶</a></h2>
+<h2>示例特效<a class="headerlink" href="#id7" title="Link to this heading"></a></h2>
 <p>本章使用示例文件<code class="docutils literal notranslate"><span class="pre">TriggerLaser.efkefc</span></code>进行讲解。</p>
 <div align="center">
 <p><a href = "../../Sample/15_Sample.zip">下载</a></p>
@@ -158,20 +160,20 @@
 <li><p><code class="docutils literal notranslate"><span class="pre">Laser</span></code>节点的粒子开始生成，子节点的粒子随之生成</p></li>
 </ul>
 <section id="id8">
-<h3>触发时删除粒子的节点<a class="headerlink" href="#id8" title="Link to this heading">¶</a></h3>
+<h3>触发时删除粒子的节点<a class="headerlink" href="#id8" title="Link to this heading"></a></h3>
 <div align="center">
 <img src="../../img/Tutorial/15/remove_by_trigger_en.png">
 <p>Charge节点的触发器设置</p>
 </div></section>
 <section id="id9">
-<h3>触发时开始生成粒子的节点<a class="headerlink" href="#id9" title="Link to this heading">¶</a></h3>
+<h3>触发时开始生成粒子的节点<a class="headerlink" href="#id9" title="Link to this heading"></a></h3>
 <div align="center">
 <img src="../../img/Tutorial/15/start_by_trigger_en.png">
 <p>Laser节点的触发器设置</p>
 </div></section>
 </section>
 <section id="id10">
-<h2>提示<a class="headerlink" href="#id10" title="Link to this heading">¶</a></h2>
+<h2>提示<a class="headerlink" href="#id10" title="Link to this heading"></a></h2>
 <p>被触发器删除的粒子可能会瞬间消失，这可能是不自然的。在这种情况下，你可以设置<code class="docutils literal notranslate"><span class="pre">删除后淡出</span></code>，使它们通过淡出而自然消失。</p>
 <div align="center">
 <img src="../../img/Tutorial/15/fadeout_after_destroyed_en.png">
@@ -194,7 +196,7 @@
 </table>
 </div></section>
 <section id="id11">
-<h2>总结<a class="headerlink" href="#id11" title="Link to this heading">¶</a></h2>
+<h2>总结<a class="headerlink" href="#id11" title="Link to this heading"></a></h2>
 <p>本章解释了如何使用触发器。利用触发器可以制作可交互的特效。</p>
 </section>
 </section>

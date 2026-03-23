@@ -1,4 +1,4 @@
-﻿# 1.5x Change Logs
+# 1.5x Change Logs
 
 ## 1.53e (21/03/29)
 

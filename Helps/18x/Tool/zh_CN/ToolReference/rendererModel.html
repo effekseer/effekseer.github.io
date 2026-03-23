@@ -14,6 +14,8 @@
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
         <script src="../../_static/documentation_options.js?v=c033477b"></script>
         <script src="../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
@@ -121,30 +123,31 @@
            <div itemprop="articleBody">
              
   <section id="id1">
-<h1>渲染 - 模型<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h1>
+<h1>渲染 - 模型<a class="headerlink" href="#id1" title="Link to this heading"></a></h1>
 <section id="id2">
-<h2>概述<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
+<h2>概述<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
 <p>这里我们解释在渲染设置窗口中选择了“模型”时，影响渲染的参数。</p>
 <p>在选择了“模型”时，可以导入并显示一个外部的3D模型。</p>
 <p>在基础渲染设置窗口设置的颜色/扭曲图案可用于模型的纹理。如果不启用深度写入和深度测试，一些模型可能显示不正确。</p>
 <p><img alt="../../_images/renderModel.png" src="../../_images/renderModel.png" /></p>
 </section>
 <section id="id3">
-<h2>参数<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
+<h2>参数<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
 <div align="center">
 <img src="../../img/Reference/Render/panel_model_en.png">
 <p>“渲染设置”窗口</p>
 </div><section id="id4">
-<h3>模型<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h3>
-<p>有三种类型的模型：文件、程序化模型和外部模型。</p>
-<p>如果从文件加载模型，需设置FBX（.fbx）、水杉（.mqo）、gltf（.gltf/.glb）、obj（.obj）、geo（.geo/.bgeo）或Effekseer的模型文件（.efkmodel）。如果设置了.efkmodel以外的文件，将在与设置文件的同一目录下生成.efkmodel。如果你想在其他应用程序中播放特效，这个生成的文件是必需的。</p>
-<p>也可以加载带有动画的FBX（.fbx）。会播放在FBX文件中设置的第一个动画。</p>
+<h3>模型<a class="headerlink" href="#id4" title="Link to this heading"></a></h3>
+<p>模型有三种类型：<code class="docutils literal notranslate"><span class="pre">文件</span></code>、<code class="docutils literal notranslate"><span class="pre">程序化模型</span></code> 和 <code class="docutils literal notranslate"><span class="pre">外部模型</span></code>。</p>
+<p>如果从文件加载模型，可以指定 FBX（<code class="docutils literal notranslate"><span class="pre">.fbx</span></code>）、Metasequoia（<code class="docutils literal notranslate"><span class="pre">.mqo</span></code>）、glTF（<code class="docutils literal notranslate"><span class="pre">.gltf</span></code>/<code class="docutils literal notranslate"><span class="pre">.glb</span></code>）、OBJ（<code class="docutils literal notranslate"><span class="pre">.obj</span></code>）、GEO（<code class="docutils literal notranslate"><span class="pre">.geo</span></code>/<code class="docutils literal notranslate"><span class="pre">.bgeo</span></code>）或 Effekseer 模型文件（<code class="docutils literal notranslate"><span class="pre">.efkmodel</span></code>）。如果指定的不是 <code class="docutils literal notranslate"><span class="pre">.efkmodel</span></code>，则会在同一目录下自动生成 <code class="docutils literal notranslate"><span class="pre">.efkmodel</span></code> 文件。在其他应用程序中播放特效时，这个生成的文件是必需的。</p>
+<p>也可以加载带有动画的 FBX（<code class="docutils literal notranslate"><span class="pre">.fbx</span></code>）。会播放 FBX 文件中的第一个动画。</p>
 <p>如果你想使用程序化模型，请在程序化模型面板中创建一个模型并设置它。</p>
-<p>工具中使用外部模型时，参照在<a class="reference external" href="behavior.html">行为</a>中登记的模型。
-实际运行时需要在播放特效时提供外部模型，并在渲染侧指定外部模型的索引。</p>
+<p>工具中使用外部模型时，会参照在<a class="reference internal" href="behavior.html"><span class="doc">行为</span></a>中登记的模型。
+实际运行时需要在播放特效时提供外部模型，并在渲染侧指定外部模型的索引。
+此外还需要根据需求指定本地坐标系或世界坐标系。</p>
 </section>
 <section id="id5">
-<h3>放置方法<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h3>
+<h3>放置方法<a class="headerlink" href="#id5" title="Link to this heading"></a></h3>
 <p>设置如何绘制粒子的模型。</p>
 <table border="1" class="docutils">
 <thead>
@@ -164,7 +167,7 @@
 </tr>
 <tr>
 <td>移动方向告示牌</td>
-<td>模型朝向摄像机，同时+Y方向朝向移动方向</td>
+<td>模型面向摄像机，同时旋转使其 +Y 方向朝向移动方向</td>
 </tr>
 <tr>
 <td>固定Y轴</td>
@@ -177,11 +180,11 @@
 </tbody>
 </table><iframe src='../../Effects/viewer_zh_CN.html#References/Render/model_configuration.efkefc'></iframe></section>
 <section id="id6">
-<h3>剔除<a class="headerlink" href="#id6" title="Link to this heading">¶</a></h3>
+<h3>剔除<a class="headerlink" href="#id6" title="Link to this heading"></a></h3>
 <p>设置模型的哪个/哪些面会被显示。</p>
 </section>
 <section id="id7">
-<h3>整体颜色<a class="headerlink" href="#id7" title="Link to this heading">¶</a></h3>
+<h3>整体颜色<a class="headerlink" href="#id7" title="Link to this heading"></a></h3>
 <p>设置整个模型的色调。</p>
 </section>
 </section>

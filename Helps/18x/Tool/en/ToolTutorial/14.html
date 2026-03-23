@@ -14,6 +14,8 @@
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
         <script src="../../_static/documentation_options.js?v=c033477b"></script>
         <script src="../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
@@ -110,9 +112,9 @@
            <div itemprop="articleBody">
              
   <section id="let-s-configure-levels-of-details">
-<h1>14. Let's configure levels of details<a class="headerlink" href="#let-s-configure-levels-of-details" title="Link to this heading">¶</a></h1>
+<h1>14. Let's configure levels of details<a class="headerlink" href="#let-s-configure-levels-of-details" title="Link to this heading"></a></h1>
 <section id="overview">
-<h2>Overview<a class="headerlink" href="#overview" title="Link to this heading">¶</a></h2>
+<h2>Overview<a class="headerlink" href="#overview" title="Link to this heading"></a></h2>
 <p>Levels of Details enable artists to create effects which make effecient
 use of system resources and screen space depending on distance to
 the camera.</p>
@@ -132,7 +134,7 @@ based on the distance. So that effect node can be hidden or shutdown completely 
 effect is far from the viewer.</p>
 </section>
 <section id="levels-setup">
-<h2>Levels Setup<a class="headerlink" href="#levels-setup" title="Link to this heading">¶</a></h2>
+<h2>Levels Setup<a class="headerlink" href="#levels-setup" title="Link to this heading"></a></h2>
 <p>Let's get started with configuring levels we're going to use. Navigate to <code class="docutils literal notranslate"><span class="pre">Menu</span> <span class="pre">&gt;</span> <span class="pre">Levels</span> <span class="pre">of</span> <span class="pre">Details</span></code>.</p>
 <img alt="../../_images/lods_Panel.png" class="align-center" src="../../_images/lods_Panel.png" />
 <p>In this panel you specify enabled levels of details and distances from which each
@@ -147,7 +149,7 @@ and you will see that <code class="docutils literal notranslate"><span class="pr
 to <code class="docutils literal notranslate"><span class="pre">1</span></code> when distance to the effect is greater than 16.</p>
 </section>
 <section id="configuring-particle-node">
-<h2>Configuring Particle Node<a class="headerlink" href="#configuring-particle-node" title="Link to this heading">¶</a></h2>
+<h2>Configuring Particle Node<a class="headerlink" href="#configuring-particle-node" title="Link to this heading"></a></h2>
 <img alt="../../_images/lods_NodeTreeSelectors.png" class="align-center" src="../../_images/lods_NodeTreeSelectors.png" />
 <p>As you might have noticed, after you've enabled second level each colored button
 in the node hierarchy now shows two lines, one for each level. It displays levels
@@ -172,7 +174,7 @@ and already spawned particle will be hidden. It must be noted that spawned parti
 Let's choose <code class="docutils literal notranslate"><span class="pre">Stop</span> <span class="pre">New</span> <span class="pre">Particles</span> <span class="pre">Spawn</span> <span class="pre">and</span> <span class="pre">Hide</span> <span class="pre">Existing</span></code> since it's suitable in our case.</p>
 </section>
 <section id="examining-results">
-<h2>Examining Results<a class="headerlink" href="#examining-results" title="Link to this heading">¶</a></h2>
+<h2>Examining Results<a class="headerlink" href="#examining-results" title="Link to this heading"></a></h2>
 <p>We're going to verify our configuration by taking a look at statistics shown in the bottom right corner of the viewer.</p>
 <ul class="simple">
 <li><p>Current LOD: Level of Detail is currently utilized</p></li>
@@ -184,7 +186,7 @@ Let's choose <code class="docutils literal notranslate"><span class="pre">Stop</
 up to the distance at which LOD 1 is selected we should observe amount of particles gradually going down to about ~15.</p>
 </section>
 <section id="summary">
-<h2>Summary<a class="headerlink" href="#summary" title="Link to this heading">¶</a></h2>
+<h2>Summary<a class="headerlink" href="#summary" title="Link to this heading"></a></h2>
 <p>You've learned how to setup levels of details and configure effect nodes to change their behavior
 based on currently active level. It's recommended to setup levels of detail at the last step
 of your effect production process when you're satisfied with effect look.</p>
