@@ -108,6 +108,7 @@
 <h3>碰撞<a class="headerlink" href="#id3" title="Link to this heading"></a></h3>
 <p>为粒子新增了碰撞设置。
 可以将地面碰撞或外部碰撞与反弹、摩擦、寿命衰减和坐标系设置组合使用，以调整最终行为。</p>
+<p><img alt="../../_images/collisions.gif" src="../../_images/collisions.gif" /></p>
 </section>
 <section id="id4">
 <h3>轨迹、丝带<a class="headerlink" href="#id4" title="Link to this heading"></a></h3>
@@ -155,11 +156,13 @@
 <p>新增基于 GPU 的粒子计算功能。
 可以更高效地处理大量粒子。
 注意：该功能当前为预览版，在部分环境中可能不可用。</p>
+<p><img alt="../../_images/gpu_particles.png" src="../../_images/gpu_particles.png" /></p>
 </section>
 <section id="id11">
 <h3>性能分析器<a class="headerlink" href="#id11" title="Link to this heading"></a></h3>
 <p>新增用于测量并显示 CPU/GPU 负载的性能分析器。
 注意：该功能当前为预览版，在部分环境中可能不可用。</p>
+<p><img alt="Overview" src="../../_images/Profiler_Overview_En.png" /></p>
 </section>
 </section>
 <section id="id12">
@@ -185,6 +188,23 @@
 </ul>
 </li>
 </ul>
+</section>
+<section id="id14">
+<h2>问题修复<a class="headerlink" href="#id14" title="Link to this heading"></a></h2>
+<section id="id15">
+<h3>通用<a class="headerlink" href="#id15" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>修复了 GPU 粒子无法正确渲染的问题。</p></li>
+</ul>
+</section>
+<section id="id16">
+<h3>Unity<a class="headerlink" href="#id16" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>修复了在 Unity 6.3 的 URP / RenderGraph 环境下发生 <code class="docutils literal notranslate"><span class="pre">RenderGraphExecutionError</span></code> 的问题。</p></li>
+<li><p>修复了从 <code class="docutils literal notranslate"><span class="pre">EffekseerEmitter</span></code> 首次播放时，旋转、缩放、显示状态与播放速度未被正确应用的问题。</p></li>
+<li><p>修复了在 Android 环境中使用 RenderGraph 与 Vulkan 时，特效无法渲染的问题。</p></li>
+</ul>
+</section>
 </section>
 </section>
 

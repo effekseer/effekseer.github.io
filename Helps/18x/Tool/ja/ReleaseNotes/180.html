@@ -108,6 +108,7 @@
 <h3>衝突<a class="headerlink" href="#id3" title="Link to this heading"></a></h3>
 <p>パーティクルに衝突設定を追加しました。
 地面や外部から与えた衝突形状に対して衝突判定を行い、バウンス、摩擦、寿命の減衰、座標系の指定を組み合わせて挙動を調整できます。</p>
+<p><img alt="../../_images/collisions.gif" src="../../_images/collisions.gif" /></p>
 </section>
 <section id="id4">
 <h3>軌跡、リボン<a class="headerlink" href="#id4" title="Link to this heading"></a></h3>
@@ -155,11 +156,13 @@
 <p>GPU上でパーティクルを計算する機能を追加しました。
 大量のパーティクルを効率よく扱えます。
 ※現時点ではプレビュー機能のため、環境によっては利用できない場合があります。</p>
+<p><img alt="../../_images/gpu_particles.png" src="../../_images/gpu_particles.png" /></p>
 </section>
 <section id="id11">
 <h3>プロファイラ<a class="headerlink" href="#id11" title="Link to this heading"></a></h3>
 <p>CPU負荷とGPU負荷を計測して表示するプロファイラを追加しました。
 ※現時点ではプレビュー機能のため、環境によっては利用できない場合があります。</p>
+<p><img alt="Overview" src="../../_images/Profiler_Overview_Ja.png" /></p>
 </section>
 </section>
 <section id="id12">
@@ -185,6 +188,23 @@
 </ul>
 </li>
 </ul>
+</section>
+<section id="id14">
+<h2>不具合修正<a class="headerlink" href="#id14" title="Link to this heading"></a></h2>
+<section id="id15">
+<h3>共通<a class="headerlink" href="#id15" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>GPUパーティクルの描画が正しく行われない不具合を修正しました。</p></li>
+</ul>
+</section>
+<section id="id16">
+<h3>Unity<a class="headerlink" href="#id16" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>Unity 6.3 の URP / RenderGraph 環境で <code class="docutils literal notranslate"><span class="pre">RenderGraphExecutionError</span></code> が発生する不具合を修正しました。</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">EffekseerEmitter</span></code> からの初回再生時に、回転、拡大率、表示状態、再生速度が正しく反映されない不具合を修正しました。</p></li>
+<li><p>RenderGraph と Vulkan を使用する Android 環境で、エフェクトが描画されない不具合を修正しました。</p></li>
+</ul>
+</section>
 </section>
 </section>
 

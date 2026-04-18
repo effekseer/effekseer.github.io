@@ -7,6 +7,8 @@
 Added collision settings for particles.
 You can combine ground or external collisions with bounce, friction, lifetime reduction, and coordinate space settings to control the resulting behavior.
 
+![](../../img/Reference/Collisions/collisions.gif)
+
 ### Track, Ribbon
 
 Added settings for repeating UVs at a specified length on tracks and ribbons.
@@ -52,10 +54,14 @@ Added GPU-based particle simulation.
 This allows much larger particle counts to be handled efficiently.
 Note: This is currently a preview feature and may not be available in all environments.
 
+![](../../img/Reference/GpuParticles/gpu_particles.png)
+
 ### Profiler
 
 Added a profiler for measuring and displaying CPU and GPU load.
 Note: This is currently a preview feature and may not be available in all environments.
+
+![Overview](../../img/Reference/Profiler/Profiler_Overview_En.png)
 
 ## Tools
 
@@ -74,3 +80,15 @@ Ground collision can now be enabled for the viewer ground surface.
   - Unity 2021.2 or later: `2.0.19`
   - Unity 2022.2 or later: `3.1.8`
   - Unity 2023.2 or later: `3.1.38`
+
+## Bug Fixes
+
+### Common
+
+- Fixed a bug where GPU particles were not rendered correctly.
+
+### Unity
+
+- Fixed a bug where `RenderGraphExecutionError` occurred in Unity 6.3 with URP / RenderGraph.
+- Fixed a bug where the initial playback from `EffekseerEmitter` did not apply rotation, scale, visibility, and playback speed correctly.
+- Fixed a bug where effects were not rendered on Android when using RenderGraph and Vulkan.

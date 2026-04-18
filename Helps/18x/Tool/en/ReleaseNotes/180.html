@@ -108,6 +108,7 @@
 <h3>Collisions<a class="headerlink" href="#collisions" title="Link to this heading"></a></h3>
 <p>Added collision settings for particles.
 You can combine ground or external collisions with bounce, friction, lifetime reduction, and coordinate space settings to control the resulting behavior.</p>
+<p><img alt="../../_images/collisions.gif" src="../../_images/collisions.gif" /></p>
 </section>
 <section id="track-ribbon">
 <h3>Track, Ribbon<a class="headerlink" href="#track-ribbon" title="Link to this heading"></a></h3>
@@ -155,11 +156,13 @@ Also supports UV horizontal flip probability, mirror wrap, tile length, and per-
 <p>Added GPU-based particle simulation.
 This allows much larger particle counts to be handled efficiently.
 Note: This is currently a preview feature and may not be available in all environments.</p>
+<p><img alt="../../_images/gpu_particles.png" src="../../_images/gpu_particles.png" /></p>
 </section>
 <section id="profiler">
 <h3>Profiler<a class="headerlink" href="#profiler" title="Link to this heading"></a></h3>
 <p>Added a profiler for measuring and displaying CPU and GPU load.
 Note: This is currently a preview feature and may not be available in all environments.</p>
+<p><img alt="Overview" src="../../_images/Profiler_Overview_En.png" /></p>
 </section>
 </section>
 <section id="tools">
@@ -185,6 +188,23 @@ Note: This is currently a preview feature and may not be available in all enviro
 </ul>
 </li>
 </ul>
+</section>
+<section id="bug-fixes">
+<h2>Bug Fixes<a class="headerlink" href="#bug-fixes" title="Link to this heading"></a></h2>
+<section id="id1">
+<h3>Common<a class="headerlink" href="#id1" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>Fixed a bug where GPU particles were not rendered correctly.</p></li>
+</ul>
+</section>
+<section id="id2">
+<h3>Unity<a class="headerlink" href="#id2" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>Fixed a bug where <code class="docutils literal notranslate"><span class="pre">RenderGraphExecutionError</span></code> occurred in Unity 6.3 with URP / RenderGraph.</p></li>
+<li><p>Fixed a bug where the initial playback from <code class="docutils literal notranslate"><span class="pre">EffekseerEmitter</span></code> did not apply rotation, scale, visibility, and playback speed correctly.</p></li>
+<li><p>Fixed a bug where effects were not rendered on Android when using RenderGraph and Vulkan.</p></li>
+</ul>
+</section>
 </section>
 </section>
 
