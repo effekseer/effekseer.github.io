@@ -1,4 +1,4 @@
-﻿# Recovering Data
+# Recovering Data
 
 There are various reasons why you may accidentally lose your work.
 The editor might crash, a power outage may happen, or simply clicking

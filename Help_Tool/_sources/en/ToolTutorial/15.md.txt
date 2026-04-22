@@ -1,4 +1,4 @@
-﻿# 15.Let's Send triggers to change effects!
+# 15.Let's Send triggers to change effects!
 
 <div class="main">
 

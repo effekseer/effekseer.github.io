@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="ja" data-content_root="../../">
+<html class="writer-html5" lang="en" data-content_root="../../">
 <head>
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -14,6 +14,8 @@
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
         <script src="../../_static/documentation_options.js?v=c033477b"></script>
         <script src="../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
@@ -78,6 +80,8 @@
 <li class="toctree-l4"><a class="reference internal" href="levelsOfDetails.html">Levels Of Details</a></li>
 <li class="toctree-l4"><a class="reference internal" href="dynamicParameter.html">DynamicParameter</a></li>
 <li class="toctree-l4"><a class="reference internal" href="proceduralModel.html">Procedural Model</a></li>
+<li class="toctree-l4"><a class="reference internal" href="collisions.html">Collision</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gpuParticles.html">GPU Particles</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="index.html#effect-features">Effect features</a></li>
@@ -91,6 +95,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../ReleaseNotes/index.html">Release Notes</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../../zh_CN/index.html">Effekseer Help (中文)</a></li>
 </ul>
 
         </div>
@@ -119,41 +124,41 @@
            <div itemprop="articleBody">
              
   <section id="position">
-<h1>Position<a class="headerlink" href="#position" title="Link to this heading">¶</a></h1>
+<h1>Position<a class="headerlink" href="#position" title="Link to this heading"></a></h1>
 <section id="overview">
-<h2>Overview<a class="headerlink" href="#overview" title="Link to this heading">¶</a></h2>
+<h2>Overview<a class="headerlink" href="#overview" title="Link to this heading"></a></h2>
 <p>Provides parameters that control the node's position over time, partiuarly concerning the position relative to the parent particle.</p>
 </section>
 <section id="parameter">
-<h2>Parameter<a class="headerlink" href="#parameter" title="Link to this heading">¶</a></h2>
+<h2>Parameter<a class="headerlink" href="#parameter" title="Link to this heading"></a></h2>
 <section id="id1">
-<h3>Position<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h3>
+<h3>Position<a class="headerlink" href="#id1" title="Link to this heading"></a></h3>
 <p>Specifies the spawn position of the particle. This will influence the position of the particle relative to its parent particle. If there is no parent particle, or position is set to not inherit in the Basic Settings window, this will specify the absolute position instead.</p>
 <div align="center">
 <img src="../../img/Tutorial/02_position_en.png">
 <p>"Position" window</p>
 </div><section id="set-position">
-<h4>Set Position<a class="headerlink" href="#set-position" title="Link to this heading">¶</a></h4>
+<h4>Set Position<a class="headerlink" href="#set-position" title="Link to this heading"></a></h4>
 <p>Place the particles at a fixed position.</p>
 <iframe src='../../Effects/viewer_en.html#References/Position/setposition.efkefc' class='effect'></iframe></section>
 <section id="position-velocity-acceleration-pva">
-<h4>Position, Velocity, Acceleration (PVA)<a class="headerlink" href="#position-velocity-acceleration-pva" title="Link to this heading">¶</a></h4>
+<h4>Position, Velocity, Acceleration (PVA)<a class="headerlink" href="#position-velocity-acceleration-pva" title="Link to this heading"></a></h4>
 <p>Specify the position, velocity and acceleration of the particle.</p>
 <iframe src='../../Effects/viewer_en.html#References/Position/movingposition.efkefc' class='effect'></iframe></section>
 <section id="easing">
-<h4>Easing<a class="headerlink" href="#easing" title="Link to this heading">¶</a></h4>
+<h4>Easing<a class="headerlink" href="#easing" title="Link to this heading"></a></h4>
 <p>Specify the spawn and despawn positions, and the method of interpolating between these two positions over the lifetime of the particle.</p>
 <iframe src='../../Effects/viewer_en.html#References/Position/easing.efkefc' class='effect'></iframe></section>
 <section id="f-curve">
-<h4>F-Curve<a class="headerlink" href="#f-curve" title="Link to this heading">¶</a></h4>
+<h4>F-Curve<a class="headerlink" href="#f-curve" title="Link to this heading"></a></h4>
 <p>Use the F-Curve window to control the position by defining automation curves.</p>
 <iframe src='../../Effects/viewer_en.html#References/Position/f_curve.efkefc' class='effect'></iframe></section>
 <section id="nurbs-curve">
-<h4>NURBS-Curve<a class="headerlink" href="#nurbs-curve" title="Link to this heading">¶</a></h4>
+<h4>NURBS-Curve<a class="headerlink" href="#nurbs-curve" title="Link to this heading"></a></h4>
 <p>Import the 3D data of the curve created by other software such as Maya, and move the particles along it.</p>
 <div class="video_center"><video autoplay loop="true" muted="true" src="../../movies/Reference/Location/NURBS-Curve.mp4"/></div></section>
 <section id="viewoffset">
-<h4>ViewOffset<a class="headerlink" href="#viewoffset" title="Link to this heading">¶</a></h4>
+<h4>ViewOffset<a class="headerlink" href="#viewoffset" title="Link to this heading"></a></h4>
 <p>Always display particles in the center of the camera.
 Only available for sprites and models.
 The location of effect doesn't affect to children.</p>

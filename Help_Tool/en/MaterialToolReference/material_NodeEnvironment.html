@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="ja" data-content_root="../../">
+<html class="writer-html5" lang="en" data-content_root="../../">
 <head>
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -14,6 +14,8 @@
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
         <script src="../../_static/documentation_options.js?v=c033477b"></script>
         <script src="../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
@@ -81,6 +83,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../ReleaseNotes/index.html">Release Notes</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../../zh_CN/index.html">Effekseer Help (中文)</a></li>
 </ul>
 
         </div>
@@ -109,16 +112,21 @@
            <div itemprop="articleBody">
              
   <section id="material-node-environment">
-<h1>Material Node(Environment)<a class="headerlink" href="#material-node-environment" title="Link to this heading">¶</a></h1>
+<h1>Material Node(Environment)<a class="headerlink" href="#material-node-environment" title="Link to this heading"></a></h1>
 <section id="overview">
-<h2>Overview<a class="headerlink" href="#overview" title="Link to this heading">¶</a></h2>
+<h2>Overview<a class="headerlink" href="#overview" title="Link to this heading"></a></h2>
 </section>
 <section id="node-list">
-<h2>Node list<a class="headerlink" href="#node-list" title="Link to this heading">¶</a></h2>
+<h2>Node list<a class="headerlink" href="#node-list" title="Link to this heading"></a></h2>
 <section id="light">
-<h3>Light<a class="headerlink" href="#light" title="Link to this heading">¶</a></h3>
+<h3>Light<a class="headerlink" href="#light" title="Link to this heading"></a></h3>
 <p>Outputs information about externally set lights.</p>
 <p>Depending on the environment in which it is run, this node may not work correctly.</p>
+</section>
+<section id="isfrontface">
+<h3>IsFrontFace<a class="headerlink" href="#isfrontface" title="Link to this heading"></a></h3>
+<p>Outputs whether the currently rendered face is a front face or a back face.
+Use this to switch expressions between front and back faces.</p>
 </section>
 </section>
 </section>

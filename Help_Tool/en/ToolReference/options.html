@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="ja" data-content_root="../../">
+<html class="writer-html5" lang="en" data-content_root="../../">
 <head>
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -14,6 +14,8 @@
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
         <script src="../../_static/documentation_options.js?v=c033477b"></script>
         <script src="../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
@@ -68,6 +70,7 @@
 <li class="toctree-l4"><a class="reference internal" href="fileExport.html">File - Export</a></li>
 <li class="toctree-l4"><a class="reference internal" href="recoveringData.html">Recovering Data</a></li>
 <li class="toctree-l4"><a class="reference internal" href="drawMode.html">Draw Modes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="profiler.html">Profiler</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="index.html#command-line">Command Line</a></li>
@@ -79,6 +82,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../ReleaseNotes/index.html">Release Notes</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../../zh_CN/index.html">Effekseer Help (中文)</a></li>
 </ul>
 
         </div>
@@ -107,109 +111,109 @@
            <div itemprop="articleBody">
              
   <section id="options">
-<h1>Options<a class="headerlink" href="#options" title="Link to this heading">¶</a></h1>
+<h1>Options<a class="headerlink" href="#options" title="Link to this heading"></a></h1>
 <section id="overview">
-<h2>Overview<a class="headerlink" href="#overview" title="Link to this heading">¶</a></h2>
+<h2>Overview<a class="headerlink" href="#overview" title="Link to this heading"></a></h2>
 <p>Set options related to the editor's display window such as grid settings and background.</p>
 </section>
 <section id="parameter">
-<h2>Parameter<a class="headerlink" href="#parameter" title="Link to this heading">¶</a></h2>
+<h2>Parameter<a class="headerlink" href="#parameter" title="Link to this heading"></a></h2>
 <section id="grid-color">
-<h3>Grid Color<a class="headerlink" href="#grid-color" title="Link to this heading">¶</a></h3>
+<h3>Grid Color<a class="headerlink" href="#grid-color" title="Link to this heading"></a></h3>
 <p>Specify the color of the grid.</p>
 </section>
 <section id="grid-visibility">
-<h3>Grid Visibility<a class="headerlink" href="#grid-visibility" title="Link to this heading">¶</a></h3>
+<h3>Grid Visibility<a class="headerlink" href="#grid-visibility" title="Link to this heading"></a></h3>
 <p>Specify whether to display the grid or not.</p>
 </section>
 <section id="x-y-grid-visibility">
-<h3>X-Y Grid Visibility<a class="headerlink" href="#x-y-grid-visibility" title="Link to this heading">¶</a></h3>
+<h3>X-Y Grid Visibility<a class="headerlink" href="#x-y-grid-visibility" title="Link to this heading"></a></h3>
 <p>Specify whether to display the grid on the XY plane.</p>
 </section>
 <section id="x-z-grid-visibility">
-<h3>X-Z Grid Visibility<a class="headerlink" href="#x-z-grid-visibility" title="Link to this heading">¶</a></h3>
+<h3>X-Z Grid Visibility<a class="headerlink" href="#x-z-grid-visibility" title="Link to this heading"></a></h3>
 <p>Specify whether to display the grid on the XZ plane.</p>
 </section>
 <section id="y-z-grid-visibility">
-<h3>Y-Z Grid Visibility<a class="headerlink" href="#y-z-grid-visibility" title="Link to this heading">¶</a></h3>
+<h3>Y-Z Grid Visibility<a class="headerlink" href="#y-z-grid-visibility" title="Link to this heading"></a></h3>
 <p>Specify whether to display the grid on the YZ plane.</p>
 </section>
 <section id="grid-size">
-<h3>Grid Size<a class="headerlink" href="#grid-size" title="Link to this heading">¶</a></h3>
+<h3>Grid Size<a class="headerlink" href="#grid-size" title="Link to this heading"></a></h3>
 <p>Specify the size of the grid.</p>
 </section>
 <section id="light-direction">
-<h3>Light Direction<a class="headerlink" href="#light-direction" title="Link to this heading">¶</a></h3>
+<h3>Light Direction<a class="headerlink" href="#light-direction" title="Link to this heading"></a></h3>
 <p>Specify the direction of the light that illuminates the model when displaying the model.</p>
 </section>
 <section id="light-color">
-<h3>Light Color<a class="headerlink" href="#light-color" title="Link to this heading">¶</a></h3>
+<h3>Light Color<a class="headerlink" href="#light-color" title="Link to this heading"></a></h3>
 <p>Specify the color of the light.</p>
 </section>
 <section id="ambient-color">
-<h3>Ambient Color<a class="headerlink" href="#ambient-color" title="Link to this heading">¶</a></h3>
+<h3>Ambient Color<a class="headerlink" href="#ambient-color" title="Link to this heading"></a></h3>
 <p>Specify the color of ambient light.</p>
 </section>
 <section id="output-magnification">
-<h3>Output Magnification<a class="headerlink" href="#output-magnification" title="Link to this heading">¶</a></h3>
+<h3>Output Magnification<a class="headerlink" href="#output-magnification" title="Link to this heading"></a></h3>
 <p>This is a parameter that previews the enlargement that would be applied if you were to change the magnification ratio during final export to an &quot;*.efk&quot; file. When this parameter is set, the effect is displayed at its scaled size.</p>
 </section>
 <section id="output-fps">
-<h3>Output FPS<a class="headerlink" href="#output-fps" title="Link to this heading">¶</a></h3>
+<h3>Output FPS<a class="headerlink" href="#output-fps" title="Link to this heading"></a></h3>
 <p>This is a parameter that reproduces the effect of changing the FPS in your external tool or game engine. When this parameter is set, FPS is changed and displayed.</p>
 </section>
 <section id="coordinate-system">
-<h3>Coordinate System<a class="headerlink" href="#coordinate-system" title="Link to this heading">¶</a></h3>
+<h3>Coordinate System<a class="headerlink" href="#coordinate-system" title="Link to this heading"></a></h3>
 <p>This is a parameter that reproduces the effect of changing the coordinate system in your external tool or game engine. When this parameter is set, the coordinate system is changed and displayed.</p>
 </section>
 <section id="color-space">
-<h3>Color Space<a class="headerlink" href="#color-space" title="Link to this heading">¶</a></h3>
+<h3>Color Space<a class="headerlink" href="#color-space" title="Link to this heading"></a></h3>
 <p>This is a parameter that reproduces the appearance if you were to change the color space and play the effect in your external tool or game engine. There are gamma space and linear space options for the color space.</p>
 <section id="gamma-space">
-<h4>Gamma space<a class="headerlink" href="#gamma-space" title="Link to this heading">¶</a></h4>
+<h4>Gamma space<a class="headerlink" href="#gamma-space" title="Link to this heading"></a></h4>
 <p><img alt="../../_images/colorSpace_GammaSpace.png" src="../../_images/colorSpace_GammaSpace.png" /></p>
 </section>
 <section id="linear-space">
-<h4>Linear space<a class="headerlink" href="#linear-space" title="Link to this heading">¶</a></h4>
+<h4>Linear space<a class="headerlink" href="#linear-space" title="Link to this heading"></a></h4>
 <p><img alt="../../_images/colorSpace_LinearSpace.png" src="../../_images/colorSpace_LinearSpace.png" /></p>
 <p>In Unity and other recent game engines, you can change the color space. Set this parameter according to the color space you plan to use in your external game engine. Please check the description of each game engine etc. for the details of the color space itself. Effekseer's color space is gamma space by default.</p>
 </section>
 </section>
 <section id="mouse-mapping">
-<h3>Mouse Mapping<a class="headerlink" href="#mouse-mapping" title="Link to this heading">¶</a></h3>
+<h3>Mouse Mapping<a class="headerlink" href="#mouse-mapping" title="Link to this heading"></a></h3>
 <p>Specify how to control the viewpoint with the mouse.
 There are options like Effekseer, Maya, Unity, and Blender.</p>
 </section>
 <section id="mouse-rotation-x">
-<h3>Mouse Rotation (X)<a class="headerlink" href="#mouse-rotation-x" title="Link to this heading">¶</a></h3>
+<h3>Mouse Rotation (X)<a class="headerlink" href="#mouse-rotation-x" title="Link to this heading"></a></h3>
 <p>Specify the rotation direction of the mouse.</p>
 </section>
 <section id="mouse-rotation-y">
-<h3>Mouse Rotation (Y)<a class="headerlink" href="#mouse-rotation-y" title="Link to this heading">¶</a></h3>
+<h3>Mouse Rotation (Y)<a class="headerlink" href="#mouse-rotation-y" title="Link to this heading"></a></h3>
 <p>Specify the rotation direction of the mouse.</p>
 </section>
 <section id="mouse-panning-x">
-<h3>Mouse Panning (X)<a class="headerlink" href="#mouse-panning-x" title="Link to this heading">¶</a></h3>
+<h3>Mouse Panning (X)<a class="headerlink" href="#mouse-panning-x" title="Link to this heading"></a></h3>
 <p>Specify the slide direction of the mouse.</p>
 </section>
 <section id="mouse-panning-y">
-<h3>Mouse Panning (Y)<a class="headerlink" href="#mouse-panning-y" title="Link to this heading">¶</a></h3>
+<h3>Mouse Panning (Y)<a class="headerlink" href="#mouse-panning-y" title="Link to this heading"></a></h3>
 <p>Specify the slide direction of the mouse.</p>
 </section>
 <section id="font">
-<h3>Font<a class="headerlink" href="#font" title="Link to this heading">¶</a></h3>
+<h3>Font<a class="headerlink" href="#font" title="Link to this heading"></a></h3>
 <p>Specify a kind of fonts.</p>
 </section>
 <section id="font-size">
-<h3>Font size<a class="headerlink" href="#font-size" title="Link to this heading">¶</a></h3>
+<h3>Font size<a class="headerlink" href="#font-size" title="Link to this heading"></a></h3>
 <p>Specify the size of font.</p>
 </section>
 <section id="float-format-digits">
-<h3>Float Format Digits<a class="headerlink" href="#float-format-digits" title="Link to this heading">¶</a></h3>
+<h3>Float Format Digits<a class="headerlink" href="#float-format-digits" title="Link to this heading"></a></h3>
 <p>Controls displayed amount of digits after decimal points for floating point numbers.</p>
 </section>
 <section id="auto-save-interval">
-<h3>Auto Save Interval<a class="headerlink" href="#auto-save-interval" title="Link to this heading">¶</a></h3>
+<h3>Auto Save Interval<a class="headerlink" href="#auto-save-interval" title="Link to this heading"></a></h3>
 <p>Defines interval at which auto saves of the edited projects are performed.
 See <a class="reference internal" href="recoveringData.html"><span class="doc">Recovering Data</span></a></p>
 </section>

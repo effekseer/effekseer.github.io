@@ -1,4 +1,4 @@
-﻿# Tool-Reference
+# Tool-Reference
 
 ## Overview
 
@@ -120,7 +120,7 @@ A few resource files referenced by the effect. There are general file formats an
 | png      | Texture image file |
 | wav      | Sound wave file |
 | efkmat   | Material file(Create by Material editor) |
-| efkmodel | 3D Model file(Convert from fbx,mqo) |
+| efkmodel | 3D Model file(Convert from fbx,mqo,gltf,glb,obj,geo,bgeo) |
 | efkcurve | Curve parameter file(Convert from fbx) |
 
 #### Package file (efkpkg)
@@ -161,6 +161,8 @@ It can be imported and used in another project of yourself or someone else.
     levelsOfDetails
     dynamicParameter
     proceduralModel
+    collisions
+    gpuParticles
 ```
 
 ## Effect features
@@ -189,6 +191,7 @@ It can be imported and used in another project of yourself or someone else.
     fileExport
     recoveringData
     drawMode
+    profiler
 ```
 
 ## Command Line

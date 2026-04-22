@@ -1,4 +1,4 @@
-﻿# Force Field (Local)
+# Force Field (Local)
 
 ## Overview
 

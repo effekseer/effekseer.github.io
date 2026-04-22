@@ -1,4 +1,4 @@
-﻿# File - Export
+# File - Export
 
 ## Default format
 Exports the effect you are currently editing as an efk file.

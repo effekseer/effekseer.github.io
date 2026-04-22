@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="ja" data-content_root="../../">
+<html class="writer-html5" lang="en" data-content_root="../../">
 <head>
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -14,6 +14,8 @@
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
         <script src="../../_static/documentation_options.js?v=c033477b"></script>
         <script src="../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
@@ -81,6 +83,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../ReleaseNotes/index.html">Release Notes</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../../zh_CN/index.html">Effekseer Help (中文)</a></li>
 </ul>
 
         </div>
@@ -109,9 +112,9 @@
            <div itemprop="articleBody">
              
   <section id="let-s-create-a-hit-mark-slashing">
-<h1>05. Let's create a hit mark (Slashing)!<a class="headerlink" href="#let-s-create-a-hit-mark-slashing" title="Link to this heading">¶</a></h1>
+<h1>05. Let's create a hit mark (Slashing)!<a class="headerlink" href="#let-s-create-a-hit-mark-slashing" title="Link to this heading"></a></h1>
 <div class="main"><section id="overview">
-<h2>Overview<a class="headerlink" href="#overview" title="Link to this heading">¶</a></h2>
+<h2>Overview<a class="headerlink" href="#overview" title="Link to this heading"></a></h2>
 <p>In this chapter, you create an effect (hit mark) hit by a slash as used in an actual game.
 It is an effect where a sword line is expressed in the middle and small impacts flies around.
 In doing so, we explain copying and adding nodes and easing particles as new contents.</p>
@@ -122,7 +125,7 @@ In doing so, we explain copying and adding nodes and easing particles as new con
 </div><p>Since the length of the effect created is about 0.5 seconds, <code class="docutils literal notranslate"><span class="pre">End</span></code> in the <code class="docutils literal notranslate"><span class="pre">Viewer</span> <span class="pre">Controls</span></code> window is specified to 30 frames.</p>
 </section>
 <section id="easing">
-<h2>Easing<a class="headerlink" href="#easing" title="Link to this heading">¶</a></h2>
+<h2>Easing<a class="headerlink" href="#easing" title="Link to this heading"></a></h2>
 <p>Easing is often used for various parameters.</p>
 <p>Easing is a method of representing changes in values by specifying the values of the start and end points and automatically interpolating the values between them.</p>
 <p>As shown in the figure below, position, rotation and scale have been specified by speed (1) or acceleration up to now.
@@ -149,7 +152,7 @@ The lower the speed, the harder the value changes, the faster the value, the eas
 <p>Interpolation method</p>
 </div></section>
 <section id="create-the-effect">
-<h2>Create the effect<a class="headerlink" href="#create-the-effect" title="Link to this heading">¶</a></h2>
+<h2>Create the effect<a class="headerlink" href="#create-the-effect" title="Link to this heading"></a></h2>
 <p>Effects are not often composed of single kind of particles but plural kinds of completely different looking particles.
 Effekseer can have multiple nodes. You can give completely different parameters for each node.
 Hit marks must also consist of more than one node. This time, you will create the nodes in order.</p>
@@ -159,7 +162,7 @@ Hit marks must also consist of more than one node. This time, you will create th
 <li><p>Color is purple (255, 32, 255) to pink (255, 128, 255)</p></li>
 </ul>
 <section id="sword-line-node">
-<h3>Sword line node<a class="headerlink" href="#sword-line-node" title="Link to this heading">¶</a></h3>
+<h3>Sword line node<a class="headerlink" href="#sword-line-node" title="Link to this heading"></a></h3>
 <p>You create a node where a particle slenderly cuts at an angle of 45 degrees, representing a sword line.</p>
 <p>The sword line is specified to elongate in the direction of 45 degrees during 0.33 seconds (20 frames).
 <code class="docutils literal notranslate"><span class="pre">Rotated</span> <span class="pre">Billboard</span></code> is specified to tilt the particles.</p>
@@ -261,7 +264,7 @@ Hit marks must also consist of more than one node. This time, you will create th
 <p>Sword line node</p>
 </div></section>
 <section id="impact-node">
-<h3>Impact node<a class="headerlink" href="#impact-node" title="Link to this heading">¶</a></h3>
+<h3>Impact node<a class="headerlink" href="#impact-node" title="Link to this heading"></a></h3>
 <p>When the attack hits, not only the sword line but also the impact is generated.
 Impact node is created like a sword wire.</p>
 <p>Since the parameters of the sword line node and impact node are different, you need to add a node.
@@ -378,7 +381,7 @@ From the menu, you choose Add Node.</p>
 <p>Impact node</p>
 </div></section>
 <section id="light-emitting-node-no-1">
-<h3>Light emitting node No.1<a class="headerlink" href="#light-emitting-node-no-1" title="Link to this heading">¶</a></h3>
+<h3>Light emitting node No.1<a class="headerlink" href="#light-emitting-node-no-1" title="Link to this heading"></a></h3>
 <p>Glowing effects at the moment of hit is better looking.
 The light emmiting node is also specified same as the sword line node.</p>
 <p>Values are changed as fllows.</p>
@@ -453,7 +456,7 @@ The light emmiting node is also specified same as the sword line node.</p>
 <p>Light emitting node No.1</p>
 </div></section>
 <section id="light-emitting-node-no-2">
-<h3>Light emitting node No.2<a class="headerlink" href="#light-emitting-node-no-2" title="Link to this heading">¶</a></h3>
+<h3>Light emitting node No.2<a class="headerlink" href="#light-emitting-node-no-2" title="Link to this heading"></a></h3>
 <p>New emiitting node is added because the light emission is still sober.
 This light emitting node is almost same as the light emitting node created earlier.
 Effekseer can copy nodes.</p>
@@ -497,7 +500,7 @@ Effekseer can copy nodes.</p>
 </div></section>
 </section>
 <section id="summary">
-<h2>Summary<a class="headerlink" href="#summary" title="Link to this heading">¶</a></h2>
+<h2>Summary<a class="headerlink" href="#summary" title="Link to this heading"></a></h2>
 <p>In this chapter, You created effects that are likely to actually be used in games.
 In the next chapter, you will create even more complicated effects.</p>
 </div></section>

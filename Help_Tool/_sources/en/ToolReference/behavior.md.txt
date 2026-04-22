@@ -1,4 +1,4 @@
-﻿# Behavior
+# Behavior
 
 ## Overview
 
@@ -67,3 +67,10 @@ Specify a playback speed of effects.
 ### Point of Attraction
 
 Specify the coordinates of the target point that will be used when Attraction is set in the Attraction Forces window.
+
+### External Models
+
+Registers external models used as emission sources.
+Each entry can specify a model file together with translation, rotation, and scale offsets.
+The models registered here are used when previewing in the editor.
+At runtime, external models are provided when the effect is played.

@@ -1,4 +1,4 @@
-﻿# Basic settings
+# Basic settings
 
 ## Overview
 
@@ -22,6 +22,10 @@ Set the name displayed in the node tree. This is for organizational purposes onl
 ### Spawn Count
 
 Sets the maximum number of particles that will be generated from this node. You can also choose infinite to generate particles indefinitely (or until other conditional settings described later cause the particle generation to be stopped). However, when playing an effect from another application that incorporates Effekseer, please note that the "infinite" effect will not end unless a function is manually called to stop the effect.
+
+### Spawn Enabled
+
+Specifies whether spawning is enabled at the start of playback.
 
 ### Inherit Position
 
@@ -72,17 +76,25 @@ If child particles of a parent particle are not present, and it is unlikely that
 
 Sets the number of frames that should pass between the particle being spawned, and being despawned. However, if "Destroy after time" is unchecked, this parameter has no effect.
 
+### Generation Mode
+
+Selects `Continuous` or `Trigger` spawning.
+`Continuous` spawns particles at a fixed interval, while `Trigger` spawns particles only when the specified trigger is fired.
+
 ### Spawn Rate
 
 Sets the rate at which particles are generated. The number of frames specified will have to pass between one particle generating and the next. You can specify a value less than 1 for the spawn rate, in which case multiple particles will be generated per frame.
+This is used in `Continuous` mode.
 
 ### Initial Delay
 
-Specify the number of frames that must pass between generation of parent particles and the initial generation of their child particles.
+Specifies the delay between the parent particle being generated and the first particle spawned by this node.
+
+If `Spawn Start Trigger` below is specified, this becomes the delay between sending the trigger and spawning the first particle.
 
 A negative numerical value can also be specified as Initial Delay. The particles that are supposed to be generated at a negative time are actually generated at the 0th frame.
 
-The following figure shows the relationship between Spawn Rate, Initial Delay and time. (1) is Spawn Rate, (2) is Initial Delay, (3) is time (frame unit). The start time is shifted by the value of Initial Delay. When Initial Delay elapses from the start time, particles are generated. However, all the particles generated at the negative time are generated in the 0th frame.
+The following figure shows the relationship between Spawn Rate, Initial Delay, and actual spawn timing. (1) is Spawn Rate, (2) is Initial Delay, and (3) is time in frames. The start time is shifted by the Initial Delay value, and particles are then generated at each Spawn Rate interval. However, all particles that would be generated at negative time are generated on frame 0.
 
 ![](../../img/Reference/common_generatedTime.png)
 
@@ -92,7 +104,7 @@ Specifies the trigger number to initiate particle generation.
 
 If a trigger number is specified, particles will not be generated until the trigger is sent.
 
-If the default "none" is specified, particle generation will start without sending a trigger.
+If the default `None` is specified, particle generation will start without sending a trigger.
 
 See also: [15.Let's Send triggers to change effects!](../ToolTutorial/15.md)
 
@@ -102,18 +114,28 @@ Specify a trigger number to stop particle generation.
 
 If a trigger number is specified, particle generation will stop when the trigger is sent.
 
-If the default "None" is specified, the trigger will not stop particle generation.
+If the default `None` is specified, the trigger will not stop particle generation.
 
 See also: [15.Let's Send triggers to change effects!](../ToolTutorial/15.md)
 
-### Destroy Trigger
+### Spawn Trigger
+
+When Generation Mode is `Trigger`, this specifies the trigger number that performs one spawn.
+
+### Particles per Trigger
+
+When Generation Mode is `Trigger`, specifies how many particles are spawned for each trigger.
+
+### Destroy on Trigger
 
 Specifies the trigger number for deleting particles.
 
 If a trigger number is specified, particles existing at that moment will be deleted when the trigger is sent.
 
-If the default "None" is specified, particles are not deleted by the trigger.
+If the default `None` is specified, particles are not deleted by the trigger.
 
 Also, if you set the `Fadeout` in the `Common panel` to `Fadeout after destroyed`, the fade out will be performed after the trigger is sent.
 
 See also: [15.Let's Send triggers to change effects!](../ToolTutorial/15.md)
+
+Available trigger types are `Trigger 0-3`, `On Parent Removed`, and `On Parent Collision`.

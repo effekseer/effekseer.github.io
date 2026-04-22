@@ -14,6 +14,8 @@
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
         <script src="../../_static/documentation_options.js?v=c033477b"></script>
         <script src="../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
@@ -81,6 +83,7 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../en/index.html">Effekseer Help (English)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../zh_CN/index.html">Effekseer Help (中文)</a></li>
 </ul>
 
         </div>
@@ -109,39 +112,39 @@
            <div itemprop="articleBody">
              
   <section id="id1">
-<h1>15.トリガーを送信してエフェクトを変化させよう<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h1>
+<h1>15.トリガーを送信してエフェクトを変化させよう<a class="headerlink" href="#id1" title="Link to this heading"></a></h1>
 <div class="main"><section id="id2">
-<h2>概要<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
+<h2>概要<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
 <p>本章では、Effekseerのトリガー機能について説明します。
 トリガー機能は再生中のエフェクトを途中で変化させることができます。</p>
 <p>例えば次の例のように、エネルギーをチャージしている武器をトリガーで発射させるといったエフェクトが実現できます。</p>
 <iframe src='../../Sample/viewer_ja.html#15_Sample/TriggerLaser.efkefc'></iframe><p>ダブルクリックでトリガーを送信します。</p>
 </section>
 <section id="id3">
-<h2>トリガー機能<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
+<h2>トリガー機能<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
 <p>トリガーは再生中のエフェクトに対して4つまでのトリガーを送信できる仕組みです。
 トリガーを送信されたエフェクトは、ノードに設定されたパラメータに応じて挙動を変化させることができます。</p>
 <section id="id4">
-<h3>トリガーの設定<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h3>
+<h3>トリガーの設定<a class="headerlink" href="#id4" title="Link to this heading"></a></h3>
 <p>トリガーによる挙動の変化は、<a class="reference internal" href="../ToolReference/common.html"><span class="doc">共通</span></a>で設定します。</p>
 <div align="center">
 <img src="../../img/Tutorial/15/start_by_trigger_ja.png">
 <p>共通パネルのトリガー設定</p>
 </div></section>
 <section id="id5">
-<h3>エディタからトリガーを送信する<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h3>
+<h3>エディタからトリガーを送信する<a class="headerlink" href="#id5" title="Link to this heading"></a></h3>
 <p>トリガーはコントローラパネルから送信することができます。</p>
 <div align="center">
 <img src="../../img/Tutorial/15/trigger_controller.png">
 <p>トリガーを送信する0,1,2,3ボタン</p>
 </div></section>
 <section id="id6">
-<h3>ゲームからトリガーを送信する<a class="headerlink" href="#id6" title="Link to this heading">¶</a></h3>
+<h3>ゲームからトリガーを送信する<a class="headerlink" href="#id6" title="Link to this heading"></a></h3>
 <p>SDK、各ゲームエンジン向けプラグインにトリガーを送信するAPIがあります。</p>
 </section>
 </section>
 <section id="id7">
-<h2>サンプルファイル<a class="headerlink" href="#id7" title="Link to this heading">¶</a></h2>
+<h2>サンプルファイル<a class="headerlink" href="#id7" title="Link to this heading"></a></h2>
 <p>本章ではサンプルファイル<code class="docutils literal notranslate"><span class="pre">TriggerLaser.efkefc</span></code>を使って解説します。</p>
 <div align="center">
 <p><a href = "../../Sample/15_Sample.zip">ダウンロード</a></p>
@@ -159,20 +162,20 @@
 <li><p><code class="docutils literal notranslate"><span class="pre">Laser</span></code>ノードのパーティクルは生成を開始し、子ノードのパーティクルも生成される</p></li>
 </ul>
 <section id="id8">
-<h3>トリガーを送信すると、パーティクル削除するノード<a class="headerlink" href="#id8" title="Link to this heading">¶</a></h3>
+<h3>トリガーを送信すると、パーティクル削除するノード<a class="headerlink" href="#id8" title="Link to this heading"></a></h3>
 <div align="center">
 <img src="../../img/Tutorial/15/remove_by_trigger_ja.png">
 <p>Chargeノードのトリガー設定</p>
 </div></section>
 <section id="id9">
-<h3>トリガーを送信すると、パーティクル生成開始するノード<a class="headerlink" href="#id9" title="Link to this heading">¶</a></h3>
+<h3>トリガーを送信すると、パーティクル生成開始するノード<a class="headerlink" href="#id9" title="Link to this heading"></a></h3>
 <div align="center">
 <img src="../../img/Tutorial/15/start_by_trigger_ja.png">
 <p>Laserノードのトリガー設定</p>
 </div></section>
 </section>
 <section id="tips">
-<h2>Tips<a class="headerlink" href="#tips" title="Link to this heading">¶</a></h2>
+<h2>Tips<a class="headerlink" href="#tips" title="Link to this heading"></a></h2>
 <p>トリガーによって削除されたパーティクルは瞬時に消えてしまって不自然かもしれません。
 その場合は<code class="docutils literal notranslate"><span class="pre">削除後にフェードアウト</span></code>を設定すると、フェードアウトによって自然に消滅させることができます。</p>
 <div align="center">
@@ -197,7 +200,7 @@
 </table>
 </div></section>
 <section id="id10">
-<h2>まとめ<a class="headerlink" href="#id10" title="Link to this heading">¶</a></h2>
+<h2>まとめ<a class="headerlink" href="#id10" title="Link to this heading"></a></h2>
 <p>本章ではトリガーの使い方を説明しました。トリガーを活用してインタラクティブなエフェクトを作成しましょう。</p>
 </div></section>
 </section>

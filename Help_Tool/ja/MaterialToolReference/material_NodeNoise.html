@@ -14,6 +14,8 @@
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
         <script src="../../_static/documentation_options.js?v=c033477b"></script>
         <script src="../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
@@ -81,6 +83,7 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../en/index.html">Effekseer Help (English)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../zh_CN/index.html">Effekseer Help (中文)</a></li>
 </ul>
 
         </div>
@@ -109,19 +112,29 @@
            <div itemprop="articleBody">
              
   <section id="id1">
-<h1>マテリアルノード(ノイズ)<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h1>
+<h1>マテリアルノード(ノイズ)<a class="headerlink" href="#id1" title="Link to this heading"></a></h1>
 <section id="id2">
-<h2>概要<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
+<h2>概要<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
 </section>
 <section id="id3">
-<h2>ノード一覧<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
+<h2>ノード一覧<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
 <section id="id4">
-<h3>シンプルノイズ<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h3>
+<h3>シンプルノイズ<a class="headerlink" href="#id4" title="Link to this heading"></a></h3>
 <p>ノイズを出力します。
 UVに値を入力すると、その値に応じたノイズが出力されます。
 Scaleの値を変えるとノイズの大きさが変わります。</p>
 <p>非常に処理が重いノードです。基本的にWorldOffsetの値を計算する場合にのみ使用してください。</p>
 <img alt="../../_images/node_SimpleNoise.png" class="align-center" src="../../_images/node_SimpleNoise.png" />
+</section>
+<section id="id5">
+<h3>ホワイトノイズ<a class="headerlink" href="#id5" title="Link to this heading"></a></h3>
+<p>ランダムなノイズ値を出力します。
+微細な揺らぎやランダムな強度変化を付けたい場合に使用します。</p>
+</section>
+<section id="id6">
+<h3>セルラーノイズ<a class="headerlink" href="#id6" title="Link to this heading"></a></h3>
+<p>セル状のパターンを持つノイズ値を出力します。
+ひび割れ、泡、斑点のような有機的な模様表現に使用できます。</p>
 </section>
 </section>
 </section>

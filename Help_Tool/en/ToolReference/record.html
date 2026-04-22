@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="ja" data-content_root="../../">
+<html class="writer-html5" lang="en" data-content_root="../../">
 <head>
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -14,6 +14,8 @@
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
         <script src="../../_static/documentation_options.js?v=c033477b"></script>
         <script src="../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
@@ -68,6 +70,7 @@
 <li class="toctree-l4"><a class="reference internal" href="fileExport.html">File - Export</a></li>
 <li class="toctree-l4"><a class="reference internal" href="recoveringData.html">Recovering Data</a></li>
 <li class="toctree-l4"><a class="reference internal" href="drawMode.html">Draw Modes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="profiler.html">Profiler</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="index.html#command-line">Command Line</a></li>
@@ -79,6 +82,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../ReleaseNotes/index.html">Release Notes</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../../zh_CN/index.html">Effekseer Help (中文)</a></li>
 </ul>
 
         </div>
@@ -107,46 +111,46 @@
            <div itemprop="articleBody">
              
   <section id="recorder">
-<h1>Recorder<a class="headerlink" href="#recorder" title="Link to this heading">¶</a></h1>
+<h1>Recorder<a class="headerlink" href="#recorder" title="Link to this heading"></a></h1>
 <section id="overview">
-<h2>Overview<a class="headerlink" href="#overview" title="Link to this heading">¶</a></h2>
+<h2>Overview<a class="headerlink" href="#overview" title="Link to this heading"></a></h2>
 <p>Allows you to output the created effect as a sprite sheet, gif animation, AVI, etc. This function is very useful in situations such as when posting effects on your Twitter/Blog/Website/etc., or other situations where you cannot directly play effects created with Effekseer, through the runtime or otherwise.</p>
 <table><tbody><tr><td><img src="../../img/Reference/record_anim.jpg"/></td><td><img src="../../img/Reference/record_gifanim.gif"/></td></tr></tbody></table></section>
 <section id="parameter">
-<h2>Parameter<a class="headerlink" href="#parameter" title="Link to this heading">¶</a></h2>
+<h2>Parameter<a class="headerlink" href="#parameter" title="Link to this heading"></a></h2>
 <section id="resolution">
-<h3>Resolution<a class="headerlink" href="#resolution" title="Link to this heading">¶</a></h3>
+<h3>Resolution<a class="headerlink" href="#resolution" title="Link to this heading"></a></h3>
 <section id="width-height">
-<h4>Width/Height<a class="headerlink" href="#width-height" title="Link to this heading">¶</a></h4>
+<h4>Width/Height<a class="headerlink" href="#width-height" title="Link to this heading"></a></h4>
 <p>Sets the output size for each frame of the animation.</p>
 </section>
 <section id="scale">
-<h4>Scale<a class="headerlink" href="#scale" title="Link to this heading">¶</a></h4>
+<h4>Scale<a class="headerlink" href="#scale" title="Link to this heading"></a></h4>
 <p>The recording area is enlarged from the actual screen.
 For example, if the width and height are 256 and the Scale is 2, the 256 range is enlarged by a factor of 2 and recorded, and an image with a resolution of 512 is exported.</p>
 </section>
 <section id="show-guide">
-<h4>Show guide<a class="headerlink" href="#show-guide" title="Link to this heading">¶</a></h4>
+<h4>Show guide<a class="headerlink" href="#show-guide" title="Link to this heading"></a></h4>
 <p>When checked, the bounds of the recording canvas is displayed on the screen. Anything inside the guide will be recorded, anything outside the guide will be cropped out.</p>
 </section>
 </section>
 <section id="exported-frame">
-<h3>Exported Frame<a class="headerlink" href="#exported-frame" title="Link to this heading">¶</a></h3>
+<h3>Exported Frame<a class="headerlink" href="#exported-frame" title="Link to this heading"></a></h3>
 <section id="start-frame">
-<h4>Start Frame<a class="headerlink" href="#start-frame" title="Link to this heading">¶</a></h4>
+<h4>Start Frame<a class="headerlink" href="#start-frame" title="Link to this heading"></a></h4>
 <p>Sets the frame to start recording from for outputting the image to a file.</p>
 </section>
 <section id="end-frame">
-<h4>End Frame<a class="headerlink" href="#end-frame" title="Link to this heading">¶</a></h4>
+<h4>End Frame<a class="headerlink" href="#end-frame" title="Link to this heading"></a></h4>
 <p>Sets the frame where recording will be stopped when outputting the image to a file.</p>
 </section>
 <section id="frequency-frame">
-<h4>Frequency (Frame)<a class="headerlink" href="#frequency-frame" title="Link to this heading">¶</a></h4>
+<h4>Frequency (Frame)<a class="headerlink" href="#frequency-frame" title="Link to this heading"></a></h4>
 <p>Sets the level of frame skipping in the file output. For example, for a value of 1, when 60 frames are recorded, 60 images will be output. For a value of 2, when 60 frames are recorded, only 30 images will be output (every other frame). If you increase the number like this, the file size will become smaller at the cost of choppier animations.</p>
 </section>
 </section>
 <section id="format">
-<h3>Format<a class="headerlink" href="#format" title="Link to this heading">¶</a></h3>
+<h3>Format<a class="headerlink" href="#format" title="Link to this heading"></a></h3>
 <p>There are 4 options: &quot;Export as a single image&quot;, &quot;Export images&quot;, &quot;Export as a gif animation&quot;, and &quot;Export as a AVI&quot;.</p>
 <p>&quot;Export as a single image&quot; will create a sprite-sheet image with frames arranged from the upper left to the lower right. The number of frames arranged horizontally will be number specified under &quot;X Count&quot;. Consequently, the number of frames arranged vertically will be the total number of recorded frames / X Count.</p>
 <p>&quot;Export images&quot; outputs frames as individual files with numbers attached to each filename.</p>
@@ -154,30 +158,30 @@ For example, if the width and height are 256 and the Scale is 2, the 256 range i
 <p>&quot;Export as a AVI&quot; outputs the captured effect to an uncompressed animation file.</p>
 <table><tbody><tr><td>Export as a single image</td><td>Export images</td><td>Export as a gif animation</td></tr><tr><td><img src="../../img/Reference/record_single.jpg"/></td><td><img src="../../img/Reference/record_seq.jpg"/></td><td><img src="../../img/Reference/record_gifanim.gif"/></td></tr></tbody></table></section>
 <section id="options">
-<h3>Options<a class="headerlink" href="#options" title="Link to this heading">¶</a></h3>
+<h3>Options<a class="headerlink" href="#options" title="Link to this heading"></a></h3>
 </section>
 <section id="make-transparent">
-<h3>Make transparent<a class="headerlink" href="#make-transparent" title="Link to this heading">¶</a></h3>
+<h3>Make transparent<a class="headerlink" href="#make-transparent" title="Link to this heading"></a></h3>
 <p>It specifies how to handle the background except gif animation.</p>
 <section id="none">
-<h4>None<a class="headerlink" href="#none" title="Link to this heading">¶</a></h4>
+<h4>None<a class="headerlink" href="#none" title="Link to this heading"></a></h4>
 <p>It specifies black color to the background.</p>
 <img alt="../../_images/none.png" class="align-center" src="../../_images/none.png" />
 </section>
 <section id="original-image">
-<h4>Original image<a class="headerlink" href="#original-image" title="Link to this heading">¶</a></h4>
+<h4>Original image<a class="headerlink" href="#original-image" title="Link to this heading"></a></h4>
 <p>It specifies transparent to the background.
 If images with a black background are used with additive, it sometimes generates wrong image.</p>
 <img alt="../../_images/original.png" class="align-center" src="../../_images/original.png" />
 </section>
 <section id="generate-alpha">
-<h4>Generate alpha<a class="headerlink" href="#generate-alpha" title="Link to this heading">¶</a></h4>
+<h4>Generate alpha<a class="headerlink" href="#generate-alpha" title="Link to this heading"></a></h4>
 <p>It generates alpha channel automatically.
 If images with dark color are used with blend, it sometimes generates wrong image.</p>
 <img alt="../../_images/generate.png" class="align-center" src="../../_images/generate.png" />
 </section>
 <section id="generate-alpha-blend-add">
-<h4>Generate alpha(Blend+Add)<a class="headerlink" href="#generate-alpha-blend-add" title="Link to this heading">¶</a></h4>
+<h4>Generate alpha(Blend+Add)<a class="headerlink" href="#generate-alpha-blend-add" title="Link to this heading"></a></h4>
 <p>By outputting the recorded results separately from blend and addition,
 the color when the background is changed can be reproduced in the possible range.
 It can also record an effect which contains blend and additive particles.</p>
@@ -186,13 +190,13 @@ It can also record an effect which contains blend and additive particles.</p>
 <img alt="../../_images/blend_add_desc.png" class="align-center" src="../../_images/blend_add_desc.png" />
 <iframe width="560" height="315" src="https://www.youtube.com/embed/XqhE_pllD90" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></section>
 <section id="comparison-of-methods">
-<h4>Comparison of methods<a class="headerlink" href="#comparison-of-methods" title="Link to this heading">¶</a></h4>
+<h4>Comparison of methods<a class="headerlink" href="#comparison-of-methods" title="Link to this heading"></a></h4>
 <p>From left to right, None, Original image, Generate alpha, Generate alpha(Blend+Add) images are displayed.</p>
 <img alt="../../_images/compare.png" class="align-center" src="../../_images/compare.png" />
 </section>
 </section>
 <section id="setting-save-destination">
-<h3>Setting save destination<a class="headerlink" href="#setting-save-destination" title="Link to this heading">¶</a></h3>
+<h3>Setting save destination<a class="headerlink" href="#setting-save-destination" title="Link to this heading"></a></h3>
 <p>It can specify whether to save the recording settings to the application or the project.</p>
 </section>
 </section>

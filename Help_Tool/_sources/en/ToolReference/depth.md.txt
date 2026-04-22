@@ -1,4 +1,4 @@
-﻿# Depth
+# Depth
 
 ## Overview
 

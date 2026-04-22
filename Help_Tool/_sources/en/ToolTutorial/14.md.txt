@@ -1,4 +1,4 @@
-﻿# 14. Let's configure levels of details
+# 14. Let's configure levels of details
 
 ## Overview
 

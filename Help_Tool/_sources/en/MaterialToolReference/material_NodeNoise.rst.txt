@@ -20,3 +20,15 @@ when calculating the value of WorldOffset.
 
 .. image:: ../../img/Reference/Material/node_SimpleNoise.png
    :align: center
+
+White Noise
+------------------------
+
+Outputs random noise values.
+Useful for subtle jitter or random intensity variation.
+
+Cellular Noise
+------------------------
+
+Outputs noise with a cell-like pattern.
+Useful for organic patterns such as cracks, bubbles, or spots.

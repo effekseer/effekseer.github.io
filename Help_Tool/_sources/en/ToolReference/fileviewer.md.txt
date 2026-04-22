@@ -1,4 +1,4 @@
-﻿# File Browser
+# File Browser
 
 ## Overview
 

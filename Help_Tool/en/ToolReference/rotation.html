@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="ja" data-content_root="../../">
+<html class="writer-html5" lang="en" data-content_root="../../">
 <head>
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -14,6 +14,8 @@
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
         <script src="../../_static/documentation_options.js?v=c033477b"></script>
         <script src="../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
@@ -78,6 +80,8 @@
 <li class="toctree-l4"><a class="reference internal" href="levelsOfDetails.html">Levels Of Details</a></li>
 <li class="toctree-l4"><a class="reference internal" href="dynamicParameter.html">DynamicParameter</a></li>
 <li class="toctree-l4"><a class="reference internal" href="proceduralModel.html">Procedural Model</a></li>
+<li class="toctree-l4"><a class="reference internal" href="collisions.html">Collision</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gpuParticles.html">GPU Particles</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="index.html#effect-features">Effect features</a></li>
@@ -91,6 +95,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../ReleaseNotes/index.html">Release Notes</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../../zh_CN/index.html">Effekseer Help (中文)</a></li>
 </ul>
 
         </div>
@@ -119,39 +124,44 @@
            <div itemprop="articleBody">
              
   <section id="rotation">
-<h1>Rotation<a class="headerlink" href="#rotation" title="Link to this heading">¶</a></h1>
+<h1>Rotation<a class="headerlink" href="#rotation" title="Link to this heading"></a></h1>
 <section id="overview">
-<h2>Overview<a class="headerlink" href="#overview" title="Link to this heading">¶</a></h2>
+<h2>Overview<a class="headerlink" href="#overview" title="Link to this heading"></a></h2>
 <p>Set parameters related to the rotation of the node.</p>
 </section>
 <section id="parameters">
-<h2>Parameters<a class="headerlink" href="#parameters" title="Link to this heading">¶</a></h2>
+<h2>Parameters<a class="headerlink" href="#parameters" title="Link to this heading"></a></h2>
 <div align="center">
 <img src="../../img/Tutorial/04_rotation_en.png">
 <p>"Rotation" window</p>
 </div><section id="id1">
-<h3>Rotation<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h3>
+<h3>Rotation<a class="headerlink" href="#id1" title="Link to this heading"></a></h3>
 <p>Specifies the spawn angle of the particle. This will influence the angle of the particle relative to its parent particle. If there is no parent particle, or angle is set to not inherit in the Basic Settings window, this will specify the absolute angle instead.</p>
 <section id="fixed-angle">
-<h4>Fixed Angle<a class="headerlink" href="#fixed-angle" title="Link to this heading">¶</a></h4>
+<h4>Fixed Angle<a class="headerlink" href="#fixed-angle" title="Link to this heading"></a></h4>
 <p>Specify the angle of the particle.</p>
 <iframe src='../../Effects/viewer_en.html#References/Rotation/rotation.efkefc' class='effect'></iframe></section>
 <section id="position-velocity-acceleration-pva">
-<h4>Position, Velocity, Acceleration (PVA)<a class="headerlink" href="#position-velocity-acceleration-pva" title="Link to this heading">¶</a></h4>
+<h4>Position, Velocity, Acceleration (PVA)<a class="headerlink" href="#position-velocity-acceleration-pva" title="Link to this heading"></a></h4>
 <p>Specify the initial angle, rotational speed, and angular acceleration of the particle.</p>
 <iframe src='../../Effects/viewer_en.html#References/Rotation/rotation_pva.efkefc' class='effect'></iframe></section>
 <section id="easing">
-<h4>Easing<a class="headerlink" href="#easing" title="Link to this heading">¶</a></h4>
+<h4>Easing<a class="headerlink" href="#easing" title="Link to this heading"></a></h4>
 <p>Specify the initial angle for the particle, as well as the final angle for the particle at the end of its lifetime, and how to transition between the two.</p>
 <iframe src='../../Effects/viewer_en.html#References/Rotation/rotation_easing.efkefc' class='effect'></iframe></section>
 <section id="f-curve">
-<h4>F-Curve<a class="headerlink" href="#f-curve" title="Link to this heading">¶</a></h4>
+<h4>F-Curve<a class="headerlink" href="#f-curve" title="Link to this heading"></a></h4>
 <p>Use an F-curve to modify the rotational value over the lifetime of the particle.</p>
 <iframe src='../../Effects/viewer_en.html#References/Rotation/rotation_f_curve.efkefc' class='effect'></iframe></section>
 <section id="rotate-in-the-viewpoint-direction">
-<h4>Rotate in the viewpoint direction<a class="headerlink" href="#rotate-in-the-viewpoint-direction" title="Link to this heading">¶</a></h4>
+<h4>Rotate in the viewpoint direction<a class="headerlink" href="#rotate-in-the-viewpoint-direction" title="Link to this heading"></a></h4>
 <p>Rotates so that the Z-axis points toward the camera.
 Since it uses the position of the camera, it will not work correctly if multiple cameras are present.</p>
+</section>
+<section id="rotate-in-the-direction-of-movement">
+<h4>Rotate in the direction of movement<a class="headerlink" href="#rotate-in-the-direction-of-movement" title="Link to this heading"></a></h4>
+<p>Rotates the particle so that the specified axis points in the direction of movement.
+Useful for projectiles and effects with a clear flow direction.</p>
 </section>
 </section>
 </section>

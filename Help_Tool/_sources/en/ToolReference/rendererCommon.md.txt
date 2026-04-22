@@ -1,4 +1,4 @@
-﻿# Basic Render Settings
+# Basic Render Settings
 
 ## Overview
 
@@ -118,6 +118,11 @@ Specifies the method of alpha blending applied when displaying the particle. Thi
 
 Specify the filtering method to be applied when displaying the particle.
 
+### Wrap
+
+Specifies how the texture is sampled when the UV goes below 0.0 or above 1.0.
+You can choose `Repeat`, `Clamp`, or `Mirror`.
+
 ### Depth Set
 
 Specify whether to write depth information when displaying particles. After writing the depth information, if you draw the particles for which the depth test is enabled, if the particles are deep inside, they will not be drawn.
@@ -176,6 +181,11 @@ Move the UV range at a constant speed.
 
 Use the F-Curve window to control the UV by defining automation curves.
 
+#### UV Horizontal Flip Probability
+
+Specifies the probability of flipping the UV horizontally for each particle.
+This is useful for adding variation to the appearance.
+
 ### Referenced(UV)
 
 Multiple images with different sizes may be used for one particle.
@@ -229,4 +239,3 @@ Always
 </tbody>
 
 </table>
-

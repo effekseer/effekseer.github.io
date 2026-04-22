@@ -1,4 +1,4 @@
-﻿# Environment
+# Environment
 
 ## Overview
 
@@ -27,7 +27,8 @@ Specify an image for the background.
 ### Ground
 
 Show a ground surface.
-It is useful for checking soft particles or depth.
+It is useful for checking soft particles and depth behavior.
+Ground collision can also be enabled here.
 
 ```eval_rst
 .. image:: ../../img/Reference/Environment/ground.png

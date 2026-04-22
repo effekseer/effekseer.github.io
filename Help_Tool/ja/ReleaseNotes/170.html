@@ -14,6 +14,8 @@
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
         <script src="../../_static/documentation_options.js?v=c033477b"></script>
         <script src="../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
@@ -26,7 +28,7 @@
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="検索" href="../../search.html" />
     <link rel="next" title="1.60 新機能" href="160.html" />
-    <link rel="prev" title="リリースノート" href="index.html" /> 
+    <link rel="prev" title="1.80 新機能" href="180.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -58,6 +60,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../faq.html">FAQ</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="index.html">リリースノート</a><ul class="current">
 <li class="toctree-l3 current"><a class="reference internal" href="index.html#id2">新機能</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="180.html">1.80 新機能</a></li>
 <li class="toctree-l4 current"><a class="current reference internal" href="#">1.70 新機能</a></li>
 <li class="toctree-l4"><a class="reference internal" href="160.html">1.60 新機能</a></li>
 <li class="toctree-l4"><a class="reference internal" href="150.html">1.50 新機能</a></li>
@@ -69,6 +72,7 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../en/index.html">Effekseer Help (English)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../zh_CN/index.html">Effekseer Help (中文)</a></li>
 </ul>
 
         </div>
@@ -97,78 +101,78 @@
            <div itemprop="articleBody">
              
   <section id="id1">
-<h1>1.70 新機能<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h1>
+<h1>1.70 新機能<a class="headerlink" href="#id1" title="Link to this heading"></a></h1>
 <section id="id2">
-<h2>共通<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
+<h2>共通<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
 <section id="id3">
-<h3>グラディエント<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h3>
+<h3>グラディエント<a class="headerlink" href="#id3" title="Link to this heading"></a></h3>
 <p>グラディエントで色を指定する機能が追加されました。</p>
 <img alt="../../_images/gradient.png" class="align-center" src="../../_images/gradient.png" />
 </section>
 <section id="level-of-detail">
-<h3>Level of Detail<a class="headerlink" href="#level-of-detail" title="Link to this heading">¶</a></h3>
+<h3>Level of Detail<a class="headerlink" href="#level-of-detail" title="Link to this heading"></a></h3>
 <p>距離に応じてパーティクルの振る舞いを変更し、エフェクトを軽量化する機能が追加されました。
 [by <a class="reference external" href="https://github.com/abvadabra">&#64;abvadabra</a>, <a class="reference external" href="https://github.com/effekseer/Effekseer/pull/820">#820</a>]</p>
 <img alt="../../_images/lods_NodeConfiguration.png" class="align-center" src="../../_images/lods_NodeConfiguration.png" />
 </section>
 <section id="id4">
-<h3>破棄ルール<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h3>
+<h3>破棄ルール<a class="headerlink" href="#id4" title="Link to this heading"></a></h3>
 <p>指定された範囲内にパーティクルが入る、もしくは出るとパーティクルが破棄される範囲を指定する機能を追加しました。
 [by <a class="reference external" href="https://github.com/abvadabra">&#64;abvadabra</a>, <a class="reference external" href="https://github.com/effekseer/Effekseer/pull/833">#833</a>]</p>
 <img alt="../../_images/killRules_Box.png" class="align-center" src="../../_images/killRules_Box.png" />
 </section>
 <section id="id5">
-<h3>トリガー<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h3>
+<h3>トリガー<a class="headerlink" href="#id5" title="Link to this heading"></a></h3>
 <p>再生中に特定のパーティクルを削除したり、生成開始したりする機能を追加しました。</p>
 <img alt="../../_images/trigger_anim.gif" class="align-center" src="../../_images/trigger_anim.gif" />
 </section>
 <section id="id6">
-<h3>回転<a class="headerlink" href="#id6" title="Link to this heading">¶</a></h3>
+<h3>回転<a class="headerlink" href="#id6" title="Link to this heading"></a></h3>
 <p>パーティクルがカメラの方向を向くように回転する機能を追加しました。</p>
 </section>
 <section id="id7">
-<h3>リボン、軌跡<a class="headerlink" href="#id7" title="Link to this heading">¶</a></h3>
+<h3>リボン、軌跡<a class="headerlink" href="#id7" title="Link to this heading"></a></h3>
 <section id="id8">
-<h4>色の時間<a class="headerlink" href="#id8" title="Link to this heading">¶</a></h4>
+<h4>色の時間<a class="headerlink" href="#id8" title="Link to this heading"></a></h4>
 <p>リボンや軌跡の色を決めるための時間の取得元設定する機能を追加しました。</p>
 </section>
 </section>
 <section id="id9">
-<h3>マテリアル<a class="headerlink" href="#id9" title="Link to this heading">¶</a></h3>
+<h3>マテリアル<a class="headerlink" href="#id9" title="Link to this heading"></a></h3>
 <section id="id10">
-<h4>新規ノード<a class="headerlink" href="#id10" title="Link to this heading">¶</a></h4>
+<h4>新規ノード<a class="headerlink" href="#id10" title="Link to this heading"></a></h4>
 <p>ライト、ノイズ、グラディエントノードが追加されました。</p>
 </section>
 </section>
 </section>
 <section id="id11">
-<h2>ツール<a class="headerlink" href="#id11" title="Link to this heading">¶</a></h2>
+<h2>ツール<a class="headerlink" href="#id11" title="Link to this heading"></a></h2>
 <section id="id12">
-<h3>オーバードロー表示<a class="headerlink" href="#id12" title="Link to this heading">¶</a></h3>
+<h3>オーバードロー表示<a class="headerlink" href="#id12" title="Link to this heading"></a></h3>
 <p>描画方法として描画回数を表示する表示方法を追加しました。</p>
 <img alt="../../_images/DrawMode_Overdraw.png" class="align-center" src="../../_images/DrawMode_Overdraw.png" />
 </section>
 <section id="h264">
-<h3>h264録画<a class="headerlink" href="#h264" title="Link to this heading">¶</a></h3>
+<h3>h264録画<a class="headerlink" href="#h264" title="Link to this heading"></a></h3>
 <p>録画にh264フォーマットでの保存を追加しました。(Windowsのみ)</p>
 </section>
 <section id="id13">
-<h3>データ復元<a class="headerlink" href="#id13" title="Link to this heading">¶</a></h3>
+<h3>データ復元<a class="headerlink" href="#id13" title="Link to this heading"></a></h3>
 <p>Effekseer で編集したプロジェクトの自動保存機能を追加しました。
 データ損失の場合、「ファイル &gt; 復元」で自動保存されたファイルからプロジェクトを復元することができます。</p>
 <p>[by <a class="reference external" href="https://github.com/abvadabra">&#64;abvadabra</a>, <a class="reference external" href="https://github.com/effekseer/Effekseer/pull/813">#813</a>]</p>
 </section>
 </section>
 <section id="unity">
-<h2>Unity<a class="headerlink" href="#unity" title="Link to this heading">¶</a></h2>
+<h2>Unity<a class="headerlink" href="#unity" title="Link to this heading"></a></h2>
 <p>M1 Macをサポートしました。</p>
 </section>
 <section id="unrealengine5">
-<h2>UnrealEngine5<a class="headerlink" href="#unrealengine5" title="Link to this heading">¶</a></h2>
+<h2>UnrealEngine5<a class="headerlink" href="#unrealengine5" title="Link to this heading"></a></h2>
 <p>UnrealEngine5をサポートしました。</p>
 </section>
 <section id="id14">
-<h2>その他<a class="headerlink" href="#id14" title="Link to this heading">¶</a></h2>
+<h2>その他<a class="headerlink" href="#id14" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p>ランタイム : 少数の時間に生成されたパーティクルが親の位置を補間して表示するようになりました。
 例えば、高速に移動している親パーティクルの子を等間隔に生成できるようになりました。</p></li>
@@ -186,7 +190,7 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="index.html" class="btn btn-neutral float-left" title="リリースノート" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="180.html" class="btn btn-neutral float-left" title="1.80 新機能" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
         <a href="160.html" class="btn btn-neutral float-right" title="1.60 新機能" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 

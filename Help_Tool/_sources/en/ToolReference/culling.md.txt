@@ -1,4 +1,4 @@
-﻿# Culling
+# Culling
 
 ## Overview
 

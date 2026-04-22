@@ -1,4 +1,4 @@
-﻿# 14. Level of Details (LOD)を設定しよう！
+# 14. Level of Details (LOD)を設定しよう！
 
 ## 概要
 

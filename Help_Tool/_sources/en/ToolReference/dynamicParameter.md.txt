@@ -1,4 +1,4 @@
-﻿# DynamicParameter
+# DynamicParameter
 
 ## Overview
 

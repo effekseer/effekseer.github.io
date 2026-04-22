@@ -14,6 +14,8 @@
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
         <script src="../../_static/documentation_options.js?v=c033477b"></script>
         <script src="../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
@@ -81,6 +83,7 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../en/index.html">Effekseer Help (English)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../zh_CN/index.html">Effekseer Help (中文)</a></li>
 </ul>
 
         </div>
@@ -109,18 +112,18 @@
            <div itemprop="articleBody">
              
   <section id="id1">
-<h1>02.パーティクルをばらまいてみよう！<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h1>
+<h1>02.パーティクルをばらまいてみよう！<a class="headerlink" href="#id1" title="Link to this heading"></a></h1>
 <div class="main"><section id="id2">
-<h2>概要<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
+<h2>概要<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
 <p>本章では、パーティクルをばらまいてみます。
 これだけでは味気ないですが、Effekseerの基本操作を覚えれます。
 本章で覚えた知識をもとに、次の章で格好いいエフェクトを作成します。
 そのため、しっかり理解しましょう。</p>
 <iframe src='../../Sample/viewer_ja.html#02_Sample/effect.efk'></iframe></section>
 <section id="id3">
-<h2>位置の編集<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
+<h2>位置の編集<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
 <section id="id4">
-<h3>初期配置の位置の編集<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h3>
+<h3>初期配置の位置の編集<a class="headerlink" href="#id4" title="Link to this heading"></a></h3>
 <p>現在は、中央にパーティクルが表示されています。このパーティクルを中央から移動させてみます。</p>
 <div align="center">
 <img src="../../img/Tutorial/01_square.png">
@@ -154,7 +157,7 @@
 <p>外側に移動</p>
 </div></section>
 <section id="id5">
-<h3>パーティクルが移動するようにする<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h3>
+<h3>パーティクルが移動するようにする<a class="headerlink" href="#id5" title="Link to this heading"></a></h3>
 <p>パーティクルが静止している状態では面白くありません。パーティクルが移動するようにしましょう。</p>
 <p>Effekseerには位置を指定する方法が複数あります。</p>
 <p>初期設定では位置が固定されていますが、速度や加速度を指定できる設定方法があります。</p>
@@ -175,7 +178,7 @@
 </div><p>他の数値も入力して、挙動がどう変化するか試してみましょう。</p>
 </section>
 <section id="id6">
-<h3>パーティクルが複数表示されるようにする<a class="headerlink" href="#id6" title="Link to this heading">¶</a></h3>
+<h3>パーティクルが複数表示されるようにする<a class="headerlink" href="#id6" title="Link to this heading"></a></h3>
 <p>多くのエフェクトでは、パーティクルが1つしかないことはほとんどないです。
 パーティクルを複数表示させてみましょう。</p>
 <p>パーティクルの数は、共通ウインドウの生成数に設定されています。
@@ -198,7 +201,7 @@
 <p>生成数を増やす</p>
 </div></section>
 <section id="id7">
-<h3>パーティクルをランダムな方向に移動させる<a class="headerlink" href="#id7" title="Link to this heading">¶</a></h3>
+<h3>パーティクルをランダムな方向に移動させる<a class="headerlink" href="#id7" title="Link to this heading"></a></h3>
 <p>パーティクルの移動方向が同じだと、パーティクルが重なって表示されてしまいます。
 そこで、パーティクルごとにランダムな方向に移動するようにします。</p>
 <p>位置ウインドウの速度のxyzの振幅に0.1と入力しましょう。さらに、先ほど中心に入力した0.1を0に戻します。</p>
@@ -213,7 +216,7 @@
 <p>ランダム</p>
 </div></section>
 <section id="id8">
-<h3>パーティクルが表示されている時間を短くする<a class="headerlink" href="#id8" title="Link to this heading">¶</a></h3>
+<h3>パーティクルが表示されている時間を短くする<a class="headerlink" href="#id8" title="Link to this heading"></a></h3>
 <p>今はパーティクルが長時間表示されていますが、エフェクトによっては短いものもあります。
 表示時間を短くしてみましょう。</p>
 <p>共通ウインドウに生存時間というパラメーターがあります。
@@ -231,7 +234,7 @@
 </div></section>
 </section>
 <section id="id9">
-<h2>まとめ<a class="headerlink" href="#id9" title="Link to this heading">¶</a></h2>
+<h2>まとめ<a class="headerlink" href="#id9" title="Link to this heading"></a></h2>
 <p>今回はパーティクルを複数生成し、移動させてみました。
 次章では、パーティクルから、よりエフェクトらしい見た目に編集します。</p>
 </div></section>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="ja" data-content_root="../../">
+<html class="writer-html5" lang="en" data-content_root="../../">
 <head>
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -14,6 +14,8 @@
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
         <script src="../../_static/documentation_options.js?v=c033477b"></script>
         <script src="../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
@@ -81,6 +83,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../ReleaseNotes/index.html">Release Notes</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../../zh_CN/index.html">Effekseer Help (中文)</a></li>
 </ul>
 
         </div>
@@ -109,18 +112,18 @@
            <div itemprop="articleBody">
              
   <section id="material-node-constant">
-<h1>Material Node(Constant)<a class="headerlink" href="#material-node-constant" title="Link to this heading">¶</a></h1>
+<h1>Material Node(Constant)<a class="headerlink" href="#material-node-constant" title="Link to this heading"></a></h1>
 <section id="overview">
-<h2>Overview<a class="headerlink" href="#overview" title="Link to this heading">¶</a></h2>
+<h2>Overview<a class="headerlink" href="#overview" title="Link to this heading"></a></h2>
 </section>
 <section id="node-list">
-<h2>Node list<a class="headerlink" href="#node-list" title="Link to this heading">¶</a></h2>
+<h2>Node list<a class="headerlink" href="#node-list" title="Link to this heading"></a></h2>
 <section id="constant1-2-3-4">
-<h3>Constant1,2,3,4<a class="headerlink" href="#constant1-2-3-4" title="Link to this heading">¶</a></h3>
+<h3>Constant1,2,3,4<a class="headerlink" href="#constant1-2-3-4" title="Link to this heading"></a></h3>
 <p>Outputs the value specified in the property.</p>
 </section>
 <section id="parameter1-2-3-4">
-<h3>Parameter1,2,3,4<a class="headerlink" href="#parameter1-2-3-4" title="Link to this heading">¶</a></h3>
+<h3>Parameter1,2,3,4<a class="headerlink" href="#parameter1-2-3-4" title="Link to this heading"></a></h3>
 <p>Outputs externally specified parameters.
 This parameter is common for each node.
 The summary and details specified in the parameters are displayed in Effekseer and external tools.</p>
@@ -129,7 +132,7 @@ The summary and details specified in the parameters are displayed in Effekseer a
 <img alt="../../_images/node_Parameter.png" class="align-center" src="../../_images/node_Parameter.png" />
 </section>
 <section id="customdata1-customdata2">
-<h3>CustomData1, CustomData2<a class="headerlink" href="#customdata1-customdata2" title="Link to this heading">¶</a></h3>
+<h3>CustomData1, CustomData2<a class="headerlink" href="#customdata1-customdata2" title="Link to this heading"></a></h3>
 <p>Outputs externally specified parameters.
 This parameter can be set differently for each particle.
 The summary and details specified in the parameters are displayed in Effekseer and external tools.</p>
@@ -139,19 +142,24 @@ For example, you can enter random or F-curve values to achieve more complex mate
 <img alt="../../_images/node_CustomData.png" class="align-center" src="../../_images/node_CustomData.png" />
 </section>
 <section id="time">
-<h3>Time<a class="headerlink" href="#time" title="Link to this heading">¶</a></h3>
+<h3>Time<a class="headerlink" href="#time" title="Link to this heading"></a></h3>
 <p>Outputs the current time in seconds.</p>
 </section>
 <section id="localtime">
-<h3>LocalTime<a class="headerlink" href="#localtime" title="Link to this heading">¶</a></h3>
+<h3>LocalTime<a class="headerlink" href="#localtime" title="Link to this heading"></a></h3>
 <p>Outputs the time in seconds since the effect was generated.</p>
 </section>
+<section id="particletime">
+<h3>ParticleTime<a class="headerlink" href="#particletime" title="Link to this heading"></a></h3>
+<p>Outputs each particle's normalized lifetime progress and elapsed seconds.
+Since each particle can have different values, this is useful for per-particle animation control.</p>
+</section>
 <section id="cameraposition">
-<h3>CameraPosition<a class="headerlink" href="#cameraposition" title="Link to this heading">¶</a></h3>
+<h3>CameraPosition<a class="headerlink" href="#cameraposition" title="Link to this heading"></a></h3>
 <p>Outputs the camera position.</p>
 </section>
 <section id="effectscale">
-<h3>EffectScale<a class="headerlink" href="#effectscale" title="Link to this heading">¶</a></h3>
+<h3>EffectScale<a class="headerlink" href="#effectscale" title="Link to this heading"></a></h3>
 <p>Gets the scale specified when the effect file is loaded</p>
 </section>
 </section>

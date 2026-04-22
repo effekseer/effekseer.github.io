@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="ja" data-content_root="../../">
+<html class="writer-html5" lang="en" data-content_root="../../">
 <head>
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -14,6 +14,8 @@
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
         <script src="../../_static/documentation_options.js?v=c033477b"></script>
         <script src="../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
@@ -68,6 +70,7 @@
 <li class="toctree-l4"><a class="reference internal" href="fileExport.html">File - Export</a></li>
 <li class="toctree-l4 current"><a class="current reference internal" href="#">Recovering Data</a></li>
 <li class="toctree-l4"><a class="reference internal" href="drawMode.html">Draw Modes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="profiler.html">Profiler</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="index.html#command-line">Command Line</a></li>
@@ -79,6 +82,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../ReleaseNotes/index.html">Release Notes</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../../zh_CN/index.html">Effekseer Help (中文)</a></li>
 </ul>
 
         </div>
@@ -107,7 +111,7 @@
            <div itemprop="articleBody">
              
   <section id="recovering-data">
-<h1>Recovering Data<a class="headerlink" href="#recovering-data" title="Link to this heading">¶</a></h1>
+<h1>Recovering Data<a class="headerlink" href="#recovering-data" title="Link to this heading"></a></h1>
 <p>There are various reasons why you may accidentally lose your work.
 The editor might crash, a power outage may happen, or simply clicking
 the wrong button may result in corruption of the effect you've been
@@ -118,9 +122,9 @@ projects.</p>
 every time you close the editor. Auto saves are enabled by default,
 and you can't disable auto save on editor exit.</p>
 <section id="recovering-auto-saves">
-<h2>Recovering Auto Saves<a class="headerlink" href="#recovering-auto-saves" title="Link to this heading">¶</a></h2>
+<h2>Recovering Auto Saves<a class="headerlink" href="#recovering-auto-saves" title="Link to this heading"></a></h2>
 <section id="last-session">
-<h3>Last Session<a class="headerlink" href="#last-session" title="Link to this heading">¶</a></h3>
+<h3>Last Session<a class="headerlink" href="#last-session" title="Link to this heading"></a></h3>
 <p><code class="docutils literal notranslate"><span class="pre">Menu:</span> <span class="pre">File</span> <span class="pre">&gt;</span> <span class="pre">Recover</span> <span class="pre">&gt;</span> <span class="pre">Last</span> <span class="pre">Session</span></code></p>
 <p>Opens the <code class="docutils literal notranslate"><span class="pre">efk_quit.efkbac</span></code> file which is saved in Temporary directory when the editor
 is closed under normal operation. This option allows to recover project
@@ -128,7 +132,7 @@ which was lost when you accidentally closed the editor and didn't save changes.
 If such a file is not found an error will be shown.</p>
 </section>
 <section id="auto-save">
-<h3>Auto Save<a class="headerlink" href="#auto-save" title="Link to this heading">¶</a></h3>
+<h3>Auto Save<a class="headerlink" href="#auto-save" title="Link to this heading"></a></h3>
 <p><code class="docutils literal notranslate"><span class="pre">Menu:</span> <span class="pre">File</span> <span class="pre">&gt;</span> <span class="pre">Recover</span> <span class="pre">&gt;</span> <span class="pre">Auto</span> <span class="pre">Save...</span></code></p>
 <p>Allows you to choose an auto saved file from Temporary directory.
 Auto saved files will have <code class="docutils literal notranslate"><span class="pre">efk_autosave</span></code> prefix and <code class="docutils literal notranslate"><span class="pre">efkbac</span></code> extension.

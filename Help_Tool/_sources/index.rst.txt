@@ -7,3 +7,4 @@ Hello Effekseer !
    
    /ja/index
    /en/index
+   /zh_CN/index

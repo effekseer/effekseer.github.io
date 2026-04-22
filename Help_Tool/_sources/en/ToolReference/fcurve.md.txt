@@ -1,4 +1,4 @@
-﻿# F-Curve
+# F-Curve
 
 ## Overview
 

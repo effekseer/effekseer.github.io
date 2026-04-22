@@ -14,6 +14,8 @@
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
         <script src="../../_static/documentation_options.js?v=c033477b"></script>
         <script src="../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
@@ -67,6 +69,7 @@
 <li class="toctree-l4"><a class="reference internal" href="fileExport.html">ファイル - エクスポート</a></li>
 <li class="toctree-l4 current"><a class="current reference internal" href="#">データの復元</a></li>
 <li class="toctree-l4"><a class="reference internal" href="drawMode.html">描画モード</a></li>
+<li class="toctree-l4"><a class="reference internal" href="profiler.html">プロファイラ</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="index.html#id16">コマンドライン</a></li>
@@ -79,6 +82,7 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../en/index.html">Effekseer Help (English)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../zh_CN/index.html">Effekseer Help (中文)</a></li>
 </ul>
 
         </div>
@@ -107,23 +111,23 @@
            <div itemprop="articleBody">
              
   <section id="id1">
-<h1>データの復元<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h1>
+<h1>データの復元<a class="headerlink" href="#id1" title="Link to this heading"></a></h1>
 <p>唐突にあなたの作品が失われる様々な理由があります。
 エディタがクラッシュするかもしれないですし、バッテリーが切れるか、単純に間違ったボタンを押して数時間分の作業のエフェクトを崩壊させるかもしれません。
 Effekseerのエディタは失ったプロジェクトの復元に成功する傾向を高めるために自動保存があります。</p>
 <p>自動保存は固定時間ごとに、またエディタを閉じるたびに動作します。
 自動保存はデフォルトで有効で、エディタを閉じるまで無効にできません。</p>
 <section id="id2">
-<h2>自動保存の復元<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
+<h2>自動保存の復元<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
 <section id="last-session">
-<h3>Last Session<a class="headerlink" href="#last-session" title="Link to this heading">¶</a></h3>
+<h3>Last Session<a class="headerlink" href="#last-session" title="Link to this heading"></a></h3>
 <p><code class="docutils literal notranslate"><span class="pre">Menu:</span> <span class="pre">File</span> <span class="pre">&gt;</span> <span class="pre">Recover</span> <span class="pre">&gt;</span> <span class="pre">Last</span> <span class="pre">Session</span></code></p>
 <p>通常の手順でエディタが閉じられたときにテンポラリディレクトリに保存された <code class="docutils literal notranslate"><span class="pre">efk_quit.efkbac</span></code> を開きます。
 このオプションはあなたがアクシデントでエディタを閉じて変更を保存していない時にプロジェクトを復元させます。
 もし、このファイルが見つからない場合、エラーが表示されます。</p>
 </section>
 <section id="auto-save">
-<h3>Auto Save<a class="headerlink" href="#auto-save" title="Link to this heading">¶</a></h3>
+<h3>Auto Save<a class="headerlink" href="#auto-save" title="Link to this heading"></a></h3>
 <p><code class="docutils literal notranslate"><span class="pre">Menu:</span> <span class="pre">File</span> <span class="pre">&gt;</span> <span class="pre">Recover</span> <span class="pre">&gt;</span> <span class="pre">Auto</span> <span class="pre">Save...</span></code></p>
 <p>一時的なディレクトリから自動的に保存したファイルを選択することをします。
 自動的に保存されたファイルは <code class="docutils literal notranslate"><span class="pre">efk_autosave</span></code> というプレフィクスと <code class="docutils literal notranslate"><span class="pre">efkbac</span></code> という拡張子を持ちます。</p>

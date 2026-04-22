@@ -1,4 +1,4 @@
-﻿# Render - Model
+# Render - Model
 
 ## Overview
 
@@ -18,17 +18,29 @@ The color / distortion image set in the Basic Render Settings window will be use
 
 ### Model
 
-There are two types of models: file and procedural models.
+There are three types of models: `File`, `Procedural`, and `External`.
 
-If models are loaded from file, Specify FBX (.fbx), metasequoia file (.mqo) used for display, or model file for Effekseer (.efkmodel). If .efkmodel is specified, .efkmodel is generated in the same directory as the specified file. When playing effects with other applications, this generated file is necessary.
+If you load from file, specify FBX (`.fbx`), Metasequoia (`.mqo`), glTF (`.gltf`/`.glb`), OBJ (`.obj`), GEO (`.geo`/`.bgeo`), or Effekseer model files (`.efkmodel`). If you specify a source format other than `.efkmodel`, an `.efkmodel` file is generated in the same directory. That generated file is required when the effect is played in other applications.
 
-You can also load FBX (.fbx) with animation. The first animation in the FBX file is played.
+You can also load animated FBX (`.fbx`) files. The first animation in the FBX file is played.
 
 If you want to use a procedural model, create a model in the Procedural Model panel and specify it.
 
+In the editor, external models reference entries registered in [Behavior](behavior.md).
+At runtime, provide external models when playing the effect, and specify the external model index on the rendering side.
+Also specify local or world coordinate space as needed.
+
 ### Configuration
 
-Specify how to draw the particle's model. In the case of "Billboard", the sprite always rotates to face the camera. In the case of "Rotated Billboard", the model rotates to face the camera while keeping the Z axis fixed. In the case of "Fixed Y-axis", the sprite rotates to face the camera while keeping the Y axis fixed. For "Fixed", the model will match the rotation setting of the particle.
+Specify how to draw the particle's model.
+
+| Configuration         | Description |
+|-----------------------|-----------------------------------|
+| Billboard             | The model always rotates to face the camera. |
+| Rotated Billboard     | The model rotates to face the camera while keeping the Z axis fixed. |
+| Directional Billboard | The model faces the camera while rotating so that its Y+ direction points along the direction of movement. |
+| Fixed Y-axis          | The model rotates to face the camera while keeping the Y axis fixed. |
+| Fixed                 | The model will match the rotation setting of the particle. |
 
 <iframe src='../../Effects/viewer_en.html#References/Render/model_configuration.efkefc'></iframe>
 

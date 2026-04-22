@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="ja" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GPUパーティクル &mdash; Effekseer Help  ドキュメント</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=77cdefee" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=c033477b"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/js/three.min.js?v=1b2a738c"></script>
+        <script src="../../_static/js/effekseer.min.js?v=02ca8712"></script>
+        <script src="../../_static/js/iframe.js?v=0460a6df"></script>
+        <script src="../../_static/js/OrbitControls.js?v=366c62db"></script>
+        <script src="../../_static/translations.js?v=4dbe4bdc"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="検索" href="../../search.html" />
+    <link rel="next" title="画像について" href="image.html" />
+    <link rel="prev" title="衝突" href="collisions.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Effekseer Help
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Effekseer Help 日本語</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../overview.html">概要</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolTutorial/index.html">チュートリアル</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">ツール・リファレンス</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="index.html#id2">概要</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="index.html#id13">エフェクトパラメータ</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="common.html">共通</a></li>
+<li class="toctree-l4"><a class="reference internal" href="location.html">位置</a></li>
+<li class="toctree-l4"><a class="reference internal" href="locationAbs.html">力場(ローカル)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="locationGene.html">生成方法</a></li>
+<li class="toctree-l4"><a class="reference internal" href="killRules.html">破棄ルール</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rotation.html">回転</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scale.html">拡大</a></li>
+<li class="toctree-l4"><a class="reference internal" href="depth.html">深度</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererCommon.html">描画共通</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererCommonAd.html">描画共通(高度)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererSprite.html">描画-スプライト</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererRibbon.html">描画-リボン</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererRing.html">描画-リング</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererModel.html">描画-モデル</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rendererTrack.html">描画-軌跡</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sound.html">音</a></li>
+<li class="toctree-l4"><a class="reference internal" href="fcurve.html">Fカーブ</a></li>
+<li class="toctree-l4"><a class="reference internal" href="global.html">全体</a></li>
+<li class="toctree-l4"><a class="reference internal" href="culling.html">カリング</a></li>
+<li class="toctree-l4"><a class="reference internal" href="levelsOfDetails.html">Levels Of Details</a></li>
+<li class="toctree-l4"><a class="reference internal" href="dynamicParameter.html">動的パラメーター</a></li>
+<li class="toctree-l4"><a class="reference internal" href="proceduralModel.html">プロシージャルモデル</a></li>
+<li class="toctree-l4"><a class="reference internal" href="collisions.html">衝突</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">GPUパーティクル</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id14">エフェクト機能</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id15">ツール機能</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id16">コマンドライン</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../MaterialToolReference/index.html">マテリアル・リファレンス</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ToolTips/01.html">TIPS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq.html">FAQ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ReleaseNotes/index.html">リリースノート</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../en/index.html">Effekseer Help (English)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../zh_CN/index.html">Effekseer Help (中文)</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Effekseer Help</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Effekseer Help 日本語</a></li>
+          <li class="breadcrumb-item"><a href="index.html">ツール・リファレンス</a></li>
+      <li class="breadcrumb-item active">GPUパーティクル</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="gpu">
+<h1>GPUパーティクル<a class="headerlink" href="#gpu" title="Link to this heading"></a></h1>
+<section id="id1">
+<h2>概要<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
+<p>GPUパーティクルに関する設定を行います。
+この機能を有効にしたノードはエミッタとして動作し、GPUパーティクルを生成します。</p>
+<p>通常のパーティクルがCPUで計算されるのに対し、GPUパーティクルはGPUで計算されます。
+そのため、多数のパーティクルを効率よく扱えます。</p>
+<p><img alt="../../_images/gpu_particles.png" src="../../_images/gpu_particles.png" /></p>
+<p>GPUパーティクルは、モダンなグラフィックスAPIでのみ利用できます。</p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th style="text-align: left;">ターゲット</th>
+<th style="text-align: center;">サポート</th>
+<th>備考</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">DirectX 9</td>
+<td style="text-align: center;">❌</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align: left;">DirectX 11</td>
+<td style="text-align: center;">✅</td>
+<td>Shader Model 5.0 以降</td>
+</tr>
+<tr>
+<td style="text-align: left;">DirectX 12</td>
+<td style="text-align: center;">✅</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align: left;">OpenGL</td>
+<td style="text-align: center;">❌</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align: left;">Vulkan</td>
+<td style="text-align: center;">✅</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align: left;">Metal</td>
+<td style="text-align: center;">✅</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align: left;">WebGL</td>
+<td style="text-align: center;">❌</td>
+<td></td>
+</tr>
+</tbody>
+</table><table border="1" class="docutils">
+<thead>
+<tr>
+<th style="text-align: left;">ターゲット</th>
+<th style="text-align: center;">サポート</th>
+<th>備考</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Unity</td>
+<td style="text-align: center;">❌</td>
+<td>今後サポート予定</td>
+</tr>
+<tr>
+<td style="text-align: left;">Unreal Engine</td>
+<td style="text-align: center;">❌</td>
+<td>今後サポート予定</td>
+</tr>
+<tr>
+<td style="text-align: left;">Godot Engine</td>
+<td style="text-align: center;">❌</td>
+<td>今後サポート予定</td>
+</tr>
+</tbody>
+</table></section>
+<section id="id2">
+<h2>パラメーター<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
+<p>GPUパーティクルはGPU上で計算する都合上、通常のパーティクルより利用できる機能が限定されます。</p>
+<section id="id3">
+<h3>使用する<a class="headerlink" href="#id3" title="Link to this heading"></a></h3>
+<p>GPUパーティクルを有効にします。</p>
+</section>
+<section id="id4">
+<h3>基本設定<a class="headerlink" href="#id4" title="Link to this heading"></a></h3>
+<p>GPUパーティクルの生成に関する基本設定です。
+GPUパーティクルを開始すると、<code class="docutils literal notranslate"><span class="pre">生成量</span> <span class="pre">x</span> <span class="pre">生存時間</span></code>に応じた領域がパーティクルバッファから確保されます。</p>
+<section id="id5">
+<h4>生成数<a class="headerlink" href="#id5" title="Link to this heading"></a></h4>
+<p>生成するパーティクルの総数です。
+この数に達すると生成を停止します。</p>
+<p><code class="docutils literal notranslate"><span class="pre">無限</span></code>を有効にすると、無限にパーティクルを生成し続けます。
+親パーティクルが破棄されるか、外部から停止要求を受けると生成を停止します。</p>
+</section>
+<section id="id6">
+<h4>生成量<a class="headerlink" href="#id6" title="Link to this heading"></a></h4>
+<p>1フレームあたりに生成するパーティクル数です。
+値を大きくすると、より高い密度で生成されます。</p>
+</section>
+<section id="id7">
+<h4>生成開始時間<a class="headerlink" href="#id7" title="Link to this heading"></a></h4>
+<p>パーティクルの放出を開始するまでの待ち時間です。</p>
+</section>
+<section id="id8">
+<h4>生存時間<a class="headerlink" href="#id8" title="Link to this heading"></a></h4>
+<p>各パーティクルの生存時間です。
+この値は、各種パラメータの変化速度にも影響します。</p>
+</section>
+</section>
+<section id="id9">
+<h3>生成形状<a class="headerlink" href="#id9" title="Link to this heading"></a></h3>
+<p>パーティクルの放出元となる形状を設定します。
+実際の形状は、親パーティクルのトランスフォーム（位置、回転、拡大率）の影響を受けます。</p>
+<section id="id10">
+<h4>生成形状<a class="headerlink" href="#id10" title="Link to this heading"></a></h4>
+<p>放出元の形状タイプを設定します。
+<code class="docutils literal notranslate"><span class="pre">点</span></code>、<code class="docutils literal notranslate"><span class="pre">線</span></code>、<code class="docutils literal notranslate"><span class="pre">円</span></code>、<code class="docutils literal notranslate"><span class="pre">球</span></code>、<code class="docutils literal notranslate"><span class="pre">モデル</span></code>をサポートしています。</p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th width="20%">点形状</th>
+<th width="20%">線形状</th>
+<th width="20%">円形状</th>
+<th width="20%">球形状</th>
+<th width="20%">モデル形状</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="padding:0"><img alt="" src="../../img/Reference/GpuParticles/emit_shape_point.gif" /></td>
+<td style="padding:0"><img alt="" src="../../img/Reference/GpuParticles/emit_shape_line.gif" /></td>
+<td style="padding:0"><img alt="" src="../../img/Reference/GpuParticles/emit_shape_circle.gif" /></td>
+<td style="padding:0"><img alt="" src="../../img/Reference/GpuParticles/emit_shape_sphere.gif" /></td>
+<td style="padding:0"><img alt="" src="../../img/Reference/GpuParticles/emit_shape_model.gif" /></td>
+</tr>
+</tbody>
+</table></section>
+<section id="id11">
+<h4>点形状のパラメータ<a class="headerlink" href="#id11" title="Link to this heading"></a></h4>
+<p>点形状には追加パラメータはありません。</p>
+</section>
+<section id="id12">
+<h4>線形状のパラメータ<a class="headerlink" href="#id12" title="Link to this heading"></a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">開始位置</span></code>と<code class="docutils literal notranslate"><span class="pre">終了位置</span></code>を結んだ線分上からパーティクルを生成します。
+<code class="docutils literal notranslate"><span class="pre">線の太さ</span></code>を大きくすると、円錐のような広がりを持たせることもできます。</p>
+</section>
+<section id="id13">
+<h4>円形状のパラメータ<a class="headerlink" href="#id13" title="Link to this heading"></a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">円の軸</span></code>を中心軸とする円周上からパーティクルを生成します。
+半径は<code class="docutils literal notranslate"><span class="pre">円の内側</span></code>と<code class="docutils literal notranslate"><span class="pre">円の外側</span></code>で決まります。</p>
+</section>
+<section id="id14">
+<h4>球形状のパラメータ<a class="headerlink" href="#id14" title="Link to this heading"></a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">球の半径</span></code>で決まる球面上からパーティクルを生成します。</p>
+</section>
+<section id="id15">
+<h4>モデル形状のパラメータ<a class="headerlink" href="#id15" title="Link to this heading"></a></h4>
+<p>使用する<code class="docutils literal notranslate"><span class="pre">モデルのパス</span></code>を指定すると、そのモデルのメッシュ表面からパーティクルを生成します。
+必要に応じて<code class="docutils literal notranslate"><span class="pre">サイズ</span></code>も指定できます。</p>
+</section>
+</section>
+<section id="id16">
+<h3>位置<a class="headerlink" href="#id16" title="Link to this heading"></a></h3>
+<p>パーティクルの位置と移動に関する設定です。
+パーティクルの位置は、ここで設定した値に加えて<code class="docutils literal notranslate"><span class="pre">力場</span></code>の影響も受けます。</p>
+<section id="id17">
+<h4>移動方向<a class="headerlink" href="#id17" title="Link to this heading"></a></h4>
+<p>パーティクル生成時の進行方向ベクトルです。</p>
+</section>
+<section id="id18">
+<h4>拡散角度<a class="headerlink" href="#id18" title="Link to this heading"></a></h4>
+<p>生成時の移動方向に対して、どれだけランダムに拡散させるかを表す角度です。
+0～180度の範囲で設定します。0度はランダム性はなく、90度は半球状に拡散し、180度は全方向に拡散します。</p>
+</section>
+<section id="id19">
+<h4>初期速度<a class="headerlink" href="#id19" title="Link to this heading"></a></h4>
+<p>パーティクル生成時の速さです。
+初速度に影響します。
+ランダム範囲を設定することができます。</p>
+</section>
+<section id="id20">
+<h4>速度減衰<a class="headerlink" href="#id20" title="Link to this heading"></a></h4>
+<p>移動中にかかる減衰です。
+値を大きくすると、パーティクルは進むにつれて減速します。
+ランダム範囲を設定することができます。</p>
+</section>
+</section>
+<section id="id21">
+<h3>回転<a class="headerlink" href="#id21" title="Link to this heading"></a></h3>
+<p>パーティクルの向きと回転に関する設定です。
+実際の見え方は、描画形状のビルボード設定によって変わります。
+<code class="docutils literal notranslate"><span class="pre">固定</span></code>では<code class="docutils literal notranslate"><span class="pre">XYZ</span></code>が、<code class="docutils literal notranslate"><span class="pre">Z軸回転ビルボード</span></code>では<code class="docutils literal notranslate"><span class="pre">Z</span></code>のパラメータが主に使われます。</p>
+<section id="id22">
+<h4>初期角度<a class="headerlink" href="#id22" title="Link to this heading"></a></h4>
+<p>生成時の角度（オイラー角）です。
+ランダム範囲を設定することができます。</p>
+</section>
+<section id="id23">
+<h4>回転速度<a class="headerlink" href="#id23" title="Link to this heading"></a></h4>
+<p>時間とともに加わる回転速度（オイラー角）です。
+ランダム範囲を設定することができます。</p>
+</section>
+</section>
+<section id="id24">
+<h3>拡大率<a class="headerlink" href="#id24" title="Link to this heading"></a></h3>
+<p>パーティクルの大きさを設定します。
+選択したモードによって挙動が変わります。</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">拡大率</span></code>モードでは、設定した値で固定されます。</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">イージング</span></code>モードでは、生存中に始点から終点へ滑らかに変化します。</p></li>
+</ul>
+<section id="id25">
+<h4>単一拡大率<a class="headerlink" href="#id25" title="Link to this heading"></a></h4>
+<p>軸に依存しない固定の拡大率です。
+ランダム範囲を設定することができます。</p>
+</section>
+<section id="xyz">
+<h4>XYZ拡大率<a class="headerlink" href="#xyz" title="Link to this heading"></a></h4>
+<p>XYZ各軸に個別に適用する固定の拡大率です。
+ランダム範囲を設定することができます。</p>
+</section>
+<section id="id26">
+<h4>始点と終点 (単一)<a class="headerlink" href="#id26" title="Link to this heading"></a></h4>
+<p>軸に依存しないイージングの始点と終点の拡大率です。
+ランダム範囲を設定することができます。</p>
+</section>
+<section id="id27">
+<h4>始点と終点 (XYZ)<a class="headerlink" href="#id27" title="Link to this heading"></a></h4>
+<p>XYZ各軸に適用するイージングの始点と終点の拡大率です。
+ランダム範囲を設定することができます。</p>
+</section>
+</section>
+<section id="id28">
+<h3>力場<a class="headerlink" href="#id28" title="Link to this heading"></a></h3>
+<p>外部からパーティクルに力を与える設定です。</p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th width="20%">重力</th>
+<th width="20%">竜巻</th>
+<th width="20%">乱流</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="padding:0"><img alt="" src="../../img/Reference/GpuParticles/force_gravity.gif" /></td>
+<td style="padding:0"><img alt="" src="../../img/Reference/GpuParticles/force_vortex.gif" /></td>
+<td style="padding:0"><img alt="" src="../../img/Reference/GpuParticles/force_turbulence.gif" /></td>
+</tr>
+</tbody>
+</table><section id="id29">
+<h4>重力<a class="headerlink" href="#id29" title="Link to this heading"></a></h4>
+<p>指定した方向に加速度を与えます。
+下方向に限らず、上や横方向にも適用できます。
+この方向は親パーティクルの姿勢の影響を受けません。</p>
+</section>
+<section id="id30">
+<h4>竜巻<a class="headerlink" href="#id30" title="Link to this heading"></a></h4>
+<p>指定した<code class="docutils literal notranslate"><span class="pre">中心点</span></code>と<code class="docutils literal notranslate"><span class="pre">回転軸</span></code>を基準に、回転する力を与えます。
+<code class="docutils literal notranslate"><span class="pre">回転力</span></code>と<code class="docutils literal notranslate"><span class="pre">吸引力</span></code>を変更することで、竜巻が与える力の強さを調整できます。</p>
+</section>
+<section id="id31">
+<h4>乱流<a class="headerlink" href="#id31" title="Link to this heading"></a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">シード</span></code>、<code class="docutils literal notranslate"><span class="pre">スケール</span></code>、<code class="docutils literal notranslate"><span class="pre">複雑度</span></code>から生成したベクターフィールドによって、パーティクルにノイズ状の動きを与えます。
+<code class="docutils literal notranslate"><span class="pre">影響力</span></code>を変更することで、乱流が与える力の強さを調整できます。</p>
+</section>
+</section>
+<section id="id32">
+<h3>描画設定<a class="headerlink" href="#id32" title="Link to this heading"></a></h3>
+<p>描画時の共通設定です。</p>
+<section id="id33">
+<h4>ブレンド<a class="headerlink" href="#id33" title="Link to this heading"></a></h4>
+<p>描画時のブレンド方式です。</p>
+</section>
+<section id="id34">
+<h4>深度書き込み<a class="headerlink" href="#id34" title="Link to this heading"></a></h4>
+<p>有効にすると深度を書き込みます。</p>
+</section>
+<section id="id35">
+<h4>深度テスト<a class="headerlink" href="#id35" title="Link to this heading"></a></h4>
+<p>有効にすると深度テストを行います。</p>
+</section>
+</section>
+<section id="id36">
+<h3>描画形状<a class="headerlink" href="#id36" title="Link to this heading"></a></h3>
+<p>描画に使用する形状を設定します。</p>
+<section id="id37">
+<h4>描画形状<a class="headerlink" href="#id37" title="Link to this heading"></a></h4>
+<p>次の3種類から選択します。</p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>描画形状</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>スプライト</td>
+<td>シンプルな四角形を描画します。</td>
+</tr>
+<tr>
+<td>モデル</td>
+<td>任意のユーザーモデルを描画します。</td>
+</tr>
+<tr>
+<td>軌跡</td>
+<td>パーティクルの移動軌跡をつないだ線を描画します。</td>
+</tr>
+</tbody>
+</table></section>
+<section id="id38">
+<h4>配置設定<a class="headerlink" href="#id38" title="Link to this heading"></a></h4>
+<p>スプライトをパーティクルに対してどのように配置するかを指定します。</p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>配置方法</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Z軸回転ビルボード</td>
+<td>スプライトは視点側を向きつつ、Z軸に沿って回転します。</td>
+</tr>
+<tr>
+<td>移動方向ビルボード</td>
+<td>スプライトは視点側を向きつつ、Y+方向が移動方向を向くように回転します。</td>
+</tr>
+<tr>
+<td>Y軸固定</td>
+<td>スプライトはY軸に固定しつつ、視点側を向きます。</td>
+</tr>
+<tr>
+<td>固定</td>
+<td>スプライトの向きはパーティクルの回転に従います。</td>
+</tr>
+</tbody>
+</table></section>
+<section id="id39">
+<h4>モデル<a class="headerlink" href="#id39" title="Link to this heading"></a></h4>
+<p>描画に使用するユーザーモデルを指定します。</p>
+</section>
+<section id="id40">
+<h4>軌跡の長さ<a class="headerlink" href="#id40" title="Link to this heading"></a></h4>
+<p>軌跡を構成する長さを指定します。
+値を大きくすると、より長い軌跡を描けますが、軌跡バッファで使用するメモリも増えます。</p>
+</section>
+<section id="id41">
+<h4>形状サイズ<a class="headerlink" href="#id41" title="Link to this heading"></a></h4>
+<p>描画形状の基準サイズを指定します。
+この値は<code class="docutils literal notranslate"><span class="pre">拡大率</span></code>のパラメータと乗算されます。
+形状が軌跡の場合は太さに影響します。</p>
+</section>
+</section>
+<section id="id42">
+<h3>描画色<a class="headerlink" href="#id42" title="Link to this heading"></a></h3>
+<p>パーティクルの色に関する設定です。</p>
+<section id="id43">
+<h4>色継承<a class="headerlink" href="#id43" title="Link to this heading"></a></h4>
+<p>有効にすると、親パーティクルの色の影響を受けます。</p>
+</section>
+<section id="id44">
+<h4>全体色<a class="headerlink" href="#id44" title="Link to this heading"></a></h4>
+<p>パーティクルの色を設定します。</p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>タイプ</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>固定</td>
+<td>変化しない固定色を設定します。</td>
+</tr>
+<tr>
+<td>ランダム</td>
+<td>パーティクル生成時にランダムに決定される2色を設定します。</td>
+</tr>
+<tr>
+<td>イージング</td>
+<td>始点と終点の色を設定します。パーティクルの生存時間をかけて色が変化します。</td>
+</tr>
+<tr>
+<td>Fカーブ</td>
+<td>RGBAの変化を描いたFカーブを設定します。</td>
+</tr>
+<tr>
+<td>グラディエント</td>
+<td>色の変化を描いたグラディエントを設定します。</td>
+</tr>
+</tbody>
+</table></section>
+<section id="id45">
+<h4>エミッシブ倍率<a class="headerlink" href="#id45" title="Link to this heading"></a></h4>
+<p>パーティクルの輝度に掛ける倍率です。
+この値は<code class="docutils literal notranslate"><span class="pre">全体色</span></code>のRGBに乗算されます。</p>
+</section>
+<section id="id46">
+<h4>フェードイン<a class="headerlink" href="#id46" title="Link to this heading"></a></h4>
+<p>パーティクル表示時にフェードインさせます。</p>
+</section>
+<section id="id47">
+<h4>フェードアウト<a class="headerlink" href="#id47" title="Link to this heading"></a></h4>
+<p>パーティクル消滅時にフェードアウトさせます。</p>
+</section>
+</section>
+<section id="id48">
+<h3>描画マテリアル<a class="headerlink" href="#id48" title="Link to this heading"></a></h3>
+<p>描画に使用するマテリアルを設定します。</p>
+<section id="id49">
+<h4>マテリアルタイプ<a class="headerlink" href="#id49" title="Link to this heading"></a></h4>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>タイプ</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Unlit</td>
+<td>パーティクルの色をそのまま表示するマテリアル</td>
+</tr>
+<tr>
+<td>Lighting</td>
+<td>光源の影響を受けて陰影が付くマテリアル</td>
+</tr>
+</tbody>
+</table></section>
+<section id="id50">
+<h4>色テクスチャ<a class="headerlink" href="#id50" title="Link to this heading"></a></h4>
+<p>描画に使用する色テクスチャです。</p>
+</section>
+<section id="id51">
+<h4>法線テクスチャ<a class="headerlink" href="#id51" title="Link to this heading"></a></h4>
+<p>マテリアルタイプが<code class="docutils literal notranslate"><span class="pre">Lighting</span></code>のときに設定できます。
+描画に使用する法線テクスチャです。</p>
+</section>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="collisions.html" class="btn btn-neutral float-left" title="衝突" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="image.html" class="btn btn-neutral float-right" title="画像について" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2019, Effekseer.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

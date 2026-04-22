@@ -14,6 +14,8 @@
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
         <script src="../../_static/documentation_options.js?v=c033477b"></script>
         <script src="../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
@@ -81,6 +83,7 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../en/index.html">Effekseer Help (English)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../zh_CN/index.html">Effekseer Help (中文)</a></li>
 </ul>
 
         </div>
@@ -109,9 +112,9 @@
            <div itemprop="articleBody">
              
   <section id="level-of-details-lod">
-<h1>14. Level of Details (LOD)を設定しよう！<a class="headerlink" href="#level-of-details-lod" title="Link to this heading">¶</a></h1>
+<h1>14. Level of Details (LOD)を設定しよう！<a class="headerlink" href="#level-of-details-lod" title="Link to this heading"></a></h1>
 <section id="id1">
-<h2>概要<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h2>
+<h2>概要<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
 <p>Level of Details (LOD)により、アーティストは、距離に応じてシステムリソースとスクリーンスペースを効率的に使用するエフェクトを作成することができます。
 カメラとの距離に応じて、システムリソースとスクリーンスペースを効率的に使用するエフェクトを エフェクトを作成できます。</p>
 <img alt="../../_images/lods_Effect.png" class="align-center" src="../../_images/lods_Effect.png" />
@@ -127,7 +130,7 @@
 を簡略化することができるからです。そのため、エフェクトノードが視聴者から遠い場合は、非表示にしたり、完全にシャットダウンすることができます。</p>
 </section>
 <section id="levels-setup">
-<h2>Levels Setup<a class="headerlink" href="#levels-setup" title="Link to this heading">¶</a></h2>
+<h2>Levels Setup<a class="headerlink" href="#levels-setup" title="Link to this heading"></a></h2>
 <p>さっそく、これから使うレベルの設定をしてみましょう。<code class="docutils literal notranslate"><span class="pre">メニュー</span> <span class="pre">&gt;</span> <span class="pre">詳細レベル</span></code> に移動します。</p>
 <img alt="../../_images/lods_Panel.png" class="align-center" src="../../_images/lods_Panel.png" />
 <p>このパネルでは、有効な詳細レベルと、各レベルを有効にする距離を指定します。
@@ -140,7 +143,7 @@
 エフェクトまでの距離が16より大きくなると、プレイヤーの右下にある<code class="docutils literal notranslate"><span class="pre">Current</span> <span class="pre">LOD</span></code>が<code class="docutils literal notranslate"><span class="pre">1</span></code>に変わるのがわかると思います。</p>
 </section>
 <section id="id2">
-<h2>パーティクルノードの設定<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
+<h2>パーティクルノードの設定<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
 <img alt="../../_images/lods_NodeTreeSelectors.png" class="align-center" src="../../_images/lods_NodeTreeSelectors.png" />
 <p>お気づきのように、セカンドレベルを有効にした後、ノード階層の各色ボタンは、各レベルごとに2行で表示されます。
 これは、各エフェクトノードが有効なレベルが表示され、各エフェクトノードが有効であることを示します。
@@ -160,7 +163,7 @@
 ここでは <code class="docutils literal notranslate"><span class="pre">Stop</span> <span class="pre">New</span> <span class="pre">Particles</span> <span class="pre">Spawn</span> <span class="pre">and</span> <span class="pre">Hide</span> <span class="pre">Existing</span></code> を選択しましょう。</p>
 </section>
 <section id="id3">
-<h2>結果の検証<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
+<h2>結果の検証<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
 <p>ビューワーの右下に表示される統計情報を見て、設定を確認することにします。</p>
 <ul class="simple">
 <li><p>Current LOD: 現在使用されている詳細度</p></li>
@@ -172,7 +175,7 @@
 次に、LOD 1 が選択された距離までカメラをエフェクトから遠ざけると、パーティクルの数が徐々に減っていき、約 15 個になることを確認できます。</p>
 </section>
 <section id="id4">
-<h2>まとめ<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h2>
+<h2>まとめ<a class="headerlink" href="#id4" title="Link to this heading"></a></h2>
 <p>詳細レベルを設定する方法と、現在アクティブなレベルに基づいて動作を変更するエフェクトノードの構成を設定する方法について説明しました。
 詳細レベルの設定は、エフェクト制作の最後のステップで設定することをお勧めします。</p>
 <p>Level of Detailsは非常に汎用性が高く、様々な方法で設定することができます。

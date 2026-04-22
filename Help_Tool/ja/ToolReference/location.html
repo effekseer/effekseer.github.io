@@ -14,6 +14,8 @@
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
         <script src="../../_static/documentation_options.js?v=c033477b"></script>
         <script src="../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
@@ -77,6 +79,8 @@
 <li class="toctree-l4"><a class="reference internal" href="levelsOfDetails.html">Levels Of Details</a></li>
 <li class="toctree-l4"><a class="reference internal" href="dynamicParameter.html">動的パラメーター</a></li>
 <li class="toctree-l4"><a class="reference internal" href="proceduralModel.html">プロシージャルモデル</a></li>
+<li class="toctree-l4"><a class="reference internal" href="collisions.html">衝突</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gpuParticles.html">GPUパーティクル</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="index.html#id14">エフェクト機能</a></li>
@@ -91,6 +95,7 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../en/index.html">Effekseer Help (English)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../zh_CN/index.html">Effekseer Help (中文)</a></li>
 </ul>
 
         </div>
@@ -119,41 +124,41 @@
            <div itemprop="articleBody">
              
   <section id="id1">
-<h1>位置<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h1>
+<h1>位置<a class="headerlink" href="#id1" title="Link to this heading"></a></h1>
 <section id="id2">
-<h2>概要<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
+<h2>概要<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
 <p>ノードの位置に関するパラメーターの中でも、特に親のパーティクルに影響される位置に関するパラメーターを設定します。</p>
 </section>
 <section id="id3">
-<h2>パラメーター<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
+<h2>パラメーター<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
 <section id="id4">
-<h3>位置<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h3>
+<h3>位置<a class="headerlink" href="#id4" title="Link to this heading"></a></h3>
 <p>パーティクルの位置を指定します。ここで指定するのは、親のパーティクルに対する相対的な位置です。「共通」による設定で、 親からの影響を受けなくした場合には、絶対的な位置を指定します。</p>
 <div align="center">
 <img src="../../img/Tutorial/02_position_ja.png">
 <p>「位置」ウインドウ</p>
 </div><section id="id5">
-<h4>位置<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h4>
+<h4>位置<a class="headerlink" href="#id5" title="Link to this heading"></a></h4>
 <p>固定された位置にパーティクルを配置します。</p>
 <iframe src='../../Effects/viewer_ja.html#References/Position/setposition.efkefc' class='effect'></iframe></section>
 <section id="id6">
-<h4>位置・速度・加速度<a class="headerlink" href="#id6" title="Link to this heading">¶</a></h4>
+<h4>位置・速度・加速度<a class="headerlink" href="#id6" title="Link to this heading"></a></h4>
 <p>パーティクルの位置・速度・加速度を指定します。</p>
 <iframe src='../../Effects/viewer_ja.html#References/Position/movingposition.efkefc' class='effect'></iframe></section>
 <section id="id7">
-<h4>イージング<a class="headerlink" href="#id7" title="Link to this heading">¶</a></h4>
+<h4>イージング<a class="headerlink" href="#id7" title="Link to this heading"></a></h4>
 <p>パーティクルの生成時の位置と終了時の位置を指定します。</p>
 <iframe src='../../Effects/viewer_ja.html#References/Position/easing.efkefc' class='effect'></iframe></section>
 <section id="f">
-<h4>Fカーブ<a class="headerlink" href="#f" title="Link to this heading">¶</a></h4>
+<h4>Fカーブ<a class="headerlink" href="#f" title="Link to this heading"></a></h4>
 <p>Fカーブを使用します。</p>
 <iframe src='../../Effects/viewer_ja.html#References/Position/f_curve.efkefc' class='effect'></iframe></section>
 <section id="nurbs">
-<h4>NURBSカーブ<a class="headerlink" href="#nurbs" title="Link to this heading">¶</a></h4>
+<h4>NURBSカーブ<a class="headerlink" href="#nurbs" title="Link to this heading"></a></h4>
 <p>Maya等、他のソフトウェアで作成したカーブの3Dデータを読み込み、それに沿ってパーティクルを動かします。</p>
 <div class="video_center"><video autoplay loop="true" muted="true" src="../../movies/Reference/Location/NURBS-Curve.mp4"/></div></section>
 <section id="id8">
-<h4>カメラオフセット<a class="headerlink" href="#id8" title="Link to this heading">¶</a></h4>
+<h4>カメラオフセット<a class="headerlink" href="#id8" title="Link to this heading"></a></h4>
 <p>常にカメラの中央にパーティクルを表示します。
 スプライトやモデルのみ有効です。
 子に対して移動の影響が適用されません。</p>

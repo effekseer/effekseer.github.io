@@ -1,4 +1,4 @@
-﻿# File - Import
+# File - Import
 
 ## Effekseer package
 Import the efkpkg file.
