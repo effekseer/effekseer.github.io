@@ -47,6 +47,11 @@
 <li class="toctree-l2"><a class="reference internal" href="faq.html">FAQ</a></li>
 <li class="toctree-l2"><a class="reference internal" href="api-reference.html">API Reference</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Release notes</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id1">1.80.2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#e-10">1.70e.10</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#e-9">1.70e.9</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#e-8">1.70e.8</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#e-7">1.70e.7</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#e-6">1.70e.6</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#e-5">1.70e.5</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#e-4">1.70e.4</a></li>
@@ -89,10 +94,50 @@
              
   <section id="release-notes">
 <h1>Release notes<a class="headerlink" href="#release-notes" title="Permalink to this heading">¶</a></h1>
+<section id="id1">
+<h2>1.80.2<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>godot-cpp updated to 4.6 (it no longer works earlier than Godot 4.6)</p></li>
+<li><p>Effekseer updated to 1.80.2</p></li>
+<li><p>Support GPU Particles</p></li>
+</ul>
+</section>
+<section id="e-10">
+<h2>1.70e.10<a class="headerlink" href="#e-10" title="Permalink to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>godot-cpp updated to 4.4 (it no longer works earlier than Godot 4.4)</p></li>
+<li><p>Fix a material shader error using CustomData2</p></li>
+</ul>
+</section>
+<section id="e-9">
+<h2>1.70e.9<a class="headerlink" href="#e-9" title="Permalink to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>Changed the parent class of EffekseerEmitter3D from Node3D to VisualInstance3D</p></li>
+<li><p>EffekseerEmitter3D now respects the Layer Mask</p></li>
+<li><p>EffekseerEmitter2D now respects the Visibility Layer</p></li>
+<li><p>Fixed sound script not working with default settings</p></li>
+</ul>
+</section>
+<section id="e-8">
+<h2>1.70e.8<a class="headerlink" href="#e-8" title="Permalink to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>Redesign the inspector effect previewer</p></li>
+<li><p>Change a setting that sound script type</p></li>
+<li><p>Fix the shader resource leak (crash on exit fixed)</p></li>
+</ul>
+</section>
+<section id="e-7">
+<h2>1.70e.7<a class="headerlink" href="#e-7" title="Permalink to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>[macOS] Change library format from .dylib to .framework for notarization support</p></li>
+<li><p>Fix rendering errors when using certain parameters</p></li>
+<li><p>Fix broken 2D/3D switching in inspector plugin</p></li>
+</ul>
+</section>
 <section id="e-6">
 <h2>1.70e.6<a class="headerlink" href="#e-6" title="Permalink to this heading">¶</a></h2>
 <ul class="simple">
-<li><p>godot-cpp updated to 4.3 (it no longer works under Godot 4.3)</p></li>
+<li><p>godot-cpp updated to 4.3 (it no longer works earlier than Godot 4.3)</p></li>
 <li><p>Change base class of EffekseerSystem to Object.</p></li>
 <li><p>Advanced render material is now available in 2D.</p></li>
 <li><p>Model instancing rendering is now enabled in 2D.</p></li>
@@ -118,13 +163,13 @@
 <section id="e-3">
 <h2>1.70e.3<a class="headerlink" href="#e-3" title="Permalink to this heading">¶</a></h2>
 <ul class="simple">
-<li><p>godot-cpp updated to 4.2 (it no longer works under Godot 4.2)</p></li>
+<li><p>godot-cpp updated to 4.2 (it no longer works earlier than Godot 4.2)</p></li>
 </ul>
 </section>
 <section id="e-2">
 <h2>1.70e.2<a class="headerlink" href="#e-2" title="Permalink to this heading">¶</a></h2>
 <ul class="simple">
-<li><p>godot-cpp updated to 4.1 (it no longer works under Godot 4.1)</p></li>
+<li><p>godot-cpp updated to 4.1 (it no longer works earlier than Godot 4.1)</p></li>
 </ul>
 </section>
 <section id="e-1">
@@ -140,7 +185,7 @@
 <li><p>Improved effects loading process</p></li>
 <li><p>Migration to new shader generation process</p></li>
 <li><p>Added preview rendering in the editor viewport</p></li>
-<li><p>Fixed a loading failure when placing resources directly under “res://”.</p></li>
+<li><p>Fixed a loading failure when placing resources directly earlier than “res://”.</p></li>
 <li><p>Fixed a bug that the texture repeats even if a clamp is specified for the wrap mode of the texture</p></li>
 <li><p>Updated Effekseer to 1.70e</p></li>
 <li><p>godot-cpp updated to 4.0.3</p></li>
