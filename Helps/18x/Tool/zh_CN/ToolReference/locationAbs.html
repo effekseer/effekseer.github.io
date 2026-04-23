@@ -63,7 +63,6 @@
 <li class="toctree-l4"><a class="reference internal" href="location.html">位置</a></li>
 <li class="toctree-l4 current"><a class="current reference internal" href="#">力场（Local）</a></li>
 <li class="toctree-l4"><a class="reference internal" href="locationGene.html">生成方法</a></li>
-<li class="toctree-l4"><a class="reference internal" href="collisions.html">碰撞</a></li>
 <li class="toctree-l4"><a class="reference internal" href="killRules.html">销毁规则</a></li>
 <li class="toctree-l4"><a class="reference internal" href="rotation.html">旋转</a></li>
 <li class="toctree-l4"><a class="reference internal" href="scale.html">缩放</a></li>
@@ -82,6 +81,8 @@
 <li class="toctree-l4"><a class="reference internal" href="levelsOfDetails.html">细节层级（LOD）</a></li>
 <li class="toctree-l4"><a class="reference internal" href="dynamicParameter.html">动态参数</a></li>
 <li class="toctree-l4"><a class="reference internal" href="proceduralModel.html">程序化模型</a></li>
+<li class="toctree-l4"><a class="reference internal" href="collisions.html">碰撞</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gpuParticles.html">GPU粒子</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="index.html#id14">特效特性</a></li>
@@ -177,71 +178,66 @@
 <p>值越大，湍流越宽。</p>
 </section>
 <section id="id12">
-<h4>强度<a class="headerlink" href="#id12" title="Link to this heading"></a></h4>
-<p>湍流的强度。</p>
-<p>译注：似乎没有这个设置。也许是统一改成“力”了。</p>
-</section>
-<section id="id13">
-<h4>复杂度<a class="headerlink" href="#id13" title="Link to this heading"></a></h4>
+<h4>复杂度<a class="headerlink" href="#id12" title="Link to this heading"></a></h4>
 <p>值越大，湍流越复杂。但也会增大计算负担。</p>
 </section>
 </section>
-<section id="id14">
-<h3>粘滞阻力<a class="headerlink" href="#id14" title="Link to this heading"></a></h3>
+<section id="id13">
+<h3>粘滞阻力<a class="headerlink" href="#id13" title="Link to this heading"></a></h3>
 <p>施加一个阻碍运动的力。</p>
 <div class="video_center"><video autoplay loop="true" muted="true" src="../../movies/Reference/LocalForceField/Drag.mp4"/></div></section>
-<section id="id15">
-<h3>重力<a class="headerlink" href="#id15" title="Link to this heading"></a></h3>
+<section id="id14">
+<h3>重力<a class="headerlink" href="#id14" title="Link to this heading"></a></h3>
 <p>在一个方向上施加加速度。重力可以朝向任意方向。且不会受到父节点的方向影响。</p>
 <iframe src='../../Effects/viewer_zh_CN.html#References/Attraction_Forces/gravity.efkefc'></iframe></section>
-<section id="id16">
-<h3>引力（需要设置引力点）<a class="headerlink" href="#id16" title="Link to this heading"></a></h3>
+<section id="id15">
+<h3>引力（需要设置引力点）<a class="headerlink" href="#id15" title="Link to this heading"></a></h3>
 <p>粒子向“行为”窗口中的“引力点”处移动。</p>
 <p><img alt="../../_images/locationAbs_attraction.gif" src="../../_images/locationAbs_attraction.gif" /></p>
-<section id="id17">
-<h4>引力<a class="headerlink" href="#id17" title="Link to this heading"></a></h4>
+<section id="id16">
+<h4>引力<a class="headerlink" href="#id16" title="Link to this heading"></a></h4>
 <p>一帧中向目标位置的速度增量。</p>
 </section>
-<section id="id18">
-<h4>阻力<a class="headerlink" href="#id18" title="Link to this heading"></a></h4>
+<section id="id17">
+<h4>阻力<a class="headerlink" href="#id17" title="Link to this heading"></a></h4>
 <p>一帧中运动方向修正为目标方向的百分比，取值在0.00和1.00之间。</p>
 </section>
-<section id="id19">
-<h4>最小范围<a class="headerlink" href="#id19" title="Link to this heading"></a></h4>
+<section id="id18">
+<h4>最小范围<a class="headerlink" href="#id18" title="Link to this heading"></a></h4>
 <p>引力开始衰减的距离。</p>
 </section>
-<section id="id20">
-<h4>最大范围<a class="headerlink" href="#id20" title="Link to this heading"></a></h4>
+<section id="id19">
+<h4>最大范围<a class="headerlink" href="#id19" title="Link to this heading"></a></h4>
 <p>引力结束衰减的距离。当粒子的位置在0到最小范围之间时，引力为100%。如果位置大于最大范围，引力为0%。如果在最小范围和最大范围之间，引力线性插值。</p>
 </section>
 </section>
 </section>
-<section id="id21">
-<h2>力场的位置<a class="headerlink" href="#id21" title="Link to this heading"></a></h2>
+<section id="id20">
+<h2>力场的位置<a class="headerlink" href="#id20" title="Link to this heading"></a></h2>
 <p>设置力场中心的位置。
 影响部分力场的行为。</p>
 </section>
-<section id="id22">
-<h2>力场的角度<a class="headerlink" href="#id22" title="Link to this heading"></a></h2>
+<section id="id21">
+<h2>力场的角度<a class="headerlink" href="#id21" title="Link to this heading"></a></h2>
 <p>设置力场的角度。
 影响部分力场的行为。</p>
 </section>
-<section id="id23">
-<h2>衰减类型<a class="headerlink" href="#id23" title="Link to this heading"></a></h2>
+<section id="id22">
+<h2>衰减类型<a class="headerlink" href="#id22" title="Link to this heading"></a></h2>
 <p>在范围之外，力场的效果会衰减。
 有几种方式指定范围。</p>
-<section id="id24">
-<h3>球<a class="headerlink" href="#id24" title="Link to this heading"></a></h3>
+<section id="id23">
+<h3>球<a class="headerlink" href="#id23" title="Link to this heading"></a></h3>
 <p>远离球心时，力场会发生衰减。
 衰减力越大，向外移动时力场衰减的越多。</p>
 <div class="video_center"><video autoplay loop="true" muted="true" src="../../movies/Reference/LocalForceField/FallOff_Sphere.mp4"/></div></section>
-<section id="id25">
-<h3>管道<a class="headerlink" href="#id25" title="Link to this heading"></a></h3>
+<section id="id24">
+<h3>管道<a class="headerlink" href="#id24" title="Link to this heading"></a></h3>
 <p>远离圆柱中轴线时，力场会发生衰减。
 衰减力越大，向外移动时力场衰减的越多。</p>
 <div class="video_center"><video autoplay loop="true" muted="true" src="../../movies/Reference/LocalForceField/FallOff_Column.mp4"/></div></section>
-<section id="id26">
-<h3>圆锥<a class="headerlink" href="#id26" title="Link to this heading"></a></h3>
+<section id="id25">
+<h3>圆锥<a class="headerlink" href="#id25" title="Link to this heading"></a></h3>
 <p>这个圆锥是球的一部分切出来的。（在球的表面画一个圆，再与球心连接起来）
 圆锥范围外的地方，力场会发生衰减。该位置和圆锥顶点的连线与圆锥轴线之间的夹角越大，衰减越大。
 衰减力越大，向外移动时力场衰减的越多。</p>

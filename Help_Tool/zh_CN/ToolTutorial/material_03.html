@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>03. 有序材质的卡通火焰。 &mdash; Effekseer Help  ドキュメント</title>
+  <title>03. 使用参数化材质表现卡通风格的火焰 &mdash; Effekseer Help  ドキュメント</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
       <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
       <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=77cdefee" />
@@ -28,7 +28,7 @@
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="検索" href="../../search.html" />
     <link rel="next" title="工具参考" href="../ToolReference/index.html" />
-    <link rel="prev" title="02. 用材质表现卡通风格火焰。" href="material_02.html" /> 
+    <link rel="prev" title="02. 用材质表现卡通风格的火焰。" href="material_02.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -59,8 +59,8 @@
 <li class="toctree-l3"><a class="reference internal" href="index.html#id2">基础</a></li>
 <li class="toctree-l3 current"><a class="reference internal" href="index.html#id3">材质</a><ul class="current">
 <li class="toctree-l4"><a class="reference internal" href="material_01.html">01. 材质入门</a></li>
-<li class="toctree-l4"><a class="reference internal" href="material_02.html">02. 用材质表现卡通风格火焰。</a></li>
-<li class="toctree-l4 current"><a class="current reference internal" href="#">03. 有序材质的卡通火焰。</a></li>
+<li class="toctree-l4"><a class="reference internal" href="material_02.html">02. 用材质表现卡通风格的火焰。</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">03. 使用参数化材质表现卡通风格的火焰</a></li>
 </ul>
 </li>
 </ul>
@@ -90,7 +90,7 @@
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="../index.html">Effekseer Help (中文)</a></li>
           <li class="breadcrumb-item"><a href="index.html">教程</a></li>
-      <li class="breadcrumb-item active">03. 有序材质的卡通火焰。</li>
+      <li class="breadcrumb-item active">03. 使用参数化材质表现卡通风格的火焰</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -100,13 +100,12 @@
            <div itemprop="articleBody">
              
   <section id="id1">
-<h1>03. 有序材质的卡通火焰。<a class="headerlink" href="#id1" title="Link to this heading"></a></h1>
-<p>这个标题是个什么东西？？？</p>
+<h1>03. 使用参数化材质表现卡通风格的火焰<a class="headerlink" href="#id1" title="Link to this heading"></a></h1>
 <section id="id2">
 <h2>概要<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
 <p>在前面的章节中，我们制作了一个卡通风格的火焰。
-但是，参数内嵌于材质中，无法可交互地更改。
-而且，它持续地播放，不会中途消失。
+但是，参数完全内嵌于材质中，无法复用。
+而且，它持续地播放，不会在中途消失。
 在本章中，上一章中制作的火焰将变得更为通用。</p>
 <div align="center">
 <iframe src='../../Effects/viewer_zh_CN.html#Tutorials/Mat_03/Fire.efkefc'></iframe>
@@ -121,20 +120,19 @@
 <h3>参数<a class="headerlink" href="#id4" title="Link to this heading"></a></h3>
 <p>Effekseer的材质有一个名叫参数的节点。
 这个叫参数的节点让你可以在Effekseer中改变材质的参数。</p>
-<p>首先，为了从外部编辑特效的颜色，我们将把梯度图像替换为一个参数。</p>
+<p>首先，为了从外部编辑特效的颜色，我们将把渐变图像替换为一个参数。</p>
 <p>添加一个<code class="docutils literal notranslate"><span class="pre">参数图像</span></code>节点。</p>
 <p>然后，把它连接到<code class="docutils literal notranslate"><span class="pre">采样图像</span></code>节点。</p>
-<p>给参数节点输入一个名字。这个名字会显示在Effekseer中，用于将图像与Effekseer中的配置相关联。
-Therefore, try not to change it too much.
-因此，不要改变太多。（？？？）
-这次，因为我们替换的是梯度，我们将其命名为Gradation。</p>
+<p>为参数节点输入一个名字。这个名字会显示在Effekseer中，用于将图像与Effekseer中配置的图像相关联。
+因此，尽量不要更改它。
+这次，因为我们替换的是渐变，我们将其命名为Gradation。</p>
 <p>将图像的默认值设置为<code class="docutils literal notranslate"><span class="pre">Textures/Gradation2.png</span></code>。</p>
 <img alt="../../_images/Grad_Parameter_En.png" class="align-center" src="../../_images/Grad_Parameter_En.png" />
-<p>Effekseer现在也显示了梯度参数。
+<p>Effekseer现在也显示了渐变参数。
 因为目前显示的依然是默认图像，我们将设置一个新图像。</p>
 <p>这一次，设置为<code class="docutils literal notranslate"><span class="pre">Textures/Gradation4.png</span></code>。</p>
 <img alt="../../_images/Grad_Parameter_Editor_En.png" class="align-center" src="../../_images/Grad_Parameter_Editor_En.png" />
-<p>特效的图案已经被替换了。</p>
+<p>特效的图像已被替换。</p>
 <img alt="../../_images/Fire.png" class="align-center" src="../../_images/Fire.png" />
 <p>在这个例子中，我试着替换纹理，但是你也可以使用数值作为参数。</p>
 <p>让我们将图像流动的速度设置为参数。</p>
@@ -155,18 +153,18 @@ Therefore, try not to change it too much.
 自定义数据可用于设置开始和结束。</p>
 <p>在这个例子中，我们将设置一个名为自定义数据的节点。
 这个节点和参数类似，但允许你为特效中的每个粒子设置不同的值，也允许你设置F曲线和其他参数。</p>
-<p>这次，我们将通过移动梯度贴图将火焰扑灭。</p>
-<p>通过一个外部参数移动梯度的参考位置，实现淡出。</p>
-<p>使梯度图像向透明的方向移动，从而使它变得透明。</p>
+<p>这次，我们将通过移动渐变贴图来熄灭火焰。</p>
+<p>通过外部参数偏移渐变的参考位置，从而实现淡出效果。</p>
+<p>渐变图像向透明方向移动即可使其变得透明。</p>
 <p>首先，我们将添加一个<code class="docutils literal notranslate"><span class="pre">自定义数据1</span></code>节点。
 因为是UV，将它连接到RG。</p>
 <img alt="../../_images/CustomData_En.png" class="align-center" src="../../_images/CustomData_En.png" />
 <p>然后，在Effekseer的基础渲染设置面板设置自定义数据。
 在这个例子中，我们将使用F曲线，因为我们将移动UV以实现淡入和淡出。</p>
 <img alt="../../_images/CustomData_Editor_En.png" class="align-center" src="../../_images/CustomData_Editor_En.png" />
-<p>设置F曲线中的R值，-1表示关闭，0表示显示。</p>
-<p>-1引用了梯度图像的上部分。
-表示图像会消失。</p>
+<p>设置F曲线中的R值，-1表示消失，0表示显示。</p>
+<p>当输入-1时，将参考渐变图像的上方部分。
+这意味着图像会消失。</p>
 <img alt="../../_images/FCurve.png" class="align-center" src="../../_images/FCurve.png" />
 <p>然后特效现在会淡入和淡出。</p>
 <div align="center">
@@ -186,7 +184,7 @@ Therefore, try not to change it too much.
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="material_02.html" class="btn btn-neutral float-left" title="02. 用材质表现卡通风格火焰。" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="material_02.html" class="btn btn-neutral float-left" title="02. 用材质表现卡通风格的火焰。" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
         <a href="../ToolReference/index.html" class="btn btn-neutral float-right" title="工具参考" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 

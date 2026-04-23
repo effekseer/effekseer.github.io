@@ -10,6 +10,3 @@ png可以在大多数环境中使用。
 ## 多级纹理（Mipmap）
 
 如果文件名的末尾是_NoMip，则不会生成多级纹理。
-例如，Image.png和Image_NoMip.png会产生以下图像。
-
-译注：没图

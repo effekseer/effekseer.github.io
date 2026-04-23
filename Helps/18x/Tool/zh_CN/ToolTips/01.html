@@ -76,13 +76,13 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#id11">避免特效与角色发生碰撞</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#z">Z偏移（深度偏移）</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id12">Z测试（深度测试）</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id12">深度偏移</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id13">深度测试</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#id13">生成剑的拖尾</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id14">让粒子的图像变得细长</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id15">在不展示父粒子的前提下继承父粒子的颜色</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id14">生成剑的拖尾</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id15">让粒子的图像变得细长</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id16">在不展示父粒子的前提下继承父粒子的颜色</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../faq.html">常见问题解答</a></li>
@@ -117,7 +117,7 @@
              
   <section id="tips">
 <h1>TIPS<a class="headerlink" href="#tips" title="Link to this heading"></a></h1>
-<p>本章介绍了用于各种用途的参数设置，以及事先了解就很方便使用的操作方法。
+<p>本章介绍了用于各种用途的参数设置，以及一些实用的操作技巧。
 本章预设您已通读教程，因此建议您先读教程再看本章。
 部分条目会链接到其他页面。</p>
 <section id="id1">
@@ -135,7 +135,7 @@
 </section>
 <section id="id4">
 <h3>生成数量<a class="headerlink" href="#id4" title="Link to this heading"></a></h3>
-<p>如果<code class="docutils literal notranslate"><span class="pre">生成数量</span></code>是正无穷，即便所有的粒子都消失了，特效也将持续存在。</p>
+<p>如果<code class="docutils literal notranslate"><span class="pre">生成数量</span></code>是正无穷，即便单个粒子逐一消失，特效整体也将持续存在。</p>
 </section>
 </section>
 <section id="id5">
@@ -162,7 +162,7 @@
 </section>
 <section id="id9">
 <h2>生成月牙形粒子。<a class="headerlink" href="#id9" title="Link to this heading"></a></h2>
-<p>生成月牙形的粒子。</p>
+<p>不是生成完整的环形，而是生成月牙形的粒子。</p>
 <section id="id10">
 <h3>环<a class="headerlink" href="#id10" title="Link to this heading"></a></h3>
 <p>Set the image whose parts are not connected in the ring. Then you can generate crescent shaped particles.
@@ -193,18 +193,18 @@ Just rotating these with random axes will make it look nice.</p>
 	</tr>
 </table><p>一些特效，例如攻击特效，可能被放置在和角色相同的位置。导致角色与特效产生重叠。
 可以利用游戏程序偏移特效的位置以避免碰撞，但很麻烦。</p>
-<section id="z">
-<h3>Z偏移（深度偏移）<a class="headerlink" href="#z" title="Link to this heading"></a></h3>
-<p>如果设置了Z偏移，特效在深度方向上的位置会移动，从而不与角色发生碰撞。</p>
-</section>
 <section id="id12">
-<h3>Z测试（深度测试）<a class="headerlink" href="#id12" title="Link to this heading"></a></h3>
-<p>关闭了Z测试时，特效将始终绘制，即便它事实上被其他物体挡住了。
+<h3>深度偏移<a class="headerlink" href="#id12" title="Link to this heading"></a></h3>
+<p>如果设置了深度偏移，特效在深度方向上的位置会移动，从而不与角色发生碰撞。</p>
+</section>
+<section id="id13">
+<h3>深度测试<a class="headerlink" href="#id13" title="Link to this heading"></a></h3>
+<p>关闭了深度测试时，特效将始终绘制，即便它事实上被其他物体挡住了。
 然而，你可能希望特效被角色之外的一些东西挡住，所以使用这种方法时一定要小心。</p>
 </section>
 </section>
-<section id="id13">
-<h2>生成剑的拖尾<a class="headerlink" href="#id13" title="Link to this heading"></a></h2>
+<section id="id14">
+<h2>生成剑的拖尾<a class="headerlink" href="#id14" title="Link to this heading"></a></h2>
 <div align="center">
 <img src="../../img/Tips/SwordLineInEffekseer1.gif">
 </div><p>我准备了一个例子，因为解释起来有点复杂。</p>
@@ -223,8 +223,8 @@ Just rotating these with random axes will make it look nice.</p>
 <p>剑的角度使用F曲线。</p>
 <p>在这个TIP中我用Effekseer移动剑，但也可以根据游戏中的剑的位置移动特效。</p>
 </section>
-<section id="id14">
-<h2>让粒子的图像变得细长<a class="headerlink" href="#id14" title="Link to this heading"></a></h2>
+<section id="id15">
+<h2>让粒子的图像变得细长<a class="headerlink" href="#id15" title="Link to this heading"></a></h2>
 <p>当你将一个方形的图像设置给细长的粒子时，从远离粒子的地方看形状可能不正确。</p>
 <p>多级纹理降低了图像的分辨率，导致边缘和中心使用了相同的像素。</p>
 <p>为了避免这种情况，直接使用细长的图像。</p>
@@ -239,10 +239,11 @@ Just rotating these with random axes will make it look nice.</p>
 		</td>
 	</tr>
 </table></section>
-<section id="id15">
-<h2>在不展示父粒子的前提下继承父粒子的颜色<a class="headerlink" href="#id15" title="Link to this heading"></a></h2>
+<section id="id16">
+<h2>在不展示父粒子的前提下继承父粒子的颜色<a class="headerlink" href="#id16" title="Link to this heading"></a></h2>
 <p>将渲染方法设置为精灵。
 在基础设置面板中，关闭可见性。</p>
+<p>这样，你可以在精灵不显示的情况下启用继承颜色。</p>
 </section>
 </section>
 

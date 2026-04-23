@@ -10,19 +10,14 @@
 
 ![](../../img/Reference/renderRibbon.png)
 
-## Parameters
+## 参数
+
 <div align="center">
 <img src="../../img/Reference/Render/panel_ribbon_en.png">
 <p>“渲染设置”窗口</p>
 </div>
 
 <iframe src='../../Effects/viewer_zh_CN.html#References/Render/ribbon_render.efkefc' class='effect'></iframe>
-
-### 渲染顺序
-
-译注：1.70b版本并没有没有这个选项
-
-设置同一个节点生成的粒子的渲染顺序。选择了“生成顺序”时，第一个生成的粒子被第一个绘制，选择了“倒序”时，第一个生成的粒子被最后绘制。
 
 ### UV类型
 

@@ -28,7 +28,7 @@
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="検索" href="../../search.html" />
     <link rel="next" title="基础设置" href="common.html" />
-    <link rel="prev" title="03. 有序材质的卡通火焰。" href="../ToolTutorial/material_03.html" /> 
+    <link rel="prev" title="03. 使用参数化材质表现卡通风格的火焰" href="../ToolTutorial/material_03.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -69,7 +69,6 @@
 <li class="toctree-l4"><a class="reference internal" href="location.html">位置</a></li>
 <li class="toctree-l4"><a class="reference internal" href="locationAbs.html">力场（Local）</a></li>
 <li class="toctree-l4"><a class="reference internal" href="locationGene.html">生成方法</a></li>
-<li class="toctree-l4"><a class="reference internal" href="collisions.html">碰撞</a></li>
 <li class="toctree-l4"><a class="reference internal" href="killRules.html">销毁规则</a></li>
 <li class="toctree-l4"><a class="reference internal" href="rotation.html">旋转</a></li>
 <li class="toctree-l4"><a class="reference internal" href="scale.html">缩放</a></li>
@@ -88,6 +87,8 @@
 <li class="toctree-l4"><a class="reference internal" href="levelsOfDetails.html">细节层级（LOD）</a></li>
 <li class="toctree-l4"><a class="reference internal" href="dynamicParameter.html">动态参数</a></li>
 <li class="toctree-l4"><a class="reference internal" href="proceduralModel.html">程序化模型</a></li>
+<li class="toctree-l4"><a class="reference internal" href="collisions.html">碰撞</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gpuParticles.html">GPU粒子</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#id14">特效特性</a><ul>
@@ -106,6 +107,7 @@
 <li class="toctree-l4"><a class="reference internal" href="fileExport.html">文件 - 导出</a></li>
 <li class="toctree-l4"><a class="reference internal" href="recoveringData.html">恢复数据</a></li>
 <li class="toctree-l4"><a class="reference internal" href="drawMode.html">渲染模式</a></li>
+<li class="toctree-l4"><a class="reference internal" href="profiler.html">性能分析</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#id16">命令行</a></li>
@@ -270,7 +272,6 @@
 <li class="toctree-l1"><a class="reference internal" href="location.html">位置</a></li>
 <li class="toctree-l1"><a class="reference internal" href="locationAbs.html">力场（Local）</a></li>
 <li class="toctree-l1"><a class="reference internal" href="locationGene.html">生成方法</a></li>
-<li class="toctree-l1"><a class="reference internal" href="collisions.html">碰撞</a></li>
 <li class="toctree-l1"><a class="reference internal" href="killRules.html">销毁规则</a></li>
 <li class="toctree-l1"><a class="reference internal" href="rotation.html">旋转</a></li>
 <li class="toctree-l1"><a class="reference internal" href="scale.html">缩放</a></li>
@@ -289,6 +290,8 @@
 <li class="toctree-l1"><a class="reference internal" href="levelsOfDetails.html">细节层级（LOD）</a></li>
 <li class="toctree-l1"><a class="reference internal" href="dynamicParameter.html">动态参数</a></li>
 <li class="toctree-l1"><a class="reference internal" href="proceduralModel.html">程序化模型</a></li>
+<li class="toctree-l1"><a class="reference internal" href="collisions.html">碰撞</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gpuParticles.html">GPU粒子</a></li>
 </ul>
 </div>
 </section>
@@ -315,12 +318,13 @@
 <li class="toctree-l1"><a class="reference internal" href="fileExport.html">文件 - 导出</a></li>
 <li class="toctree-l1"><a class="reference internal" href="recoveringData.html">恢复数据</a></li>
 <li class="toctree-l1"><a class="reference internal" href="drawMode.html">渲染模式</a></li>
+<li class="toctree-l1"><a class="reference internal" href="profiler.html">性能分析</a></li>
 </ul>
 </div>
 </section>
 <section id="id16">
 <h2>命令行<a class="headerlink" href="#id16" title="Link to this heading"></a></h2>
-<p>通过命令行启动Effekseer时，可以通过参数改变Effekseer的行为。例如，你可以在无需打开Effekseer界面的情况下将“.efkproj”文件转换为“.efk”文件。通过与脚本结合，你可以批量转换文件夹下的特效文件。</p>
+<p>通过命令行启动Effekseer时，可以通过参数改变Effekseer的行为。例如，你可以在不打开Effekseer界面的情况下将“.efkproj”文件转换为“.efk”文件。通过与脚本结合，你可以批量转换文件夹下的特效文件。</p>
 <table class="docutils align-default" id="id17">
 <caption><span class="caption-text">命令行</span><a class="headerlink" href="#id17" title="Link to this table"></a></caption>
 <colgroup>
@@ -355,7 +359,7 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="../ToolTutorial/material_03.html" class="btn btn-neutral float-left" title="03. 有序材质的卡通火焰。" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../ToolTutorial/material_03.html" class="btn btn-neutral float-left" title="03. 使用参数化材质表现卡通风格的火焰" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
         <a href="common.html" class="btn btn-neutral float-right" title="基础设置" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 

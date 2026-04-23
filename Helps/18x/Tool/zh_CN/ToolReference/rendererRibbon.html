@@ -63,7 +63,6 @@
 <li class="toctree-l4"><a class="reference internal" href="location.html">位置</a></li>
 <li class="toctree-l4"><a class="reference internal" href="locationAbs.html">力场（Local）</a></li>
 <li class="toctree-l4"><a class="reference internal" href="locationGene.html">生成方法</a></li>
-<li class="toctree-l4"><a class="reference internal" href="collisions.html">碰撞</a></li>
 <li class="toctree-l4"><a class="reference internal" href="killRules.html">销毁规则</a></li>
 <li class="toctree-l4"><a class="reference internal" href="rotation.html">旋转</a></li>
 <li class="toctree-l4"><a class="reference internal" href="scale.html">缩放</a></li>
@@ -82,6 +81,8 @@
 <li class="toctree-l4"><a class="reference internal" href="levelsOfDetails.html">细节层级（LOD）</a></li>
 <li class="toctree-l4"><a class="reference internal" href="dynamicParameter.html">动态参数</a></li>
 <li class="toctree-l4"><a class="reference internal" href="proceduralModel.html">程序化模型</a></li>
+<li class="toctree-l4"><a class="reference internal" href="collisions.html">碰撞</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gpuParticles.html">GPU粒子</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="index.html#id14">特效特性</a></li>
@@ -131,17 +132,12 @@
 <p>丝带并不将每个粒子分开绘制。而是将一个粒子的所有子粒子连接起来形成一个路径。例如，如果粒子1、2、3都是粒子0的子粒子，一个像丝带的形状将会在粒子1、2、3之间绘制。这个丝带是通过将每个粒子的(-0.5, 0, 0)和(0.5, 0, 0)连线形成的。</p>
 <p><img alt="../../_images/renderRibbon.png" src="../../_images/renderRibbon.png" /></p>
 </section>
-<section id="parameters">
-<h2>Parameters<a class="headerlink" href="#parameters" title="Link to this heading"></a></h2>
+<section id="id3">
+<h2>参数<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
 <div align="center">
 <img src="../../img/Reference/Render/panel_ribbon_en.png">
 <p>“渲染设置”窗口</p>
-</div><iframe src='../../Effects/viewer_zh_CN.html#References/Render/ribbon_render.efkefc' class='effect'></iframe><section id="id3">
-<h3>渲染顺序<a class="headerlink" href="#id3" title="Link to this heading"></a></h3>
-<p>译注：1.70b版本并没有没有这个选项</p>
-<p>设置同一个节点生成的粒子的渲染顺序。选择了“生成顺序”时，第一个生成的粒子被第一个绘制，选择了“倒序”时，第一个生成的粒子被最后绘制。</p>
-</section>
-<section id="uv">
+</div><iframe src='../../Effects/viewer_zh_CN.html#References/Render/ribbon_render.efkefc' class='effect'></iframe><section id="uv">
 <h3>UV类型<a class="headerlink" href="#uv" title="Link to this heading"></a></h3>
 <p>设置 UV 的排列与重复方式。</p>
 <section id="id4">

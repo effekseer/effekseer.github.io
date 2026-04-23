@@ -63,7 +63,6 @@
 <li class="toctree-l4"><a class="reference internal" href="location.html">位置</a></li>
 <li class="toctree-l4"><a class="reference internal" href="locationAbs.html">力场（Local）</a></li>
 <li class="toctree-l4"><a class="reference internal" href="locationGene.html">生成方法</a></li>
-<li class="toctree-l4"><a class="reference internal" href="collisions.html">碰撞</a></li>
 <li class="toctree-l4"><a class="reference internal" href="killRules.html">销毁规则</a></li>
 <li class="toctree-l4"><a class="reference internal" href="rotation.html">旋转</a></li>
 <li class="toctree-l4"><a class="reference internal" href="scale.html">缩放</a></li>
@@ -82,6 +81,8 @@
 <li class="toctree-l4"><a class="reference internal" href="levelsOfDetails.html">细节层级（LOD）</a></li>
 <li class="toctree-l4"><a class="reference internal" href="dynamicParameter.html">动态参数</a></li>
 <li class="toctree-l4"><a class="reference internal" href="proceduralModel.html">程序化模型</a></li>
+<li class="toctree-l4"><a class="reference internal" href="collisions.html">碰撞</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gpuParticles.html">GPU粒子</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="index.html#id14">特效特性</a></li>
@@ -135,7 +136,7 @@
 <p>“基础设置”窗口</p>
 </div><section id="id4">
 <h3>可见性<a class="headerlink" href="#id4" title="Link to this heading"></a></h3>
-<p>控制这个节点生成的粒子是否要被渲染到窗口中。如果勾选它，粒子将会可见。注意，如果没有勾选，即便输出到游戏中，粒子也不会被渲染。（译注：和游戏内的说明相矛盾）</p>
+<p>控制这个节点生成的粒子是否要被渲染到窗口中。如果勾选它，粒子将会可见。注意，如果没有勾选，即便输出到游戏中，粒子也不会被渲染。</p>
 </section>
 <section id="id5">
 <h3>名称<a class="headerlink" href="#id5" title="Link to this heading"></a></h3>
@@ -146,8 +147,8 @@
 <p>设置这个节点生成的粒子的最大数量。你可以选择正无穷以无限生成粒子（或者直到其他条件设置停止了粒子的生成）。然而，当在另一个内嵌了Effekseer的程序中播放特效时，注意除非触发了停止特效的函数，否则“正无穷”的特效将不会结束。</p>
 </section>
 <section id="id7">
-<h3>生成启用<a class="headerlink" href="#id7" title="Link to this heading"></a></h3>
-<p>指定开始播放时是否启用生成。</p>
+<h3>启用生成<a class="headerlink" href="#id7" title="Link to this heading"></a></h3>
+<p>设置开始播放时是否启用生成。</p>
 </section>
 <section id="id8">
 <h3>继承位置<a class="headerlink" href="#id8" title="Link to this heading"></a></h3>
