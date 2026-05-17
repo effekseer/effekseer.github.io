@@ -1,0 +1,39 @@
+# 1.8x Change Logs
+
+## 1.80.3 (May 17, 2026)
+
+### C++ / Runtime
+
+- Fixed rendering issues related to DX9, Vulkan, Metal, WebGPU, and LLGI.
+- Fixed GPU particle rendering shaders.
+- Fixed a bug where disabled UV distortion affected Advanced Render UV distortion.
+- Fixed SIMD bugs.
+- Fixed a bug where the Not Equal comparison node returned an incorrect result.
+
+### Tool
+
+- Added Russian language support.
+- Improved gradient editing in the material editor and fixed related bugs.
+- Fixed font scaling in high-DPI environments.
+- Fixed window size and placement issues when maximized.
+- Fixed Node Tree display and operation issues.
+
+### Build
+
+- Added macOS arm64 output support.
+- Fixed package dependencies and build settings.
+
+### Unity
+
+- Updated EffekseerForUnity to 1.80.3.
+- Fixed compiler settings for Android and WebGL.
+- Improved error logs during material import.
+- Fixed `.efkmat` handling for texture slots, uniform counts, gradients, and custom data.
+- Fixed issues where mirror wrapping, time, lighting, refraction, and custom data were not applied correctly in Unity Renderer.
+- Fixed incorrect animation frame selection for models.
+- Fixed a bug where Blend UV Distortion was not passed correctly.
+- Fixed temporary RenderTexture destruction in the editor.
+
+## 1.80
+
+[1.80 New Features](180)
