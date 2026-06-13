@@ -1,5 +1,45 @@
 # 1.8x Change Logs
 
+## 1.80.4 (June 13, 2026)
+
+### C++ / Runtime
+
+- Updated LLGI and fixed rendering issues including GPU particle ComputeBuffer updates, UV2, and matrix calculations.
+- Added WebGPU support for premultiplied alpha.
+- Fixed DX9 model rendering vertex layouts, render state restoration after instanced drawing, and material shader processing.
+- Fixed vector comparison expression conversion in the Metal material compiler.
+- Added support for RG11B10_UFLOAT texture format.
+- Fixed soft particle and material shader background handling.
+- Fixed F-curve interpolation on the final segment.
+- Fixed a bug where Directional Billboard did not face the correct direction on the initial frame or after seeking.
+- Fixed a bug where infinite UV animation frames were not cached correctly for trails.
+- Normalized Light Curl Noise vectors to improve noise stability.
+- Fixed a possible out-of-bounds read with malformed GLTF matrix input.
+- Fixed WebAssembly SIMD and multithreaded environment settings.
+
+### Tool
+
+- Added support for renaming nodes directly in the Node Tree.
+- Fixed a bug where the random seed was unnecessarily updated when seeking backward in the editor.
+- Stopped viewer initialization when renderer initialization fails, preventing invalid renderer references from remaining.
+- Improved material editor launch diagnostics by showing an error dialog and writing logs when launch fails.
+- Relaxed the path length limit for paths sent to the material editor and improved logging when long paths cannot be opened.
+- Adjusted saved window positions at startup when they are outside the visible display area.
+- Fixed depth handling for line rendering used by guides and related views.
+- Fixed icon display issues.
+
+### Build
+
+- Changed Linux packages to be built in a glibc 2.28 environment.
+- Fixed build settings for tests and screenshot tools in older GCC environments.
+- Expanded the screenshot comparison tool and rendering backend regression tests.
+
+### Unity
+
+- Updated EffekseerForUnity to 1.80.4.
+- Updated the bundled Effekseer to the 1.80.4 equivalent and reflected the core fixes in the Unity plugin.
+- Fixed the Depth Texture access flag in URP (RenderGraph), so rendering paths that read Depth Texture work correctly.
+
 ## 1.80.3 (May 17, 2026)
 
 ### C++ / Runtime
