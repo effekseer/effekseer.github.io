@@ -103,59 +103,10 @@
              
   <section id="x-change-logs">
 <h1>1.8x Change Logs<a class="headerlink" href="#x-change-logs" title="Link to this heading"></a></h1>
-<section id="june-13-2026">
-<h2>1.80.4 (June 13, 2026)<a class="headerlink" href="#june-13-2026" title="Link to this heading"></a></h2>
-<section id="c-runtime">
-<h3>C++ / Runtime<a class="headerlink" href="#c-runtime" title="Link to this heading"></a></h3>
-<ul class="simple">
-<li><p>Updated LLGI and fixed rendering issues including GPU particle ComputeBuffer updates, UV2, and matrix calculations.</p></li>
-<li><p>Added WebGPU support for premultiplied alpha.</p></li>
-<li><p>Fixed DX9 model rendering vertex layouts, render state restoration after instanced drawing, and material shader processing.</p></li>
-<li><p>Fixed vector comparison expression conversion in the Metal material compiler.</p></li>
-<li><p>Added support for RG11B10_UFLOAT texture format.</p></li>
-<li><p>Fixed soft particle and material shader background handling.</p></li>
-<li><p>Fixed F-curve interpolation on the final segment.</p></li>
-<li><p>Fixed a bug where Directional Billboard did not face the correct direction on the initial frame or after seeking.</p></li>
-<li><p>Fixed a bug where infinite UV animation frames were not cached correctly for trails.</p></li>
-<li><p>Normalized Light Curl Noise vectors to improve noise stability.</p></li>
-<li><p>Fixed a possible out-of-bounds read with malformed GLTF matrix input.</p></li>
-<li><p>Fixed WebAssembly SIMD and multithreaded environment settings.</p></li>
-</ul>
-</section>
-<section id="tool">
-<h3>Tool<a class="headerlink" href="#tool" title="Link to this heading"></a></h3>
-<ul class="simple">
-<li><p>Added support for renaming nodes directly in the Node Tree.</p></li>
-<li><p>Fixed a bug where the random seed was unnecessarily updated when seeking backward in the editor.</p></li>
-<li><p>Stopped viewer initialization when renderer initialization fails, preventing invalid renderer references from remaining.</p></li>
-<li><p>Improved material editor launch diagnostics by showing an error dialog and writing logs when launch fails.</p></li>
-<li><p>Relaxed the path length limit for paths sent to the material editor and improved logging when long paths cannot be opened.</p></li>
-<li><p>Adjusted saved window positions at startup when they are outside the visible display area.</p></li>
-<li><p>Fixed depth handling for line rendering used by guides and related views.</p></li>
-<li><p>Fixed icon display issues.</p></li>
-</ul>
-</section>
-<section id="build">
-<h3>Build<a class="headerlink" href="#build" title="Link to this heading"></a></h3>
-<ul class="simple">
-<li><p>Changed Linux packages to be built in a glibc 2.28 environment.</p></li>
-<li><p>Fixed build settings for tests and screenshot tools in older GCC environments.</p></li>
-<li><p>Expanded the screenshot comparison tool and rendering backend regression tests.</p></li>
-</ul>
-</section>
-<section id="unity">
-<h3>Unity<a class="headerlink" href="#unity" title="Link to this heading"></a></h3>
-<ul class="simple">
-<li><p>Updated EffekseerForUnity to 1.80.4.</p></li>
-<li><p>Updated the bundled Effekseer to the 1.80.4 equivalent and reflected the core fixes in the Unity plugin.</p></li>
-<li><p>Fixed the Depth Texture access flag in URP (RenderGraph), so rendering paths that read Depth Texture work correctly.</p></li>
-</ul>
-</section>
-</section>
 <section id="may-17-2026">
 <h2>1.80.3 (May 17, 2026)<a class="headerlink" href="#may-17-2026" title="Link to this heading"></a></h2>
-<section id="id1">
-<h3>C++ / Runtime<a class="headerlink" href="#id1" title="Link to this heading"></a></h3>
+<section id="c-runtime">
+<h3>C++ / Runtime<a class="headerlink" href="#c-runtime" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p>Fixed rendering issues related to DX9, Vulkan, Metal, WebGPU, and LLGI.</p></li>
 <li><p>Fixed GPU particle rendering shaders.</p></li>
@@ -164,8 +115,8 @@
 <li><p>Fixed a bug where the Not Equal comparison node returned an incorrect result.</p></li>
 </ul>
 </section>
-<section id="id2">
-<h3>Tool<a class="headerlink" href="#id2" title="Link to this heading"></a></h3>
+<section id="tool">
+<h3>Tool<a class="headerlink" href="#tool" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p>Added Russian language support.</p></li>
 <li><p>Improved gradient editing in the material editor and fixed related bugs.</p></li>
@@ -174,15 +125,15 @@
 <li><p>Fixed Node Tree display and operation issues.</p></li>
 </ul>
 </section>
-<section id="id3">
-<h3>Build<a class="headerlink" href="#id3" title="Link to this heading"></a></h3>
+<section id="build">
+<h3>Build<a class="headerlink" href="#build" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p>Added macOS arm64 output support.</p></li>
 <li><p>Fixed package dependencies and build settings.</p></li>
 </ul>
 </section>
-<section id="id4">
-<h3>Unity<a class="headerlink" href="#id4" title="Link to this heading"></a></h3>
+<section id="unity">
+<h3>Unity<a class="headerlink" href="#unity" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p>Updated EffekseerForUnity to 1.80.3.</p></li>
 <li><p>Fixed compiler settings for Android and WebGL.</p></li>
@@ -195,8 +146,8 @@
 </ul>
 </section>
 </section>
-<section id="id5">
-<h2>1.80<a class="headerlink" href="#id5" title="Link to this heading"></a></h2>
+<section id="id1">
+<h2>1.80<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
 <p><a class="reference internal" href="180.html"><span class="doc">1.80 New Features</span></a></p>
 </section>
 </section>

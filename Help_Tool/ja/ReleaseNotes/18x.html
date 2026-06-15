@@ -104,58 +104,9 @@
   <section id="x">
 <h1>1.8x 更新履歴<a class="headerlink" href="#x" title="Link to this heading"></a></h1>
 <section id="id1">
-<h2>1.80.4 (2026/06/13)<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
+<h2>1.80.3 (2026/05/17)<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
 <section id="c">
 <h3>C++ / ランタイム<a class="headerlink" href="#c" title="Link to this heading"></a></h3>
-<ul class="simple">
-<li><p>LLGIを更新し、GPUパーティクルのComputeBuffer更新、UV2、行列計算などの描画処理を修正しました。</p></li>
-<li><p>WebGPUでPremultiplied Alphaに対応しました。</p></li>
-<li><p>DX9でモデル描画の頂点レイアウト、インスタンス描画後の状態復帰、マテリアルシェーダーの処理を修正しました。</p></li>
-<li><p>Metal向けマテリアルコンパイラでベクトル比較式が正しく変換されない不具合を修正しました。</p></li>
-<li><p>RG11B10_UFLOAT形式のテクスチャに対応しました。</p></li>
-<li><p>ソフトパーティクルとマテリアルシェーダーの背景処理を修正しました。</p></li>
-<li><p>Fカーブの最終区間の補間が正しくない不具合を修正しました。</p></li>
-<li><p>Directional Billboardが初期フレームやシーク後に正しい方向を向かない不具合を修正しました。</p></li>
-<li><p>トレイルで無限UVアニメーションのフレームが正しくキャッシュされない不具合を修正しました。</p></li>
-<li><p>Light Curl Noiseのベクトルを正規化し、ノイズ結果の安定性を改善しました。</p></li>
-<li><p>GLTFの不正なmatrix入力で範囲外読み取りが起き得る不具合を修正しました。</p></li>
-<li><p>WebAssemblyのSIMDとマルチスレッド環境に関する設定を修正しました。</p></li>
-</ul>
-</section>
-<section id="id2">
-<h3>ツール<a class="headerlink" href="#id2" title="Link to this heading"></a></h3>
-<ul class="simple">
-<li><p>ノードツリー上でノード名を直接変更できるようにしました。</p></li>
-<li><p>エディタでフレームを巻き戻したときに乱数シードが不必要に更新される不具合を修正しました。</p></li>
-<li><p>レンダラー初期化に失敗した場合にビューアー初期化を中断し、無効なレンダラー参照が残らないようにしました。</p></li>
-<li><p>マテリアルエディタの起動失敗時にエラーダイアログとログを出力するようにし、起動診断を改善しました。</p></li>
-<li><p>マテリアルエディタへ渡すパス長制限を緩和し、長いパスで開けない場合のログを改善しました。</p></li>
-<li><p>保存されたウィンドウ位置が表示範囲外にある場合、起動時に画面内へ補正するようにしました。</p></li>
-<li><p>ガイドなどで使用するライン描画の深度処理を修正しました。</p></li>
-<li><p>アイコン表示の不具合を修正しました。</p></li>
-</ul>
-</section>
-<section id="id3">
-<h3>ビルド<a class="headerlink" href="#id3" title="Link to this heading"></a></h3>
-<ul class="simple">
-<li><p>Linux向けパッケージをglibc 2.28環境でビルドするようにしました。</p></li>
-<li><p>古いGCC環境向けに、テストとスクリーンショットツールのビルド設定を修正しました。</p></li>
-<li><p>スクリーンショット比較ツールと描画バックエンドの回帰テストを拡充しました。</p></li>
-</ul>
-</section>
-<section id="unity">
-<h3>Unity<a class="headerlink" href="#unity" title="Link to this heading"></a></h3>
-<ul class="simple">
-<li><p>EffekseerForUnityを1.80.4に更新しました。</p></li>
-<li><p>同梱Effekseerを1.80.4相当に更新し、本体側の修正をUnityプラグインに反映しました。</p></li>
-<li><p>URP(RenderGraph)でDepth Textureのアクセス指定を修正し、Depth Textureを参照する描画パスが正しく動作するようにしました。</p></li>
-</ul>
-</section>
-</section>
-<section id="id4">
-<h2>1.80.3 (2026/05/17)<a class="headerlink" href="#id4" title="Link to this heading"></a></h2>
-<section id="id5">
-<h3>C++ / ランタイム<a class="headerlink" href="#id5" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p>DX9、Vulkan、Metal、WebGPU、LLGI関連の描画処理を修正しました。</p></li>
 <li><p>GPUパーティクルの描画シェーダーが正しく動作しない不具合を修正しました。</p></li>
@@ -164,8 +115,8 @@
 <li><p>比較ノードのNot Equalの判定が正しくない不具合を修正しました。</p></li>
 </ul>
 </section>
-<section id="id6">
-<h3>ツール<a class="headerlink" href="#id6" title="Link to this heading"></a></h3>
+<section id="id2">
+<h3>ツール<a class="headerlink" href="#id2" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p>ロシア語表示に対応しました。</p></li>
 <li><p>マテリアルエディタのグラデーション編集を改善し、不具合を修正しました。</p></li>
@@ -174,15 +125,15 @@
 <li><p>ノードツリーの表示と操作に関する不具合を修正しました。</p></li>
 </ul>
 </section>
-<section id="id7">
-<h3>ビルド<a class="headerlink" href="#id7" title="Link to this heading"></a></h3>
+<section id="id3">
+<h3>ビルド<a class="headerlink" href="#id3" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p>macOS arm64向けの出力に対応しました。</p></li>
 <li><p>パッケージ作成時の依存関係とビルド設定を修正しました。</p></li>
 </ul>
 </section>
-<section id="id8">
-<h3>Unity<a class="headerlink" href="#id8" title="Link to this heading"></a></h3>
+<section id="unity">
+<h3>Unity<a class="headerlink" href="#unity" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p>EffekseerForUnityを1.80.3に更新しました。</p></li>
 <li><p>AndroidとWebGL向けのコンパイル設定を修正しました。</p></li>
@@ -195,8 +146,8 @@
 </ul>
 </section>
 </section>
-<section id="id9">
-<h2>1.80<a class="headerlink" href="#id9" title="Link to this heading"></a></h2>
+<section id="id4">
+<h2>1.80<a class="headerlink" href="#id4" title="Link to this heading"></a></h2>
 <p><a class="reference internal" href="180.html"><span class="doc">1.80 新機能</span></a></p>
 </section>
 </section>
