@@ -103,10 +103,31 @@
              
   <section id="x-change-logs">
 <h1>1.8x Change Logs<a class="headerlink" href="#x-change-logs" title="Link to this heading"></a></h1>
-<section id="june-17-2026">
-<h2>1.80.5 (June 17, 2026)<a class="headerlink" href="#june-17-2026" title="Link to this heading"></a></h2>
+<section id="july-12-2026">
+<h2>1.80.6 (July 12, 2026)<a class="headerlink" href="#july-12-2026" title="Link to this heading"></a></h2>
 <section id="c-runtime">
 <h3>C++ / Runtime<a class="headerlink" href="#c-runtime" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>Updated the rendering backend to improve rendering stability across platforms.</p></li>
+<li><p>Added support for DDS textures with mipmaps and BC7 textures. Fixed OpenGL issues handling BC7 textures and incomplete mipmap chains.</p></li>
+<li><p>Fixed differences from DirectX in Compare node and front/back face rendering in material shaders for OpenGL, Metal, and WebGPU.</p></li>
+<li><p>Optimized sprite and model rendering.</p></li>
+<li><p>GPU particle initialization now detects failures to create shaders and pipeline states.</p></li>
+</ul>
+</section>
+<section id="tool">
+<h3>Tool<a class="headerlink" href="#tool" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>FBX model conversion now supports skinned and animated models, and handles FBX files with missing UV, normal, and other attributes more safely.</p></li>
+<li><p>Fixed an issue where the editor display size was not updated immediately after changing the font size.</p></li>
+<li><p>Updated the macOS tool for arm64 and x64, with no additional runtime required. macOS 12 Monterey or later is supported.</p></li>
+</ul>
+</section>
+</section>
+<section id="june-17-2026">
+<h2>1.80.5 (June 17, 2026)<a class="headerlink" href="#june-17-2026" title="Link to this heading"></a></h2>
+<section id="id1">
+<h3>C++ / Runtime<a class="headerlink" href="#id1" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p>Fixed renderer vertex buffer ring handling to prevent vertex buffers from growing unnecessarily and causing a memory leak.</p></li>
 </ul>
@@ -114,8 +135,8 @@
 </section>
 <section id="june-13-2026">
 <h2>1.80.4 (June 13, 2026)<a class="headerlink" href="#june-13-2026" title="Link to this heading"></a></h2>
-<section id="id1">
-<h3>C++ / Runtime<a class="headerlink" href="#id1" title="Link to this heading"></a></h3>
+<section id="id2">
+<h3>C++ / Runtime<a class="headerlink" href="#id2" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p>Updated LLGI and fixed rendering issues including GPU particle ComputeBuffer updates, UV2, and matrix calculations.</p></li>
 <li><p>Added WebGPU support for premultiplied alpha.</p></li>
@@ -131,8 +152,8 @@
 <li><p>Fixed WebAssembly SIMD and multithreaded environment settings.</p></li>
 </ul>
 </section>
-<section id="tool">
-<h3>Tool<a class="headerlink" href="#tool" title="Link to this heading"></a></h3>
+<section id="id3">
+<h3>Tool<a class="headerlink" href="#id3" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p>Added support for renaming nodes directly in the Node Tree.</p></li>
 <li><p>Fixed a bug where the random seed was unnecessarily updated when seeking backward in the editor.</p></li>
@@ -163,8 +184,8 @@
 </section>
 <section id="may-17-2026">
 <h2>1.80.3 (May 17, 2026)<a class="headerlink" href="#may-17-2026" title="Link to this heading"></a></h2>
-<section id="id2">
-<h3>C++ / Runtime<a class="headerlink" href="#id2" title="Link to this heading"></a></h3>
+<section id="id4">
+<h3>C++ / Runtime<a class="headerlink" href="#id4" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p>Fixed rendering issues related to DX9, Vulkan, Metal, WebGPU, and LLGI.</p></li>
 <li><p>Fixed GPU particle rendering shaders.</p></li>
@@ -173,8 +194,8 @@
 <li><p>Fixed a bug where the Not Equal comparison node returned an incorrect result.</p></li>
 </ul>
 </section>
-<section id="id3">
-<h3>Tool<a class="headerlink" href="#id3" title="Link to this heading"></a></h3>
+<section id="id5">
+<h3>Tool<a class="headerlink" href="#id5" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p>Added Russian language support.</p></li>
 <li><p>Improved gradient editing in the material editor and fixed related bugs.</p></li>
@@ -183,15 +204,15 @@
 <li><p>Fixed Node Tree display and operation issues.</p></li>
 </ul>
 </section>
-<section id="id4">
-<h3>Build<a class="headerlink" href="#id4" title="Link to this heading"></a></h3>
+<section id="id6">
+<h3>Build<a class="headerlink" href="#id6" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p>Added macOS arm64 output support.</p></li>
 <li><p>Fixed package dependencies and build settings.</p></li>
 </ul>
 </section>
-<section id="id5">
-<h3>Unity<a class="headerlink" href="#id5" title="Link to this heading"></a></h3>
+<section id="id7">
+<h3>Unity<a class="headerlink" href="#id7" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p>Updated EffekseerForUnity to 1.80.3.</p></li>
 <li><p>Fixed compiler settings for Android and WebGL.</p></li>
@@ -204,8 +225,8 @@
 </ul>
 </section>
 </section>
-<section id="id6">
-<h2>1.80<a class="headerlink" href="#id6" title="Link to this heading"></a></h2>
+<section id="id8">
+<h2>1.80<a class="headerlink" href="#id8" title="Link to this heading"></a></h2>
 <p><a class="reference internal" href="180.html"><span class="doc">1.80 New Features</span></a></p>
 </section>
 </section>

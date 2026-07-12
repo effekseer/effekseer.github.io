@@ -1,5 +1,21 @@
 # 1.8x Change Logs
 
+## 1.80.6 (July 12, 2026)
+
+### C++ / Runtime
+
+- Updated the rendering backend to improve rendering stability across platforms.
+- Added support for DDS textures with mipmaps and BC7 textures. Fixed OpenGL issues handling BC7 textures and incomplete mipmap chains.
+- Fixed differences from DirectX in Compare node and front/back face rendering in material shaders for OpenGL, Metal, and WebGPU.
+- Optimized sprite and model rendering.
+- GPU particle initialization now detects failures to create shaders and pipeline states.
+
+### Tool
+
+- FBX model conversion now supports skinned and animated models, and handles FBX files with missing UV, normal, and other attributes more safely.
+- Fixed an issue where the editor display size was not updated immediately after changing the font size.
+- Updated the macOS tool for arm64 and x64, with no additional runtime required. macOS 12 Monterey or later is supported.
+
 ## 1.80.5 (June 17, 2026)
 
 ### C++ / Runtime
