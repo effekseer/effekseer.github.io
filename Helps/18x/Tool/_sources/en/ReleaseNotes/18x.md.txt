@@ -1,5 +1,32 @@
 # 1.8x Change Logs
 
+## 1.80.7 (August 22, 2026)
+
+### C++ / Runtime
+
+- Hardened binary resource loading so that malformed or corrupted effect, model, curve, material, and other data can be handled safely.
+- Added a new coordinate system mechanism and improved per-emitter and draw-time coordinate transforms, flipped coordinate systems, and rendering with mirrored matrices.
+- Fixed compatibility with legacy effect binaries.
+- Fixed issues with effect information loading, GPU particles, and static linking.
+- Added Windows on ARM (ARM64/ARM64EC) support.
+- Fixed rendering backend tests to improve stability on some platforms and when reading results from compute shaders and storage buffers.
+
+### Tool
+
+- Improved build information for the Windows launcher.
+
+### Unity
+
+- Updated EffekseerForUnity to 1.80.7.
+- Added support for Unity 6.5.
+- Refactored the rendering system and improved rendering for the Built-in Render Pipeline, URP, and HDRP.
+- Added support for RasterGraphContext in URP.
+- Fixed native plugin build settings for Android.
+
+### Unreal Engine
+
+- EffekseerForUE now supports Unreal Engine 5.8.
+
 ## 1.80.6 (July 12, 2026)
 
 ### C++ / Runtime
