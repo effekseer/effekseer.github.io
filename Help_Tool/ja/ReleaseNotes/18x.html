@@ -104,9 +104,43 @@
   <section id="x">
 <h1>1.8x 更新履歴<a class="headerlink" href="#x" title="Link to this heading"></a></h1>
 <section id="id1">
-<h2>1.80.7 (2026/08/22)<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
+<h2>1.80.8 (2026/10/31)<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
 <section id="c">
 <h3>C++ / ランタイム<a class="headerlink" href="#c" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>エフェクトデータの読み込み時に範囲外を参照する不具合を修正しました。</p></li>
+<li><p>レンダラーの頂点バッファのフレーム管理と、GPUパーティクルの定数バッファの確保を修正しました。</p></li>
+<li><p>LLGIを更新し、DirectX 12のテクスチャ転送とMetalのバッファ処理を修正しました。</p></li>
+</ul>
+</section>
+<section id="id2">
+<h3>ツール<a class="headerlink" href="#id2" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>テクスチャのプレビューサイズを変更できるようにしました。</p></li>
+<li><p>macOSの署名・公証とLinuxのパッケージ作成を改善しました。</p></li>
+</ul>
+</section>
+<section id="unity">
+<h3>Unity<a class="headerlink" href="#unity" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>AudioClipがnullの場合の処理を修正しました。</p></li>
+<li><p>Unityレンダラー使用時のURPラスターパスにおけるXRカメラの描画を修正しました。</p></li>
+</ul>
+</section>
+<section id="id3">
+<h3>その他の連携<a class="headerlink" href="#id3" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>各連携のランタイムを1.80.8に更新しました。</p></li>
+<li><p>DXライブラリ向けにVisual Studio 2026対応を追加し、DXライブラリ3.25aに更新しました。</p></li>
+<li><p>EffekseerForWebのWebGPUで同期的に描画する際の不具合を修正しました。</p></li>
+<li><p>EffekseerForMultiLanguagesのLinuxでのリンクを修正し、Pythonのビルド対応を更新しました。</p></li>
+</ul>
+</section>
+</section>
+<section id="id4">
+<h2>1.80.7 (2026/08/22)<a class="headerlink" href="#id4" title="Link to this heading"></a></h2>
+<section id="id5">
+<h3>C++ / ランタイム<a class="headerlink" href="#id5" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p>バイナリリソースの読み込み処理を強化し、不正または破損したエフェクト、モデル、カーブ、マテリアルなどのデータを安全に扱えるようにしました。</p></li>
 <li><p>新しい座標系の仕組みを追加し、エミッター単位および描画時の座標変換、左右反転した座標系、ミラー行列の描画を改善しました。</p></li>
@@ -116,14 +150,14 @@
 <li><p>描画バックエンドのテスト処理を修正し、一部のプラットフォームでの実行と、コンピュートシェーダーおよびストレージバッファの結果読み取りを安定化しました。</p></li>
 </ul>
 </section>
-<section id="id2">
-<h3>ツール<a class="headerlink" href="#id2" title="Link to this heading"></a></h3>
+<section id="id6">
+<h3>ツール<a class="headerlink" href="#id6" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p>Windows版ランチャーのビルド情報を改善しました。</p></li>
 </ul>
 </section>
-<section id="unity">
-<h3>Unity<a class="headerlink" href="#unity" title="Link to this heading"></a></h3>
+<section id="id7">
+<h3>Unity<a class="headerlink" href="#id7" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p>EffekseerForUnityを1.80.7に更新しました。</p></li>
 <li><p>Unity 6.5に対応しました。</p></li>
@@ -139,10 +173,10 @@
 </ul>
 </section>
 </section>
-<section id="id3">
-<h2>1.80.6 (2026/07/12)<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
-<section id="id4">
-<h3>C++ / ランタイム<a class="headerlink" href="#id4" title="Link to this heading"></a></h3>
+<section id="id8">
+<h2>1.80.6 (2026/07/12)<a class="headerlink" href="#id8" title="Link to this heading"></a></h2>
+<section id="id9">
+<h3>C++ / ランタイム<a class="headerlink" href="#id9" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p>描画バックエンドを更新し、各プラットフォームでの描画の安定性を改善しました。</p></li>
 <li><p>ミップマップ付きDDSテクスチャとBC7形式のテクスチャに対応しました。また、OpenGLでBC7テクスチャおよび不完全なミップマップを正しく扱えない不具合を修正しました。</p></li>
@@ -151,8 +185,8 @@
 <li><p>GPUパーティクルの初期化時に、シェーダーやパイプラインの作成失敗を検出するようにしました。</p></li>
 </ul>
 </section>
-<section id="id5">
-<h3>ツール<a class="headerlink" href="#id5" title="Link to this heading"></a></h3>
+<section id="id10">
+<h3>ツール<a class="headerlink" href="#id10" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p>FBXからモデルを変換する際に、スキニングとアニメーションを含むモデルを変換できるようにしました。また、UV・法線などの属性が不足するFBXをより安全に処理するようにしました。</p></li>
 <li><p>エディターのフォントサイズを変更した直後に、表示サイズが更新されない不具合を修正しました。</p></li>
@@ -160,19 +194,19 @@
 </ul>
 </section>
 </section>
-<section id="id6">
-<h2>1.80.5 (2026/06/17)<a class="headerlink" href="#id6" title="Link to this heading"></a></h2>
-<section id="id7">
-<h3>C++ / ランタイム<a class="headerlink" href="#id7" title="Link to this heading"></a></h3>
+<section id="id11">
+<h2>1.80.5 (2026/06/17)<a class="headerlink" href="#id11" title="Link to this heading"></a></h2>
+<section id="id12">
+<h3>C++ / ランタイム<a class="headerlink" href="#id12" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p>レンダラーの頂点バッファリング処理を修正し、リングバッファが不要に拡張され続けてメモリリークが発生する不具合を修正しました。</p></li>
 </ul>
 </section>
 </section>
-<section id="id8">
-<h2>1.80.4 (2026/06/13)<a class="headerlink" href="#id8" title="Link to this heading"></a></h2>
-<section id="id9">
-<h3>C++ / ランタイム<a class="headerlink" href="#id9" title="Link to this heading"></a></h3>
+<section id="id13">
+<h2>1.80.4 (2026/06/13)<a class="headerlink" href="#id13" title="Link to this heading"></a></h2>
+<section id="id14">
+<h3>C++ / ランタイム<a class="headerlink" href="#id14" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p>LLGIを更新し、GPUパーティクルのComputeBuffer更新、UV2、行列計算などの描画処理を修正しました。</p></li>
 <li><p>WebGPUでPremultiplied Alphaに対応しました。</p></li>
@@ -188,8 +222,8 @@
 <li><p>WebAssemblyのSIMDとマルチスレッド環境に関する設定を修正しました。</p></li>
 </ul>
 </section>
-<section id="id10">
-<h3>ツール<a class="headerlink" href="#id10" title="Link to this heading"></a></h3>
+<section id="id15">
+<h3>ツール<a class="headerlink" href="#id15" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p>ノードツリー上でノード名を直接変更できるようにしました。</p></li>
 <li><p>エディタでフレームを巻き戻したときに乱数シードが不必要に更新される不具合を修正しました。</p></li>
@@ -201,16 +235,16 @@
 <li><p>アイコン表示の不具合を修正しました。</p></li>
 </ul>
 </section>
-<section id="id11">
-<h3>ビルド<a class="headerlink" href="#id11" title="Link to this heading"></a></h3>
+<section id="id16">
+<h3>ビルド<a class="headerlink" href="#id16" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p>Linux向けパッケージをglibc 2.28環境でビルドするようにしました。</p></li>
 <li><p>古いGCC環境向けに、テストとスクリーンショットツールのビルド設定を修正しました。</p></li>
 <li><p>スクリーンショット比較ツールと描画バックエンドの回帰テストを拡充しました。</p></li>
 </ul>
 </section>
-<section id="id12">
-<h3>Unity<a class="headerlink" href="#id12" title="Link to this heading"></a></h3>
+<section id="id17">
+<h3>Unity<a class="headerlink" href="#id17" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p>EffekseerForUnityを1.80.4に更新しました。</p></li>
 <li><p>同梱Effekseerを1.80.4相当に更新し、本体側の修正をUnityプラグインに反映しました。</p></li>
@@ -218,10 +252,10 @@
 </ul>
 </section>
 </section>
-<section id="id13">
-<h2>1.80.3 (2026/05/17)<a class="headerlink" href="#id13" title="Link to this heading"></a></h2>
-<section id="id14">
-<h3>C++ / ランタイム<a class="headerlink" href="#id14" title="Link to this heading"></a></h3>
+<section id="id18">
+<h2>1.80.3 (2026/05/17)<a class="headerlink" href="#id18" title="Link to this heading"></a></h2>
+<section id="id19">
+<h3>C++ / ランタイム<a class="headerlink" href="#id19" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p>DX9、Vulkan、Metal、WebGPU、LLGI関連の描画処理を修正しました。</p></li>
 <li><p>GPUパーティクルの描画シェーダーが正しく動作しない不具合を修正しました。</p></li>
@@ -230,8 +264,8 @@
 <li><p>比較ノードのNot Equalの判定が正しくない不具合を修正しました。</p></li>
 </ul>
 </section>
-<section id="id15">
-<h3>ツール<a class="headerlink" href="#id15" title="Link to this heading"></a></h3>
+<section id="id20">
+<h3>ツール<a class="headerlink" href="#id20" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p>ロシア語表示に対応しました。</p></li>
 <li><p>マテリアルエディタのグラデーション編集を改善し、不具合を修正しました。</p></li>
@@ -240,15 +274,15 @@
 <li><p>ノードツリーの表示と操作に関する不具合を修正しました。</p></li>
 </ul>
 </section>
-<section id="id16">
-<h3>ビルド<a class="headerlink" href="#id16" title="Link to this heading"></a></h3>
+<section id="id21">
+<h3>ビルド<a class="headerlink" href="#id21" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p>macOS arm64向けの出力に対応しました。</p></li>
 <li><p>パッケージ作成時の依存関係とビルド設定を修正しました。</p></li>
 </ul>
 </section>
-<section id="id17">
-<h3>Unity<a class="headerlink" href="#id17" title="Link to this heading"></a></h3>
+<section id="id22">
+<h3>Unity<a class="headerlink" href="#id22" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p>EffekseerForUnityを1.80.3に更新しました。</p></li>
 <li><p>AndroidとWebGL向けのコンパイル設定を修正しました。</p></li>
@@ -261,8 +295,8 @@
 </ul>
 </section>
 </section>
-<section id="id18">
-<h2>1.80<a class="headerlink" href="#id18" title="Link to this heading"></a></h2>
+<section id="id23">
+<h2>1.80<a class="headerlink" href="#id23" title="Link to this heading"></a></h2>
 <p><a class="reference internal" href="180.html"><span class="doc">1.80 新機能</span></a></p>
 </section>
 </section>

@@ -1,5 +1,30 @@
 # 1.8x 更新日志
 
+## 1.80.8 (2026/10/31)
+
+### C++ / 运行时
+
+- 修复了加载特效数据时的越界读取问题。
+- 修复了渲染器顶点缓冲区的帧管理和GPU粒子常量缓冲区的分配。
+- 更新了LLGI，修复了DirectX 12纹理上传和Metal缓冲区处理。
+
+### 工具
+
+- 支持调整纹理预览的大小。
+- 改进了macOS签名、公证和Linux打包。
+
+### Unity
+
+- 修复了AudioClip为null时的处理。
+- 修复了使用Unity渲染器时URP光栅通道中的XR相机渲染。
+
+### 其他集成
+
+- 将各集成的运行时更新至1.80.8。
+- 为DX Library集成添加了Visual Studio 2026支持，并更新至DX Library 3.25a。
+- 修复了EffekseerForWeb中WebGPU同步绘制的问题。
+- 修复了EffekseerForMultiLanguages的Linux链接，并更新了Python构建支持。
+
 ## 1.80.7 (2026/08/22)
 
 ### C++ / 运行时
