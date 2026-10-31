@@ -6,7 +6,7 @@
 
 - 修复了加载特效数据时的越界读取问题。
 - 修复了渲染器顶点缓冲区的帧管理和GPU粒子常量缓冲区的分配。
-- 更新了LLGI，修复了DirectX 12纹理上传和Metal缓冲区处理。
+- 修复了 DirectX 12 后端的纹理上传和 Metal 后端的缓冲区处理。
 
 ### 工具
 
@@ -17,6 +17,13 @@
 
 - 修复了AudioClip为null时的处理。
 - 修复了使用Unity渲染器时URP光栅通道中的XR相机渲染。
+- 修复了 Unity 6.5 中 WebGL 构建失败的问题。
+- 改进了 WebGL 库的选择逻辑，并在构建前检查所需库是否缺失或重复。
+
+### Unreal Engine
+
+- 修复了材质参数字段未初始化的问题。
+- 修复了不透明和光照基础材质引用 Scene Depth 导致着色器编译失败的问题。
 
 ### 其他集成
 
@@ -24,6 +31,7 @@
 - 为DX Library集成添加了Visual Studio 2026支持，并更新至DX Library 3.25a。
 - 修复了EffekseerForWeb中WebGPU同步绘制的问题。
 - 修复了EffekseerForMultiLanguages的Linux链接，并更新了Python构建支持。
+- 将 RPG Maker MZ 运行时更新为使用 Emscripten 1.38.11 构建的 1.80.8。
 
 ## 1.80.7 (2026/08/22)
 

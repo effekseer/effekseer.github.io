@@ -6,7 +6,7 @@
 
 - Fixed out-of-bounds reads when loading effect data.
 - Fixed renderer vertex buffer frame management and GPU particle constant buffer allocation.
-- Updated LLGI to fix DirectX 12 texture uploads and Metal buffer handling.
+- Fixed texture uploads in the DirectX 12 backend and buffer handling in the Metal backend.
 
 ### Tool
 
@@ -17,6 +17,13 @@
 
 - Fixed handling of null AudioClips.
 - Fixed XR camera rendering in the URP raster pass when using the Unity renderer.
+- Fixed WebGL build failures in Unity 6.5.
+- Improved WebGL library selection and added checks for missing or duplicate required libraries before building.
+
+### Unreal Engine
+
+- Fixed an uninitialized material parameter field.
+- Fixed shader compilation failures caused by Scene Depth references in opaque and lighting base materials.
 
 ### Other integrations
 
@@ -24,6 +31,7 @@
 - Added Visual Studio 2026 support and updated DX Library support to 3.25a.
 - Fixed synchronous drawing with WebGPU in EffekseerForWeb.
 - Fixed Linux linking and updated Python build support in EffekseerForMultiLanguages.
+- Updated the RPG Maker MZ runtime to 1.80.8 built with Emscripten 1.38.11.
 
 ## 1.80.7 (August 22, 2026)
 
